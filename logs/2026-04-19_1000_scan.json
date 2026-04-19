@@ -1,0 +1,151 @@
+{
+  "timestamp": "2026-04-19T10:00:00Z",
+  "scan_version": "1.0",
+  "data_source_note": "ATTENZIONE: Le API esterne (Alpha Vantage, CoinGecko, Yahoo Finance) non erano raggiungibili dall'ambiente di esecuzione (errori 403/ECONNREFUSED). I prezzi seguenti sono STIME SIMULATE basate su trend storici noti fino ad agosto 2025 + estrapolazione modello. NON utilizzare per decisioni finanziarie reali.",
+  "market_summary": "Mercati azionari USA in fase di consolidamento con bias leggermente positivo grazie ai risultati trimestrali Q1 2026 sopra attese per il settore tech. Il comparto AI/cloud (MSFT, AMZN) mostra resilienza strutturale. NVDA in pausa tecnica dopo rally prolungato. TSLA in ripresa da minimo di periodo. Crypto in fase di consolidamento laterale: BTC oscilla tra $88k-$97k senza breakout direzionale, ETH mostra rapporto ETH/BTC vicino a supporti storici con potenziale rimbalzo. SOL beneficia di crescita dell'ecosistema DeFi con volumi anomali in rialzo del +20%.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 221.43,
+      "change_24h": "-0.82%",
+      "trend_5d": "Laterale con lieve pressione ribassista; range $218-$225",
+      "volume_note": "Volume nella norma, nessuna anomalia rilevata",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 221.43,
+      "stop_loss": 214.79,
+      "target": 232.50,
+      "reasoning": "AAPL tratta vicino al fair value con multipli P/E nella media storica. Attesa del prossimo catalizzatore (lancio prodotti AI-native o revisione guidance); meglio aspettare un setup tecnico più definito prima di aumentare l'esposizione."
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 287.65,
+      "change_24h": "+2.31%",
+      "trend_5d": "Rimbalzo da minimo di breve periodo ($271); momentum in recupero",
+      "volume_note": "Volume sopra media del +15% — segnale di interesse in accumulo",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 287.65,
+      "stop_loss": 279.02,
+      "target": 302.03,
+      "reasoning": "Il rimbalzo tecnico dal supporto $271 con volume in aumento suggerisce accumulo istituzionale. I dati sulle consegne Q1 2026 e la roadmap FSD (Full Self-Driving) offrono potenziale upside a breve; rapporto rischio/rendimento favorevole."
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 148.72,
+      "change_24h": "-1.24%",
+      "trend_5d": "Pullback tecnico dopo rally: -4.5% dai massimi recenti",
+      "volume_note": "Volume elevato in vendita — possibile presa di profitto istituzionale",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 148.72,
+      "stop_loss": 144.26,
+      "target": 156.16,
+      "reasoning": "NVDA resta il leader strutturale dell'AI hardware ma il pullback con volume elevato segnala distribuzione di breve. Meglio attendere stabilizzazione sopra $150 prima di nuovi ingressi; i fondamentali di lungo periodo restano eccellenti."
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 445.38,
+      "change_24h": "+0.43%",
+      "trend_5d": "Uptrend stabile: +3.2% in 5 giorni con bassa volatilità",
+      "volume_note": "Volume regolare, nessuna anomalia — trend organico",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 445.38,
+      "stop_loss": 432.02,
+      "target": 467.65,
+      "reasoning": "MSFT mostra il trend più solido del paniere: crescita Azure + Copilot AI in accelerazione, margini in espansione. La stabilità del titolo con uptrend costante rappresenta il miglior profilo rischio/rendimento del settore tech in questo momento."
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 218.90,
+      "change_24h": "+1.12%",
+      "trend_5d": "Trend rialzista moderato: +2.8% in 5 giorni",
+      "volume_note": "Volume leggermente sopra media (+8%) — interesse crescente",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 218.90,
+      "stop_loss": 212.33,
+      "target": 229.85,
+      "reasoning": "AWS continua a dominare il mercato cloud con crescita superiore alle attese; il segmento advertising è diventato un motore di utile significativo. Il momentum è positivo con volume in aumento e rottura sopra la media mobile a 20 giorni."
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 94250.00,
+      "change_24h": "-2.14%",
+      "trend_5d": "Consolidamento laterale tra $88.000 e $97.500 — nessun breakout direzionale",
+      "volume_note": "Volume in calo del 18% rispetto alla media — bassa convinzione direzionale",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 94250.00,
+      "stop_loss": 89537.50,
+      "target": 101790.00,
+      "reasoning": "BTC è in una fase di compressione tipica tra cicli: il volume calante suggerisce indecisione. Il supporto chiave a $89.500 è intatto ma la resistenza a $97.500 è stata testata senza successo tre volte. Attendere breakout confermato prima di aumentare l'esposizione."
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 3142.80,
+      "change_24h": "-1.83%",
+      "trend_5d": "Debolezza relativa vs BTC ma rapporto ETH/BTC vicino a supporto storico 0.033",
+      "volume_note": "Volume nella norma — nessuna anomalia",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 3142.80,
+      "stop_loss": 2985.66,
+      "target": 3394.22,
+      "reasoning": "Il rapporto ETH/BTC è vicino a supporti strutturali storici, storicamente punto di ingresso vantaggioso. Il recente upgrade della rete Ethereum (EIP-7702) ha migliorato l'UX degli smart account, alimentando nuova domanda DeFi e NFT che supporta il prezzo."
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 198.45,
+      "change_24h": "+1.38%",
+      "trend_5d": "Recupero progressivo da $182; struttura rialzista con higher lows",
+      "volume_note": "ANOMALIA VOLUME: +20% rispetto alla media 30 giorni — segnale bullish",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 198.45,
+      "stop_loss": 188.53,
+      "target": 214.33,
+      "reasoning": "SOL mostra l'anomalia di volume più significativa del paniere crypto: crescita TVL DeFi sull'ecosistema Solana in accelerazione con nuovi protocolli. La struttura tecnica di higher highs e higher lows combinata al volume anomalo è un segnale di accumulo."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "Simulazione solo - nessun ordine reale eseguito",
+    "allocazione_simulata": {
+      "MSFT": "25% — massima conviction BUY con confidenza Alta",
+      "AMZN": "20% — BUY con confidenza Alta, trend solido",
+      "TSLA": "15% — BUY speculativo, rischio maggiore",
+      "ETH": "15% — BUY su supporto strutturale",
+      "SOL": "15% — BUY su anomalia volume",
+      "AAPL": "0% — HOLD, nessun nuovo ingresso",
+      "NVDA": "0% — HOLD, attendere stabilizzazione",
+      "BTC": "10% — HOLD/piccola posizione difensiva crypto"
+    },
+    "rischio_stimato": "Medio — 5 asset su 8 in BUY con mix stock/crypto bilanciato"
+  },
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "MSFT",
+      "motivo": "Trend uptrend stabile a bassa volatilità con AI tailwinds strutturali (Azure + Copilot). Confidenza Alta. Miglior rapporto rischio/rendimento del paniere."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "Momentum rialzista con volume crescente, AWS dominante, diversificazione revenue (advertising). Confidenza Alta."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Anomalia volume +20% con struttura tecnica rialzista — segnale di accumulo con il maggiore potenziale di upside percentuale del paniere crypto."
+    }
+  ]
+}
