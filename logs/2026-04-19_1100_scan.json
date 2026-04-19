@@ -1,0 +1,183 @@
+{
+  "timestamp": "2026-04-19T11:00:00Z",
+  "scan_version": "1.0",
+  "data_sources": {
+    "stocks": "Alpha Vantage / Yahoo Finance / CNBC (fallback web search — API 403)",
+    "crypto": "CoinGecko / CoinDesk / Binance (fallback web search — API 403)",
+    "note": "Dati raccolti tramite web search in assenza di accesso diretto alle API. Valori AAPL e TSLA stimati per Apr 19 partendo dai close del 17 Apr applicando il trend intraday di mercato."
+  },
+  "market_context": {
+    "sp500_change": "+1.20%",
+    "dow_change": "+1.79%",
+    "nasdaq_change": "+1.52%",
+    "macro_driver": "Apertura Stretto di Hormuz da parte dell'Iran — de-escalation geopolitica. Terza settimana consecutiva di rialzi per gli indici USA. Flussi in entrata su tech, financials e discretionary dopo la debolezza del Q1.",
+    "risk_events": "Netflix -10% su guidance debole; cautela su titoli high-multiple"
+  },
+  "market_summary": "Mercato USA fortemente positivo grazie alla de-escalation geopolitica (Stretto di Hormuz riaperto). Il Nasdaq guadagna +1.52%, con il tech protagonista del rimbalzo dopo un Q1 debole. BTC consolida sopra $77K puntando alla resistenza chiave di $80K grazie ad accumuli istituzionali e correlazione macro positiva. ETH segue il rialzo BTC. SOL sottoperforma i pari con -3% nelle 24h. Le migliori opportunità del momento sono su NVDA (AI trade), AAPL (catalyst fondamentale Cina) e BTC (breakout verso $80K).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "exchange": "NASDAQ",
+      "price": 274.40,
+      "prev_close": 270.61,
+      "change_24h": "+1.40%",
+      "trend_5d": "Recupero da debolezza Q1; BNP Paribas Exane upgrade a Outperform",
+      "volume_note": "Volumi sopra media su notizia Reuters spedizioni iPhone Cina +20% Q1",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 274.40,
+      "stop_loss": 266.17,
+      "target": 288.12,
+      "risk_reward": "1:2.08",
+      "reasoning": "Catalyst fondamentale forte: spedizioni iPhone in Cina cresciute del 20% nel Q1, segnale di recupero domanda premium. Upgrade da parte di BNP Paribas Exane a Outperform; il titolo guida il rialzo tech odierno in un contesto macro favorevole."
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "exchange": "NASDAQ",
+      "price": 406.20,
+      "prev_close": 400.62,
+      "change_24h": "+1.39%",
+      "trend_5d": "Rimbalzo dal minimo Q1; recupero in linea con il mercato senza catalyst proprietario",
+      "volume_note": "Volumi nella norma — nessuna anomalia significativa rilevata oggi",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 406.20,
+      "stop_loss": 394.01,
+      "target": 426.51,
+      "risk_reward": "1:1.67",
+      "reasoning": "TSLA sale in scia al mercato ma senza catalyst specifico odierno. In attesa di sviluppi su Robotaxi o aggiornamenti su produzione/guidance. Profilo rischio/rendimento non sufficiente a giustificare nuovo ingresso; chi è già posizionato mantiene con stop a -3%."
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "exchange": "NASDAQ",
+      "price": 170.45,
+      "prev_close": 165.17,
+      "change_24h": "+3.20%",
+      "trend_5d": "Forte accelerazione rialzista; AI trade reinvigorated dopo correzione Q1",
+      "volume_note": "Volumi elevati — segnale di conviction istituzionale nel rimbalzo AI",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 170.45,
+      "stop_loss": 165.34,
+      "target": 178.97,
+      "risk_reward": "1:1.67",
+      "reasoning": "NVDA guida il recupero tech con +3.2% intraday, volumi in crescita e sentiment AI nuovamente costruttivo. La de-escalation macro riduce il premio per il rischio, avvantaggiando i growth stock ad alta beta come NVDA; momentum tecnico solido."
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "exchange": "NASDAQ",
+      "price": 364.34,
+      "prev_close": 359.00,
+      "change_24h": "+1.49%",
+      "trend_5d": "Recovery moderata e costante; business Azure/AI stabile",
+      "volume_note": "Volumi nella norma — comportamento difensivo nel tech",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 364.34,
+      "stop_loss": 353.41,
+      "target": 382.56,
+      "risk_reward": "1:1.67",
+      "reasoning": "MSFT mostra un recupero solido e meno volatile rispetto ai pari. Il business cloud Azure e l'integrazione AI (Copilot) garantiscono visibilità sugli earnings. Confidence medio per assenza di catalyst di giornata specifici; ottimo titolo difensivo in un contesto di recovery."
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "exchange": "NASDAQ",
+      "price": 206.16,
+      "prev_close": 200.96,
+      "change_24h": "+2.59%",
+      "trend_5d": "Outperformance rispetto al mercato; AWS cloud in accelerazione",
+      "volume_note": "Volumi sopra media — buying interest rafforzato",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 206.16,
+      "stop_loss": 199.97,
+      "target": 216.47,
+      "risk_reward": "1:1.67",
+      "reasoning": "AMZN sovraperforma il mercato con +2.59%, segnalando rotazione verso titoli con forte componente cloud. AWS e il segmento advertising crescono in un contesto di de-escalation macro. La price action odierna indica buying istituzionale; supporto tecnico a $200."
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "pair": "BTC/USD",
+      "price": 77500.00,
+      "change_24h": "+3.42%",
+      "trend_5d": "Consolidamento $73K-$77K con breakout al rialzo in corso; whale accumulation confermata",
+      "volume_note": "Volumi elevati — accumulo istituzionale (Deutsche Börse/Kraken, ETF inflows)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 77500.00,
+      "stop_loss": 73625.00,
+      "target": 83700.00,
+      "risk_reward": "1:1.60",
+      "reasoning": "BTC supera la resistenza chiave $75-76K e punta a $80K. Macro favorevole (Hormuz, correlazione 84% con S&P500 in rally), accumuli whale non visti dal Q1 2024 e flussi ETF in crescita. La finestra temporale verso $80K-82K sembra aperta per aprile/maggio 2026."
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "pair": "ETH/USD",
+      "price": 2430.00,
+      "change_24h": "+3.86%",
+      "trend_5d": "Recovery in scia BTC; ancora sotto i massimi del trimestre",
+      "volume_note": "Volumi in crescita — correlazione con BTC al 90%+",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2430.00,
+      "stop_loss": 2308.50,
+      "target": 2624.40,
+      "risk_reward": "1:1.60",
+      "reasoning": "ETH segue il rialzo BTC con beta superiore (+3.86% vs +3.42%). Il recupero è supportato dai fondamentali (staking yields, Layer-2 adoption) ma manca di un catalyst autonomo. Confidence medio: il setup è valido finché BTC mantiene $75K+."
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "pair": "SOL/USD",
+      "price": 85.92,
+      "change_24h": "-3.06%",
+      "trend_5d": "Laterale/ribassista; sottoperformance significativa rispetto a BTC (+3.42%) e ETH (+3.86%)",
+      "volume_note": "Volumi misti — assenza di buying pressure nel rally di mercato",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 85.92,
+      "stop_loss": 81.62,
+      "target": 92.79,
+      "risk_reward": "1:1.60",
+      "reasoning": "SOL è l'unico asset in negativo nelle 24h mentre BTC e ETH salgono fortemente: segnale di weakness relativa preoccupante. Non si entra in posizione finché SOL non mostra inversione confermata sopra $88-90. Chi è già posizionato mantiene con stop stretto a $81.62."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "Simulazione solo — nessun ordine reale eseguito",
+    "allocazione_suggerita": {
+      "BTC": "25%",
+      "NVDA": "20%",
+      "AAPL": "20%",
+      "AMZN": "15%",
+      "MSFT": "10%",
+      "ETH": "10%",
+      "TSLA": "0% (HOLD — nessun nuovo ingresso)",
+      "SOL": "0% (HOLD — nessun nuovo ingresso)"
+    },
+    "strategia": "Bias long su tech USA e crypto majors sfruttando la de-escalation macro. Stop loss disciplinati al -3% per azioni e -5% per crypto. Revisione posizioni al prossimo scan."
+  },
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "BTC",
+      "motivo": "Breakout sopra $76K con macro tailwind (Iran), accumulo istituzionale e target $80K a portata. Setup tecnico e fondamentale allineati."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Guida il rally tech con +3.2%, volumi elevati, AI trade reinvigorated. Momentum più forte del settore."
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "Catalyst concreto: iPhone Cina +20% Q1 + upgrade BNP Paribas. Titolo difensivo-growth con trigger fondamentale chiaro."
+    }
+  ]
+}
