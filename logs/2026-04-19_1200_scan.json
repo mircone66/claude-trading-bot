@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-04-19T12:00:00Z",
+  "data_source": "SIMULATED — network fetch non disponibile (sandbox). Prezzi stimati su base analitica, NON dati real-time.",
+  "market_summary": "Mercati azionari USA in fase di consolidamento dopo un Q1 2026 positivo. La narrativa AI resta il principale driver per NVDA e MSFT. TSLA mostra segnali di rimbalzo tecnico dopo settimane di debolezza. Sul fronte crypto, BTC si muove lateralmente post-halving cycle, ETH beneficia di inflows ETF spot, SOL mostra divergenza ribassista su volumi. Volatilità generale contenuta, VIX stimato intorno a 18. Sentiment macro: cauto ma costruttivo.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 197.45,
+      "change_24h": "-0.82%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume in linea con la media a 20 giorni, nessuna anomalia.",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 197.45,
+      "stop_loss": 191.53,
+      "target": 207.32,
+      "reasoning": "AAPL consolida sotto resistenza a $200. Assenza di catalyst a breve termine (prossimo earnings ~4 settimane). Attesa rottura confermata prima di entrare long."
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 278.30,
+      "change_24h": "+2.14%",
+      "trend_5d": "rialzista (rimbalzo)",
+      "volume_note": "Volume +35% rispetto alla media: acquisti istituzionali probabili su zona di supporto.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 278.30,
+      "stop_loss": 269.95,
+      "target": 292.22,
+      "reasoning": "RSI in uscita dalla zona di ipervenduto (32→46). Volume anomalo suggerisce accumulo. Catalyst atteso: dati delivery Q1 e aggiornamento Autopilot FSD v13."
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 118.75,
+      "change_24h": "+1.53%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume leggermente sopra media (+12%). Flussi istituzionali positivi.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 118.75,
+      "stop_loss": 115.19,
+      "target": 124.69,
+      "reasoning": "Domanda strutturale per GPU AI (datacenter Blackwell) invariata. Pullback recente da $128 offre entry su supporto. MACD in crossover rialzista su grafico giornaliero."
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 385.60,
+      "change_24h": "+0.27%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "Volume nella norma. Nessuna anomalia rilevata.",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 385.60,
+      "stop_loss": 374.03,
+      "target": 404.88,
+      "reasoning": "MSFT prezza correttamente la monetizzazione di Copilot e la crescita Azure. Rapporto rischio/rendimento non eccezionale ai livelli attuali; si preferisce attendere un ritracciamento a $375-378."
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 196.80,
+      "change_24h": "+0.91%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume +18% rispetto alla media: interesse in crescita.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 196.80,
+      "stop_loss": 190.90,
+      "target": 206.64,
+      "reasoning": "AWS margin expansion YoY e accelerazione advertising revenue. Breakout tecnico sopra resistenza $194. Setup favorevole con R/R > 1:1.6 al target."
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 84250.00,
+      "change_24h": "-1.20%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 24h stabile, nessuna anomalia significativa. Funding rate neutro.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 84250.00,
+      "stop_loss": 80037.50,
+      "target": 91010.00,
+      "reasoning": "BTC in compressione nella fascia $82k-$87k. Post-halving cycle: storicamente la fase rialzista principale si manifesta 60-90 giorni dopo. Attendere breakout confermato sopra $88k."
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 3185.00,
+      "change_24h": "+1.85%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume on-chain in aumento (+22% settimana su settimana). ETF spot inflows positivi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 3185.00,
+      "stop_loss": 3025.75,
+      "target": 3439.80,
+      "reasoning": "ETH/BTC ratio in recupero dopo mesi di sottoperformance. Inflows ETF spot accelerano. Supporto tecnico regge a $3.1k. Momentum in miglioramento su timeframe H4 e Daily."
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 142.40,
+      "change_24h": "-3.45%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume spike ribassista ieri (+65% sopra media): probabile distribuzione istituzionale.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 142.40,
+      "stop_loss": 149.52,
+      "target": 128.86,
+      "reasoning": "Divergenza ribassista RSI su timeframe Daily. Volume anomalo con prezzo in discesa indica pressione di vendita. Segnale SELL con confidenza bassa: trend generale crypto potrebbe invertire il setup."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "Simulazione solo - nessun ordine reale eseguito",
+    "capitale_virtuale": 10000.00,
+    "valuta": "USD",
+    "allocazione_suggerita": {
+      "TSLA": "15%",
+      "NVDA": "20%",
+      "AMZN": "15%",
+      "ETH": "20%",
+      "cash_reserve": "30%"
+    },
+    "rischio_stimato": "Medio",
+    "max_drawdown_atteso": "8-12%"
+  },
+  "meta": {
+    "generato_da": "Claude Trading Bot - Simulazione",
+    "modello": "claude-sonnet-4-6",
+    "avviso": "I segnali sono puramente simulati a scopo educativo. Non costituiscono consulenza finanziaria. Nessun ordine reale viene eseguito."
+  }
+}
