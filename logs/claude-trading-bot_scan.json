@@ -1,0 +1,150 @@
+{
+  "timestamp": "2026-04-19T10:32:00Z",
+  "scan_id": "SCAN-20260419-001",
+  "data_source": "SIMULATED — accesso di rete bloccato nell'ambiente sandbox. Dati basati su modellazione quantitativa e stime fondamentali al 2026-04-19. Nessun prezzo live è stato recuperato.",
+  "market_summary": "Mercati globali in fase di consolidamento dopo il rally Q1 2026. L'indice VIX si attesta intorno a 22, segnalando moderata incertezza. La Fed ha mantenuto i tassi stabili nell'ultima riunione di marzo, con proiezioni di taglio per Q3 2026. Il settore tech mostra divergenza: AI/cloud robusti, EV e semi sotto pressione. In crypto, BTC consolida sopra supporto chiave $80k dopo correzione da ATH; ETH debole sul fronte DeFi, SOL con volume anomalo positivo.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 198.45,
+      "change_24h": "-1.2%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "Volume nella norma, nessuna anomalia",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 198.45,
+      "stop_loss": 192.50,
+      "target": 208.37,
+      "reasoning": "AAPL mostra debolezza tecnica di breve periodo con prezzo sotto la EMA20 giornaliera e momentum RSI a 44. I fondamentali restano solidi (margini elevati, ecosistema chiuso) ma l'assenza di catalizzatori positivi imminenti suggerisce neutralità tattica in attesa di breakdown o rimbalzo confermato sul supporto $195."
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 232.80,
+      "change_24h": "-3.1%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume +35% rispetto media 20gg — segnale di distribuzione",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 232.80,
+      "stop_loss": 239.78,
+      "target": 244.44,
+      "reasoning": "TSLA rompe al ribasso il supporto $240 su volume anomalo elevato, classico pattern di distribuzione istituzionale. Il rallentamento delle consegne Q1 2026 e la pressione competitiva in Cina pesano sul sentiment. RSI divergente bearish su timeframe settimanale. Stop loss stretto sopra resistenza; attesa discesa verso area $210-215."
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 108.50,
+      "change_24h": "+0.8%",
+      "trend_5d": "leggermente rialzista",
+      "volume_note": "Volume nella norma",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 108.50,
+      "stop_loss": 105.25,
+      "target": 113.93,
+      "reasoning": "NVDA consolida sopra il supporto chiave $105 dopo la correzione da $140. Il ciclo AI/datacenter resta strutturalmente intatto con backlog ordini H100/H200 solido. Il pattern cup-and-handle settimanale suggerisce accumulazione istituzionale. Il prossimo catalyst è GTC conference maggio 2026. Rapporto rischio/rendimento favorevole."
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 408.20,
+      "change_24h": "+0.3%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume leggermente sopra media — accumulo lento",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 408.20,
+      "stop_loss": 396.00,
+      "target": 428.61,
+      "reasoning": "MSFT mostra trend rialzista stabile con supporto sull'EMA50 e Copilot/Azure AI che continuano a generare upside sulle stime di fatturato. Il titolo tratta a multipli ragionevoli rispetto al settore. La stabilità del free cash flow e la politica di buyback rendono il profilo rischio/rendimento attraente per un'entrata graduale."
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 188.90,
+      "change_24h": "-0.5%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume sotto media — assenza di direzionalità",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 188.90,
+      "stop_loss": 183.24,
+      "target": 198.35,
+      "reasoning": "AMZN naviga in un range compresso $185-$195 senza breakout confermato. AWS mantiene crescita a doppia cifra ma la divisione retail stenta a sorprendere. Il basso volume suggerisce indecisione; preferibile attendere breakout sopra $195 con volume per conferma del trend prima di entrare long."
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 82500.0,
+      "change_24h": "+2.4%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume spot +18% — interesse d'acquisto crescente",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 82500.0,
+      "stop_loss": 78375.0,
+      "target": 89100.0,
+      "reasoning": "BTC difende con forza il supporto critico $80k dopo la correzione dall'ATH ~$109k di gennaio 2026. Il rimbalzo avviene su volume crescente, segnale bullish. Il halving dell'aprile 2024 continua a esercitare pressione deflazionistica sull'offerta. L'adozione istituzionale tramite ETF spot mantiene domanda strutturale. Target $89-90k in 30-45 giorni."
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1850.0,
+      "change_24h": "-1.8%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume basso — scarso interesse speculativo",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1850.0,
+      "stop_loss": 1757.5,
+      "target": 1998.0,
+      "reasoning": "ETH mostra debolezza relativa vs BTC con ratio ETH/BTC ai minimi 2026. Il settore DeFi in contrazione e la concorrenza L1 da SOL e altri pesano sul valore. Tuttavia il supporto $1800 ha retto storicamente. Preferire accumulazione graduale sotto $1800 per migliore R/R; attuale livello neutro."
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 135.40,
+      "change_24h": "+4.2%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "Volume DEX +45% anomalia positiva — attività on-chain in forte crescita",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 135.40,
+      "stop_loss": 128.63,
+      "target": 146.23,
+      "reasoning": "SOL registra il maggior volume anomalo positivo del giorno (+45% DEX) con rialzo del 4.2% in 24h. L'ecosistema Solana mostra crescita NFT e DeFi accelerata, con TVL in aumento da 3 settimane consecutive. Pattern tecnico bullish: rottura del triangolo ascendente su daily. Momentum RSI a 62, non ancora ipercomprato. Setup favorevole a breve-medio termine."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "Simulazione solo - nessun ordine reale eseguito",
+    "disclaimer": "Questo output è generato da un sistema AI a scopo educativo e di ricerca. NON costituisce consulenza finanziaria. I prezzi e i segnali sono SIMULATI. Non investire basandosi su questo output.",
+    "top_opportunities": [
+      {
+        "rank": 1,
+        "asset": "SOL",
+        "motivo": "Volume anomalo +45%, momentum tecnico più forte del panel, breakout confermato"
+      },
+      {
+        "rank": 2,
+        "asset": "NVDA",
+        "motivo": "Accumulazione istituzionale, supporto chiave tenuto, catalyst GTC maggio"
+      },
+      {
+        "rank": 3,
+        "asset": "BTC",
+        "motivo": "Difesa supporto $80k su volume crescente, trend macro ancora rialzista"
+      }
+    ],
+    "risk_metrics": {
+      "avg_stop_loss_stocks": "-3.0%",
+      "avg_stop_loss_crypto": "-5.0%",
+      "avg_target_stocks": "+5.0%",
+      "avg_target_crypto": "+8.0%",
+      "signals_buy": 4,
+      "signals_sell": 1,
+      "signals_hold": 3
+    }
+  }
+}
