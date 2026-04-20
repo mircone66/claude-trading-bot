@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-04-20T12:00:00Z",
+  "data_source": "Yahoo Finance + Binance + CoinGecko (tentativo dati reali)",
+  "api_status": {
+    "yahoo_finance": {
+      "status": "errore",
+      "endpoint_tentati": [
+        "https://query1.finance.yahoo.com/v8/finance/chart/AAPL",
+        "https://query1.finance.yahoo.com/v8/finance/chart/TSLA",
+        "https://query1.finance.yahoo.com/v8/finance/chart/NVDA",
+        "https://query1.finance.yahoo.com/v8/finance/chart/MSFT",
+        "https://query1.finance.yahoo.com/v8/finance/chart/AMZN",
+        "https://query2.finance.yahoo.com/v8/finance/chart/AAPL?interval=1d&range=5d",
+        "https://query2.finance.yahoo.com/v8/finance/chart/TSLA?interval=1d&range=5d",
+        "https://query2.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&range=5d",
+        "https://query2.finance.yahoo.com/v8/finance/chart/MSFT?interval=1d&range=5d",
+        "https://query2.finance.yahoo.com/v8/finance/chart/AMZN?interval=1d&range=5d"
+      ],
+      "http_code": "403 Forbidden (WebFetch) / Host not in allowlist (curl sandbox)",
+      "motivo": "L'ambiente di esecuzione (sandbox) blocca le connessioni in uscita verso query1.finance.yahoo.com e query2.finance.yahoo.com. Yahoo Finance risponde 403 anche via WebFetch, probabilmente per mancanza di cookie/crumb di sessione richiesti dalla piattaforma."
+    },
+    "binance": {
+      "status": "errore",
+      "endpoint_tentati": [
+        "https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT",
+        "https://api.binance.com/api/v3/ticker/24hr?symbol=ETHUSDT",
+        "https://api.binance.com/api/v3/ticker/24hr?symbol=SOLUSDT"
+      ],
+      "http_code": "403 Forbidden (WebFetch) / Host not in allowlist (curl sandbox)",
+      "motivo": "Host api.binance.com non raggiungibile dall'ambiente sandbox. Bloccato a livello di rete."
+    },
+    "coingecko": {
+      "status": "errore",
+      "endpoint_tentati": [
+        "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true&include_24hr_vol=true"
+      ],
+      "http_code": "403 Forbidden (WebFetch) / Host not in allowlist (curl sandbox)",
+      "motivo": "Host api.coingecko.com non raggiungibile dall'ambiente sandbox. CoinGecko usato come fallback di Binance, ma stesso problema di rete."
+    }
+  },
+  "market_summary": "ERRORE RECUPERO DATI - Nessun dato di mercato disponibile. Tutte le API pubbliche (Yahoo Finance, Binance, CoinGecko) risultano inaccessibili dall'ambiente di esecuzione corrente a causa di restrizioni di rete della sandbox (allowlist host bloccata). Tentativi effettuati: 11 chiamate API totali su 3 provider distinti, tutti falliti.",
+  "signals": [],
+  "top_opportunita": [],
+  "portfolio_simulato": {
+    "note": "DATI NON DISPONIBILI - Impossibile generare segnali o allocazioni senza prezzi reali. La policy di questo sistema vieta l'invenzione di prezzi.",
+    "allocazione_suggerita": {}
+  },
+  "debug_info": {
+    "ambiente": "Claude Code sandbox con rete ristretta",
+    "tool_usati": ["WebFetch (tutti falliti con 403)", "Bash/curl (bloccato: 'Host not in allowlist')"],
+    "tentativi_totali": 11,
+    "provider_tentati": ["Yahoo Finance (query1 e query2)", "Binance (api.binance.com)", "CoinGecko (api.coingecko.com)"],
+    "raccomandazione": "Per eseguire questo scanner in produzione, il processo deve girare su un ambiente con accesso internet libero (server VPS, container cloud, macchina locale) e non in una sandbox con rete isolata. Usare uno scheduler (cron, APScheduler) per chiamate orarie."
+  }
+}
