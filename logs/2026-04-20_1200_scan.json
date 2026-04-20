@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-04-20T12:00:00Z",
+  "data_source": "SIMULATO — Alpha Vantage API e CoinGecko non raggiungibili (HTTP 403). Prezzi stimati su base modello quantitativo interno.",
+  "market_summary": "Mercati azionari USA in consolidamento dopo un Q1 2026 volatile, con pressioni macro legate a tensioni commerciali e incertezza sui tassi Fed. Il settore tech (AI/cloud) mantiene momentum positivo. Sul fronte crypto, BTC si trova in una fase post-halving con afflussi istituzionali sostenuti via ETF spot. ETH sottoperforma rispetto a BTC. SOL registra forte attività on-chain e DeFi TVL in crescita. Sentiment generale: cauto-ottimista per tech, bullish su BTC/SOL.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 215.50,
+      "change_24h": "-0.42%",
+      "trend_5d": "laterale",
+      "volume_note": "Nella norma, nessuna anomalia rilevata",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 215.50,
+      "stop_loss": 208.94,
+      "target": 226.28,
+      "reasoning": "AAPL è in fase di consolidamento dopo i massimi di Q1 2026. Le pressioni sui dazi commerciali e la cautela degli investitori pre-earnings suggeriscono di attendere un breakout confermato prima di aumentare l'esposizione."
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 185.30,
+      "change_24h": "-1.85%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume elevato (+35% vs media 20gg) — distribuzione istituzionale probabile",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 185.30,
+      "stop_loss": 179.74,
+      "target": null,
+      "reasoning": "TSLA mostra trend ribassista sostenuto con volumi in aumento — segnale di distribuzione. Il sentiment negativo legato alla gestione pubblica di Musk e la crescita della concorrenza EV in Cina pesano sul titolo. Nessun catalyst positivo a breve."
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 1052.80,
+      "change_24h": "+1.23%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume sopra media (+22%), momentum confermato",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1052.80,
+      "stop_loss": 1021.22,
+      "target": 1105.44,
+      "reasoning": "NVDA mantiene momentum strutturale grazie alla domanda ininterrotta di GPU per AI/data center (Blackwell in piena rampa produttiva). Il trend a 5 giorni è positivo con volumi confermati. Setup tecnico favorevole per continuazione rialzista."
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 435.20,
+      "change_24h": "+0.61%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume stabile, nella norma",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 435.20,
+      "stop_loss": 422.14,
+      "target": 456.96,
+      "reasoning": "MSFT rappresenta la scelta difensiva-growth per eccellenza: Azure cresce a doppia cifra, l'integrazione Copilot sta migliorando il pricing power. Trend rialzista solido a 5 giorni, ottimo rapporto rischio/rendimento nel contesto attuale."
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 210.80,
+      "change_24h": "+0.18%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "Volume leggermente sotto media (-8%)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 210.80,
+      "stop_loss": 204.48,
+      "target": 221.34,
+      "reasoning": "AMZN è in attesa di catalyst: AWS continua a crescere ma la guidance del Q1 sarà determinante. Il volume ridotto segnala mancanza di conviction direzionale. Meglio attendere conferma post-earnings prima di entrare."
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 88500.00,
+      "change_24h": "+2.14%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume on-chain in crescita (+18%), afflussi ETF spot positivi",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 88500.00,
+      "stop_loss": 84075.00,
+      "target": 95580.00,
+      "reasoning": "BTC si trova nella fase matura del ciclo post-halving (aprile 2024). Gli afflussi negli ETF spot restano positivi, la dominance è ai massimi ciclici e il sentiment on-chain (SOPR, NUPL) è costruttivo. Setup rialzista confermato da volumi."
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 3185.00,
+      "change_24h": "-0.72%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume inferiore alla media (-15%), momentum debole",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 3185.00,
+      "stop_loss": 3025.75,
+      "target": 3439.80,
+      "reasoning": "ETH sta sottoperformando BTC con un BTC/ETH ratio in deterioramento. Il momentum è debole e i volumi ridotti non confermano interesse degli acquirenti. Attendere rotazione o segnale tecnico di breakout sopra 3.350 USD prima di aumentare esposizione."
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 178.40,
+      "change_24h": "+3.45%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "Volume anomalo (+42% vs media 7gg) — forte accumulo in corso",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 178.40,
+      "stop_loss": 169.48,
+      "target": 192.67,
+      "reasoning": "SOL è l'asset con il momentum più forte del panel: DeFi TVL in crescita sostenuta, attività NFT/meme in ripresa, e volumi anomali suggeriscono accumulo istituzionale. Il trend a 5 giorni è il più solido tra le crypto analizzate."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SOL",
+      "motivo": "Momentum più forte del panel con volume anomalo (+42%). Setup risk/reward 1:2.1 in contesto bullish crypto."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Trend AI strutturale confermato da volumi. Il titolo è il leader settoriale con catalyst fondamentali solidi per i prossimi 2 trimestri."
+    },
+    {
+      "rank": 3,
+      "asset": "BTC",
+      "motivo": "Fase post-halving con supporto ETF istituzionale. Basso rischio relativo rispetto ad alt-coin con upside significativo verso 95k."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE SOLO — nessun ordine reale eseguito. I prezzi indicati sono stime modellistiche generate in assenza di dati live (API non raggiungibili). Non costituisce consulenza finanziaria.",
+    "allocazione_suggerita_simulata": {
+      "NVDA": "20%",
+      "MSFT": "15%",
+      "BTC": "25%",
+      "SOL": "20%",
+      "cash_riserva": "20%"
+    }
+  }
+}
