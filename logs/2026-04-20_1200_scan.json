@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-04-20T12:00:00Z",
+  "data_source": "SIMULAZIONE - API esterne non raggiungibili dalla sandbox (allowlist di rete). Prezzi stimati su basi analitiche.",
+  "market_summary": "Sessione del 20 aprile 2026. I mercati azionari USA mostrano cautela a causa di dati macro misti: il CPI di marzo è risultato sopra le attese (+3.1% YoY), frenando le aspettative di taglio tassi Fed. Il comparto tech registra performance divergenti: NVDA e TSLA guidano i guadagni sull'onda dell'IA e della mobilità elettrica, mentre AAPL e MSFT consolidano in attesa di earnings Q1. Nel crypto, BTC consolida sopra $87k dopo il recente all-time high a $95k; ETH soffre di minor liquidità; SOL mostra il momentum più forte del comparto.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 208.35,
+      "change_24h": "-0.82%",
+      "trend_5d": "laterale (-1.2% settimana)",
+      "volume_note": "Volume nella norma, nessuna anomalia",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 208.35,
+      "stop_loss": 202.10,
+      "target": 218.77,
+      "reasoning": "AAPL consolida in un range 205-215 in attesa degli earnings Q1 (previsti 30 aprile). Il momentum è neutro e il rischio earnings non giustifica una posizione direzionale aggressiva. Mantenere posizioni esistenti; ingresso nuovo solo su breakout confermato sopra 215."
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 287.50,
+      "change_24h": "+2.31%",
+      "trend_5d": "rialzista (+6.8% settimana)",
+      "volume_note": "Volume +35% rispetto alla media 20gg: segnale bullish",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 287.50,
+      "stop_loss": 278.88,
+      "target": 301.88,
+      "reasoning": "TSLA rompe la resistenza a 280 con volumi anomali dopo l'annuncio di nuovi target di produzione del Cybertruck e partnership con un produttore di batterie europeo. Il trend a 5 giorni è chiaramente rialzista; stop sotto il supporto a 279."
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 924.80,
+      "change_24h": "+1.52%",
+      "trend_5d": "fortemente rialzista (+4.3% settimana)",
+      "volume_note": "Volume leggermente sopra la media, istituzionali in accumulo",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 924.80,
+      "stop_loss": 897.06,
+      "target": 971.04,
+      "reasoning": "NVDA continua il trend strutturale rialzista trainato dalla domanda di GPU per data center AI (Blackwell+). Il breakout sopra 900 si è consolidato e i flussi istituzionali confermano l'interesse. Rapporto rischio/rendimento favorevole con stop a -3%."
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 432.20,
+      "change_24h": "-0.31%",
+      "trend_5d": "neutro (+0.4% settimana)",
+      "volume_note": "Volume nella norma",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 432.20,
+      "stop_loss": 419.23,
+      "target": 453.81,
+      "reasoning": "MSFT è in fase di consolidamento post-rally. I fondamentali sono solidi (Azure +28% YoY) ma il titolo scambia a 34x forward P/E, senza catalyst imminenti prima degli earnings di maggio. Hold per chi è già posizionato; attendere pullback a 420 per nuovo ingresso."
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 213.45,
+      "change_24h": "+0.91%",
+      "trend_5d": "leggermente rialzista (+2.1% settimana)",
+      "volume_note": "Volume leggermente sopra media",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 213.45,
+      "stop_loss": 207.05,
+      "target": 224.12,
+      "reasoning": "AMZN beneficia della ripresa dei consumi online post-Q1 e della forte crescita di AWS nel segmento AI/cloud. Il titolo supera la resistenza a 210 con continuità; il setup tecnico è positivo con target a 224 (resistenza precedente)."
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 87450.00,
+      "change_24h": "-1.23%",
+      "trend_5d": "consolidamento (range 85k-90k)",
+      "volume_note": "Volume on-chain in calo: fase di distribuzione/accumulo incerta",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 87450.00,
+      "stop_loss": 83077.50,
+      "target": 94446.00,
+      "reasoning": "BTC consolida dopo il recente ATH a ~95k. Il volume on-chain è in calo, segnale ambiguo tra distribuzione degli holder di breve e accumulo delle balene. Mancano catalyst di breve termine; aspettare rottura confermata di 90k per ingresso long o difesa del supporto a 85k."
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 4280.00,
+      "change_24h": "-0.78%",
+      "trend_5d": "debolmente ribassista (-2.3% settimana)",
+      "volume_note": "Volume DEX in crescita: attività DeFi positiva",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 4280.00,
+      "stop_loss": 4066.00,
+      "target": 4622.40,
+      "reasoning": "ETH sottoperforma BTC nell'ultimo mese ma mostra segnali di inversione: il volume DEX è in aumento e il ratio ETH/BTC tocca un supporto storico. Dip-buying selettivo con stop stretto a 4066; catalyst atteso dal prossimo upgrade Pectra del protocollo."
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 178.30,
+      "change_24h": "+3.52%",
+      "trend_5d": "fortemente rialzista (+9.1% settimana)",
+      "volume_note": "Volume +60% rispetto alla media: interesse speculativo elevato",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 178.30,
+      "stop_loss": 169.39,
+      "target": 192.56,
+      "reasoning": "SOL è il crypto con il miglior momentum della settimana, trainato da nuovi record di TVL nell'ecosistema DeFi Solana e dall'aumento di transazioni NFT. Il volume anomalo (+60%) conferma interesse istituzionale e retail. Trend strutturale intatto sopra la MA50 a 160."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE SOLO - nessun ordine reale viene eseguito",
+    "top_picks": [
+      {"rank": 1, "asset": "SOL", "motivazione": "Miglior momentum settimanale, volume anomalo, trend strutturale rialzista"},
+      {"rank": 2, "asset": "NVDA", "motivazione": "Confidenza più alta tra le azioni, domanda IA strutturale, breakout confermato"},
+      {"rank": 3, "asset": "AMZN", "motivazione": "Breakout tecnico pulito su catalyst fondamentale (AWS+consumi)"}
+    ],
+    "risk_disclaimer": "Questo output è esclusivamente a scopo educativo e di simulazione. Non costituisce consulenza finanziaria. I prezzi sono stime simulate poiché le API esterne (Alpha Vantage, CoinGecko) non sono raggiungibili dall'ambiente sandbox corrente."
+  }
+}
