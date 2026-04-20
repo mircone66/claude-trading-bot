@@ -1,0 +1,130 @@
+{
+  "timestamp": "2026-04-20T12:00:00Z",
+  "data_source": "SIMULATO — accesso API non disponibile in questo ambiente sandbox. Prezzi generati su trend storici plausibili. Nessun dato real-time verificato.",
+  "market_summary": "Sessione del 20 aprile 2026. Mercati azionari USA in fase di consolidamento dopo il rally di Q1. Tech large-cap tiene bene, con NVDA che traina il settore AI. TSLA sotto pressione per dati di consegna Q1 deludenti. Crypto in laterale: BTC mantiene supporto a 93k, ETH debole, SOL mostra momentum positivo. Attenzione ai dati macro in uscita questa settimana (Fed minutes, jobless claims).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 243.75,
+      "change_24h": "+0.82%",
+      "trend_5d": "lateral-rialzista",
+      "volume_note": "Nella norma, nessuna anomalia rilevata",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 243.75,
+      "stop_loss": 236.44,
+      "target": 255.94,
+      "reasoning": "AAPL consolida sopra la media mobile a 50 giorni dopo il rimbalzo di marzo. Nessun catalizzatore imminente prima degli earnings di maggio: gestione in attesa."
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 248.30,
+      "change_24h": "-2.14%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume elevato sul calo: possibile distribuzione istituzionale",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 248.30,
+      "stop_loss": 255.75,
+      "target": 235.89,
+      "reasoning": "Dati consegne Q1 sotto le attese, trend ribassista confermato da 5 sedute consecutive. Volume in aumento sul calo suggerisce pressione di vendita istituzionale."
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 142.85,
+      "change_24h": "+1.95%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume superiore alla media del 18%: interesse in accumulo",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 142.85,
+      "stop_loss": 138.56,
+      "target": 149.99,
+      "reasoning": "Breakout confermato sopra resistenza 140$ con volume sostenuto. Domanda AI infrastrutturale in accelerazione, guide Q2 sopra consensus. Momentum forte."
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 468.10,
+      "change_24h": "+0.43%",
+      "trend_5d": "lateral-rialzista",
+      "volume_note": "Volume nella norma",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 468.10,
+      "stop_loss": 454.06,
+      "target": 491.51,
+      "reasoning": "MSFT stabile e difensiva. Cloud Azure cresce ma valutazione già elevata a questi livelli. Hold per chi è già in posizione, nuovo ingresso non prioritario ora."
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 232.45,
+      "change_24h": "+1.12%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume leggermente sopra media (+8%)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 232.45,
+      "stop_loss": 225.48,
+      "target": 244.07,
+      "reasoning": "AWS accelera e margini retail migliorano. Struttura tecnica rialzista con higher-highs e higher-lows. Risk/reward favorevole in vista degli earnings di maggio."
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 93420.00,
+      "change_24h": "-0.65%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume spot in calo: mancanza di direzionalità",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 93420.00,
+      "stop_loss": 88749.00,
+      "target": 100893.60,
+      "reasoning": "BTC in compressione tra 90k e 97k. Mancanza di trigger direzionale nel breve. Attendere rottura confermata del range prima di posizionarsi. Rischioso entrare ora."
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 3185.50,
+      "change_24h": "-1.88%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume in calo: scarso interesse degli acquirenti",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 3185.50,
+      "stop_loss": 3344.78,
+      "target": 2988.37,
+      "reasoning": "ETH sottoperforma BTC da 3 settimane, ETH/BTC ratio in deterioramento. Supporto a 3100$ sotto minaccia; rottura aprirebbe a 2900$. Bias ribassista nel breve."
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 152.80,
+      "change_24h": "+3.42%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume DEX su Solana +34% settimana su settimana: attività on-chain elevata",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 152.80,
+      "stop_loss": 145.16,
+      "target": 165.02,
+      "reasoning": "SOL mostra forza relativa rispetto al crypto market. Volume DEX in forte crescita segnala attività ecosistema. Pattern tecnico cup-and-handle quasi completato su timeframe 4h."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "Simulazione solo — nessun ordine reale eseguito",
+    "allocation_suggerita": {
+      "NVDA": "20% del capitale rischio",
+      "AMZN": "15% del capitale rischio",
+      "SOL": "10% del capitale rischio",
+      "TSLA_short": "10% del capitale rischio",
+      "cash_reserve": "45% — attendere conferme"
+    },
+    "risk_management": "Max 2% del portafoglio totale per singola posizione. Stop loss tassativo. Non mediare in perdita."
+  }
+}
