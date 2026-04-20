@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-04-20T14:00:00Z",
+  "data_source": "web_search (dati reali)",
+  "market_summary": "Mercati tech in recupero parziale il 20 aprile 2026. TSLA +3% pre-earnings (22 apr), AAPL penalizzata dal cambio CEO (Cook → Ternus). MSFT -22% dai massimi, potenziale rimbalzo pre-earnings 29 apr. Crypto in range: BTC $74k-$77k, ETH in forte correzione dal picco di $5k di agosto 2025. SOL stabile a $85. Sentiment generale: cauto-positivo su azionario, neutro su crypto.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 270.23,
+      "change_24h": "+2.59%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 270.23,
+      "stop_loss": 262.12,
+      "target": 283.74,
+      "reasoning": "Cambio CEO annunciato oggi (Tim Cook → John Ternus, Cook diventa Executive Chairman): ha generato incertezza e un calo intraday a $269.54. I fondamentali di Apple restano solidi ma il mercato storicamente penalizza i cambi di leadership nel breve termine.",
+      "data_real": true
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 400.62,
+      "change_24h": "+3.01%",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 400.62,
+      "stop_loss": 388.60,
+      "target": 420.65,
+      "reasoning": "Risultati finanziari attesi mercoledì 22 aprile 2026: l'attesa degli earnings genera momentum rialzista. Il pattern tecnico 'falling wedge' risolto al rialzo punta a potenziale esteso fino a $500 nel breve termine.",
+      "data_real": true
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 200.98,
+      "change_24h": "N/D (stimato ~-0.5%)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 200.98,
+      "stop_loss": 194.95,
+      "target": 211.03,
+      "reasoning": "NVDA consolida sotto la resistenza chiave a $212 (52-week high). La domanda di chip AI rimane fortissima e la capitalizzazione ha superato i $4.96T, ma la prossimità alla resistenza suggerisce cautela sul timing di entrata.",
+      "data_real": true,
+      "note_change": "variazione 24h non trovata esplicitamente, stimata dal range giornaliero $198.53-$201.88"
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 422.34,
+      "change_24h": "N/D (stimato ~-1.5%)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 422.34,
+      "stop_loss": 409.67,
+      "target": 443.46,
+      "reasoning": "Microsoft scambia -22% dai massimi di 52 settimane ($555.45) con P/E di 26.45, storicamente basso per MSFT. Earnings il 29 aprile 2026: gli analisti si aspettano una svolta rialzista, rendendo il livello attuale un entry di valore.",
+      "data_real": true,
+      "note_change": "variazione 24h non trovata esplicitamente, stimata dal range giornaliero $420.26-$431.58"
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 250.74,
+      "change_24h": "+0.07%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 250.74,
+      "stop_loss": 243.22,
+      "target": 263.28,
+      "reasoning": "Amazon è a soli 3% dal suo ATH di $258.60 (nov 2025) con +8.5% YTD. Nonostante i fondamentali solidi (AWS, ads), il rapporto rischio/rendimento è poco attraente con la resistenza così vicina. Meglio attendere un pullback.",
+      "data_real": true
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75657.62,
+      "change_24h": "N/D (stimato ~-1.0%)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 75657.62,
+      "stop_loss": 71874.74,
+      "target": 81710.23,
+      "reasoning": "Bitcoin oscilla nel range $74k-$77k senza un chiaro breakout direzionale. Il ciclo post-halving (aprile 2024) storicamente porta a nuovi ATH entro 12-18 mesi, ma la mancanza di momentum immediato suggerisce HOLD in attesa di un catalizzatore.",
+      "data_real": true,
+      "note_change": "variazione 24h non trovata esplicitamente, stimata dal confronto prezzi multi-exchange ($74.3k-$77.2k)"
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2317.80,
+      "change_24h": "-1.07%",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2317.80,
+      "stop_loss": 2201.91,
+      "target": 2503.22,
+      "reasoning": "Ethereum scambia a $2.317, oltre -53% rispetto al picco di agosto 2025 (~$5.000). A questi livelli il risk/reward per un accumulo graduale è favorevole: la capitalizzazione di ~$233B e la crescita degli sviluppi Layer-2 supportano un potenziale di recovery significativo.",
+      "data_real": true
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 84.87,
+      "change_24h": "N/D (stimato ~0.0%)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 84.87,
+      "stop_loss": 80.63,
+      "target": 91.66,
+      "reasoning": "Solana oscilla nel range $83-$87, senza catalyst di breve termine identificati. Il progetto mantiene forte adozione DeFi e NFT, ma la mancanza di notizie rilevanti e la bassa confidenza suggeriscono di attendere segnali più chiari.",
+      "data_real": true,
+      "note_change": "variazione 24h non trovata esplicitamente, stimata dal range giornaliero $83.17-$86.92"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "MSFT",
+      "motivo": "Valutazione compressa (-22% dai max, P/E 26.45), earnings catalyst il 29 apr. Possibile rientro verso $500 nel medio termine. Setup di value investing con ottimo rapporto rischio/rendimento."
+    },
+    {
+      "rank": 2,
+      "asset": "ETH",
+      "motivo": "Correzione di oltre -53% dall'ATH di agosto 2025. A $2.317 offre il maggiore potenziale di recovery tra gli asset crypto analizzati, con supporto fondamentale solido dell'ecosistema Ethereum."
+    },
+    {
+      "rank": 3,
+      "asset": "TSLA",
+      "motivo": "Earnings mercoledì 22 apr con pattern tecnico rialzista (falling wedge). Potenziale esteso a $500 se la trimestrale batte le attese. Trade di breve termine ad alto rischio/alta ricompensa."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito. Allocazione a scopo puramente illustrativo.",
+    "allocazione_suggerita": {
+      "MSFT": "20%",
+      "TSLA": "15%",
+      "ETH": "15%",
+      "NVDA": "10%",
+      "AMZN": "10%",
+      "AAPL": "5%",
+      "BTC": "5%",
+      "SOL": "0%",
+      "cash_riserva": "20%"
+    },
+    "rationale": "Sovrappeso su MSFT e ETH per il loro potenziale di recupero. Posizione TSLA tattica pre-earnings. Cash al 20% come cuscinetto per opportunità future o per incrementare ETH in caso di nuovo test dei supporti."
+  }
+}
