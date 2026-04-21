@@ -1,0 +1,144 @@
+{
+  "timestamp": "2026-04-21T07:08:06",
+  "data_source": "web_search (dati reali)",
+  "market_summary": "Mercati in sessione pre-apertura del 21 aprile 2026. Tech azionario in leggera correzione dopo recupero da minimi di marzo. Crypto in rimbalzo con BTC sopra $75K nonostante hack KelpDAO da $14B nel settore DeFi e tensioni geopolitiche Iran. TSLA con earnings attesi il 22 aprile. MSFT in forte recupero (+19% da fine marzo). Sentiment generale: cauto con opportunità selettive.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 273.05,
+      "change_24h": "+1.04%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 273.05,
+      "stop_loss": 264.86,
+      "target": 286.70,
+      "reasoning": "Chiusura positiva +1.04% con mercap $3.97T, stabile. In afterhours lieve storno di $1.74. Attendere conferma breakout sopra $275 prima di entrare long.",
+      "data_real": true
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 392.50,
+      "change_24h": "-2.03%",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 392.50,
+      "stop_loss": 380.73,
+      "target": 412.13,
+      "reasoning": "Earnings Q1 2026 attesi il 22 aprile: rischio evento binario. Recuperato da minimi $361 ma volatilità alta. Attendere post-earnings per posizionarsi con più certezza.",
+      "data_real": true
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 202.06,
+      "change_24h": "-1.05%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 202.06,
+      "stop_loss": 196.00,
+      "target": 212.16,
+      "reasoning": "Trading vicino al massimo annuale ($212.19), lieve correzione odierna -1.05%. P/E 41.18 ancora sostenibile per il settore AI. Attendere pullback a $195 per entry più favorevole.",
+      "data_real": true
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 418.07,
+      "change_24h": "-1.12%",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 418.07,
+      "stop_loss": 405.53,
+      "target": 438.97,
+      "reasoning": "Forte rimbalzo +19% dai minimi di fine marzo 2026 nonostante calo YTD del 17%. BNP Paribas bullish, momentum AI/Cloud intatto. Correzione giornaliera -1.12% rappresenta opportunità di ingresso.",
+      "data_real": true
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 250.74,
+      "change_24h": "N/D",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 250.74,
+      "stop_loss": 243.22,
+      "target": 263.28,
+      "reasoning": "Range giornaliero $249.70-$256.18, market cap $2.69T con P/E 34.93. Nessun catalyst evidente a breve. Fondamentali solidi ma posizione neutrale in attesa di earnings.",
+      "data_real": true,
+      "note": "Variazione % 24h non disponibile dalla ricerca, prezzo confermato"
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75657.62,
+      "change_24h": "+2.40%",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 75657.62,
+      "stop_loss": 71874.74,
+      "target": 81710.23,
+      "reasoning": "Rimbalzo robusto +2.4% sopra $76K nonostante tensioni Iran e hack DeFi (KelpDAO $14B). BTC mantiene ruolo di safe haven, momentum rialzista. -38.7% da ATH $126K offre upside significativo.",
+      "data_real": true
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2316.24,
+      "change_24h": "~0%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 2316.24,
+      "stop_loss": 2200.43,
+      "target": 2501.54,
+      "reasoning": "Hack KelpDAO con $14B di deflussi DeFi pesa sull'ecosistema Ethereum. Prezzo stabile ma sentiment negativo a breve. Attendere risoluzione hack e stabilizzazione DeFi prima di aumentare esposizione.",
+      "data_real": true,
+      "note": "Variazione % 24h approssimativa, fonti indicano range $2313-$2318"
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 84.40,
+      "change_24h": "+0.07%",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 84.40,
+      "stop_loss": 80.18,
+      "target": 91.15,
+      "reasoning": "Movimento piatto +0.07%, trading -70.7% da ATH $293.31. Ranking CoinMarketCap #7, nessun catalyst specifico a breve. Attendere rottura di $90 per conferma trend rialzista.",
+      "data_real": true
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "BTC",
+      "motivo": "Rimbalzo +2.4% con forza relativa rispetto al mercato crypto, ruolo safe haven confermato, $75K livello chiave di supporto/resistenza"
+    },
+    {
+      "rank": 2,
+      "asset": "MSFT",
+      "motivo": "Recovery +19% dai minimi di marzo ancora in corso, AI/Cloud tailwind, pullback giornaliero -1.12% è entry favorevole"
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "Unica grande tech chiusa in positivo oggi +1.04%, market cap $3.97T garantisce stabilità, momentum difensivo"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "BTC": "25%",
+      "MSFT": "20%",
+      "AAPL": "15%",
+      "NVDA": "10%",
+      "AMZN": "10%",
+      "TSLA": "0% (attendere post-earnings 22/04)",
+      "ETH": "0% (attendere stabilizzazione hack DeFi)",
+      "SOL": "0% (nessun catalyst)",
+      "cash_riserva": "20%"
+    }
+  }
+}
