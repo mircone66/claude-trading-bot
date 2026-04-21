@@ -1,0 +1,142 @@
+{
+  "timestamp": "2026-04-21T08:46:44Z",
+  "data_source": "web_search (dati reali)",
+  "market_summary": "Mercato azionario in recupero tecnico: MSFT +19% da fine marzo, TSLA rally post-earnings del 3% il 20 aprile. Crypto sotto pressione: hack KelpDAO causa esodo DeFi da $14 miliardi, BTC a $75.6K (ben sotto ATH di $126K). Tensioni geopolitiche USA-Iran pesano sull'appetito al rischio nel comparto cripto. Sentiment generale: positivo per equity tech, neutro/negativo per crypto.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 273.05,
+      "change_24h": "+1.00%",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 273.05,
+      "stop_loss": 264.86,
+      "target": 286.70,
+      "reasoning": "Apple consolida vicino ai $274 con market cap $3.97T. Spillover positivo dal rimbalzo del settore tech (MSFT, TSLA). Domanda iPhone stabile e diversificazione nei servizi sostengono il titolo nel medio periodo.",
+      "data_real": true
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 392.50,
+      "change_24h": "+3.01%",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 392.50,
+      "stop_loss": 380.73,
+      "target": 412.13,
+      "reasoning": "Tesla ha reportato earnings il 20 aprile con rally del 3% a $400.62. Dichiarazioni di Musk su mercato da trilioni di dollari amplificano il sentiment rialzista. Momentum forte con 23 analisti buy e target medio $415.81.",
+      "data_real": true
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 200.98,
+      "change_24h": "-0.44%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 200.98,
+      "stop_loss": 194.95,
+      "target": 211.03,
+      "reasoning": "NVIDIA consolida attorno a $200 dopo aver raggiunto il 52-week high a $212.19. Domanda AI infrastrutturale intatta ma momentum a breve termine debole. P/E di 41x giustificato dalla crescita, attendere breakout sopra $205 per conferma.",
+      "data_real": true
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 422.34,
+      "change_24h": "+0.97%",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 422.34,
+      "stop_loss": 409.67,
+      "target": 443.46,
+      "reasoning": "Microsoft in forte rimbalzo tecnico (+19% dal 30 marzo). Monetizzazione Copilot AI e crescita Azure trainano gli acquisti istituzionali. Market cap $3.14T con P/E 26.45, valutazione ragionevole rispetto ai fondamentali AI.",
+      "data_real": true
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 250.56,
+      "change_24h": "+0.34%",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 250.56,
+      "stop_loss": 243.04,
+      "target": 263.09,
+      "reasoning": "43 analisti rating Strong Buy con target medio $281.95 (+13.56% upside). AWS cloud growth e espansione advertising revenue supportano la tesi rialzista. Volumi sopra media (52M vs 47.9M medio).",
+      "data_real": true
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75657.62,
+      "change_24h": "+2.40%",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 75657.62,
+      "stop_loss": 71874.74,
+      "target": 81710.23,
+      "reasoning": "Bitcoin rimbalza sopra $76K ma affronta doppi venti contrari: hack KelpDAO (esodo DeFi $14 miliardi) e tensioni geopolitiche USA-Iran. Lontano dall'ATH di $126K (ottobre 2025). Attendere stabilizzazione sopra $78K prima di posizionarsi.",
+      "data_real": true
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2315.00,
+      "change_24h": "-1.08%",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2315.00,
+      "stop_loss": 2199.25,
+      "target": 2500.20,
+      "reasoning": "Ethereum penalizzato dall'hack KelpDAO che ha causato un esodo massiccio dal comparto DeFi. Consolida in range $2313-$2318. Market cap $233B in seconda posizione ma sentiment negativo a breve. Attendere chiarimento sulla sicurezza del protocollo.",
+      "data_real": true
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 84.60,
+      "change_24h": "+0.11%",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 84.60,
+      "stop_loss": 80.37,
+      "target": 91.37,
+      "reasoning": "Solana trade a meno del 29% del suo ATH di $293.31 (gennaio 2025). Market cap rank #7, momentum laterale con variazione +0.11%. Mancanza di catalizzatori bullish e incertezza macro crypto scoraggiano nuove posizioni.",
+      "data_real": true
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Earnings beat il 20 aprile con rally del 3%. Forte momentum post-risultati e dichiarazioni Musk su mercato trillion-dollar. Target analisti $415.81."
+    },
+    {
+      "rank": 2,
+      "asset": "MSFT",
+      "motivo": "Rimbalzo tecnico del +19% da fine marzo. AI Copilot e Azure cloud come driver di crescita strutturale. Valutazione ragionevole a P/E 26.45."
+    },
+    {
+      "rank": 3,
+      "asset": "AMZN",
+      "motivo": "Consenso analisti eccezionale (43 Strong Buy). AWS dominante nel cloud. Upside del +13.56% al target medio di $281.95. Volumi sopra media indicano interesse istituzionale."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "TSLA": "20%",
+      "MSFT": "20%",
+      "AMZN": "15%",
+      "AAPL": "10%",
+      "NVDA": "10%",
+      "BTC": "5%",
+      "ETH": "0%",
+      "SOL": "0%",
+      "cash_riserva": "20%"
+    }
+  }
+}
