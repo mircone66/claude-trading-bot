@@ -8,206 +8,201 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #080c10;
-  --bg2: #0d1117;
-  --bg3: #161b22;
-  --border: #21262d;
-  --border2: #30363d;
-  --text: #e6edf3;
-  --muted: #7d8590;
-  --green: #3fb950;
-  --red: #f85149;
-  --yellow: #d29922;
-  --blue: #388bfd;
-  --purple: #bc8cff;
-  --mono: 'IBM Plex Mono', monospace;
-  --sans: 'IBM Plex Sans', sans-serif;
+  --bg:#080c10; --bg2:#0d1117; --bg3:#161b22; --border:#21262d; --border2:#30363d;
+  --text:#e6edf3; --muted:#7d8590; --green:#3fb950; --red:#f85149;
+  --yellow:#d29922; --blue:#388bfd; --purple:#bc8cff; --orange:#f0883e;
+  --mono:'IBM Plex Mono',monospace; --sans:'IBM Plex Sans',sans-serif;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: var(--bg); color: var(--text); font-family: var(--sans); min-height: 100vh; }
-.app { max-width: 900px; margin: 0 auto; padding: 16px; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
+.app{max-width:960px;margin:0 auto;padding:16px}
 
 /* Header */
-.header { display: flex; align-items: center; justify-content: space-between; padding: 16px 0 20px; border-bottom: 1px solid var(--border); margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
-.logo { display: flex; align-items: center; gap: 10px; }
-.logo-icon { width: 32px; height: 32px; background: var(--green); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 16px; font-weight: 600; color: #000; }
-.logo-text { font-family: var(--mono); font-size: 16px; font-weight: 600; }
-.logo-sub { font-size: 11px; color: var(--muted); margin-top: 1px; }
-.header-right { display: flex; align-items: center; gap: 8px; }
-.sync-status { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); font-family: var(--mono); }
-.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
-.dot.loading { background: var(--yellow); }
-.dot.error { background: var(--red); animation: none; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+.header{display:flex;align-items:center;justify-content:space-between;padding:14px 0 18px;border-bottom:1px solid var(--border);margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{width:34px;height:34px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:16px;font-weight:700;color:#000}
+.logo-text{font-family:var(--mono);font-size:15px;font-weight:600}
+.logo-sub{font-size:11px;color:var(--muted);margin-top:1px}
+.sync-status{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);font-family:var(--mono)}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite;flex-shrink:0}
+.dot.loading{background:var(--yellow)}
+.dot.error{background:var(--red);animation:none}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* Buttons */
-.btn { border: 1px solid var(--border2); border-radius: 6px; padding: 6px 14px; cursor: pointer; font-family: var(--sans); font-size: 13px; font-weight: 500; transition: all .15s; background: var(--bg3); color: var(--text); }
-.btn:hover { border-color: var(--blue); color: var(--blue); }
-.btn:disabled { opacity: .4; cursor: not-allowed; }
-.btn-green { background: var(--green); color: #000; border-color: var(--green); }
-.btn-green:hover { opacity: .85; color: #000; border-color: var(--green); }
-.btn-red { background: var(--red); color: #fff; border-color: var(--red); }
-.btn-red:hover { opacity: .85; color: #fff; border-color: var(--red); }
-.btn-sm { padding: 4px 10px; font-size: 12px; }
-.spin { display: inline-block; animation: spin 1s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
+.btn{border:1px solid var(--border2);border-radius:6px;padding:6px 14px;cursor:pointer;font-family:var(--sans);font-size:13px;font-weight:500;transition:all .15s;background:var(--bg3);color:var(--text)}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn-green{background:var(--green);color:#000;border-color:var(--green)}
+.btn-green:hover{opacity:.85;color:#000;border-color:var(--green)}
+.btn-red{background:var(--red);color:#fff;border-color:var(--red)}
+.btn-sm{padding:4px 10px;font-size:12px}
+.spin{display:inline-block;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
 /* Tabs */
-.tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; overflow-x: auto; }
-.tab { background: none; border: none; border-bottom: 2px solid transparent; padding: 10px 16px; cursor: pointer; font-family: var(--sans); font-size: 13px; color: var(--muted); transition: all .15s; white-space: nowrap; margin-bottom: -1px; }
-.tab:hover { color: var(--text); }
-.tab.active { color: var(--green); border-bottom-color: var(--green); }
-.badge-tab { background: var(--red); color: #fff; border-radius: 10px; padding: 1px 6px; font-size: 10px; margin-left: 4px; font-family: var(--mono); }
+.tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:20px;overflow-x:auto;gap:0}
+.tab{background:none;border:none;border-bottom:2px solid transparent;padding:10px 14px;cursor:pointer;font-family:var(--sans);font-size:13px;color:var(--muted);transition:all .15s;white-space:nowrap;margin-bottom:-1px}
+.tab:hover{color:var(--text)}
+.tab.active{color:var(--green);border-bottom-color:var(--green)}
+.badge-tab{background:var(--red);color:#fff;border-radius:10px;padding:1px 6px;font-size:10px;margin-left:4px;font-family:var(--mono)}
 
 /* Cards */
-.card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
-.card-title { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 12px; font-family: var(--mono); }
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px}
+.card-title{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;font-family:var(--mono)}
 
-/* Metrics grid */
-.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
-.metric { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
-.metric-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .5px; }
-.metric-value { font-family: var(--mono); font-size: 18px; font-weight: 600; }
-.metric-sub { font-family: var(--mono); font-size: 12px; margin-top: 2px; }
-.green { color: var(--green); }
-.red { color: var(--red); }
-.yellow { color: var(--yellow); }
-.blue { color: var(--blue); }
-.muted { color: var(--muted); }
+/* Metrics */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:16px}
+.metric{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.metric-label{font-size:10px;color:var(--muted);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px}
+.metric-value{font-family:var(--mono);font-size:17px;font-weight:600}
+.metric-sub{font-family:var(--mono);font-size:11px;margin-top:2px}
+
+/* Tax box */
+.tax-box{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.tax-box-title{font-size:11px;color:var(--muted);font-family:var(--mono);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.tax-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--border)}
+.tax-row:last-child{border-bottom:none}
+.tax-row-label{font-size:12px;color:var(--muted)}
+.tax-row-value{font-family:var(--mono);font-size:13px;font-weight:500}
+.tax-divider{border-top:1px solid var(--border2);margin:6px 0;padding-top:6px}
+
+/* Colors */
+.green{color:var(--green)} .red{color:var(--red)} .yellow{color:var(--yellow)}
+.blue{color:var(--blue)} .orange{color:var(--orange)} .muted{color:var(--muted)}
 
 /* Setup */
-.setup { max-width: 380px; margin: 60px auto; text-align: center; }
-.setup-icon { font-size: 48px; margin-bottom: 16px; }
-.setup h2 { font-size: 20px; margin-bottom: 8px; }
-.setup p { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
-.input-row { display: flex; gap: 8px; margin-bottom: 12px; }
-input[type=text], input[type=number] {
-  background: var(--bg); border: 1px solid var(--border2); border-radius: 6px;
-  padding: 8px 12px; color: var(--text); font-family: var(--mono); font-size: 13px;
-  outline: none; flex: 1;
-}
-input:focus { border-color: var(--blue); }
+.setup{max-width:380px;margin:60px auto;text-align:center}
+.setup-icon{font-size:48px;margin-bottom:16px}
+.setup h2{font-size:20px;margin-bottom:8px}
+.setup p{font-size:13px;color:var(--muted);margin-bottom:24px;line-height:1.6}
+.input-row{display:flex;gap:8px;margin-bottom:12px}
+input[type=text],input[type=number]{background:var(--bg);border:1px solid var(--border2);border-radius:6px;padding:8px 12px;color:var(--text);font-family:var(--mono);font-size:13px;outline:none;flex:1}
+input:focus{border-color:var(--blue)}
 
 /* Signal cards */
-.signal-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 12px; border-left: 3px solid var(--border); transition: border-color .2s; }
-.signal-card.BUY { border-left-color: var(--green); }
-.signal-card.SELL { border-left-color: var(--red); }
-.signal-card.HOLD { border-left-color: var(--yellow); }
-.signal-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
-.signal-left { display: flex; align-items: center; gap: 10px; }
-.asset-name { font-size: 18px; font-weight: 600; font-family: var(--mono); }
-.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; font-family: var(--mono); }
-.badge-BUY { background: #3fb95022; color: var(--green); }
-.badge-SELL { background: #f8514922; color: var(--red); }
-.badge-HOLD { background: #d2992222; color: var(--yellow); }
-.badge-ALTA { background: #3fb95022; color: var(--green); }
-.badge-MEDIA { background: #d2992222; color: var(--yellow); }
-.badge-BASSA { background: #f8514922; color: var(--red); }
-.badge-Alto { background: #3fb95022; color: var(--green); }
-.badge-Medio { background: #d2992222; color: var(--yellow); }
-.badge-Basso { background: #f8514922; color: var(--red); }
-.signal-price { font-family: var(--mono); font-size: 20px; font-weight: 600; }
-.signal-reasoning { font-size: 13px; color: var(--muted); margin-bottom: 12px; line-height: 1.6; }
-.signal-meta { display: flex; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
-.signal-meta-item { font-size: 12px; }
-.signal-meta-item span { color: var(--muted); }
-.signal-action { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.validation-block { background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-bottom: 12px; }
-.validation-title { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-bottom: 6px; }
-.validation-sources { display: flex; flex-wrap: wrap; gap: 8px; }
-.vsource { font-size: 11px; font-family: var(--mono); }
-.vsource .vname { color: var(--muted); }
-.vsource .vprice { color: var(--text); }
-.validation-spread { font-size: 11px; font-family: var(--mono); margin-top: 6px; }
+.signal-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px;border-left:3px solid var(--border)}
+.signal-card.BUY{border-left-color:var(--green)}
+.signal-card.SELL{border-left-color:var(--red)}
+.signal-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;flex-wrap:wrap;gap:8px}
+.signal-left{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.asset-name{font-size:17px;font-weight:600;font-family:var(--mono)}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;font-family:var(--mono)}
+.badge-BUY{background:#3fb95022;color:var(--green)}
+.badge-SELL{background:#f8514922;color:var(--red)}
+.badge-ALTA{background:#3fb95022;color:var(--green)}
+.badge-MEDIA{background:#d2992222;color:var(--yellow)}
+.badge-BASSA{background:#f8514922;color:var(--red)}
+.badge-Alto{background:#3fb95022;color:var(--green)}
+.badge-Medio{background:#d2992222;color:var(--yellow)}
+.badge-Basso{background:#f8514922;color:var(--red)}
+.badge-stock_usa{background:#388bfd18;color:var(--blue)}
+.badge-stock_eu{background:#bc8cff18;color:var(--purple)}
+.badge-etf_commodity{background:#f0883e18;color:var(--orange)}
+.badge-crypto{background:#d2992218;color:var(--yellow)}
+.type-label{stock_usa:'🇺🇸 USA';stock_eu:'🇪🇺 EU';etf_commodity:'📦 ETF';crypto:'₿ Crypto'}
+.signal-price{font-family:var(--mono);font-size:20px;font-weight:600}
+.signal-reasoning{font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.6}
+.signal-meta{display:flex;gap:14px;margin-bottom:10px;flex-wrap:wrap}
+.signal-meta-item{font-size:11px}
+.signal-meta-item span{color:var(--muted)}
+.signal-action{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.validation-block{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-bottom:10px}
+.validation-title{font-size:10px;color:var(--muted);font-family:var(--mono);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.validation-sources{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:4px}
+.vsource{font-size:11px;font-family:var(--mono)}
+.vsource .vname{color:var(--muted)}
 
-/* Positions */
-.pos-row { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.pos-asset { min-width: 80px; }
-.pos-asset-name { font-weight: 600; font-family: var(--mono); font-size: 15px; }
-.pos-asset-type { font-size: 11px; color: var(--muted); }
-.pos-col { flex: 1; min-width: 80px; }
-.pos-col-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 3px; }
-.pos-col-value { font-family: var(--mono); font-size: 13px; }
+/* Position rows */
+.pos-row{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;margin-bottom:8px;display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.pos-asset{min-width:80px}
+.pos-asset-name{font-weight:600;font-family:var(--mono);font-size:14px}
+.pos-asset-type{font-size:10px;color:var(--muted);margin-top:2px}
+.pos-col{flex:1;min-width:90px}
+.pos-col-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+.pos-col-value{font-family:var(--mono);font-size:12px}
 
 /* Table */
-.table-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-th { color: var(--muted); font-weight: 500; text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); font-size: 11px; text-transform: uppercase; letter-spacing: .5px; white-space: nowrap; }
-td { padding: 10px 12px; border-bottom: 1px solid var(--bg3); font-family: var(--mono); font-size: 12px; vertical-align: middle; }
-tr:last-child td { border-bottom: none; }
-tr:hover td { background: var(--bg3); }
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{color:var(--muted);font-weight:500;text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);font-size:10px;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+td{padding:9px 10px;border-bottom:1px solid var(--bg3);font-family:var(--mono);font-size:12px;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--bg3)}
 
 /* Chart */
-.chart-wrap { height: 160px; position: relative; margin-top: 8px; }
-.chart-svg { width: 100%; height: 100%; }
+.chart-wrap{height:150px;position:relative;margin-top:6px}
+.chart-svg{width:100%;height:100%}
 
 /* Performance */
-.perf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
-.perf-card { background: var(--bg3); border-radius: 8px; padding: 14px; text-align: center; }
-.perf-value { font-family: var(--mono); font-size: 22px; font-weight: 600; margin-bottom: 4px; }
-.perf-label { font-size: 11px; color: var(--muted); }
+.perf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.perf-card{background:var(--bg3);border-radius:8px;padding:14px;text-align:center;border:1px solid var(--border)}
+.perf-value{font-family:var(--mono);font-size:20px;font-weight:600;margin-bottom:4px}
+.perf-label{font-size:11px;color:var(--muted)}
 
 /* Notification */
-.notif { position: fixed; top: 16px; right: 16px; padding: 12px 18px; border-radius: 8px; font-size: 13px; font-weight: 500; z-index: 9999; animation: slideIn .2s ease; max-width: 320px; font-family: var(--sans); }
-.notif-ok { background: #3fb95022; border: 1px solid var(--green); color: var(--green); }
-.notif-err { background: #f8514922; border: 1px solid var(--red); color: var(--red); }
-.notif-warn { background: #d2992222; border: 1px solid var(--yellow); color: var(--yellow); }
-@keyframes slideIn { from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
+.notif{position:fixed;top:16px;right:16px;padding:12px 18px;border-radius:8px;font-size:13px;font-weight:500;z-index:9999;animation:slideIn .2s ease;max-width:320px;font-family:var(--sans)}
+.notif-ok{background:#3fb95022;border:1px solid var(--green);color:var(--green)}
+.notif-err{background:#f8514922;border:1px solid var(--red);color:var(--red)}
+.notif-warn{background:#d2992222;border:1px solid var(--yellow);color:var(--yellow)}
+@keyframes slideIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 
 /* Misc */
-.empty { text-align: center; padding: 48px 0; color: var(--muted); }
-.empty-icon { font-size: 36px; margin-bottom: 12px; }
-.empty p { font-size: 13px; }
-.section-title { font-size: 13px; font-weight: 500; margin-bottom: 14px; color: var(--muted); font-family: var(--mono); }
-.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.file-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--bg3); gap: 8px; flex-wrap: wrap; }
-.file-row:last-child { border-bottom: none; }
-.file-name { font-family: var(--mono); font-size: 12px; }
-.file-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
-hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
-.info-steps { list-style: none; }
-.info-steps li { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
-.step-num { background: var(--bg3); border: 1px solid var(--border); border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-family: var(--mono); color: var(--muted); flex-shrink: 0; }
-.step-text { font-size: 13px; color: var(--muted); line-height: 1.5; padding-top: 2px; }
-.alert { border-radius: 8px; padding: 12px 14px; font-size: 12px; display: flex; gap: 8px; align-items: flex-start; margin-bottom: 12px; }
-.alert-warn { background: #d2992215; border: 1px solid #d2992240; color: var(--yellow); }
-.alert-info { background: #388bfd15; border: 1px solid #388bfd40; color: var(--blue); }
+.empty{text-align:center;padding:48px 0;color:var(--muted)}
+.empty-icon{font-size:36px;margin-bottom:12px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.section-title{font-size:12px;color:var(--muted);margin-bottom:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.5px}
+.file-row{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--bg3);gap:8px;flex-wrap:wrap}
+.file-row:last-child{border-bottom:none}
+.info-steps{list-style:none}
+.info-steps li{display:flex;gap:12px;margin-bottom:12px;align-items:flex-start}
+.step-num{background:var(--bg3);border:1px solid var(--border);border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:11px;font-family:var(--mono);color:var(--muted);flex-shrink:0}
+.step-text{font-size:13px;color:var(--muted);line-height:1.5;padding-top:2px}
+.alert{border-radius:8px;padding:12px 14px;font-size:12px;display:flex;gap:8px;align-items:flex-start;margin-bottom:10px;line-height:1.5}
+.alert-warn{background:#d2992215;border:1px solid #d2992240;color:var(--yellow)}
+.alert-info{background:#388bfd15;border:1px solid #388bfd40;color:var(--blue)}
+.alert-green{background:#3fb95015;border:1px solid #3fb95040;color:var(--green)}
+
+/* Pnl breakdown */
+.pnl-breakdown{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-top:8px;font-family:var(--mono);font-size:12px}
+.pnl-row{display:flex;justify-content:space-between;padding:3px 0}
+.pnl-divider{border-top:1px solid var(--border2);margin:5px 0}
 
 @media(max-width:600px){
-  .metrics { grid-template-columns: 1fr 1fr; }
-  .perf-grid { grid-template-columns: 1fr 1fr; }
+  .metrics{grid-template-columns:1fr 1fr}
+  .perf-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
 <body>
 <div class="app">
 
-  <!-- Header -->
   <div class="header">
     <div class="logo">
       <div class="logo-icon">◈</div>
       <div>
         <div class="logo-text">Trading Simulator</div>
-        <div class="logo-sub">Simulazione virtuale — nessun ordine reale</div>
+        <div class="logo-sub">Alpaca · 18 asset · Tasse IT 26% · Solo simulazione</div>
       </div>
     </div>
-    <div class="header-right">
+    <div class="header-right" style="display:flex;align-items:center;gap:10px">
       <div class="sync-status">
         <div class="dot" id="statusDot"></div>
         <span id="statusText">Connessione...</span>
       </div>
-      <button class="btn btn-sm" id="syncBtn" onclick="syncData()" title="Sincronizza">⟳ Sync</button>
+      <button class="btn btn-sm" id="syncBtn" onclick="syncData()">⟳ Sync</button>
     </div>
   </div>
 
-  <!-- Notification -->
   <div id="notif" style="display:none" class="notif"></div>
 
   <!-- Setup -->
   <div id="setupView" class="setup" style="display:none">
     <div class="setup-icon">💼</div>
     <h2>Capitale virtuale iniziale</h2>
-    <p>Imposta il capitale di partenza per la simulazione.<br>Solo simulazione — nessun denaro reale.</p>
+    <p>Imposta il capitale di partenza.<br>
+    <strong style="color:var(--green)">Broker: Alpaca</strong> — 0% commissioni su azioni USA ed ETF<br>
+    <strong style="color:var(--yellow)">Tasse: 26%</strong> sulle plusvalenze realizzate (Italia)</p>
     <div class="input-row">
       <input type="number" id="capInput" placeholder="es. 1000" min="1" step="100">
       <span style="display:flex;align-items:center;font-family:var(--mono);color:var(--muted)">€</span>
@@ -215,9 +210,8 @@ hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
     <button class="btn btn-green" style="width:100%" onclick="setCapital()">Inizia simulazione</button>
   </div>
 
-  <!-- Main app -->
+  <!-- Main -->
   <div id="mainView" style="display:none">
-    <!-- Tabs -->
     <div class="tabs">
       <button class="tab active" data-tab="dashboard" onclick="switchTab('dashboard')">Dashboard</button>
       <button class="tab" data-tab="signals" onclick="switchTab('signals')">Segnali <span class="badge-tab" id="pendingBadge" style="display:none">0</span></button>
@@ -227,10 +221,10 @@ hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
       <button class="tab" data-tab="info" onclick="switchTab('info')">Info</button>
     </div>
 
-    <!-- Dashboard -->
     <div id="tab-dashboard" class="tab-content">
       <div class="metrics" id="metricsGrid"></div>
-      <div id="chartSection" style="display:none" class="card" style="margin-bottom:16px">
+      <div id="taxSummary"></div>
+      <div id="chartSection" style="display:none" class="card">
         <div class="card-title">Evoluzione portafoglio</div>
         <div class="chart-wrap"><svg class="chart-svg" id="chartSvg"></svg></div>
       </div>
@@ -244,20 +238,18 @@ hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
       </div>
     </div>
 
-    <!-- Signals -->
     <div id="tab-signals" class="tab-content" style="display:none">
-      <div class="row" style="margin-bottom:16px">
+      <div class="row" style="margin-bottom:14px">
         <button class="btn btn-sm" onclick="syncData()">⟳ Controlla nuovi segnali</button>
         <span style="font-size:12px;color:var(--muted)" id="pendingCount"></span>
       </div>
       <div id="signalsList"></div>
       <div id="signalsEmpty" class="empty" style="display:none">
         <div class="empty-icon">✓</div>
-        <p>Nessun segnale in attesa di autorizzazione</p>
+        <p>Nessun segnale in attesa</p>
       </div>
     </div>
 
-    <!-- Portfolio -->
     <div id="tab-portfolio" class="tab-content" style="display:none">
       <div id="portfolioList"></div>
       <div id="portfolioTotals"></div>
@@ -267,7 +259,6 @@ hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
       </div>
     </div>
 
-    <!-- History -->
     <div id="tab-history" class="tab-content" style="display:none">
       <div id="historyTable"></div>
       <div id="historyEmpty" class="empty" style="display:none">
@@ -276,406 +267,462 @@ hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
       </div>
     </div>
 
-    <!-- Performance -->
     <div id="tab-performance" class="tab-content" style="display:none">
       <div id="perfContent"></div>
     </div>
 
-    <!-- Info -->
     <div id="tab-info" class="tab-content" style="display:none">
       <div id="infoContent"></div>
     </div>
   </div>
-
 </div>
 
 <script>
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // CONFIG
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 const GH_OWNER = 'mircone66';
 const GH_REPO  = 'claude-trading-bot';
 const GH_API   = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/logs`;
 
-// ═══════════════════════════════════════
-// STATE
-// ═══════════════════════════════════════
-let state = {
-  capital: null,
-  available: 0,
-  positions: {},   // {TSLA: {qty, avgPrice, lastPrice, type, stop_loss, target}}
-  transactions: [],
-  history: [],     // [{date, value}]
-  pending: [],     // segnali in attesa
-  imported: [],    // nomi file già importati
-  prices: {},      // ultimi prezzi noti
+// Tasse e commissioni
+const TAX_RATE   = 0.26;   // 26% plusvalenze Italia
+const COMM = {             // Alpaca commissioni
+  stock_usa:      0.00,
+  stock_eu:       0.00,
+  etf_commodity:  0.00,
+  crypto:         0.00,    // Alpaca crypto: 0%
 };
 
+const TYPE_LABELS = {
+  stock_usa:'🇺🇸 USA', stock_eu:'🇪🇺 EU',
+  etf_commodity:'📦 ETF', crypto:'₿ Crypto'
+};
+
+// ═══════════════════════════════
+// STATE
+// ═══════════════════════════════
+let state = {
+  capital:0, available:0,
+  positions:{}, transactions:[],
+  history:[], pending:[],
+  imported:[], prices:{},
+  // Accumulatore perdite (compensazione fiscale)
+  lossCarryforward: 0,
+};
 let qtyInputs = {};
 
-// ═══════════════════════════════════════
-// STORAGE
-// ═══════════════════════════════════════
-const SKEY = 'ts5_state';
-function saveState() { try { localStorage.setItem(SKEY, JSON.stringify(state)); } catch(e) {} }
-function loadState() {
-  try {
+// ═══════════════════════════════
+// STORAGE (localStorage per GitHub Pages)
+// ═══════════════════════════════
+const SKEY = 'ts6_state';
+function saveState(){ try{ localStorage.setItem(SKEY, JSON.stringify(state)); }catch(e){} }
+function loadState(){
+  try{
     const s = localStorage.getItem(SKEY);
-    if (s) state = { ...state, ...JSON.parse(s) };
-  } catch(e) {}
+    if(s){ const p = JSON.parse(s); state = {...state,...p}; }
+  }catch(e){}
 }
 
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // NOTIFICATIONS
-// ═══════════════════════════════════════
-let notifTimer;
-function toast(msg, type='ok') {
+// ═══════════════════════════════
+let ntimer;
+function toast(msg, type='ok'){
   const el = document.getElementById('notif');
-  el.textContent = msg;
-  el.className = `notif notif-${type}`;
-  el.style.display = 'block';
-  clearTimeout(notifTimer);
-  notifTimer = setTimeout(() => el.style.display = 'none', 3500);
+  el.textContent = msg; el.className = `notif notif-${type}`;
+  el.style.display = 'block'; clearTimeout(ntimer);
+  ntimer = setTimeout(()=>el.style.display='none', 3500);
+}
+function setStatus(txt, mode='ok'){
+  document.getElementById('statusText').textContent = txt;
+  const d = document.getElementById('statusDot');
+  d.className = 'dot'+(mode==='loading'?' loading':mode==='error'?' error':'');
 }
 
-// ═══════════════════════════════════════
-// STATUS
-// ═══════════════════════════════════════
-function setStatus(text, mode='ok') {
-  document.getElementById('statusText').textContent = text;
-  const dot = document.getElementById('statusDot');
-  dot.className = 'dot' + (mode === 'loading' ? ' loading' : mode === 'error' ? ' error' : '');
+// ═══════════════════════════════
+// TAX CALCULATIONS
+// ═══════════════════════════════
+function calcTax(grossPnl){
+  if(grossPnl <= 0) return { gross:grossPnl, tax:0, net:grossPnl, taxable:0 };
+  // Compensazione perdite pregresse
+  const taxable = Math.max(0, grossPnl + state.lossCarryforward);
+  const tax = taxable * TAX_RATE;
+  return { gross:grossPnl, taxable, tax, net:grossPnl - tax };
 }
 
-// ═══════════════════════════════════════
-// GITHUB FETCH (GitHub API diretta — no cache)
-// ═══════════════════════════════════════
-async function syncData() {
+function getCommission(type, price, qty){
+  const rate = COMM[type] || 0;
+  return rate > 0 ? price * qty * rate : 0;
+}
+
+// Calcola P&L netto totale (posizioni aperte — latente, non tassato)
+function calcUnrealizedPnL(){
+  let gross = 0;
+  Object.entries(state.positions).forEach(([a,p])=>{
+    const curr = state.prices[a] || p.lastPrice || p.avgPrice;
+    gross += (curr - p.avgPrice) * p.qty;
+  });
+  return gross; // latente = non tassato finché non venduto
+}
+
+// P&L realizzato (già tassato nei singoli trade)
+function calcRealizedPnL(){
+  return state.transactions
+    .filter(t=>t.action==='SELL' && t.pnl!=null)
+    .reduce((s,t)=>s+(t.pnlNet||t.pnl),0);
+}
+
+// ═══════════════════════════════
+// GITHUB FETCH
+// ═══════════════════════════════
+async function syncData(){
   document.getElementById('syncBtn').disabled = true;
-  setStatus('Connessione GitHub...', 'loading');
-  try {
-    // Leggi lista file dalla GitHub API (no cache!)
-    const res = await fetch(GH_API, {
-      headers: { Accept: 'application/vnd.github+json' }
-    });
-    if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+  setStatus('Connessione GitHub...','loading');
+  try{
+    const res = await fetch(GH_API,{headers:{Accept:'application/vnd.github+json'}});
+    if(!res.ok) throw new Error(`GitHub API ${res.status}`);
     const files = await res.json();
     const jsonFiles = files
-      .filter(f => f.name.endsWith('.json') && f.name !== 'index.json')
-      .sort((a, b) => b.name.localeCompare(a.name));
+      .filter(f=>f.name.endsWith('.json') && f.name!=='index.json')
+      .sort((a,b)=>b.name.localeCompare(a.name));
+    if(!jsonFiles.length){ setStatus('Nessun file','error'); toast('Nessun file JSON in /logs','err'); return; }
 
-    if (!jsonFiles.length) {
-      setStatus('Nessun file trovato', 'error');
-      toast('Nessun file JSON in /logs', 'err');
-      return;
+    const newFiles = jsonFiles.filter(f=>!state.imported.includes(f.name));
+    if(!newFiles.length){
+      setStatus('Aggiornato '+new Date().toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'}),'ok');
+      toast('Tutto aggiornato — nessun file nuovo'); renderAll(); return;
     }
 
-    // Filtra file non ancora importati
-    const newFiles = jsonFiles.filter(f => !state.imported.includes(f.name));
-    if (!newFiles.length) {
-      setStatus('Tutto aggiornato', 'ok');
-      toast('Nessun file nuovo — tutto aggiornato');
-      renderAll();
-      return;
-    }
-
-    // Scarica file nuovi usando download_url (raw GitHub — no cache)
-    setStatus(`Scaricamento ${newFiles.length} file...`, 'loading');
-    let total = 0;
-    for (const f of newFiles) {
-      try {
+    setStatus(`Scaricamento ${newFiles.length} file...`,'loading');
+    let total=0;
+    for(const f of newFiles){
+      try{
         const r = await fetch(f.download_url);
-        if (!r.ok) continue;
+        if(!r.ok) continue;
         const data = await r.json();
         total += ingestSignals(data, f.name);
         state.imported.push(f.name);
-      } catch(e) { console.warn('Errore file', f.name, e); }
+      }catch(e){ console.warn('Errore',f.name,e); }
     }
-
     saveState();
-    const lastSync = new Date().toLocaleTimeString('it-IT', {hour:'2-digit',minute:'2-digit'});
-    setStatus(`Sync ${lastSync}`, 'ok');
-    if (total > 0) {
-      toast(`✓ ${total} segnali da ${newFiles.length} file`);
-      switchTab('signals');
-    } else {
-      toast(`${newFiles.length} file importati — nessun segnale BUY/SELL`);
-    }
+    setStatus('Sync '+new Date().toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'}),'ok');
+    if(total>0){ toast(`✓ ${total} segnali da ${newFiles.length} file`); switchTab('signals'); }
+    else toast(`${newFiles.length} file — nessun segnale BUY/SELL`);
     renderAll();
-  } catch(e) {
-    setStatus('Errore connessione', 'error');
-    toast('Errore: ' + e.message, 'err');
-  } finally {
-    document.getElementById('syncBtn').disabled = false;
+  }catch(e){
+    setStatus('Errore','error'); toast('Errore: '+e.message,'err');
+  }finally{
+    document.getElementById('syncBtn').disabled=false;
   }
 }
 
-// ═══════════════════════════════════════
-// INGEST SIGNALS
-// ═══════════════════════════════════════
-function ingestSignals(data, filename) {
-  const signals = data.signals || [];
-  let count = 0;
-  signals.forEach(s => {
-    if (s.price) state.prices[s.asset] = s.price;
-  });
-  const actionable = signals.filter(s => {
-    if (s.signal !== 'BUY' && s.signal !== 'SELL') return false;
-    // Validazione affidabilità
+function ingestSignals(data, filename){
+  const signals = data.signals||[];
+  let count=0;
+  signals.forEach(s=>{ if(s.price) state.prices[s.asset]=s.price; });
+  const actionable = signals.filter(s=>{
+    if(s.signal!=='BUY' && s.signal!=='SELL') return false;
     const aff = s.price_validation?.affidabilita;
-    if (aff === 'BASSA') return false;
-    if (!s.data_real && s.data_real !== undefined) return false;
+    if(aff==='BASSA') return false;
+    if(s.data_real===false) return false;
     return true;
   });
-  actionable.forEach(s => {
-    // Rimuovi segnali precedenti sullo stesso asset
-    state.pending = state.pending.filter(p => p.asset !== s.asset);
+  actionable.forEach(s=>{
+    state.pending = state.pending.filter(p=>p.asset!==s.asset);
     state.pending.push({
-      id: Date.now() + Math.random(),
-      asset: s.asset, type: s.type || 'stock',
-      signal: s.signal, price: s.price,
-      confidence: s.confidence, reasoning: s.reasoning,
-      stop_loss: s.stop_loss, target: s.target,
-      change_24h: s.change_24h, sourceFile: filename,
-      timestamp: data.timestamp || new Date().toISOString(),
-      validation: s.price_validation,
+      id: Date.now()+Math.random(),
+      asset:s.asset, type:s.type||'stock_usa',
+      signal:s.signal, price:s.price,
+      confidence:s.confidence, reasoning:s.reasoning,
+      stop_loss:s.stop_loss, target:s.target,
+      change_24h:s.change_24h, sourceFile:filename,
+      timestamp:data.timestamp||new Date().toISOString(),
+      validation:s.price_validation,
+      commissione: s.commissione||0,
     });
     count++;
   });
   return count;
 }
 
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // CAPITAL
-// ═══════════════════════════════════════
-function setCapital() {
+// ═══════════════════════════════
+function setCapital(){
   const v = parseFloat(document.getElementById('capInput').value);
-  if (isNaN(v) || v <= 0) { toast('Inserisci un importo valido', 'err'); return; }
-  state.capital = v;
-  state.available = v;
-  saveState();
-  showMain();
-  syncData();
+  if(isNaN(v)||v<=0){ toast('Importo non valido','err'); return; }
+  state.capital=v; state.available=v;
+  saveState(); showMain(); syncData();
 }
 
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // TRADING ACTIONS
-// ═══════════════════════════════════════
-function approve(sigId) {
-  const sig = state.pending.find(p => p.id === sigId);
-  if (!sig) return;
-  const qty = parseFloat(qtyInputs[sigId] || 0);
-  if (isNaN(qty) || qty <= 0) { toast('Inserisci una quantità valida', 'err'); return; }
-  const amount = sig.price * qty;
+// ═══════════════════════════════
+function approve(sigId){
+  const sig = state.pending.find(p=>p.id===sigId);
+  if(!sig) return;
+  const qty = parseFloat(qtyInputs[sigId]||0);
+  if(isNaN(qty)||qty<=0){ toast('Quantità non valida','err'); return; }
+  const commission = getCommission(sig.type, sig.price, qty);
+  const amount = sig.price*qty + commission;
 
-  if (sig.signal === 'BUY') {
-    if (amount > state.available) { toast('Capitale insufficiente', 'err'); return; }
+  if(sig.signal==='BUY'){
+    if(amount>state.available){ toast('Capitale insufficiente','err'); return; }
     state.available -= amount;
-    if (state.positions[sig.asset]) {
-      const old = state.positions[sig.asset];
-      const tq = old.qty + qty;
-      state.positions[sig.asset] = {
-        ...old, qty: tq,
-        avgPrice: (old.qty * old.avgPrice + qty * sig.price) / tq,
-        lastPrice: sig.price,
-      };
+    if(state.positions[sig.asset]){
+      const old=state.positions[sig.asset]; const tq=old.qty+qty;
+      state.positions[sig.asset]={...old,qty:tq,avgPrice:(old.qty*old.avgPrice+qty*sig.price)/tq,lastPrice:sig.price};
     } else {
-      state.positions[sig.asset] = {
-        qty, avgPrice: sig.price, lastPrice: sig.price,
-        type: sig.type, stop_loss: sig.stop_loss, target: sig.target,
-      };
+      state.positions[sig.asset]={qty,avgPrice:sig.price,lastPrice:sig.price,type:sig.type,stop_loss:sig.stop_loss,target:sig.target};
     }
     state.transactions.unshift({
-      id: Date.now(), date: new Date().toISOString(),
-      asset: sig.asset, action: 'BUY', price: sig.price,
-      qty, amount, confidence: sig.confidence,
+      id:Date.now(), date:new Date().toISOString(),
+      asset:sig.asset, action:'BUY', type:sig.type,
+      price:sig.price, qty, amount, commission,
+      confidence:sig.confidence,
     });
     toast(`✓ ACQUISTATO ${qty} ${sig.asset} @ ${fmt(sig.price)}`);
   } else {
-    const pos = state.positions[sig.asset];
-    if (!pos || pos.qty < qty) { toast('Quantità non disponibile', 'err'); return; }
-    const proceeds = sig.price * qty;
-    const pnlTx = (sig.price - pos.avgPrice) * qty;
-    state.available += proceeds;
-    if (pos.qty - qty < 0.00001) delete state.positions[sig.asset];
-    else state.positions[sig.asset] = { ...pos, qty: pos.qty - qty, lastPrice: sig.price };
+    const pos=state.positions[sig.asset];
+    if(!pos||pos.qty<qty){ toast('Quantità non disponibile','err'); return; }
+    const proceeds = sig.price*qty - commission;
+    const grossPnl = (sig.price - pos.avgPrice)*qty - commission;
+    const taxCalc = calcTax(grossPnl);
+
+    // Aggiorna loss carryforward
+    if(grossPnl < 0) state.lossCarryforward += grossPnl;
+    else state.lossCarryforward = Math.min(0, state.lossCarryforward + grossPnl);
+
+    state.available += proceeds - taxCalc.tax;
+    if(pos.qty-qty<0.00001) delete state.positions[sig.asset];
+    else state.positions[sig.asset]={...pos,qty:pos.qty-qty,lastPrice:sig.price};
+
     state.transactions.unshift({
-      id: Date.now(), date: new Date().toISOString(),
-      asset: sig.asset, action: 'SELL', price: sig.price,
-      qty, amount: proceeds, pnl: pnlTx, confidence: sig.confidence,
+      id:Date.now(), date:new Date().toISOString(),
+      asset:sig.asset, action:'SELL', type:sig.type,
+      price:sig.price, qty, amount:proceeds, commission,
+      pnlGross:grossPnl, tax:taxCalc.tax,
+      pnlNet:taxCalc.net, pnl:taxCalc.net,
+      confidence:sig.confidence,
     });
-    toast(`✓ VENDUTO ${qty} ${sig.asset} | P&L: ${fmt(pnlTx)}`);
+    toast(`✓ VENDUTO ${qty} ${sig.asset} | P&L netto: ${fmt(taxCalc.net)}`);
   }
 
-  // Aggiorna history
-  state.history.push({ date: new Date().toLocaleDateString('it-IT'), value: portfolioValue() });
-  state.pending = state.pending.filter(p => p.id !== sigId);
-  saveState();
-  renderAll();
+  state.history.push({date:new Date().toLocaleDateString('it-IT'), value:portfolioValue()});
+  state.pending = state.pending.filter(p=>p.id!==sigId);
+  saveState(); renderAll();
 }
 
-function reject(sigId) {
-  const sig = state.pending.find(p => p.id === sigId);
-  if (!sig) return;
-  state.pending = state.pending.filter(p => p.id !== sigId);
-  saveState();
-  toast(`Segnale ${sig.asset} rifiutato`);
-  renderAll();
+function reject(sigId){
+  const sig=state.pending.find(p=>p.id===sigId);
+  if(!sig) return;
+  state.pending=state.pending.filter(p=>p.id!==sigId);
+  saveState(); toast(`Segnale ${sig.asset} rifiutato`); renderAll();
 }
 
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // CALCULATIONS
-// ═══════════════════════════════════════
-function portfolioValue() {
-  let t = state.available;
-  Object.entries(state.positions).forEach(([a, p]) => {
-    t += p.qty * (state.prices[a] || p.lastPrice || p.avgPrice);
+// ═══════════════════════════════
+function portfolioValue(){
+  let t=state.available;
+  Object.entries(state.positions).forEach(([a,p])=>{
+    t+=p.qty*(state.prices[a]||p.lastPrice||p.avgPrice);
   });
   return t;
 }
 
-function fmt(n) {
-  return new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 }).format(n);
-}
-function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(2) + '%'; }
-function fmtQty(n) { return new Intl.NumberFormat('it-IT', { minimumFractionDigits: 2, maximumFractionDigits: 6 }).format(n); }
-function colorClass(n) { return n >= 0 ? 'green' : 'red'; }
+const fmt = n => new Intl.NumberFormat('it-IT',{style:'currency',currency:'EUR',minimumFractionDigits:2}).format(n);
+const fmtPct = n => (n>=0?'+':'')+n.toFixed(2)+'%';
+const fmtQty = n => new Intl.NumberFormat('it-IT',{minimumFractionDigits:2,maximumFractionDigits:6}).format(n);
+const cc = n => n>=0?'green':'red';
 
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // RENDER
-// ═══════════════════════════════════════
-function renderAll() {
+// ═══════════════════════════════
+function renderAll(){
   renderMetrics();
+  renderTaxSummary();
   renderChart();
   renderOpenPositions();
   renderSignals();
   renderPortfolio();
   renderHistory();
-  renderPerformance();
-  renderInfo();
   updatePendingBadge();
 }
 
-function renderMetrics() {
-  const pv = portfolioValue();
-  const pnl = state.capital ? pv - state.capital : 0;
-  const pnlPct = state.capital ? (pnl / state.capital) * 100 : 0;
-  const metrics = [
-    { label: 'Capitale iniziale', value: fmt(state.capital || 0), cls: 'muted' },
-    { label: 'Liquidità', value: fmt(state.available), cls: 'blue' },
-    { label: 'Valore totale', value: fmt(pv), cls: '' },
-    { label: 'P&L totale', value: fmt(pnl), sub: fmtPct(pnlPct), cls: colorClass(pnl) },
-  ];
-  document.getElementById('metricsGrid').innerHTML = metrics.map(m => `
+function renderMetrics(){
+  const pv=portfolioValue();
+  const pnlGross = pv - state.capital;
+  const unrealized = calcUnrealizedPnL();
+  const realized = calcRealizedPnL();
+  const pnlPct = state.capital?(pnlGross/state.capital)*100:0;
+
+  document.getElementById('metricsGrid').innerHTML=[
+    {l:'Capitale iniziale', v:fmt(state.capital), c:'muted'},
+    {l:'Liquidità',         v:fmt(state.available), c:'blue'},
+    {l:'Valore totale',     v:fmt(pv), c:''},
+    {l:'P&L lordo',         v:fmt(pnlGross), s:fmtPct(pnlPct), c:cc(pnlGross)},
+    {l:'P&L realizzato netto', v:fmt(realized), c:cc(realized)},
+    {l:'P&L latente',       v:fmt(unrealized), s:'(non tassato)', c:cc(unrealized)},
+  ].map(m=>`
     <div class="metric">
-      <div class="metric-label">${m.label}</div>
-      <div class="metric-value ${m.cls}">${m.value}</div>
-      ${m.sub ? `<div class="metric-sub ${m.cls}">${m.sub}</div>` : ''}
-    </div>
-  `).join('');
+      <div class="metric-label">${m.l}</div>
+      <div class="metric-value ${m.c}">${m.v}</div>
+      ${m.s?`<div class="metric-sub ${m.c}">${m.s}</div>`:''}
+    </div>`).join('');
 
-  const hasData = Object.keys(state.positions).length > 0 || state.history.length > 0;
-  document.getElementById('dashboardEmpty').style.display = hasData ? 'none' : 'block';
+  const hasData = Object.keys(state.positions).length>0||state.history.length>0;
+  document.getElementById('dashboardEmpty').style.display=hasData?'none':'block';
 }
 
-function renderChart() {
-  const chartData = [
-    ...(state.capital ? [{ date: 'Inizio', value: state.capital }] : []),
-    ...state.history
-  ];
-  if (chartData.length < 2) { document.getElementById('chartSection').style.display = 'none'; return; }
-  document.getElementById('chartSection').style.display = 'block';
-  const svg = document.getElementById('chartSvg');
-  const W = svg.clientWidth || 600, H = 140;
-  const vals = chartData.map(d => d.value);
-  const minV = Math.min(...vals) * 0.995, maxV = Math.max(...vals) * 1.005;
-  const x = (i) => (i / (chartData.length - 1)) * W;
-  const y = (v) => H - ((v - minV) / (maxV - minV)) * H;
-  const pts = chartData.map((d, i) => `${x(i)},${y(d.value)}`).join(' ');
-  const areaBottom = `${x(chartData.length-1)},${H} ${x(0)},${H}`;
-  const capY = y(state.capital);
-  svg.innerHTML = `
-    <defs>
-      <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#3fb950" stop-opacity=".3"/>
-        <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
-      </linearGradient>
-    </defs>
+function renderTaxSummary(){
+  const sells = state.transactions.filter(t=>t.action==='SELL'&&t.pnlGross!=null);
+  if(!sells.length){ document.getElementById('taxSummary').innerHTML=''; return; }
+  const totalGross = sells.reduce((s,t)=>s+(t.pnlGross||0),0);
+  const totalTax   = sells.reduce((s,t)=>s+(t.tax||0),0);
+  const totalNet   = sells.reduce((s,t)=>s+(t.pnlNet||0),0);
+  const totalComm  = state.transactions.reduce((s,t)=>s+(t.commission||0),0);
+
+  document.getElementById('taxSummary').innerHTML=`
+    <div class="tax-box">
+      <div class="tax-box-title">Riepilogo fiscale — Regime dichiarativo Italia</div>
+      <div class="tax-row">
+        <span class="tax-row-label">P&L lordo realizzato</span>
+        <span class="tax-row-value ${cc(totalGross)}">${fmt(totalGross)}</span>
+      </div>
+      <div class="tax-row">
+        <span class="tax-row-label">Commissioni totali (Alpaca)</span>
+        <span class="tax-row-value muted">${fmt(totalComm)} <small style="color:var(--green)">0% ✓</small></span>
+      </div>
+      <div class="tax-row">
+        <span class="tax-row-label">Imposta plusvalenze (26%)</span>
+        <span class="tax-row-value red">- ${fmt(totalTax)}</span>
+      </div>
+      ${state.lossCarryforward<0?`
+      <div class="tax-row">
+        <span class="tax-row-label">Perdite compensabili</span>
+        <span class="tax-row-value orange">${fmt(state.lossCarryforward)}</span>
+      </div>`:''}
+      <div class="tax-row" style="border-top:1px solid var(--border2);padding-top:8px;margin-top:4px">
+        <span class="tax-row-label" style="font-weight:600;color:var(--text)">P&L netto dopo tasse</span>
+        <span class="tax-row-value ${cc(totalNet)}" style="font-size:15px;font-weight:600">${fmt(totalNet)}</span>
+      </div>
+      <div class="tax-row">
+        <span class="tax-row-label" style="font-size:10px">Rendimento netto %</span>
+        <span class="tax-row-value ${cc(totalNet)}" style="font-size:11px">
+          ${state.capital?fmtPct((totalNet/state.capital)*100):'—'}
+        </span>
+      </div>
+    </div>`;
+}
+
+function renderChart(){
+  const chartData=[...(state.capital?[{date:'Inizio',value:state.capital}]:[]),...state.history];
+  if(chartData.length<2){ document.getElementById('chartSection').style.display='none'; return; }
+  document.getElementById('chartSection').style.display='block';
+  const svg=document.getElementById('chartSvg');
+  const W=svg.clientWidth||600, H=130;
+  const vals=chartData.map(d=>d.value);
+  const minV=Math.min(...vals)*.995, maxV=Math.max(...vals)*1.005;
+  const x=i=>(i/(chartData.length-1))*W;
+  const y=v=>H-((v-minV)/(maxV-minV))*H;
+  const pts=chartData.map((d,i)=>`${x(i)},${y(d.value)}`).join(' ');
+  const areaBottom=`${x(chartData.length-1)},${H} ${x(0)},${H}`;
+  const capY=y(state.capital);
+  svg.innerHTML=`
+    <defs><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3fb950" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+    </linearGradient></defs>
     <line x1="0" y1="${capY}" x2="${W}" y2="${capY}" stroke="#30363d" stroke-dasharray="4,4" stroke-width="1"/>
-    <polygon points="${pts} ${areaBottom}" fill="url(#grad)"/>
+    <polygon points="${pts} ${areaBottom}" fill="url(#gr)"/>
     <polyline points="${pts}" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round"/>
-    ${chartData.map((d, i) => `<circle cx="${x(i)}" cy="${y(d.value)}" r="3" fill="#3fb950"/>`).join('')}
-  `;
+    ${chartData.map((d,i)=>`<circle cx="${x(i)}" cy="${y(d.value)}" r="3" fill="#3fb950"/>`).join('')}`;
 }
 
-function renderOpenPositions() {
-  const posEntries = Object.entries(state.positions);
-  const section = document.getElementById('openPositionsSection');
-  if (!posEntries.length) { section.style.display = 'none'; return; }
-  section.style.display = 'block';
-  document.getElementById('openPositionsList').innerHTML = posEntries.map(([asset, p]) => {
-    const curr = state.prices[asset] || p.lastPrice || p.avgPrice;
-    const pnl = (curr - p.avgPrice) * p.qty;
-    const pct = ((curr - p.avgPrice) / p.avgPrice) * 100;
+function renderOpenPositions(){
+  const entries=Object.entries(state.positions);
+  const sec=document.getElementById('openPositionsSection');
+  if(!entries.length){ sec.style.display='none'; return; }
+  sec.style.display='block';
+  document.getElementById('openPositionsList').innerHTML=entries.map(([asset,p])=>{
+    const curr=state.prices[asset]||p.lastPrice||p.avgPrice;
+    const gross=(curr-p.avgPrice)*p.qty;
+    const pct=((curr-p.avgPrice)/p.avgPrice)*100;
+    const taxEst=gross>0?gross*TAX_RATE:0;
+    const netEst=gross-taxEst;
     return `
-      <div class="pos-row">
-        <div class="pos-asset">
-          <div class="pos-asset-name">${asset}</div>
-          <div class="pos-asset-type">${p.type}</div>
+    <div class="pos-row">
+      <div class="pos-asset">
+        <div class="pos-asset-name">${asset}</div>
+        <div class="pos-asset-type">${TYPE_LABELS[p.type]||p.type}</div>
+      </div>
+      <div class="pos-col"><div class="pos-col-label">Qtà</div><div class="pos-col-value">${fmtQty(p.qty)}</div></div>
+      <div class="pos-col"><div class="pos-col-label">Prezzo medio</div><div class="pos-col-value">${fmt(p.avgPrice)}</div></div>
+      <div class="pos-col"><div class="pos-col-label">Prezzo attuale</div><div class="pos-col-value">${fmt(curr)}</div></div>
+      <div class="pos-col">
+        <div class="pos-col-label">P&L lordo</div>
+        <div class="pos-col-value ${cc(gross)}">${fmt(gross)} (${fmtPct(pct)})</div>
+      </div>
+      <div class="pos-col">
+        <div class="pos-col-label">P&L netto est.</div>
+        <div class="pos-col-value ${cc(netEst)}" style="font-size:11px">
+          ${fmt(netEst)}
+          ${gross>0?`<div style="color:var(--red);font-size:10px">- ${fmt(taxEst)} tasse</div>`:''}
         </div>
-        <div class="pos-col"><div class="pos-col-label">Qtà</div><div class="pos-col-value">${fmtQty(p.qty)}</div></div>
-        <div class="pos-col"><div class="pos-col-label">Prezzo medio</div><div class="pos-col-value">${fmt(p.avgPrice)}</div></div>
-        <div class="pos-col"><div class="pos-col-label">Ultimo prezzo</div><div class="pos-col-value">${fmt(curr)}</div></div>
-        <div class="pos-col"><div class="pos-col-label">P&L</div>
-          <div class="pos-col-value ${colorClass(pnl)}">${fmt(pnl)} <small>(${fmtPct(pct)})</small></div>
-        </div>
-      </div>`;
+      </div>
+    </div>`;
   }).join('');
 }
 
-function renderSignals() {
-  const list = document.getElementById('signalsList');
-  const empty = document.getElementById('signalsEmpty');
-  document.getElementById('pendingCount').textContent = `${state.pending.length} segnali in attesa`;
-  if (!state.pending.length) { list.innerHTML = ''; empty.style.display = 'block'; return; }
-  empty.style.display = 'none';
-  list.innerHTML = state.pending.map(sig => {
-    const aff = sig.validation?.affidabilita || '';
-    const sources = sig.validation?.sources || [];
-    const spread = sig.validation?.spread_pct;
-    const maxSell = state.positions[sig.asset]?.qty || 0;
+function renderSignals(){
+  const list=document.getElementById('signalsList');
+  const empty=document.getElementById('signalsEmpty');
+  document.getElementById('pendingCount').textContent=`${state.pending.length} segnali in attesa`;
+  if(!state.pending.length){ list.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display='none';
+  list.innerHTML=state.pending.map(sig=>{
+    const aff=sig.validation?.affidabilita||'';
+    const sources=sig.validation?.sources||[];
+    const spread=sig.validation?.spread_pct;
+    const maxSell=state.positions[sig.asset]?.qty||0;
+    const typeLabel=TYPE_LABELS[sig.type]||sig.type||'';
     return `
     <div class="signal-card ${sig.signal}">
       <div class="signal-header">
         <div class="signal-left">
           <span class="asset-name">${sig.asset}</span>
           <span class="badge badge-${sig.signal}">${sig.signal}</span>
-          ${sig.confidence ? `<span class="badge badge-${sig.confidence}">${sig.confidence}</span>` : ''}
-          ${aff ? `<span class="badge badge-${aff}" title="Affidabilità dati">⚡ ${aff}</span>` : ''}
+          <span class="badge badge-${sig.type}" style="font-size:10px">${typeLabel}</span>
+          ${sig.confidence?`<span class="badge badge-${sig.confidence}">${sig.confidence}</span>`:''}
+          ${aff?`<span class="badge badge-${aff}">⚡ ${aff}</span>`:''}
         </div>
-        <div>
+        <div style="text-align:right">
           <div class="signal-price">${fmt(sig.price)}</div>
-          ${sig.change_24h ? `<div style="font-family:var(--mono);font-size:11px;text-align:right;color:${sig.change_24h.startsWith('+')?'var(--green)':'var(--red)'}">${sig.change_24h}</div>` : ''}
+          ${sig.change_24h?`<div style="font-family:var(--mono);font-size:11px;color:${sig.change_24h.startsWith('+')?'var(--green)':'var(--red)'}">${sig.change_24h}</div>`:''}
         </div>
       </div>
-      <div class="signal-reasoning">${sig.reasoning || ''}</div>
-      ${sources.length ? `
+      <div class="signal-reasoning">${sig.reasoning||''}</div>
+      ${sources.length?`
         <div class="validation-block">
           <div class="validation-title">Triangolazione prezzi</div>
           <div class="validation-sources">
-            ${sources.map(s => `<div class="vsource"><span class="vname">${s.name}: </span><span class="vprice">${fmt(s.price)}</span></div>`).join('')}
+            ${sources.map(s=>`<div class="vsource"><span class="vname">${s.name}: </span><span>${fmt(s.price)}</span></div>`).join('')}
           </div>
-          ${spread !== undefined ? `<div class="validation-spread ${spread < 1 ? 'green' : spread < 3 ? 'yellow' : 'red'}">Scarto: ${spread.toFixed(2)}%</div>` : ''}
-        </div>` : ''}
+          ${spread!=null?`<div style="font-family:var(--mono);font-size:11px;margin-top:4px" class="${spread<1?'green':spread<3?'yellow':'red'}">Scarto: ${spread.toFixed(2)}%</div>`:''}
+        </div>`:''}
       <div class="signal-meta">
-        ${sig.stop_loss ? `<div class="signal-meta-item"><span>Stop loss: </span><span style="color:var(--red);font-family:var(--mono)">${fmt(sig.stop_loss)}</span></div>` : ''}
-        ${sig.target ? `<div class="signal-meta-item"><span>Target: </span><span style="color:var(--green);font-family:var(--mono)">${fmt(sig.target)}</span></div>` : ''}
-        ${sig.sourceFile ? `<div class="signal-meta-item" style="color:var(--muted);font-size:11px">📄 ${sig.sourceFile}</div>` : ''}
+        ${sig.stop_loss?`<div class="signal-meta-item"><span>Stop: </span><span style="color:var(--red);font-family:var(--mono)">${fmt(sig.stop_loss)}</span></div>`:''}
+        ${sig.target?`<div class="signal-meta-item"><span>Target: </span><span style="color:var(--green);font-family:var(--mono)">${fmt(sig.target)}</span></div>`:''}
+        <div class="signal-meta-item"><span>Commissione: </span><span style="color:var(--green);font-family:var(--mono)">0% Alpaca</span></div>
+        ${sig.sourceFile?`<div class="signal-meta-item" style="color:var(--muted);font-size:11px">📄 ${sig.sourceFile}</div>`:''}
       </div>
+      <div id="preview-${sig.id}" style="display:none"></div>
       <div class="signal-action">
         <input type="number" min="0" step="${sig.type==='crypto'?'0.001':'1'}"
-          placeholder="${sig.signal==='SELL' ? 'Max '+fmtQty(maxSell) : 'Quantità'}"
-          oninput="qtyInputs['${sig.id}']=this.value"
+          placeholder="${sig.signal==='SELL'?'Max '+fmtQty(maxSell):'Quantità'}"
+          oninput="qtyInputs['${sig.id}']=this.value; previewTax('${sig.id}','${sig.signal}',${sig.price},'${sig.type||'stock_usa'}')"
           style="width:130px;background:var(--bg);border:1px solid var(--border2);border-radius:6px;padding:7px 10px;color:var(--text);font-family:var(--mono);font-size:13px;outline:none">
         <button class="btn btn-green btn-sm" onclick="approve(${sig.id})">✓ Autorizza</button>
         <button class="btn btn-sm" onclick="reject(${sig.id})">✕ Rifiuta</button>
@@ -684,81 +731,116 @@ function renderSignals() {
   }).join('');
 }
 
-function renderPortfolio() {
-  const entries = Object.entries(state.positions);
-  const empty = document.getElementById('portfolioEmpty');
-  const list = document.getElementById('portfolioList');
-  const totals = document.getElementById('portfolioTotals');
-  if (!entries.length) {
-    empty.style.display = 'block';
-    list.innerHTML = '';
-    totals.innerHTML = '';
-    return;
+function previewTax(sigId, signal, price, type){
+  const qty=parseFloat(qtyInputs[sigId]||0);
+  const el=document.getElementById(`preview-${sigId}`);
+  if(!el) return;
+  if(isNaN(qty)||qty<=0){ el.style.display='none'; return; }
+  const amount=price*qty;
+  const comm=getCommission(type,price,qty);
+
+  if(signal==='BUY'){
+    el.style.display='block';
+    el.innerHTML=`<div class="pnl-breakdown">
+      <div class="pnl-row"><span class="muted">Importo acquisto</span><span>${fmt(amount)}</span></div>
+      <div class="pnl-row"><span class="muted">Commissione</span><span class="green">${fmt(comm)} (0%)</span></div>
+      <div class="pnl-row"><span class="muted">Totale da pagare</span><span style="font-weight:600">${fmt(amount+comm)}</span></div>
+      <div class="pnl-row"><span class="muted">Liquidità dopo</span><span class="${state.available-(amount+comm)<0?'red':'blue'}">${fmt(state.available-(amount+comm))}</span></div>
+    </div>`;
+  } else {
+    const pos=state.positions[signal]==='SELL'?state.positions:state.positions;
+    const avgPrice=state.positions[Object.keys(qtyInputs).find(k=>k==sigId)]?.avgPrice||price;
+    const grossPnl=(price-avgPrice)*qty-comm;
+    const taxCalc=calcTax(grossPnl);
+    el.style.display='block';
+    el.innerHTML=`<div class="pnl-breakdown">
+      <div class="pnl-row"><span class="muted">Ricavo vendita</span><span>${fmt(price*qty)}</span></div>
+      <div class="pnl-row"><span class="muted">Commissione</span><span class="green">${fmt(comm)} (0%)</span></div>
+      <div class="pnl-divider"></div>
+      <div class="pnl-row"><span class="muted">P&L lordo</span><span class="${cc(grossPnl)}">${fmt(grossPnl)}</span></div>
+      <div class="pnl-row"><span class="muted">Imposta 26%</span><span class="red">- ${fmt(taxCalc.tax)}</span></div>
+      <div class="pnl-row" style="font-weight:600"><span>P&L netto</span><span class="${cc(taxCalc.net)}">${fmt(taxCalc.net)}</span></div>
+    </div>`;
   }
-  empty.style.display = 'none';
-  list.innerHTML = entries.map(([asset, p]) => {
-    const curr = state.prices[asset] || p.lastPrice || p.avgPrice;
-    const pnl = (curr - p.avgPrice) * p.qty;
-    const pct = ((curr - p.avgPrice) / p.avgPrice) * 100;
+}
+
+function renderPortfolio(){
+  const entries=Object.entries(state.positions);
+  document.getElementById('portfolioEmpty').style.display=entries.length?'none':'block';
+  document.getElementById('portfolioList').innerHTML=entries.map(([asset,p])=>{
+    const curr=state.prices[asset]||p.lastPrice||p.avgPrice;
+    const gross=(curr-p.avgPrice)*p.qty;
+    const pct=((curr-p.avgPrice)/p.avgPrice)*100;
+    const taxEst=gross>0?gross*TAX_RATE:0;
+    const netEst=gross-taxEst;
     return `
     <div class="pos-row">
       <div class="pos-asset">
         <div class="pos-asset-name">${asset}</div>
-        <div class="pos-asset-type">${p.type}</div>
+        <div class="pos-asset-type">${TYPE_LABELS[p.type]||p.type}</div>
       </div>
       <div class="pos-col"><div class="pos-col-label">Quantità</div><div class="pos-col-value">${fmtQty(p.qty)}</div></div>
       <div class="pos-col"><div class="pos-col-label">Prezzo medio</div><div class="pos-col-value">${fmt(p.avgPrice)}</div></div>
       <div class="pos-col"><div class="pos-col-label">Valore</div><div class="pos-col-value">${fmt(p.qty*curr)}</div></div>
-      <div class="pos-col"><div class="pos-col-label">P&L</div>
-        <div class="pos-col-value ${colorClass(pnl)}">${fmt(pnl)} <small>(${fmtPct(pct)})</small></div>
+      <div class="pos-col">
+        <div class="pos-col-label">P&L lordo</div>
+        <div class="pos-col-value ${cc(gross)}">${fmt(gross)} <small>(${fmtPct(pct)})</small></div>
       </div>
-      ${p.stop_loss ? `<div class="pos-col">
+      <div class="pos-col">
+        <div class="pos-col-label">P&L netto est.</div>
+        <div class="pos-col-value ${cc(netEst)}" style="font-size:11px">${fmt(netEst)}
+          ${gross>0?`<div class="red" style="font-size:10px">- ${fmt(taxEst)} tax</div>`:''}
+        </div>
+      </div>
+      ${p.stop_loss?`<div class="pos-col">
         <div class="pos-col-label">Stop / Target</div>
         <div class="pos-col-value" style="font-size:11px">
-          <span style="color:var(--red)">${fmt(p.stop_loss)}</span>
-          ${p.target ? ` / <span style="color:var(--green)">${fmt(p.target)}</span>` : ''}
+          <span class="red">${fmt(p.stop_loss)}</span>
+          ${p.target?` / <span class="green">${fmt(p.target)}</span>`:''}
         </div>
-      </div>` : ''}
+      </div>`:''}
     </div>`;
   }).join('');
-  totals.innerHTML = `
-    <div class="card" style="margin-top:8px">
+
+  document.getElementById('portfolioTotals').innerHTML=entries.length?`
+    <div class="card">
       <div style="display:flex;justify-content:space-between;margin-bottom:8px">
-        <span style="color:var(--muted);font-size:13px">Liquidità disponibile</span>
+        <span class="muted" style="font-size:13px">Liquidità disponibile</span>
         <span style="font-family:var(--mono);color:var(--blue)">${fmt(state.available)}</span>
       </div>
-      <div style="display:flex;justify-content:space-between;padding-top:10px;border-top:1px solid var(--border)">
+      <div style="display:flex;justify-content:space-between;padding-top:8px;border-top:1px solid var(--border)">
         <span style="font-weight:500">Valore totale portafoglio</span>
         <span style="font-family:var(--mono);font-weight:600">${fmt(portfolioValue())}</span>
       </div>
-    </div>`;
+    </div>`:'';
 }
 
-function renderHistory() {
-  const empty = document.getElementById('historyEmpty');
-  const table = document.getElementById('historyTable');
-  if (!state.transactions.length) {
-    empty.style.display = 'block'; table.innerHTML = ''; return;
-  }
-  empty.style.display = 'none';
-  table.innerHTML = `
+function renderHistory(){
+  const empty=document.getElementById('historyEmpty');
+  const table=document.getElementById('historyTable');
+  if(!state.transactions.length){ empty.style.display='block'; table.innerHTML=''; return; }
+  empty.style.display='none';
+  table.innerHTML=`
     <div class="card table-wrap">
       <table>
         <thead><tr>
-          <th>Data</th><th>Asset</th><th>Op.</th>
+          <th>Data</th><th>Asset</th><th>Op.</th><th>Tipo</th>
           <th>Prezzo</th><th>Qtà</th><th>Importo</th>
-          <th>P&L</th><th>Conf.</th>
+          <th>P&L lordo</th><th>Tasse</th><th>P&L netto</th><th>Conf.</th>
         </tr></thead>
         <tbody>
-          ${state.transactions.map(tx => `
+          ${state.transactions.map(tx=>`
           <tr>
-            <td style="color:var(--muted)">${new Date(tx.date).toLocaleDateString('it-IT',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}</td>
+            <td class="muted">${new Date(tx.date).toLocaleDateString('it-IT',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}</td>
             <td style="font-weight:600">${tx.asset}</td>
             <td><span class="badge badge-${tx.action}">${tx.action}</span></td>
+            <td style="font-size:10px;color:var(--muted)">${TYPE_LABELS[tx.type]||''}</td>
             <td>${fmt(tx.price)}</td>
             <td>${fmtQty(tx.qty)}</td>
             <td>${fmt(tx.amount)}</td>
-            <td class="${tx.pnl!=null?colorClass(tx.pnl):'muted'}">${tx.pnl!=null?fmt(tx.pnl):'—'}</td>
+            <td class="${tx.pnlGross!=null?cc(tx.pnlGross):'muted'}">${tx.pnlGross!=null?fmt(tx.pnlGross):'—'}</td>
+            <td class="red">${tx.tax?'- '+fmt(tx.tax):'—'}</td>
+            <td class="${tx.pnlNet!=null?cc(tx.pnlNet):'muted'}" style="font-weight:${tx.pnlNet!=null?600:400}">${tx.pnlNet!=null?fmt(tx.pnlNet):'—'}</td>
             <td>${tx.confidence?`<span class="badge badge-${tx.confidence}">${tx.confidence}</span>`:''}</td>
           </tr>`).join('')}
         </tbody>
@@ -766,149 +848,154 @@ function renderHistory() {
     </div>`;
 }
 
-function renderPerformance() {
-  const el = document.getElementById('perfContent');
-  const pv = portfolioValue();
-  const pnl = state.capital ? pv - state.capital : 0;
-  const pnlPct = state.capital ? (pnl / state.capital) * 100 : 0;
-  const sells = state.transactions.filter(t => t.action === 'SELL' && t.pnl != null);
-  const wins = sells.filter(t => t.pnl > 0);
-  const winRate = sells.length ? (wins.length / sells.length * 100) : 0;
-  const totalRealized = sells.reduce((s, t) => s + t.pnl, 0);
-  const avgWin = wins.length ? wins.reduce((s, t) => s + t.pnl, 0) / wins.length : 0;
-  const losses = sells.filter(t => t.pnl < 0);
-  const avgLoss = losses.length ? losses.reduce((s, t) => s + t.pnl, 0) / losses.length : 0;
-  el.innerHTML = `
+function renderPerformance(){
+  const el=document.getElementById('perfContent');
+  const pv=portfolioValue();
+  const pnlGross=pv-state.capital;
+  const sells=state.transactions.filter(t=>t.action==='SELL'&&t.pnlNet!=null);
+  const wins=sells.filter(t=>t.pnlNet>0);
+  const winRate=sells.length?(wins.length/sells.length*100):0;
+  const totalGross=sells.reduce((s,t)=>s+(t.pnlGross||0),0);
+  const totalTax=sells.reduce((s,t)=>s+(t.tax||0),0);
+  const totalNet=sells.reduce((s,t)=>s+(t.pnlNet||0),0);
+  const totalComm=state.transactions.reduce((s,t)=>s+(t.commission||0),0);
+
+  // Per categoria
+  const byCat={};
+  sells.forEach(t=>{
+    const cat=t.type||'stock_usa';
+    if(!byCat[cat]) byCat[cat]={gross:0,net:0,count:0,wins:0};
+    byCat[cat].gross+=t.pnlGross||0;
+    byCat[cat].net+=t.pnlNet||0;
+    byCat[cat].count++;
+    if(t.pnlNet>0) byCat[cat].wins++;
+  });
+
+  el.innerHTML=`
     <div class="perf-grid">
-      <div class="perf-card">
-        <div class="perf-value ${colorClass(pnlPct)}">${fmtPct(pnlPct)}</div>
-        <div class="perf-label">Rendimento totale</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-value ${colorClass(pnl)}">${fmt(pnl)}</div>
-        <div class="perf-label">P&L totale</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-value ${winRate>=50?'green':'red'}">${sells.length ? winRate.toFixed(0)+'%' : '—'}</div>
-        <div class="perf-label">Win rate</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-value">${sells.length}</div>
-        <div class="perf-label">Trade chiusi</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-value green">${avgWin ? fmt(avgWin) : '—'}</div>
-        <div class="perf-label">Guadagno medio</div>
-      </div>
-      <div class="perf-card">
-        <div class="perf-value red">${avgLoss ? fmt(avgLoss) : '—'}</div>
-        <div class="perf-label">Perdita media</div>
-      </div>
+      ${[
+        {l:'Rendimento lordo', v:fmtPct(state.capital?(pnlGross/state.capital)*100:0), c:cc(pnlGross)},
+        {l:'Rendimento netto', v:fmtPct(state.capital?(totalNet/state.capital)*100:0), c:cc(totalNet)},
+        {l:'Win rate',         v:sells.length?winRate.toFixed(0)+'%':'—', c:winRate>=50?'green':'red'},
+        {l:'Trade chiusi',     v:sells.length, c:''},
+        {l:'P&L lordo',        v:fmt(totalGross), c:cc(totalGross)},
+        {l:'Tasse pagate',     v:fmt(totalTax), c:'red'},
+        {l:'P&L netto',        v:fmt(totalNet), c:cc(totalNet)},
+        {l:'Commissioni',      v:fmt(totalComm)+' (0%)', c:'green'},
+      ].map(m=>`<div class="perf-card"><div class="perf-value ${m.c}">${m.v}</div><div class="perf-label">${m.l}</div></div>`).join('')}
     </div>
-    <div class="card">
-      <div class="card-title">P&L realizzato per asset</div>
-      ${(() => {
-        const byAsset = {};
-        sells.forEach(t => {
-          if (!byAsset[t.asset]) byAsset[t.asset] = { total: 0, count: 0 };
-          byAsset[t.asset].total += t.pnl;
-          byAsset[t.asset].count++;
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title">Performance per categoria</div>
+      ${Object.keys(byCat).length?`
+        <table>
+          <thead><tr><th>Categoria</th><th>Trade</th><th>Win%</th><th>P&L lordo</th><th>Tasse</th><th>P&L netto</th></tr></thead>
+          <tbody>
+            ${Object.entries(byCat).map(([cat,v])=>`
+            <tr>
+              <td>${TYPE_LABELS[cat]||cat}</td>
+              <td>${v.count}</td>
+              <td class="${v.count?(v.wins/v.count*100)>=50?'green':'red':''}">${v.count?(v.wins/v.count*100).toFixed(0)+'%':'—'}</td>
+              <td class="${cc(v.gross)}">${fmt(v.gross)}</td>
+              <td class="red">- ${fmt(v.gross>0?v.gross*TAX_RATE:0)}</td>
+              <td class="${cc(v.net)}" style="font-weight:600">${fmt(v.net)}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>`:'<div class="empty" style="padding:16px 0"><p>Nessun trade chiuso ancora</p></div>'}
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title">P&L per asset</div>
+      ${(()=>{
+        const byA={};
+        sells.forEach(t=>{
+          if(!byA[t.asset]) byA[t.asset]={gross:0,net:0,tax:0,count:0};
+          byA[t.asset].gross+=t.pnlGross||0; byA[t.asset].net+=t.pnlNet||0;
+          byA[t.asset].tax+=t.tax||0; byA[t.asset].count++;
         });
-        const entries = Object.entries(byAsset).sort((a,b)=>b[1].total-a[1].total);
-        if (!entries.length) return '<div class="empty" style="padding:20px 0"><p>Nessun trade chiuso ancora</p></div>';
-        return `<table><thead><tr><th>Asset</th><th>Trade</th><th>P&L realizzato</th></tr></thead><tbody>
-          ${entries.map(([a,v])=>`<tr><td style="font-weight:600">${a}</td><td>${v.count}</td><td class="${colorClass(v.total)}">${fmt(v.total)}</td></tr>`).join('')}
+        const entries=Object.entries(byA).sort((a,b)=>b[1].net-a[1].net);
+        if(!entries.length) return '<div class="empty" style="padding:16px 0"><p>Nessun trade ancora</p></div>';
+        return `<table><thead><tr><th>Asset</th><th>Trade</th><th>Lordo</th><th>Tasse</th><th>Netto</th></tr></thead><tbody>
+          ${entries.map(([a,v])=>`<tr>
+            <td style="font-weight:600">${a}</td><td>${v.count}</td>
+            <td class="${cc(v.gross)}">${fmt(v.gross)}</td>
+            <td class="red">- ${fmt(v.tax)}</td>
+            <td class="${cc(v.net)}" style="font-weight:600">${fmt(v.net)}</td>
+          </tr>`).join('')}
         </tbody></table>`;
       })()}
     </div>
-    <div style="margin-top:12px">
+
+    <div>
       <button class="btn btn-sm" style="color:var(--red);border-color:var(--red)" onclick="resetApp()">⚠ Reset completo</button>
     </div>`;
 }
 
-function renderInfo() {
-  const el = document.getElementById('infoContent');
-  el.innerHTML = `
+function renderInfo(){
+  document.getElementById('infoContent').innerHTML=`
     <div class="card" style="margin-bottom:12px">
-      <div class="card-title">Sorgente dati</div>
-      <div class="alert alert-info">
-        <span>ℹ</span>
-        <span>L'app legge direttamente la GitHub API di <strong>mircone66/claude-trading-bot</strong> — nessuna cache, dati freschi ad ogni sync.</span>
-      </div>
-      <div class="alert alert-warn">
-        <span>⚠</span>
-        <span>I prezzi vengono aggiornati una volta al giorno dalla Routine Claude alle 9:00 CEST. Il P&L usa l'ultimo prezzo disponibile nel file JSON.</span>
+      <div class="card-title">Configurazione</div>
+      <div class="alert alert-green"><span>✓</span><span><strong>Broker: Alpaca</strong> — 0% commissioni su azioni USA, ETF, Crypto</span></div>
+      <div class="alert alert-warn"><span>⚠</span><span><strong>Tasse Italia</strong> — 26% sulle plusvalenze realizzate (regime dichiarativo). Le perdite compensano i guadagni futuri.</span></div>
+      <div class="alert alert-info"><span>ℹ</span><span>Prezzi aggiornati 1 volta/giorno alle 9:00 CEST dalla Routine Claude. Triangolazione su 3 fonti indipendenti.</span></div>
+    </div>
+    <div class="card" style="margin-bottom:12px">
+      <div class="card-title">Asset monitorati (18)</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;font-size:12px">
+        <div><div class="muted" style="margin-bottom:4px">🇺🇸 Azioni USA</div><div style="font-family:var(--mono)">AAPL TSLA NVDA MSFT AMZN<br>GOOGL META NFLX AMD</div></div>
+        <div><div class="muted" style="margin-bottom:4px">🇪🇺 Azioni EU (su NYSE)</div><div style="font-family:var(--mono)">ASML SAP RACE STLAM</div></div>
+        <div><div class="muted" style="margin-bottom:4px">📦 ETF Commodities</div><div style="font-family:var(--mono)">GLD SLV USO</div></div>
+        <div><div class="muted" style="margin-bottom:4px">₿ Crypto</div><div style="font-family:var(--mono)">BTC ETH SOL</div></div>
       </div>
     </div>
     <div class="card" style="margin-bottom:12px">
       <div class="card-title">File importati (${state.imported.length})</div>
-      ${state.imported.length ? state.imported.slice().reverse().map(f=>`
-        <div class="file-row">
-          <div class="file-name">${f}</div>
-          <span style="color:var(--green);font-size:12px">✓</span>
-        </div>`).join('') : '<div style="color:var(--muted);font-size:13px">Nessun file importato ancora</div>'}
-    </div>
-    <div class="card">
-      <div class="card-title">Come funziona</div>
-      <ul class="info-steps">
-        ${[
-          'Ogni giorno alle 9:00 la Routine Claude analizza il mercato e genera un file JSON in /logs',
-          'L\'app legge la lista dei file via GitHub API e scarica automaticamente i nuovi',
-          'Solo i segnali con dati verificati (triangolazione ≥2 fonti, scarto <3%) vengono proposti',
-          'Tu autorizzi o rifiuti ogni segnale specificando la quantità',
-          'Il portafoglio e il P&L vengono aggiornati ad ogni nuovo scan',
-          'Dopo 30-60 giorni la sezione Performance mostra l\'accuratezza della strategia'
-        ].map((s,i)=>`<li><div class="step-num">${i+1}</div><div class="step-text">${s}</div></li>`).join('')}
-      </ul>
+      ${state.imported.length?state.imported.slice().reverse().slice(0,10).map(f=>`
+        <div class="file-row"><span style="font-family:var(--mono);font-size:11px;color:var(--muted)">${f}</span><span class="green" style="font-size:11px">✓</span></div>`).join('')
+        :'<div class="muted" style="font-size:13px">Nessun file ancora</div>'}
     </div>`;
 }
 
-function updatePendingBadge() {
-  const badge = document.getElementById('pendingBadge');
-  if (state.pending.length > 0) {
-    badge.style.display = 'inline';
-    badge.textContent = state.pending.length;
-  } else {
-    badge.style.display = 'none';
-  }
+function updatePendingBadge(){
+  const b=document.getElementById('pendingBadge');
+  b.style.display=state.pending.length?'inline':'none';
+  b.textContent=state.pending.length;
 }
 
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // NAVIGATION
-// ═══════════════════════════════════════
-function switchTab(name) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+// ═══════════════════════════════
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.querySelector(`[data-tab="${name}"]`).classList.add('active');
-  document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
-  document.getElementById(`tab-${name}`).style.display = 'block';
-  if (name === 'performance') renderPerformance();
-  if (name === 'info') renderInfo();
+  document.querySelectorAll('.tab-content').forEach(t=>t.style.display='none');
+  document.getElementById(`tab-${name}`).style.display='block';
+  if(name==='performance') renderPerformance();
+  if(name==='info') renderInfo();
 }
 
-function showMain() {
-  document.getElementById('setupView').style.display = 'none';
-  document.getElementById('mainView').style.display = 'block';
+function showMain(){
+  document.getElementById('setupView').style.display='none';
+  document.getElementById('mainView').style.display='block';
 }
 
-function resetApp() {
-  if (!confirm('Reset completo? Tutti i dati verranno cancellati.')) return;
+function resetApp(){
+  if(!confirm('Reset completo? Tutti i dati verranno cancellati.')) return;
   localStorage.removeItem(SKEY);
-  state = { capital: null, available: 0, positions: {}, transactions: [], history: [], pending: [], imported: [], prices: {} };
-  document.getElementById('mainView').style.display = 'none';
-  document.getElementById('setupView').style.display = 'block';
+  state={capital:0,available:0,positions:{},transactions:[],history:[],pending:[],imported:[],prices:{},lossCarryforward:0};
+  document.getElementById('mainView').style.display='none';
+  document.getElementById('setupView').style.display='block';
 }
 
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 // INIT
-// ═══════════════════════════════════════
+// ═══════════════════════════════
 loadState();
-if (state.capital) {
-  showMain();
-  renderAll();
-  syncData();
+if(state.capital){
+  showMain(); renderAll(); syncData();
 } else {
-  document.getElementById('setupView').style.display = 'block';
-  setStatus('Pronto', 'ok');
+  document.getElementById('setupView').style.display='block';
+  setStatus('Pronto','ok');
 }
 </script>
 </body>
