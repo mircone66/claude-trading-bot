@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-04-21T09:21:00Z",
+  "data_source": "web_search (dati reali)",
+  "market_summary": "Mercati azionari tech in ripresa: MSFT +19% da fine marzo, TSLA rimbalza post-earnings Q1 (battute aspettative). Crypto sotto pressione: hack KelpDAO causa esodo DeFi da 14 miliardi, BTC regge sopra $75K nonostante tensioni Iran. Sentiment generale: neutro/cauto con selettive opportunità.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock",
+      "price": 273.05,
+      "change_24h": "+1.00%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 273.05,
+      "stop_loss": 264.86,
+      "target": 286.70,
+      "reasoning": "Tim Cook annuncia uscita da CEO il 1° settembre 2026, John Ternus alla guida: transizione ordinata ma incertezza di breve periodo. Prezzo stabile, nessun catalizzatore forte in questa sessione.",
+      "data_real": true
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock",
+      "price": 392.50,
+      "change_24h": "-2.03%",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 392.50,
+      "stop_loss": 380.73,
+      "target": 412.13,
+      "reasoning": "Earnings Q1 del 20 aprile superiori alle attese: il titolo è schizzato a $400.62 (+3%) prima di ritracciare al livello attuale. Il pullback post-earnings offre un entry favorevole con momentum ancora positivo.",
+      "data_real": true
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock",
+      "price": 200.98,
+      "change_24h": "N/D",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 200.98,
+      "stop_loss": 194.95,
+      "target": 211.03,
+      "reasoning": "NVDA consolida vicino ai massimi 52 settimane ($212.19): domanda AI solida ma upside limitato a breve. Attesa per i prossimi dati sulle spedizioni GPU H-series prima di aumentare esposizione.",
+      "data_real": true
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock",
+      "price": 422.34,
+      "change_24h": "N/D",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 422.34,
+      "stop_loss": 409.67,
+      "target": 443.46,
+      "reasoning": "Rally di +19% da fine marzo porta MSFT a $422: il recupero dal minimo 52w ($355) è deciso grazie all'accelerazione di Azure AI. Probabile consolidazione prima di nuovi massimi, meglio attendere pull-back.",
+      "data_real": true
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock",
+      "price": 250.74,
+      "change_24h": "~-0.5%",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 250.74,
+      "stop_loss": 243.22,
+      "target": 263.28,
+      "reasoning": "Amazon quota vicino al massimo 52 settimane ($258.60): AWS e advertising solidi ma il titolo sconta già molto. Mancanza di catalizzatori immediati; gestione del rischio prudente.",
+      "data_real": true
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75657.62,
+      "change_24h": "-0.63%",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 75657.62,
+      "stop_loss": 71874.74,
+      "target": 81710.23,
+      "reasoning": "Bitcoin regge sopra $75K nonostante l'hack KelpDAO (esodo DeFi da $14B) e le tensioni geopolitiche Iran. Resilienza positiva, ma il contesto macro-geopolitico impone cautela e stop stretto.",
+      "data_real": true
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2316.24,
+      "change_24h": "-1.07%",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 2316.24,
+      "stop_loss": 2200.43,
+      "target": 2501.54,
+      "reasoning": "L'hack KelpDAO e la fuga di capitali da $14 miliardi dall'ecosistema DeFi colpiscono Ethereum direttamente. ETH è esposto come layer base del DeFi: pressione ribassista nel breve periodo fino a chiarimento dell'hack.",
+      "data_real": true
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 85.84,
+      "change_24h": "N/D",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 85.84,
+      "stop_loss": 81.55,
+      "target": 92.71,
+      "reasoning": "Solana quota -71% rispetto al picco di gennaio 2025 ($293): sconto profondo con ecosistema ancora attivo (rank #7, market cap $49B). Rapporto rischio/rendimento asimmetrico ma stop mandatario per l'alta volatilità.",
+      "data_real": true
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Post-earnings dip su Q1 che ha battuto le attese: entry tattico sul ritracciamento con target $412"
+    },
+    {
+      "rank": 2,
+      "asset": "SOL",
+      "motivo": "Profondo sconto strutturale (-71% dai massimi) con ecosistema vivo; upside asimmetrico +8% a breve"
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "Titolo difensivo stabile con piano di successione CEO chiaro; utile per bilanciare il rischio del portafoglio"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "TSLA": "20%",
+      "AAPL": "15%",
+      "NVDA": "15%",
+      "MSFT": "15%",
+      "AMZN": "5%",
+      "BTC": "5%",
+      "SOL": "5%",
+      "cash_riserva": "20%"
+    }
+  }
+}
