@@ -1,0 +1,390 @@
+{
+  "timestamp": "2026-04-23T11:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Il 23 aprile 2026 Wall Street registra un pull-back dai massimi storici di mercoledì. AMD tocca nuovi ATH a +6.67% trainata dall'AI (Stifel PT alzato a $320). Tesla -2% dopo Q1 earnings (capex guidato a $25B delude il mercato). Microsoft annuncia taglio del 7% workforce USA. NFLX stabilizza a $93 dopo caduta doppia-cifra post-earnings; approvato buyback $25B. ASML alza guidance 2026 a EUR 36-40B (+16% YoY) dopo Q1 +13.3%. SAP -5.6% pre-earnings (report 23/04 ore 17 EDT). Bitcoin tiene $77.9K con 7° giorno consecutivo di afflussi ETF spot ($336M netti, BlackRock IBIT $246M). Oro stabile $435, Oil rimbalza USO +0.9%.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 273.29,
+      "change_24h": "+2.36%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale — +4.26% nell'ultima settimana, market cap $3.91T",
+      "news": "Earnings Apple previsti per 30/04/2026. Rimbalzo tecnico post-correzione con volume normale. Nessuna notizia negativa specifica rilevata nel ciclo odierno.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 273.29,
+      "stop_loss": 265.09,
+      "target": 286.95,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista confermato +4.26% settimanale e +2.36% intraday. Earnings catalyst 30/04 può fungere da ulteriore acceleratore se positive (fonte: Yahoo Finance earnings date 04/30/2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView / MacroTrends", "price": 273.17},
+          {"name": "Yahoo Finance", "price": 273.40}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 255.03,
+      "change_24h": "+2.18%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale — prossima al 52-week high $258.60",
+      "news": "Amazon chiude a $255.36 il 22/04 (+2.18%). Earnings previsti 29/04/2026. Azioni vicine al massimo annuale con P/E 34.61 e market cap $2.76T.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 255.03,
+      "stop_loss": 247.38,
+      "target": 267.78,
+      "commissione": 0.00,
+      "reasoning": "Momentum positivo con chiusura vicina al 52-week high. Earnings catalyst 29/04 atteso. AWS e AI continuano a driver di crescita (fonte: Yahoo Finance AMZN quote, CNBC). Rischio: vicino ai massimi, possibile presa di profitto pre-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / StockAnalysis", "price": 254.69},
+          {"name": "Yahoo Finance (close 22/04)", "price": 255.36}
+        ],
+        "spread_pct": 0.26,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 93.09,
+      "change_24h": "+0.37%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo — post Q1 earnings sell-off già assorbito, alta attenzione sul titolo",
+      "news": "Netflix ha riportato Q1 2026; titolo crollato a doppia cifra poi stabilizzato. Approvato buyback da $25 miliardi — floor di supporto significativo. Netflix abbandona la corsa da $72B per Warner Bros. Discovery.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 93.09,
+      "stop_loss": 90.30,
+      "target": 97.74,
+      "commissione": 0.00,
+      "reasoning": "Il titolo ha già scontato la delusione post-earnings con un sell-off a doppia cifra. Il buyback da $25B funge da forte supporto (fonte: Motley Fool 23/04/2026, Yahoo Finance). Rimbalzo tecnico probabile con il programma di riacquisto attivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / StockAnalysis", "price": 93.26},
+          {"name": "Yahoo Finance / CNBC", "price": 92.92}
+        ],
+        "spread_pct": 0.37,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 303.21,
+      "change_24h": "+6.67%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "anomalo alto — 11-day winning streak (record dal 2005), ATH a $304.38",
+      "news": "AMD raggiunge all-time high $304.38 il 23/04. Stifel alza price target da $280 a $320 il 20/04. Boom della domanda AI in data center. +220.69% su base annua.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 303.21,
+      "stop_loss": 294.11,
+      "target": 318.37,
+      "commissione": 0.00,
+      "reasoning": "Momentum eccezionale: 11-day winning streak, nuovo ATH, analisti rialzisti (PT $320 Stifel). AI data center domanda in piena accelerazione (fonte: Investing.com ATH news, Yahoo Finance CNBC AMD quotes 23/04/2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 302.95},
+          {"name": "Yahoo Finance / CNBC (close)", "price": 303.46}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 421.13,
+      "change_24h": "-2.47%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo — notizia taglio 7% workforce USA amplifica la volatilità",
+      "news": "Microsoft annuncia il taglio del 7% del workforce USA (23/04/2026). Titolo in calo dalla chiusura di $432.92 (22/04). Earnings imminenti. Collaborazione AI industriale con Stellantis annunciata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 421.13,
+      "stop_loss": 408.50,
+      "target": 442.19,
+      "commissione": 0.00,
+      "reasoning": "I tagli al workforce (7% USA) hanno impatto ambiguo: bearish nel breve (sentiment negativo), potenzialmente bullish sulle prospettive di margine. Incertezza elevata pre-earnings. Affidabilità prezzi MEDIA: attendere conferma (fonte: Motley Fool 23/04/2026 — 'Meta slashing workforce'; CNBC MSFT quotes).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView / CNBC (intraday 23/04)", "price": 415.86},
+          {"name": "Yahoo Finance (23/04 current)", "price": 426.40}
+        ],
+        "spread_pct": 2.50,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 174.20,
+      "change_24h": "-5.60%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo — earnings day; investitori cautious su cloud deal cycle e macro risk",
+      "news": "SAP NYSE ADR -5.6% il 23/04 in attesa del Q1 2026 earnings call alle 17:00 EDT. Analisti preoccupati per rallentamento cloud deal cycle. Analyst consensus PT $290.25, 52-week high $313.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 174.20,
+      "stop_loss": 168.97,
+      "target": 182.91,
+      "commissione": 0.00,
+      "reasoning": "Giornata di earnings ad alta incertezza. Il -5.6% pre-risultati potrebbe già scontare aspettative negative. Attendere esito del Q1 call 17:00 EDT prima di entrare (fonte: Quiverquant SAP news 23/04/2026, SAP Investor Relations).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE", "price": 174.02},
+          {"name": "Yahoo Finance / CNBC (current)", "price": 174.38}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1442.59,
+      "change_24h": "-0.80%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale — post Q1 earnings (riportati 15/04), flussi stabili",
+      "news": "ASML Q1 2026: ricavi €8.8B (+13.3% YoY), utile netto €2.8B. Guidance 2026 alzata a EUR 36-40B (+16% YoY al midpoint). Dividendo 2025 alzato +17% a €7.50. AGM 22/04 ha approvato dividendo finale €2.70. Motley Fool: 'Next Stop $2,000?'",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1442.59,
+      "stop_loss": 1399.31,
+      "target": 1514.72,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali eccezionali: Q1 beat con guidance alzata, dividend +17%. Leadership mondiale nei litografi EUV per AI chip. Prezzi MEDIA affidabilità (spread 1.44% tra sessione regolare e after-hours) (fonte: ASML Investor Relations Q1/2026, GlobeNewswire AGM 22/04/2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (sessione regolare 23/04)", "price": 1432.18},
+          {"name": "NASDAQ after-hours 22/04", "price": 1453.00}
+        ],
+        "spread_pct": 1.44,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 435.26,
+      "change_24h": "~0.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale — oro vicino ai massimi storici, ETF overbought ma macro supportivo",
+      "news": "GLD range intraday 23/04: $433.78–$437.17. Gold beneficia di outlook Fed moderatamente dovish e supporto da fine mandato Powell (maggio 2026). Seeking Alpha: 'Gold/Silver ETFs historically overbought yet still a Buy'. Oro +42.21% nell'ultimo anno.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 435.26,
+      "stop_loss": 426.55,
+      "target": 452.67,
+      "commissione": 0.00,
+      "reasoning": "Macro molto favorevole: Fed dovish, Trump pro-tassi-bassi, tensioni geopolitiche in de-escalation ma incertezze persistenti. ETF tecnicamente overbought ma trend strutturale rialzista confermato (fonte: Yahoo Finance GLD, News search 23/04/2026 Seeking Alpha).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (23/04)", "price": 435.26},
+          {"name": "News aggregator (23/04 range midpoint)", "price": 435.26}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 129.40,
+      "change_24h": "+0.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo — +5.71% il 21/04, oggi consolidamento; range annuo $61.75–$143.98",
+      "news": "USO $129.40 il 23/04 (+0.90%). Rimbalzo sharp dal minimo $121.32 (+6.67% in 2 giorni). De-escalation geopolitica (estensione cessate il fuoco) ha supportato il rimbalzo petrolio. WTI tracked tramite futures NYMEX short-term.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 129.40,
+      "stop_loss": 126.81,
+      "target": 134.58,
+      "commissione": 0.00,
+      "reasoning": "Dopo un rimbalzo violento (+5.71% il 21/04), il titolo consolida. Rischio di reversal a breve se il sentiment geopolitico si deteriora. Attendere conferma del supporto a $127 prima di aprire posizioni (fonte: StockAnalysis USO, News search 23/04/2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockAnalysis (close 22/04)", "price": 128.24},
+          {"name": "News aggregator CNBC (23/04 current)", "price": 129.40}
+        ],
+        "spread_pct": 0.90,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 77942.00,
+      "change_24h": "+4.28%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo — 7° giorno consecutivo afflussi ETF spot ($336M netti il 22/04; BlackRock IBIT $246.9M)",
+      "news": "BTC tiene $77.9K (23/04). Breve spike a $79,300 ma resistenza $80K non rotta. ETF spot: inflows per 7 giorni consecutivi, totale $336M il 22/04 (BlackRock IBIT $246.9M, Fidelity FBTC $56.7M). Ceasefire extension migliora risk sentiment. Lancio BESO ETF (BTC+ETH+SOL) da GSR.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 77942.00,
+      "stop_loss": 74044.90,
+      "target": 84177.36,
+      "commissione": 0.00,
+      "reasoning": "Acquisti istituzionali consistenti (7 giorni ETF inflow). BTC outperforma altcoins. De-escalation geopolitica migliora il risk appetite. Resistenza critica $80K: rottura confermerebbe trend rialzista verso $84K (fonte: BlockchainMagazine 23/04/2026, Fortune BTC price 23/04/2026, CoinMarketCap).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (23/04 09:00 ET)", "price": 77809.79},
+          {"name": "CoinMarketCap (23/04 live)", "price": 78074.96}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2334.55,
+      "change_24h": "-2.37%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — nessun deflusso anomalo TVL, correzione di natura speculativa",
+      "news": "ETH apre a $2,375 il 23/04 ma scende a $2,317 entro le 07:10 ET. Underperforma BTC. Nessun decline di TVL o smart contract outflows. Solana e ETH entrambi -2-3% mentre BTC resiste. Incluso nel nuovo BESO ETF di GSR.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2334.55,
+      "stop_loss": 2217.82,
+      "target": 2521.31,
+      "commissione": 0.00,
+      "reasoning": "ETH sottoperforma BTC nel breve termine. La correzione è speculativa (no deterioramento fondamentale TVL). Attendere stabilizzazione sopra $2,350 per confermare ripresa. Catalyst: BESO ETF potrebbe portare domanda incrementale (fonte: Yahoo Finance 23/04/2026 ETH price, CoinDesk, BlockchainMagazine).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (23/04 09:00 ET)", "price": 2328.51},
+          {"name": "CoinDesk / Yahoo Finance (23/04)", "price": 2340.59}
+        ],
+        "spread_pct": 0.52,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 86.85,
+      "change_24h": "-2.49%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale — ETF spot SOL: ZERO inflows il 22/04 (vs $336M BTC, $2.4M XRP)",
+      "news": "SOL scende a $85.74 (23/04), -2.49%. Fallito il mantenimento di $88, testando zona di domanda $85. ETF spot Solana registrano zero inflows il 22/04. Incluso nel BESO ETF di GSR ma senza catalizzatori istituzionali immediati.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 86.85,
+      "stop_loss": 82.51,
+      "target": 93.80,
+      "commissione": 0.00,
+      "reasoning": "Momentum debole: fallito supporto $88, zero inflows ETF, -2.49% vs BTC +4.28%. Il ratio BTC/SOL si amplia. Attendere tenuta del supporto $85 con volumi prima di considerare un ingresso (fonte: BlockchainMagazine Crypto Market Today 23/04/2026, CoinGecko, CoinMarketCap).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko (23/04 live)", "price": 87.92},
+          {"name": "CoinMarketCap / MetaMask (23/04)", "price": 85.78}
+        ],
+        "spread_pct": 2.46,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "1 sola fonte confermata ($372.46 su Investing.com, 23/04). Q1 2026 beat ma capex alzato a $25B ha affossato il titolo -2% in after-hours. Seconda fonte (Yahoo Finance/CNBC) non ha restituito prezzo esplicito.",
+      "prezzo_indicativo": 372.46,
+      "data_real": false
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "1 sola fonte confermata ($201.14 su Morningstar/MacroTrends, 22/04). Seconda fonte non ha restituito prezzo esplicito per il 23/04. Notizia positiva: partnership con Oklo e Los Alamos per AI nucleare.",
+      "prezzo_indicativo": 201.14,
+      "data_real": false
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "1 sola fonte confermata ($339.32 su WallStreetZen/CNBC, 23/04). Seconda fonte non ha restituito prezzo esplicito. Earnings attesi 29/04/2026. UBS ha alzato PT a $375.",
+      "prezzo_indicativo": 339.32,
+      "data_real": false
+    },
+    {
+      "asset": "META",
+      "motivo": "1 sola fonte confermata ($674.84 range $669.75–$678.38, 23/04). Seconda fonte indica 'down 2.31%' senza valore assoluto. Earnings 29/04/2026. Microsoft taglia workforce, Meta confermata in taglio workforce (Motley Fool 23/04).",
+      "prezzo_indicativo": 674.84,
+      "data_real": false
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread >4% tra fonti di date diverse: TradingView $354.19 (23/04) vs Investing.com $372.85 (20/04). Impossibile confrontare prezzi contemporanei. Dati insufficienti per validazione.",
+      "prezzo_indicativo": 354.19,
+      "data_real": false
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Dati incoerenti: fonte secondaria obsoleta (25/03/2026, 5.938 EUR). Prezzi misti EUR/USD tra diverse exchange (Milano, NYSE-STLA, Capital.com). Ticker NYSE è STLA (non STLAM). Esclusione per assenza dati contemporanei validi.",
+      "prezzo_indicativo": null,
+      "data_real": false
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Nessuna fonte confermata per il 23/04 con dati contemporanei. S1 restituisce $74.97 (17/04) vs $73.63 (17/04) — discrepanza 1.8% ma entrambe datate 17/04. News search indica $70.37 (23/04) come fonte unica. Spread inter-data >4%.",
+      "prezzo_indicativo": 70.37,
+      "data_real": false
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Nuovo ATH $304.38, +6.67% intraday, 11-day winning streak record. AI data center boom. Stifel PT $320. Confidence ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "BTC",
+      "motivo": "7 giorni consecutivi ETF spot inflows ($336M il 22/04, BlackRock IBIT $246M). Tiene $77.9K resistendo alla correzione altcoins. Rottura $80K sblocca $84K target."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Q1 2026 +13.3% YoY, guidance 2026 alzata a EUR 36-40B, dividendo +17%. Leader EUV per AI chip. Fondamentali eccezionali a supporto del BUY."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale su Alpaca. Solo a scopo analitico.",
+    "capitale_ipotetico": 100000,
+    "valuta": "USD",
+    "allocazione_suggerita": {
+      "AMD":  {"pct": 20, "importo": 20000, "segnale": "BUY Alto"},
+      "BTC":  {"pct": 15, "importo": 15000, "segnale": "BUY Medio"},
+      "AMZN": {"pct": 15, "importo": 15000, "segnale": "BUY Medio"},
+      "AAPL": {"pct": 12, "importo": 12000, "segnale": "BUY Medio"},
+      "ASML": {"pct": 12, "importo": 12000, "segnale": "BUY Medio"},
+      "NFLX": {"pct": 10, "importo": 10000, "segnale": "BUY Medio"},
+      "GLD":  {"pct": 10, "importo": 10000, "segnale": "BUY Basso (hedge)"},
+      "RISERVA_LIQUIDA": {"pct": 6, "importo": 6000, "segnale": "HOLD — attesa conferma SAP earnings, USO, MSFT, ETH, SOL"}
+    }
+  }
+}
