@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-26T09:00:00",
+  "source": "manuale",
+  "prezzi": [
+    { "asset": "AAPL", "price": 192.50 },
+    { "asset": "TSLA", "price": 248.30 },
+    { "asset": "BTC",  "price": 94200.00 }
+  ]
+}
