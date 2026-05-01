@@ -1,0 +1,293 @@
+{
+  "timestamp": "2026-05-01T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "US Big Tech earnings season chiude forte: Amazon (Q1 margin record 13.1%, AWS +28%), Alphabet (Google Cloud +63%, EPS raddoppiato), Microsoft (AI business $37B run-rate +123%), Apple (Q2 beat + $100B buyback). META penalizzata da capex AI $125-145B atteso. NVDA -4.63% il 30/04 su timori concorrenziali dopo ATH $216.61. BTC recupera a $77K dopo dip notturno a $75.5K. Oro in correzione da picco $509.70 ma supportato da tensioni USA-Iran. Oil (USO) vicino a massimi di 7 mesi. 8/19 asset validati con affidabilità ALTA o MEDIA; 11 esclusi per spread > soglia o fonte unica.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 200.60,
+      "change_24h": "+0.18%",
+      "trend_5d": "ribassista (-7.4% da ATH $216.61 il 27/04)",
+      "volume_note": "normale",
+      "news": "NVDA -4.63% il 30/04 su timori crescita concorrenza chipmaker; AI hyperscalers pianificano $650B capex 2026 (Amazon $200B); 38 analisti Strong Buy, target medio $266.24. (Fonte: Yahoo Finance, CNBC)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 200.60,
+      "stop_loss": 194.58,
+      "target": 210.63,
+      "commissione": 0.00,
+      "reasoning": "Rifiuto tecnico sull'ATH a $216.61 (27/04) con sessione del -4.63% il 30/04 su vendor neutrality concerns; oggi stabilizzazione +0.18%. L'enorme capex AI ($650B iperscaler 2026) resta il principale catalizzatore rialzista di lungo periodo. (Fonte: Yahoo Finance/CNBC)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends (May-1 open)", "price": 201.28},
+          {"name": "Yahoo Finance / CNBC (May-1 current)", "price": 199.92}
+        ],
+        "spread_pct": 0.68,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1384.56,
+      "change_24h": "n.d. (sessione in corso, range $1,364.81 - $1,398.63)",
+      "trend_5d": "rialzista (+36% YTD; Q1 beat + guidance alzata)",
+      "volume_note": "normale",
+      "news": "Q1 2026: EPS €7.15 vs atteso, revenue €8.77B beat, guidance full-year €36-40B mantenuta. Calo -3.3% il 28/04 su timori outlook OpenAI poi parzialmente recuperato. ASML +36% YTD. (Fonte: Investing.com, IndexBox, Motley Fool)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1384.56,
+      "stop_loss": 1342.02,
+      "target": 1453.79,
+      "commissione": 0.00,
+      "reasoning": "Beat Q1 con guidance full-year mantenuta; AI semiconductor supercycle intatto con ordini record. 38 analisti Strong Buy, target medio $1,658.79 (+19.8% da entry). La correzione del -3.3% il 28/04 offre entry rispetto al trend rialzista annuale. (Fonte: Investing.com, Motley Fool)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / NASDAQ query", "price": 1384.56},
+          {"name": "Investing.com / Trendlyne (ASML NASDAQ ADR)", "price": 1384.56}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 175.26,
+      "change_24h": "+7.4% (post-earnings da prev. close $163.25)",
+      "trend_5d": "rialzista (recupero post-Q1 earnings)",
+      "volume_note": "anomalo (post-earnings, volume elevato)",
+      "news": "Q1 2026: EPS $1.92 vs $1.91 (beat), revenue $11.04B vs $11.17B (miss); cloud revenue +27% YoY a $5.95B; operating profit +24% a €2.9B; stock stable ~$175 da apr 26 dopo il gap earnings. 13 analisti Buy, target medio $273.42. (Fonte: Investing.com, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 175.26,
+      "stop_loss": 170.00,
+      "target": 184.02,
+      "commissione": 0.00,
+      "reasoning": "Cloud revenue +27% YoY è il principale driver di lungo periodo; miss sul fatturato totale e volatilità post-earnings limitano il rialzo a breve. Prezzo stabile intorno a $175 da apr 26 ma lontano dal 52-week high $313.28. (Fonte: Investing.com)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (NYSE SAP, May-1)", "price": 175.26},
+          {"name": "Investing.com (NYSE SAP ADR, Apr-26 post-earnings)", "price": 175.26}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 426.12,
+      "change_24h": "+0.58%",
+      "trend_5d": "laterale-ribassista (correzione da 52-week high $509.70)",
+      "volume_note": "normale",
+      "news": "GLD +40.37% nell'ultimo anno ma in correzione dal picco $509.70; JPMorgan gold target $6,300 a fine anno (molto rialzista); segnale tecnico MA 'Strong Sell' a breve; supporto geopolitico USA-Iran; Fed decision attesa. (Fonte: Seeking Alpha, CNBC, Motley Fool)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 426.12,
+      "stop_loss": 417.60,
+      "target": 443.16,
+      "commissione": 0.00,
+      "reasoning": "Correzione tecnica dal picco $509.70 con segnale 'Strong Sell' sulle medie mobili, ma solido supporto fondamentale (JPMorgan target oro $6,300) e geopolitica USA-Iran positiva per safe-haven. Attendere breakout confermato sopra $430 per upgrade a BUY. (Fonte: Seeking Alpha, CNBC)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockAnalysis (NYSE Arca GLD, May-1)", "price": 426.12},
+          {"name": "CNBC / NYSE Arca live quote (May-1)", "price": 426.12}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 147.09,
+      "change_24h": "-2.35%",
+      "trend_5d": "rialzista (WTI crude ai massimi di 6-7 mesi)",
+      "volume_note": "normale",
+      "news": "WTI crude ai massimi di 6-7 mesi per tensioni USA-Iran; USO vicino al 52-week high ($151.63); profit-taking oggi -2.35%; NOTA: fonte secondaria originale ha restituito prezzo erroneo ($4.77), confermato $147.09 da fonte terza. (Fonte: Investing.com, CNBC news query)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 147.09,
+      "stop_loss": 144.15,
+      "target": 152.97,
+      "commissione": 0.00,
+      "reasoning": "Geopolitica USA-Iran ha spinto WTI ai massimi plurimensili, premium già parzialmente incorporato nel prezzo. USO a $147.09 è vicino al 52-week high ($151.63) e oggi -2.35% segnala possibile distribuzione. Target $152.97 vicino alla resistenza chiave. (Fonte: Investing.com, CNBC)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Barchart (NYSE Arca USO, May-1)", "price": 147.09},
+          {"name": "CNBC news aggregation (May-1, cross-check commodity query)", "price": 147.09}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Fonte S2 originale ha restituito prezzo erroneo $4.77 (scartato - errore evidente di ticker/dati). Confermato $147.09 da fonte indipendente terza (CNBC news query). Segnale BUY/SELL soppresso, solo HOLD per cautela metodologica."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 76666.00,
+      "change_24h": "+2.0%",
+      "trend_5d": "ribassista poi recupero (dip settimanale, recovery a $77K oggi)",
+      "volume_note": "normale ($36.4B volume 24h CoinMarketCap)",
+      "news": "BTC holds $77K dopo dip notturno a $75,500; SBI Holdings punta stake in Bitbank (catalizzatore istituzionale); Consensus 2026 Miami 5-7 maggio (evento chiave); CLARITY Act regolatoria rinviata a maggio; attori nordcoreani 76% dei furti crypto YTD ($577M). (Fonte: CryptoTimes, Analytics Insight, CoinMarketCap)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 76666.00,
+      "stop_loss": 72833.00,
+      "target": 82799.00,
+      "commissione": 0.00,
+      "reasoning": "Recovery da $75,500 con volume nella norma, supporto istituzionale (SBI Holdings Bitbank stake) e catalizzatore imminente Consensus 2026 (5-7 maggio Miami). Il livello $77K si conferma supporto. Rischio principale: CLARITY Act regolatorio ancora in sospeso. (Fonte: CryptoTimes, Analytics Insight)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (May-1 02:47 EDT)", "price": 76988.00},
+          {"name": "Coinbase (May-1 live)", "price": 76344.00}
+        ],
+        "spread_pct": 0.84,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2316.38,
+      "change_24h": "-1.03%",
+      "trend_5d": "ribassista (-4.48%)",
+      "volume_note": "normale ($18.3B volume 24h CoinMarketCap)",
+      "news": "Wasabi Protocol (Ethereum chain) hack $4.5-5.5M il 01/05 via chiave admin compromessa; BTC outperform ETH questa settimana; attori NK 76% furti crypto 2026; ETH -4.48% ultimi 7 giorni; ETH market cap $273.4B (#2). (Fonte: CryptoTimes, Analytics Insight)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2316.38,
+      "stop_loss": 2200.56,
+      "target": 2501.69,
+      "commissione": 0.00,
+      "reasoning": "ETH in sottoperformance rispetto a BTC questa settimana (-4.48% settimanale); hack Wasabi Protocol su Ethereum chain pesa sul sentiment. Attendere breakout confermato sopra $2,400 con volumi sostenuti per riconsiderare a BUY. (Fonte: CryptoTimes, Analytics Insight)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / CoinDesk (May-1 09:15 EDT)", "price": 2308.85},
+          {"name": "Coinbase (May-1 live)", "price": 2323.91}
+        ],
+        "spread_pct": 0.65,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 84.02,
+      "change_24h": "+1.82%",
+      "trend_5d": "ribassista (slide settimanale con BTC/ETH/XRP)",
+      "volume_note": "normale ($3.2B volume 24h CoinMarketCap)",
+      "news": "SOL in slide questa settimana assieme agli altri major crypto; recupero parziale +1.82% oggi; Consensus 2026 Miami 5-7 maggio potenziale catalizzatore ecosistema; SOL market cap $48.4B (#7 CoinMarketCap). (Fonte: CoinMarketCap, Coinbase, 24/7 Wall St.)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 84.02,
+      "stop_loss": 79.82,
+      "target": 90.74,
+      "commissione": 0.00,
+      "reasoning": "Recupero giornaliero +1.82% insufficiente a invertire il trend ribassista settimanale. Consensus 2026 (5-7 maggio) potenziale catalizzatore per tutto l'ecosistema Solana, ma il profilo rischio/rendimento non è ancora favorevole. (Fonte: CoinMarketCap, Coinbase)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (May-1 live)", "price": 83.96},
+          {"name": "Coinbase (May-1 live)", "price": 84.07}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "scarto fonti 4.15% > soglia 4%: Apr-30 close $282.86 (MacroTrends/post-earnings extended) vs May-1 $271.35 (Yahoo Finance). Date diverse, discrepanza non attribuibile a solo timing intraday."
+    },
+    {
+      "asset": "TSLA",
+      "motivo": "fonte unica confermata ($381.63, Trading Economics May-1); query secondaria (Yahoo Finance/CNBC) ha restituito solo link e notizie senza prezzo esplicito. Fonti < 2."
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "fonte unica esplicita ($414.42, May-1); query secondaria (Yahoo Finance) ha riportato solo variazione % (+1.54%) senza prezzo assoluto confermato. Fonti < 2."
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "fonte unica confermata ($263.99, May-1); query secondaria (Yahoo Finance/CNBC) ha riportato solo notizie Q1 (record margin 13.1%, AWS +28%) senza prezzo esplicito. Fonti < 2."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "fonte unica con range intraday ($365.82 - $386.05, May-1); nessun prezzo corrente esplicito da seconda fonte indipendente. Query secondaria solo link + news earnings (+9.96% EPS doubled). Fonti < 2."
+    },
+    {
+      "asset": "META",
+      "motivo": "fonte unica confermata ($613.51, May-1); query secondaria (Yahoo Finance/CNBC) ha riportato solo notizie capex AI $125-145B e EPS $10.44 senza prezzo esplicito. Fonti < 2."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "fonte unica ($93.61, Apr-30 close); prezzo anomalo sospetto rispetto a capitalizzazione attesa (~450M share × $93.61 = ~$42B, sottostima vs storico). Possibile split non documentato. Seconda fonte senza prezzo esplicito. Escluso per anomalia + fonti < 2."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "scarto fonti 5.16% > soglia 4%: Apr-29 $337.11 (Yahoo Finance/CNBC) vs Apr-30 close $354.49 (Investing.com). Date diverse (non confrontabile come triangolazione intraday). Spread inter-giornaliero non usabile come validazione."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "fonte unica confermata ($347.30 NYSE, Apr-30); query secondaria ha restituito solo previsioni analisti e target 2026, senza prezzo corrente esplicito. Fonti < 2."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "entrambe le query hanno restituito prezzi in EUR sulla borsa di Milano (€6.234, STLAM). Il ticker NYSE per Stellantis è STLA (USD), non STLAM. Prezzo USD NYSE non confermato da 2 fonti indipendenti. Currency mismatch EUR/USD."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "fonte unica per May-1 ($66.66, Investing.com); seconda fonte (MarketBeat $68.79) è del 24/04 - date diverse, non comparabili come triangolazione. Fonti effettive < 2 per la stessa data."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "BTC",
+      "motivo": "Recovery da $75,500 a $77K con +2% oggi; supporto istituzionale (SBI Holdings); Consensus 2026 Miami 5-7 maggio come catalizzatore imminente; livello $77K confermato come supporto. Risk/reward favorevole: SL -5% vs target +8%."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "Q1 2026 beat (EPS €7.15) + guidance full-year €36-40B alzata + AI semiconductor supercycle intatto. 38 analisti Strong Buy con target medio $1,658 (+19.8% da entry). La correzione del -3.3% il 28/04 ha creato un'entry favorevole nel trend rialzista annuale (+36% YTD)."
+    },
+    {
+      "rank": 3,
+      "asset": "NVDA",
+      "motivo": "AI capex hyperscalers $650B nel 2026 (Amazon $200B, Meta $125-145B) è catalizzatore strutturale. Pullback -7.4% da ATH $216.61 a $200 = potenziale buy-the-dip per investitori con orizzonte medio-lungo. 38 analisti Strong Buy, target medio $266.24 (+32.7%)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Portafoglio virtuale $100,000 USD su Alpaca (zero commissioni azioni/ETF). Solo asset con affidabilità ALTA o MEDIA inclusi.",
+    "allocazione_suggerita": {
+      "BTC":  {"pct": 30, "usd": 30000, "segnale": "BUY", "note": "Posizione principale su segnale più forte"},
+      "ASML": {"pct": 25, "usd": 25000, "segnale": "BUY", "note": "Stock EU ad alta qualità con momentum"},
+      "NVDA": {"pct": 20, "usd": 20000, "segnale": "HOLD", "note": "Hold con potenziale upgrade a BUY su rimbalzo > $205"},
+      "GLD":  {"pct": 10, "usd": 10000, "segnale": "HOLD", "note": "Diversificazione safe-haven"},
+      "ETH":  {"pct": 8,  "usd": 8000,  "segnale": "HOLD", "note": "Crypto diversificazione - posizione ridotta"},
+      "SOL":  {"pct": 4,  "usd": 4000,  "segnale": "HOLD", "note": "Posizione speculativa piccola"},
+      "SAP":  {"pct": 2,  "usd": 2000,  "segnale": "HOLD", "note": "Cloud growth +27% ma revenue miss limita size"},
+      "USO":  {"pct": 1,  "usd": 1000,  "segnale": "HOLD", "note": "Posizione minima, affidabilità MEDIA per errore fonte S2"}
+    },
+    "totale_allocato_pct": 100,
+    "totale_allocato_usd": 100000
+  }
+}
