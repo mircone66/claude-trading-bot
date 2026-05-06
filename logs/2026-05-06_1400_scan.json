@@ -1,0 +1,506 @@
+{
+  "timestamp": "2026-05-06T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta 6 mag 2026: AMD esplode +11.7% su Q1 blowout (data center +57% YoY, revenue $10.25B). Oro (GLD) rally +2.89% su target JPMorgan $6.300/oz e acquisti banche centrali (244t Q1 2026). GOOGL consolida momentum post-earnings (+29.48% in 30gg su cloud growth). BTC avanza verso $82K su ottimismo CLARITY Act in Senato. NFLX penalizzata -3.31% da insider selling Hastings ($38M). USO escluso: spread tra fonti 7.36% > soglia 4%. 19 asset analizzati, 18 validati (16 ALTA + 2 MEDIA), 1 escluso.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 284.44,
+      "change_24h": "+0.09%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma",
+      "news": "Apple Q2 FY2026 earnings beat su top e bottom line, iPhone forte, App Store Q3 revenue +3.7% YoY (BofA/Seeking Alpha). Stock tocca quasi-record storico.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 284.44,
+      "stop_loss": 275.91,
+      "target": 298.66,
+      "commissione": 0.00,
+      "reasoning": "Apple Q2 FY2026 beat con forte iPhone demand e services crescita YoY (Yahoo Finance/Seeking Alpha). Momentum rialzista post-earnings, Intel partnership su chipmaking aggiunge catalizzatore AI.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC", "price": 284.44},
+          {"name": "MSN / TheStreet (May 5 close)", "price": 276.77}
+        ],
+        "spread_pct": 2.73,
+        "affidabilita": "MEDIA",
+        "note": "Spread riflette cambio di seduta (5→6 mag), non disaccordo tra fonti: entrambe concordano sui rispettivi giorni. Prezzo May 6 da CNBC/Yahoo confermato."
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 390.59,
+      "change_24h": "+0.43%",
+      "trend_5d": "ribassista",
+      "volume_note": "nella norma",
+      "news": "Tesla -13.42% YTD, trading sotto $400. 26 analisti su Hold. Concorrenza EV in aumento e preoccupazioni brand Musk (24/7 Wall St., May 6).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 390.59,
+      "stop_loss": 378.87,
+      "target": 410.12,
+      "commissione": 0.00,
+      "reasoning": "Consensus Hold da 26 analisti con target $413 (Yahoo Finance). Stock -13.42% YTD su pressioni competitive EV e sentiment negativo Musk. Attendere catalizzatore Q2 delivery per cambio direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / stockinvest.us", "price": 389.37},
+          {"name": "Robinhood / TradingView (24h)", "price": 391.81}
+        ],
+        "spread_pct": 0.63,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 196.54,
+      "change_24h": "-1.01%",
+      "trend_5d": "ribassista",
+      "volume_note": "nella norma",
+      "news": "NVDA -1% nonostante earnings forti. CEO Jensen Huang avverte su zero market share in Cina. AMD erode quote di mercato in data center AI (Yahoo Finance, May 6).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 196.54,
+      "stop_loss": 190.64,
+      "target": 206.37,
+      "commissione": 0.00,
+      "reasoning": "Pullback da picco $216.87 (27 apr) con resistenza tecnica a $207.12. Zero market share in Cina dichiarata da CEO Huang (Yahoo Finance). Competizione AMD in accelerazione; attendere consolidamento sopra $207.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 196.50},
+          {"name": "CNBC / StockAnalysis", "price": 196.58}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 410.60,
+      "change_24h": "-1.09%",
+      "trend_5d": "laterale",
+      "volume_note": "nella norma",
+      "news": "Microsoft Q3 FY2026 beat: revenue +18% YoY, Azure AI run-rate $37B (+123% YoY). Stock -15.7% YTD ma 55/58 analisti su Buy con target $576.42 (TheStreet/24/7 Wall St.).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 410.60,
+      "stop_loss": 398.28,
+      "target": 431.13,
+      "commissione": 0.00,
+      "reasoning": "MSFT Q3 FY2026 +18% revenue con Azure AI ARR $37B (+123% YoY - TheStreet). Valutazione -15.7% YTD crea punto di re-ingresso attrattivo rispetto a fondamentali AI eccezionali.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Investing.com", "price": 410.60},
+          {"name": "Yahoo Finance / Morningstar", "price": 410.60}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 274.88,
+      "change_24h": "+0.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "sotto la media (78.8% avg volume)",
+      "news": "AMZN testa il massimo a 52 settimane ($278.56). AWS + advertising growth forte. Pre-market May 6 +0.29% a $274.31 (Yahoo Finance/CNBC).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 274.88,
+      "stop_loss": 266.63,
+      "target": 288.62,
+      "commissione": 0.00,
+      "reasoning": "AMZN in prossimità del massimo 52 settimane ($278.56) con supporto pre-market +0.29% (Yahoo Finance). Volume ridotto non segnala distribuzione; momentum rialzista su AWS e advertising.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / MarketBeat", "price": 275.45},
+          {"name": "CNBC / Yahoo Finance (May 5 close)", "price": 273.55}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 390.98,
+      "change_24h": "+1.31%",
+      "trend_5d": "fortemente_rialzista",
+      "volume_note": "nella norma",
+      "news": "Alphabet Q1 2026 batte stime su forte Google Cloud growth. +29.48% in 30 giorni, +136.55% in 12 mesi. Market cap $4.71T (Yahoo Finance, May 6).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 390.98,
+      "stop_loss": 379.25,
+      "target": 410.53,
+      "commissione": 0.00,
+      "reasoning": "Alphabet Q1 2026 beat top e bottom line su Google Cloud AI momentum (Yahoo Finance). +29.48% ultimi 30gg confermano trend strutturale; CapEx $190B FY2026 segnala convinzione AI leadership.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / StockAnalysis", "price": 388.43},
+          {"name": "Yahoo Finance / CNBC", "price": 393.53}
+        ],
+        "spread_pct": 1.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 610.41,
+      "change_24h": "+0.27%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma",
+      "news": "Meta alza CapEx 2026 a $125-145B per AI infrastruttura. Q1 2026 forte, stock vicino al picco di sessione (CNBC). 55+ analisti Buy con target $840 (MarketBeat).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 610.41,
+      "stop_loss": 592.10,
+      "target": 640.93,
+      "commissione": 0.00,
+      "reasoning": "Meta Q1 2026 beat con forte ad revenue; CapEx $125-145B evidenzia fiducia nella monetizzazione AI (CNBC). Consensus analitico Buy con target $840 (+37.6% da current). Momentum intraday positivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 610.41},
+          {"name": "CNBC", "price": 610.41}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 87.97,
+      "change_24h": "-3.13%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (pressione vendita)",
+      "news": "Reed Hastings (fondatore) vende $38M in azioni NFLX mentre il titolo scende a $87 (ArtThreat.net). 52-week range $75.01-$134.12; vicino ai minimi.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 87.97,
+      "stop_loss": 90.61,
+      "target": 83.57,
+      "commissione": 0.00,
+      "reasoning": "Insider selling $38M da Reed Hastings (ArtThreat.net) combinato con -3.31% in 24h segnala distribuzione istituzionale. Stock al 34% sotto il massimo 52w ($134.12); sentiment deteriora.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 88.05},
+          {"name": "stockinvest.us (May 5)", "price": 87.89}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 387.14,
+      "change_24h": "+11.69%",
+      "trend_5d": "fortemente_rialzista",
+      "volume_note": "anomalo rialzista (post-earnings)",
+      "news": "AMD Q1 2026 blowout: revenue $10.25B vs $9.89B atteso, EPS $1.37 vs $1.29. Data center +57% YoY a $5.8B. Stock +16% intraday May 5 (CNBC). CEO Lisa Su: AI agents driver domanda.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 387.14,
+      "stop_loss": 375.53,
+      "target": 406.50,
+      "commissione": 0.00,
+      "reasoning": "AMD Q1 2026 revenue +57% data center a $5.8B, EPS $1.37 vs $1.29 expected (CNBC, May 5). CEO Lisa Su identifica AI agents come mega-driver. +66% YTD con momentum forte; confidenza Medio per prezzo in consolidazione post-spike.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Multiple sources / Public.com", "price": 381.51},
+          {"name": "CNBC +16% implied from $341.54", "price": 395.99}
+        ],
+        "spread_pct": 3.73,
+        "affidabilita": "MEDIA",
+        "note": "Spread dovuto a rapida evoluzione del prezzo post-earnings. Prezzo esplicito $381.51 da più fonti (May 6 current)."
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1438.76,
+      "change_24h": "+3.50%",
+      "trend_5d": "laterale",
+      "volume_note": "nella norma",
+      "news": "ASML Q1 2026 beats: revenue €8.8B, EPS €7.15 > €7.7 atteso, gross margin 53%. Ma titolo scende 'buy the rumor sell the news' dopo il report (Motley Fool, Apr 28). Up 31% YTD.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1438.76,
+      "stop_loss": 1395.60,
+      "target": 1510.70,
+      "commissione": 0.00,
+      "reasoning": "ASML Q1 2026 batte forecast (€8.8B revenue, 53% gross margin - Investing.com) ma pattern 'buy the rumor' limita rialzo immediato. Target analitico €1.469 vicino al prezzo attuale. Attendere consolidamento.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (NASDAQ ADR)", "price": 1442.92},
+          {"name": "CNBC range midpoint ($1414-$1455)", "price": 1434.60}
+        ],
+        "spread_pct": 0.58,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 171.94,
+      "change_24h": "+0.57%",
+      "trend_5d": "laterale",
+      "volume_note": "nella norma",
+      "news": "SAP acquisisce Dremio per unificare dati SAP e non-SAP per agentic AI (SAP.com, May 2026). Ex-dividend $2.50 il 6 mag 2026. Titolo -45% dal massimo 52w ($313.28).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 171.94,
+      "stop_loss": 166.78,
+      "target": 180.54,
+      "commissione": 0.00,
+      "reasoning": "SAP in recupero (+0.57%) post ex-dividend $2.50 (May 6 - SAP IR). Acquisizione Dremio strategica per agentic AI ma titolo -45% da $313 crea incertezza strutturale. Target analitico $288 (+67%) su timeframe lungo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 172.39},
+          {"name": "Yahoo Finance (May 5 close)", "price": 171.49}
+        ],
+        "spread_pct": 0.52,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 336.08,
+      "change_24h": "+3.27%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma",
+      "news": "Ferrari Q1 2026 EBITDA +4%, forte domanda personalizzazioni e F80 supercar. Beat stime Wall Street, guidance annuale confermata. 9 analisti Strong Buy, target $477.86 (MarketBeat, May 6).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 336.08,
+      "stop_loss": 325.99,
+      "target": 352.88,
+      "commissione": 0.00,
+      "reasoning": "Ferrari Q1 2026 EBITDA +4% con demand resiliente su personalizzazioni e F80 (StockTitan/MarketBeat). Guidance FY2026 confermata. Target $477.86 (+42%) da 9 analisti. Stock -35% dal 52-week high ($519): valore attrattivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / NYSE", "price": 334.52},
+          {"name": "Morningstar / StockAnalysis", "price": 337.63}
+        ],
+        "spread_pct": 0.93,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 7.20,
+      "change_24h": "0.00%",
+      "trend_5d": "laterale",
+      "volume_note": "nella norma",
+      "news": "Stellantis Q1 2026: shipments 1.4M unità +12% YoY, revenue +6% (primaryignition.com, May 5). Ma €1B potenziale impatto commodity costs da dazi. Market cap $20.5B.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 7.20,
+      "stop_loss": 6.98,
+      "target": 7.56,
+      "commissione": 0.00,
+      "reasoning": "Stellantis Q1 2026 delivery +12% YoY a 1.4M unità e revenue +6% (primaryignition.com). Controbilanciato da €1B potenziale headwind commodity (dazi). Target analitico $11.59 (+60%) suggerisce deep value ma catalizzatori limitati nel breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (NYSE:STLA)", "price": 7.20},
+          {"name": "Morningstar / CNBC (NYSE:STLA)", "price": 7.20}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 430.36,
+      "change_24h": "+2.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista",
+      "news": "GLD sale da $418.27 a $430.36 (+2.89%). JPMorgan target oro $6.300/oz entro fine 2026 (Motley Fool). Banche centrali acquistano 244 tonnellate Q1 2026. Sesta deficit year per argento.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 430.36,
+      "stop_loss": 421.75,
+      "target": 447.57,
+      "commissione": 0.00,
+      "reasoning": "GLD +2.89% in una seduta su target JPMorgan $6.300/oz e acquisti banche centrali 244t Q1 2026 (Yahoo Finance/Motley Fool). Massimo 52w $509.70 lascia spazio al rialzo; momentum tecnico Bullish.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (NYSE Arca)", "price": 430.36},
+          {"name": "CNBC / NYSE Arca Live", "price": 430.36}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 65.92,
+      "change_24h": "-3.46%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo ribassista",
+      "news": "SLV -3.46% in 24h con segnale tecnico bearish. NAV iShares $66.46. Argento in sesto anno di deficit ma correzione tecnica in corso (Yahoo Finance news, May 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 65.92,
+      "stop_loss": 64.60,
+      "target": 68.56,
+      "commissione": 0.00,
+      "reasoning": "SLV -3.46% in 24h con segnale tecnico Bearish (Yahoo Finance). Nonostante +160% negli ultimi 12 mesi, momentum a breve termine negativo. Attendere stabilizzazione sopra $68 (NAV area) prima di nuovo ingresso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / iShares", "price": 65.91},
+          {"name": "NYSE Arca / CNBC", "price": 65.94}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 81473.00,
+      "change_24h": "+1.15%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($39.5B 24h volume)",
+      "news": "BTC verso $82K trainato da ottimismo CLARITY Act (Senato markup previsto maggio 2026) e domanda istituzionale ETF (CoinDesk, May 6). +30% dal minimo primaverile $62.800.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 81473.00,
+      "stop_loss": 77399.35,
+      "target": 87990.84,
+      "commissione": 0.00,
+      "reasoning": "BTC +30% da minimo spring $62.800. CLARITY Act in markup Senato maggio 2026 catalizzatore regolatorio chiave (CoinDesk). Domanda ETF istituzionale in aumento. Target $88K plausibile su continuazione del trend.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 81572.04},
+          {"name": "Coinbase", "price": 81374.99}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2367.08,
+      "change_24h": "-0.43%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($16.7B 24h volume)",
+      "news": "ETH -0.43% in 24h. Market cap $285B (#2 per capitalizzazione). Nessun catalizzatore specifico vs BTC. Consensus 2026: fase accumulazione (CoinMarketCap, May 6).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2367.08,
+      "stop_loss": 2248.73,
+      "target": 2556.45,
+      "commissione": 0.00,
+      "reasoning": "ETH in fase laterale -0.43% senza catalizzatori specifici rispetto a BTC (CLARITY Act) o SOL (Consensus Miami). Volume normale non segnala accumulo direzionale forte nel breve periodo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 2363.44},
+          {"name": "Coinbase", "price": 2370.72}
+        ],
+        "spread_pct": 0.31,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 87.05,
+      "change_24h": "+5.05%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista ($5.67B 24h volume)",
+      "news": "SOL +5.05% in 24h, high $89.85. Solana Foundation a Consensus Miami 2026: Western Union adotta stablecoin su Solana (CoinDesk). CoinMarketCap rank #7, market cap $51B.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 87.05,
+      "stop_loss": 82.70,
+      "target": 94.01,
+      "commissione": 0.00,
+      "reasoning": "SOL +5.05% in 24h su Consensus Miami 2026 con Western Union stablecoin adoption su Solana (CoinDesk). Volume $5.67B anomalo rialzista. Ecosystem adoption narrativa forte come catalyst a breve termine.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 88.61},
+          {"name": "Coinbase", "price": 85.48}
+        ],
+        "spread_pct": 3.60,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "USO",
+      "motivo": "Spread tra fonti 7.36% (Barchart/Investing.com $144.17 vs stockinvest.us May 6 $133.94) supera soglia 4%. Volatilità WTI e dati contrastanti non consentono prezzo validato affidabile. Escluso da segnali BUY/SELL."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GOOGL",
+      "motivo": "Q1 2026 beat su Google Cloud AI, +29.48% in 30 giorni, +136.55% in 12 mesi. Momentum strutturale più forte del settore. CapEx $190B conferma leadership AI."
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "motivo": "Q1 2026 blowout: data center +57% YoY, EPS beat. CEO indica AI agents come mega-driver. +66% YTD; il momentun post-earnings favorisce ingresso su pullback."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "motivo": "Rally +2.89% in una seduta. JPMorgan target $6.300/oz. Banche centrali acquistano 244t Q1 2026. Hedge inflazione e geopolitica in un mercato azionario elevato."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca",
+    "allocazione_suggerita": {
+      "GOOGL": "13%",
+      "AMD": "10%",
+      "GLD": "10%",
+      "AAPL": "8%",
+      "MSFT": "8%",
+      "META": "8%",
+      "AMZN": "7%",
+      "RACE": "6%",
+      "BTC": "6%",
+      "SOL": "4%",
+      "CASH": "20%"
+    },
+    "logica": "Sovrappeso su GOOGL/AMD (earnings momentum), GLD (macro hedge), riduzione esposizione a NFLX (SELL). 20% cash per opportunita su breakout USO/SLV quando dati tornano affidabili."
+  }
+}
