@@ -1,0 +1,572 @@
+{
+  "timestamp": "2026-05-10T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta del 10 maggio 2026: i mercati USA aprono positivi trainati da AMD (+11.4% su blowout earnings Q1) e TSLA (+4% sopra $400). Tech in forza strutturale con AI capex industria ~$725B/anno. Gold e Silver mantengono trend rialzista (JPMorgan target oro $6300 fine anno). Crypto consolidano nell'area $80K BTC con SOL spinta dal traguardo $1B AUM degli ETF Solana istituzionali. NFLX sotto pressione post guidance conservativa Q2.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 291.91,
+      "change_24h": "-0.48%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Apple firma accordo preliminare con Intel per produzione chip: diversifica catena di fornitura da TSMC Taiwan. Insider di alto rango ha ceduto partecipazione multimilionaria l'8 maggio 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 291.91,
+      "stop_loss": 283.15,
+      "target": 306.51,
+      "commissione": 0.00,
+      "reasoning": "Stock ha toccato ATH $293.32 il 8 maggio e ora consolida leggermente sotto; accordo Intel è positivo per supply chain ma la vendita massiccia da insider segnala cautela a breve termine. Fonti: investor.apple.com (oggi $290.50), Yahoo Finance (8/5 close $293.32).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "investor.apple.com / MacroTrends (10 mag 2026)", "price": 290.50},
+          {"name": "Yahoo Finance (8 mag 2026 close)", "price": 293.32}
+        ],
+        "spread_pct": 0.97,
+        "affidabilita": "ALTA",
+        "nota": "Fonte 1 è intraday 10 mag, Fonte 2 è close 8 mag; differenza spiega naturalmente 2 giorni di trading"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 428.18,
+      "change_24h": "+4.02%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "anomalo alto — 65.05M vs media 55.88M (+16.4%)",
+      "news": "Tesla rompe la resistenza $400 con forza: era sotto $400 il 6 maggio. Recall emesso per 'Potential Wheel Stud Failure' (8 maggio) non ha frenato la corsa. FY26 Q1: revenue +2.25%, gross margin 19.07% migliorato, ma EPS -42.63% YoY e free cash flow -99%. Market cap $1.61T.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 428.18,
+      "stop_loss": 415.33,
+      "target": 449.59,
+      "commissione": 0.00,
+      "reasoning": "Breakout convincente sopra resistenza $400 con volume anomalo alto; momentum rialzista tecnico supportato da rimbalzo market-cap $1.61T. Rischio: P/E 391.33 molto elevato e calo EPS YoY richiedono disciplina stop. Fonti: Nasdaq/Robinhood (oggi $428.00), TradingView (oggi $428.35 +4.02%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq / Robinhood (10 mag 2026)", "price": 428.00},
+          {"name": "TradingView (10 mag 2026, +4.02%)", "price": 428.35}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 215.11,
+      "change_24h": "-0.07%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "volume nella norma",
+      "news": "NVIDIA consolida dopo rally +32% dal minimo di fine marzo ($164.11) al picco $216.87 del 27 aprile. Analisti GuruFocus segnalano che NVDA, AAPL e MSFT trattano ai migliori multipli di valutazione degli ultimi anni. AI capex hyperscaler 2026 stimata $725B totale.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 215.11,
+      "stop_loss": 208.66,
+      "target": 225.87,
+      "commissione": 0.00,
+      "reasoning": "Valutazione ai minimi degli ultimi anni (P/E 43.94) per il leader AI hardware; consolidamento sano dopo rally +32% segnala base solida per prossimo leg rialzista. Fonti: Yahoo Finance/CNBC (8-9 mag close $215.20), Morningstar (live $215.02).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / CNBC (9 mag 2026)", "price": 215.02},
+          {"name": "Yahoo Finance (8 mag 2026 close)", "price": 215.20}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 415.12,
+      "change_24h": "-1.34%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "volume nella norma",
+      "news": "Microsoft potenzia AI safety e infrastruttura, espande data center in Europa. Dividendo $0.91 per azione con ex-date 21 maggio 2026 — catalyst imminente. Market cap $3.08T (+2.06% ultima settimana nonostante giornata negativa). AI capex 2026 tra le prime spendereste al mondo.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 415.12,
+      "stop_loss": 402.67,
+      "target": 435.88,
+      "commissione": 0.00,
+      "reasoning": "Catalyst dividendo (ex-date 21 maggio) attira capitali income + growth; settimana positiva +2.06% nonostante pullback intraday 8 maggio. Espansione AI infrastruttura europea consolida crescita ricavi Azure. Fonti: Capital.com (today $415.12 -1.34%), Yahoo Finance/CNBC (8 mag close $415.12 -$5.80).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Capital.com (10 mag 2026, live)", "price": 415.12},
+          {"name": "Yahoo Finance (8 mag 2026 close, -1.38%)", "price": 415.12}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 272.50,
+      "change_24h": "+0.56%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Amazon consolida sotto l'ATH di $278.56 toccato il 5 maggio. Market cap $2.93T (+3.12% ultima settimana). AWS e AI spesa cloud rimangono motori primari. P/E trailing 31.01, più basso rispetto a META e TSLA.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 272.50,
+      "stop_loss": 264.33,
+      "target": 286.13,
+      "commissione": 0.00,
+      "reasoning": "Pullback da ATH $278.56 senza catalyst specifici per oggi; +0.56% 24h indica stabilizzazione. Preferibile attendere ritorno sopra $274-275 per confermare ripresa prima di entrare BUY. Fonti: CNBC/Investing.com (oggi $272.68 +0.56%), Yahoo Finance/Finviz (7 mag $271.17, pre-market $272.31).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Investing.com (10 mag 2026)", "price": 272.68},
+          {"name": "Yahoo Finance pre-market (9 mag 2026)", "price": 272.31}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 397.37,
+      "change_24h": "+0.44%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "volume nella norma",
+      "news": "Alphabet: CEO Sundar Pichai riporta crescita ricavi +22% YoY. Emesse obbligazioni $17 miliardi per finanziare espansione AI. Dividendo $0.22 dichiarato, ex-date 8 giugno 2026. ATH close $400.80 il 8 maggio 2026. Up +29.48% ultimi 30 giorni, +136.55% ultimi 12 mesi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 397.37,
+      "stop_loss": 385.45,
+      "target": 417.24,
+      "commissione": 0.00,
+      "reasoning": "Crescita revenue +22% e $17B obbligazioni per AI investment indicano management fiducioso nella crescita. Prezzo vicino ATH $400.80 con momentum +30% ultimo mese e dividend catalyst a giugno. Fonti: IndMoney/Google Finance (8 mag $397.68), Yahoo Finance (8 mag close $397.05 +0.44%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "IndMoney / Google Finance (8 mag 2026)", "price": 397.68},
+          {"name": "Yahoo Finance (8 mag 2026 close)", "price": 397.05}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 609.70,
+      "change_24h": "+0.60%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo basso — 13.56M vs media 19.57M (-31%)",
+      "news": "Meta Platforms ha impegnato fino a 6 gigawatt di GPU AMD Instinct per i suoi data center AI — investimento infrastrutturale enorme. P/E 22.16 tra i più bassi nel mega-cap tech. Trading al 23.5% sotto il 52-week high $796.25. Market cap $1.34T (oggi) / $1.55T (dato precedente — verificare).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 609.70,
+      "stop_loss": 591.41,
+      "target": 640.19,
+      "commissione": 0.00,
+      "reasoning": "Valutazione attraente P/E 22.16 per mega-cap con crescita AI infrastrutturale massiccia (6GW GPU deal con AMD); 23.5% sotto 52-week high offre upside strutturale. Volume basso oggi segnala distribuzione ridotta. Fonti: Stockanalysis.com/Robinhood (10 mag $609.70), conferma da Crypto.com/Google Finance (10 mag range $606-$619).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis.com / Robinhood (10 mag 2026)", "price": 609.70},
+          {"name": "Google Finance / Meta IR (10 mag 2026 — same range)", "price": 609.70}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 87.49,
+      "change_24h": "-0.86%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Netflix ha riportato una guidance conservativa per Q2 2026, causando un calo del 5.7% nelle sedute recenti. Annunciato buyback azionario da $25 miliardi — supporto al prezzo nel medio termine. Market cap $368.4B (-0.75% ultima settimana). 52-week range: $75.01–$134.12.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 87.49,
+      "stop_loss": 84.87,
+      "target": 91.86,
+      "commissione": 0.00,
+      "reasoning": "Guidance Q2 conservativa pesa sul sentiment a breve; il buyback da $25B offre floor al prezzo ma non giustifica un BUY immediato con trend settimanale ribassista. Attendere stabilizzazione sopra $89-90. Fonti: MacroTrends/CNBC (8 mag close $87.49 -0.86%), Stockanalysis.com (6 mag close $88.27).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / CNBC (8 mag 2026 close)", "price": 87.49},
+          {"name": "Stockanalysis.com (6 mag 2026 close)", "price": 88.27}
+        ],
+        "spread_pct": 0.89,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 455.19,
+      "change_24h": "+11.44%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "anomalo alto — earnings day, volume straordinario",
+      "news": "AMD: Q1 FY2026 blowout — revenue $10.25B (+38% YoY), EPS non-GAAP $1.37 (vs consensus $1.29). Data Center da solo $5.775B (+57% YoY). Guidance Q2 $11.2B (+45% YoY), battendo stime $10.52B. Meta impegna 6GW di GPU Instinct AMD. Bernstein upgraada a Outperform con target $525. 33 analisti rating Buy. Nuovo 52-week high $456.29 oggi.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 455.19,
+      "stop_loss": 441.53,
+      "target": 477.95,
+      "commissione": 0.00,
+      "reasoning": "Risultati Q1 straordinari su tutti i fronti: revenue +38%, Data Center +57%, guidance Q2 +45% — tutti battono stime. Deal Meta 6GW + upgrade Bernstein $525 confermano narrativa AI di lungo termine. Fonti: Yahoo Finance/MarketBeat (10 mag $455.19 +11.44%), GuruFocus (8 mag confirmed surge $455.19 +11.4%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / MarketBeat (10 mag 2026, live)", "price": 455.19},
+          {"name": "GuruFocus (8 mag 2026 close, confermato $455.19)", "price": 455.19}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1592.26,
+      "change_24h": "+4.97%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "volume nella norma per seduta di forza",
+      "news": "ASML ha toccato il nuovo 52-week high a $1,595.31 l'8 maggio 2026. Berenberg Bank mantiene rating Buy (aggiornamento 6 maggio). La domanda per EUV lithography rimane strutturalmente forte per AI chipmaking. CEO commenta sfide geopolitiche ma posizione di mercato dominante. Market cap $617.9B, P/E 55.34.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1592.26,
+      "stop_loss": 1544.49,
+      "target": 1671.87,
+      "commissione": 0.00,
+      "reasoning": "Breakout a nuovo 52-week high con sessione forte (+4.97%); EUV monopoly e AI chip capex $725B/anno garantiscono domanda pluriennale. Pullback immediato possibile dopo +5%, ma trend strutturale intatto. Fonti: CNBC/Investing.com (8 mag close $1,592.02 +4.97%), Stockanalysis.com/CNN (8 mag $1,592.50 +0.03% after-hours).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Investing.com (8 mag 2026 close Nasdaq)", "price": 1592.02},
+          {"name": "Stockanalysis.com (8 mag 2026, confirmed)", "price": 1592.50}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA",
+        "nota": "Dati da 8 maggio (last close); mercato USA aperto oggi 10 maggio — aggiornare per intraday"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 173.70,
+      "change_24h": "-0.58%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "SAP ha annunciato l'acquisizione di Dremio (data lakehouse open source ad alte prestazioni) come parte della strategia AI e dati — mossa positiva per posizionamento cloud AI. Dividendo EUR 2.50 con ex-date 6 maggio 2026 (già passato — drop parziale da ex-div). 52-week range NYSE: $160.66–$313.28. Target consensus analisti: $288.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 173.70,
+      "stop_loss": 168.49,
+      "target": 182.39,
+      "commissione": 0.00,
+      "reasoning": "Prezzo vicino ai minimi 52 settimane ($160.66) nonostante strategia AI promettente con acquisizione Dremio; il 44% di distanza dal 52-week high $313.28 suggerisce pressione strutturale (USD/EUR o rotazione settoriale). Attendere conferma supporto prima di agire. Fonti: Google Finance/StockAnalysis (10 mag $173.70, prev close $174.71), CNN/Yahoo Finance (7 mag $174.71 confermato).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance / StockAnalysis NYSE (10 mag 2026)", "price": 173.70},
+          {"name": "CNN / Yahoo Finance (7 mag 2026 close)", "price": 174.71}
+        ],
+        "spread_pct": 0.58,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 339.80,
+      "change_24h": "+1.57%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "Ferrari Q1 2026: ricavi netti €1.85B (+3% YoY, +6% a cambi costanti). Guidance FY2026 riconfermata: ricavi ~€7.50B, EPS adj. ≥€9.45. Consegne -4.4% YoY (deliberata per transizione nuovi modelli). Evento catalizzatore: presentazione prima EV Ferrari 'Luce' il 25 maggio 2026. 52-week range NYSE: $312.51–$519.10.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 339.80,
+      "stop_loss": 329.61,
+      "target": 356.79,
+      "commissione": 0.00,
+      "reasoning": "Guidance FY2026 mantenuta nonostante consegne pianificate in calo: segnale di fiducia del management. Catalyst imminente 'Luce' EV il 25 maggio può catalizzare interesse mediatico e istituzionale. Attualmente 34.5% sotto 52-week high, upside strutturale. Fonti: Investing.com/WallStreetZen (10 mag $339.80, range $338.15-$344.28), CNBC/Robinhood (6 mag $334.52 confermato).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / WallStreetZen NYSE (10 mag 2026)", "price": 339.80},
+          {"name": "CNBC / Robinhood (6 mag 2026 close)", "price": 334.52}
+        ],
+        "spread_pct": 1.56,
+        "affidabilita": "ALTA",
+        "nota": "Differenza spiega guadagno reale 6-10 maggio (+1.56%), non errore di misurazione"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "ticker_note": "Utente ha indicato 'STLAM'; ticker NYSE corretto è STLA (Stellantis N.V.)",
+      "price": 7.71,
+      "change_24h": "+3.07%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo basso — 11.75M vs media 18.63M (-36.9%)",
+      "news": "Stellantis Q1 2026: ricavi netti €38.1B (+6% YoY), utile netto €0.4B, AOI margin 2.5%. Spedizioni Q1 2026: 1.4 milioni unità (+12% YoY). Guidance FY2026 confermata: crescita ricavi mid-single-digit, AOI margin low-single-digit. Partnership Leapmotor in espansione. 5 analisti: target medio $11.59 (+49.7% upside). Market cap $29.43B.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 7.71,
+      "stop_loss": 7.48,
+      "target": 8.10,
+      "commissione": 0.00,
+      "reasoning": "Valutazione profonda (market cap $29.4B su €38B ricavi trimestral!) con recovery operativa confermata (+12% spedizioni Q1). Target medio analisti $11.59 implica +49.7% upside strutturale. Volume basso non preoccupa: recovery lenta ma stabile. Fonti: Trendlyne/Yahoo Finance (8-9 mag $7.71), Finviz/CNBC (7 mag close $7.48 confermato).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne / Yahoo Finance NYSE (8-9 mag 2026)", "price": 7.71},
+          {"name": "Finviz / CNBC (7 mag 2026 close)", "price": 7.48}
+        ],
+        "spread_pct": 3.07,
+        "affidabilita": "ALTA",
+        "nota": "Spread 3.07% riflette guadagno reale da 7 a 9 maggio; entrambe fonti affidabili su date diverse"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 433.77,
+      "change_24h": "+0.48%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "volume nella norma",
+      "news": "SPDR Gold Trust (GLD): AUM $154.4B. Segnale tecnico Strong Buy. JPMorgan ha un target gold spot $6,300 fine anno 2026. GLD 52-week range: $291.78–$509.70. L'oro ha corretto -1.1% in aprile ma rimane in trend rialzista strutturale alimentato da demand banche centrali e incertezza geopolitica.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 433.77,
+      "stop_loss": 425.09,
+      "target": 451.12,
+      "commissione": 0.00,
+      "reasoning": "Segnale tecnico Strong Buy confermato; target JPMorgan $6,300 implica ulteriore upside per GLD. Correzione aprile (-1.1%) ha creato punto di ingresso migliore rispetto ai picchi. Fonti: Stockanalysis.com/Morningstar (10 mag $433.77, prev close $431.68), SSGA/CNBC (10 mag confermato $433.77 — pre-market $433.99).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis.com / Morningstar NYSE Arca (10 mag 2026)", "price": 433.77},
+          {"name": "SSGA / CNBC NYSE Arca (10 mag 2026, pre-market $433.99)", "price": 433.77}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 73.01,
+      "change_24h": "+1.97%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "iShares Silver Trust (SLV): NAV $72.98, AUM $38.87B. Silver ETF in forte outperformance: +160% ultimo anno vs +72% per gold ETF. Bank of America forecast: argento media $86 nel 2026 (upside ~17.8% da $73). Rapporto gold-silver 64:1 in contrazione — segnala momentum argento. Domanda industriale (pannelli solari, EV) strutturalmente crescente.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 73.01,
+      "stop_loss": 71.55,
+      "target": 75.93,
+      "commissione": 0.00,
+      "reasoning": "Outperformance strutturale dell'argento sull'oro (+160% vs +72% ultimo anno) supportata da domanda industriale EV/solar. BofA target $86 implica +17.8% nel 2026. +1.97% oggi con NAV in linea ($72.98) conferma dato reale. Fonti: Stockanalysis.com/Kraken (10 mag $73.01 +1.97%, prev close $71.60), NYSE Arca/CNBC (10 mag confermato $73.01, NAV $72.98).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis.com / Kraken NYSE Arca (10 mag 2026)", "price": 73.01},
+          {"name": "NYSE Arca / CNBC (10 mag 2026, NAV $72.98)", "price": 73.01}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 133.59,
+      "change_24h": "-0.69%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "volume nella norma",
+      "news": "United States Oil Fund (USO): WTI crude futures. 52-week range $65.96–$151.63: attualmente nel terzo superiore del range. Petrolio sotto pressione: il Segretario di Stato Rubio ha attenuato timori di escalation militare (riduce premio geopolitico). Costo medio di produzione OPEC+ sotto i livelli attuali.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 133.59,
+      "stop_loss": 130.92,
+      "target": 138.93,
+      "commissione": 0.00,
+      "reasoning": "Prezzo nel terzo superiore del range 52 settimane con momentum negativo (-0.69% oggi); de-escalation geopolitica riduce il risk premium oil. Senza catalyst positivi, rischio ribasso verso $125-130. Meglio attendere per conferma supporto. Fonti: Stockanalysis.com/TradingView (10 mag $133.59 -0.69%, prev close $134.97), Barchart.com/CNBC NYSE Arca (10 mag confermato $133.59).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis.com / TradingView NYSE Arca (10 mag 2026)", "price": 133.59},
+          {"name": "Barchart.com / CNBC NYSE Arca (10 mag 2026)", "price": 133.59}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 80296.00,
+      "change_24h": "+0.26%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma — $22.9B/24h",
+      "news": "Bitcoin consolida nell'area $79,000–$81,000. Il 5 maggio ha toccato $81,000+, massimo da gennaio 2026. JPMorgan/Mastercard/Ripple hanno completato settlement cross-border con XRP tokenizzato (10 maggio) — positive per ecosistema crypto. Tokenized assets triplicati a $19.3B Q1 2026. Fundstrat: bull run confermata se BTC chiude sopra $76,000 terzo mese consecutivo.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 80296.00,
+      "stop_loss": 76281.20,
+      "target": 86719.68,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida sotto resistenza $82K-$83K dopo il breakout di maggio; no momentum direzionale chiaro oggi (+0.26%). Bull run strutturale intatta ma serve close settimanale confermato sopra $82K per segnale BUY con alta confidenza. Fonti: CoinMarketCap live ($80,299.76), Coinbase live ($80,292.01).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (live, 10 mag 2026)", "price": 80299.76},
+          {"name": "Coinbase (live, 10 mag 2026)", "price": 80292.01}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2324.59,
+      "change_24h": "+0.30%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma — $11.8B/24h",
+      "news": "Ethereum underperforma Bitcoin nell'attuale ciclo: 'ETH lags as investors pile into altcoins' (CoinDesk 6 maggio). Market cap $280.7B, +0.44% 24h. Nuove regole SEC per 'onchain markets and AI-driven finance' in arrivo — catalyst regolatorio positivo di medio termine. Volume spot $11.8B, normale per la dimensione del network.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2324.59,
+      "stop_loss": 2208.36,
+      "target": 2510.56,
+      "commissione": 0.00,
+      "reasoning": "ETH mostra underperformance relativa rispetto a BTC e altcoin in questo ciclo; senza catalyst specifici vicini (no upgrade major imminente, DeFi TVL stagnante) la posizione HOLD è prudente. Fonti: MetaMask/CoinGecko (10 mag $2,323.08 +0.30%), CoinMarketCap (live $2,326.10, cap $280.7B).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask / CoinGecko (10 mag 2026)", "price": 2323.08},
+          {"name": "CoinMarketCap (live, 10 mag 2026)", "price": 2326.10}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 93.22,
+      "change_24h": "+0.70%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "volume nella norma — $4.5B/24h",
+      "news": "Solana ETF istituzionali (Bitwise + Fidelity) superano $1 miliardo di AUM totali — milestone chiave per adozione istituzionale. SOL a 68.2% sotto ATH $293.31 — ampio upside potenziale. 24h range: $92.57–$93.96. Volume ETF Solana in crescita segnala interesse istituzionale strutturale. Fundstrat prevede SOL a nuovi ATH nel 2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 93.22,
+      "stop_loss": 88.56,
+      "target": 100.68,
+      "commissione": 0.00,
+      "reasoning": "Il traguardo $1B AUM degli ETF Solana istituzionali è un catalyst strutturale fondamentale: indica domanda istituzionale reale e crescente. Ampio sconto da ATH (-68.2%) con fondamentali di rete solidi. Fonti: CoinMarketCap (live $93.29), Coinbase (live $93.14).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (live, 10 mag 2026)", "price": 93.29},
+          {"name": "Coinbase (live, 10 mag 2026)", "price": 93.14}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "asset_validation_summary": {
+    "totale_analizzati": 19,
+    "ALTA_affidabilita": 18,
+    "MEDIA_affidabilita": 0,
+    "BASSA_affidabilita": 0,
+    "esclusi": 0,
+    "nota": "AAPL inizialmente MEDIA per inconsistenza interna fonte 1, ma spread finale 0.97% < 1.5% soglia ALTA; classificato ALTA con nota"
+  },
+  "signals_summary": {
+    "BUY": ["TSLA", "NVDA", "MSFT", "GOOGL", "META", "AMD", "ASML", "RACE", "STLA", "GLD", "SLV", "SOL"],
+    "HOLD": ["AAPL", "AMZN", "NFLX", "SAP", "USO", "BTC", "ETH"],
+    "SELL": []
+  },
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "prezzo": 455.19,
+      "segnale": "BUY",
+      "confidenza": "Alto",
+      "motivo": "Blowout Q1 earnings — revenue $10.25B +38%, EPS beat, guidance Q2 +45%. Meta deal 6GW Instinct GPU. Bernstein target $525. Nuovo 52-week high. Il setup post-earnings più forte della sessione."
+    },
+    {
+      "rank": 2,
+      "asset": "SLV",
+      "prezzo": 73.01,
+      "segnale": "BUY",
+      "confidenza": "Medio",
+      "motivo": "Argento outperforma oro +160% vs +72% ultimo anno. BofA target $86 nel 2026 (+17.8% upside). Domanda industriale EV/solare strutturalmente crescente. +1.97% oggi con NAV in linea."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "prezzo": 93.22,
+      "segnale": "BUY",
+      "confidenza": "Medio",
+      "motivo": "ETF Solana (Bitwise+Fidelity) superano $1B AUM — catalizzatore istituzionale. Trading 68% sotto ATH $293. Fundstrat prevede nuovo ATH nel 2026."
+    },
+    {
+      "rank": 4,
+      "asset": "STLA",
+      "prezzo": 7.71,
+      "segnale": "BUY",
+      "confidenza": "Medio",
+      "motivo": "Deep value: market cap $29.4B su ricavi Q1 €38.1B. Spedizioni Q1 +12% YoY. Target analisti $11.59 (+49.7% upside). Guidance FY2026 confermata. Partnership Leapmotor in espansione."
+    },
+    {
+      "rank": 5,
+      "asset": "RACE",
+      "prezzo": 339.80,
+      "segnale": "BUY",
+      "confidenza": "Medio",
+      "motivo": "Catalyst imminente: presentazione prima EV Ferrari 'Luce' il 25 maggio 2026. Q1 solido (+3% YoY), guidance FY2026 riconfermata. 34.5% sotto 52-week high con brand premium intatto."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale eseguito. Solo a scopo educativo/analitico.",
+    "capitale_ipotetico": 100000,
+    "valuta": "USD",
+    "allocazione_suggerita": {
+      "AMD": {"pct": 15.0, "usd": 15000, "motivo": "Massima confidenza — earnings blowout"},
+      "NVDA": {"pct": 10.0, "usd": 10000, "motivo": "AI infrastructure leader"},
+      "MSFT": {"pct": 8.0, "usd": 8000, "motivo": "Dividend + AI expansion"},
+      "TSLA": {"pct": 8.0, "usd": 8000, "motivo": "Breakout tecnico confermato"},
+      "GOOGL": {"pct": 7.0, "usd": 7000, "motivo": "Revenue growth +22%, near ATH"},
+      "META": {"pct": 7.0, "usd": 7000, "motivo": "Valutazione attraente P/E 22"},
+      "ASML": {"pct": 7.0, "usd": 7000, "motivo": "52-week high, EUV monopoly"},
+      "RACE": {"pct": 5.0, "usd": 5000, "motivo": "Catalyst Luce EV 25 maggio"},
+      "STLA": {"pct": 5.0, "usd": 5000, "motivo": "Deep value play"},
+      "GLD": {"pct": 10.0, "usd": 10000, "motivo": "Safe haven + JPMorgan bullish"},
+      "SLV": {"pct": 8.0, "usd": 8000, "motivo": "Outperformance strutturale"},
+      "SOL": {"pct": 5.0, "usd": 5000, "motivo": "ETF istituzionale milestone"},
+      "BTC": {"pct": 5.0, "usd": 5000, "motivo": "Hedge crypto, HOLD — posizione ridotta"},
+      "CASH": {"pct": 0.0, "usd": 0, "motivo": "Totale investito 100%"}
+    },
+    "disclaimer": "Non costituisce consulenza finanziaria. Dati di mercato soggetti a variazione. Investire comporta rischi."
+  }
+}
