@@ -1,0 +1,412 @@
+{
+  "timestamp": "2026-05-15T14:00:00-04:00",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati del 15 maggio 2026 segnati da tre temi dominanti: (1) La Digital Asset Market Clarity Act ha superato il comitato bancario del Senato USA in voto bipartisan 15-9, spingendo Bitcoin sopra $82.000 prima di consolidare intorno a $80.300; (2) le tensioni geopolitiche sul conflitto Iran restano elevate — Trump dichiara la tregua 'a rischio vita' — supportando oro e petrolio; (3) stagione earnings tech in conclusione con beat forti (Apple iPhone 17 sopra stime, AMD blowout quarter) ma reazioni miste post-annuncio. Giornata di scadenza opzioni crypto da $2,6 miliardi con BTC max pain fissato a $80.000.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 296.60,
+      "change_24h": "-0.36%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma; forte interesse istituzionale post-earnings",
+      "news": "Apple batte le stime Q1 con iPhone 17 sopra le aspettative e Mac AI-driven in esaurimento scorte. Tigress Financial alza PT a $375 da $305. Range 52 settimane $193.46-$300.92; prezzo corrente a 1.4% dal massimo annuale.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 296.60,
+      "stop_loss": 287.70,
+      "target": 311.43,
+      "commissione": 0.00,
+      "reasoning": "Forte catalyst earnings con iPhone 17 e Mac AI sopra consensus; revisione al rialzo del PT da Tigress Financial (+23%). Momentum rialzista confermato con prezzo prossimo al massimo 52 settimane ($300.92), supporto tecnico solido a $293.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / MarketBeat", "price": 295.40},
+          {"name": "Yahoo Finance / CNBC", "price": 297.80}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 227.90,
+      "change_24h": "-3.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto — 52.93M vs media ~45M (+18%); sessione volatile pre-earnings",
+      "news": "NVDA guidance Q1 FY2027 a $78 miliardi di ricavi. TD Cowen alza PT a $275 da $235. ATH raggiunto il 14 maggio a $235.74. Earnings previsti il 20 maggio. Range 52 settimane $129.16-$236.54.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 227.90,
+      "stop_loss": 221.06,
+      "target": 239.30,
+      "commissione": 0.00,
+      "reasoning": "NVDA è in pullback -3.3% dal nuovo ATH di ieri ($235.74) con earnings in 5 giorni (20/5). L'ingresso in BUY prima dell'earnings è ad alto rischio; preferibile attendere la reazione post-report per valutare continuazione del trend. (Fonte: MacroTrends, CNN Markets)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (Q1)", "price": 227.84},
+          {"name": "CNN Markets (Q2)", "price": 227.96}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 264.73,
+      "change_24h": "-1.03%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Amazon 'ha subito un pesante ribasso giovedì' nonostante AWS growth solida e pivot strategico da Rufus a Alexa Shopping Agent AI. Goldman Sachs e TD Cowen bullish su espansione grocery + AWS. Range 52 settimane $196.00-$278.56.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 264.73,
+      "stop_loss": 256.79,
+      "target": 277.97,
+      "commissione": 0.00,
+      "reasoning": "AMZN sotto pressione post-earnings nonostante beat su stime; reazione negativa a capex AI elevato. AWS growth solida è driver di lungo periodo ma serving corrente in consolidamento. Attendere stabilizzazione sopra $266 prima di posizione long. (Fonte: Yahoo Finance, CNBC)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC — premarket May 15", "price": 263.36},
+          {"name": "Yahoo Finance — close May 14", "price": 266.10}
+        ],
+        "spread_pct": 1.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 87.01,
+      "change_24h": "+0.33%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo basso — 18.84M vs media 36.14M (-48%); scarso interesse nella sessione",
+      "news": "Netflix annuncia 250M monthly active viewer su tier advertising (vs 190M nov 2025). Nota: prezzi nel range $75-$134 con market cap $366B suggeriscono possibile stock split ~10:1. Calo mensile -14.81%. Range 52 settimane $75.01-$134.12.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 87.01,
+      "stop_loss": 84.40,
+      "target": 91.36,
+      "commissione": 0.00,
+      "reasoning": "NFLX in trend ribassista mensile (-14.81%) con volume dimezzato rispetto alla media. Possibile stock split 10:1 non confermato introduce incertezza strutturale sul prezzo. Crescita advertising (250M MAU) è driver positivo di medio periodo ma non sufficiente a invertire il trend attuale. (Fonte: Investing.com, Robinhood)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (Q1)", "price": 86.94},
+          {"name": "Investing.com — verifica May 15 (Q3)", "price": 87.07}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA",
+        "nota": "ATTENZIONE: prezzo ~$87 con market cap $366B implica ~4.2 miliardi di azioni; probabile stock split 10:1 non ufficialmente confermato nelle fonti"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 432.58,
+      "change_24h": "-4.16%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto — range intraday $426.19-$450.82 (+5.8%), elevata volatilità intraday",
+      "news": "AMD batte le stime Q1 2026 con risultati definiti 'blowout'. BofA alza PT a $500 da $450. Bernstein upgrade a Outperform con PT $525. Range 52 settimane $107.67-$469.22. +8.79% vs settimana precedente. ATH $456.29 il 8 maggio.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 432.58,
+      "stop_loss": 419.60,
+      "target": 454.21,
+      "commissione": 0.00,
+      "reasoning": "Pullback -4.16% su forte trend rialzista offre punto di ingresso tecnico favorevole. Blowout Q1 + upgrade multipli di analisti ($500-$525 PT) confermano solidità fondamentale AI. Il calo odierno è reazione di presa di profitto su trend settimanale +8.79%. (Fonte: Investing.com, Yahoo Finance/247WallSt)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Q1)", "price": 430.98},
+          {"name": "CNBC intraday snapshot (Q1)", "price": 434.18}
+        ],
+        "spread_pct": 0.74,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1582.76,
+      "change_24h": "+0.09%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma post-earnings",
+      "news": "ASML alza outlook 2026 a €36-40B (da €34-39B) dopo Q1 beat: EPS $8.37 vs $7.72 atteso (+8.4%). Domanda AI per lithography equipment in forte espansione. PT consensus analisti $1,460 (sotto corrente) ma revisioni attese al rialzo. Range 52 settimane fino a $1,595.31.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1582.76,
+      "stop_loss": 1535.28,
+      "target": 1661.90,
+      "commissione": 0.00,
+      "reasoning": "ASML quota a $1,583, sopra il consensus medio analisti ($1,461) e vicino al massimo 52 settimane ($1,595). Sebbene la revisione dell'outlook sia positiva, il rapporto rischio/rendimento è limitato a breve termine; attendere consolidamento o correzione verso $1,500 per entrata più favorevole. (Fonte: Investing.com, CNN Markets)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / NASDAQ (Q1)", "price": 1584.51},
+          {"name": "CNN Markets (Q2)", "price": 1581.00}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 615.43,
+      "change_24h": "-0.51%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "META Q1 2026: revenue $56.3B, net income +61%. Guidance capex AI $125-145B pesa sul titolo. Consensus analisti 96% Buy con PT medio $839 (+36% di upside). Range operativo attuale $595-$625. PT analisti medio $839.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 615.43,
+      "stop_loss": 596.97,
+      "target": 646.20,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali eccezionali (revenue +YoY, net income +61%) con upside consensus del +36% a $839. La pressione sul capex AI è temporanea e riflette scelte di investimento strategiche già note al mercato. Affidabilità prezzi MEDIA: usare cautela nel sizing della posizione. (Fonte: TradersUnion, Yahoo Finance)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradersUnion / CNBC — May 15 apertura", "price": 610.20},
+          {"name": "Yahoo Finance NasdaqGS — aggiornamento recente", "price": 620.65}
+        ],
+        "spread_pct": 1.70,
+        "affidabilita": "MEDIA",
+        "nota": "Scarto 1.70% tra le due rilevazioni della stessa giornata; prezzi validi ma posizione ridotta suggerita"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 422.99,
+      "change_24h": "-0.76%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma; after-hours -2.17% a $417.96 indica pressione vendite",
+      "news": "Il conflitto USA-Iran rimane il principale driver gold: Trump dichiara la tregua 'in pericolo di vita'. Le banche centrali hanno acquistato 244 tonnellate d'oro nel Q1 2026. GLD +46.31% nell'ultimo anno. After-hours -2.17%: possibile continuo ribasso nelle prossime ore.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 427.21,
+      "stop_loss": 414.53,
+      "target": 439.91,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali gold solidi (banche centrali, conflitto Iran) ma sessione ribassista (-0.76%) con after-hours a -2.17% segnalano pressione vendite nel breve. Attendere conferma del supporto a $414 prima di aggiungere esposizione. Entry riferito al prezzo di chiusura $427.21. (Fonte: Yahoo Finance, NYSE Arca / StockInvest)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance intraday May 15 (Q1)", "price": 418.77},
+          {"name": "NYSE Arca / StockInvest — close May 15 (Q2)", "price": 427.21}
+        ],
+        "spread_pct": 1.99,
+        "affidabilita": "MEDIA",
+        "nota": "Le due rilevazioni sono della stessa giornata (intraday vs chiusura); prezzo di chiusura $427.21 usato come entry"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 75.51,
+      "change_24h": "-4.84%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma; giornata vicina al minimo di seduta ($75.39)",
+      "news": "Argento in correzione tecnica dopo spike a $122/oz (29 gen 2026); ora consolidamento a ~$76. Sesto anno consecutivo di deficit fisico argento. Range giornaliero $75.39-$77.29, chiusura vicina al minimo. Range 52 settimane $29.10-$109.83.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 75.51,
+      "stop_loss": 74.00,
+      "target": 78.53,
+      "commissione": 0.00,
+      "reasoning": "SLV scende -4.84% in una sola sessione, dal close precedente $79.35. Correzione tecnica severa dopo i massimi di gennaio. I fondamentali di lungo periodo (6° anno di deficit fisico argento) supportano la ripresa ma il trend a 5gg rimane ribassista; attendere stabilizzazione. (Fonte: Investing.com, iShares/CNBC)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / iShares (Q1)", "price": 75.51},
+          {"name": "MarketBeat / CNBC (Q2)", "price": 75.51}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "nota": "Due query indipendenti convergono sullo stesso prezzo; alta affidabilità"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 143.00,
+      "change_24h": "0.00%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma; pre-market $146.12 (+2.2%), after-hours $144.62 (+1.1%)",
+      "news": "I prezzi petrolio aumentano dopo dichiarazione Trump: tregua Iran 'a rischio vita', rigettata proposta iraniana. USO range giornaliero $140.59-$143.00. Pre-market e after-hours entrambi sopra chiusura regolare, segnalando pressione rialzista. Range 52 settimane $65.96-$151.63.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 143.00,
+      "stop_loss": 140.14,
+      "target": 148.72,
+      "commissione": 0.00,
+      "reasoning": "Tensioni Iran supportano il petrolio nel breve; pre-market e after-hours sopra la chiusura regolare suggeriscono pressione rialzista. HOLD in attesa di conferma rottura sopra $146 in sessione regolare. Risk/reward favorevole se il conflitto escalates. (Fonte: Investing.com, MarketBeat)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Q1)", "price": 143.00},
+          {"name": "MarketBeat / CNBC (Q2)", "price": 143.00}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 80300.74,
+      "change_24h": "+3.22%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto — $2.6 miliardi in opzioni in scadenza oggi; 25K BTC options expire con max pain $80,000",
+      "news": "Digital Asset Market Clarity Act approvata dal Senate Banking Committee con voto bipartisan 15-9 (14 maggio). Dartmouth College alloca $14.5M in spot BTC ed ETH ETF. Max pain opzioni a $80,000; corrente sopra max pain. Mercato cap $1.33T. +$546 vs ieri mattina.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 80300.74,
+      "stop_loss": 76285.70,
+      "target": 86724.80,
+      "commissione": 0.00,
+      "reasoning": "Doppio catalyst: chiarezza regolatoria (Clarity Act bipartisan) riduce rischio normativo strutturale; adozione istituzionale (Dartmouth endowment). Momentum forte +3.22% con prezzo sopra il max pain opzioni ($80K). Scadenza opzioni di oggi potrebbe amplificare il movimento. (Fonte: Fortune/Yahoo Finance, CoinMarketCap)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / Yahoo Finance — 9:15 AM ET", "price": 80120.03},
+          {"name": "CoinMarketCap live", "price": 80481.44}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2261.86,
+      "change_24h": "-2.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato — $9.09B nelle 24h (opzioni in scadenza $2.6B aggregato crypto)",
+      "news": "Dartmouth College alloca $14.5M in spot ETH ETF. ATH $4,953 raggiunto il 24 agosto 2025 (-54% da ATH attuale). Sell-off settimanale: prezzo è sceso ogni giorno della settimana. Market cap $273B (#2 globale).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2261.86,
+      "stop_loss": 2148.77,
+      "target": 2442.81,
+      "commissione": 0.00,
+      "reasoning": "ETH in trend ribassista settimanale con -2% nelle 24h e sell-off giornaliero consecutivo. Nonostante adozione istituzionale (Dartmouth) e catalizzatore Clarity Act, il prezzo rimane -54% dall'ATH di agosto 2025. Attendere inversione del trend prima di posizione long. (Fonte: CoinGecko/Yahoo Finance, CoinMarketCap)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko / Yahoo Finance (Q1)", "price": 2258.62},
+          {"name": "CoinMarketCap live (Q2)", "price": 2265.09}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 92.15,
+      "change_24h": "+1.48%",
+      "trend_5d": "laterale",
+      "volume_note": "volume $4.07B nelle 24h — nella norma per Solana",
+      "news": "Israele approva prima stablecoin regolamentata BILS su blockchain Solana (partnership con Fireblocks). AllUnity (Germania) espande stablecoin euro MiCA-compliant EURAU su Solana. Doppia integrazione istituzionale in 24h. Market cap $53B (rank #7).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 92.15,
+      "stop_loss": 87.54,
+      "target": 99.52,
+      "commissione": 0.00,
+      "reasoning": "Due catalyst di adozione istituzionale in 24h (BILS Israel + EURAU Germany) segnalano crescente integrazione di Solana in infrastrutture finanziarie regolamentate. Il trend laterale è in fase di potenziale rottura rialzista supportata dalla Clarity Act. (Fonte: CoinMarketCap, Coinbase)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap live (Q1)", "price": 91.70},
+          {"name": "Coinbase (Q2)", "price": 92.59}
+        ],
+        "spread_pct": 0.97,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Fonti < 2: Query 1 restituisce $442.32 (Yahoo Finance/MarketBeat, May 14). Query 2 non ha restituito prezzo specifico May 15. Regola: fonti < 2 → BASSA → nessun segnale generato.",
+      "prezzo_unico_rilevato": 442.32,
+      "fonte_unica": "Yahoo Finance / MarketBeat"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Fonti < 2: Query 1 restituisce $408.00 (Yahoo Finance/CNBC, May 15) con market cap $3.04T. Query 2 non ha restituito prezzo corrente specifico per May 15. Regola: fonti < 2 → BASSA → nessun segnale generato.",
+      "prezzo_unico_rilevato": 408.00,
+      "fonte_unica": "Yahoo Finance / CNBC"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Fonti < 2: Query 1 restituisce $401.07 (IndMoney/Robinhood, May 15 ore 8:45 IST). Query 2 non ha restituito prezzo corrente specifico. Regola: fonti < 2 → BASSA → nessun segnale generato.",
+      "prezzo_unico_rilevato": 401.07,
+      "fonte_unica": "IndMoney / Robinhood"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Dati su date differenti: Query 1 implica ~$174 (prev close $164.18 + +6% intraday non confermato per May 15). Query 2 riporta $170.10 da Investing.com ma datato May 12 (non May 15). Impossibile triangolare con certezza per la data odierna.",
+      "prezzi_rilevati": [170.10, 174.03],
+      "note": "SAP.DE su Xetra quotava €141.71 il 15/05; ADR NYSE non confermabile con 2 fonti coerenti per oggi"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Scarto eccessivo tra fonti (>14%): Fonte 1 $372.84 (vari aggregatori), Fonte 2 $349.44 (TradingView), Fonte 3 $323.59 (Investing.com). Spread massimo: |372.84-323.59|/348.22 = 14.14% >> soglia 4%. Dati inaffidabili → nessun segnale.",
+      "prezzi_rilevati": [372.84, 349.44, 323.59],
+      "spread_max_pct": 14.14
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "STLAM è il ticker Milan (EUR); il ticker NYSE equivalente è STLA. Per STLA (NYSE): $7.37 (Yahoo Finance, May 13) vs $7.59-$7.84 (vari, mid-May). Spread: |7.84-7.37|/7.61 = 6.17% >> soglia 4%. Dati non sufficientemente precisi per data odierna.",
+      "prezzi_rilevati": [7.37, 7.59, 7.84],
+      "spread_pct": 6.17,
+      "note": "Il ticker corretto su NYSE per Stellantis è STLA; STLAM è quotato a Milano in EUR (€6.742 il 15/05)"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "BTC",
+      "motivo": "Doppio catalyst storico: Clarity Act bipartisan (+regulatory certainty) + adozione endowment universitario. Momentum +3.22% con prezzo sopra max pain opzioni $80K. Confidenza ALTA su dati verificati da 2 fonti (spread 0.45%)."
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "motivo": "Blowout Q1 + upgrade analisti multipli (BofA PT $500, Bernstein PT $525). Dip -4.16% oggi offre entry tecnico favorevole su trend settimanale +8.79%. Risk/reward 1:1.6 con SL -3% / target +5%."
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "Beat earnings iPhone 17 + Mac AI con scorte esaurite. Tigress Financial PT $375 (+26% vs prezzo attuale). Prezzo vicino al massimo 52 settimane con momentum rialzista confermato. Spread fonti 0.81% (ALTA affidabilità)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione calcolata su asset con segnale BUY e affidabilità ALTA o MEDIA.",
+    "allocazione_suggerita": {
+      "AAPL": "20% — BUY Alto, ALTA affidabilità, earnings catalyst",
+      "AMD": "20% — BUY Alto, ALTA affidabilità, blowout Q1",
+      "META": "10% — BUY Medio, MEDIA affidabilità, sizing ridotto",
+      "BTC": "25% — BUY Alto, ALTA affidabilità, regulatory catalyst",
+      "SOL": "10% — BUY Medio, ALTA affidabilità, institutional adoption",
+      "CASH": "15% — riserva per opportunità HOLD che sviluppano segnale"
+    },
+    "asset_in_hold": ["NVDA", "AMZN", "NFLX", "ASML", "GLD", "SLV", "USO", "ETH"],
+    "asset_esclusi": ["TSLA", "MSFT", "GOOGL", "SAP", "RACE", "STLAM"]
+  }
+}
