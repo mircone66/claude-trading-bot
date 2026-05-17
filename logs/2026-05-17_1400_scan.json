@@ -1,0 +1,558 @@
+{
+  "timestamp": "2026-05-17T14:00:00-04:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati in fase mista: il comparto AI-chip mostra forza strutturale (NVDA +4% record $5.7T, AMD +89.8% YTD) mentre le crypto consolidano sotto $80K pressate dai Treasury a 30yr al 5.114% (massimi da maggio 2025). L'oro è in pullback tecnico da massimi storici ($4,694 spot → $4,548 maggio 15) ma il trend rialzista strutturale rimane intatto. L'argento ha subito un crollo di -8.57% il 15 maggio (volatilità estrema). Tesla -4.75%, META -23% dai massimi per preoccupazioni capex. CLARITY Act approvato dalla Senate Banking Committee (positivo per crypto). NVDA earnings attesi il 20 maggio (catalizzatore chiave). ATTENZIONE: 'STLAM' non esiste su NYSE/Nasdaq; la quotazione USA di Stellantis è STLA (NYSE).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 300.23,
+      "change_24h": "+0.68%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple in sessione record con high intraday $303.20 (coincide con 52-settimane high); nessun catalizzatore negativo rilevante; Q2 earnings in calendario",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 300.23,
+      "stop_loss": 291.22,
+      "target": 315.24,
+      "commissione": 0.00,
+      "reasoning": "Azione a ridosso del massimo a 52 settimane ($303.20): zona di resistenza critica, rischio di rifiuto tecnico. Senza catalizzatore (earnings non imminenti), preferibile attendere breakout confermato sopra $304 prima di acquistare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (CNBC confirm.)", "price": 300.23},
+          {"name": "Yahoo Finance after-hours", "price": 299.85}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 420.40,
+      "change_24h": "-4.75%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (sell-off intraday, -16% dal 52w high $498.83)",
+      "news": "Tesla in deciso calo -4.75% nel giorno; stock in downtrend dal picco $498.83; P/E 385.75 estremamente elevato; contesto brand Musk sotto pressione",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 420.40,
+      "stop_loss": 407.79,
+      "target": 441.42,
+      "commissione": 0.00,
+      "reasoning": "Calo intraday -4.75% con pressione di vendita elevata; la valutazione a P/E 385 non lascia margine di errore. Nessun catalizzatore fondamentale imminente per ribaltare il trend. Attendere stabilizzazione sopra $430 prima di considerare ingressi long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (lettura 1)", "price": 422.24},
+          {"name": "Yahoo Finance (lettura 2 intraday)", "price": 418.57}
+        ],
+        "spread_pct": 0.87,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 228.00,
+      "change_24h": "+4.00%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "anomalo (giorno di record market cap $5.7T, volume istituzionale elevato)",
+      "news": "NVIDIA ha raggiunto market cap record $5.7T il 14-15 maggio; H200 chip sbloccato per clienti cinesi (Reuters); earnings previsti il 20 maggio; UBS alza target a $275 da $245",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 228.00,
+      "stop_loss": 221.16,
+      "target": 239.40,
+      "commissione": 0.00,
+      "reasoning": "Doppio catalizzatore prossimo: earnings maggio 20 (UBS: aspettative conservative) + sblocco H200 per Cina (Reuters, da ricerca). Market cap $5.7T conferma momentum istituzionale. Pullback da $231 a $228 offre entry tattica pre-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/Yahoo (close maggio 15)", "price": 225.32},
+          {"name": "Ricerca aggregata (range maggio 17: open 229.76)", "price": 229.76}
+        ],
+        "spread_pct": 1.96,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzi da date diverse (maggio 15 close vs maggio 17 open); media usata come riferimento"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 419.67,
+      "change_24h": "-0.53%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (50.77M vs media 33.41M = +52% sopra media)",
+      "news": "Dividend ex-date il 21 maggio ($0.91/azione); volume +52% sopra media segnala accumulo pre-dividendo; Azure/AI cloud momentum stabile; market cap $3.13T",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 419.67,
+      "stop_loss": 407.08,
+      "target": 440.65,
+      "commissione": 0.00,
+      "reasoning": "Volume istituzionale anomalo +52% (Yahoo Finance) coerente con accumulo pre-dividendo ex-date maggio 21. Fondamentali Azure robusti confermati da Q1 2026. Entry sulla debolezza -0.53% con catalizzatore dividend imminente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (maggio 17)", "price": 419.67},
+          {"name": "Yahoo Finance confirmed (maggio 15)", "price": 419.67}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 263.39,
+      "change_24h": "-1.15%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Amazon +14% YTD (2° miglior megacap 2026 dopo GOOGL); $200B capex 2026 per AWS/AI; espansione consegna 30min a nuove città USA (CNBC maggio 15); Goldman Sachs e TD Cowen bullish su grocery push",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 263.39,
+      "stop_loss": 255.49,
+      "target": 276.56,
+      "commissione": 0.00,
+      "reasoning": "Secondo miglior megacap YTD +14%; investimento $200B in infrastruttura AI/AWS (Yahoo Finance); espansione servizi grocery e 30-min delivery come leva di crescita non ancora pienamente valorizzata. Pullback -1.15% = entry tattica.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (maggio 17)", "price": 262.64},
+          {"name": "CNBC/Yahoo Finance (close maggio 15)", "price": 264.14}
+        ],
+        "spread_pct": 0.57,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 394.42,
+      "change_24h": "-0.32%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Alphabet +27% YTD (miglior megacap 2026); Q1 2026 beat su Google Cloud; capex 2026 alzato a $190B per AI; dividendo $0.22 ex-date giugno 8; mercato re-rating il titolo (Trefis)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 394.42,
+      "stop_loss": 382.59,
+      "target": 414.14,
+      "commissione": 0.00,
+      "reasoning": "Miglior performer 2026 tra i megacap (+27% YTD per Yahoo Finance); Google Cloud in accelerazione; capex $190B indica confidence managements sulla crescita AI. Lieve debolezza -0.32% offre entry favorevole; market cap $4.81T con ampio spazio.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / Investing.com (maggio 16)", "price": 396.78},
+          {"name": "Yahoo Finance (close maggio 15)", "price": 392.06}
+        ],
+        "spread_pct": 1.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 617.44,
+      "change_24h": "-1.04%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "META alzato capex 2026 a $125-145B (precedente $115-135B) per AI; daily active users +4% a 3.56 miliardi; stock -23% dal picco ~$796 su preoccupazioni spesa capex",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 617.44,
+      "stop_loss": 598.92,
+      "target": 648.31,
+      "commissione": 0.00,
+      "reasoning": "Downtrend dal picco $796 (-23%) non ancora esaurito; capex $145B pesa sul free cash flow a breve termine. Nonostante le metriche utenti solide (3.56B DAU, Yahoo Finance), preferibile attendere conferma di bottom prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close maggio 15)", "price": 614.23},
+          {"name": "NasdaqGS delayed quote (maggio 16)", "price": 620.65}
+        ],
+        "spread_pct": 1.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 87.02,
+      "change_24h": "+0.09%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Crescita revenue pubblicitario; lancio AI INKubator; Jefferies mantiene Buy; trading post-split in range $75.01-$134.12 (52 settimane)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 87.02,
+      "stop_loss": 84.41,
+      "target": 91.37,
+      "commissione": 0.00,
+      "reasoning": "Prezzi confermati post-split (2 fonti concordanti a $87.02); mercato adattamento al nuovo livello di prezzo post-split. Trend laterale senza catalizzatori immediati. Attendere breakout direzionale confermato sopra $92 (resistenza intraday) per segnale BUY.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Morningstar (maggio 17)", "price": 87.02},
+          {"name": "Yahoo Finance confirmed (maggio 17, prev close 86.94)", "price": 86.94}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 422.13,
+      "change_24h": "-4.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (sell-off -4.7% da open $449.70; alto volume di realizzo)",
+      "news": "Q1 2026: EPS $1.37 vs $1.29 atteso; revenue $10.25B vs $9.89B atteso; Q2 guidance $11.2B sopra consensus (+90% YTD); Bank of America alza target a $500 (da CNBC maggio 5-6); server CPU share in crescita",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 422.13,
+      "stop_loss": 409.47,
+      "target": 443.24,
+      "commissione": 0.00,
+      "reasoning": "Pullback -4.7% maggio 17 dopo Q1 beat + guidance superiore alle attese = opportunità di ingresso (CNBC maggio 5-6). BofA target $500 (+18% da prezzo attuale); data center e AI come driver strutturali. Il sell-off è presa di profitto dopo +90% YTD, non deterioramento dei fondamentali.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Search aggregata (close maggio 15)", "price": 424.10},
+          {"name": "CNBC/Yahoo Finance (maggio 17, range min $419.29)", "price": 420.16}
+        ],
+        "spread_pct": 0.93,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1501.81,
+      "change_24h": "-5.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (sell-off post-earnings nonostante Q1 beat)",
+      "news": "Q1 2026 revenue EUR 8.8B beat; gross margin 53% al top della guidance; tuttavia stock -7% in pre-market su preoccupazioni compressione margini futuri; rumor ordine multi-miliardario Apple/Intel; J.P. Morgan, Bernstein e Berenberg mantengono Buy",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1501.81,
+      "stop_loss": 1456.76,
+      "target": 1576.90,
+      "commissione": 0.00,
+      "reasoning": "Reazione di mercato negativa (-5%) nonostante Q1 beat (Investing.com): comportamento tipico 'buy the rumor, sell the news'. La preoccupazione sui margini 2026-2027 crea incertezza. Attendere stabilizzazione sopra $1,530 per confermare pivot rialzista. Target 12m analisti $1,660.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NASDAQ (maggio 16)", "price": 1501.81},
+          {"name": "Investing.com conferma (maggio 17)", "price": 1501.81}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 169.48,
+      "change_24h": "+3.23%",
+      "trend_5d": "rialzista",
+      "volume_note": "leggermente anomalo (volume in crescita su +3.23%)",
+      "news": "SAP Q1 2026 risultati misti ma cloud segment in accelerazione (Investing.com); recupero forte +3.23% maggio 17; 23 su 26 analisti raccomandano Buy; target consensus EUR 215 (+27% da prezzo attuale EUR)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 169.48,
+      "stop_loss": 164.40,
+      "target": 177.95,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo +3.23% dopo periodo di debolezza su Q1 misto (Investing.com, maggio 17); cloud growth driver strutturale; consensus analisti fortemente positivo (23/26 Buy, target EUR 215). 52-week low $160.66 fornisce supporto solido poco sotto.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC NYSE (maggio 15-17)", "price": 169.48},
+          {"name": "Ricerca specifica maggio 17 NYSE", "price": 169.48}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 321.72,
+      "change_24h": "0.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Ferrari Q1 2026 risultati solidi, order book esteso fino a fine 2027; tuttavia Morgan Stanley taglia target a EUR 330 da EUR 357 (Equal Weight); stock -38% dal 52-settimane high $519.10",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 321.72,
+      "stop_loss": 312.07,
+      "target": 337.81,
+      "commissione": 0.00,
+      "reasoning": "Nonostante Q1 solido e order book fino a fine 2027 (StockAnalysis/CNBC), il titolo è -38% dal picco $519.10 e nessun catalizzatore imminente per recupero; Morgan Stanley taglio target conferma sentiment cautioso. P/E 30.83 e dividendo 1.3% offrono support ma trend in atto è ribassista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance / Robinhood (maggio 16)", "price": 321.72},
+          {"name": "CNBC / StockAnalysis (maggio 15-16 confermato)", "price": 321.72}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 7.50,
+      "change_24h": "-4.59%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "normale",
+      "news": "Stellantis in profondo downtrend: -4.6% maggio 17, -39% dal 52-settimane high $12.22; investimento €1B con Dongfeng per EV Jeep/Peugeot (2027); approvazione FDIC per industrial bank. Market cap $22-28B; P/E forward 8.90. NOTA TICKER: utente ha indicato 'STLAM' (Borsa Milano) ma la quotazione USA è STLA (NYSE).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 7.50,
+      "stop_loss": 7.73,
+      "target": 7.13,
+      "commissione": 0.00,
+      "reasoning": "Momentum fortemente negativo: -39% dal massimo, close sotto $7.84 prev (-4.6%); nessun catalizzatore a breve termine (investimento China EV operativo nel 2027). P/E 8.90 sembra cheap ma riflette aspettative di ulteriore deterioramento utili. Segnale SELL per continuazione trend ribassista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / StockAnalysis NYSE (maggio 17)", "price": 7.50},
+          {"name": "CNBC / Morningstar NYSE (maggio 17 confermato)", "price": 7.50}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "nota": "Ticker corretto NYSE: STLA. 'STLAM' è ticker Borsa di Milano, non quotato su NYSE/Nasdaq."
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 417.29,
+      "change_24h": "-2.32%",
+      "trend_5d": "ribassista (pullback tecnico in bull market strutturale)",
+      "volume_note": "normale",
+      "news": "Oro spot sceso a $4,547.89 il maggio 15 (-2.22%); GLD NAV $415.76; JP Morgan target Q4 2026 $5,055/oz; TD Securities media 2026 $4,831; inflazione wholesale USA ai massimi dal 2022; mercati escludono tagli Fed nel 2026",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 417.29,
+      "stop_loss": 408.94,
+      "target": 433.98,
+      "commissione": 0.00,
+      "reasoning": "Pullback -2.32% da massimi storici in trend rialzista strutturale dell'oro; JPM target $5,055/oz = +11% potenziale lato oro (goldsilver.com/SSGA maggio 2026). Inflazione wholesale ai max dal 2022 + no rate cut 2026 = ambiente macro favorevole all'oro. Dip = opportunità di acquisto.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance (maggio 16)", "price": 417.29},
+          {"name": "NYSE Arca / CNBC GLD (confermato)", "price": 417.29}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 69.04,
+      "change_24h": "-8.57%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "anomalo (crollo -8.57% maggio 15 con volume spike)",
+      "news": "Argento ha ceduto ~10x più dell'oro il 14-15 maggio 2026 (due componenti: industriale e monetario); SLV da $75.51 a $69.04 (-8.57%) in un giorno; 52-settimane range $29.31-$109.83 indica volatilità estrema; US silver ETF in outflow",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 69.04,
+      "stop_loss": 67.66,
+      "target": 71.80,
+      "commissione": 0.00,
+      "reasoning": "Crash -8.57% maggio 15 su SLV (iShares/Yahoo Finance): segnale di pressione di vendita estrema. Rischio di ulteriore discesa verso supporto $66. Attendere stabilizzazione e formazione di base prima di entrare: un rimbalzo 'dead cat bounce' è probabile, ma il rischio di continuazione ribassista è elevato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "iShares / Yahoo Finance (close maggio 15)", "price": 69.04},
+          {"name": "NYSE Arca / Nasdaq confirmed (maggio 15-17)", "price": 69.04}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 145.52,
+      "change_24h": "N/D (spread fonti 3.7%)",
+      "trend_5d": "rialzista",
+      "volume_note": "normale est.",
+      "news": "WTI crude in zona psicologica $100/bbl con supporto geopolitico da tensioni mediorientali; USO 52-settimane high $151.63 nelle vicinanze; no dividend; MEDIA affidabilità prezzo per spread inter-fonti 3.7%",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 145.52,
+      "stop_loss": 142.61,
+      "target": 151.34,
+      "commissione": 0.00,
+      "reasoning": "MEDIA affidabilità (spread 3.7% tra $142.80 e $148.23) limita la confidenza del segnale (Trading Economics/CNBC). Supporto geopolitico da tensioni mediorientali e WTI vicino $100 sono favorevoli, ma volatilità fonte-dati rende prudente un HOLD fino a conferma convergenza prezzi.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Morningstar (maggio 16)", "price": 148.23},
+          {"name": "AInvest / Barchart (maggio 17 current)", "price": 142.80}
+        ],
+        "spread_pct": 3.74,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 78190.00,
+      "change_24h": "-2.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($7.21B 24h)",
+      "news": "BTC consolidazione sotto $80K; Treasury 30yr a 5.114% (massimi da maggio 2025) pesa su asset di rischio; $2.6B opzioni in scadenza (Deribit) creano pressione vendita; CLARITY Act approvato Senate Banking Committee 15-9 (positivo per crypto a lungo termine); Kevin Warsh sostituisce Powell come Fed Chair",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 78190.00,
+      "stop_loss": 74280.50,
+      "target": 84445.20,
+      "commissione": 0.00,
+      "reasoning": "BTC in consolidazione sotto $80K con doppio freno: Treasury yields elevati (5.114% 30yr) + opzioni expiry (Yahoo Finance/CoinDesk maggio 17). CLARITY Act è catalizzatore positivo ma ha ancora Senate floor vote, House reconciliation e firma Trump davanti. HOLD in attesa di breakout sopra $80K confermato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (maggio 17)", "price": 78370.83},
+          {"name": "Coinbase (maggio 17)", "price": 78009.74}
+        ],
+        "spread_pct": 0.46,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2230.49,
+      "change_24h": "-3.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "ETH -3.8% il maggio 15 insieme a BTC; consolidazione sotto $2,250; breakout sopra $2,420 è il trigger per target $2,657 (analisti MEXC); Treasury yields pressano risk assets; CLARITY Act positivo su orizzonte",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2230.49,
+      "stop_loss": 2118.97,
+      "target": 2408.93,
+      "commissione": 0.00,
+      "reasoning": "ETH consolidazione sotto $2,250 con BTC in range ribassista (24/7 Wall St./Yahoo Finance maggio 15). Treasury 30yr a 5.114% comprime la propensione al rischio. Livello chiave: breakout direzionale sopra $2,420 per segnale BUY; sotto $2,100 si aprirebbe rischio verso $1,900.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / Yahoo Finance (maggio 15)", "price": 2246.79},
+          {"name": "Crypto news aggregata (maggio 15 '24h')", "price": 2214.19}
+        ],
+        "spread_pct": 1.47,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 86.75,
+      "change_24h": "+0.69%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($2.40B 24h)",
+      "news": "SOL +0.69% in sessione ma -3.2% nel giorno precedente (da $88.87 maggio 15 a $86.75 maggio 17); CLARITY Act positivo sul lungo; ATH $293.31 (gennaio 2025); CoinMarketCap ranking #7; market cap $50.2B",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 86.75,
+      "stop_loss": 82.41,
+      "target": 93.69,
+      "commissione": 0.00,
+      "reasoning": "Modesto rimbalzo +0.69% dopo -3.2% il maggio 15 (CoinMarketCap/Bybit). Trend 5 giorni ribassista; crypto in generale sotto pressione Treasury. Resistenza a $90; supporto chiave $82. HOLD: il CLARITY Act è catalizzatore ma non imminente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask / CoinMarketCap (maggio 17)", "price": 86.75},
+          {"name": "Bybit / CoinDesk (maggio 17)", "price": 86.74}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "tipo": "stock_usa",
+      "segnale": "BUY",
+      "confidence": "Alto",
+      "entry": 228.00,
+      "target": 239.40,
+      "motivo": "Earnings maggio 20 = catalizzatore imminente; market cap record $5.7T; H200 sbloccato per Cina; UBS target $275; pullback da $231 = entry tattica"
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "tipo": "stock_usa",
+      "segnale": "BUY",
+      "confidence": "Alto",
+      "entry": 422.13,
+      "target": 443.24,
+      "motivo": "Q1 beat (EPS $1.37 vs $1.29), Q2 guidance $11.2B sopra consensus; BofA target $500; -4.7% maggio 17 è presa di profitto, non deterioramento fondamentali"
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "tipo": "etf_commodity",
+      "segnale": "BUY",
+      "confidence": "Alto",
+      "entry": 417.29,
+      "target": 433.98,
+      "motivo": "Bull market strutturale oro; JPM target Q4 $5,055/oz; inflazione wholesale ai massimi dal 2022; no rate cut 2026 = supporto macro; dip -2.32% = opportunità"
+    },
+    {
+      "rank": 4,
+      "asset": "MSFT",
+      "tipo": "stock_usa",
+      "segnale": "BUY",
+      "confidence": "Medio",
+      "entry": 419.67,
+      "target": 440.65,
+      "motivo": "Volume +52% sopra media (segnale di accumulo istituzionale); dividend ex-date maggio 21 ($0.91); Azure/AI cloud solidi"
+    },
+    {
+      "rank": 5,
+      "asset": "AMZN",
+      "tipo": "stock_usa",
+      "segnale": "BUY",
+      "confidence": "Medio",
+      "entry": 263.39,
+      "target": 276.56,
+      "motivo": "2° miglior megacap YTD (+14%); AWS + AI infrastruttura $200B; espansione grocery e 30-min delivery; Goldman Sachs e TD Cowen bullish"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca o altro broker",
+    "capitale_ipotetico": 10000,
+    "allocazione_suggerita": {
+      "NVDA":  { "peso_pct": 25, "importo_usd": 2500, "azioni_approx": 10.96, "segnale": "BUY", "confidence": "Alto" },
+      "AMD":   { "peso_pct": 20, "importo_usd": 2000, "azioni_approx": 4.74,  "segnale": "BUY", "confidence": "Alto" },
+      "GLD":   { "peso_pct": 20, "importo_usd": 2000, "quote_approx": 4.79,   "segnale": "BUY", "confidence": "Alto" },
+      "MSFT":  { "peso_pct": 15, "importo_usd": 1500, "azioni_approx": 3.57,  "segnale": "BUY", "confidence": "Medio" },
+      "AMZN":  { "peso_pct": 10, "importo_usd": 1000, "azioni_approx": 3.80,  "segnale": "BUY", "confidence": "Medio" },
+      "GOOGL": { "peso_pct": 10, "importo_usd": 1000, "azioni_approx": 2.54,  "segnale": "BUY", "confidence": "Medio" }
+    },
+    "non_allocati": ["SAP vedi commento"],
+    "note_allocazione": "SAP (+3.23%) incluso come watchlist; STLA SELL esclude allocazione long. Crypto (BTC, ETH, SOL) e SLV/USO in HOLD = cash preservato. Totale allocato: 100% su segnali BUY confermati."
+  }
+}
