@@ -1,0 +1,414 @@
+{
+  "timestamp": "2026-05-22T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA il 22 maggio 2026: Dow in corsa verso primo record closing high in oltre 3 mesi, supportato da Apple e Goldman Sachs. Tech misto: TSLA +3.25% senza catalyst specifico, AAPL +0.91% su slancio post-earnings, NVDA -1.77% in correzione pre-earnings, MSFT -0.81%. ASML +2.70% ieri su bookings Q1 €13B quasi doppio del consensus (€7.5B). Oro strutturalmente rialzista con JPMorgan che mantiene target $5.000/oz Q4 — GLD stabile a $414. Argento rompe $80 spot psicologico. Crypto sotto pressione: BTC a $76.973 testa supporto $75K dopo slide da $78K su dati inflazione USA e rendimenti Treasury in rialzo. SOL -7% settimanale. Trump firma executive order su revisione Fed per accesso crypto ai payment services (segnale regolatorio positivo di lungo termine).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 304.99,
+      "change_24h": "+0.91%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale — nessuna anomalia segnalata",
+      "news": "Apple in rialzo dopo recente earnings release. Dow punta a record closing high in oltre 3 mesi, 'aiutato da Goldman Sachs e Apple'. WWDC imminente con catalizzatori AI (iOS 27, Siri overhaul, Apple Intelligence).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 304.99,
+      "stop_loss": 295.84,
+      "target": 320.24,
+      "commissione": 0.00,
+      "reasoning": "Momentum post-earnings confermato; Apple contribuisce attivamente al rally del Dow verso il record. Breakout sostenuto sopra $305 con catalizzatore WWDC in avvicinamento. Fonte: TradingEconomics 'AAPL May 22 2026' / Yahoo Finance / CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close May 21)", "price": 304.99},
+          {"name": "CNBC (confirmed close)", "price": 304.99}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 417.85,
+      "change_24h": "+3.25%",
+      "trend_5d": "laterale",
+      "volume_note": "Potenzialmente anomalo — +3.25% senza catalyst news identificato",
+      "news": "Tesla in forte rialzo oggi (+3.25%) senza catalyst specifico identificato nelle fonti. Market cap 1.57T, P/E trailing 381.20. 52-week range $273.21-$498.83. Prossime earnings stimate luglio 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 417.85,
+      "stop_loss": 405.31,
+      "target": 438.74,
+      "commissione": 0.00,
+      "reasoning": "Rally +3.25% senza catalyst verificato è segnale di cautela; P/E 381 lascia poco margine di errore. Manca direzionalità strutturale con stock a metà range 52W ($273-$499). Attendere catalyst concreto o conferma di volume per entry. Fonte: TradingView TSLA May 22 2026 / CNBC prev close $417.85.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView (intraday May 22)", "price": 418.40},
+          {"name": "CNBC (previous close)", "price": 417.85}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 219.89,
+      "change_24h": "-1.77%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale — correzione ordinata post-earnings",
+      "news": "NVDA in correzione -1.77% oggi. Q1 2026 EPS $1.87 vs consensus $1.77 già digerito. AMD e NVDA prossime earnings in calendario. Domanda AI data center robusta (META CapEx 2026 $125-145B). Day range $215.16-$221.49.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 219.89,
+      "stop_loss": 213.29,
+      "target": 230.88,
+      "commissione": 0.00,
+      "reasoning": "Earnings Q1 già prezzati; stock in fisiologica pausa dopo +1.89% di ieri. La domanda AI strutturale rimane intatta ma la prossima earnings può creare volatilità. Attendere stabilizzazione sopra $220 per re-entry. Fonte: TradingView NVDA $219.51 / Yahoo Finance close $220.26 May 21.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView (May 22 current)", "price": 219.51},
+          {"name": "Yahoo Finance (close May 21)", "price": 220.26}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 418.97,
+      "change_24h": "-0.81%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale — volume 31.39M nei pressi della media",
+      "news": "Microsoft forma partnership strategica con EY per accelerare adozione enterprise delle tecnologie AI Microsoft (annuncio 21 maggio). Cash dividend $0.91 con ex-date 21 maggio. Market cap 3.11T. 52W range $356.28-$555.45.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 418.97,
+      "stop_loss": 406.40,
+      "target": 439.92,
+      "commissione": 0.00,
+      "reasoning": "EY partnership è catalyst positivo per monetizzazione enterprise AI; tuttavia -0.81% oggi riflette cautela sul settore AI spending. Day range $415.72-$433.02 suggerisce alta volatilità intraday. Attendere chiusura sopra $425 per BUY direzionale. Fonte: Yahoo Finance MSFT May 22 2026 ($420.30 session) / Yahoo Finance ($417.64 close).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Yahoo Finance (session May 22)", "price": 420.30},
+          {"name": "Yahoo Finance (close latest)", "price": 417.64}
+        ],
+        "spread_pct": 0.64,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 268.65,
+      "change_24h": "+0.15%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale",
+      "news": "Yahoo Finance pubblica analisi: 'Here's Why Amazon (AMZN) Might Be the Ultimate Hard-Asset and AI Infrastructure Stock'. Sessione May 21: range $261.37-$269.49, close $268.46. Market cap $2.89T. Stock +2.9% sopra intraday low sessione precedente.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 268.65,
+      "stop_loss": 260.59,
+      "target": 282.08,
+      "commissione": 0.00,
+      "reasoning": "Narrativa AI infrastructure in accelerazione; analisi 'hard-asset + AI infra' riconosce il doppio moat di AMZN su cloud AWS e logistica fisica. Trend 5d rialzista da $266.66 a $268.65. Fonte: Yahoo Finance Finance article 'AMZN Hard-Asset AI Infrastructure' May 2026 / CNBC AMZN quote.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close May 21)", "price": 268.46},
+          {"name": "Yahoo Finance / MacroTrends (current)", "price": 268.87}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 394.28,
+      "change_24h": "+1.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale",
+      "news": "Q1 2026: revenue $109.9B (+22% YoY) — forte beat. Google svela nuovi formati pubblicitari e tool AI per monetizzazione. Cash dividend $0.22 annunciato (ex-date 8 giugno 2026). 58 analisti Buy/Strong Buy, PT medio $429.12 (+9% dal prezzo validato). Market cap $4.71T.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 394.28,
+      "stop_loss": 382.45,
+      "target": 413.99,
+      "commissione": 0.00,
+      "reasoning": "ATTENZIONE: affidabilità MEDIA (spread fonti 3.05%). Revenue Q1 +22% YoY conferma leadership AI pubblicitaria; 58 analisti Buy con PT $429 offrono visibilità di upside. Primo dividendo cash con ex-date giugno è segnale di maturità. Fonte: WallStreetZen $388.36 (May 22) / Yahoo Finance close $400.20.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / MarketBeat (May 22)", "price": 388.36},
+          {"name": "Yahoo Finance (close 4:00 PM EDT)", "price": 400.20}
+        ],
+        "spread_pct": 3.05,
+        "affidabilita": "MEDIA",
+        "note": "Spread 3.05% tra fonti — possibile differenza timestamp intraday vs closing. Prezzo validato = media aritmetica. Segnale generato ma con incertezza segnalata."
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1592.00,
+      "change_24h": "+2.70%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "Anomalo — grande movimento rialzista +2.70% ieri su bookings quasi doppio del consensus",
+      "news": "Q1 2026: bookings €13B vs consensus €7.5B (+73% beat enorme). Revenue €9.7B (+29% QoQ, +5% YoY) — modestamente sopra le stime. Market cap $597.75B (21 maggio). Yahoo Finance: 'ASML Holding N.V. (ASML) Rallied Following Solid Results'. 38 analisti Strong Buy, PT medio $1,660.71.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1592.00,
+      "stop_loss": 1544.24,
+      "target": 1671.60,
+      "commissione": 0.00,
+      "reasoning": "Bookings Q1 quasi doppi rispetto al consensus (€13B vs €7.5B) dimostrano domanda EUV in forte accelerazione — unico fornitore mondiale di litografia EUV avanzata. Rally +2.70% confermato con spread fonti 0%. PT analisti $1,660 vs entry $1,592 = +4.3% upside conservativo. Fonte: Yahoo Finance 'ASML Rallied Following Solid Results' / Investing.com NASDAQ ADR $1,592.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / NASDAQ (close May 21)", "price": 1592.00},
+          {"name": "Investing.com (NASDAQ ADR)", "price": 1592.00}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 414.00,
+      "change_24h": "-0.71%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale — net inflows ETF gold USA +$0.83B aprile 2026",
+      "news": "Oro spot ~$4,694 (LBMA consensus 2026: $4,742). JPMorgan: Q4 2026 target $5,055 con prezzi vicino $5,000 a fine anno. TD Securities: media annuale 2026 $4,831. Inflows istituzionali in accelerazione. SSGA Monthly Gold Monitor: trend di lungo periodo rialzista confermato.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 414.00,
+      "stop_loss": 405.72,
+      "target": 430.56,
+      "commissione": 0.00,
+      "reasoning": "Consensus istituzionale univoco su target $5.000/oz per Q4 2026 (JPMorgan, TD Securities, LBMA). ETF inflows positivi e trend ciclico confermato da SSGA. GLD target Q4 implicato da $5.000 spot ≈ $443+ (upside +7% da entry). Fonte: GoldSilver.com 'Gold Price Outlook May 2026' / NYSE.com ARCX:GLD $413.55.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / TradingEconomics (May 22 session)", "price": 414.44},
+          {"name": "NYSE.com ARCX:GLD (May 21)", "price": 413.55}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 70.20,
+      "change_24h": "+2.14%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale",
+      "news": "Argento spot supera $80 psicologico e continua uptrend. Outperforma oro. Deficit offerta vs domanda industriale per 5 anni consecutivi. Gold/silver ratio in calo. Forex.com: 'Silver 2026 The Trade to Watch', target spot $100. Bybit/FXDailyReport: breakout confermato.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 70.20,
+      "stop_loss": 68.80,
+      "target": 73.01,
+      "commissione": 0.00,
+      "reasoning": "ATTENZIONE: affidabilità MEDIA (spread fonti 1.65%). Breakout argento sopra $80 spot è segnale tecnico forte; domanda industriale (EV, solare, elettronica) supera l'offerta da 5 anni consecutivi. Target spot $100 implica SLV >$90. Fonte: Investing.com SLV $70.77 (recente) / CNBC MarketBeat SLV $69.62 close May 21.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance (recente)", "price": 70.77},
+          {"name": "CNBC / MarketBeat (close May 21)", "price": 69.62}
+        ],
+        "spread_pct": 1.65,
+        "affidabilita": "MEDIA",
+        "note": "Spread 1.65% probabilmente dovuto a differenza temporale intraday vs closing. Prezzo validato = media aritmetica. Segnale generato ma con incertezza segnalata."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 76973.34,
+      "change_24h": "-0.24%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale — volume 24h $26.3B",
+      "news": "BTC scivola da $78K, testando supporto chiave $75K. Sell-off innescato da dati inflazione USA hotter-than-expected, rendimenti bond in rialzo e dati petrolio — shift aspettative Fed da taglio a potenziale rialzo. Trump firma executive order: Fed deve condurre review 120 giorni su accesso crypto ai servizi di pagamento della Reserve Bank (positivo regolatorio long-term). CoinDesk: '$500M in long liquidations'. Bitwise: BTC nuovo ATH previsto nel 2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 76973.34,
+      "stop_loss": 73124.67,
+      "target": 83130.72,
+      "commissione": 0.00,
+      "reasoning": "Segnali contraddittori: macro headwinds (inflazione, Treasury yield) pressano BTC mentre l'executive order di Trump è il più significativo segnale regolatorio pro-crypto in anni. Supporto $75K critico — se tenuto, base per rimbalzo verso $83K. Attendere stabilizzazione sopra $78K per BUY. Fonte: CoinMarketCap $77,157.89 / Coinbase $76,788.79.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 77157.89},
+          {"name": "Coinbase", "price": 76788.79}
+        ],
+        "spread_pct": 0.48,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2122.48,
+      "change_24h": "-0.27%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale — volume 24h $11.6B",
+      "news": "ETH scende con BTC sotto $80K. 247WallSt: 'Ripple (XRP), Solana (SOL), and Ethereum (ETH) are Down as Bitcoin (BTC) Slips Below $80K'. Ethereum -0.27% oggi. Bitwise mantiene target ATH 2026 a lungo termine. Market cap $255.7B (CMC rank #2).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2122.48,
+      "stop_loss": 2016.36,
+      "target": 2292.28,
+      "commissione": 0.00,
+      "reasoning": "ETH in correlazione con BTC — macro headwinds identici. Manca un catalyst specifico per ETH che giustifichi entry in questo contesto ribassista. Long-term outlook positivo (Bitwise ATH 2026) ma serve inversione BTC prima. Attendere recupero stabile sopra $2.300. Fonte: Coinbase ETH $2,126.40 / CoinMarketCap $2,118.56.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 2126.40},
+          {"name": "CoinMarketCap", "price": 2118.56}
+        ],
+        "spread_pct": 0.37,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 86.90,
+      "change_24h": "+0.39%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale — volume 24h $3.12B",
+      "news": "Solana Alpenglow upgrade (consensus overhaul) lanciato ufficialmente su community test cluster — segnale tecnico positivo di lungo termine. CoinDesk: BTC slide trascina SOL -5% a $86.98 (da $91+ del 15 maggio). SOL -7% in 7 giorni. Firedancer validator client in sviluppo 'slow and steady' (Jump Crypto). Market cap $50.1B (rank #7).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 86.90,
+      "stop_loss": 82.56,
+      "target": 93.85,
+      "commissione": 0.00,
+      "reasoning": "Alpenglow upgrade è catalizzatore positivo strutturale ma il timing è sfavorevole: -7% settimanale e correlazione negativa con BTC in questo momento. Attendere stabilizzazione BTC e conferma tenuta $85 su SOL per entry. Fonte: CoinMarketCap SOL $86.83 / Coinbase SOL $86.96.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 86.83},
+          {"name": "Coinbase", "price": 86.96}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "META",
+      "motivo": "Solo 1 fonte con prezzo esplicito confermato ($607.38 close Yahoo Finance). La seconda query non ha fornito un prezzo numerico indipendente. Dato sospetto: 'dividend yield 34.6%' citato nella stessa fonte — non plausibile per META. Regola: Fonti < 2 → BASSA → nessun segnale.",
+      "fonti_trovate": 1,
+      "prezzi": [607.38],
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Solo 1 fonte con prezzo esplicito ($89.30 Morningstar/Yahoo Finance May 21). La seconda query ha restituito solo link alle piattaforme senza prezzo specifico. Regola: Fonti < 2 → BASSA → nessun segnale.",
+      "fonti_trovate": 1,
+      "prezzi": [89.30],
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread tra fonti > 4%: TradingEconomics riporta $469.43 (nuovo 52W high), FinancialContent/StockStory riporta $449.59, altra fonte $452.50. Spread massimo ($469.43 vs $449.59) = 4.40% > soglia 4%. Nessun prezzo consolidato verificabile.",
+      "fonti_trovate": 2,
+      "prezzi": [469.43, 449.59],
+      "spread_pct": 4.40,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Spread tra fonti 12.4%: WallStreetZen (NYSE USD) $179.89 (May 20) vs Investing.com ADR $202.25 (May 22). Scarto anomalo non spiegabile da sola differenza temporale. Probabile mix-up tra listing EUR/USD o dato errato da una fonte.",
+      "fonti_trovate": 2,
+      "prezzi": [179.89, 202.25],
+      "spread_pct": 12.43,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread tra fonti > 4%: NYSE.com live $344.08-$351.38 (range May 22) vs Investing.com $323.91. Spread ($351.38 vs $323.91) = 8.5% > soglia 4%. Possibile che Investing.com riporti dato di sessione precedente post-earnings drop.",
+      "fonti_trovate": 2,
+      "prezzi": [344.08, 323.91],
+      "spread_pct": 8.50,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Tutte le fonti riportano il prezzo STLAM in EUR sulla Borsa di Milano (€6.397, Borsa Italiana). Il ticker STLAM non è quotato su NYSE/Nasdaq in USD. Il corrispondente NYSE è STLA (ADR). Nessuna quotazione USD NYSE confermata per STLAM nelle ricerche odierne.",
+      "fonti_trovate": 0,
+      "affidabilita": "BASSA",
+      "note": "Consultare STLA (NYSE) per la quotazione USD. Scan precedente usava STLA con prezzo $7.37."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Solo 1 fonte con prezzo esplicito ($142.54/$142.62, Investing.com/StockAnalysis May 22). La seconda query ha restituito solo descrizioni di piattaforme (Barchart, CNBC) senza prezzo numerico specifico. Regola: Fonti < 2 → BASSA → nessun segnale.",
+      "fonti_trovate": 1,
+      "prezzi": [142.54],
+      "affidabilita": "BASSA"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "tipo": "stock_eu",
+      "prezzo": 1592.00,
+      "motivo": "Bookings Q1 2026 €13B vs consensus €7.5B (+73% beat). Unico fornitore mondiale di litografia EUV — pricing power assoluto. Spread fonti 0.00% (massima certezza). 38 analisti Strong Buy, PT $1,660. Trend fortemente rialzista."
+    },
+    {
+      "rank": 2,
+      "asset": "GLD",
+      "tipo": "etf_commodity",
+      "prezzo": 414.00,
+      "motivo": "Consensus istituzionale univoco: JPMorgan $5,055/oz Q4 2026, TD Securities $4,831 media annuale, LBMA $4,742. ETF inflows +$0.83B aprile. Spread fonti 0.22% (massima affidabilità). Hedge inflattivo su macro incerto."
+    },
+    {
+      "rank": 3,
+      "asset": "AMZN",
+      "tipo": "stock_usa",
+      "prezzo": 268.65,
+      "motivo": "Narrativa 'Hard-Asset + AI Infrastructure' riconosciuta da analisti Yahoo Finance. Trend 5d rialzista, spread fonti 0.15%. Doppio moat AWS + logistica su mercato AI infrastrutturale da $1.7T stimato entro 2030."
+    },
+    {
+      "rank": 4,
+      "asset": "GOOGL",
+      "tipo": "stock_usa",
+      "prezzo": 394.28,
+      "motivo": "Q1 2026 revenue $109.9B (+22% YoY). Nuovi formati AI advertising. 58 analisti Buy, PT $429. Primo cash dividend annunciato (segnale maturità). Nota: affidabilità MEDIA (spread 3.05%) — posizione ridotta suggerita."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale eseguito. Alpaca broker, commissioni zero su azioni USA ed ETF.",
+    "allocazione_suggerita": {
+      "ASML": "22%",
+      "GLD": "20%",
+      "AMZN": "15%",
+      "AAPL": "15%",
+      "GOOGL": "13%",
+      "SLV": "10%",
+      "BTC": "5%"
+    },
+    "razionale": "Portafoglio concentrato su 7 asset con segnale BUY o HOLD strategico. ASML + GLD (42%) = core position ad alta affidabilità. AMZN + AAPL (30%) = mega-cap USA con momentum confermato. GOOGL (13%) = peso ridotto rispetto a ALTA per affidabilità MEDIA (spread 3.05%). SLV (10%) = silver breakout con hedge industriale. BTC (5%) = esposizione crypto minima in attesa di conferma $78K. Esclusi TSLA (nessun catalyst), NVDA (pre-earnings), MSFT (laterale), ETH e SOL (macro headwinds crypto).",
+    "rischio_totale_max": "Basato su SL: ASML -3%, GLD -2%, AMZN -3%, AAPL -3%, GOOGL -3%, SLV -2%, BTC -5%. Max drawdown portafoglio stimato: -2.8% (ponderato)."
+  }
+}
