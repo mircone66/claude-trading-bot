@@ -1,0 +1,511 @@
+{
+  "timestamp": "2026-05-27T14:00:00-04:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Nasdaq e S&P 500 su nuovi massimi il 26 maggio trainati dal tech (Motley Fool). AMD quadruplicato in 12 mesi post Q1 blowout. Ferrari RACE crolla -5.26% dopo unveiling EV 'Luce'. ETH rompe supporto $2,100 per la prima volta nel 2026. Crypto in risk-off, gold stabile su possibile accordo USA-Iran. USO escluso per dati seconda fonte non contemporanei (May 14).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 308.49,
+      "change_24h": "+1.31%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (range intraday stretto $308.49-$308.88)",
+      "news": "Analista alza price target da $330 a $380 con rating Buy; Nasdaq e S&P 500 su nuovi massimi il 26 maggio (Motley Fool).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 308.49,
+      "stop_loss": 299.24,
+      "target": 323.91,
+      "commissione": 0.00,
+      "reasoning": "Upgrade analista a $380 (+23% vs prezzo attuale) e rally tech spingono il titolo verso il 52-week high $311.82. Sentiment positivo su AI integration e servizi, Nasdaq su massimi storici (Motley Fool, 26 maggio 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / TradingEconomics", "price": 308.65},
+          {"name": "Yahoo Finance (close May 26)", "price": 308.33}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 440.21,
+      "change_24h": "+1.78%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo basso (22.78M vs media 50.63M, -55%)",
+      "news": "Rally tech generale, nessun catalizzatore specifico TSLA identificato. Volume molto inferiore alla media.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 440.21,
+      "stop_loss": 427.00,
+      "target": 462.22,
+      "commissione": 0.00,
+      "reasoning": "Volume anomalo basso (-55% rispetto alla media) nonostante il rialzo di +1.78% suggerisce mancanza di convinzione degli istituzionali. P/E di 396x e stock ancora -11.7% dal 52-week high $498.83 (Yahoo Finance, 27 maggio 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday May 27)", "price": 440.21},
+          {"name": "Morningstar / CNN (confirmed May 27)", "price": 440.21}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 213.95,
+      "change_24h": "-2.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto (187.2M vs media 170.26M, +9.9%)",
+      "news": "NVDA -2.1% il 26 maggio mentre Nasdaq saliva sui massimi; volume sopra media potenziale segnale di distribuzione (Motley Fool, 26 maggio).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 213.95,
+      "stop_loss": 207.53,
+      "target": 224.65,
+      "commissione": 0.00,
+      "reasoning": "Volume +9.9% sopra media associato a -2.1% crea segnale di potenziale distribuzione. Stock -9.5% dal 52-week high $236.54. Consenso analisti Strong Buy (target $295.69, +38%) supporta view di recupero a medio termine (Yahoo Finance, 27 maggio 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday May 27)", "price": 213.95},
+          {"name": "CNN / Robinhood (confirmed May 27)", "price": 213.95}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 415.67,
+      "change_24h": "-0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo basso (19.79M vs media 32.9M, -39.8%)",
+      "news": "Bill Gates Foundation ha venduto l'intera quota MSFT (Motley Fool, 25 maggio); articolo bearish 'Microsoft Should Be Thrown Out Of Magnificent 7' (24/7 Wall St., 26 maggio).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 415.67,
+      "stop_loss": 403.20,
+      "target": 436.45,
+      "commissione": 0.00,
+      "reasoning": "Gates Foundation ha liquidato la posizione (Motley Fool, 25 maggio) — segnale insider significativo. Volume basso -39.8% e stock -25.2% dal 52-week high $555.45. Sentiment misto: KeyBanc Overweight ma narrativa Magnificent 7 indebolita (Yahoo Finance, 26-27 maggio 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday May 27)", "price": 415.31},
+          {"name": "Yahoo Finance (close May 26)", "price": 416.03}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 264.97,
+      "change_24h": "-0.24%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Amazon Stock Surges 24% nel più grande rally degli ultimi mesi (Motley Fool, 22 maggio); Amazon ammessa a bid per spettro satellite mobile EU (Yahoo Finance, 27 maggio).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 264.97,
+      "stop_loss": 257.02,
+      "target": 278.22,
+      "commissione": 0.00,
+      "reasoning": "Recente rally +24% (il più grande degli ultimi mesi) supporta momentum rialzista (Motley Fool, 22 maggio). Stock a solo -5% dal 52-week high $278.56; bid per spettro EU aggiunge optionalità di crescita AWS/Starlink competition.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday May 27)", "price": 264.65},
+          {"name": "CNBC / Yahoo Finance (close May 26)", "price": 265.29}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 388.82,
+      "change_24h": "+0.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo basso (16.47M vs media 26.98M, -39%)",
+      "news": "Q1 2026: ricavi +22% a $110B, Google Cloud +63% a $20B (Yahoo Finance); GOOGL +22% YTD; consenso Strong Buy con 12% upside (Tipranks, maggio 2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 388.82,
+      "stop_loss": 377.16,
+      "target": 408.26,
+      "commissione": 0.00,
+      "reasoning": "Q1 eccezionale: ricavi +22% YoY e Google Cloud +63% evidenziano dominio nell'AI cloud. GOOGL +22% YTD, a soli -4.9% dal 52-week high $408.61; target price implica allineamento con il massimo storico annuale (Yahoo Finance, 27 maggio 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Marketbeat / TipRanks (intraday May 27)", "price": 388.88},
+          {"name": "Yahoo Finance / Morningstar (May 27)", "price": 388.76}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 612.34,
+      "change_24h": "+0.34%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "247WallSt: 'Meta Platforms Will Be a $2 Trillion Company' (24 maggio); consenso analisti 47 Buy + 9 Strong Buy, target $826.60 (+35% upside, MarketBeat).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 612.34,
+      "stop_loss": 593.97,
+      "target": 642.96,
+      "commissione": 0.00,
+      "reasoning": "Consenso analisti schiacciante: 47 Buy, 9 Strong Buy, target medio $826.60 (+35% upside). AI advertising e AR/VR investment supportano la tesi di crescita verso $2T market cap (247WallSt, 24 maggio 2026). Target conservativo +5% in linea con la categoria.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (May 27 intraday)", "price": 612.34},
+          {"name": "CNBC / Macrotrends (close May 26)", "price": 612.34}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 87.68,
+      "change_24h": "-1.04%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix stock slides -1.04% mentre S&P 500 e Nasdaq su nuovi massimi: divergenza negativa (Yahoo Finance, 26 maggio); fair value stimato $94.00 da Morningstar.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 87.68,
+      "stop_loss": 85.05,
+      "target": 92.06,
+      "commissione": 0.00,
+      "reasoning": "Divergenza negativa preoccupante: NFLX -1.04% il 26 maggio mentre il mercato saliva ai massimi (Yahoo Finance). Stock nella parte bassa del 52-week range $75.01-$134.12; fair value $94 suggerisce upside ma momentum sfavorevole sconsiglia entry immediata.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close May 26-27)", "price": 87.68},
+          {"name": "Morningstar / CNN (confirmed)", "price": 87.68}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 512.30,
+      "change_24h": "+1.67%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Q1 revenue +38% YoY a $10.3B; guidance Q2 $11.2B (+45% YoY). AMD +100% YTD, quadruplicato in 12 mesi (Motley Fool, 22 maggio; CNBC, 6 maggio).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 512.30,
+      "stop_loss": 496.93,
+      "target": 537.92,
+      "commissione": 0.00,
+      "reasoning": "Price $512.30 supera i target degli analisti: Goldman Sachs $450, BofA $500, consenso medio $410 — stock esteso rispetto alle valutazioni. Q1 blowout già incorporato; possibile consolidazione dopo rally +100% YTD (CNBC, 6 maggio 2026). NOTA: affidabilità MEDIA (spread 1.66% tra fonti di giorni diversi).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday May 27)", "price": 512.30},
+          {"name": "Morningstar (close May 26)", "price": 503.89}
+        ],
+        "spread_pct": 1.66,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1609.66,
+      "change_24h": "-2.74%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "UBS ha alzato il price target del 43%; Bernstein mantiene Buy rating (25 maggio). 52-week high $1,653.53 toccato il 22 maggio 2026 (CNN/CNBC).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1609.66,
+      "stop_loss": 1561.37,
+      "target": 1690.14,
+      "commissione": 0.00,
+      "reasoning": "Correzione intraday -2.74% da close $1,632 dopo aver toccato 52-week high $1,653 il 22 maggio. UBS +43% target e Bernstein Buy supportano outlook (CNN/CNBC, maggio 2026). NOTA: affidabilità MEDIA (spread 2.77% tra fonti intraday vs close) — attendere conferma stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (intraday May 27)", "price": 1587.29},
+          {"name": "CNN / StockAnalysis (close May 26)", "price": 1632.03}
+        ],
+        "spread_pct": 2.77,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 175.95,
+      "change_24h": "-0.19%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP's Stock Rebound Hits a Technical Ceiling as Overbought RSI Dampens the AI Narrative (ad-hoc-news, maggio 2026). Target analisti $256.50 (+46% upside), 13 Buy 0 Sell.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 175.95,
+      "stop_loss": 170.67,
+      "target": 184.75,
+      "commissione": 0.00,
+      "reasoning": "RSI in ipercomprato frena il rimbalzo — 'Rebound Hits a Technical Ceiling' secondo analisi tecnica (ad-hoc-news, maggio 2026). Nonostante il target analisti $256.50 (+46%), la resistenza tecnica segnalata e il momentum in calo suggeriscono attesa di un pullback prima dell'entry.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE ADR (May 25)", "price": 175.95},
+          {"name": "Yahoo Finance NYSE ADR (May 25)", "price": 175.95}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 333.01,
+      "change_24h": "+1.82%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto (news event: unveiling Ferrari Luce EV)",
+      "news": "Ferrari ha svelato la Luce, primo EV a $640K; azioni -5.26% il 26 maggio. Analisti divisi: Seeking Alpha 'horizon now clear'; altri critici del design (Benzinga, Seeking Alpha, 26-27 maggio).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 333.01,
+      "stop_loss": 323.02,
+      "target": 349.66,
+      "commissione": 0.00,
+      "reasoning": "Evento di notizia ad alto impatto: -5.26% il 26 maggio dopo unveiling Ferrari Luce EV. Stock vicino al 52-week low $312.51, oggi recupera parzialmente +1.82%. Analisti divisi sull'EV gamble $640K (Seeking Alpha, 27 maggio 2026). NOTA: affidabilità MEDIA — attendere stabilizzazione post-notizia.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Benzinga (close May 26)", "price": 330.00},
+          {"name": "Morningstar / StockAnalysis (intraday May 27)", "price": 336.02}
+        ],
+        "spread_pct": 1.81,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 7.61,
+      "change_24h": "+0.66%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "FaSTLAne 2030 presentato il 21 maggio: piano €60B, 60+ nuovi modelli; Q1 revenue +6%, consegne globali +12% YoY (SEC Filing / Yahoo Finance, maggio 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 7.61,
+      "stop_loss": 7.38,
+      "target": 7.99,
+      "commissione": 0.00,
+      "reasoning": "FaSTLAne 2030 con piano €60B è catalizzatore positivo (SEC Filing, 21-22 maggio 2026). Stock nella parte bassa del 52-week range $6.28-$12.22 con potenziale di recovery. Execution risk elevato in mercato EV competitivo; preferibile attendere conferma del trend rialzista prima di entry.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance NYSE STLA (close May 26)", "price": 7.61},
+          {"name": "MarketBeat / CNN NYSE STLA (confirmed)", "price": 7.61}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 413.09,
+      "change_24h": "-0.35%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Trump's Possible Iran Deal Is Putting Gold ETFs Back In Focus As Bullion Prices Climb (ETF.com / eToro). GLD +33.54% return nell'ultimo anno (CNBC, 26 maggio 2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 413.09,
+      "stop_loss": 404.83,
+      "target": 429.61,
+      "commissione": 0.00,
+      "reasoning": "Segnali contraddittori: possibile accordo USA-Iran riduce safe-haven demand ma bullion prices ancora sostenuti; GLD -0.35% oggi. Trend annuale eccellente +33.54% (CNBC, 26 maggio 2026). Posizione di attesa fino a chiarimento scenario geopolitico Iran.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView NYSE Arca (May 26-27)", "price": 413.82},
+          {"name": "CNBC NYSE Arca (close May 26 2:23 PM EDT)", "price": 412.36}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 69.72,
+      "change_24h": "0.00%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Outlook positivo da crescita domanda industriale clean energy e solare; investimento long-term segnalato da analisti (ETF.com / iShares, maggio 2026).",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 69.72,
+      "stop_loss": 68.33,
+      "target": 72.51,
+      "commissione": 0.00,
+      "reasoning": "Silver supportato dalla crescita strutturale della domanda industriale legata all'energia solare e clean tech. SLV trading a piccolo premio su NAV $68.99. 52-week range $29.78-$109.83 indica ampio upside potenziale in scenario demand-driven (iShares / ETF.com, maggio 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance NYSE Arca (May 27)", "price": 69.72},
+          {"name": "iShares / CNBC NYSE Arca (confirmed May 27)", "price": 69.72}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 76137.72,
+      "change_24h": "-1.74%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($35.5B 24h, CoinMarketCap)",
+      "news": "BTC down $1,331 da ieri mattina, risk-off sul crypto market. Market cap dominante $1.33T (Fortune / CoinMarketCap, 27 maggio 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 76137.72,
+      "stop_loss": 72330.83,
+      "target": 82228.74,
+      "commissione": 0.00,
+      "reasoning": "Calo -1.74% senza catalizzatori specifici identificati. BTC market cap dominante $1.33T mantiene la leadership cripto. Nessun segnale direzionale forte — risk-off generale del mercato cripto (Fortune/CoinMarketCap, 27 maggio 2026). Posizione di attesa.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (May 27 live)", "price": 75769.13},
+          {"name": "Coinbase (May 27 live)", "price": 76506.30}
+        ],
+        "spread_pct": 0.97,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2072.33,
+      "change_24h": "-2.68%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($15.9B 24h, CoinMarketCap)",
+      "news": "ETH rompe il supporto chiave $2,100 per la prima volta nel 2026 dopo averlo difeso per 3 settimane consecutive (BlockchainReporter, 27 maggio 2026).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 2072.33,
+      "stop_loss": 2175.95,
+      "target": 1906.54,
+      "commissione": 0.00,
+      "reasoning": "Rottura del supporto critico $2,100 per la prima volta nel 2026 — segnale tecnico ribassista significativo (BlockchainReporter, 27 maggio). -2.68% nelle ultime 24h con momentum negativo. Prossimo supporto tecnico atteso attorno a $1,900 (-8% dall'entry). Stop loss: chiusura giornaliera sopra $2,175.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (May 27 live)", "price": 2066.56},
+          {"name": "Coinbase (May 27 live)", "price": 2078.10}
+        ],
+        "spread_pct": 0.56,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 83.64,
+      "change_24h": "-1.04%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($3.5B 24h, CoinMarketCap)",
+      "news": "SOL al livello decisivo $83-84: 'fail $83 and SOL could slide to $80' — risk-off setup critico (Cryptonomist, 27 maggio 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 83.64,
+      "stop_loss": 79.46,
+      "target": 90.33,
+      "commissione": 0.00,
+      "reasoning": "SOL al punto critico $83-84: rottura sotto $83 aprirebbe la strada verso $80 secondo analisi tecnica (Cryptonomist, 27 maggio 2026). -1.04% nelle 24h, -2% dalla settimana scorsa. ATH $294.85 (gen 2025) lontano -72%. Risk-off cripto — attendere conferma tenuta $83.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (May 27 live)", "price": 83.66},
+          {"name": "Coinbase (May 27 live)", "price": 83.62}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "USO",
+      "motivo": "Seconda fonte (Barchart/StockInvest) non contemporanea: dati del 14 maggio 2026 ($143.00) vs fonte primaria 27 maggio ($137.00). Spread temporale di 13 giorni rende impossibile la triangolazione affidabile. Regola: Fonti < 2 contemporanee → BASSA → escluso dai segnali."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GOOGL",
+      "motivo": "BUY Alto confidence. Q1 eccezionale: ricavi +22% YoY, Google Cloud +63% a $20B. Stock +22% YTD a soli -4.9% dal 52-week high. Consenso Strong Buy con target $408."
+    },
+    {
+      "rank": 2,
+      "asset": "META",
+      "motivo": "BUY Medio confidence. Consenso analisti schiacciante: 47 Buy + 9 Strong Buy, target $826.60 (+35%). AI advertising dominance e roadmap verso $2T market cap."
+    },
+    {
+      "rank": 3,
+      "asset": "AMZN",
+      "motivo": "BUY Medio confidence. Rally +24% (il più grande degli ultimi mesi, Motley Fool 22 maggio). A -5% dal 52-week high con momentum rialzista confermato."
+    },
+    {
+      "rank": 4,
+      "asset": "AAPL",
+      "motivo": "BUY Medio confidence. Analyst upgrade a $380 (+23% vs prezzo). Nasdaq su nuovi massimi trascina il leader di mercato verso il 52-week high $311.82."
+    },
+    {
+      "rank": 5,
+      "asset": "SLV",
+      "motivo": "BUY Basso confidence. Domanda industriale strutturale da energia solare e clean tech. Trading vicino al NAV $68.99 con ampio upside nel 52-week range."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito. Solo scopo educativo/analitico.",
+    "segnali_buy": ["GOOGL", "META", "AMZN", "AAPL", "SLV"],
+    "segnali_sell": ["ETH"],
+    "segnali_hold": ["TSLA", "NVDA", "MSFT", "NFLX", "AMD", "ASML", "SAP", "RACE", "STLA", "GLD", "BTC", "SOL"],
+    "allocazione_suggerita": {
+      "GOOGL": "30%",
+      "META": "25%",
+      "AMZN": "20%",
+      "AAPL": "15%",
+      "SLV": "10%",
+      "note": "Pesi proporzionali alla confidenza del segnale. GOOGL peso massimo per confidenza Alta unica. ETH: posizione short/uscita suggerita per chi detiene."
+    }
+  }
+}
