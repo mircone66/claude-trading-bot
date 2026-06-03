@@ -1,0 +1,540 @@
+{
+  "timestamp": "2026-06-03T15:00:00-04:00",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF; crypto commissioni variabili"
+  },
+  "market_summary": "Giornata di forte divergenza settoriale il 3 giugno 2026. I chip AI (AMD +3%) spingono il mercato mentre Big Tech perde terreno (MSFT -3.24%, GOOGL -3.86%, AMZN -1.81%). AAPL tocca ATH a $315.20 in attesa del WWDC dell'8 giugno. Il conflitto militare USA-Iran diretto provoca un'impennata del petrolio (WTI $95.78, Brent $97.89): USO in rialzo. Oro e argento cedono nonostante le tensioni geopolitiche, appesantiti dal dollaro forte e dal rischio Fed hawkish (ADP +122K). Crypto in forte correzione: BTC -5.43% a $67K dopo $2.3B di deflussi ETF mensili record. Solana resiste relativamente grazie agli afflussi istituzionali negli spot ETF.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 315.20,
+      "change_24h": "+2.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "28.34M vs media 46.71M — volume sotto la media ma prezzo a ATH",
+      "news": "Apple a nuovo ATH ($315.45 intraday) in attesa del WWDC 8 giugno 2026. Attesa presentazione AI features iOS 27 e potenziale ingresso nel mercato occhiali smart da $200B. Upgrade analyst generali positivi. (fonte: TipRanks, Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 315.20,
+      "stop_loss": 305.74,
+      "target": 330.96,
+      "commissione": 0.00,
+      "reasoning": "Stock a massimo storico con catalizzatore WWDC imminente (8 giugno): attesa annuncio AI su iOS 27 e nuovi form factor. Basso volume suggerisce ancora spazio per ingresso istituzionale post-conferenza.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com", "price": 315.20},
+          {"name": "CNBC / Yahoo Finance (confermato)", "price": 315.20}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 420.59,
+      "change_24h": "+1.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale — trading range 416-433.60",
+      "news": "Tesla in rialzo su speculazioni di merger con SpaceX, ma headwind da OpenAI: Sam Altman ha dichiarato competizione diretta con Optimus robot, eliminando $75B di market cap in una sessione. (fonte: Yahoo Finance, Capital.com)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 420.59,
+      "stop_loss": 407.97,
+      "target": 441.62,
+      "commissione": 0.00,
+      "reasoning": "Segnali contrastanti: merger SpaceX (rialzista) vs OpenAI robotica (ribassista strutturale). Spread fonti 1.51% indica MEDIA affidabilità. Attendere chiarimento sulla narrative dominante.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday June 3)", "price": 417.43},
+          {"name": "Yahoo Finance (close June 2 confermato)", "price": 423.74}
+        ],
+        "spread_pct": 1.51,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 221.79,
+      "change_24h": "-0.69%",
+      "trend_5d": "rialzista",
+      "volume_note": "193.36M vs media 189.22M — volume leggermente anomalo alto (+2.2%)",
+      "news": "USA restringe shipment chip AI Nvidia verso aziende cinesi fuori dalla Cina (CNBC, 31 maggio). Ex-dividend date 4 giugno 2026 con dividendo $0.25. Nvidia supera $5.5T di market cap nella settimana precedente. Consensus Buy da 37 analisti, target $298.32. (fonte: Yahoo Finance, CNBC)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 221.79,
+      "stop_loss": 215.14,
+      "target": 232.88,
+      "commissione": 0.00,
+      "reasoning": "Export restrictions verso la Cina creano incertezza nel breve. Ex-dividend domani (4 giugno) può deprimere il prezzo. Fondamentali eccezionali ma il titolo consolida dopo il rally verso $5.5T. Attendere post-dividend.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / multiple (June 3 AM)", "price": 221.79},
+          {"name": "CNBC / Yahoo Finance (June 3 confermato)", "price": 221.79}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 438.42,
+      "change_24h": "-3.24%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto — forte sell-off da news AI in-house",
+      "news": "Microsoft in calo del 3.24% dopo annuncio sviluppo modelli AI in-house per ridurre dipendenza da OpenAI. Dan Ives (Wedbush): 'Il mercato sta prezzando male MSFT'. Barclays mantiene Overweight con target $545. Investimento $190B in AI infrastructure nel 2026. (fonte: CNBC, Motley Fool, Investing.com)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 438.42,
+      "stop_loss": 425.27,
+      "target": 460.34,
+      "commissione": 0.00,
+      "reasoning": "Calo del 3.24% crea opportunità di acquisto 'buy the dip': la notizia dell'AI in-house è strategicamente positiva (riduzione dipendenza OpenAI). Barclays target $545 (+24%). Wedbush conferma mispricing. Range di giornata $437-$460 suggerisce supporto.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / multiple (June 3)", "price": 438.42},
+          {"name": "CNBC (June 3 confermato)", "price": 438.42}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 256.48,
+      "change_24h": "-1.81%",
+      "trend_5d": "laterale",
+      "volume_note": "media 33.34M — volume nella norma",
+      "news": "Stanley Druckenmiller ha venduto il 94% della sua posizione Amazon, passando su Intel. Amazon anticipa Prime Day a giugno citando Mondiali di Calcio e 250° anniversario USA. Stock -4.39% nell'ultimo mese. (fonte: Motley Fool, Fox Business, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 256.48,
+      "stop_loss": 248.79,
+      "target": 269.30,
+      "commissione": 0.00,
+      "reasoning": "Druckenmiller ha eliminato il 94% della posizione: segnale ribassista da uno dei migliori macro trader. Prime Day in giugno può dare supporto temporaneo. Attendere per vedere se il trend di calo mensile (-4.39%) si inverte.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood / Yahoo Finance (June 3)", "price": 256.43},
+          {"name": "Investing.com / CNBC (June 3 range $254.37-$261.20)", "price": 256.52}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 359.00,
+      "change_24h": "-3.86%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo alto — forte pressione di vendita",
+      "news": "Alphabet in calo del 3.86% dopo annuncio di raccolta fondi da $80B per infrastrutture AI — possibile diluizione degli azionisti. Dividendo cash $0.22 con ex-date 8 giugno. Il CEO pianifica massicci investimenti in data center. (fonte: Yahoo Finance, CNBC)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 359.00,
+      "stop_loss": 369.77,
+      "target": 341.05,
+      "commissione": 0.00,
+      "reasoning": "L'annuncio di un'enorme raccolta fondi da $80B implica diluizione significativa degli azionisti. Calo del 3.86% in una giornata di mercato positivo (S&P a nuovi record) è particolarmente ribassista. Chiudere posizioni lunghe.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / multiple (June 3)", "price": 359.60},
+          {"name": "CNBC / Yahoo Finance (close June 2)", "price": 358.39}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 601.31,
+      "change_24h": "-0.47%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Meta in lieve calo: CISO Guy Rosen in partenza dall'azienda. Capex 2026 proiettato a $115-135B per AI (aumento debito). Nonostante la dipartita del CISO, i fondamentali AI rimangono forti. (fonte: Yahoo Finance, Meta Investor Relations)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 601.31,
+      "stop_loss": 583.27,
+      "target": 631.38,
+      "commissione": 0.00,
+      "reasoning": "Calo modesto (-0.47%) su notizia del CISO ma non è un segnale strutturale. Meta distante 24% dal suo ATH di $796. Gli investimenti AI massicci ($115-135B capex) sono doppio taglio: opportunità ma anche rischio di overinvestment.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent / Yahoo Finance (June 3)", "price": 602.45},
+          {"name": "CNBC / Yahoo Finance (close June 2)", "price": 600.16}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 84.53,
+      "change_24h": "-2.94%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale",
+      "news": "Netflix testa il price floor (Trefis): 52W high $134.12 vs attuale $83-85. Fondamentali forti: FCF guidance 2026 alzata a $12.5B; revenue Q1 +16.2% YoY. Calo -2.94% nonostante risultati positivi. (fonte: Yahoo Finance, Trefis)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 84.53,
+      "stop_loss": 82.00,
+      "target": 88.76,
+      "commissione": 0.00,
+      "reasoning": "Netflix a possibile 'price floor' con fondamentali solidi (FCF $12.5B, +16.2% ricavi). Ma spread fonti 3.12% riduce confidenza. Attendere stabilizzazione prima di comprare. Supporto critico a $75 (52W low).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / multiple (June 3)", "price": 83.21},
+          {"name": "CNBC / Yahoo Finance (sessione recente)", "price": 85.85}
+        ],
+        "spread_pct": 3.12,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 529.47,
+      "change_24h": "+3.04%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto — breakout verso nuovi massimi",
+      "news": "AMD tocca nuovi massimi record: +141% YTD. Data Center revenue Q1 +57% YoY, fatturato totale $10.3B. Avvio produzione Venice EPYC processor. Analisti: 'It's Just the Beginning'. Rally si basa su conferenza AI e jobs report in arrivo. (fonte: Yahoo Finance, CNBC, ad-hoc-news.de)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 529.47,
+      "stop_loss": 513.59,
+      "target": 555.94,
+      "commissione": 0.00,
+      "reasoning": "AMD in territorio di massimi storici con momentum AI eccezionale (+141% YTD). Data Center +57% YoY è il driver principale. Il Venice EPYC ramp e la conferenza imminente sono catalizzatori. MEDIA affidabilità per spread 2.99% tra le fonti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / multiple (June 3 mattina)", "price": 521.54},
+          {"name": "Yahoo Finance / CNBC (June 3 10:43 AM EDT)", "price": 537.39}
+        ],
+        "spread_pct": 2.99,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1705.31,
+      "change_24h": "+4.26%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale — forte rialzo su momentum settoriale",
+      "news": "ASML tocca nuovo massimo 52 settimane a $1,708.32. UBS reinserisce ASML come sua principale scelta europea nel settore semiconduttori, alzando il target a €1,900 (~$2,071). Partnership con Tata Electronics per fab India. Q1 revenue €8.8B: battuto le stime. (fonte: Yahoo Finance, MarketBeat, Seeking Alpha)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1705.31,
+      "stop_loss": 1654.15,
+      "target": 1790.58,
+      "commissione": 0.00,
+      "reasoning": "ASML è il monopolista assoluto nelle EUV lithography — necessaria per ogni chip AI avanzato. UBS top pick EU semis con target €1,900. Q1 battuto le stime. 38 analisti Buy consensus. Momentum +4.26% settimanale con nuovo ATH.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (June 3 NASDAQ)", "price": 1705.31},
+          {"name": "Investing.com / Finviz (June 3 NASDAQ confermato)", "price": 1705.31}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 190.82,
+      "change_24h": "-2.70%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "SAP in calo del 2.70% il 2 giugno. Cloud revenue +27% YoY a $5.95B; operating profit +24% a €2.9B con margini in espansione. Prossimo earnings 23 luglio 2026. 23 analisti: Strong Buy, target medio €214.80 (+31.49% upside). Xetra price June 3: €163.37. (fonte: Yahoo Finance, Investing.com, SAP Investor Relations)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 190.82,
+      "stop_loss": 185.10,
+      "target": 200.36,
+      "commissione": 0.00,
+      "reasoning": "SAP ha fondamentali solidi (cloud +27%, margini espansione) ma i dati di prezzo NYSE per il 3 giugno non sono direttamente confermati da due fonti concordanti sulla stessa sessione. Si consiglia attendere conferma prima di operare.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Google Finance (NYSE close June 2)", "price": 190.82},
+          {"name": "Investing.com (NYSE June 1 — data precedente)", "price": 181.79}
+        ],
+        "spread_pct": 4.85,
+        "affidabilita": "MEDIA",
+        "nota": "Spread dovuto a date diverse (June 1 vs June 2), non a disaccordo fonti sulla stessa sessione. Usato close June 2 come prezzo più recente."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 345.53,
+      "change_24h": "-2.34%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale",
+      "news": "Ferrari Q1 2026: EPS $2.69 vs $2.37 atteso; revenue $2.14B battuto del +16.94% su forte personalizzazione. Nonostante il beat, il titolo è sceso del 1.86% post-earnings. -30% YoY, vicino al 52W low di $312.51. Prossimo earnings 30 luglio 2026. (fonte: Investing.com, Capital.com)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 345.53,
+      "stop_loss": 335.16,
+      "target": 362.81,
+      "commissione": 0.00,
+      "reasoning": "Ferrari batte le stime su tutti i fronti ma il mercato vende: segnale di 'sell the news'. Vicino al supporto chiave del 52W low $312.51. Il titolo potrebbe trovare un fondo ma aspettare segnali di inversione confermati.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Robinhood (NYSE June 3)", "price": 345.53},
+          {"name": "Investing.com / Google Finance (NYSE June 2)", "price": 352.04}
+        ],
+        "spread_pct": 1.87,
+        "affidabilita": "MEDIA",
+        "nota": "Spread parzialmente dovuto al normale calo intraday del 2.34% tra sessioni contigue."
+      }
+    },
+    {
+      "asset": "STLA",
+      "ticker_note": "Ticker NYSE: STLA (il ticker STLAM è quotato a Milano/Euronext)",
+      "type": "stock_eu",
+      "price": 7.98,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale",
+      "news": "Stellantis investe €1B in Francia per nuovi modelli Peugeot EV (transizione elettrica). Dodge presenta 2027 Charger e Durango con nuovi motori. 52W range $6.28-$12.22. Analyst target medio €7.858, consensus Neutral (9 Buy, 3 Sell). (fonte: Yahoo Finance, Motley Fool, Investing.com STLAM)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 7.98,
+      "stop_loss": 7.74,
+      "target": 8.38,
+      "commissione": 0.00,
+      "reasoning": "Stellantis vicino al range basso storico. Gli investimenti EV sono positivi nel lungo periodo ma il mercato auto soffre. Spread cross-valuta (NYSE USD vs Milan EUR) porta incertezza. Confidenza bassa: aspettare chiarimento direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool / Yahoo Finance (NYSE STLA)", "price": 7.98},
+          {"name": "Investing.com STLAM Milan (7.098 EUR × ~1.09 EUR/USD)", "price": 7.74}
+        ],
+        "spread_pct": 3.05,
+        "affidabilita": "MEDIA",
+        "nota": "Source 2 convertita da EUR (STLAM Milan): 7.098 EUR × tasso cambio ~1.09."
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 407.79,
+      "change_24h": "-1.03%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Oro spot a $4,451.70/oz (-0.81%). Oro e argento in calo nonostante il conflitto USA-Iran: il rally del petrolio, il dollaro forte e il rischio Fed hawkish (ADP +122K) superano la domanda di safe haven. Trattative di pace nel Golfo in stallo. (fonte: IndexBox, Yahoo Finance, Kitco)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 407.79,
+      "stop_loss": 399.63,
+      "target": 424.10,
+      "commissione": 0.00,
+      "reasoning": "L'oro cede terreno inaspettatamente durante un conflitto militare: segnale che il mercato è dominato da forze anti-oro (dollaro forte, rischio Fed rialzo, rendimenti reali in aumento). Aspettare stabilizzazione prima di comprare la crisi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (June 3)", "price": 407.88},
+          {"name": "CNBC / NYSE Arca (June 3 13:18 EDT)", "price": 407.70}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 67.99,
+      "change_24h": "-1.37%",
+      "trend_5d": "laterale",
+      "volume_note": "11.64M shares — volume nella norma",
+      "news": "Argento in calo: 'moving lower this morning as clashes continue' (Yahoo Finance, June 3). Argento spot a $74.105/oz (-1.37%). Pressione da dollaro forte e rischio Fed. Net assets SLV: $36.86B. (fonte: Yahoo Finance, IndexBox, iShares)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 67.99,
+      "stop_loss": 66.63,
+      "target": 70.71,
+      "commissione": 0.00,
+      "reasoning": "Argento sotto pressione da stesso mix di forze che pesano sull'oro. A differenza dell'oro però l'argento ha anche utilizzo industriale che potrebbe sostenere la domanda. Tuttavia il trend di breve termine rimane ribassista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / iShares (June 2 close)", "price": 67.99},
+          {"name": "CNBC / NYSE Arca (June 2 close confermato)", "price": 67.99}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 139.32,
+      "change_24h": "+1.49%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto — conflitto militare diretto USA-Iran",
+      "news": "WTI $95.78/barile, Brent $97.89/barile. Forze USA hanno disabilitato una petroliera iraniana; Iran ha risposto con missili su basi USA in Bahrain e Kuwait. Trattativa per riapertura Stretto di Hormuz in stallo. 2026 definito 'breakout year' per ETF energetici con 7 fondi petroliferi in forte rialzo. (fonte: IndexBox, Trading Economics, USCF)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 139.32,
+      "stop_loss": 136.53,
+      "target": 144.89,
+      "commissione": 0.00,
+      "reasoning": "Il conflitto militare diretto USA-Iran con rischio di blocco dello Stretto di Hormuz (20% del petrolio mondiale) è un catalizzatore potentissimo. WTI già a $95.78 con 52W high ETF a $154.08 (+10.6% di upside). Supply crunch in corso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (June 3)", "price": 139.32},
+          {"name": "CNBC / NYSE Arca (June 3 confermato)", "price": 139.32}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 67258.60,
+      "change_24h": "-5.43%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo alto — $29.52B trading volume 24h; forte pressione di vendita",
+      "news": "Bitcoin scivolato sotto i $70K (minimo da aprile). $2.3B di deflussi netti dagli ETF BTC in maggio: record negativo del 2026. Strategy Inc. in rara vendita di BTC. Pressioni geopolitiche USA-Iran riducono il risk appetite. (fonte: CoinDesk, Blockhead, DailyForex)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 67258.60,
+      "stop_loss": 70621.53,
+      "target": 63895.67,
+      "commissione": 0.00,
+      "reasoning": "Record di deflussi ETF ($2.3B in maggio) segnala riduzione dell'esposizione istituzionale. Rottura del supporto a $70K con minimo da aprile. La tensione geopolitica USA-Iran penalizza gli asset rischiosi. Prospettiva ribassista confermata da AI prediction verso $62.6K a fine giugno.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (June 3 live)", "price": 67088.85},
+          {"name": "CoinMarketCap (June 3 live)", "price": 67428.35}
+        ],
+        "spread_pct": 0.50,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1842.18,
+      "change_24h": "-7.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo alto — $25.36B 24h volume; forte liquidazione",
+      "news": "Ethereum rompe il supporto critico a $2,000 e scende a ~$1,852. Down 7% in 24h — la correzione più brusca del gruppo crypto. ETF Ethereum in deflusso insieme a BTC. ATH a $4,953.73 raggiunto nell'agosto 2025 — attuale prezzo è -62.8% dall'ATH. (fonte: CoinMarketCap, Coinbase, Blockhead)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1842.18,
+      "stop_loss": 1934.29,
+      "target": 1750.07,
+      "commissione": 0.00,
+      "reasoning": "ETH ha perso il supporto chiave di $2,000 con la peggior performance giornaliera (-7%) del paniere crypto. Deflussi ETF e contesto macro avverso (USA-Iran, Fed hawkish). MEDIA affidabilità (1.71% spread tra CMC e Coinbase).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (June 3 live)", "price": 1826.43},
+          {"name": "Coinbase (June 3 live)", "price": 1857.92}
+        ],
+        "spread_pct": 1.71,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 75.82,
+      "change_24h": "-4.78%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo alto — $3.87B 24h; ma spot ETF vedono afflussi istituzionali",
+      "news": "Solana in calo del 4.78% ma performance relativa migliore del gruppo crypto. Spot ETF SOL (Bitwise BSOL, Fidelity FSOL) vedono afflussi istituzionali — totale assets >$1B. ATTENZIONE: token unlock di 624,666 SOL previsto per il 7 giugno. (fonte: CoinMarketCap, Coinbase, CryptoBriefing)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 75.82,
+      "stop_loss": 72.03,
+      "target": 81.89,
+      "commissione": 0.00,
+      "reasoning": "SOL mostra relativa forza rispetto a BTC/ETH grazie agli afflussi ETF istituzionali. TUTTAVIA il token unlock del 7 giugno (624K SOL) creerà pressione di vendita. Attendere l'unlock prima di entrare. MEDIA affidabilità (2.20% spread).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (June 3 live)", "price": 76.65},
+          {"name": "Coinbase (June 3 live)", "price": 74.98}
+        ],
+        "spread_pct": 2.20,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Record storico assoluto, +141% YTD, Data Center +57% YoY. Conferenza AI e Venice EPYC ramp come doppio catalizzatore. Momentum più forte del mercato tech oggi (+3.04% vs S&P in rialzo)."
+    },
+    {
+      "rank": 2,
+      "asset": "USO",
+      "motivo": "Conflitto militare diretto USA-Iran con rischio blocco Stretto di Hormuz. WTI $95.78 con headroom verso il 52W ETF high $154. Catalizzatore geopolitico immediato e verificato."
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "ATH confermato a $315.20 con WWDC l'8 giugno: attesa di annunci AI su iOS 27 e potenziale ingresso nel mercato occhiali smart $200B. Catalizzatore datato e ad alta visibilità."
+    },
+    {
+      "rank": 4,
+      "asset": "ASML",
+      "motivo": "Monopolio EUV lithography con target UBS a €1,900. 52W high sfiorato. AI infrastructure mega-trend come driver multi-anno. 38 analisti Buy."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca",
+    "allocazione_suggerita": {
+      "AMD": "15% — momentum AI, record, alta confidenza",
+      "USO": "15% — geopolitica oil, catalizzatore immediato",
+      "AAPL": "15% — WWDC catalyst, ATH confermato",
+      "ASML": "10% — semiconduttori EU monopolio AI, alta confidenza",
+      "MSFT": "10% — buy the dip -3.24%, Wedbush mispricing tesi",
+      "BTC_CASH": "10% — liquida per opportunità rientro BTC dopo capitolazione",
+      "NVDA": "10% — hold, ex-dividend 4 giugno, poi rivalutare",
+      "META": "10% — hold, fondamentali forti, aspettare stabilità",
+      "CASH_RISERVA": "5% — riserva per rientro SOL post-unlock 7 giugno"
+    }
+  },
+  "note_operative": {
+    "avviso_STLA": "Ticker Alpaca: STLA (non STLAM). STLAM è il ticker Borsa Italiana/Milan.",
+    "avviso_AMD": "Prezzi da due momenti diversi della sessione June 3 (mattina vs 10:43 AM). Usare prezzo di mercato live prima di eseguire.",
+    "avviso_SAP": "Prezzo NYSE June 3 non direttamente confermato da due fonti concordanti sulla stessa sessione. Verificare il prezzo live prima di operare.",
+    "evento_chiave_1": "NVDA: ex-dividend date 4 giugno 2026 ($0.25 per share)",
+    "evento_chiave_2": "SOL: token unlock 624,666 SOL previsto 7 giugno 2026",
+    "evento_chiave_3": "AAPL: WWDC 2026 - 8 giugno 2026",
+    "evento_chiave_4": "GOOGL: dividendo $0.22 ex-date 8 giugno 2026",
+    "contesto_macro": "ADP payrolls maggio +122K (forte, sopra consensus +110K). Fed rate hike before year-end ora prezzato dal mercato. Conflitto USA-Iran diretto in corso. WTI $95.78, Brent $97.89."
+  }
+}
