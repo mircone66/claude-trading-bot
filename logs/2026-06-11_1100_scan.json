@@ -1,0 +1,512 @@
+{
+  "timestamp": "2026-06-11T11:00:00-04:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati in risk-off l'11 giugno 2026: il paniere Mag7 ha perso ~$2T nel mese, con inflazione e tensioni USA-Iran (strikes 2 giugno) che pesano sul sentiment. NVDA e AAPL resistono grazie ai catalizzatori AI (WWDC Siri, partnership Corea del Sud). L'oro cede -2.4% il 10 giugno a causa della probabilità 68.8% di zero tagli Fed nel 2026. Il crypto è in parziale ripresa: BTC +1.3% a $62.8K dopo il crollo sotto $60K. ASML brilla nel settore semiconduttori europeo con multipli upgrade da parte degli analisti. Prossimo catalizzatore: riunione Fed 17-18 giugno con il nuovo Chair Kevin Warsh.",
+  "signals": [
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1752.00,
+      "change_24h": "-1.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Settore semiconduttori in rimbalzo; multipli price target alzati da grandi banche in early June 2026. Prossimi earnings il 15 luglio 2026. 38 analisti raccomandano Buy, 2 Sell. (Fonte: Investing.com / Trendlyne)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1752.00,
+      "stop_loss": 1699.44,
+      "target": 1839.60,
+      "commissione": 0.00,
+      "reasoning": "ASML è leader mondiale nell'EUV lithography con domanda strutturale crescente da AI e HPC. Il settore semiconduttori è in rimbalzo con upgrade multipli da banche d'investimento; guidance 2026 alzata.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne / NASDAQ live", "price": 1758.25},
+          {"name": "CNN Markets / Motley Fool news June 11", "price": 1745.79}
+        ],
+        "spread_pct": 0.71,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 457.82,
+      "change_24h": "-1.20%",
+      "trend_5d": "rialzista",
+      "volume_note": "27.78M vs media 31.6M (-12% sotto media)",
+      "news": "AMD impegna £2B per AI innovation nel Regno Unito (8 giugno 2026); Q1 2026 revenue $10.3B con Data Center +57% YoY; BofA bullish su mercato server-CPU a $170B entro 2030. (Fonte: StockStory / Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 457.82,
+      "stop_loss": 444.08,
+      "target": 480.71,
+      "commissione": 0.00,
+      "reasoning": "AMD cresce del 103% YTD con Data Center revenue in accelerazione (+57% YoY). I commitment strategici in UK e Taiwan ($10B) segnalano espansione globale AI infrastrutture. Tratta 16.6% sotto il massimo 52 settimane.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC live June 11", "price": 463.00},
+          {"name": "GuruFocus / StockStory context reference", "price": 452.64}
+        ],
+        "spread_pct": 2.29,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 202.99,
+      "change_24h": "+0.50%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "NVIDIA annuncia nuove alleanze pluriennali in Corea del Sud per AI infrastructure e physical AI systems. P/E 30.69; dividend yield 2.0%; ex-dividend 04/06/2026. (Fonte: CNBC / Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 202.99,
+      "stop_loss": 196.90,
+      "target": 213.14,
+      "commissione": 0.00,
+      "reasoning": "NVDA tratta al 14% sotto il picco 52 settimane ($236.54) con domanda AI infrastruttura invariata. Le nuove partnership in Corea del Sud consolidano la presenza nei mercati ad alto crescita.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Yahoo Finance June 11 (range $199.54-$204.47)", "price": 202.99},
+          {"name": "Conferma search aggiuntivo CNBC/Marketwatch June 11", "price": 202.99}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 80.61,
+      "change_24h": "-1.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix punta a $3B di ad revenue nel 2026 e amplia il gaming. 37 analisti raccomandano Buy con target medio $114.15 (+41% upside). 52w range: $75.01-$134.12. (Fonte: Morningstar / CNBC / Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 80.61,
+      "stop_loss": 78.19,
+      "target": 84.64,
+      "commissione": 0.00,
+      "reasoning": "NFLX tratta al 40% sotto il massimo 52 settimane con consensus analisti unanimemente Buy e target $114 (+41%). La transizione a ad-supported e gaming offre nuovi driver di revenue; market cap $345B con P/E 46.46 sostiene la base di valore.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Search Q1 / multiple platforms June 11", "price": 80.92},
+          {"name": "CNBC / Morningstar / Yahoo Finance June 11", "price": 80.30}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 65.48,
+      "change_24h": "+0.73%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 24h $2.6B (normale)",
+      "news": "I flussi istituzionali si spostano da BTC/ETH verso SOL e XRP secondo analisi di 24/7 Wall St. (giugno 2026). CoinMarketCap ranking #7. Market cap $37.9B. (Fonte: CryptoTimes / CoinMarketCap June 11)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 65.48,
+      "stop_loss": 62.21,
+      "target": 70.72,
+      "commissione": 0.00,
+      "reasoning": "SOL è l'unico dei big-3 crypto a registrare rotazione istituzionale positiva. Mentre BTC ed ETH subiscono outflow da ETF, SOL beneficia di flussi in entrata. Sessione di recupero dopo il crollo early June.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap live June 11", "price": 65.36},
+          {"name": "Coinbase price June 11", "price": 65.59}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 62829.00,
+      "change_24h": "+1.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 24h $14.9B (sotto media, risk-off)",
+      "news": "BTC recupera sopra $62K dopo crollo sotto $60K. US spot BTC ETF: 13 giorni consecutivi di deflussi (-$213.85M). Probabilità 68.8% di zero tagli Fed nel 2026. Prossimo catalyst: FOMC 17-18 giugno con nuovo Chair Kevin Warsh. (Fonte: CryptoTimes / Yahoo Finance June 11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 62829.00,
+      "stop_loss": 59688.00,
+      "target": 67855.00,
+      "commissione": 0.00,
+      "reasoning": "BTC è in ripresa tecnica ma i fondamentali restano negativi: deflussi ETF per 13 giorni consecutivi, zero tagli Fed attesi e tensioni geopolitiche USA-Iran. Attendere esito FOMC 17-18 giugno prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk June 11 10:44 AM EDT", "price": 62797.33},
+          {"name": "Fortune / LatestLY June 11 9:15 AM EDT", "price": 62860.40}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1649.27,
+      "change_24h": "+0.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "ETH ETF outflows $35.59M. I flussi istituzionali si spostano da ETH verso SOL/XRP. ETH sceso da ~$2,000 inizio giugno a $1,649 (-17%). (Fonte: CryptoTimes / Yahoo Finance June 11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1649.27,
+      "stop_loss": 1566.81,
+      "target": 1781.21,
+      "commissione": 0.00,
+      "reasoning": "ETH in ripresa tecnica minima (+0.3%) ma colpito da rotazione istituzionale verso SOL/XRP e da deflussi ETF. La price action ribassista (-17% nel mese) suggerisce di attendere stabilizzazione prima di nuovi ingressi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask / Fortune June 11", "price": 1650.53},
+          {"name": "CoinDesk June 11", "price": 1648.00}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 374.00,
+      "change_24h": "-0.15%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Oro spot -2.4% il 10 giugno a ~$4.161/oz. 25% sotto l'ATH di gennaio 2026 ($5.589/oz). Le banche centrali hanno acquistato 244 tonnellate in Q1 2026. Le aspettative di zero tagli Fed nel 2026 penalizzano l'oro. (Fonte: GoldSilver.com / GuruFocus June 2026)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 374.00,
+      "stop_loss": 366.52,
+      "target": 388.96,
+      "commissione": 0.00,
+      "reasoning": "GLD in trend ribassista a breve termine per rafforzamento atteso USD (zero tagli Fed). Il supporto strutturale degli acquisti delle banche centrali (244t in Q1 2026) limita il downside. Mantenere posizioni esistenti, attendere stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / SPDR Gold Shares NYSE Arca June 11", "price": 374.00},
+          {"name": "Yahoo Finance / CNBC NYSE Arca June 11", "price": 374.00}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 131.30,
+      "change_24h": "0.00%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Petrolio greggio elevato e atteso alto almeno fino al 2027. Le tensioni USA-Iran (strikes 2 giugno) mantengono un premio di rischio geopolitico. Pre-market 11 giugno: $133.46. (Fonte: Investing.com / CNBC June 2026)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 131.30,
+      "stop_loss": 128.67,
+      "target": 136.55,
+      "commissione": 0.00,
+      "reasoning": "USO laterale con supporto dal rischio geopolitico USA-Iran e fondamentali petroliferi che rimangono tight. Pre-market già più alto ($133.46) suggerisce pressione rialzista. Posizionamento neutro in attesa di sviluppi geopolitici.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE Arca June 10", "price": 131.30},
+          {"name": "CNBC / Barchart NYSE Arca June 10", "price": 131.30}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 293.64,
+      "change_24h": "+0.35%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "iPhone sales +23% in H1 FY2026. Siri AI unveilato al WWDC 2026. Apple riposiziona la strategia AI in-house con impatto negativo su OpenAI/Anthropic. (Fonte: CNBC / Yahoo Finance June 11)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 293.64,
+      "stop_loss": 284.83,
+      "target": 308.32,
+      "commissione": 0.00,
+      "reasoning": "AAPL resiste al sell-off Mag7 (+0.35% oggi) grazie a solidi fondamentali (iPhone +23%) e catalyst AI (WWDC). Il contesto macro sfavorevole (zero tagli Fed, tensioni geopolitiche) limita l'upside a breve. Mantenere.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Multiple sources intraday June 11", "price": 293.64},
+          {"name": "Yahoo Finance / CNBC pre-market June 11", "price": 292.25}
+        ],
+        "spread_pct": 0.48,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 386.53,
+      "change_24h": "+1.29%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "TSLA in rimbalzo tecnico dopo -3.80% il 10 giugno. Pressione da IPO SpaceX (oversubscribed) che distoglie attenzione retail. Trend settimanale -8.86%, mensile -9.61%. 52w: +21.16%. (Fonte: GuruFocus / Yahoo Finance June 11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 386.53,
+      "stop_loss": 374.93,
+      "target": 405.86,
+      "commissione": 0.00,
+      "reasoning": "TSLA rimbalza tecnicamente (+1.29%) dopo la forte correzione (-8.86% settimanale) ma il trend primario rimane ribassista. L'attesa IPO SpaceX distrae il capital retail. Attendere un chiaro segnale di inversione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC intraday June 11 11:20 AM EDT", "price": 386.53},
+          {"name": "MacroTrends close June 10", "price": 381.59}
+        ],
+        "spread_pct": 1.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 6.67,
+      "change_24h": "-5.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Stellantis vicino ai minimi 52 settimane ($6.28). Nuovo accordo assemblea con Kia e pilot autonomous vehicles in Lussemburgo. 10 analisti: Hold con target $9.14 (+37%). (Fonte: Yahoo Finance / CNBC June 10-11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 6.67,
+      "stop_loss": 6.47,
+      "target": 6.94,
+      "commissione": 0.00,
+      "reasoning": "STLA vicino ai minimi storici (down da $25.27 nel 2024 a $6.67). I catalyst positivi (Kia, AV pilot) non compensano le sfide strutturali del settore auto. Attendere segnali di stabilizzazione prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC NYSE STLA June 10", "price": 6.67},
+          {"name": "MarketBeat / Bloomberg NYSE STLA June 10", "price": 6.67}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 405.11,
+      "change_24h": "-1.55%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Xbox division prepara massicci layoffs (annuncio prossimo mese). Azure e AI business in forte crescita; analisti proiettano upside 29% con target $550. Mag7 in sell-off collettivo (-$2T nel mese). (Fonte: CNBC / Yahoo Finance / Investsnips June 11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 405.11,
+      "stop_loss": 392.96,
+      "target": 425.37,
+      "commissione": 0.00,
+      "reasoning": "MSFT sotto pressione (-16% YTD) nonostante fondamentali Azure/AI solidi. I layoffs Xbox pesano sul sentiment. Il gap tra valutazione corrente e target analisti ($550) indica upside strutturale ma l'orizzonte macro sfavorevole impone cautela.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Search Q1 multiple sources intraday June 11", "price": 398.47},
+          {"name": "InvestSnips live June 11", "price": 411.74}
+        ],
+        "spread_pct": 3.33,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 236.07,
+      "change_24h": "-3.40%",
+      "trend_5d": "ribassista",
+      "volume_note": "38.59M vs media 45.03M (-14% sotto media)",
+      "news": "Q1 2026: revenue growth +14.22%, EPS growth +34.41%, gross margin 35.56%. Earnings stimati 29 luglio 2026. Volume sotto media suggerisce riduzione posizioni istituzionali. (Fonte: Yahoo Finance / CNBC June 11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 236.07,
+      "stop_loss": 228.99,
+      "target": 247.87,
+      "commissione": 0.00,
+      "reasoning": "AMZN -3.4% dal massimo intraday con volume sotto media (-14%). Nonostante fondamentali Q1 solidi (EPS +34%), il contesto macro e il sell-off Mag7 pesano. Market cap $2.56T vs 52w high $278.56: -15% dal picco.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC intraday June 11 (range $235.44-$244.35)", "price": 236.07},
+          {"name": "Fonte 2 non disponibile per giugno 11 - 1 fonte confermata", "price": null}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Una sola fonte con prezzo corrente confermato"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 568.11,
+      "change_24h": "-3.90%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "META in sell-off Mag7: -28.7% dal 52w high ($796.25). Ex-dividend 15 giugno ($0.525). Earnings stimati 28 luglio 2026. Market cap $1.45T. (Fonte: Yahoo Finance / CNBC June 11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 568.11,
+      "stop_loss": 551.07,
+      "target": 596.52,
+      "commissione": 0.00,
+      "reasoning": "META sotto i $600 per la prima volta nel 2026, con la correzione Mag7 che pesa su tutto il settore. Ex-dividend il 15 giugno potrebbe offrire un mini-supporto. Attendere stabilizzazione prima di valutare ingresso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC intraday June 11 (range $567-$591.30)", "price": 568.11},
+          {"name": "Fonte 2 non disponibile per giugno 11 - 1 fonte confermata", "price": null}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Una sola fonte con prezzo corrente confermato"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 176.72,
+      "change_24h": "+3.66%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP sotto pressione dopo annuncio Oracle di capex AI superiore alle attese (spending shock). 23 analisti raccomandano Buy (0 Sell), target medio $214.81. Earnings: 23 luglio 2026. (Fonte: CNBC / Yahoo Finance June 10-11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 176.72,
+      "stop_loss": 171.42,
+      "target": 185.56,
+      "commissione": 0.00,
+      "reasoning": "SAP recupera oggi (+3.7% da $173.55 ieri a $179.89) ma rimane ben al di sotto del 52w high ($313.28). La scintilla ribassista (Oracle spending shock) potrebbe aver esaurito la sua forza. Consensus analisti forte (23/0) ma incertezza a breve termine.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC NYSE SAP June 10", "price": 173.55},
+          {"name": "Yahoo Finance / Multiple sources NYSE SAP June 11", "price": 179.89}
+        ],
+        "spread_pct": 3.66,
+        "affidabilita": "MEDIA",
+        "nota": "Le due fonti si riferiscono a giorni diversi (10 vs 11 giugno); usato prezzo più recente come entry"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 346.56,
+      "change_24h": "-3.07%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Ferrari lancia la Ferrari Luce, il primo EV della storia del brand (maggio 2026). Gli investitori sono delusi dal design esterno; azioni -8% post-unveil. 14 analisti: Strong Buy con target $435.14 (+25.56%). (Fonte: Investing.com / Yahoo Finance June 9-10)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 346.56,
+      "stop_loss": 336.16,
+      "target": 363.89,
+      "commissione": 0.00,
+      "reasoning": "RACE scende a $346.56 (-30% dal 52w high $519.10) a causa delle reazioni negative al design della Ferrari Luce. Il dip crea un'opportunità a lungo termine (consensus Strong Buy, target +25%) ma a breve restano pressioni venditori. Monitorare stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance NYSE RACE June 10", "price": 346.56},
+          {"name": "Investing.com / StockAnalysis close June 9", "price": 357.52}
+        ],
+        "spread_pct": 3.16,
+        "affidabilita": "MEDIA",
+        "nota": "Q2 si riferisce al close del 9 giugno; usato il prezzo più recente (10 giugno) come entry"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 57.66,
+      "change_24h": "-2.28%",
+      "trend_5d": "ribassista",
+      "volume_note": "34.1M (normale)",
+      "news": "Argento spot sceso del 2% il 10 giugno a ~$64/oz; iShares Silver Trust -1.4% quel giorno. 52w range SLV: $32.06-$109.83. Argento a -35% dal record di gennaio 2026 ($121.64/oz). (Fonte: GuruFocus / NYSE Arca iShares June 9-11)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 57.66,
+      "stop_loss": 56.51,
+      "target": 59.97,
+      "commissione": 0.00,
+      "reasoning": "SLV in trend ribassista con pressione da aspettative Fed hawkish (USD forte = metalli preziosi deboli). L'argento ha una domanda industriale che limita il downside ma a breve il macro è sfavorevole.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com NYSE Arca SLV June 11", "price": 57.66},
+          {"name": "iShares / NYSE Arca close June 9", "price": 59.01}
+        ],
+        "spread_pct": 2.35,
+        "affidabilita": "MEDIA",
+        "nota": "Q2 si riferisce al close del 9 giugno; trend confermato ribassista ($59.01 → $57.66)"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "GOOGL",
+      "motivo": "Spread fonti >4%: Q1 riporta $356.38 (10 giugno, MacroTrends) vs Q2 riporta $400.20 (11 giugno, Yahoo Finance/CNBC). Scarto 12.3% supera soglia massima del 4%. Le due fonti si riferiscono a sessioni diverse; impossibile verificare il prezzo del giorno con due fonti concordanti."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "Leader mondiale EUV con sector rebound confermato; 38 analisti Buy, 2 Sell; multipli price target alzati a giugno; earnings 15 luglio come prossimo catalyst. Affidabilità ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "motivo": "Data Center revenue +57% YoY in Q1 2026; £2B commitment UK AI; BofA bullish su mercato server-CPU $170B entro 2030. Tratta 16.6% sotto il 52w high. Affidabilità MEDIA."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Unico crypto con rotazione istituzionale POSITIVA mentre BTC/ETH subiscono deflussi ETF. Prezzo confermato da CoinMarketCap e Coinbase con spread 0.35%. Affidabilità ALTA."
+    },
+    {
+      "rank": 4,
+      "asset": "NFLX",
+      "motivo": "37 analisti unanimi Buy con target $114.15 (+41%); transizione ad-supported e gaming come nuovi driver. 52w range $75.01-$134.12, attualmente a $80.61. Affidabilità ALTA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito tramite Alpaca",
+    "allocazione_suggerita": {
+      "ASML": "20% — massima conviction, leader settoriale con upgrade analisti",
+      "AMD": "15% — forte crescita AI data center",
+      "NVDA": "15% — domanda AI infrastruttura strutturale",
+      "NFLX": "10% — contrarian buy con forte consensus analisti",
+      "SOL": "10% — crypto preferita per rotazione istituzionale",
+      "GLD": "10% — hedge macro con supporto banche centrali",
+      "BTC": "5% — esposizione crypto senior, await FOMC 17-18 giugno",
+      "CASH_HOLD": "15% — liquidità per opportunità post-FOMC"
+    },
+    "capitale_simulato": 10000,
+    "risk_note": "Tutti gli SL sono calcolati secondo le regole di categoria: azioni -3%, ETF commodity -2%, crypto -5%"
+  }
+}
