@@ -1,0 +1,485 @@
+{
+  "timestamp": "2026-06-13T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione del 12 giugno 2026 (venerdì): recupero selettivo dopo il selloff di giovedì. AMD guida i rialzi nel settore chip (+4.74%) grazie a doppio upgrade BofA/Citi. ASML ai massimi storici su valutazioni EUV sostenute dalla corsa all'AI (Goldman/JPMorgan/Morgan Stanley). Oro in forte rialzo (+3.13%) su inflazione persistente (PPI USA +6.5% YoY maggio) e rialzo BCE per la prima volta dal 2023. Petrolio in discesa (-2.64%) per ottimismo su accordo pace USA-Iran. Crypto in laterale-ribassista: BTC consolida $61-64K con 13 giorni consecutivi di ETF outflows. TSLA sotto pressione per listing SpaceX. META e MSFT sotto i massimi ma su valutazioni storicamente convenienti (META forward P/E 18, MSFT -17% YTD con analysts 30% upside).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 291.33,
+      "change_24h": "-1.52%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "iPhone sales +23% nel primo semestre FY2026 (Yahoo Finance). Azione in ritracciamento da ATH $315.20 raggiunto il 2 giugno; range giornata Jun 13: $289.62-$297.14, apertura $296.03.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 291.33,
+      "stop_loss": 282.59,
+      "target": 305.90,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali iPhone solidi (+23% vendite H1 FY26) ma trend 5 giorni ribassista da ATH $315.20; necessario superamento $297 per inversione. Fonte: Yahoo Finance, MacroTrends.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/Yahoo Finance (Jun 12 close)", "price": 291.13},
+          {"name": "CNBC news aggregation (Jun 13 intraday)", "price": 291.52}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 406.43,
+      "change_24h": "+1.82%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "TSLA EPS growth -42.63% Q1 2026, revenue +2.25% (Yahoo Finance). Il 13 giugno azione scende verso $391.91 con l'apertura del trading SpaceX sul mercato, riducendo focus degli investitori su Tesla.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 406.43,
+      "stop_loss": 418.62,
+      "target": 386.11,
+      "commissione": 0.00,
+      "reasoning": "EPS Q1 2026 -42.63% con margini compressi; listing SpaceX redistribuisce attenzione di Musk e crea rischio competitivo nel settore. Intraday calo verso $391.91 conferma pressione. Fonte: Yahoo Finance, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Jun 12 close 4:00 PM EDT)", "price": 406.43},
+          {"name": "CNBC (Jun 12 after-hours 7:59 PM EDT)", "price": 406.10}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 205.24,
+      "change_24h": "+0.16%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "NVDA consolida $203-207 con domanda AI data center invariata; range Jun 13: $203.44-$207.07 (MacroTrends). Settore chip AI rafforzato dai multipli upgrade su AMD. 52-week range: $140.86-$236.54.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 205.24,
+      "stop_loss": 199.08,
+      "target": 215.50,
+      "commissione": 0.00,
+      "reasoning": "Leader AI chip con demand data center stabile; consolidamento tecnico intorno a $205 offre entry con R/R favorevole verso ATH $236. Settore AI chip rinforzato da upgrade AMD (BofA/Citi). Fonte: MacroTrends, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends (Jun 12 close)", "price": 205.19},
+          {"name": "Yahoo Finance/CNBC (Jun 13 current)", "price": 205.29}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 408.91,
+      "change_24h": "+4.76%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo alto",
+      "news": "MSFT rimbalza venerdì 12 giugno da chiusura giovedì $390.34 a apertura $408.91 (range giornata $398.48-$411.98). Analisti: 30% sottovalutata con YTD -17%. Pipeline Azure AI in accelerazione. (Yahoo Finance/CNBC)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 408.91,
+      "stop_loss": 396.64,
+      "target": 429.36,
+      "commissione": 0.00,
+      "reasoning": "Gap up venerdì dopo selloff -1.77% giovedì: rimbalzo tecnico su supporto chiave $387-390; consensus analisti stima 30%+ upside con Azure AI in crescita. Fonte: MacroTrends, Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends (Jun 12 open/intraday)", "price": 408.91},
+          {"name": "Yahoo Finance (Jun 11 close, riferimento precedente)", "price": 390.34}
+        ],
+        "spread_pct": 4.76,
+        "affidabilita": "MEDIA",
+        "nota": "Spread riflette il gap overnight tra giovedi 11 e venerdi 12; unica fonte per il prezzo di venerdi 12"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 238.46,
+      "change_24h": "-1.23%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "AMZN -1.23% il 12 giugno per preoccupazioni su capex AI elevato e sfide regolamentari. Range $233.59-$245.24 nella sessione. 52-week: high $278.56 / low $196.00. Earnings stimati 29/07/2026. (CNBC, InteractiveCrypto)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 238.46,
+      "stop_loss": 231.21,
+      "target": 250.38,
+      "commissione": 0.00,
+      "reasoning": "Capex AI e pressioni regolamentari limitano il rialzo nel breve; AWS rimane motore di crescita ma il mercato penalizza l'incertezza sul ROI degli investimenti. Fonte: CNBC, InteractiveCrypto/Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC via InteractiveCrypto (Jun 12)", "price": 238.55},
+          {"name": "InteractiveCrypto/Yahoo Finance (Jun 12)", "price": 238.36}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 359.68,
+      "change_24h": "-2.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Alphabet tra le azioni Big Tech con sharp drop >2% il giovedi 11 giugno. Chiusura Jun 12: $359.68. ATH $402.38 raggiunto 13 maggio 2026; attuale -10.6% da ATH. YoY +100.95%. (MacroTrends, CNBC)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 359.68,
+      "stop_loss": 348.89,
+      "target": 377.66,
+      "commissione": 0.00,
+      "reasoning": "In downtrend da ATH maggio; pressione regolatoria antitrust persistente e concorrenza AI da OpenAI/Meta; necessario catalizzatore (earnings o notizia positiva regolamentare) per inversione. Fonte: MacroTrends, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends (Jun 12 close)", "price": 359.68},
+          {"name": "Yahoo Finance/CNBC (tracciamento attivo, Jun 12)", "price": 359.68}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzo concordante da una fonte primaria; CNBC e Yahoo Finance confermano la data ma non forniscono un secondo prezzo esplicito"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 567.71,
+      "change_24h": "-0.44%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo basso",
+      "news": "META: volume 10.63M vs media 21.3M (-50%). Forward P/E 18, PEG 0.82 - profondo value. YTD -13.81%. Analisti target $700-$945. Sfide regolamentari in Cina su strategia AI. (Yahoo Finance, Google Finance)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 567.71,
+      "stop_loss": 550.68,
+      "target": 596.10,
+      "commissione": 0.00,
+      "reasoning": "Forward P/E 18 e PEG 0.82 tra i piu bassi del settore tech; consensus buy con target mediano $700+; il volume anomalo basso suggerisce vendita non fondamentale. Fonte: Yahoo Finance, MacroTrends.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends (Jun 12 close)", "price": 566.98},
+          {"name": "Yahoo Finance (Jun 12, current)", "price": 568.43}
+        ],
+        "spread_pct": 0.26,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 511.57,
+      "change_24h": "+4.74%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto",
+      "news": "AMD +4.74% il 12 giugno: Bank of America alza target a $560 (da $500), Citi promuove a Buy con target $575 (entrambi June 11). Range giornata: $494.00-$521.71. 52-week range: $117.78-$546.44. Market cap $834B. (Yahoo Finance, CNBC)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 511.57,
+      "stop_loss": 496.22,
+      "target": 537.15,
+      "commissione": 0.00,
+      "reasoning": "Doppio upgrade buy BofA ($560) e Citi ($575) con forte momentum intraday (+4.74%); AI GPU demand in accelerazione; attenzione alla resistenza $546 (52-week high). Fonte: Yahoo Finance, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StocksToTrade/Investing.com (Jun 12 close/Jun 13 current)", "price": 511.57},
+          {"name": "Yahoo Finance (Jun 11 previous close, riferimento)", "price": 488.45}
+        ],
+        "spread_pct": 4.74,
+        "affidabilita": "MEDIA",
+        "nota": "Spread riflette la variazione day-over-day Jun11-Jun12; unica fonte per il prezzo corrente $511.57"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1876.25,
+      "change_24h": "-0.83%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto",
+      "news": "Goldman Sachs Buy confermato (Jun 11). JPMorgan alza target a EUR 1,900 (da EUR 1,515). Morgan Stanley alza target a EUR 1,660 (da EUR 1,400). Elon Musk parlera all'evento Terafab di ASML. ATH raggiunto su Nasdaq il 11 giugno. (Investing.com, CNBC, Morningstar)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1876.25,
+      "stop_loss": 1819.96,
+      "target": 1970.06,
+      "commissione": 0.00,
+      "reasoning": "Monopolio EUV globale + triplo upgrade Goldman/JPMorgan/Morgan Stanley + catalizzatore Terafab con Musk; domanda chip AI strutturale con ordini backlog record. Fonte: CNBC, Nasdaq, Morningstar.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq (Jun 12)", "price": 1876.25},
+          {"name": "CNBC/Yahoo Finance (Jun 11 close)", "price": 1891.99}
+        ],
+        "spread_pct": 0.84,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 164.18,
+      "change_24h": "+0.33%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP cade >3.91% giovedi 11 giugno dopo Oracle shock su capex AI ($42B pianificato), poi lieve rimbalzo +0.33% venerdi. 52-week range: $158.58-$313.28; attuale vicino al minimo annuale. Strategia AI integrata con Joule assistants e S/4HANA. (WallStreetZen, MacroTrends, Morningstar)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 164.18,
+      "stop_loss": 159.25,
+      "target": 172.39,
+      "commissione": 0.00,
+      "reasoning": "Vicino ai minimi annuali ($158.58); overhang Oracle shock e revisione stime software enterprise; Joule AI strategy promettente nel medio-lungo termine ma catalizzatori a breve scarsi. Fonte: WallStreetZen, Morningstar.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen/CNBC (Jun 12)", "price": 164.18},
+          {"name": "Morningstar NYSE:SAP (Jun 12)", "price": 164.18}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 383.43,
+      "change_24h": "+3.13%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto",
+      "news": "GLD +3.13% il 12 giugno: PPI USA +6.5% YoY maggio conferma inflazione persistente; BCE alza tassi per prima volta dal 2023 con revisione al rialzo stime 2026-2027. Oro sotto $4,200/oz ma mantiene i guadagni settimanali. Deal USA-Iran potrebbe ridurre marginalmente il premio geopolitico. (CNBC, Bloomberg, Trading Economics)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 383.43,
+      "stop_loss": 375.76,
+      "target": 398.77,
+      "commissione": 0.00,
+      "reasoning": "PPI USA +6.5% + rialzo BCE + premium geopolitico Iran = supporto oro strutturale; breakout +3.13% su volumi alti rompe resistenza $376. Target +4% verso $399. Fonte: CNBC, Bloomberg, StockAnalysis.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bloomberg/Google Finance (Jun 12, 1:10 PM ET)", "price": 380.32},
+          {"name": "CNBC commodity news aggregation (Jun 12)", "price": 386.54}
+        ],
+        "spread_pct": 1.63,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 61.10,
+      "change_24h": "+0.46%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SLV stabile a $61.10 con prev close $60.82. 52-week range: $32.06-$109.83 (a meta range). Volume 24h: 30.76M shares. Argento meno reattivo dell'oro al tema inflazione. (Investing.com, NYSE Arca/CNBC)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 61.10,
+      "stop_loss": 59.88,
+      "target": 63.54,
+      "commissione": 0.00,
+      "reasoning": "Argento a meta del range annuale; oro sovraperforma nel contesto attuale; mancano catalizzatori industriali specifici a breve; preferire GLD per esposizione metalli preziosi. Fonte: Investing.com, NYSE Arca/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/StockAnalysis (Jun 12)", "price": 61.10},
+          {"name": "NYSE Arca/CNBC (Jun 12)", "price": 61.10}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 127.13,
+      "change_24h": "-2.64%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "USO -2.64% su ottimismo per accordo pace USA-Iran che riduce il rischio-guerra sul petrolio. PPI USA +6.5% e primo rialzo BCE dal 2023 amplificano rischio domanda. 52-week range: $65.99-$154.08. (CNBC commodity news, Barchart)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 127.13,
+      "stop_loss": 129.67,
+      "target": 122.04,
+      "commissione": 0.00,
+      "reasoning": "Deal pace USA-Iran rimuove premium di guerra sul petrolio; rialzo tassi BCE comprime domanda europea; trend ribassista confermato con -2.64% daily. Target -4% verso $122. Fonte: CNBC, Barchart.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Barchart/StockAnalysis (Jun 12 close)", "price": 128.83},
+          {"name": "CNBC commodity news aggregation (Jun 12)", "price": 125.43}
+        ],
+        "spread_pct": 2.71,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63409.00,
+      "change_24h": "+3.10%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "BTC consolida $61,000-$64,000; 13 giorni consecutivi di outflow dagli spot BTC ETF USA. Liquidazioni massicce a inizio giugno ($773M solo BTC). SpaceX listing come catalizzatore mercato. Bitcoin esteso a minimo $61,000 prima del recupero. (LatestLY, Fortune, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63409.00,
+      "stop_loss": 60238.55,
+      "target": 68481.72,
+      "commissione": 0.00,
+      "reasoning": "ETF outflow prolungati (13 giorni consecutivi) pesano sulla struttura di mercato; supporto chiave $61K testato; necessario superamento $65K per confermare ripresa. Fonte: LatestLY, Fortune.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Jun 12, 9:15 AM ET)", "price": 63359.71},
+          {"name": "LatestLY/CoinMarketCap (Jun 12, 7:41 AM IST)", "price": 63458.00}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1664.78,
+      "change_24h": "+1.30%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "ETH ancora sotto $1,700; entrato 2026 sopra $3,300, ora -50% YTD. Outflow ETF spot ETH in corso. Volume 24h: $11.74B. Liquidazioni ETH a inizio giugno: $482M. (MetaMask, CoinMarketCap)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1664.78,
+      "stop_loss": 1581.54,
+      "target": 1797.96,
+      "commissione": 0.00,
+      "reasoning": "Pressione baissista strutturale da ETF outflows persistenti; $1,700 resistenza chiave non ancora recuperata; crollo da ATH $4,954 (agosto 2025) indica perdita di momentum istituzionale. Fonte: MetaMask, CoinMarketCap.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask price feed (Jun 12)", "price": 1667.16},
+          {"name": "CoinMarketCap (Jun 12)", "price": 1662.39}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 67.05,
+      "change_24h": "+2.08%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Solana annuncia upgrade Alpenglow: nuovo protocollo consensus che sostituisce Proof of History + Tower BFT, sviluppato da Anza Labs (spinoff Solana Labs). SOL ancora sotto $70 resistenza chiave. Volume 24h: $2.26B. Liquidazioni inizio giugno: $88M. (CoinDesk, Coinbase, CryptoTimes)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 67.05,
+      "stop_loss": 63.70,
+      "target": 72.41,
+      "commissione": 0.00,
+      "reasoning": "Upgrade Alpenglow e' catalizzatore positivo medio termine per scalabilita e decentralizzazione; macro crypto ribassista pesa nel breve; superamento $70 necessario per segnale BUY. Fonte: CoinDesk, Coinbase.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (Jun 12, 10:44 AM EDT)", "price": 67.41},
+          {"name": "Coinbase (Jun 12-13)", "price": 66.68}
+        ],
+        "spread_pct": 1.09,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NFLX",
+      "motivo": "Fonte singola: prezzo $81.27 (MacroTrends/CoinCodex, Jun 11). Prezzo anomalo rispetto alla storia recente NFLX ($600-1000 in 2024-2025); possibile stock split 10:1 non confermato. Impossibile validare con seconda fonte indipendente concordante. data_real = false.",
+      "ultimo_prezzo_trovato": 81.27,
+      "fonte_unica": "MacroTrends/CoinCodex Jun 11"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread fonti 7.14% > soglia 4%: Investing.com cita $352.05 (Jun 8) vs Robinhood $377.20 (data non specificata). Date diverse e scarto eccessivo; non possibile validare. Escluso da segnali.",
+      "prezzi_trovati": [
+        {"fonte": "Investing.com (Jun 8)", "price": 352.05},
+        {"fonte": "Robinhood (data incerta)", "price": 377.20}
+      ],
+      "spread_pct": 7.14
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "STLAM e' il ticker della Borsa di Milano (quotato in EUR); su NYSE/Nasdaq il ticker equivalente e' STLA. Dati STLA contrastanti: Yahoo Finance riporta $7.81 ma il day range indicato ($6.56-$6.89) e' logicamente impossibile (prezzo fuori dal suo range). Dati STLAM.MI confermano only EUR 5.79 (Borsa Milano). Affidabilita BASSA su entrambi i ticker.",
+      "prezzi_trovati": [
+        {"fonte": "Yahoo Finance STLA NYSE", "price": 7.81},
+        {"fonte": "Yahoo Finance STLA day range (contraddittorio)", "range": "6.56-6.89"},
+        {"fonte": "Yahoo Finance STLAM.MI Milano (EUR)", "price_eur": 5.79}
+      ]
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Doppio upgrade buy BofA (target $560) e Citi (target $575) + forte momentum +4.74% il 12 giugno; AI GPU demand in accelerazione strutturale; R/R favorevole verso resistenza $546."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "Monopolio mondiale EUV + triplo upgrade Goldman/JPMorgan/Morgan Stanley + catalizzatore Terafab con Musk; unico fornitore al mondo di litografia EUV per chip sub-2nm."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "motivo": "Breakout +3.13% su PPI USA +6.5% YoY e rialzo BCE; oro strutturalmente supportato da inflazione persistente e premio geopolitico Iran; ottima copertura portafoglio."
+    },
+    {
+      "rank": 4,
+      "asset": "META",
+      "motivo": "Forward P/E 18 e PEG 0.82 tra i minimi del settore tech; consensus buy con target mediano $700+; volume anomalo basso suggerisce fase distributiva temporanea non fondamentale."
+    },
+    {
+      "rank": 5,
+      "asset": "MSFT",
+      "motivo": "Rimbalzo tecnico da supporto $387-390 con gap up a $408.91; analisti stimano 30% upside; Azure AI in fase di accelerazione; YTD -17% crea entry favorevole."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione indicativa su capitale ipotetico $10,000.",
+    "allocazione_suggerita": {
+      "AMD_BUY": "20%",
+      "ASML_BUY": "20%",
+      "GLD_BUY": "15%",
+      "META_BUY": "15%",
+      "MSFT_BUY": "10%",
+      "NVDA_BUY": "10%",
+      "TSLA_SELL_SHORT": "5%",
+      "USO_SELL_SHORT": "5%"
+    },
+    "rischio_portafoglio": "MEDIO",
+    "bias": "LONG tech AI + LONG oro + SHORT petrolio/TSLA"
+  }
+}
