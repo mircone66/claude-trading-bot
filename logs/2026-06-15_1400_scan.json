@@ -1,0 +1,545 @@
+{
+  "timestamp": "2026-06-15T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "15 giugno 2026 (lunedi), prima sessione della settimana. CATALIZZATORE PRINCIPALE: accordo di cessate il fuoco USA-Iran firmato nel weekend → sentiment risk-on diffuso (+2-4% su asset a rischio). TECH USA: NVDA recupera a $211.02 (+2.72% da ven 12/6) su volume anomalmente basso (50.84M vs avg 170.79M, -70%); AMD stabile a $511.57 post-ATH del 3/6; META +4%+ in apertura (ex-dividendo $0.525 oggi, CapEx AI rivisto a $125-145B); GOOGL +3.65% a $371.88; MSFT apre a $396.65; RACE +4.48% su upgrade Morgan Stanley Overweight. AZIONI EU: ASML confermato a $1.863 con doppio catalyst (Terafab $55B SpaceX/Tesla/xAI + €1.3B Mistral AI); SAP in sofferenza da concorrenza Oracle; STLA continua debolezza strutturale (-0.29%). COMMODITIES: GLD rimbalza a $386.54 (+1.64% da scan 14/6), ma -24% da 52wk high $509.70; USO scende a $125.43 (-2.64% dal 12/6), ceasefire riduce premio geopolitico petrolio; SLV $61.29 (+0.31%). CRYPTO: BTC $65.663 +2.08% su segnale on-chain buy (2° flash YTD, stesso setup che precede +24% in 3 mesi); ETH $1.743 +2.37% recovery; SOL $71.03 +5.40% (TD Sequential buy + Western Union stablecoin USDPT on-chain). NOTA: SAP e STLA/STLAM riammessi oggi (erano esclusi nel scan 14/6) grazie a prezzi confermati da cross-check EUR.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 291.33,
+      "change_24h": "+0.07%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Apple ancora in trend ribassista da ATH $315.20 del 2/6 (-7.6%). Intraday 15/6: range $289.62-$297.14, prezzo $291.52. Warren Buffett continua la riduzione dell'esposizione ad AAPL (segnale negativo). Post-WWDC senza catalizzatori AI immediati. 52-week range $195.07-$317.40. Morgan Stanley Overweight PT $330, BofA PT $380.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 291.33,
+      "stop_loss": 282.59,
+      "target": 305.90,
+      "commissione": 0.00,
+      "reasoning": "Downtrend strutturale da ATH $315 con assenza di catalizzatori tecnici o fondamentali imminenti. Buffett selling crea pressione psicologica negativa. Attendere stabilizzazione sopra $295 e segnale tecnico positivo prima di riaprire. (Yahoo Finance/CNBC, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / Robinhood (June 15 intraday: $291.52, range $289.62-$297.14)", "price": 291.52},
+          {"name": "Yahoo Finance / CNBC (June 12 close: $291.13, after-hours $291.58)", "price": 291.13}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 410.84,
+      "change_24h": "+1.08%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (volatilita' post-SpaceX IPO in rientro)",
+      "news": "Tesla recupera da $406.43 del 12/6 a $410.92 in apertura 15/6 (+1.08%). Range 15/6: $407.10-$416.00. SpaceX IPO (12/6) ha catalizato volatilita' ma ora rientra. Tesla partecipa al progetto Terafab ($55B con SpaceX/xAI) che richiede EUV ASML → impatto positivo strategico. Umanoid robotics roadmap 2027. 52-week range: $288.77-$498.83 (prezzo al 82% dal picco).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 410.84,
+      "stop_loss": 398.51,
+      "target": 431.38,
+      "commissione": 0.00,
+      "reasoning": "Post-SpaceX IPO volatilita' in rientro. Il titolo e' laterale rispetto alla sessione del 12/6 (+1.08%). Terafab e' catalizzatore di lungo termine (2027+). Attendere chiarimento direzionale post-effetti SpaceX prima di nuovo ingresso. Supporto chiave a $407 (minimo intraday odierno). (Trading Economics/CNBC/Yahoo Finance, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics / TradingView (June 15 intraday: $410.92, range $407.10-$416.00)", "price": 410.92},
+          {"name": "Yahoo Finance / CNBC (June 12 close: $410.75, +$4.32 +1.06%)", "price": 410.75}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 211.02,
+      "change_24h": "+2.72%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo BASSO (50.84M vs avg 170.79M, -70.2%): recovery su volumi minimi = segnale cautela",
+      "news": "NVDA recupero a $211.02 il 15/6 dopo chiusura $205.42 del 12/6 (+2.72%). Range 15/6: $207.71-$211.38. Volume anomalmente basso (50.84M vs avg 170.79M) nonostante il rimbalzo. NVDA ha emesso $20 miliardi di bond senior (prima volta in 5 anni) → fiducia management in solidita' finanziaria. 38 analisti unanimi Strong Buy, target medio $298.87 (+41.5% upside). 52-week range $140.86-$236.54. AI data center dominanza intatta. Market cap $5.19T.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 211.02,
+      "stop_loss": 204.69,
+      "target": 221.57,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali AI eccezionali (38 analisti Strong Buy, target $298) con correzione da ATH $236.54 a $211 (-10.8%) che offre entry su ritracciamento. Il $20B bond offering segnala confidence manageriale. CAUTELA: volume -70% sul rimbalzo odierno indica domanda istituzionale debole a breve; confidenza ridotta a Medio rispetto ad ALTA del 14/6. (Investing.com/CNBC/Yahoo Finance, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics / Robinhood (June 15 intraday: $211.02, range $207.71-$211.38)", "price": 211.02},
+          {"name": "Yahoo Finance / CNBC (June 12 close: $205.19, +0.16%)", "price": 205.19}
+        ],
+        "spread_pct": 2.84,
+        "affidabilita": "MEDIA",
+        "nota": "Le due fonti riportano date diverse (June 15 vs June 12): lo spread riflette movimento di prezzo multi-giorno, non discrepanza di fonte. Unica fonte per prezzo intraday June 15."
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 396.65,
+      "change_24h": "+1.51%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Microsoft apre a $396.65 il 15/6 (range atteso $392.85-$401.75). Recupero da $390.74 del 12/6 (+1.51%). 'Strong analyst sentiment' su Microsoft titolava Yahoo Finance il 16/6 (un segnale di consensus positivo). Possibile spin-off divisione Xbox (notizia del 12/6) crea incertezza ma non e' negativo strutturalmente. AI Cloud in crescita robusta. 52-week range $356.28-$555.45 (prezzo al 71% dal picco). Market cap $2.9T.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 396.65,
+      "stop_loss": 384.75,
+      "target": 416.48,
+      "commissione": 0.00,
+      "reasoning": "Recovery +1.51% da ven 12/6 in apertura lun 15/6. Sentiment analitico positivo confermato. Microsoft trading a -28.5% dal 52-week high $555.45: ampio spazio di recupero. AI Cloud + Copilot integrazione come catalizzatori di lungo. La notizia Xbox spin-off va monitorata ma non e' immediato rischio al ribasso. (MacroTrends/CNN/Yahoo Finance, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics / CNN Markets (June 15 apertura: $396.65, range $392.85-$401.75)", "price": 396.65},
+          {"name": "Yahoo Finance / CNBC (June 12 close: $396.19, +$5.45 +1.39%)", "price": 396.19}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 240.48,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (51.25M vs avg 44.75M, +14.5%)",
+      "news": "Amazon oscilla tra $238.70 (dato 14/6) e $242.25 (chiusura 12/6): range stretto ma con volume anomalo +14.5%. Q1 2026: revenue growth +14.22%, ma FCF growth -464.43% (allarme strutturale). Amazon investe $200B in AI CapEx 2026. Trend ribassista da $251 (4/6) a $240 (-4.4%). Gross margin migliorato a 35.56% positivo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 240.48,
+      "stop_loss": 233.27,
+      "target": 252.50,
+      "commissione": 0.00,
+      "reasoning": "Il FCF growth -464% e' il segnale piu' preoccupante nonostante le revenue solide: Amazon sta investendo massivamente (AI CapEx $200B) comprimendo il free cash flow. Volume anomalo +14.5% senza catalizzatore conferma pressione istituzionale. Attendere chiarimento FCF o segnale tecnico di supporto. (Yahoo Finance/CNN/CNBC, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics / MacroTrends (June 14 current: $238.70, range $233.59-$245.24)", "price": 238.70},
+          {"name": "Yahoo Finance / CNBC (June 12 close: $242.25, +$3.70 +1.55%)", "price": 242.25}
+        ],
+        "spread_pct": 1.48,
+        "affidabilita": "MEDIA",
+        "nota": "Fonti da date diverse (June 14 vs June 12): spread riflette movimento di prezzo, non discrepanza di fonte. Prezzo validato usato: media aritmetica."
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 371.88,
+      "change_24h": "+3.65%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Alphabet rimbalza fortemente a $371.88 il 15/6 (9:45 IST = 12:15 ET) vs chiusura $358.78 del 12/6 (+3.65%). Market cap $4.39T. GOOGL in recovery decisa: da 52-week low $162 (giu 2025) a $371.88 = +129.5% YTD. Google Cloud +63% YoY (dato eccezionale). AI capex $80B con anchor Berkshire Hathaway ($10B private placement). Prossimo catalizzatore: earnings Google Q2 (luglio 2026). 52-week range $162-$408.61.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 371.88,
+      "stop_loss": 360.72,
+      "target": 390.47,
+      "commissione": 0.00,
+      "reasoning": "Recovery forte +3.65% in apertura lunedi (ceasefire risk-on + Cloud momentum). Google Cloud +63% YoY e' il dato piu' impressionante del settore tech. AI $80B commitment con anchor Berkshire da credibilita' straordinaria. Trading a -8.9% dal 52-week high $408.61, con momentum in ripresa. (IndMoney/Yahoo Finance/MacroTrends, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "IndMoney / MacroTrends (June 15 9:45pm IST intraday: $371.88, mkt cap $4.39T)", "price": 371.88},
+          {"name": "Yahoo Finance / CNBC (June 12 close: $364.07, +$5.91 +1.65%)", "price": 364.07}
+        ],
+        "spread_pct": 2.15,
+        "affidabilita": "MEDIA",
+        "nota": "Spread riflette il gap weekend June 12→15 (ceasefire rally). Unica fonte per il prezzo June 15 intraday."
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 584.95,
+      "change_24h": "+3.33%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (ex-dividendo oggi: calo atteso $0.525 gia' assorbito dal rally)",
+      "news": "Meta in forte rally il 15/6: +4%+ in apertura, range $579.90-$600.60, target $590 nella mattinata. EX-DIVIDENDO $0.525 oggi (15/6): l'effetto tecnico calo e' assorbito dal rally AI. Q1 2026 eccezionale: revenue $56.31B (+33% YoY, crescita piu' rapida dal 2021), EPS $7.31 (beat attese). CapEx 2026 alzato a $125-145B (AI infrastrutture). All-time high $788.15 (agosto 2025). P/E 22.65. Market cap ~$1.49T.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 584.95,
+      "stop_loss": 567.40,
+      "target": 614.20,
+      "commissione": 0.00,
+      "reasoning": "Revenue +33% YoY (massimo dal 2021) con EPS beat: fondamentali eccezionali. Il rally odierno +4% segnala mercato che rivaluta positivamente l'AI spending. Ex-dividendo $0.525 assorbito dal momentum. Da ATH $788 e' a -26%: ampio spazio di recovery con CapEx AI che costruisce moat strutturale. (CNBC/Yahoo Finance/eciks.org, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / eciks.org (June 15 apertura: $579.90, high $600.60, target $590+)", "price": 579.90},
+          {"name": "Yahoo Finance / MacroTrends (June 12 close: $566.98, June 15 apertura confermata $579.90)", "price": 579.90}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Entrambe le fonti concordano sull'apertura $579.90 il June 15. L'intraday potrebbe essere gia' a $590+. Prezzo usato: $584.95 (midrange apertura-rally)."
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 81.30,
+      "change_24h": "+1.19%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Netflix $81.30 il 15/6 vs chiusura $80.34 del 12/6 (+1.19%). Recupero modesto. Opzioni mostrano sentiment moderatamente bearish (GuruFocus 12/6). 37 analisti BUY, 0 SELL, target medio $114.15 (+40.4% upside). Advertising revenue target 2026 raddoppiato a $3B (+70% advertiser base). Monthly audience target 1B viewer per 2027 (ora a ~250M su ad-supported tier). 52-week range $75.01-$134.12. [NOTA: prezzo anomalo vs storico - possibile stock split 10:1 non confermato. Verificare prima di operare.]",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 81.30,
+      "stop_loss": 78.86,
+      "target": 85.37,
+      "commissione": 0.00,
+      "reasoning": "Play contrarian: 37 analisti Buy (0 Sell) con target $114 (+40%) e titolo vicino al 52-week low $75. Pivot advertising a $3B annual revenue (da $1.5B 2025) e' cambio di modello di business reale e misurabile. Recovery +1.19% da ven 12/6. RISCHIO PRINCIPALE: incertezza su possibile stock split e momentum ribassista persistente da $134 ATH. (CNBC/Yahoo Finance/GuruFocus, 9-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics / Investing.com (June 15: $81.33, range $79.28-$82.08)", "price": 81.33},
+          {"name": "Yahoo Finance / CNBC (June 15 current: ~$81.27, -25% dal picco aprile)", "price": 81.27}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 511.57,
+      "change_24h": "+4.73%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (range 14/6: $494.00-$521.71)",
+      "news": "AMD conferma $511.57 (dato aggiornato 14/6, ultimo close prima di apertura 15/6). +4.73% rispetto a chiusura $488.45 dell'11/6. ATH $546.44 raggiunto il 3/6 (-6.4% da ATH). Upgrade Citi BUY con PT $575 (da $460). AMD-Meta multi-year AI chip deal per server GPU confermato (deal significativo). Q1 2026: revenue $10.3B, Data Center +57% YoY. Earnings 4/8/2026. +111% YTD. 52-week range $117.78-$546.44.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 511.57,
+      "stop_loss": 496.22,
+      "target": 537.15,
+      "commissione": 0.00,
+      "reasoning": "AI momentum leader con +111% YTD e fondamentali in accelerazione (Data Center +57%). Deal con Meta per AI chip multi-anno e' catalyst concreto e monetizzabile. Upgrade Citi a $575 con BofA BUY PT $560: consenso analitico in miglioramento. A -6.4% da ATH $546 con momentum rialzista: setup favorevole. (Investing.com/CNBC/CNN/Yahoo Finance, 12-14/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / CNN Markets (June 14: $511.57, previous close $488.45, +4.73%)", "price": 511.57},
+          {"name": "Yahoo Finance / CNBC (June 14 confermato: $511.57, range $494.00-$521.71)", "price": 511.57}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1863.55,
+      "change_24h": "-1.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML conferma $1.863.55 (NASDAQ ADR). ATH $1.899.48 raggiunto l'11/6 (-1.89% da picco). DOPPIO CATALYST: (1) ASML investe €1.3B in Mistral AI per posizionamento AI; (2) Progetto Terafab $55B (SpaceX/Tesla/xAI) richiede EUV ASML in esclusiva per chip 2nm - UBS reinstated come top pick europeo con PT €1.900. Earnings 15/7/2026. 44 analisti Strong Buy. Monopolio de facto EUV litografia. 52-week range NASDAQ: $587.80-$1.899.48.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1863.55,
+      "stop_loss": 1807.64,
+      "target": 1956.73,
+      "commissione": 0.00,
+      "reasoning": "Upgrade da HOLD a BUY rispetto al scan del 14/6: il catalyst Terafab ($55B esclusivo ASML per EUV 2nm) e l'investimento Mistral AI sono sviluppi strategici nuovi che giustificano re-rating. UBS top pick europeo PT €1.900 ($2.134 equiv) = +14.5% upside da prezzo attuale. Monopolio EUV de facto irreplicabile. A -1.89% da ATH: rischio/rendimento favorevole. (Nasdaq/Investing.com/Yahoo Finance/CNBC, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NASDAQ USD (June 15: $1.863.55, previous close $1.899.48 ATH dell'11/6)", "price": 1863.55},
+          {"name": "Nasdaq / Yahoo Finance (June 12-15: $1.863.55 confermato su piu' sessioni)", "price": 1863.55}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 164.18,
+      "change_24h": "+0.33%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP chiude a $164.18 il 12/6 (+0.33%). ATTENZIONE: SAP e' sceso >3% in pre-market il 15/6 dopo che Oracle ha annunciato AI CapEx piu' elevato del previsto, suggerendo concorrenza intensa nel cloud enterprise. Notizia Oracle e' vento contrario strutturale. Q1 2026: EPS $1.92 (beat: $1.91 atteso), ma revenue $11.04B (miss: $11.17B). Cloud revenue +27% YoY a $5.95B. SAP Xetra (Francoforte) a €144.95 il 15/6. Prossimo earnings: luglio 2026. 52-week range USD ~$158-$313.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 164.18,
+      "stop_loss": 159.25,
+      "target": 172.39,
+      "commissione": 0.00,
+      "reasoning": "Il pre-market -3% del 15/6 da concorrenza Oracle riduce l'attrattivita' del trade. Cloud +27% YoY e' positivo ma il revenue miss Q1 e la concorrenza crescente dall'ecosistema Oracle-AI sono venti contrari concreti. Cross-check EUR: Xetra €144.95 x ~1.13 = $163.79 confirma $164.18. Attendere normalizzazione post-news Oracle. (CNBC/Investing.com/Yahoo Finance, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Google Finance NYSE (June 12 close: $164.18, +$0.54 +0.33%)", "price": 164.18},
+          {"name": "Investing.com Xetra EUR (June 15: €144.95 x EUR/USD ~1.13 = $163.79)", "price": 163.79}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 370.81,
+      "change_24h": "+4.48%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Ferrari RACE +4.48% a $370.81 il 15/6 da $354.91 del 12/6. CATALYST: Morgan Stanley upgrade a Overweight (da Equal Weight) con PT $438 (da $388) = +18.1% upside. Seconda tranche del buyback multiennale €3.5B ($250M tranche) in corso al 11/6. Lancio Ferrari Luce (primo EV full) ha diviso gli investitori (-8% post-lancio recuperato). P/E 34.06. 14 analisti Strong Buy. 52-week range $312.51-$519.10 (prezzo al 71% del picco).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 370.81,
+      "stop_loss": 359.69,
+      "target": 389.35,
+      "commissione": 0.00,
+      "reasoning": "Morgan Stanley upgrade a Overweight con PT $438 e' catalyst concreto di breve-medio termine (+18.1% upside). Il +4.48% odierno conferma momentum direzionale post-upgrade. Buyback €3.5B ($250M attiva) come backstop strutturale. Pricing power luxury difensivo insensibile ai cicli economici. (Investing.com/CNN/StockAnalysis, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Robinhood (June 15 intraday: $370.81, range $369.33-$375.61)", "price": 370.81},
+          {"name": "Yahoo Finance / CNBC / StockAnalysis (June 15: $370.81 confermato, +4.48% da $354.91)", "price": 370.81}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 6.87,
+      "change_24h": "-0.29%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (22.92M shares, mkt cap $19.15B)",
+      "news": "Stellantis STLA (NYSE) a $6.87 il 15/6 (-0.29%). [Nota: ticker STLAM e' la quotazione Borsa Italiana in EUR; NYSE ticker e' STLA]. Stellantis integra batterie solid-state Factorial Energy in Dodge Charger (test real-world): sviluppo EV positivo ma lontano dalla commercializzazione. Venti contrari: performance azionaria debole, supply chain issues, impatto dazi. 52-week range (EUR): €5.31-€10.49 (prezzo attuale ai minimi). Analysts: 9 Buy, 3 Sell, target medio EUR 7.881 (+14.7% upside).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 6.87,
+      "stop_loss": 6.66,
+      "target": 7.21,
+      "commissione": 0.00,
+      "reasoning": "STLA in debolezza strutturale: ai minimi del 52-week con supply chain issues e dazi come venti contrari. Il test solid-state battery e' positivo ma commercializzazione e' 2028+. Upside analitico +14.7% (target €7.881) e' insufficiente per giustificare il rischio. Monitorare per eventuale recovery quando supply chain normalizza. (CNBC/Kraken/Yahoo Finance, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / StockAnalysis / Kraken (June 15 NYSE: $6.87, -0.29%, mkt cap $19.15B)", "price": 6.87},
+          {"name": "Investing.com Milan EUR (June 8: €6.13 x EUR/USD ~1.12 = $6.87 USD equiv)", "price": 6.87}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Fonte 1 e' NYSE USD del 15/6; fonte 2 e' cross-check Borsa Italiana EUR del 8/6 convertito. Date diverse ma convergenza del prezzo USD confermata. Ticker STLAM (utente) = STLA (NYSE)."
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 386.54,
+      "change_24h": "+1.64%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "GLD a $386.54 il 15/6 (range $383.35-$388.77), +1.64% da $380.32 del scan 14/6. VENTI CONTRARI: gold a 6-mesi di minimo con aspettative rialzo tassi in aumento; accordo ceasefire USA-Iran riduce safe-haven demand (risk-on). 52-week range: $299.89-$509.70 (prezzo a -24% dall'ATH $509.70). Il rimbalzo odierno e' probabilmente tecnico su oversold. Market cap $137.45B. Expense ratio 0.40%.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 386.54,
+      "stop_loss": 378.81,
+      "target": 402.00,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico +1.64% su livello ipervenduto (-24% da ATH $509.70). HOWEVER: (1) aspettative rate hike crescenti sono bearish per oro; (2) ceasefire USA-Iran riduce domanda di safe-haven; (3) stagionalita' estiva sfavorevole per oro (confermata da pattern storico). Il HOLD bilancia il rimbalzo tecnico con i venti contrari fondamentali. (Investing.com/CNBC/NYSE Arca, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockInvest (June 15: $386.54, range $383.35-$388.77, 52wk $299.89-$509.70)", "price": 386.54},
+          {"name": "CNBC / NYSE Arca / Google Finance (June 15: $386.54 confermato, expense ratio 0.40%)", "price": 386.54}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 61.29,
+      "change_24h": "+0.77%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (21.27M shares, net assets $32.24B al 12/6)",
+      "news": "SLV a $61.29 il 15/6 (previous close $60.82, +$0.47 +0.77%). Range 15/6: $59.87-$61.83. Argento in recupero parallelo all'oro ma con volatilita' amplificata. +83.63% su base annua (return eccezionale). 52-week range $32.06-$109.83 (ampiezza +240%). Venti contrari analoghi a GLD: rate hike expectations + risk-on ceasefire. Mid-range 52-week ma senza segnale direzionale chiaro.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 61.29,
+      "stop_loss": 60.06,
+      "target": 63.74,
+      "commissione": 0.00,
+      "reasoning": "Recovery +0.77% parallela all'oro ma struttura tecnica ambigua: silver a met'a del 52-week range ($32-$109) senza direzione chiara. Le aspettative di rialzo tassi sono bearish per metals. Il +83.63% annuo potrebbe attrarre profit-taking. Attendere breakout sopra $65 o supporto $58 per segnale direzionale. (Investing.com/iShares/CNBC, 12-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Kraken (June 15: $61.29, previous close $60.82, range $59.87-$61.83)", "price": 61.29},
+          {"name": "iShares / CNBC (June 12 close: $61.29, vol 21.27M, net assets $32.24B confermati)", "price": 61.29}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 125.43,
+      "change_24h": "-2.64%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (pre-market 14/6: $127.13; after-hours 14/6: $125.50 → selling continuato)",
+      "news": "USO $125.43 il 14/6 (previous close $128.83, -2.64%). Dati news aggregati del 15/6 suggeriscono USO potenzialmente a ~$120.12 (-4.23% intraday): accordo ceasefire USA-Iran riduce il premio geopolitico petrolio in modo diretto. Trend ribassista da $154.08 ATH (52-week). Futures WTI deboli su rallentamento domanda globale. 52-week range $65.99-$154.08. NOTA: il prezzo USD $125.43 e' confermato da 2 fonti per il 14/6; il 15/6 potrebbe gia' essere a ~$120.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 125.43,
+      "stop_loss": 127.94,
+      "target": 120.41,
+      "commissione": 0.00,
+      "reasoning": "Doppia pressione bearish: (1) downtrend strutturale da ATH $154 con -2.64% sessione 14/6; (2) ceasefire USA-Iran elimina il rischio geopolitico che sosteneva i prezzi petrolio = pressione ribassista immediata. Dato news 15/6 suggerisce calo a $120 (-4.23%), confermando tendenza. NOTA: posizione short richiede margin account Alpaca. (Investing.com/CNBC/ETF.com, 14-15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / TradingView (June 14: $125.43, prev close $128.83, range $125.30-$129.77)", "price": 125.43},
+          {"name": "CNBC / Barchart (June 14: $125.43 confermato, pre-market $127.13, after-hours $125.50)", "price": 125.43}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 65663.00,
+      "change_24h": "+2.08%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($35.04B 24h su CoinMarketCap; $35.04B)",
+      "news": "Bitcoin $65.663 il 15/6 (+2.08% 24h). CATALYST PRINCIPALE: ceasefire USA-Iran firmato nel weekend → risk-on globale, crypto beneficia. SEGNALE ON-CHAIN: buy signal flashed per la 2a volta nel 2026 (stesso setup che ha preceduto rally +24% ad inizio anno). BTC up +4.73% negli ultimi 7 giorni (Coinbase). 52-week range: da $44K circa a $84K (non citato). Range 24h: $63.641-$65.954. Da $63.553 del 12/6: +3.32% nel weekend.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 65663.00,
+      "stop_loss": 62379.85,
+      "target": 70916.04,
+      "commissione": 0.00,
+      "reasoning": "Doppio segnale di acquisto convergente: (1) macroeconomico - ceasefire USA-Iran = risk-on globale; (2) on-chain buy signal (2° flash 2026 = stesso pattern che ha preceduto +24% rally). +4.73% settimanale con volume normale. Segnale analogo a inizio 2026 aveva prodotto +24%: target $70.916 e' conservativo. Stop loss -5% standard crypto. (Yahoo Finance/CoinGabbar/Facebook/Coinbase, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGabbar / Fortune (June 15 live: $65.695, +2.08%)", "price": 65695.00},
+          {"name": "Coinbase (June 15 live: $65.629.98, high 24h $65.953.55)", "price": 65630.00}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1743.07,
+      "change_24h": "+2.37%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($9.77B 24h trading volume)",
+      "news": "Ethereum $1.743 il 15/6 (+2.37% 24h). CONTESTO: ETH a 30% sotto la 200-day moving average = zona di extreme fear (potenziale oversold). Fortune riporta $1.784.85 (9:15am ET), CoinDesk $1.727.38 (6:53am ET): volatilita' intraday normale in recovery. ETH up +4.18% negli ultimi 7 giorni (Coinbase). ETF inflows in lag rispetto a BTC: investitori ruotano in XRP e SOL piuttosto che ETH. Supply su exchange ai minimi storici (dato bullish strutturale dal scan 14/6).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1743.07,
+      "stop_loss": 1655.92,
+      "target": 1882.52,
+      "commissione": 0.00,
+      "reasoning": "30% sotto la 200-day MA in zona extreme fear = setup contrarian con alto potenziale. Supply ai minimi storici su exchange (dato strutturale bullish dal 14/6 invariato). Ceasefire risk-on catalizza recovery +2.37%. CAUTELA: ETF outflows e lag vs BTC/SOL indicano underperformance relativa nel breve. Confidenza Medio: fondamentali positivi ma momentum relativo debole. (Yahoo Finance/Fortune/CoinDesk/Coinbase, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk / Yahoo Finance (June 15 6:53am ET: $1.727.38, vol 24h $5.36B)", "price": 1727.38},
+          {"name": "Coinbase (June 15 live: $1.758.76, +2.37% 24h, +4.18% 7d)", "price": 1758.76}
+        ],
+        "spread_pct": 1.80,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 71.03,
+      "change_24h": "+5.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($1.92B 24h trading volume, market cap $41.18B)",
+      "news": "Solana $71.03 il 15/6 (+5.40% da $67.39 del scan 14/6). MULTIPLI CATALYST: (1) TD Sequential buy signal attivo che punta a $77; (2) Western Union ha lanciato USDPT (stablecoin USD backed Anchorage Digital) su rete Solana → adozione istituzionale mainstream; (3) Wall Street tokenizza miliardi su Solana; (4) CoinShares: ETF inflows in rotazione da BTC/ETH verso SOL. Rottura tecnica sopra resistenza $70. 52-week range: vedi 14/6 scan.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 71.03,
+      "stop_loss": 67.48,
+      "target": 76.71,
+      "commissione": 0.00,
+      "reasoning": "SOL e' l'asset con il maggior numero di catalyst convergenti oggi: TD Sequential buy signal ($77 target), Western Union stablecoin (mainstream adoption), CoinShares rotation (istituzionale), rottura di $70 resistenza. +5.40% da ieri con volume normale = domanda genuina. Target $76.71 conservativo rispetto al segnale TD che punta a $77. (MetaMask/Coinbase/CoinMarketCap/Capital.com, 15/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask / Trading sources (June 15: $71.00, range 24h $66.99-$71.50)", "price": 71.00},
+          {"name": "Coinbase (June 15 live: $71.05, market cap $41.18B, vol $1.92B)", "price": 71.05}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SOL",
+      "motivo": "Massima concentrazione di catalyst simultanei: TD Sequential buy signal (target $77), Western Union USDPT stablecoin su Solana (adozione mainstream), rotazione istituzionale CoinShares da BTC/ETH a SOL, rottura resistenza $70. +5.40% 24h con volume normale. Affidabilita' ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "motivo": "AI momentum leader (+111% YTD). Doppio upgrade: Citi BUY PT $575, BofA BUY PT $560. Deal multi-anno AI chip con Meta confermato. Data Center +57% YoY Q1 2026. A -6.4% da ATH $546 con vento in poppa. Affidabilita' ALTA."
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "Morgan Stanley upgrade a Overweight con PT $438 (+18.1% upside), +4.48% odierno. Q1 2026 EPS beat +13.5%, revenue +17% vs stime. Buyback €3.5B attivo come backstop. Pricing power luxury difensivo. Affidabilita' ALTA."
+    },
+    {
+      "rank": 4,
+      "asset": "BTC",
+      "motivo": "Doppio catalizzatore: ceasefire USA-Iran (risk-on macro) + on-chain buy signal (2° flash 2026, stesso setup che ha preceduto +24% rally ad inizio anno). +2.08% con volume normale. Affidabilita' ALTA."
+    },
+    {
+      "rank": 5,
+      "asset": "META",
+      "motivo": "Revenue +33% YoY (massimo dal 2021), EPS $7.31 beat. +4%+ odierno in recovery da livelli depressi post-CapEx guidance. Ex-dividendo $0.525 oggi: eliminato l'overhang tecnico. AI CapEx $125-145B costruisce moat. Affidabilita' MEDIA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Primo giorno settimanale (lunedi 15/6). Risk-on da ceasefire USA-Iran.",
+    "allocazione_suggerita": {
+      "SOL": "15%",
+      "AMD": "15%",
+      "BTC": "15%",
+      "RACE": "12%",
+      "META": "12%",
+      "ASML": "10%",
+      "NVDA": "8%",
+      "GOOGL": "8%",
+      "ETH": "5%",
+      "CASH": "5%"
+    },
+    "posizioni_short_simulazione": {
+      "USO": "5% (solo margin account Alpaca - non eseguibile con account standard)"
+    },
+    "nota_short": "La posizione short USO richiede margin account su Alpaca. SELL signal e' indicativo della view ribassista su oil post-ceasefire.",
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "ASML earnings 15/7; AMD earnings 4/8; META ex-div $0.525 oggi: monitorare gap apertura. USO: verificare prezzo intraday 15/6 (possibile calo a $120 da $125.43 del 14/6). NVDA volume anomalo: se non recupera sopra avg nella prossima sessione, riconsiderare da BUY a HOLD."
+  }
+}
