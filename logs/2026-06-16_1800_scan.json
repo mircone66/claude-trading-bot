@@ -1,0 +1,441 @@
+{
+  "timestamp": "2026-06-16T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "16 giugno 2026: sessione mista con qualita' dei dati eterogenea. 5 asset su 19 esclusi per scarto fonti eccessivo o copertura insufficiente (TSLA, NVDA, SAP, GLD, USO) - prudenza massima sui prezzi non triangolabili. TECH USA: AMD mostra un'inversione intraday sospetta (rally +8% ad ATH $558.37 lunedi 15/6, poi -4.62% oggi per profit-taking dopo lancio Ryzen AI Halo e deal Rackspace) -> HOLD cautelativo. NFLX prosegue il trend ribassista strutturale (-40% da ATH) con sentiment negativo. META (+33% revenue YoY) e GOOGL (consenso analisti su crescita AI/cloud) restano i nomi piu solidi. AMZN beneficia del lancio Graviton5 e investimento $10B data center Missouri. EU: ASML e RACE confermano forza (rally semiconduttori + upgrade Morgan Stanley su Ferrari a Overweight PT euro380), STLA riceve boost da impegno $13B per produzione USA (+50% capacita' in 4 anni) con volume anomalo +32%. SAP escluso: scarto 10.1% tra fonti (probabile confusione NYSE/Xetra). COMMODITIES: dopo l'accordo di pace USA-Iran il petrolio crolla a circa $80/barile (minimo da marzo) ma, in modo controintuitivo, oro e argento salgono (spot +3.4%/+4.7%); SLV unico ETF commodity con dati affidabili (+3.56%), GLD e USO esclusi per carenza/discordanza di fonti. CRYPTO: SOL e' il vero protagonista (+10.25% 24h) su rotazione istituzionale CoinShares e tokenizzazione delle azioni SpaceX su Solana in concomitanza con la quotazione Nasdaq; BTC si stabilizza con ritorno di afflussi ETF ('crypto spring'); ETH resta debole per deflussi settimanali pesanti nonostante l'upgrade tecnico Glamsterdam in arrivo.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 295.59,
+      "change_24h": "+1.82%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (~45.73M)",
+      "news": "Nessuna notizia specifica rilevante individuata oggi oltre ai quote generici; trend a 5 giorni non determinabile con chiarezza dalle fonti disponibili (CNN Markets/Coinbase/Nasdaq).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 295.59,
+      "stop_loss": 286.72,
+      "target": 310.37,
+      "commissione": 0.00,
+      "reasoning": "Assenza di catalizzatori freschi e trend a 5 giorni non determinabile con le fonti odierne. Meglio attendere un segnale tecnico o una notizia piu netta prima di aprire posizione. (CNN Markets/Coinbase/Yahoo Finance, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase/Robinhood/CNN Markets/Nasdaq (aggregato intraday)", "price": 294.75},
+          {"name": "CNBC/Yahoo Finance (chiusura precedente)", "price": 296.42}
+        ],
+        "spread_pct": 0.56,
+        "affidabilita": "MEDIA",
+        "nota": "La seconda cifra e' la chiusura precedente, non un quote intraday pienamente indipendente: trattata con cautela aggiuntiva."
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 399.63,
+      "change_24h": "+1.89%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Nessun catalizzatore concreto individuato oggi; prossimi utili previsti per il 28/7/2026. Una fonte minore riportava un calo del 17% per vendite di un dirigente, ma il dato e' incoerente col prezzo corrente e non verificato (scartato).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 399.63,
+      "stop_loss": 387.64,
+      "target": 419.61,
+      "commissione": 0.00,
+      "reasoning": "Movimento positivo modesto ma senza un catalizzatore differenziante in questa sessione. Attendere maggiore chiarezza o l'earnings di fine luglio prima di un nuovo ingresso. (Stocktwits/TradingView/Yahoo Finance/CNBC, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stocktwits/TradingView/Yahoo Finance", "price": 399.76},
+          {"name": "Yahoo Finance/CNBC (sintesi aggregata)", "price": 399.50}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "MEDIA",
+        "nota": "Le due cifre derivano probabilmente da una sintesi aggregata condivisa, non da due fonti pienamente indipendenti verificate separatamente."
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 246.94,
+      "change_24h": "+3.13%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Amazon lancia il chip Graviton5 ed espande la logistica; confermato investimento di $10 miliardi in un data center in Missouri.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 246.94,
+      "stop_loss": 239.53,
+      "target": 259.29,
+      "commissione": 0.00,
+      "reasoning": "Investimento infrastrutturale concreto ($10B data center + nuovo chip proprietario Graviton5) rafforza la tesi AI/cloud di lungo periodo. Dato di prezzo affidabilita' MEDIA: procedere con size moderata. (Public.com/CNN Markets/Morningstar/Yahoo Finance, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Public.com/CNN Markets (implicito pre-market)", "price": 247.78},
+          {"name": "CNBC/Morningstar/Yahoo Finance (dato ~18h prima)", "price": 246.10}
+        ],
+        "spread_pct": 0.68,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 360.28,
+      "change_24h": "+0.84%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (~24.88M)",
+      "news": "Alphabet naviga un mercato descritto come volatile, con focus su investimenti AI e infrastruttura cloud; gli analisti prevedono una crescita robusta dei ricavi guidata dall'AI, nonostante preoccupazioni sulla valutazione.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 360.28,
+      "stop_loss": 349.47,
+      "target": 378.29,
+      "commissione": 0.00,
+      "reasoning": "Consenso analitico positivo su crescita AI/cloud nonostante un mercato volatile nel breve periodo. Spread fonti contenuto (0.33%) supporta un ingresso a size moderata. (Kraken/Morningstar/Barchart/CNN Markets, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken/Morningstar/Barchart/CNN Markets", "price": 360.88},
+          {"name": "Stockanalysis.com (dato datato 12/6)", "price": 359.68}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 599.34,
+      "change_24h": "+1.86%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Meta in rialzo sui risultati Q1 2026: revenue +33% YoY a $56.31 miliardi, spinta da crescita pubblicitaria e investimenti AI. Market cap $1.44T, +1.20% nell'ultima settimana.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 599.34,
+      "stop_loss": 581.36,
+      "target": 629.31,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali eccezionali (+33% revenue YoY) confermati da piu fonti indipendenti nelle ultime sessioni. Le due percentuali di variazione giornaliera raccolte oggi sono leggermente incoerenti (+1.86% vs +4.87%), ma il quadro fondamentale resta solido. (Public.com/TradingView/eToro/Benzinga/Yahoo Finance, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Public.com/TradingView/eToro/Yahoo Finance", "price": 594.75},
+          {"name": "Tradersunion.com/Benzinga/Yahoo Finance", "price": 603.92}
+        ],
+        "spread_pct": 1.53,
+        "affidabilita": "MEDIA",
+        "nota": "Variazione 24h riportata in modo incoerente tra le fonti (+1.86% vs +4.87%), probabile differenza di timing intraday."
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 80.03,
+      "change_24h": "-1.66%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Netflix scambia a circa -40% dal massimo storico, con guidance cauta su pressione competitiva citata da piu fonti come motivo della debolezza prolungata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 80.03,
+      "stop_loss": 77.63,
+      "target": 84.03,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista marcato (-40% da ATH) confermato da notizie multiple, combinato con uno scarto fonti del 3.34% (al limite della soglia BASSA): troppa incertezza per un ingresso direzionale. (Kraken/eToro/TradingView/Investing.com/Stocktwits, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken/eToro/TradingView/CNN Markets", "price": 81.36},
+          {"name": "Investing.com/Stockanalysis.com/eToro", "price": 78.69}
+        ],
+        "spread_pct": 3.34,
+        "affidabilita": "MEDIA",
+        "nota": "Scarto vicino alla soglia BASSA (4%): la dispersione tra fonti per NFLX e' la piu ampia del paniere odierno."
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 548.03,
+      "change_24h": "-4.62%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (~33.48M vs media 31.6M, +6%)",
+      "news": "Dopo il rally di lunedi 15/6 (+8% a nuovo massimo storico $558.37, 'risk-on chip surge' insieme a NVDA e Intel), AMD scende -4.62% oggi 16/6 per profit-taking successivo al lancio della piattaforma Ryzen AI Halo e al deal di AI compute con Rackspace Technology.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 548.03,
+      "stop_loss": 531.59,
+      "target": 575.43,
+      "commissione": 0.00,
+      "reasoning": "Inversione intraday sospetta: rally ad ATH lunedi seguito da un calo del 4.62% oggi sullo stesso titolo. Meglio attendere conferma direzionale prima di un nuovo ingresso, nonostante il trend di fondo (+130% YTD) resti rialzista. (24/7 Wall St./ts2.tech/Stockanalysis.com, 15-16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stocktwits/eToro/247wallst.com/CNN Markets", "price": 548.80},
+          {"name": "Stockanalysis.com/Motley Fool/CNBC", "price": 547.26}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1863.55,
+      "change_24h": "+2.01%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non specificato)",
+      "news": "ASML beneficia del rally del settore semiconduttori e della quota strategica nella startup AI Mistral, ma una fonte segnala preoccupazioni sul free cash flow negativo e su rischi geopolitici.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1863.55,
+      "stop_loss": 1808.04,
+      "target": 1956.73,
+      "commissione": 0.00,
+      "reasoning": "Rally settoriale dei semiconduttori e posizionamento strategico AI (quota Mistral) restano catalizzatori validi, bilanciati dalla cautela su FCF negativo. Le due query hanno restituito lo stesso valore dalla stessa fonte primaria: trattare come conferma parziale, non doppia indipendente. (Investing.com/Nasdaq/Motley Fool/CNBC, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/Nasdaq (aggregato)", "price": 1863.55},
+          {"name": "Investing.com (NASDAQ ADR, query separata)", "price": 1863.55}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "nota": "Entrambe le query hanno fatto riferimento alla stessa fonte primaria (Investing.com): non rappresenta una doppia verifica pienamente indipendente."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 369.05,
+      "change_24h": "+4.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non specificato)",
+      "news": "Morgan Stanley promuove Ferrari a Overweight (da Equal Weight) alzando il target price a euro380. Buyback in corso: 30.899 azioni riacquistate tra il 3 e il 10/6 per euro9.3M a un prezzo medio di euro301.12 (Euronext Milan).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 369.05,
+      "stop_loss": 358.08,
+      "target": 387.50,
+      "commissione": 0.00,
+      "reasoning": "Upgrade concreto di Morgan Stanley con target price alzato, confermato anche da GuruFocus indipendentemente (~$369.06), unito a un buyback attivo come backstop strutturale. (Investing.com/GuruFocus/StockTitan, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (aggregato)", "price": 369.05},
+          {"name": "Investing.com (query separata) / GuruFocus (conferma indipendente $369.06)", "price": 369.05}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "nota": "Le due query hanno richiamato la stessa fonte primaria; conferma indipendente aggiuntiva da GuruFocus nella ricerca news ($369.06)."
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 7.15,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (21.95M vs media 16.58M, +32%)",
+      "news": "Stellantis annuncia un investimento di $13 miliardi nella produzione automobilistica USA, con l'obiettivo di aumentare la produzione USA del 50% nei prossimi quattro anni.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 7.15,
+      "stop_loss": 6.94,
+      "target": 7.51,
+      "commissione": 0.00,
+      "reasoning": "Investimento industriale di lungo periodo concreto, accompagnato da un volume anomalo (+32%) che suggerisce interesse istituzionale crescente. Prezzo riportato in USD (NYSE, ticker STLA); il ticker STLAM dell'utente corrisponde alla quotazione Borsa Italiana in EUR, non verificata in questa sessione. (Stockanalysis.com/ADVFN/CNBC/Yahoo Finance, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis.com/ADVFN/CNBC/Nasdaq (NYSE, USD)", "price": 7.20},
+          {"name": "Robinhood/CNBC/Bloomberg/Yahoo Finance (NYSE, USD)", "price": 7.10}
+        ],
+        "spread_pct": 1.40,
+        "affidabilita": "ALTA",
+        "nota": "Prezzo NYSE in USD (ticker STLA), non la quotazione Borsa Italiana STLAM in EUR."
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 61.29,
+      "change_24h": "+3.56%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Argento spot +4.7% e SLV +3.56% il 15/6, nel contesto del rally dei metalli preziosi seguito al crollo del petrolio dopo l'accordo di pace USA-Iran (dinamica controintuitiva: pace geopolitica ma metalli preziosi in rialzo, probabilmente per attese sui tassi/dollaro).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 61.29,
+      "stop_loss": 60.06,
+      "target": 63.74,
+      "commissione": 0.00,
+      "reasoning": "Rally dei metalli preziosi confermato da fonte indipendente (goldsilver.com) con scarto fonti minimo (~0%). La dinamica e' meno intuitiva del solito 'safe haven' post-conflitto, quindi confidenza Medio anziche Alto. (Investing.com/Barchart/Schwab/goldsilver.com, 15-16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 61.29},
+          {"name": "Barchart/Schwab", "price": 61.29}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 66150.62,
+      "change_24h": "+0.35%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($31.5B 24h)",
+      "news": "Secondo l'analista Geoffrey Kendrick e' in corso una 'crypto spring' con ritorno degli afflussi sugli ETF spot bitcoin e un probabile bottom intorno a $60.000; BTC era sceso sotto $66.000 nei giorni recenti.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 66150.62,
+      "stop_loss": 62843.09,
+      "target": 71442.67,
+      "commissione": 0.00,
+      "reasoning": "Stabilizzazione dopo il calo recente, con segnali di ritorno della domanda istituzionale (afflussi ETF). Scarto fonti minimo (0.14%, ALTA) supporta l'affidabilita del prezzo. (CoinMarketCap/Coinbase/The Block, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 66105.16},
+          {"name": "Coinbase", "price": 66196.07}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1800.31,
+      "change_24h": "-1.91%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale in volume di scambio, ma deflussi settimanali pesanti sui prodotti ETF/ETP collegati (CoinShares)",
+      "news": "CoinShares segnala forti deflussi settimanali dai prodotti listati su ETH, con rotazione di capitali verso XRP e SOL. In parallelo gli sviluppatori hanno avviato i test di 'Glamsterdam', il prossimo major upgrade della rete Ethereum.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1800.31,
+      "stop_loss": 1710.29,
+      "target": 1944.33,
+      "commissione": 0.00,
+      "reasoning": "Variazione 24h negativa e deflussi di capitale pesanti pesano nel breve termine, nonostante l'upgrade tecnico Glamsterdam sia un catalizzatore di lungo periodo positivo. Scarto fonti 2.34% (MEDIA): procedere con cautela. (CoinMarketCap/Coinbase/The Block, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 1779.24},
+          {"name": "Coinbase", "price": 1821.37}
+        ],
+        "spread_pct": 2.34,
+        "affidabilita": "MEDIA",
+        "nota": "Escluso un valore Binance ($3.323,11) palesemente incoerente con tutte le altre fonti, trattato come errore di estrazione."
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.90,
+      "change_24h": "+10.25%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (+10.25% in 24h, ben sopra il comportamento piu piatto di BTC/ETH)",
+      "news": "CoinShares segnala rotazione di capitali istituzionali verso prodotti XRP e SOL mentre BTC/ETH registrano deflussi; l'azione SpaceX arriva su Solana lo stesso giorno della quotazione Nasdaq, con azioni idonee convertibili in token.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 73.90,
+      "stop_loss": 70.21,
+      "target": 79.81,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore concreto e specifico (tokenizzazione azioni SpaceX su Solana) unito a rotazione istituzionale documentata da CoinShares e un movimento di prezzo anomalo (+10.25%) che confirma la domanda reale. (CoinMarketCap/Coinbase/The Block, 16/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 74.84},
+          {"name": "Coinbase", "price": 72.96}
+        ],
+        "spread_pct": 2.54,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Solo 1 fonte con cifra numerica indipendente trovata (Query 2 non ha restituito un prezzo distinto, solo link e dati qualitativi) -> affidabilita BASSA per fonti<2"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Solo 1 fonte con cifra numerica indipendente trovata (Query 2 priva di prezzo intraday distinto) -> affidabilita BASSA per fonti<2"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Scarto fonti 10.1% ($164.33 NYSE vs $181.79 Investing.com) > soglia 4%, probabile confusione tra quotazione NYSE e Xetra/Francoforte"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Solo 1 fonte con cifra numerica esplicita ($396.55); Query 2 non ha restituito un prezzo verificabile -> affidabilita BASSA per fonti<2"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Prezzi fortemente discordanti tra fonti (range $113.78-$140.69 in query1, $121.21 in query2), scarto stimato ~8-21% > soglia 4%"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "META",
+      "motivo": "Revenue +33% YoY (Q1 2026, massimo dal 2021), confermato da piu fonti su piu sessioni. Affidabilita prezzo MEDIA, confidenza segnale Alto."
+    },
+    {
+      "rank": 2,
+      "asset": "RACE",
+      "motivo": "Morgan Stanley upgrade a Overweight con PT euro380, confermato indipendentemente da GuruFocus. Buyback attivo euro9.3M come backstop. Affidabilita ALTA."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Tokenizzazione azioni SpaceX su Solana + rotazione istituzionale CoinShares da BTC/ETH verso SOL. +10.25% 24h con movimento anomalo che confirma domanda reale."
+    },
+    {
+      "rank": 4,
+      "asset": "ASML",
+      "motivo": "Rally settoriale semiconduttori + quota strategica in Mistral AI. Prezzo confermato $1863.55 su piu sessioni, affidabilita ALTA con riserva su indipendenza fonti."
+    },
+    {
+      "rank": 5,
+      "asset": "SLV",
+      "motivo": "Rally metalli preziosi (+3.56% SLV, +4.7% spot argento) post-collasso petrolio da ceasefire USA-Iran. Scarto fonti minimo, affidabilita ALTA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Sessione con qualita' dati eterogenea: 5/19 asset esclusi per scarto fonti eccessivo (TSLA, NVDA, SAP, GLD, USO). Molti BUY hanno confidenza Medio: size contenute consigliate.",
+    "allocazione_suggerita": {
+      "META": "16%",
+      "RACE": "15%",
+      "SOL": "14%",
+      "ASML": "9%",
+      "BTC": "8%",
+      "AMZN": "7%",
+      "GOOGL": "7%",
+      "SLV": "7%",
+      "STLAM": "7%",
+      "CASH": "10%"
+    },
+    "posizioni_in_attesa": ["AAPL (HOLD)", "MSFT (HOLD)", "NFLX (HOLD)", "AMD (HOLD)", "ETH (HOLD)"],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "AMD: verificare se l'inversione -4.62% di oggi si confermi o sia rumore intraday prima di riconsiderare BUY. NFLX: scarto fonti al limite della soglia BASSA, ri-validare prezzo alla prossima scansione. SAP/GLD/USO: tentare nuova triangolazione con fonti dirette (Investing.com NYSE puro, NYSE Arca diretto) per re-includere se possibile. STLAM: chiarire se l'utente necessita del dato Borsa Italiana EUR oltre a quello NYSE USD."
+  }
+}
