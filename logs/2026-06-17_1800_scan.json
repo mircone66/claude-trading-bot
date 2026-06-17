@@ -1,0 +1,371 @@
+{
+  "timestamp": "2026-06-17T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "17 giugno 2026: qualita' dei dati molto eterogenea, 8 asset su 19 esclusi per scarto fonti eccessivo o copertura insufficiente (NFLX, AMD, ASML, SAP, STLAM, GLD, SLV, USO). TECH USA: GOOGL e META restano i nomi piu solidi, sostenuti da catalizzatori concreti -> Alphabet ha raccolto $84.75B per investimenti AI con un coinvolgimento di Berkshire Hathaway da $10B, mentre Meta conferma fondamentali eccezionali ($115.8B operating cash flow, +33.1% revenue YoY, 3.56B utenti giornalieri). NVDA beneficia di un'emissione obbligazionaria di $25B (domanda per $85B) e di un rating analisti 'Strong Buy', ma i dati di prezzo/market cap raccolti oggi sono internamente incoerenti (range $5.07T-5.7T) -> confidenza Medio. AMZN sale +3.13% su Prime Day anticipato, pur con scrutinio regolatorio sulla pubblicita'. AAPL e MSFT restano in laterale/leggero calo senza catalizzatori forti (Apple: MACD segnala perdita di slancio del rally + probe DMA in Italia; Microsoft: crescita Azure sotto le attese). TSLA scende -1.58% su volume ben sotto la media, mentre l'IPO di SpaceX continua a ridisegnare l'attenzione degli investitori nel settore. NFLX e AMD esclusi per scarto fonti eccessivo (rispettivamente 4.18% e ~7.9%), ASML escluso per scarto 4.97% tra fonti ADR NASDAQ, SAP e STLAM esclusi per dati fortemente discordanti (probabile confusione tra listing/quotazioni diverse). RACE e' invece il nome EU piu solido: doppio upgrade/conferma da Goldman Sachs (PT alzato a euro383) e Jefferies (Buy, PT euro350), in continuita' con l'upgrade Morgan Stanley di ieri. COMMODITIES: nessun ETF commodity supera la soglia di affidabilita' oggi (GLD e SLV con singola fonte numerica, USO con scarto >15%), nonostante il contesto sottostante resti favorevole ai metalli preziosi (oro spot +3.4% a $4362, argento spot +4.7% a $71.20) sull'onda del crollo del petrolio WTI a circa $80/barile dopo l'accordo di pace USA-Iran. CRYPTO: BTC stabile/in leggero calo (-0.65% medio) con flussi istituzionali misti (MARA compra 1.000 BTC dopo aver venduto 20.880 BTC nel Q1, BlackRock CIO resta rialzista); ETH debole, in test del supporto pluriennale con dubbi sul ritorno sopra $2.000; SOL in consolidamento (-0.93% 24h) dopo il rally di ieri, ma l'ecosistema resta forte con Jupiter (+40%) e l'espansione della tokenizzazione di azioni (Coinbase lancia azioni SpaceX tokenizzate sulla scia del tema gia' visto su Solana ieri).",
+  "signals": [
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 372.05,
+      "change_24h": "+1.06%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (~24.88M vs media 33.97M)",
+      "news": "Alphabet ha raccolto $84.75 miliardi per investimenti AI, con un coinvolgimento di Berkshire Hathaway da $10 miliardi; segnale tecnico giornaliero 'Strong Buy', target medio analisti $432.83.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 372.05,
+      "stop_loss": 360.99,
+      "target": 390.65,
+      "commissione": 0.00,
+      "reasoning": "Raccolta di capitale AI senza precedenti confermata da fonte indipendente (tikr.com) insieme al consenso 'Strong Buy' degli analisti tecnici. Scarto fonti 0.65% (ALTA) supporta un ingresso con size piena. (Kraken/Investing.com/Macrotrends, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (aggregato intraday)", "price": 370.84},
+          {"name": "Investing.com/Macrotrends (aggregato)", "price": 373.25}
+        ],
+        "spread_pct": 0.65,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 599.16,
+      "change_24h": "+1.02%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Meta confirma fondamentali eccezionali: $115.8 miliardi di operating cash flow, revenue +33.1% YoY, 3.56 miliardi di utenti giornalieri attivi, forte spinta su investimenti AI.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 599.16,
+      "stop_loss": 581.29,
+      "target": 629.12,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidissimi confermati su piu sessioni consecutive, spread fonti contenuto (0.35%). Stesso nome top-pick della scansione di ieri, tesi rafforzata oggi. (Public.com/eToro/Yahoo Finance, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Public.com/eToro (aggregato)", "price": 600.21},
+          {"name": "Yahoo Finance (range intraday)", "price": 598.11}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 367.59,
+      "change_24h": "N/D",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (media ~1.42M azioni/giorno)",
+      "news": "Goldman Sachs alza il target price a euro383 (da euro382); Jefferies reitera Buy con target euro350. Doppia conferma analisti in continuita' con l'upgrade Morgan Stanley di ieri.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 367.59,
+      "stop_loss": 356.56,
+      "target": 385.97,
+      "commissione": 0.00,
+      "reasoning": "Terzo upgrade/conferma analisti in due sessioni (Morgan Stanley ieri, Goldman Sachs e Jefferies oggi), segnale di consenso istituzionale solido. Spread fonti 0.79% (ALTA). (Investing.com/WallStreetZen, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (intraday)", "price": 366.13},
+          {"name": "Investing.com (query separata, range giornaliero)", "price": 369.05}
+        ],
+        "spread_pct": 0.79,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 206.81,
+      "change_24h": "+0.20%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (dato non quantificato esplicitamente)",
+      "news": "NVIDIA ha raccolto $25 miliardi in bond high-grade (target iniziale $20B) con domanda per $85B; rating analisti medio 'Strong Buy', target 12 mesi $298.93 (+44% potenziale).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 206.81,
+      "stop_loss": 200.61,
+      "target": 217.15,
+      "commissione": 0.00,
+      "reasoning": "Domanda fortissima sull'emissione obbligazionaria confirma l'appetito degli investitori, ma i dati di market cap raccolti oggi sono incoerenti tra fonti ($5.07T vs $5.7T) -> confidenza ridotta a Medio nonostante lo spread di prezzo accettabile (0.58%). (Coinbase/Kraken/Yahoo Finance, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase/Kraken (aggregato)", "price": 206.20},
+          {"name": "Yahoo Finance/CNBC (chiusura)", "price": 207.41}
+        ],
+        "spread_pct": 0.58,
+        "affidabilita": "ALTA",
+        "nota": "Dati di contesto (market cap, variazione %) incoerenti tra le fonti raccolte; il prezzo puntuale resta comunque verificato su 2 fonti con scarto contenuto."
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 246.01,
+      "change_24h": "+3.13%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Amazon sale in vista del Prime Day anticipato, ma affronta scrutinio regolatorio sulle pratiche pubblicitarie con possibili sanzioni.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 246.01,
+      "stop_loss": 238.63,
+      "target": 258.31,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore positivo concreto (Prime Day) bilanciato da un rischio regolatorio non quantificabile nel breve. Spread fonti minimo (0.01%, ALTA): procedere con size moderata vista l'incertezza regolatoria. (CNN Markets/Public.com/Yahoo Finance, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN Markets (chiusura)", "price": 246.00},
+          {"name": "Yahoo Finance/CNBC (chiusura)", "price": 246.02}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.59,
+      "change_24h": "-0.93%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($2.3B 24h)",
+      "news": "Consolidamento dopo il rally di ieri (+10.25%); l'ecosistema resta forte con Jupiter (token su Solana) +40% e Coinbase che lancia azioni SpaceX tokenizzate, in continuita' con il tema di tokenizzazione visto ieri su Solana.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 73.59,
+      "stop_loss": 69.91,
+      "target": 79.48,
+      "commissione": 0.00,
+      "reasoning": "Pausa di digestione dopo il forte rally di ieri, ma i fondamentali dell'ecosistema (Jupiter +40%, espansione tokenizzazione equity) restano un catalizzatore valido. Spread fonti 0.67% (ALTA). (CoinMarketCap/Coinbase, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 73.83},
+          {"name": "Coinbase", "price": 73.34}
+        ],
+        "spread_pct": 0.67,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 65403.25,
+      "change_24h": "-0.65%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($23.8B 24h)",
+      "news": "MARA compra 1.000 BTC via FalconX dopo aver venduto 20.880 BTC nel Q1 (segnale misto sulla strategia di treasury); il CIO di BlackRock resta rialzista nonostante la competizione di capitale dell'AI boom.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 65403.25,
+      "stop_loss": 62133.09,
+      "target": 70635.51,
+      "commissione": 0.00,
+      "reasoning": "Segnali istituzionali contrastanti (MARA netto venditore nel trimestre nonostante l'acquisto recente) bilanciati da un outlook rialzista di BlackRock. Spread fonti 0.73% (ALTA) ma leggero calo di prezzo oggi suggerisce attesa. (CoinMarketCap/Coinbase, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 65165.91},
+          {"name": "Coinbase", "price": 65640.59}
+        ],
+        "spread_pct": 0.73,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 299.24,
+      "change_24h": "+1.82%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Struttura tecnica giornaliera rialzista (prezzo sopra le 3 medie mobili principali), ma il MACD segnala una possibile perdita di slancio del rally; in parallelo Apple affronta un'indagine DMA in Italia su interoperabilita' cloud.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 299.24,
+      "stop_loss": 290.36,
+      "target": 314.20,
+      "commissione": 0.00,
+      "reasoning": "Segnali contrastanti: struttura tecnica ancora rialzista ma con warning di esaurimento del momentum (MACD), aggravato da un rischio regolatorio in Italia non quantificabile. (CNN Markets/Investing.com/Stockanalysis.com, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN Markets/TradingView (aggregato)", "price": 299.24},
+          {"name": "Investing.com/Stockanalysis.com (aggregato)", "price": 299.24}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Le due query hanno restituito lo stesso valore esatto, probabile sintesi dalla stessa fonte primaria: non rappresenta una doppia verifica pienamente indipendente."
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 393.82,
+      "change_24h": "-1.41%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "La crescita di Azure e' risultata sotto le attese, alimentando l'esitazione degli investitori; prossimi utili previsti per il 28/7/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 393.82,
+      "stop_loss": 382.01,
+      "target": 413.51,
+      "commissione": 0.00,
+      "reasoning": "Calo settimanale (-1.17%) legato a una crescita Azure sotto le attese; nessun catalizzatore fresco prima degli utili di fine luglio. (Stocktwits/TradingView/Yahoo Finance, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stocktwits/TradingView (aggregato)", "price": 393.83},
+          {"name": "CNBC (sintesi)", "price": 393.80}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "MEDIA",
+        "nota": "Le due cifre derivano probabilmente da una sintesi aggregata condivisa, non da due fonti pienamente indipendenti verificate separatamente."
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 404.42,
+      "change_24h": "-1.58%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (23.85M vs media 49.81M, -52%)",
+      "news": "Tesla scende mentre l'IPO di SpaceX aumenta significativamente la ricchezza di Musk; gli analisti restano divisi tra la tesi AI/robotics e la crescita tradizionale automotive (fair value adeguato a $420.55).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 404.42,
+      "stop_loss": 392.29,
+      "target": 424.64,
+      "commissione": 0.00,
+      "reasoning": "Calo (-1.58%) accompagnato da un volume ben sotto la media (-52%), segnale di scarsa convinzione direzionale. Meglio attendere conferma prima di un nuovo ingresso. (Kraken/Yahoo Finance/CNBC, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (aggregato intraday)", "price": 404.17},
+          {"name": "Yahoo Finance/CNBC (chiusura)", "price": 404.66}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1779.70,
+      "change_24h": "-1.91%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($16.8B 24h)",
+      "news": "Ethereum testa un trendline di supporto pluriennale, con dubbi crescenti sulla capacita' di riconquistare la soglia psicologica dei $2.000.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1779.70,
+      "stop_loss": 1690.72,
+      "target": 1921.08,
+      "commissione": 0.00,
+      "reasoning": "Test di un supporto tecnico chiave pluriennale con momentum debole; attendere una rottura confermata in una direzione prima di posizionarsi. Spread fonti minimo (0.05%, ALTA). (CoinMarketCap/Coinbase, 17/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 1779.24},
+          {"name": "Coinbase", "price": 1780.16}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NFLX",
+      "motivo": "Scarto fonti 4.18% ($78.72 vs $82.08) > soglia 4%"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Scarto fonti ~7.9% tra le due query principali ($548.80 vs $507.3 riportato da Yahoo Finance), nessuna seconda fonte realmente indipendente confermata nelle ricerche di chiarimento"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Scarto fonti 4.97% tra quotazioni ADR NASDAQ ($1895.77 vs $1803.89) > soglia 4%"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Dati fortemente discordanti tra fonti ($181.79 / $310.33 / $202.25), probabile confusione tra ADR NYSE e quotazione Xetra/Francoforte"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Dati fortemente discordanti sul ticker NYSE STLA ($7.98 / $9.81 / $6.78), scarto >20% > soglia 4%; inoltre il ticker STLAM dell'utente corrisponde a Borsa Italiana in EUR, non verificata in questa sessione"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Solo 1 fonte con prezzo numerico esplicito ($397.19); Query 2 non ha restituito un quote live verificabile -> affidabilita BASSA per fonti<2"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Solo 1 fonte con prezzo numerico esplicito ($63.39); Query 2 non ha restituito dati di prezzo (solo risultati generici) -> affidabilita BASSA per fonti<2"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Prezzi fortemente discordanti tra fonti ($140.69 / $113.82 / $119.73), scarto stimato >15% > soglia 4%"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "META",
+      "motivo": "Fondamentali eccezionali confermati su piu sessioni ($115.8B operating cash flow, +33.1% revenue YoY). Affidabilita prezzo ALTA, confidenza segnale Alto."
+    },
+    {
+      "rank": 2,
+      "asset": "RACE",
+      "motivo": "Terzo upgrade/conferma analisti in due sessioni (Morgan Stanley, Goldman Sachs, Jefferies). Consenso istituzionale solido, affidabilita ALTA."
+    },
+    {
+      "rank": 3,
+      "asset": "GOOGL",
+      "motivo": "Raccolta record di $84.75B per investimenti AI con coinvolgimento Berkshire Hathaway $10B; segnale tecnico Strong Buy."
+    },
+    {
+      "rank": 4,
+      "asset": "SOL",
+      "motivo": "Consolidamento sano dopo il rally del +10.25% di ieri; ecosistema forte (Jupiter +40%, espansione tokenizzazione equity)."
+    },
+    {
+      "rank": 5,
+      "asset": "NVDA",
+      "motivo": "Emissione obbligazionaria $25B con domanda record $85B confirma appetito investitori; rating Strong Buy con target +44%."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Sessione con qualita' dati molto eterogenea: 8/19 asset esclusi per scarto fonti eccessivo o copertura insufficiente (NFLX, AMD, ASML, SAP, STLAM, GLD, SLV, USO). Nessun ETF commodity disponibile oggi.",
+    "allocazione_suggerita": {
+      "META": "16%",
+      "RACE": "15%",
+      "GOOGL": "13%",
+      "SOL": "10%",
+      "NVDA": "9%",
+      "AMZN": "8%",
+      "BTC": "7%",
+      "CASH": "22%"
+    },
+    "posizioni_in_attesa": ["AAPL (HOLD)", "MSFT (HOLD)", "TSLA (HOLD)", "ETH (HOLD)", "BTC (HOLD)"],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "AMD/ASML/SAP/STLAM: ri-validare con fonti dirette (Investing.com NYSE puro, Stockanalysis.com) per tentare di re-includere; i dati odierni mostrano confusione sistematica tra listing diversi. GLD/SLV: tentare query alternative (NYSE Arca diretto, ETF.com) per ottenere una seconda fonte numerica pulita. NFLX: scarto fonti sopra soglia per il secondo giorno consecutivo, monitorare se si stabilizza. CASH elevato (22%) riflette la scarsita' di segnali ad alta confidenza in questa sessione."
+  }
+}
