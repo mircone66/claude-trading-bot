@@ -1,0 +1,411 @@
+{
+  "timestamp": "2026-06-19T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "19 giugno 2026: giornata di risk-off diffuso, innescata da un forte selloff sui titoli IT/tech a livello globale che si propaga su metalli preziosi e crypto, mentre tornano gli option expiry 'triple witching' su BTC/ETH/SOL. 5 asset su 19 esclusi per scarto fonti eccessivo o copertura insufficiente (AMD, SAP, GLD, USO, SOL) -> qualità dati ancora eterogenea sulle commodity ETF e su alcune large cap minori. TECH USA: quadro misto senza una direzione netta. AMZN continua il rimbalzo di ieri (+2.95%) trainato dal lancio anticipato delle offerte Prime Day 2026, consensus 'Strong Buy' con target $305.98 -> BUY in continuazione. META rimbalza (+1.70%/+2.51% secondo le fonti) dopo il crollo della settimana, sostenuta da un consensus 'Strong Buy' con target $826.63 (oltre +40% di upside) nonostante i rischi residui legati alla breach di sicurezza e all'unwind del deal Manus -> BUY tattico sul rimbalzo. MSFT si stabilizza intorno a $379 (-0.61%) dopo il calo di ieri, supportata dal piano capex AI da $190B ma senza nuovi catalizzatori -> HOLD. AAPL resta in laterale vicino a $299, con il rally che secondo l'analisi tecnica (MACD) perde forza, mentre Tim Cook avverte di rialzi di prezzo inevitabili per i costi della memoria -> HOLD. TSLA e NVDA restano in HOLD: Musk ha incassato un payday stimato $116B esercitando stock option (segnale di fiducia insider) ma il titolo cede comunque in giornata; Nvidia bilancia lo short di Michael Burry con notizie favorevoli legate a Oracle. GOOGL resta laterale (-1.02% secondo l'aggregato notizie) con Strong Buy a target $432.83 ma nessun catalizzatore fresco. NFLX rimbalza marginalmente (+0.26%) ma il trend mensile resta negativo (-14.4%) sulle voci di acquisizioni mancate. EUROPA SU NYSE/NASDAQ: ASML segna nuovi massimi (+3.31% vs chiusura precedente) dopo le dichiarazioni di Elon Musk su nuove capacità di manifattura dei semiconduttori per Tesla/SpaceX, viste come positive per il settore -> BUY. RACE (Ferrari) mostra lo stesso prezzo esatto di ieri ($354.28), probabile dato cache/non aggiornato, nessuna notizia fresca oltre agli upgrade di Goldman Sachs e Jefferies già noti -> HOLD con cautela sui dati. STLA (Stellantis, ticker NYSE corrispondente a STLAM) sale leggermente (+2.01%) ma affronta un richiamo di oltre 1 milione di veicoli per rischio incendio, bilanciato dall'espansione del brand Maserati e dalla partnership robotaxi con Uber e Wayve -> HOLD. SAP resta escluso per dati fortemente discordanti tra ADR NYSE e listing Xetra. COMMODITIES: SLV inverte bruscamente rotta (NAV -2.95%) in scia a un selloff diffuso sugli ETF su metalli preziosi (fino al -6% in alcuni mercati) legato al risk-off globale dell'IT selloff, confermando il warning UBS di ieri su un rally maturo dopo il +140% annuo -> SELL. GLD e USO restano esclusi per assenza di una seconda fonte numerica pulita (query dedicata NYSE Arca senza prezzo esplicito). CRYPTO: BTC (-2.84%) ed ETH (-2.86%) restano sotto pressione per la stretta retorica della Fed e per la volatilità da scadenza opzioni 'triple witching', con flussi di capitale in rotazione verso semiconduttori e memory stock -> entrambi HOLD in attesa di stabilizzazione. SOL escluso oggi per scarto fonti 4.36% (CoinMarketCap $71.31 vs Coinbase $68.27), marginalmente sopra soglia, anche se altre fonti non ufficiali (CoinGecko, Crypto.com) convergono intorno a $69.3-69.6 -> da ri-validare domani.",
+  "signals": [
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1929.68,
+      "change_24h": "+3.31%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "ASML tra i titoli di semiconduttori ai massimi storici dopo le dichiarazioni di Elon Musk su nuove capacità di manifattura chip per Tesla/SpaceX, viste come positive per il settore equipment; consensus 'Strong Buy' da 44 analisti.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1929.68,
+      "stop_loss": 1871.79,
+      "target": 2026.16,
+      "commissione": 0.00,
+      "reasoning": "Momentum forte (+3.31% vs chiusura precedente) sostenuto da un catalizzatore di settore positivo e da un consensus Strong Buy; le due query convergono sullo stesso valore esatto (probabile fonte condivisa Investing.com) -> affidabilità MEDIA, size contenuta vista la rapidità del rally. (Investing.com, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (NASDAQ ADR, query dedicata)", "price": 1929.68},
+          {"name": "Investing.com (query quote)", "price": 1929.68}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Le due query hanno restituito lo stesso valore esatto, probabile sintesi dalla stessa fonte primaria: non rappresenta una doppia verifica pienamente indipendente."
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 244.68,
+      "change_24h": "+2.95%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Amazon prosegue il rimbalzo di ieri grazie al lancio anticipato delle offerte Prime Day 2026; consensus analisti 'Strong Buy' con target $305.98 (+25% circa dal prezzo corrente).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 244.68,
+      "stop_loss": 237.34,
+      "target": 256.91,
+      "commissione": 0.00,
+      "reasoning": "Continuazione del rimbalzo dopo la debolezza di ieri, sostenuta da un catalizzatore commerciale concreto (Prime Day) e da un ampio margine di upside secondo il consensus analisti. Spread fonti 0.24% (ALTA). (CNN Markets/CNBC, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradersUnion/CNN (aggregato)", "price": 244.97},
+          {"name": "CNBC/Yahoo Finance (chiusura)", "price": 244.39}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 579.54,
+      "change_24h": "+1.70%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Meta rimbalza dopo il crollo della settimana scorsa; consensus 'Strong Buy' con target $826.63 (oltre +40% di upside), nonostante i rischi residui legati alla breach di sicurezza sui tool AI e all'unwind del deal Manus da $2B.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 579.54,
+      "stop_loss": 562.16,
+      "target": 608.52,
+      "commissione": 0.00,
+      "reasoning": "Primo segnale di stabilizzazione dopo settimane di calo marcato, con un gap di valutazione molto ampio rispetto al target medio degli analisti; ingresso tattico sul rimbalzo con stop stretto data la volatilità residua sulle notizie negative. Spread fonti 0.80% (ALTA) tra le due quotazioni più recenti; una terza fonte ha riportato $567.58 (-4.27%), scartata come probabile dato disallineato nel tempo. (eToro/Public.com, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Public.com/TradingView (chiusura)", "price": 577.22},
+          {"name": "eToro (corrente)", "price": 581.85}
+        ],
+        "spread_pct": 0.80,
+        "affidabilita": "ALTA",
+        "nota": "Una terza fonte ha riportato $567.58 (-4.27%), scartata come anomalia/dato non sincronizzato rispetto alle altre due quotazioni più ravvicinate nel tempo."
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 60.55,
+      "change_24h": "-2.95%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Selloff diffuso sugli ETF di metalli preziosi (fino al -6% in alcuni mercati) legato al risk-off globale scatenato da un selloff dei titoli IT/tech; il warning UBS di ieri su un rally maturo dopo il +140% annuo si conferma.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 60.55,
+      "stop_loss": 59.34,
+      "target": 62.97,
+      "commissione": 0.00,
+      "reasoning": "Inversione netta rispetto al contesto favorevole di ieri: il calo del NAV (-2.95%) e il selloff diffuso sui metalli preziosi confermano l'esaurimento del rally segnalato da UBS, suggerendo presa di profitto piuttosto che nuovi ingressi. Spread fonti 2.44% (MEDIA). (Investing.com/iShares, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "iShares (NAV ufficiale)", "price": 61.29},
+          {"name": "Investing.com (prezzo di mercato aggregato)", "price": 59.81}
+        ],
+        "spread_pct": 2.44,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 298.63,
+      "change_24h": "+0.95%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Tim Cook avverte che i prezzi dei prodotti Apple saliranno per l'aumento dei costi di memoria e storage; analisi tecnica (MACD) segnala che il rally sopra $299 sta perdendo forza.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 298.63,
+      "stop_loss": 289.67,
+      "target": 313.56,
+      "commissione": 0.00,
+      "reasoning": "Nessun catalizzatore netto: il rischio margini da rincari sui componenti è bilanciato dalla forza del titolo vicino ai massimi, ma i segnali tecnici suggeriscono cautela. Spread fonti 0.41% (ALTA). (Yahoo Finance/StockAnalysis.com, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/StockAnalysis.com (intraday)", "price": 299.24},
+          {"name": "CNN Markets (chiusura precedente)", "price": 298.01}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 207.82,
+      "change_24h": "+0.90%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Michael Burry avrebbe aperto una posizione short su Nvidia, bilanciata da notizie favorevoli legate a Oracle; il titolo resta a +44.67% sulle 52 settimane con consensus 'Strong Buy'.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 207.82,
+      "stop_loss": 201.59,
+      "target": 218.21,
+      "commissione": 0.00,
+      "reasoning": "Segnali contrastanti (short di un investitore noto vs notizie favorevoli lato cloud/Oracle) senza una direzione netta; spread fonti 1.28% (ALTA) tra le due quotazioni più recenti. (StockAnalysis.com/CNBC, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Coinbase (aggregato)", "price": 206.49},
+          {"name": "StockAnalysis.com", "price": 209.14}
+        ],
+        "spread_pct": 1.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 379.40,
+      "change_24h": "-0.61%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Microsoft prosegue il piano di investimenti AI da $190 miliardi di capex per il 2026; consensus 'Strong Buy' (56 analisti, target $561.39), ma nessun nuovo catalizzatore specifico oggi dopo il calo di ieri legato alle preoccupazioni su Azure.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 379.40,
+      "stop_loss": 368.02,
+      "target": 398.37,
+      "commissione": 0.00,
+      "reasoning": "Il prezzo si stabilizza vicino a $379 dopo il calo di ieri, senza un catalizzatore netto in una direzione o nell'altra; le tre citazioni raccolte convergono sullo stesso valore esatto (probabile fonte condivisa) -> affidabilità MEDIA non rappresentata da una doppia verifica pienamente indipendente, mantenuta cautela in HOLD. (Yahoo Finance/StockAnalysis.com, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (chiusura/after-hours)", "price": 379.40},
+          {"name": "StockAnalysis.com (query dedicata)", "price": 379.40}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Le query hanno restituito lo stesso valore esatto, probabile sintesi dalla stessa fonte primaria: non rappresenta una doppia verifica pienamente indipendente."
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 367.90,
+      "change_24h": "-1.02%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Nessuna notizia fresca specifica oggi; consensus 'Strong Buy' (63 analisti, target $432.83, +17.6%) resta valido, mentre il recall robotaxi Waymo della scorsa settimana continua a pesare marginalmente sul sentiment.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 367.90,
+      "stop_loss": 356.97,
+      "target": 386.30,
+      "commissione": 0.00,
+      "reasoning": "Assenza di catalizzatori netti oggi; il consensus positivo di lungo periodo non è sufficiente a generare un segnale direzionale nel breve. Spread fonti 0.32% (ALTA) tra prezzo corrente e massimo di giornata. (Kraken/Nasdaq, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (aggregato, corrente)", "price": 367.32},
+          {"name": "Nasdaq (massimo di giornata)", "price": 368.48}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 77.38,
+      "change_24h": "+0.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Netflix tenta un rimbalzo marginale (+0.26%) ma resta in calo del -14.4% nell'ultimo mese sulle voci di acquisizioni mancate (Roku, Warner Bros Discovery); consensus 'Buy' con target $114.15 (+48%).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 77.38,
+      "stop_loss": 75.06,
+      "target": 81.25,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo troppo debole per confermare un'inversione di trend dopo settimane di calo marcato; meglio attendere ulteriore conferma. Le due query convergono sullo stesso valore esatto (probabile fonte condivisa) -> affidabilità MEDIA. (Kraken/StockAnalysis.com, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (aggregato)", "price": 77.38},
+          {"name": "StockAnalysis.com", "price": 77.38}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Le due query hanno restituito lo stesso valore esatto, probabile sintesi dalla stessa fonte primaria. Una terza citazione ha riportato $82.08 (+6.07%), scartata come anomalia non corroborata dal resto delle fonti e in contraddizione con la narrativa ribassista delle notizie."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 354.28,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Nessuna notizia fresca specifica su Ferrari individuata nella query aggregata odierna; restano validi gli upgrade di Goldman Sachs (target €383) e Jefferies (Buy, target €350) emersi nei giorni precedenti.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 354.28,
+      "stop_loss": 343.65,
+      "target": 372.00,
+      "commissione": 0.00,
+      "reasoning": "Il prezzo restituito dalle due query è identico a quello validato ieri ($354.28), un'anomalia che suggerisce dati possibilmente non aggiornati (cache); in assenza di conferma di un prezzo realmente live si mantiene HOLD con cautela sui dati. (Investing.com, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (query dedicata)", "price": 354.28},
+          {"name": "Investing.com (query quote)", "price": 354.28}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzo identico a ieri su entrambe le query: probabile dato cache non aggiornato in tempo reale, da ri-validare con fonte alternativa domani."
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 6.39,
+      "change_24h": "+2.01%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (16.92M vs media 19.55M)",
+      "news": "Stellantis (ticker NYSE: STLA, equivalente verificato per STLAM) affronta un richiamo di oltre 1 milione di veicoli per rischio incendio, bilanciato dall'espansione del brand Maserati e da una partnership robotaxi con Uber e Wayve; consensus 'Hold' (10 analisti).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 6.39,
+      "stop_loss": 6.20,
+      "target": 6.71,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatori contrastanti (richiamo per rischio incendio vs espansione Maserati/robotaxi) senza una direzione netta; titolo vicino ai minimi delle 52 settimane ($6.22). Spread fonti 0.00% (MEDIA, stesso valore su entrambe le query). Una terza citazione ha riportato $7.98 riferita a una data diversa, scartata come dato non corrente. (Yahoo Finance/CNBC, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (query dedicata)", "price": 6.39},
+          {"name": "CNBC/Robinhood (query quote)", "price": 6.39}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Le due query hanno restituito lo stesso valore esatto, probabile sintesi dalla stessa fonte primaria. Ticker NYSE corrispondente al ticker utente STLAM (Borsa Italiana) è STLA."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63428.75,
+      "change_24h": "-2.84%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($29.0B 24h)",
+      "news": "Bitcoin resta sotto pressione dopo il tono hawkish della Fed, con volatilità aggiuntiva legata alla scadenza di opzioni 'triple witching' su BTC/ETH/XRP/SOL; capitali in rotazione verso semiconduttori e memory stock.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63428.75,
+      "stop_loss": 60257.31,
+      "target": 68503.05,
+      "commissione": 0.00,
+      "reasoning": "Prezzo stabile rispetto a ieri (63.4K vs 63.3K) dopo il forte calo di ieri, ma la rotazione dei capitali verso altri asset e la volatilità da scadenza opzioni consigliano attesa prima di nuovi ingressi. Spread fonti 3.02% (MEDIA). (CoinMarketCap/Coinbase, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 62471.16},
+          {"name": "Coinbase", "price": 64386.33}
+        ],
+        "spread_pct": 3.02,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1714.45,
+      "change_24h": "-2.86%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($13.7B 24h)",
+      "news": "Ethereum scivola in scia al Bitcoin per la volatilità da scadenza opzioni 'triple witching'; Morgan Stanley deposita aggiornamenti per ETF su ETH e SOL con le commissioni più basse del mercato, segnale positivo di medio periodo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1714.45,
+      "stop_loss": 1628.73,
+      "target": 1851.61,
+      "commissione": 0.00,
+      "reasoning": "Movimento in linea con il resto del mercato crypto nel breve, ma il deposito Morgan Stanley per ETF a basse commissioni è un catalizzatore positivo di medio periodo da monitorare. Spread fonti 2.89% (MEDIA). (CoinMarketCap/Yahoo Finance, 19/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 1689.70},
+          {"name": "Yahoo Finance (aggregato Coinbase/CMC)", "price": 1739.19}
+        ],
+        "spread_pct": 2.89,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AMD",
+      "motivo": "Scarto fonti estremo tra le due query ($537.37 chiusura Yahoo Finance vs $283.85 intraday), spread ~89% >> soglia 4%; pattern ricorrente di dati discordanti già osservato nei giorni precedenti"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Dati fortemente discordanti tra fonti e listing diversi (ADR NYSE $181.79 stale/$202.25 corrente vs Xetra €134.41), confusione sistematica tra quotazioni come nei giorni precedenti"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "La query dedicata NYSE Arca non ha restituito un prezzo numerico esplicito; l'unica query con dati numerici presenta valori interni dispersi (390.29/387.12/380.32) senza attribuzione chiara a fonti distinte -> affidabilità BASSA per fonti<2"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Prezzi fortemente discordanti tra fonti ($111.99 Investing.com / $140.69 anomalia ricorrente Kraken), la query dedicata NYSE Arca non ha restituito un prezzo numerico verificabile -> fonti<2 affidabili"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Scarto fonti 4.36% (CoinMarketCap $71.31 vs Coinbase $68.27), marginalmente sopra la soglia del 4%; altre fonti non ufficiali (CoinGecko $69.44, Crypto.com $69.56) convergono in un range più ristretto, da ri-validare domani"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "Nuovi massimi (+3.31%) dopo le dichiarazioni di Musk su semiconduttori per Tesla/SpaceX, consensus Strong Buy da 44 analisti."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "Continuazione del rimbalzo (+2.95%) trainato dal lancio anticipato del Prime Day 2026, target analisti $305.98 (+25%)."
+    },
+    {
+      "rank": 3,
+      "asset": "META",
+      "motivo": "Primo segnale di stabilizzazione dopo il crollo della settimana, gap molto ampio verso il target medio analisti ($826.63)."
+    },
+    {
+      "rank": 4,
+      "asset": "SLV",
+      "motivo": "Segnale SELL: inversione netta con selloff diffuso sui metalli preziosi, conferma del warning UBS su rally maturo dopo +140% annuo."
+    },
+    {
+      "rank": 5,
+      "asset": "MSFT",
+      "motivo": "Prezzo in stabilizzazione dopo il calo di ieri, da monitorare per un possibile rientro vista la forza del piano capex AI da $190B."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Giornata di risk-off su tech/IT a livello globale che si propaga su metalli preziosi e crypto; 5/19 asset esclusi per scarto fonti eccessivo o copertura insufficiente (AMD, SAP, GLD, USO, SOL). 3 segnali BUY (ASML, AMZN, META), 1 SELL (SLV), resto in HOLD per affidabilità MEDIA/BASSA o assenza di catalizzatori netti.",
+    "allocazione_suggerita": {
+      "ASML": "12%",
+      "AMZN": "12%",
+      "META": "10%",
+      "BTC": "5%",
+      "ETH": "4%",
+      "CASH": "57%"
+    },
+    "posizioni_in_attesa": ["AAPL (HOLD)", "TSLA (HOLD)", "NVDA (HOLD)", "MSFT (HOLD)", "GOOGL (HOLD)", "NFLX (HOLD)", "RACE (HOLD)", "STLAM (HOLD)", "BTC (HOLD)", "ETH (HOLD)"],
+    "posizioni_da_ridurre": ["SLV (SELL)"],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "AMD/SAP: scarto fonti persistente da più giorni, valutare fonti dirette alternative per provare a re-includerli. GLD/USO: la query dedicata NYSE Arca continua a non restituire un prezzo numerico pulito, tentare query alternative (SSGA/USCF diretto). SOL: oggi appena sopra soglia (4.36%), ma altre fonti non ufficiali convergono in un range più ristretto, ri-validare domani. RACE: prezzo identico a ieri su entrambe le query, possibile dato cache, verificare con fonte alternativa. Cash elevato (57%) riflette un contesto di risk-off diffuso con pochi segnali ad alta confidenza."
+  }
+}
