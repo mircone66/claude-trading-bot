@@ -1,0 +1,343 @@
+{
+  "timestamp": "2026-06-21T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "21 giugno 2026: ALERT QUALITA' DATI GRAVE E IN PEGGIORAMENTO. Il problema di dati cache/non realmente live, gia' osservato ieri solo su ASML/MSFT/NFLX, si e' ESTESO oggi a piu' large cap chiave: AMZN ha restituito lo stesso identico headline/prezzi di ieri (TradersUnion $244.97 / CNN $244.39, articolo Prime Day identico parola per parola), META ha restituito un singolo prezzo ($577.22) identico alla virgola a quello di ieri senza una seconda fonte indipendente, GLD ha restituito valori quasi identici a ieri (384.49/387.12 vs 384.49/387.12 di ieri), MSFT resta sospetto (379.10/379.40, gia' visto ieri) e TSLA ha restituito un prezzo esplicitamente datato 18/6 (3 giorni fa) come se fosse 'oggi'. Di conseguenza i segnali su questi nomi sono stati tutti declassati a HOLD con confidenza Basso/Medio nonostante notizie di per se' potenzialmente favorevoli, perche' non e' possibile confermare che il prezzo rifletta il mercato odierno. 8/19 asset esclusi completamente: AAPL e GOOGL per fonte singola/imprecisa (nessun secondo prezzo numerico indipendente), AMD per scarto fonti ormai estremo e crescente (283.85 vs 512.48 vs 537.37, oltre il 45%), ASML per prezzo USD invariato da 2 giorni ($1929.68, datato 19/6) con seconda fonte in EUR non comparabile, SAP per dati USD discordanti tra le stesse fonti (181.79 vs 202.25) oltre alla solita confusione NYSE/Xetra, STLAM per listing non comparabili (STLA NYSE $8.50 vs STLAM Milano EUR6.22, nessun rapporto ADR verificabile), SLV per seconda fonte esplicitamente datata 18/6. NOTA POSITIVA: USO torna validabile per la prima volta dopo giorni di esclusione (tre fonti concordanti $114.23-$114.87, spread <0.6%) e RACE torna validabile con due fonti che concordano e sono correttamente datate ad oggi (pur identiche, quindi probabile singolo feed) - supportato da un upgrade concreto di Morgan Stanley a Overweight (target $438 da $388). TECH USA: NVDA prosegue il momentum AI/chip (close $210.69, dato unico CNN) -> BUY cauto, ma un articolo Motley Fool segnala il rischio di un boom AI finanziato a debito (Nvidia/Oracle/SpaceX che si indebitano pesantemente). EUROPA SU NYSE/NASDAQ: RACE BUY su upgrade concreto; ASML/SAP/STLAM esclusi per la qualita' dei dati persistente. COMMODITIES: GLD HOLD con cache sospetta e quadro macro negativo (gold/silver ETF in vendita fino al -6% per risk-off/selloff IT); USO HOLD prudente alla prima validazione, nessun catalizzatore specifico individuato nella query aggregata di oggi. CRYPTO: BTC BUY cauto, si stabilizza vicino a $64k dopo il selloff di venerdi' ma con rischio geopolitico (tensioni sullo stretto di Hormuz che incombono sui colloqui di cessate il fuoco USA-Iran); ETH HOLD, prezzo in leggero rialzo ma notizie negative concrete (exploit sandwich-bot da $7.5M, dimissioni di una co-direttrice della Ethereum Foundation, flussi in uscita dai prodotti ETH secondo CoinShares); SOL BUY, rotazione istituzionale in ingresso su prodotti SOL/XRP secondo CoinShares, in continuita' con i catalizzatori Moody's/Morgan Stanley dei giorni scorsi.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 210.51,
+      "change_24h": "+2.78% (stimato, fonte unica)",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Nvidia prosegue il momentum AI/chip con il market cap che avrebbe toccato $5.7 trilioni; un articolo Motley Fool segnala pero' il rischio che Nvidia, Oracle e SpaceX si stiano indebitando pesantemente per finanziare il boom AI, sollevando dubbi sulla sostenibilita'.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 210.51,
+      "stop_loss": 204.19,
+      "target": 221.04,
+      "commissione": 0.00,
+      "reasoning": "Momentum confermato ma la seconda query non ha prodotto una fonte USD pienamente indipendente: validazione interna su chiusura ($210.69) vs after-hours ($210.33) della stessa fonte CNN, spread 0.17% (MEDIA). Cautela aggiuntiva per il rischio leva/debito segnalato da Motley Fool sul settore AI. (CNN Markets, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN Markets (chiusura)", "price": 210.69},
+          {"name": "CNN Markets (after-hours)", "price": 210.33}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "MEDIA",
+        "nota": "Nessuna seconda fonte USD pienamente indipendente individuata oggi; validazione interna sulla stessa fonte aggregata."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 362.13,
+      "change_24h": "N/D",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Morgan Stanley ha alzato il rating su Ferrari a Overweight da Equal Weight, con target price aumentato a $438 da $388 (+20.8% upside dal prezzo attuale); consensus 14 analisti 'Strong Buy'.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 362.13,
+      "stop_loss": 351.27,
+      "target": 380.24,
+      "commissione": 0.00,
+      "reasoning": "Le due query restituiscono lo stesso identico valore (probabile singolo feed, spread 0.00%) ma entrambe correttamente datate ad oggi 21/6 -- a differenza dei giorni scorsi quando RACE era escluso per mismatch di date. Catalizzatore concreto: upgrade Morgan Stanley con target +20.8%. (CNBC/Yahoo Finance, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Yahoo Finance (query 1)", "price": 362.13},
+          {"name": "Yahoo Finance/Seeking Alpha (query 2)", "price": 362.13}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Valore identico tra le due query: probabile singolo feed sottostante, non una doppia verifica pienamente indipendente. Correttamente datato a oggi."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63922.38,
+      "change_24h": "+0.43%/+0.51%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($16.9B 24h)",
+      "news": "Bitcoin si mantiene vicino a $64.000 dopo il selloff di venerdi', mentre rinnovate tensioni sullo stretto di Hormuz gettano un'ombra sui colloqui di cessate il fuoco USA-Iran.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 63922.38,
+      "stop_loss": 60726.26,
+      "target": 69036.17,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti contenuto (0.13%, ALTA) tra CoinMarketCap e Coinbase. Stabilizzazione dopo il selloff di venerdi', ma il rischio geopolitico (Hormuz) impone una confidenza moderata piuttosto che alta. (CoinMarketCap/Coinbase, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 63964.73},
+          {"name": "Coinbase", "price": 63880.03}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 72.90,
+      "change_24h": "+2.30%/+3.48%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($1.83B 24h)",
+      "news": "CoinShares segnala rotazione istituzionale in ingresso sui prodotti legati a SOL e XRP, mentre i prodotti BTC ed ETH registrano forti deflussi settimanali; continuita' con i catalizzatori dei giorni scorsi (rating Moody's, deposito ETF Morgan Stanley).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 72.90,
+      "stop_loss": 69.26,
+      "target": 78.73,
+      "commissione": 0.00,
+      "reasoning": "Scarto fonti 2.95% (MEDIA) tra CoinMarketCap e Coinbase, leggermente sopra la soglia ALTA ma supportato da un flusso istituzionale concreto e continuativo verso i prodotti SOL secondo CoinShares. (CoinMarketCap/Coinbase, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 73.96},
+          {"name": "Coinbase", "price": 71.84}
+        ],
+        "spread_pct": 2.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 114.60,
+      "change_24h": "-1.07% (Pluang) / N/D altre fonti",
+      "trend_5d": "laterale",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Nessun catalizzatore specifico individuato nella query aggregata di oggi su gold/silver/oil ETF; il contesto resta quello del rally petrolifero legato alle tensioni in Medio Oriente segnalato nei giorni precedenti.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 114.60,
+      "stop_loss": 112.31,
+      "target": 119.18,
+      "commissione": 0.00,
+      "reasoning": "Torna validabile per la prima volta dopo giorni di esclusione: tre fonti (Robinhood $114.70, Investing.com $114.87, Pluang $114.23) tra loro concordanti, spread max 0.56% (ALTA su prezzo). Confidenza di segnale Basso per assenza di una notizia/catalizzatore specifico oggi. (Robinhood/Investing.com/Pluang, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 114.87},
+          {"name": "Robinhood", "price": 114.70}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA",
+        "nota": "Una terza fonte (Pluang, $114.23) concorda nello stesso range (spread max 0.56% su tutte e tre); prima validazione utile dopo giorni di esclusione per scarto eccessivo."
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 77.15,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Netflix prosegue l'espansione dei contenuti, ma resta sotto pressione competitiva, incluso il confronto con Amazon citato nella query aggregata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 77.15,
+      "stop_loss": 74.83,
+      "target": 81.01,
+      "commissione": 0.00,
+      "reasoning": "Scarto fonti 0.48% (ALTA) tra $77.33 e $76.96, valori distinti da quelli di ieri (77.38) quindi plausibilmente aggiornati. Nessun catalizzatore netto per un segnale direzionale. (Yahoo Finance aggregato, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (corrente)", "price": 77.33},
+          {"name": "Yahoo Finance (aggregato alternativo)", "price": 76.96}
+        ],
+        "spread_pct": 0.48,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 379.25,
+      "change_24h": "+0.13% (sospetto, identico a ieri)",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Microsoft prosegue l'espansione AI in Cina con partnership (es. ByteDance); nessun catalizzatore fresco rilevato oggi nella query aggregata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 379.25,
+      "stop_loss": 367.87,
+      "target": 398.21,
+      "commissione": 0.00,
+      "reasoning": "Terzo giorno consecutivo con valori quasi identici (379.10/379.40, gia' osservati ieri): forte sospetto di dato cache/non realmente live nonostante lo scarto interno contenuto (0.08%). Mantenuta affidabilita' MEDIA e segnale HOLD per massima cautela. (Yahoo Finance, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (corrente)", "price": 379.10},
+          {"name": "Yahoo Finance (chiusura)", "price": 379.40}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "MEDIA",
+        "nota": "Valori praticamente identici a quelli validati ieri (379.10/379.40): sospetto di dato cache/non aggiornato in tempo reale per il terzo giorno consecutivo."
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 385.81,
+      "change_24h": "-0.38% (sospetto, quasi identico a ieri)",
+      "trend_5d": "laterale",
+      "volume_note": "normale (7.63M vs media 10.07M)",
+      "news": "Gold e silver ETF sotto forte pressione di vendita (fino al -6% su alcuni fondi) per risk-off diffuso legato a un selloff sui titoli IT e a cautela geopolitica, secondo Business Standard.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 385.81,
+      "stop_loss": 378.09,
+      "target": 401.04,
+      "commissione": 0.00,
+      "reasoning": "Scarto fonti 0.68% (ALTA) ma i due valori (384.49/387.12) sono quasi identici a quelli validati ieri: sospetto di dato cache. Quadro macro inoltre negativo per metalli preziosi (forte selloff su ETF gold/silver). (Barchart/Bloomberg NYSE Arca, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Barchart (corrente)", "price": 384.49},
+          {"name": "Bloomberg/NYSE Arca", "price": 387.12}
+        ],
+        "spread_pct": 0.68,
+        "affidabilita": "MEDIA",
+        "nota": "Valori quasi identici a quelli validati ieri (384.49/387.12): sospetto di dato cache/non aggiornato in tempo reale."
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 244.68,
+      "change_24h": "+2.90%/+2.95% (sospetto, identico a ieri)",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Amazon Prime Day 2026 (notizia identica, parola per parola, a quella citata ieri); nessuna conferma di un nuovo sviluppo odierno.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 244.68,
+      "stop_loss": 237.34,
+      "target": 256.91,
+      "commissione": 0.00,
+      "reasoning": "I due valori (244.39/244.97) e il relativo headline news sono identici, parola per parola, a quelli gia' usati nel report di ieri: forte sospetto che la query odierna abbia restituito contenuto cache non aggiornato. Segnale declassato da BUY a HOLD per impossibilita' di confermare il prezzo odierno reale. (TradersUnion/CNN, 21/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradersUnion/CNN (aggregato)", "price": 244.97},
+          {"name": "CNN Markets (chiusura precedente)", "price": 244.39}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "MEDIA",
+        "nota": "Valori e headline news identici, parola per parola, al report di ieri (20/6): sospetto elevato di dato cache non realmente live."
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 400.49,
+      "change_24h": "+1.04% (dato esplicitamente datato 18/6)",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Elon Musk ha esercitato stock option portando la propria quota Tesla al 19.9% (notizia gia' nota e citata nei giorni precedenti); nessuno sviluppo fresco confermato oggi.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 400.49,
+      "stop_loss": 388.48,
+      "target": 420.51,
+      "commissione": 0.00,
+      "reasoning": "La seconda query ha esplicitamente datato il prezzo di chiusura al 18/6 (3 giorni fa), e il valore $400.49 coincide con quello gia' usato come una delle due fonti nel report di ieri: dato chiaramente non rappresentativo della sessione odierna. Segnale declassato a HOLD nonostante lo scarto interno contenuto (0.44%) per la grave anomalia di datazione. (Yahoo Finance, dato datato 18/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (chiusura)", "price": 400.49},
+          {"name": "Yahoo Finance (after-hours, datato 18/6)", "price": 398.73}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "MEDIA",
+        "nota": "Una delle due fonti dichiara esplicitamente la data 18/6 (3 giorni stale); il valore coincide con quello gia' usato ieri. Affidabilita' prezzo numericamente ALTA ma fortemente sospetta sul piano della freschezza dei dati."
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Fonte singola valida (Yahoo Finance $297.21); la seconda query non ha restituito un prezzo numerico indipendente, solo notizie generiche su market cap"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Solo un valore approssimativo e non decimale ('circa $368'); la seconda query non ha restituito alcun prezzo numerico, fonti<2 valide"
+    },
+    {
+      "asset": "META",
+      "motivo": "Fonte singola ($577.22), identica alla virgola al prezzo gia' validato ieri; nessuna seconda fonte numerica indipendente oggi, sospetto elevato di dato cache"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Scarto fonti estremo e crescente tra tre valori discordanti ($283.85, $512.48, $537.37), spread >45% >> soglia 4%; pattern persistente e in peggioramento rispetto ai giorni precedenti"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Prezzo USD invariato da 2 giorni ($1929.68, esplicitamente datato 19/6), seconda fonte in EUR (1657.8) non comparabile senza conversione verificata"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Dati USD discordanti tra le stesse fonti citate (181.79 vs 202.25, ~11% spread), oltre alla consueta confusione tra ADR NYSE e quotazione Xetra (134.14 EUR)"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Listing non comparabili: ADR NYSE (STLA) $8.50 USD vs ordinarie Milano (STLAM) EUR6.22, nessun rapporto di conversione ADR verificabile con i dati raccolti"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Seconda fonte (iShares/Bloomberg aggregato) esplicitamente datata 18/6 (3 giorni stale, mid-point $59.50), non comparabile con il prezzo odierno $59.07"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "RACE",
+      "motivo": "Upgrade concreto Morgan Stanley a Overweight con target $438 (+20.8%), torna validabile con dati correttamente datati a oggi dopo giorni di esclusione."
+    },
+    {
+      "rank": 2,
+      "asset": "SOL",
+      "motivo": "Rotazione istituzionale in ingresso secondo CoinShares, in continuita' con i catalizzatori Moody's/Morgan Stanley dei giorni precedenti."
+    },
+    {
+      "rank": 3,
+      "asset": "NVDA",
+      "motivo": "Momentum AI/chip ancora solido, pur con un solo dato fonte e un campanello d'allarme sulla sostenibilita' del debito legato al boom AI."
+    },
+    {
+      "rank": 4,
+      "asset": "BTC",
+      "motivo": "Si stabilizza vicino a $64.000 dopo il selloff di venerdi', spread fonti minimo (0.13%), pur con rischio geopolitico Hormuz da monitorare."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Giornata dominata da un problema di qualita' dei dati grave e in peggioramento: piu' large cap (AMZN, META, MSFT, GLD, TSLA) hanno restituito prezzi/notizie identici o quasi identici a quelli di ieri, alcuni esplicitamente datati a sessioni precedenti. Tutti questi segnali sono stati prudenzialmente declassati a HOLD. Solo 4 segnali BUY genuini oggi (RACE, SOL, NVDA, BTC), nessun SELL, 7 HOLD per sospetto cache o assenza di catalizzatori, 8/19 asset esclusi del tutto.",
+    "allocazione_suggerita": {
+      "RACE": "10%",
+      "SOL": "8%",
+      "NVDA": "8%",
+      "BTC": "6%",
+      "CASH": "68%"
+    },
+    "posizioni_in_attesa": ["NFLX (HOLD)", "MSFT (HOLD - sospetto dato cache, 3 giorni)", "GLD (HOLD - sospetto dato cache + macro negativo)", "AMZN (HOLD - sospetto dato cache, headline identico a ieri)", "TSLA (HOLD - dato esplicitamente datato 18/6)", "USO (HOLD - prima validazione, nessun catalizzatore)", "ETH (HOLD - notizie negative concrete nonostante prezzo in rialzo)"],
+    "posizioni_da_ridurre": [],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "ALERT CRITICO QUALITA' DATI: il sospetto di prezzi cache/non live, isolato ieri a 3 nomi (ASML/MSFT/NFLX), si e' estesO oggi a 5+ nomi tra cui large cap chiave (AMZN, META, MSFT, GLD, TSLA), con AMZN e TSLA che presentano addirittura headline o date esplicitamente identiche/precedenti al giorno corrente. Si raccomanda di verificare l'integrita' della pipeline di web_search del bot (possibile caching lato motore di ricerca o fonti non realmente aggiornate in tempo reale) prima di fare affidamento sui segnali BUY/SELL futuri. AMD/SAP/STLAM/SLV: scarto fonti persistente da piu' giorni, valutare fonti dirette alternative (NYSE diretto, ADR specifico, NAV ufficiale) per provare a re-includerli; ASML resta invariato a $1929.68 da 2 giorni consecutivi."
+  }
+}
