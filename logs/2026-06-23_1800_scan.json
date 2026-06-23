@@ -1,0 +1,251 @@
+{
+  "timestamp": "2026-06-23T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "23 giugno 2026: giornata di forte selloff sui megacap tech USA (Bloomberg: 'Megacap Tech Selloff Spreads to Asian Chipmakers') guidato da dubbi sul ritorno degli investimenti AI, con contagio su chip europei e crypto. La qualita' dei dati di triangolazione e' molto disomogenea: solo 7/19 asset validabili (ALTA/MEDIA), 12 esclusi. Sul fronte USA large cap il danno e' quasi totale: NVDA, MSFT, AMZN, GOOGL non restituiscono un secondo prezzo numerico indipendente (solo percentuali o un singolo valore), TSLA presenta percentuali contraddittorie tra fonti (+1.14% vs 'calo del 5%'), META e NFLX non restituiscono alcun prezzo numerico (fonti=0) nonostante notizie rilevanti (NFLX ai minimi di 52 settimane), AMD mostra uno scarto fonti abnorme (547.26 vs 283.85, ~63%). Solo AAPL valida (spread 0.74%, ALTA) e risulta il titolo che outperforma il settore tech oggi nonostante il selloff, pur con il monito di Tim Cook su rincari dovuti ai costi DRAM. Tra le europee, SAP resta escluso per dati USD internamente discordanti (181.79 vs 202.25, ~10.6%) e STLAM per fonte USD singola valida; RACE viene escluso nonostante uno spread minimo (0.15%) perche' i due valori (351.59/351.08) sono identici, alla virgola, a quelli gia' validati nel report del 22/6 - una fonte e' esplicitamente datata 'as of June 22, 2026' - cache totale confermata. ASML torna/resta validabile (spread 1.94%, MEDIA) ma sotto pressione per il selloff settoriale dei chip. Tra le commodities, GLD e USO restano esclusi per assenza di un secondo prezzo numerico nella query di verifica, mentre SLV torna validabile dopo giorni di forte dispersione, con spread minimo (0.02%, ALTA) tra Investing.com e Bloomberg. Le crypto, pur danneggiate dal contagio del selloff tech (deflussi ETF spot BTC/ETH per $2.5B, $717M di liquidazioni nel mercato), restano tutte triangolabili: BTC (MEDIA, spread 2.22%) in trend ribassista 'trapped' sotto $64k; ETH (MEDIA, spread 2.05%) colpito anche da un catalizzatore negativo specifico (Ethereum Foundation, -20% del personale, fuoriuscite di leadership) - unico segnale SELL della giornata; SOL (ALTA, spread 1.33%) ma con nota di cautela poiche' il valore CoinMarketCap (72.81) e il volume 24h ($2.48B) sono identici, alla virgola, a quelli di ieri (sospetto di dato CMC non aggiornato), mentre il valore Coinbase e' fresco e diverso. Giornata complessivamente da approccio molto prudente: un solo segnale BUY (AAPL), un solo SELL (ETH), tutti gli altri validati in HOLD.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 295.92,
+      "change_24h": "+0.80%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Tim Cook ha avvertito che gli aumenti di prezzo sono 'inevitabili' per i costi della memoria DRAM in forte rialzo e la stretta sulle forniture; Apple outperforma comunque i pari del settore tech in una giornata di forte selloff sui megacap (Nvidia -3.2%, Amazon -4.75%, Alphabet -5%).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 295.92,
+      "stop_loss": 287.24,
+      "target": 310.72,
+      "commissione": 0.00,
+      "reasoning": "Due fonti indipendenti coerenti (spread 0.74%, ALTA); il titolo outperforma il settore tech oggi nonostante il selloff generale dei megacap, ma resta cautela sui rischi di costo legati alla memoria DRAM segnalati da Tim Cook. (Yahoo Finance/CNBC aggregato, 23/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (aggregato)", "price": 294.82},
+          {"name": "CNBC/MarketWatch (aggregato)", "price": 297.01}
+        ],
+        "spread_pct": 0.74,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1912.56,
+      "change_24h": "-0.02%/-1.85% (fonti discordanti)",
+      "trend_5d": "rialzista (+80% YTD) ma sotto pressione oggi",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Selloff globale dei titoli dei semiconduttori colpisce ASML insieme ai pari asiatici (Bloomberg: 'Megacap Tech Selloff Spreads to Asian Chipmakers'); unica notizia specifica trovata e' datata 11/6 (Musk si rivolge ai dipendenti ASML), poco rilevante per la sessione odierna.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1912.56,
+      "stop_loss": 1855.18,
+      "target": 2008.19,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.94% (MEDIA) ma percentuali di variazione giornaliera discordanti tra le due fonti; il forte selloff settoriale dei chip a livello globale impone prudenza nonostante il momentum YTD straordinario del titolo. (Yahoo Finance/Investing.com, 23/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/Nasdaq (ADR)", "price": 1931.10},
+          {"name": "Investing.com (aggregato, ADR)", "price": 1894.02}
+        ],
+        "spread_pct": 1.94,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 58.92,
+      "change_24h": "-0.63% circa (fonte secondaria nella stessa query)",
+      "trend_5d": "laterale/leggero ribasso dopo il selloff recente, in stabilizzazione",
+      "volume_note": "normale (non quantificato esplicitamente)",
+      "news": "Argento spot vicino a $70.60/oz con gold/silver in parziale recupero su speranze di un accordo di pace in Medio Oriente; restano notizie recenti di ETF su argento scesi fino al 6% in sessioni precedenti per pressioni di mercato piu' ampie.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 58.92,
+      "stop_loss": 57.74,
+      "target": 61.28,
+      "commissione": 0.00,
+      "reasoning": "Torna validabile con spread minimo (0.02%, ALTA) dopo giorni di forte dispersione tra fonti, ma il quadro di mercato resta volatile e manca un catalizzatore direzionale chiaro per la sessione odierna. (Investing.com/Bloomberg, 23/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 58.91},
+          {"name": "Bloomberg (mid-point, NYSE Arca)", "price": 58.92}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63717.67,
+      "change_24h": "-1.85%/-2.5% (fonti discordanti, entrambe ribassiste)",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo ($26.0B 24h su CoinMarketCap, in aumento)",
+      "news": "Deflussi per $2.5B dai fondi ETF spot BTC/ETH mentre il selloff Nasdaq si propaga al mercato crypto, con $717M di liquidazioni complessive; Bitcoin descritto come 'trapped' sotto la resistenza di $64k nonostante l'attenuarsi dello scare sul petrolio.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63717.67,
+      "stop_loss": 60531.79,
+      "target": 68815.08,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.22% (MEDIA) tra CoinMarketCap e Coinbase; il forte deflusso dai fondi ETF spot e il contagio dal selloff tech Nasdaq impongono cautela nonostante l'assenza di un catalizzatore ribassista specifico su BTC. (CoinMarketCap/Coinbase, 23/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 63010.83},
+          {"name": "Coinbase", "price": 64424.51}
+        ],
+        "spread_pct": 2.22,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1665.33,
+      "change_24h": "-4.71%/-6.42% (fonti discordanti, entrambe ribassiste)",
+      "trend_5d": "ribassista (-3.16% settimanale + ulteriore calo odierno)",
+      "volume_note": "normale ($11.26B 24h)",
+      "news": "Ethereum Foundation ha tagliato il 20% del personale in un contesto di fuoriuscite dalla leadership; il token e' inoltre colpito dal contagio del selloff tech Nasdaq che ha innescato liquidazioni nel mercato crypto complessivo.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1665.33,
+      "stop_loss": 1748.60,
+      "target": 1532.10,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore negativo concreto e specifico (tagli del 20% del personale alla Ethereum Foundation, fuoriuscite di leadership) unito a un calo a doppia cifra percentuale settimanale e al contagio dal selloff tech; spread fonti 2.05% (MEDIA). (CoinMarketCap/Coinbase, 23/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 1648.26},
+          {"name": "Coinbase", "price": 1682.40}
+        ],
+        "spread_pct": 2.05,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 72.33,
+      "change_24h": "-2.17%/-6.02% (fonti discordanti)",
+      "trend_5d": "ribassista (contagio selloff tech odierno)",
+      "volume_note": "normale ($2.48B 24h, valore identico a ieri - possibile dato CMC non aggiornato)",
+      "news": "Morgan Stanley ha depositato S-1 modificati per trust spot su Solana ed Ethereum con BNY Mellon e Coinbase Custody come custodi congiunti, in continuita' con l'adozione istituzionale; il prezzo odierno resta comunque sotto pressione (-6% secondo l'aggregato notizie) per il contagio dal selloff tech.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 72.33,
+      "stop_loss": 68.71,
+      "target": 78.12,
+      "commissione": 0.00,
+      "reasoning": "Il valore CoinMarketCap (72.81) e il volume 24h sono identici a quelli validati ieri, sospetto di dato non aggiornato; il valore Coinbase e' invece fresco e diverso. Catalizzatore istituzionale di lungo periodo positivo (filing Morgan Stanley) ma quadro di breve termine negativo per il contagio dal selloff tech. (CoinMarketCap/Coinbase, 23/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 72.81},
+          {"name": "Coinbase", "price": 71.85}
+        ],
+        "spread_pct": 1.33,
+        "affidabilita": "ALTA",
+        "nota": "Il valore CoinMarketCap (72.81) e il volume 24h ($2.48B) sono identici, alla virgola, a quelli validati ieri: sospetto di dato cache parziale su questa fonte."
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Percentuali di variazione contraddittorie tra le due query (+1.14% a $405.05 vs 'shares declined 5% today' nello stesso blocco di risultati) e nessun secondo prezzo numerico chiaramente indipendente: fonti<2 valide e dato internamente incoerente"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Query1 non restituisce alcun prezzo numerico (solo 'up 3.14%'); query2 fornisce un solo valore ($208.65, -0.97%); fonti<2 valide. Nota: la query aggregata di notizie riporta invece NVDA a $201.97 (-3.2%), in contraddizione con il +3.14% di query1"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Solo un prezzo numerico disponibile ($371.53 da query1); query2 non restituisce alcun valore in dollari, solo metriche di valutazione e P/E. Fonti<2 valide"
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Solo un prezzo numerico disponibile ($233.84 da query1); query2 non fornisce un secondo valore distinto, ripete solo la percentuale +1.67%. Fonti<2 valide"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Solo un prezzo numerico disponibile ($341.50 da query1); query2 non fornisce alcun valore in dollari, solo la percentuale di calo (-5.1%) e un price target analisti. Fonti<2 valide"
+    },
+    {
+      "asset": "META",
+      "motivo": "Nessuna delle due query ha restituito un prezzo numerico in dollari, solo notizie societarie e percentuali relative (target analisti $827, calo 16% dal prezzo di filing). Fonti=0 valide"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Nessuna delle due query ha restituito un prezzo numerico in dollari, solo percentuali di calo (-5.8%/-6%) e il market cap ($306.88B) senza prezzo per azione esplicito. Fonti=0 valide"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Scarto fonti abnorme tra due valori (547.26 vs 283.85, ~63%), ben oltre la soglia del 4%; problema persistente e in peggioramento rispetto ai giorni precedenti (~21.5%)"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Scarto fonti estremo tra due prezzi USD ADR sulla NYSE (181.79 vs 202.25, ~10.6%), ben oltre la soglia del 4%; problema persistente da piu' giorni"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Le due query restituiscono dati incoerenti tra loro: query1 fornisce due prezzi EUR su Milano (6.71 e 5.585, scarto interno ~20%) senza alcun prezzo USD per il listing NYSE; query2 fornisce un singolo prezzo USD (STLA $6.095). Fonti USD valide < 2"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Query1 fornisce numeri ambigui non chiaramente attribuiti a fonti distinte ($383.47/$378.41); query2 non restituisce alcun prezzo numerico, solo elenco di piattaforme dove consultarlo. Fonti<2 valide"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Query1 fornisce tre valori (Robinhood $112.50, Kraken $111.23, Investing.com $111.02) ma query2 non restituisce alcun prezzo numerico, solo descrizione dell'ETF. Fonti<2 valide secondo il criterio delle 2 query indipendenti"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Scarto fonti minimo (0.15%) ma i due valori (351.59/351.08) sono identici, alla virgola, a quelli gia' validati nel report del 22/6/2026; una fonte e' inoltre esplicitamente datata 'as of June 22, 2026'. Cache totale confermata, nessun aggiornamento rilevato per il titolo oggi"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AAPL",
+      "motivo": "Unico segnale BUY della giornata: due fonti coerenti (spread 0.74%, ALTA), il titolo outperforma il settore tech nonostante il selloff generale dei megacap."
+    },
+    {
+      "rank": 2,
+      "asset": "SLV",
+      "motivo": "Torna validabile dopo giorni di forte dispersione tra fonti, con lo spread piu' basso della giornata (0.02%); da monitorare per un eventuale catalizzatore direzionale."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Catalizzatore istituzionale di lungo periodo (filing Morgan Stanley per trust spot) nonostante la debolezza di breve termine legata al contagio del selloff tech."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Giornata di selloff tech generalizzato con qualita' dei dati particolarmente degradata sulle azioni USA large cap: solo AAPL (1/9) validabile, gli altri 8 esclusi per fonti insufficienti o scarti estremi. RACE escluso nonostante spread minimo per cache totale confermata (dati identici al 22/6). Un solo BUY (AAPL), un solo SELL (ETH per catalizzatore negativo specifico), 5 HOLD per cautela in assenza di catalizzatori direzionali chiari o per sospetti di dati non completamente freschi (SOL). 12/19 asset esclusi del tutto.",
+    "allocazione_suggerita": {
+      "AAPL": "8%",
+      "SLV": "4%",
+      "SOL": "3%",
+      "CASH": "85%"
+    },
+    "posizioni_in_attesa": ["ASML (HOLD - momentum YTD forte ma selloff settoriale chip in corso)", "SLV (HOLD - torna validabile ma senza catalizzatore direzionale)", "BTC (HOLD - downtrend e deflussi ETF, nessun catalizzatore ribassista specifico)", "SOL (HOLD - catalizzatore istituzionale positivo nel lungo periodo, debolezza di breve termine)"],
+    "posizioni_da_ridurre": ["ETH (SELL - tagli di personale Ethereum Foundation, fuoriuscite di leadership, contagio selloff tech)"],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "PROBLEMA SEVERO QUALITA' DATI SU AZIONI USA: oggi 8 dei 9 titoli large cap USA (TSLA, NVDA, MSFT, AMZN, GOOGL, META, NFLX, AMD) sono stati esclusi, il dato peggiore osservato finora nella serie storica di questi report. La causa principale e' la sistematica assenza di un secondo prezzo numerico indipendente nella query 'quote marketwatch OR cnbc OR yahoo finance', che spesso restituisce solo testo narrativo o percentuali senza valore assoluto. Si raccomanda di rivedere la formulazione della query di verifica per le azioni USA per aumentare la probabilita' di ottenere un secondo prezzo numerico utilizzabile. Caso RACE: confermata per la prima volta in modo esplicito (fonte datata 'as of June 22, 2026') l'ipotesi di cache della pipeline di ricerca gia' sospettata nei report precedenti su altri ticker (AMZN, GLD, USO). Caso SOL: rilevata cache parziale (solo sul dato CoinMarketCap, mentre Coinbase risultava fresco), un pattern intermedio rispetto alla cache totale di RACE che merita osservazione nei prossimi giorni."
+  }
+}
