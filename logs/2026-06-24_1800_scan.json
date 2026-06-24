@@ -1,0 +1,295 @@
+{
+  "timestamp": "2026-06-24T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "24 giugno 2026: secondo giorno consecutivo di sell-off sui megacap tech/AI e sui semiconduttori, con contagio su crypto e parziale impatto su oro/argento (rotta dollaro forte + aspettative tassi alti sotto la nuova presidenza Fed di Kevin Warsh). Qualita' dei dati di triangolazione ancora molto disomogenea: solo 8/19 asset validabili (ALTA/MEDIA), 11 esclusi. Sul fronte azioni USA large cap il quadro resta drammatico come ieri: AAPL, TSLA, NVDA, MSFT, AMZN, GOOGL, META, AMD tutti esclusi per fonti<2 o fonti=0 (le query restituiscono quasi sempre un solo prezzo numerico pulito, il resto sono percentuali testuali o dati riferiti a sessioni precedenti, es. NVDA chiusura 23/6, AMZN dato datato 18/6). Solo NFLX valida (spread 0.36%, ALTA) ma in trend ribassista (minimo a 20 mesi) nonostante un upside potenziale del 56% stimato da 37 analisti: segnale HOLD per assenza di un catalizzatore odierno chiaro. Tra le europee, RACE (Ferrari) e' il caso piu' solido della giornata: entrambe le fonti riportano lo stesso prezzo con conferma esplicita della data odierna (344.87 USD, ALTA) e un upgrade concreto di Morgan Stanley (Overweight, target $438 da $388) -> unico BUY della giornata. SAP valida con riserva (scarto 0% ma sospetto di derivazione dalla stessa cache sottostante, declassata a MEDIA) senza notizie specifiche. STLAM (ticker NYSE effettivo: STLA, STLAM e' il listing EUR di Milano) valida tecnicamente in fascia MEDIA (spread 1.69%) ma con forti incongruenze interne tra le fonti su variazione % e volumi -> trattata con massima cautela. ASML resta escluso: una fonte e' esplicitamente datata 'as of June 22, 2026' e una verifica incrociata ha rilevato un terzo prezzo ~10% piu' basso, segno di cache mista a dati piu' recenti dopo un presunto crollo del 7.6% il 23/6. Tra le commodities, GLD valida con affidabilita' ALTA (spread 0.02%) ma in trend ribassista marcato: l'oro e' sceso sotto i 4.000 USD/oz per la prima volta da novembre 2025 per dollaro forte e aspettative di tassi elevati, pur con il miglior afflusso netto settimanale ETF da meta' aprile. SLV declassato a MEDIA nonostante uno spread numerico minimo (0.04%) perche' una delle due fonti (iShares, l'emittente) e' esplicitamente datata 23/6 e non 24/6; il calo del -5.54% riportato e una narrativa di banche centrali che vendono argento per defendere le valute (complice il calo del petrolio Brent sotto 80 USD per la de-escalation Iran) inducono prudenza. USO resta escluso: nessuna delle due query restituisce un prezzo numerico attribuibile a una fonte nominata per oggi. Le crypto restano triangolabili ma in trend ribassista marcato per il contagio del sell-off chip e il tono hawkish della Fed: BTC (MEDIA, spread 1.95%) sotto pressione verso i 62k con un possibile target ribassista di 55k secondo 10x Research -> SELL; ETH (ALTA, spread 1.03%) scende ancora di piu' in proporzione (-10.24% a 7 giorni secondo Coinbase) pur restando il caso piu' solido tra le crypto -> SELL; SOL escluso perche', nonostante uno spread numerico minimo, l'attribuzione a fonti realmente indipendenti non e' verificabile (un dato e' generico/non nominato, l'altro proviene due volte dalla stessa fonte Coinbase). Giornata di forte cautela: un solo BUY (RACE), due SELL su crypto (BTC, ETH), tutti gli altri 5 validati in HOLD.",
+  "signals": [
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 344.87,
+      "change_24h": "non quantificata in %, range giornaliero 343.38-347.41 USD",
+      "trend_5d": "non determinato (solo range 52 settimane disponibile: 312.51-519.10 USD)",
+      "volume_note": "non quantificato",
+      "news": "Morgan Stanley ha alzato il rating di Ferrari a Overweight da Equal Weight, target price aumentato a 438 USD da 388 USD; target medio a 12 mesi di 14 analisti a 436.67 USD (+26.37% upside), rating aggregato 'Strong Buy'.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 344.87,
+      "stop_loss": 334.52,
+      "target": 362.11,
+      "commissione": 0.00,
+      "reasoning": "Due fonti identiche (spread 0%, ALTA) entrambe con conferma esplicita della data odierna 24/6; catalizzatore concreto e fresco (upgrade Morgan Stanley con target price alzato di 50 USD). (Yahoo Finance/Investing.com, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/CNBC/Nasdaq", "price": 344.87},
+          {"name": "CNBC/Bloomberg/Morningstar (Investing.com aggregato)", "price": 344.87}
+        ],
+        "spread_pct": 0.0,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 72.62,
+      "change_24h": "-0.10% circa (variazione minima tra le due rilevazioni)",
+      "trend_5d": "ribassista (minimo a 20 mesi toccato di recente)",
+      "volume_note": "non quantificato",
+      "news": "Netflix ha toccato un minimo a 20 mesi; 37 analisti vedono comunque un potenziale upside del 56%; titolo apprezzato da Wall Street dopo aver rinunciato a trattative con Warner Bros e Roku; ampliata partnership con iHeartMedia per video-podcast.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 72.62,
+      "stop_loss": 70.44,
+      "target": 76.25,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.36% (ALTA) ma le due rilevazioni sono riferite a giornate diverse (oggi/chiusura 23/6); trend di breve negativo (minimo a 20 mesi) bilanciato solo da view positive di lungo periodo degli analisti, nessun catalizzatore odierno specifico. (Aggregatori ricerca, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore ricerca (dato odierno)", "price": 72.49},
+          {"name": "Aggregatore ricerca (chiusura 23/6)", "price": 72.75}
+        ],
+        "spread_pct": 0.36,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 181.79,
+      "change_24h": "-3.14% (-5.70 USD)",
+      "trend_5d": "non determinato",
+      "volume_note": "non quantificato (pre-market 41.480 azioni citato, non rappresentativo del volume giornaliero)",
+      "news": "Nessuna notizia specifica su SAP individuata nella query aggregata di oggi.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 181.79,
+      "stop_loss": 176.34,
+      "target": 190.88,
+      "commissione": 0.00,
+      "reasoning": "Le due fonti riportano un numero identico alla virgola (spread 0%), declassato a MEDIA per il sospetto che derivi dalla stessa cache/feed sottostante piuttosto che da due rilevazioni davvero indipendenti; calo del -3.14% senza un catalizzatore specifico individuato. (MarketBeat/Investing.com aggregato, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat/Yahoo Finance/CNBC (aggregato)", "price": 181.79},
+          {"name": "Investing.com (aggregato)", "price": 181.79}
+        ],
+        "spread_pct": 0.0,
+        "affidabilita": "MEDIA",
+        "nota": "Scarto numerico nullo ma sospetto di derivazione dalla stessa cache sottostante; nessuna terza fonte indipendente disponibile per confronto."
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 5.92,
+      "change_24h": "dati fortemente discordanti tra fonti: +6.58% vs -1.59% (terza rilevazione di controllo)",
+      "trend_5d": "non determinato",
+      "volume_note": "anomalo/sospetto: una fonte cita 27.75M, una verifica supplementare cita 9.44M contro una media di 18.71M - dati incoerenti tra loro",
+      "news": "Stellantis ha presentato un piano quinquennale da 70 miliardi di dollari per la crescita; richiamo globale di oltre 1.3 milioni di veicoli Jeep Wrangler/Gladiator per rischio incendio; partnership con Wayve e Uber per robotaxi Level 4.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.92,
+      "stop_loss": 5.74,
+      "target": 6.22,
+      "commissione": 0.00,
+      "reasoning": "Ticker NYSE effettivo STLA (STLAM e' il listing EUR su Milano); spread fonti 1.69% (MEDIA) ma una fonte presenta un'incongruenza interna su variazione % e volumi, e una terza rilevazione di controllo diverge ulteriormente: dati trattati con la massima cautela, nessun segnale direzionale forte raccomandato. (Yahoo Finance/CNBC, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/CNBC/Trendlyne", "price": 5.97},
+          {"name": "Yahoo Finance/CNBC (investing.com/marketwatch aggregato)", "price": 5.87}
+        ],
+        "spread_pct": 1.69,
+        "affidabilita": "MEDIA",
+        "nota": "Variazione % e volumi internamente incoerenti tra le fonti; una verifica di controllo fuori protocollo ha prodotto un quarto valore (5.86) diverso da entrambe."
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 377.55,
+      "change_24h": "-1.84% circa (Google Finance, intraday)",
+      "trend_5d": "ribassista (oro sceso sotto i 4.000 USD/oz per la prima volta da novembre 2025)",
+      "volume_note": "normale (~6.65M azioni)",
+      "news": "Spot gold sceso sotto i 4.000 USD/oz per pressione di un dollaro piu' forte e aspettative di tassi elevati; outflow ETF di 16 tonnellate a maggio, ma la settimana scorsa il miglior afflusso netto settimanale da meta' aprile.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 377.55,
+      "stop_loss": 370.00,
+      "target": 392.65,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.02% (ALTA); rottura del livello psicologico dei 4.000 USD/oz e dollaro forte impongono cautela, ma il recente miglior afflusso ETF settimanale da meta' aprile segnala un quadro di flussi non univocamente negativo. (Investing.com/Google Finance, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 377.58},
+          {"name": "Google Finance (NYSEARCA)", "price": 377.51}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 55.72,
+      "change_24h": "-5.54% (Investing.com)",
+      "trend_5d": "non determinato",
+      "volume_note": "non quantificato",
+      "news": "Nessuna notizia specifica su SLV; collegamento indiretto: de-escalation Iran/calo Brent sotto 80 USD darebbe 'respiro' alle banche centrali che vendevano oro/argento per defendere le valute.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 55.72,
+      "stop_loss": 54.61,
+      "target": 57.95,
+      "commissione": 0.00,
+      "reasoning": "Spread numerico minimo (0.04%) ma declassato a MEDIA perche' la fonte iShares (emittente) e' esplicitamente datata 23/6 e non 24/6; il forte calo giornaliero (-5.54%) senza un catalizzatore diretto specifico impone un approccio molto prudente. (Investing.com/iShares, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 55.73},
+          {"name": "iShares.com (emittente, datato 23/6/2026)", "price": 55.71}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "MEDIA",
+        "nota": "Una delle due fonti e' datata alla sessione precedente (23/6), disallineamento temporale di un giorno."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 61918.13,
+      "change_24h": "-3.49% circa (Coinbase); altre fonti tra -4.76 USD e +0.01%, prevalenza ribassista",
+      "trend_5d": "ribassista (-6.18% a 7 giorni secondo Coinbase, 'down 5% on the week')",
+      "volume_note": "$11.84B nelle 24h, valore plausibile e diverso da rilevazioni precedenti (nessun segnale di cache)",
+      "news": "Bitcoin scende verso i 62.000 dollari mentre il sell-off dei semiconduttori si aggrava per il secondo giorno consecutivo; secondo 10x Research potrebbe scendere a 55.000 USD prima di trovare un fondo; dollaro forte e svolta hawkish della Fed sotto il nuovo presidente Kevin Warsh mantengono la pressione.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 61918.13,
+      "stop_loss": 65014.04,
+      "target": 56964.68,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.95% (MEDIA); trend ribassista a 7 giorni confermato e catalizzatore macro concreto (contagio sell-off chip + Fed hawkish) con target ribassista esplicito di 55k da 10x Research. (CoinMarketCap/Coinbase, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 62520.31},
+          {"name": "Coinbase", "price": 61315.95}
+        ],
+        "spread_pct": 1.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1585.75,
+      "change_24h": "dati eterogenei tra fonti (+1.07%/-0.49%/+0.99%), quadro tendenzialmente debole",
+      "trend_5d": "ribassista (-10.24% a 7 giorni secondo Coinbase)",
+      "volume_note": "$11.17B nelle 24h (CoinMarketCap), non incrociato con una seconda fonte di volume",
+      "news": "Ether e le memecoin scendono piu' duramente di Bitcoin nel contesto del sell-off legato ai semiconduttori e al tono hawkish della Fed; una fonte news cita un prezzo intraday di circa 1.665 USD, superiore al prezzo validato - possibile disallineamento temporale tra lo snapshot news e le query di prezzo.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1585.75,
+      "stop_loss": 1665.04,
+      "target": 1458.89,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.03% (ALTA); calo a 7 giorni piu' marcato di BTC (-10.24%) e narrativa di sottoperformance relativa rispetto a Bitcoin nello stesso sell-off, pur con una discrepanza non risolta verso il prezzo citato nella query di notizie. (CoinMarketCap/Coinbase, 24/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 1577.57},
+          {"name": "Coinbase", "price": 1593.93}
+        ],
+        "spread_pct": 1.03,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Trovato un solo prezzo numerico (294.30 USD, -0.91%) non univocamente attribuito a una singola fonte; la seconda query ha restituito solo notizie testuali senza un secondo prezzo indipendente. Fonti<2 valide"
+    },
+    {
+      "asset": "TSLA",
+      "motivo": "Trovato un solo prezzo numerico (375.18 USD) non univocamente attribuito a una fonte singola nominata; la seconda query non ha fornito un secondo prezzo distinto. Fonti<2 valide"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Query1 non ha restituito alcun prezzo numerico (solo '3.99%'); query2 ha fornito un solo valore (199.80 USD) riferito alla chiusura di ieri (23/6), non di oggi. Fonti<2 valide per la data odierna"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Trovato un solo prezzo numerico (373.20 USD); la seconda query ha fornito solo una percentuale (+1.8%) non riconciliabile con un valore assoluto distinto. Fonti<2 valide"
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Il primo prezzo (244.39 USD) e' esplicitamente datato 18/6, non odierno; il secondo (circa 234 USD) e' un valore approssimato senza fonte nominata. Date non comparabili e scarto comunque 4.34% > soglia 4%. Escluso"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Trovato un solo prezzo numerico (348.79 USD); la seconda query non ha fornito alcun valore assoluto, solo un price target analisti. Fonti<2 valide"
+    },
+    {
+      "asset": "META",
+      "motivo": "Nessuna delle due query ha restituito un prezzo numerico in dollari, solo notizie societarie e percentuali relative (calo 14% YTD). Fonti=0 valide"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Query1 ha restituito un valore qualificato esplicitamente come ATH ('qualche giorno fa', 558.55 USD), non comparabile con il prezzo odierno (283.85 USD, query2); discrepanza enorme e non plausibile tra i due. Fonti<2 valide per oggi"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Le due fonti ufficiali riportano un valore identico (1929.68 USD) ma una e' esplicitamente datata 'as of June 22, 2026'; una verifica incrociata ha rilevato un terzo prezzo ~10% piu' basso (1743.69 USD) con menzione di un crollo del -7.60% il 23/6. Sospetto fondato di cache totale"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Query1 ha restituito tre valori (108.44/111.23/111.02) senza attribuzione univoca a una fonte nominata; query2 non ha restituito alcun prezzo numerico, solo elenco di piattaforme. Fonti valide = 0/2"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread numerico minimo (0.17%) ma l'unica fonte con attribuzione solida ed esplicita e' Coinbase in entrambe le rilevazioni (non due fonti indipendenti); query1 non assegna il prezzo a una fonte nominata. Fonti indipendenti attribuibili <2"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "RACE",
+      "motivo": "Unico segnale BUY della giornata: due fonti identiche con conferma esplicita della data odierna, upgrade concreto di Morgan Stanley con target price alzato a 438 USD."
+    },
+    {
+      "rank": 2,
+      "asset": "ETH",
+      "motivo": "Caso piu' solido tra le crypto (spread 1.03%, ALTA) con trend ribassista a 7 giorni chiaramente confermato e catalizzatore macro concreto (sell-off chip + Fed hawkish)."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "motivo": "Spread minimo della giornata (0.02%, ALTA); rottura del livello psicologico dei 4.000 USD/oz da monitorare per un eventuale ulteriore catalizzatore direzionale."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Secondo giorno consecutivo di sell-off tech/chip con contagio su crypto; qualita' dei dati ancora molto degradata sulle azioni USA large cap (solo NFLX validato, 1/9). RACE unico BUY (upgrade Morgan Stanley con dati pienamente coerenti con la data odierna); BTC ed ETH in SELL per trend ribassista a 7 giorni confermato e catalizzatore macro concreto; 5 HOLD per dati con riserve di qualita' (SAP, STLAM, SLV) o assenza di catalizzatore direzionale chiaro (NFLX, GLD). 11/19 asset esclusi del tutto.",
+    "allocazione_suggerita": {
+      "RACE": "6%",
+      "ETH": "0% (SELL - nessuna posizione long, solo segnale di vendita/evitare esposizione)",
+      "BTC": "0% (SELL - nessuna posizione long, solo segnale di vendita/evitare esposizione)",
+      "CASH": "94%"
+    },
+    "posizioni_in_attesa": ["NFLX (HOLD - trend di breve negativo, view positiva solo di lungo periodo)", "SAP (HOLD - sospetto di cache sui dati, nessun catalizzatore)", "STLAM (HOLD - dati internamente incoerenti, massima cautela)", "GLD (HOLD - rottura livello 4.000 USD/oz, flussi ETF non univoci)", "SLV (HOLD - disallineamento temporale tra fonti, calo marcato senza catalizzatore diretto)"],
+    "posizioni_da_ridurre": ["BTC (SELL - contagio sell-off chip, Fed hawkish, target ribassista 55k da 10x Research)", "ETH (SELL - sottoperformance relativa vs BTC, calo 7gg piu' marcato)"],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "PROBLEMA PERSISTENTE QUALITA' DATI SU AZIONI USA: per il secondo giorno consecutivo 8 dei 9 titoli large cap USA sono esclusi, sempre per la stessa dinamica (query che restituiscono un solo prezzo numerico pulito o nessuno). Si confermano inoltre due pattern di cache gia' osservati nei giorni precedenti: ASML (fonte datata 22/6, come gia' visto su RACE il 23/6) e sospetti minori su SAP (scarto 0% sospetto) e SLV (fonte iShares datata 23/6). Si raccomanda di rivedere la formulazione delle query di verifica per le azioni USA e di introdurre un controllo automatico sulla data esplicita riportata dalle fonti per individuare piu' rapidamente i casi di cache."
+  }
+}
