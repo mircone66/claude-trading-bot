@@ -1,0 +1,232 @@
+{
+  "timestamp": "2026-06-25T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "25 giugno 2026: qualita' della triangolazione ancora fortemente degradata, in linea con i giorni precedenti - solo 5/19 asset validabili (ALTA/MEDIA), 14 esclusi. Il quadro macro resta dominato dal terzo giorno di sell-off su tech/AI/chip, con oro sceso sotto i 4.000 USD/oz per la prima volta da novembre 2025 (Fed Warsh hawkish, dollaro forte), petrolio in calo moderato (Brent 76.38 USD, -0.91%) e crypto in nuovo minimo plurimensile (BTC sotto 59.000 USD secondo le notizie aggregate, con liquidazioni a catena). Tra le azioni USA large cap il problema persistente di qualita' dati si confirma: 7 degli 9 titoli esclusi (AAPL, NVDA, AMZN, GOOGL, META, NFLX, AMD) per fonti insufficienti o scarti enormi tra rilevazioni (es. AMD: 521 USD vs 283.85 USD, palese confusione tra giorni/dati). Solo TSLA si valida con affidabilita' ALTA (spread 0.18%, due chiusure quasi identiche 374.84/375.53 USD): nuova indagine federale di sicurezza sul FSD dopo un incidente fatale in Texas oscura un accordo positivo da 5 miliardi USD con NatPower per battery storage -> segnale SELL. MSFT si valida con riserva (MEDIA, spread 2.29%, ma le due rilevazioni si riferiscono a momenti diversi della stessa giornata - regular session 355.70 USD vs pre-market 363.95 USD): titolo entrato in bear market tecnico (-21% dal picco, -24% YTD) nonostante un rating 'Strong Buy' aggregato e un target a 12 mesi di 561.39 USD (+56%) -> HOLD per assenza di catalizzatore odierno specifico e segnali contrastanti. Tra le europee, RACE (Ferrari) resta validabile (MEDIA, spread 2.16%) ma con range giornalieri incoerenti tra le due fonti e nessuna notizia fresca odierna (l'upgrade Morgan Stanley risale a ieri) -> HOLD sulla posizione aperta il giorno precedente. SAP e STLAM escluse per fonti insufficienti/sospetto di cache (SAP riporta lo stesso prezzo identico di ieri, 181.79 USD). ASML resta esclusa per il quarto giorno consecutivo per sospetto fondato di cache (prezzo 1929.68-1931.10 USD pressoche identico a quello datato 22/6). Tutte le commodities ETF (GLD, SLV, USO) sono escluse oggi: GLD per fonti insufficienti, SLV e USO per forte discordanza tra rilevazioni multiple nella stessa query (fino al 7-8% di scarto) oltre a disallineamenti temporali di uno o due giorni. Tra le crypto, BTC (MEDIA, spread 2.95%) ed ETH (MEDIA, spread 3.22%) restano triangolabili e in trend ribassista marcato, con le notizie aggregate che segnalano un ulteriore affondo sotto i 59.000 USD per BTC (minimo plurimensile, ~11 milioni di BTC in perdita) e un rimbalzo fragile per ETH sostenuto da posizionamento derivati ancora ribassista -> doppio SELL. SOL esclusa per scarto 5.93% tra CoinMarketCap e Coinbase, oltre la soglia del 4%. Giornata di estrema cautela: nessun BUY, due SELL su azioni/crypto (TSLA, BTC, ETH), due HOLD (MSFT, RACE), 14/19 asset esclusi del tutto.",
+  "signals": [
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 375.19,
+      "change_24h": "circa -1.0% (range tra -0.45% e -1.59% secondo le fonti)",
+      "trend_5d": "ribassista (nuova indagine federale di sicurezza FSD dopo incidente fatale, sentiment in deterioramento)",
+      "volume_note": "non quantificato in modo univoco dalle fonti odierne",
+      "news": "Una nuova indagine federale di sicurezza sul Full Self-Driving e' stata apertura dopo un incidente fatale in Texas; la notizia oscura un accordo positivo da 5 miliardi USD con NatPower per 100 GWh di capacita' di battery storage (potenziale ricavo $15B).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 375.19,
+      "stop_loss": 386.45,
+      "target": 356.43,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.18% (ALTA), due chiusure quasi identiche; catalizzatore negativo fresco e concreto (indagine federale di sicurezza) che secondo le fonti sovrasta la notizia positiva sul deal NatPower. (Yahoo Finance/aggregatori, 24-25/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (chiusura 24/6)", "price": 374.84},
+          {"name": "Aggregatore CNBC/Yahoo (chiusura 24/6, -1.59%)", "price": 375.53}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 359.83,
+      "change_24h": "circa -2.3% a -4.0% secondo le fonti (titolo entrato in bear market tecnico)",
+      "trend_5d": "ribassista (-21% dal picco, -24% YTD secondo le fonti aggregate)",
+      "volume_note": "20.77M circa, sotto la media di 41.05M (volume sotto la norma)",
+      "news": "Microsoft e' entrata in un bear market tecnico dopo un calo del 21% dal massimo; il sentiment retail e' cauto ma 56 analisti mantengono un rating aggregato 'Strong Buy' con target a 12 mesi di 561.39 USD (+56% potenziale).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 359.83,
+      "stop_loss": 349.04,
+      "target": 377.82,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.29% (MEDIA) ma le due rilevazioni si riferiscono a momenti diversi della stessa giornata (regular session vs pre-market); ingresso in bear market tecnico bilanciato da view fortemente positiva degli analisti, nessun catalizzatore direzionale odierno chiaro. (CNBC/aggregatori, 25/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore (regular session, 25/6)", "price": 355.70},
+          {"name": "CNBC (pre-market 8:13am EDT, 25/6)", "price": 363.95}
+        ],
+        "spread_pct": 2.29,
+        "affidabilita": "MEDIA",
+        "nota": "Le due rilevazioni si riferiscono a momenti diversi della stessa giornata di trading (pre-market vs sessione regolare)."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 352.57,
+      "change_24h": "circa +1.1% rispetto alla chiusura precedente di 344.87 USD (range tra fonti discordante)",
+      "trend_5d": "non determinato (le due fonti riportano range giornalieri incoerenti tra loro)",
+      "volume_note": "non quantificato",
+      "news": "Nessuna notizia specifica su Ferrari individuata nella query aggregata odierna; l'upgrade di Morgan Stanley (Overweight, target $438) risale alla giornata precedente e resta l'unico catalizzatore noto.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 352.57,
+      "stop_loss": 341.99,
+      "target": 370.20,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.16% (MEDIA); le due fonti riportano range giornalieri tra loro incoerenti (348.68-356.56 vs 345.84-351.81), nessun catalizzatore fresco odierno individuato. Posizione aperta ieri su upgrade Morgan Stanley, oggi nessuna novita' -> mantenere e monitorare. (Investing.com/aggregatori, 25/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore real-time (10:43am EDT)", "price": 356.38},
+          {"name": "Investing.com", "price": 348.75}
+        ],
+        "spread_pct": 2.16,
+        "affidabilita": "MEDIA",
+        "nota": "Range giornalieri dichiarati dalle due fonti tra loro incoerenti; dato trattato con cautela."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 60329.75,
+      "change_24h": "negativo, fonti tra -3.18 e -4.50% nelle 24h",
+      "trend_5d": "ribassista (-6.67%/-9.70% a 7 giorni secondo le fonti; nuovo minimo plurimensile secondo le notizie aggregate)",
+      "volume_note": "non quantificato in modo univoco oggi",
+      "news": "Bitcoin e' sceso sotto i 59.000 USD con un flush di liquidazioni che lo ha portato al minimo da inizio giugno; quasi 11 milioni di BTC sono ora detenuti in perdita, mentre gli holder di lungo periodo controllano un record di 14.8 milioni di coin; alcuni indicatori derivati segnalano posizionamento corto eccessivo, possibile snapback.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 60329.75,
+      "stop_loss": 63346.24,
+      "target": 55503.37,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.95% (MEDIA); molteplici indicatori indipendenti concordano su un trend ribassista marcato (minimo plurimensile, liquidazioni a catena, 11M BTC in perdita), pur con un rischio di snapback tecnico segnalato dai derivati. (CoinMarketCap/Coinbase, 25/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (via Yahoo Finance)", "price": 59440.64},
+          {"name": "Coinbase", "price": 61218.85}
+        ],
+        "spread_pct": 2.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1603.40,
+      "change_24h": "dati eterogenei tra fonti, quadro tendenzialmente debole con rimbalzo fragile",
+      "trend_5d": "ribassista con rimbalzo tecnico fragile (relief rally da minimi settimanali, posizionamento derivati ancora ribassista)",
+      "volume_note": "non quantificato in modo univoco oggi",
+      "news": "Un relief rally legato al recupero delle azioni USA ha sollevato ETH dai minimi settimanali, ma il posizionamento ribassista sui derivati e un CVD negativo suggeriscono che il rimbalzo possa essere fragile e di breve durata.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1603.40,
+      "stop_loss": 1683.57,
+      "target": 1475.13,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 3.22% (MEDIA); nonostante un rimbalzo tecnico di breve, il posizionamento sui derivati resta ribassista e il CVD negativo non confermano una vera inversione di trend. (CoinMarketCap/Coinbase, 25/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 1577.57},
+          {"name": "Coinbase", "price": 1629.22}
+        ],
+        "spread_pct": 3.22,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Trovato un solo prezzo numerico attribuito (291.00 USD, chiusura 24/6, -0.74%); la prima query ha restituito solo percentuali di calo (-4.79%/-6%) senza un valore assoluto distinto. Fonti<2 valide"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Nessuna delle due query ha restituito un prezzo numerico in USD per NVDA; solo notizie societarie e contesto di mercato generale sul sell-off AI/chip. Fonti=0 valide"
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Tre valori discordanti tra le fonti (241.05/240.70/228.16 USD); scarto fino al 5.4% tra il valore piu' alto e il piu' basso, oltre la soglia del 4%. Escluso"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Trovato un solo prezzo numerico (342.13 USD); la seconda query non ha fornito alcun valore assoluto distinto, solo notizie sull'ingresso nel Dow Jones. Fonti<2 valide"
+    },
+    {
+      "asset": "META",
+      "motivo": "Trovato un solo prezzo numerico (559.76 USD); la seconda query non ha fornito alcun valore assoluto distinto, solo dati societari e finanziari. Fonti<2 valide"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Trovato un solo prezzo numerico attribuito (71.84 USD, -1.35%); la seconda query non ha fornito un secondo valore assoluto indipendente. Fonti<2 valide"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Query1 riporta 521 USD (dato di 1-2 giorni prima); query2 riporta 283.85 USD (oggi, 3:57pm EDT). Scarto enorme (~83%) e date non comparabili. Escluso"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Le due fonti riportano valori quasi identici (1929.68/1931.10 USD), praticamente uguali al prezzo datato 22/6 dei giorni precedenti: sospetto fondato di cache persistente, nessuna conferma esplicita della data odierna. Escluso per il quarto giorno consecutivo"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Trovato un solo prezzo numerico (181.79 USD), identico al prezzo validato ieri (sospetto di cache); la seconda query non ha fornito alcun valore assoluto distinto. Fonti<2 valide"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Per il ticker NYSE (STLA) trovato un solo prezzo (5.81 USD) senza fonte nominata esplicita, inoltre sotto il minimo a 52 settimane dichiarato dalla stessa fonte (5.83 USD, incongruenza interna); la seconda query fornisce solo il dato EUR di Milano datato 7/6, valuta e data non comparabili. Fonti<2 valide per oggi"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Trovato un solo prezzo numerico (365.92 USD, -2.49%); la seconda query non ha fornito alcun valore assoluto distinto, solo dati generali sul fondo. Fonti<2 valide"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Tre valori discordanti nella stessa query (52.80/55.73/51.78 USD, scarto fino al 7% tra estremi); la seconda query fornisce un dato datato 23/6 (55.71 USD), non comparabile a oggi. Escluso per scarto eccessivo e disallineamento temporale"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Valori multipli discordanti nella stessa query (108.59/106.29/114.87 USD); la seconda query fornisce un dato datato 24/6 (106.26 USD), non odierno. Escluso per scarto eccessivo e disallineamento temporale"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "CoinMarketCap 65.26 USD vs Coinbase 69.25 USD: scarto 5.93%, oltre la soglia del 4%. Escluso (BASSA)"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Unico segnale con affidabilita' ALTA della giornata (spread 0.18%); catalizzatore negativo fresco e concreto (nuova indagine federale di sicurezza FSD dopo incidente fatale)."
+    },
+    {
+      "rank": 2,
+      "asset": "BTC",
+      "motivo": "Trend ribassista confermato da molteplici indicatori indipendenti (minimo plurimensile, liquidazioni a catena, 11M BTC in perdita), nonostante un possibile rischio di snapback tecnico."
+    },
+    {
+      "rank": 3,
+      "asset": "ETH",
+      "motivo": "Rimbalzo tecnico giudicato fragile dalle notizie aggregate (posizionamento derivati ribassista, CVD negativo), in linea con il trend ribassista di fondo."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Terzo giorno di sell-off tech/chip con contagio su crypto e oro sotto i 4.000 USD/oz; qualita' dei dati ancora fortemente degradata (solo 5/19 asset validati). TSLA unico segnale ad affidabilita' ALTA, in SELL per indagine di sicurezza federale; BTC ed ETH in SELL per trend ribassista confermato da piu' fonti; MSFT e RACE in HOLD per assenza di catalizzatore direzionale chiaro o dati con riserva. 14/19 asset esclusi del tutto.",
+    "allocazione_suggerita": {
+      "RACE": "6% (posizione aperta il giorno precedente, mantenuta in HOLD)",
+      "TSLA": "0% (SELL - nessuna posizione long, solo segnale di vendita/evitare esposizione)",
+      "BTC": "0% (SELL - nessuna posizione long, solo segnale di vendita/evitare esposizione)",
+      "ETH": "0% (SELL - nessuna posizione long, solo segnale di vendita/evitare esposizione)",
+      "CASH": "94%"
+    },
+    "posizioni_in_attesa": ["MSFT (HOLD - ingresso in bear market tecnico bilanciato da view fortemente positiva degli analisti)", "RACE (HOLD - nessun nuovo catalizzatore, range giornalieri incoerenti tra fonti)"],
+    "posizioni_da_ridurre": ["TSLA (SELL - nuova indagine federale di sicurezza FSD dopo incidente fatale)", "BTC (SELL - nuovo minimo plurimensile, liquidazioni a catena)", "ETH (SELL - rimbalzo tecnico fragile, posizionamento derivati ribassista)"],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "PROBLEMA PERSISTENTE QUALITA' DATI SU AZIONI USA E COMMODITIES: per il terzo/quarto giorno consecutivo la maggior parte dei titoli large cap USA e degli ETF commodities sono esclusi per fonti insufficienti, scarti eccessivi tra rilevazioni multiple nella stessa query, o sospetto di cache (ASML al quarto giorno consecutivo, SAP con prezzo identico a ieri). Si raccomanda di rivedere la formulazione delle query e di introdurre un controllo automatico sulla data esplicita riportata dalle fonti per individuare piu' rapidamente i casi di cache o di dati non aggiornati."
+  }
+}
