@@ -1,0 +1,257 @@
+{
+  "timestamp": "2026-06-27T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "27 giugno 2026: giornata di qualita' dei dati molto scarsa - solo 6 asset su 19 validabili (ALTA), 13 esclusi per fonti insufficienti o scarti eccessivi tra le fonti. Tra le azioni USA large cap solo TSLA e AMZN sono validabili (2 su 9): AAPL, NVDA, MSFT, GOOGL, META, NFLX e AMD sono tutti esclusi perche' una delle due query non ha restituito alcun prezzo numerico utilizzabile o i valori reperiti non erano attribuiti a fonti distinte e indipendenti (caso emblematico META, con tre prezzi tra 550 e 554 USD ma senza nominativo di fonte). Il contesto macro resta dominato dal sell-off tech innescato dai rincari Apple su Mac/iPad per la carenza globale di chip di memoria/storage (Tim Cook ha parlato di 'hundred-year flood'), con NVIDIA che sottoperforma nel 2026 (+12% YTD contro +85% del VanEck Semiconductor ETF) per pressione competitiva di Qualcomm, e Microsoft sotto pressione (-3.45% il 25/6, target Stifel tagliato a 400 USD per timori sui margini AI). In controtendenza, AMZN si valida con affidabilita' ALTA (spread 0.01%) e segnale BUY: prezzo in rialzo del 2.11% da apertura, volume anomalo (+221% sopra la media, 248M vs 77M azioni) e notizie convergenti positive (rialzo prezzi GPU AWS che spinge i rating buy degli analisti, Prime Day 2026 atteso a un record di 26.3 miliardi USD). TSLA si valida (ALTA, spread 1.22%) con HOLD: accordo legale sulla causa FSD e nuova partnership con Sunrun nello storage energetico sono notizie di de-risking, ma il trend a 5 giorni resta non determinabile dai dati raccolti. Tutte le 4 azioni europee (ASML, SAP, RACE, STLAM) sono escluse: ASML e SAP per scarti enormi tra le fonti (7.86% e 10.65%), STLAM perche' entrambe le query hanno restituito solo quotazioni in EUR su Borsa Italiana (il ticker USD corretto sarebbe STLA, non STLAM), RACE per forte discordanza interna tra i tre prezzi trovati nella stessa query (347-366 USD, scarto interno fino al 5.4%) senza attribuzione di fonte chiara. Tra le commodities ETF solo SLV si valida (ALTA, spread 0.17%) in HOLD: il sottostante argento spot e' sceso sotto i 60 USD/oz per la prima volta da dicembre 2025 (-5% circa) per il rally del dollaro e probabilita' di rialzo Fed a settembre salite al 70% (dal 29% di una settimana prima), ma la quotazione SLV mostra un rimbalzo tecnico odierno (+1.77% NAV); GLD e USO sono esclusi (GLD per fonti non attribuite individualmente, USO per scarto 4.10% oltre soglia tra Investing.com e Robinhood, oltre a un valore Kraken anomalo per un ETF petrolifero). Tutte le tre crypto si validano con affidabilita' ALTA: BTC (spread 0.44%) ed ETH (spread 0.74%) restano in HOLD dopo un mese pesante (-21.17% e -23.55% rispettivamente) con un rimbalzo tecnico odierno modesto, mentre SOL (spread 0.79%) mostra una divergenza positiva (+4.97% a 7 giorni contro il calo di BTC/ETH) sostenuta dal momentum dell'ecosistema (rimbalzo guidato da Aave e dal trading di azioni tokenizzate) e ottiene un segnale BUY. Giornata con prevalenza di esclusioni per scarsa qualita' dei dati (13/19), 2 segnali BUY (AMZN, SOL), 4 HOLD (TSLA, SLV, BTC, ETH) e nessun SELL tra gli asset validati.",
+  "signals": [
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 377.42,
+      "change_24h": "+1.22% (chiusura 27/6)",
+      "trend_5d": "non determinabile dai dati raccolti oggi",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "Tesla ha raggiunto un accordo per risolvere una causa legale relativa alla tecnologia Full Self-Driving (FSD) e ha annunciato una nuova partnership con Sunrun per una virtual power plant nel settore dello storage energetico.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 377.42,
+      "stop_loss": 366.20,
+      "target": 396.29,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.22% (ALTA) tra chiusura aggregata del 27/6 (379.71) e Yahoo Finance 'recent close' (375.12, data non esplicita - possibile lieve disallineamento temporale). Notizie di de-risking (causa FSD risolta, nuova partnership energetica) ma assenza di un trend a 5 giorni determinabile impedisce un segnale direzionale forte. (Aggregatore/Yahoo Finance, 26-27/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore (chiusura 27/6, +1.22%)", "price": 379.71},
+          {"name": "Yahoo Finance (recent close, data non esplicita)", "price": 375.12}
+        ],
+        "spread_pct": 1.22,
+        "affidabilita": "ALTA",
+        "nota": "La fonte Yahoo Finance non specifica la data esatta della chiusura citata; possibile lieve disallineamento temporale rispetto al 27/6."
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 231.91,
+      "change_24h": "+2.11% da apertura (27/6)",
+      "trend_5d": "non determinabile con precisione dai dati raccolti, solo dato intraday disponibile",
+      "volume_note": "anomalo, +221% sopra la media (248.37M azioni vs media giornaliera 77.39M)",
+      "news": "AWS ha aumentato i prezzi delle GPU, spingendo rating di acquisto da parte degli analisti; Amazon prevede un Prime Day 2026 da record con vendite stimate a 26.3 miliardi USD su quattro giorni.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 231.91,
+      "stop_loss": 224.95,
+      "target": 243.51,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.01% (ALTA) tra le due query, entrambe riferite al prezzo corrente del 27/6 (231.92 e 231.90). Volume anomalo (+221% sopra media) e notizie convergenti positive (rialzo prezzi GPU AWS, Prime Day record atteso) supportano un segnale di acquisto ad alta confidenza. (Aggregatore di mercato, 27/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore (prezzo corrente, query 1)", "price": 231.92},
+          {"name": "Aggregatore (prezzo corrente, query 2)", "price": 231.90}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.32,
+      "change_24h": "+1.77% (NAV iShares, 26/6/2026)",
+      "trend_5d": "ribassista di fondo per il sottostante (argento spot sotto 60 USD/oz per la prima volta da dicembre 2025, in calo di oltre il 5%), con rimbalzo tecnico odierno",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "L'argento spot e' sceso sotto i 60 USD/oz per la prima volta da dicembre 2025, in un contesto di dollaro forte, rendimenti in rialzo e probabilita' di rialzo Fed a settembre salite al 70% (dal 29% di una settimana prima secondo CME FedWatch).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 53.32,
+      "stop_loss": 52.25,
+      "target": 55.45,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.17% (ALTA) tra Robinhood (53.36) e il mid-point NYSE Arca del 26/6 (53.27). Il rimbalzo tecnico odierno (+1.77% NAV) contrasta con il quadro macro ancora negativo per i metalli preziosi (dollaro forte, attese di rialzo Fed), segnali contrastanti che suggeriscono cautela. (Robinhood/iShares/NYSE Arca, 26/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 53.36},
+          {"name": "NYSE Arca (mid-point, 26/6)", "price": 53.27}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA",
+        "nota": "Un valore anomalo (0.58 USD) reperito nelle stesse ricerche e' stato escluso come probabile errore di estrazione dati."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 60104.89,
+      "change_24h": "+0.75% (commento Coinbase)",
+      "trend_5d": "ribassista di fondo: -4.91% a 7 giorni, -21.17% nell'ultimo mese, con un modesto rimbalzo tecnico odierno",
+      "volume_note": "tra 14.59 e 24.67 miliardi USD nelle 24h secondo le fonti (forte discordanza tra le rilevazioni)",
+      "news": "Bitcoin si sta stabilizzando vicino a 60.000 USD dopo un mese pesante; sul fronte regolatorio, Binance ha notificato agli utenti UE la sospensione di alcuni servizi per non aver ottenuto la licenza MiCA.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 60104.89,
+      "stop_loss": 57099.65,
+      "target": 64913.28,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.44% (ALTA) tra CoinDesk (60.237,37) e Coinbase (59.972,41). Il rimbalzo odierno (+0.75%) e' modesto rispetto al calo marcato dell'ultimo mese (-21.17%); nessuna notizia fondamentale fresca e specifica individuata, solo contesto regolatorio (Binance/MiCA) non direttamente di prezzo. (CoinDesk/Coinbase, 27/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk", "price": 60237.37},
+          {"name": "Coinbase", "price": 59972.41}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "ALTA",
+        "nota": "Un valore di Binance (96.262,14 USD) reperito nelle stesse ricerche e' stato scartato come probabile errore di estrazione/dato non comparabile."
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1586.02,
+      "change_24h": "tra +0.10% e +0.6% secondo le fonti",
+      "trend_5d": "ribassista: -7.2% a 7 giorni, -23.55% nell'ultimo mese",
+      "volume_note": "non quantificato in USD dalle fonti odierne",
+      "news": "Un ex membro della Ethereum Foundation ha avvertito che la rete deve costruire rapidamente nuove istituzioni di finanziamento, mentre la Foundation si ritira da un ruolo operativo centrale verso un modello simile a un endowment.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1586.02,
+      "stop_loss": 1506.72,
+      "target": 1712.90,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.74% (ALTA) tra Coinbase (1.580,17) e Crypto.com (1.591,86). Trend ribassista marcato su 7gg/1 mese, aggravato da incertezza strutturale sul futuro modello di finanziamento della Ethereum Foundation; variazione 24h minima e incoerente tra le fonti non fornisce un catalizzatore direzionale chiaro. (Coinbase/Crypto.com/TradingView, 27/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 1580.17},
+          {"name": "Crypto.com", "price": 1591.86}
+        ],
+        "spread_pct": 0.74,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 69.35,
+      "change_24h": "dati discordanti tra fonti, tra circa +4.98% e +9.81% nelle 24h",
+      "trend_5d": "rialzista su 7 giorni (+4.97%), in controtendenza positiva rispetto al calo di BTC ed ETH",
+      "volume_note": "non quantificato con precisione (market cap circa 42 miliardi USD)",
+      "news": "L'ecosistema Solana guida un rimbalzo del mercato crypto, con Aave che ha accennato a possibili buyback di token e un crescente interesse per il trading di azioni tokenizzate sulla rete.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 69.35,
+      "stop_loss": 65.88,
+      "target": 74.90,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.79% (ALTA) tra Coinbase (69.07) e Yahoo Finance (69.62). Divergenza positiva a 7 giorni rispetto a BTC/ETH unita a un catalizzatore concreto di momentum dell'ecosistema (Aave, trading di azioni tokenizzate) supporta un segnale di acquisto, sebbene con cautela vista la discordanza tra le fonti sulla variazione 24h esatta. (Coinbase/Yahoo Finance/CoinGecko, 27/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 69.07},
+          {"name": "Yahoo Finance", "price": 69.62}
+        ],
+        "spread_pct": 0.79,
+        "affidabilita": "ALTA",
+        "nota": "Diversi valori anomali (Binance 203.86 USD, CoinMarketCap 72.25 con variazione ambigua) reperiti nelle stesse ricerche sono stati esclusi dalla validazione."
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Trovato un solo prezzo numerico utilizzabile (282.50 USD, Yahoo Finance/CNBC, chiusura 26/6 16:00 EDT); la Query1 non ha restituito alcun prezzo numerico, solo notizie sul calo legato ai rincari Mac/iPad per la carenza di chip di memoria. Fonti<2 valide"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "La Query1 non ha restituito alcun prezzo numerico (solo commento narrativo sul sottoperformance 2026); i due valori della Query2 (193.56 pre-market e 195.74 chiusura, entrambi 25/6, stessa fonte aggregata Yahoo Finance) non costituiscono una seconda fonte indipendente. Fonti<2 valide"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Trovato un solo prezzo numerico (352.83 USD, chiusura 25/6, -3.45%) dalla Query1; la Query2 ha fornito solo un target price analisti (561.11 USD), non un prezzo di mercato corrente. Fonti<2 valide"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Trovato un solo prezzo numerico (339.31 USD, TradersUnion, 26/6, -1.39%) dalla Query1; la Query2 non ha restituito alcun valore numerico, solo link a pagine di quotazione. Fonti<2 valide"
+    },
+    {
+      "asset": "META",
+      "motivo": "La Query1 ha restituito tre valori (553.85/550.25/551.09 USD) privi di attribuzione di fonte individuale chiara e con variazioni 24h discordanti (-1.99%/+1.36%); la Query2 non ha fornito alcun prezzo numerico. Fonti<2 valide indipendenti"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Trovato un solo prezzo numerico (74.24 USD, 'oggi') dalla Query1; la Query2 non ha fornito un prezzo diretto, solo contesto su un rally +5.3% legato alla partnership pubblicitaria AI con Omnicom e sui minimi a 52 settimane. Fonti<2 valide"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "La Query1 non ha restituito un prezzo numerico (solo target price UBS a 670 USD e un +11.2% mensile); la Query2 ha fornito un solo prezzo (283.85 USD, Yahoo Finance, intraday). Fonti<2 valide"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Scarto del 7.86% tra Query1 (1.783,81 USD, Motley Fool, ~2 giorni fa) e Query2 (1.929,68 USD, Investing.com ADR Nasdaq, corrente), ben oltre la soglia del 4%. Escluso (nota: ASML e' quotata su Nasdaq, non NYSE)"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Scarto del 10.65% tra Query1 (181.79 USD, aggregato multi-fonte) e Query2 (202.25 USD, Investing.com ADR NYSE), oltre la soglia del 4%; un terzo valore (135.14 EUR, Xetra) escluso per valuta diversa. Escluso"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Query1 ha restituito tre prezzi tra loro discordanti (347.45/354.28/366.20 USD, scarto interno fino al 5.4%) senza attribuzione di fonte chiara; la Query2 (348.75 USD, Investing.com, 25/6) e' l'unica fonte chiaramente attribuita, insufficiente per una triangolazione affidabile a 2 fonti indipendenti. Fonti<2 valide"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Entrambe le query hanno restituito solo quotazioni in EUR su Borsa Italiana (6.242/6.220 EUR), non comparabili in USD; il ticker NYSE corretto per Stellantis sarebbe STLA, non STLAM. Nessun prezzo USD trovato"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "La Query1 ha restituito tre valori (373.63/374.84/367.26 USD) senza attribuzione di fonte individuale chiara; la Query2 non ha fornito alcun prezzo numerico, solo link a pagine di quotazione. Fonti<2 valide"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Scarto del 4.10% tra Investing.com (109.31 USD) e Robinhood (104.92 USD) nella stessa Query1, oltre la soglia del 4%; un terzo valore (Kraken, 111.23 USD) e' anomalo per un ETF petrolifero, un quarto (106.26 USD) e' datato 24/6 e non comparabile. Escluso"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMZN",
+      "motivo": "Affidabilita' ALTA (spread 0.01%) con confidenza Alta; volume anomalo (+221% sopra la media) e notizie convergenti positive (rialzo prezzi GPU AWS, Prime Day 2026 atteso a un record di 26.3 miliardi USD)."
+    },
+    {
+      "rank": 2,
+      "asset": "SOL",
+      "motivo": "Affidabilita' ALTA (spread 0.79%) con confidenza Media; divergenza positiva a 7 giorni (+4.97%) rispetto al calo di BTC/ETH, sostenuta dal momentum dell'ecosistema (Aave, trading azioni tokenizzate)."
+    },
+    {
+      "rank": 3,
+      "asset": "TSLA",
+      "motivo": "Affidabilita' ALTA (spread 1.22%) con confidenza Media; notizie di de-risking concrete (causa FSD risolta, nuova partnership energetica con Sunrun) anche se il trend a 5 giorni resta non determinabile."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Giornata con qualita' dei dati molto scarsa (solo 6/19 asset validati) a causa di ricerche web che hanno spesso restituito un solo prezzo numerico o valori privi di attribuzione di fonte chiara; nessun segnale SELL tra gli asset validabili oggi, 2 BUY (AMZN, SOL) e 4 HOLD (TSLA, SLV, BTC, ETH).",
+    "allocazione_suggerita": {
+      "AMZN": "8% (BUY, confidenza Alta, volume anomalo e notizie convergenti)",
+      "SOL": "6% (BUY, confidenza Media, divergenza positiva vs BTC/ETH)",
+      "TSLA": "5% (HOLD, notizie di de-risking ma trend non determinabile)",
+      "SLV": "4% (HOLD, rimbalzo tecnico vs quadro macro ancora negativo)",
+      "BTC": "0% (HOLD - nessuna nuova posizione, trend mensile ancora ribassista)",
+      "ETH": "0% (HOLD - nessuna nuova posizione, incertezza su Ethereum Foundation)",
+      "CASH": "77%"
+    },
+    "posizioni_in_attesa": ["TSLA (HOLD - de-risking ma trend incerto)", "SLV (HOLD - rimbalzo tecnico vs macro negativo)", "BTC (HOLD - rimbalzo modesto dopo mese pesante)", "ETH (HOLD - incertezza su finanziamento Ethereum Foundation)"],
+    "posizioni_da_ridurre": [],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "Qualita' dei dati molto scarsa oggi su gran parte delle azioni USA large cap (7/9 escluse) e su tutte le azioni EU (4/4 escluse, inclusa STLAM per ticker errato - usare STLA per Stellantis su NYSE). Si raccomanda di rivedere le query per questi gruppi, verificare la disponibilita' di fonti alternative con attribuzione chiara del prezzo, e correggere il ticker STLAM in STLA per le prossime scansioni."
+  }
+}
