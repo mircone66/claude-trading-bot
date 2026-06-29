@@ -1,0 +1,387 @@
+{
+  "timestamp": "2026-06-29T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "29 giugno 2026: qualita' dei dati nella media, 12 asset su 19 validabili (7 ALTA, 5 MEDIA), 7 esclusi. Tra le azioni USA large cap si validano TSLA (MEDIA, spread 2.02%) in HOLD in attesa del report sulle consegne Q2 atteso a giorni, nonostante un target price a 12 mesi di 421.16 USD (+10.92%); NVDA (ALTA, spread 0.33%) in HOLD dopo un calo dell'8% settimanale (peggior tratto da aprile 2025) per tensioni geopolitiche e sell-off tech, a fronte di un consenso Strong Buy con target 298.93 USD; AMZN (ALTA, spread 0.00%) in BUY su rialzo prezzi GPU AWS e Prime Day 2026 atteso da record; NFLX (MEDIA, spread 1.62%) in BUY dopo il rally legato alla nuova partnership pubblicitaria AI con Omnicom Media. AAPL, MSFT, GOOGL, META e AMD sono esclusi: i primi quattro per fonti insufficienti (un solo prezzo numerico utilizzabile a query), AMD per uno scarto enorme e non verificabile tra le due query (circa 532 USD vs 283.85 USD). Tra le azioni europee si validano SAP (ALTA, spread 0.00%) in HOLD per segnali contrastanti tra consenso fondamentale Buy e indicatore tecnico Strong Sell, e RACE (MEDIA, spread 1.57%) in HOLD per dati di variazione 24h contrastanti tra le fonti, in un contesto di critiche al nuovo modello EV 'Luce'; ASML e' escluso per scarto del 4.70% tra le due query (oltre la soglia, ricordando che e' quotata su Nasdaq, non NYSE); STLAM e' escluso perche' le query restituiscono solo quotazioni in EUR su Borsa Italiana, mentre il ticker NYSE corretto per Stellantis e' STLA, non STLAM. Tra le commodities ETF, GLD (ALTA, spread 0.00%) e SLV (ALTA, spread 0.02%) si validano in HOLD: l'oro spot resta sotto i 4.000 USD/oz (-5% nella settimana) con 298 tonnellate di oro ETF in perdita, mentre l'argento ha perso oltre il 20% da inizio anno; USO si valida con affidabilita' ALTA (spread 1.24%, ma con disallineamento temporale tra le query) e ottiene un segnale SELL per il prosieguo del sell-off legato ai negoziati USA-Iran sul petrolio. Tra le crypto, BTC (ALTA, spread 1.05%) resta in HOLD tra dati derivati che segnalano rischio ribassista e il nuovo piano di buyback da 2 miliardi USD di Strategy; ETH (ALTA, spread 1.15%) ottiene un segnale SELL per il calo del 22% nell'ultimo mese nonostante lo sviluppo istituzionale positivo (filing Morgan Stanley per trust spot); SOL (MEDIA, spread 2.25%) ottiene un segnale BUY sostenuto dal lancio del validator node di MoneyGram e dal filing Morgan Stanley per un trust spot Solana. Bilancio giornaliero: 3 segnali BUY (AMZN, NFLX, SOL), 2 SELL (USO, ETH) e 7 HOLD (TSLA, NVDA, SAP, RACE, GLD, SLV, BTC) tra gli asset validati.",
+  "signals": [
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 378.96,
+      "change_24h": "+1.22% (variazione di chiusura secondo l'aggregatore); intraday odierno stabile in area 382-383 USD",
+      "trend_5d": "calo strutturale di circa il 32.6% dal massimo a 52 settimane, ma variazione recente marginale/positiva; report consegne Q2 atteso a giorni",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "Tesla attende il report sulle consegne del Q2 2026 nei prossimi giorni; il titolo resta a -32.6% dal massimo a 52 settimane nonostante un target price a 12 mesi di 421.16 USD (+10.92%).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 378.96,
+      "stop_loss": 367.59,
+      "target": 397.91,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.02% (MEDIA) tra prezzo intraday aggregato (382.79, sessione 29/6) e Yahoo Finance (375.12). L'imminente report sulle consegne Q2 introduce un rischio evento che sconsiglia una posizione direzionale forte in attesa del dato. (Aggregatore/Yahoo Finance, 28-29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore (intraday, sessione 29/6)", "price": 382.79},
+          {"name": "Yahoo Finance", "price": 375.12}
+        ],
+        "spread_pct": 2.02,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 193.03,
+      "change_24h": "-0.01% (intraday) / -8% su base settimanale secondo fonti aggregate",
+      "trend_5d": "ribassista: -8% nell'ultima settimana, il peggior tratto da aprile 2025, per tensioni geopolitiche e sell-off tech",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "Nvidia ha perso l'8% nell'ultima settimana sulla scia di un sell-off tech generalizzato e tensioni geopolitiche; il consenso analisti resta 'Strong Buy' con target a 12 mesi di 298.93 USD (+55.26%), mentre l'azienda espande la partnership con Firmus per una struttura AI in Indonesia.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 193.03,
+      "stop_loss": 187.14,
+      "target": 202.68,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.33% (ALTA) tra aggregatore (192.71) e dato Yahoo Finance/CNBC del 26/6 (193.35). Il calo settimanale dell'8% in un contesto di sell-off tech contrasta con il consenso Strong Buy, suggerendo cautela in assenza di un'inversione di trend confermata. (Yahoo Finance/CNBC, 26-29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore (intraday)", "price": 192.71},
+          {"name": "Yahoo Finance/CNBC (26/6)", "price": 193.35}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 232.69,
+      "change_24h": "+2.50%",
+      "trend_5d": "ribassista a 7 giorni (-4.35% secondo le fonti), con rimbalzo odierno (+2.50%)",
+      "volume_note": "non quantificato per la sessione odierna; media trimestrale circa 50M azioni",
+      "news": "AWS ha aumentato i prezzi delle GPU, spingendo rating di acquisto da parte degli analisti; Amazon punta a un Prime Day 2026 da record, con target price degli analisti fino a 370 USD.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 232.69,
+      "stop_loss": 225.71,
+      "target": 244.32,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.00% (ALTA): entrambe le query convergono su 232.69 USD (+2.50%). Catalizzatori convergenti (rialzo prezzi GPU AWS, Prime Day 2026 atteso da record) supportano un segnale di acquisto. (Query aggregate, 29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore Query1 (stockanalysis/Investing.com)", "price": 232.69},
+          {"name": "Aggregatore Query2 (Yahoo Finance/CNBC)", "price": 232.69}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 74.46,
+      "change_24h": "+4.10% / +5.3% secondo le fonti, sul rally legato alla partnership Omnicom",
+      "trend_5d": "ribassista di fondo (-17.5% da inizio anno, -44% dal massimo a 52 settimane), con forte rimbalzo odierno su notizia specifica",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "Netflix ha lanciato una nuova alleanza pubblicitaria AI con Omnicom Media Group (annunciata il 23/6); il livello ad-supported ha raggiunto 250 milioni di utenti attivi mensili con un +70% di inserzionisti su base annua. Bernstein mantiene Buy con target 110 USD.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 74.46,
+      "stop_loss": 72.23,
+      "target": 78.18,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.62% (MEDIA) tra dato del 28/6 (73.85) e dato piu' recente (75.06). Il catalizzatore specifico (partnership AI con Omnicom) e la crescita del segmento advertising supportano un segnale di acquisto con cautela. (Yahoo Finance/aggregatore, 28-29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (28/6)", "price": 73.85},
+          {"name": "Aggregatore (piu' recente)", "price": 75.06}
+        ],
+        "spread_pct": 1.62,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 156.19,
+      "change_24h": "+0.71% (156.19 vs chiusura precedente 155.09)",
+      "trend_5d": "non determinabile con precisione; indicatore tecnico basato su medie mobili segnala 'Strong Sell'",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "Prossima trimestrale prevista per il 23/7/2026; consenso analisti Buy (13 raccomandazioni d'acquisto, 0 di vendita) con target medio 254.33 USD, ma il segnale tecnico di breve termine basato su medie mobili e' 'Strong Sell'.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 156.19,
+      "stop_loss": 151.50,
+      "target": 164.00,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.00% (ALTA): entrambe le query (Investing.com) convergono su 156.19 USD. La divergenza tra consenso fondamentale Buy e segnale tecnico Strong Sell, in assenza di notizie societarie fresche, impedisce un segnale direzionale forte. (Investing.com, 29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (ADR NYSE, Query1)", "price": 156.19},
+          {"name": "Investing.com (ADR NYSE, Query2)", "price": 156.19}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 351.52,
+      "change_24h": "dati contrastanti tra le fonti (-3.24% citato da una fonte, ma prezzo superiore alla chiusura precedente); variazione netta non determinabile con certezza",
+      "trend_5d": "non determinabile dai dati raccolti oggi",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "Ferrari ha ricevuto critiche dopo il lancio del nuovo modello EV 'Luce', con reazioni miste online associate da alcuni osservatori al recente calo del titolo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 351.52,
+      "stop_loss": 340.97,
+      "target": 369.10,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.57% (MEDIA) tra Yahoo Finance/CNBC (354.28) e Investing.com (348.75, dato del 25/6). La variazione 24h riportata dalle fonti e' internamente incoerente e le critiche al lancio EV 'Luce' non offrono un catalizzatore chiaro, impedendo un segnale direzionale forte. (Yahoo Finance/CNBC/Investing.com, 25-29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/CNBC", "price": 354.28},
+          {"name": "Investing.com (25/6)", "price": 348.75}
+        ],
+        "spread_pct": 1.57,
+        "affidabilita": "MEDIA",
+        "nota": "La variazione 24h riportata da una fonte (-3.24%) e' incoerente con il livello di prezzo indicato rispetto alla chiusura precedente; trattata con cautela."
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 373.63,
+      "change_24h": "+1.13%",
+      "trend_5d": "ribassista: oro spot sotto i 4.000 USD/oz, -5% nella settimana",
+      "volume_note": "5.6M azioni vs media giornaliera 8.77M, sotto la media, non anomalo",
+      "news": "L'oro spot resta sotto la soglia psicologica dei 4.000 USD/oz; 298 tonnellate di oro nei fondi ETF risultano in perdita (freno strutturale), mentre un record 45% delle banche centrali prevede di aumentare le riserve nel 2026, fattore di supporto di lungo periodo.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 373.63,
+      "stop_loss": 366.16,
+      "target": 388.58,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.00% (ALTA): aggregatore e CNBC concordano su 373.63 USD. Il quadro macro resta negativo (rottura soglia 4.000 USD/oz, ETF in perdita) nonostante il fattore di supporto di lungo periodo delle banche centrali, suggerendo cautela. (CNBC/aggregatore, 26-29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Aggregatore (Yahoo Finance/Nasdaq)", "price": 373.63},
+          {"name": "CNBC", "price": 373.63}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.28,
+      "change_24h": "+1.12% / +1.76% secondo le fonti",
+      "trend_5d": "ribassista di fondo: l'argento ha perso oltre il 20% da inizio anno",
+      "volume_note": "media mobile 30 giorni circa 23.43M azioni; dato odierno non quantificato dalle fonti raccolte",
+      "news": "L'argento spot e' sceso sotto i 60 USD/oz e ha perso oltre il 20% da inizio anno; lo spread di 46 USD tra prezzo spot e costo medio di estrazione e' il piu' ampio mai registrato, un potenziale supporto strutturale di lungo periodo.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 53.28,
+      "stop_loss": 52.21,
+      "target": 55.41,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.02% (ALTA) tra dato odierno (53.28) e mid-point Bloomberg del 26/6 (53.27). Il calo strutturale di oltre il 20% da inizio anno, pur con un possibile supporto dal gap record costo/spot, non offre un catalizzatore di inversione confermato. (Investing.com/Bloomberg, 25-29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (sessione 29/6)", "price": 53.28},
+          {"name": "Bloomberg (mid-point, 26/6)", "price": 53.27}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 106.93,
+      "change_24h": "+2.00% (oggi, Investing.com) vs -4.49% riportato il 24/6 da altra fonte; disallineamento temporale tra le query",
+      "trend_5d": "ribassista: il petrolio estende il sell-off legato ai negoziati USA-Iran",
+      "volume_note": "non quantificato dalle fonti odierne",
+      "news": "I prezzi del petrolio estendono il sell-off innescato dall'accordo USA-Iran mentre i negoziati continuano, riducendo il premio di rischio geopolitico sul greggio.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 106.93,
+      "stop_loss": 109.07,
+      "target": 102.65,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.24% (ALTA) tra Investing.com (107.59, oggi) e altra fonte (106.26, 24/6), con possibile disallineamento temporale tra le query. Il prosieguo del sell-off petrolifero legato ai negoziati USA-Iran supporta un segnale di vendita. (Investing.com/CNBC, 24-29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (oggi, 13:45 EDT)", "price": 107.59},
+          {"name": "Aggregatore (24/6)", "price": 106.26}
+        ],
+        "spread_pct": 1.24,
+        "affidabilita": "ALTA",
+        "nota": "Le due fonti si riferiscono a sessioni diverse (29/6 vs 24/6); possibile disallineamento temporale nella variazione 24h riportata."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 59657.29,
+      "change_24h": "+0.6% / -0.95% secondo le fonti (variazioni contrastanti nelle ultime ore)",
+      "trend_5d": "ribassista: -6.51% a 7 giorni secondo Coinbase",
+      "volume_note": "circa 15-16 miliardi USD nelle 24h, non segnalato come anomalo",
+      "news": "I dati sui derivati segnalano un persistente rischio ribassista per Bitcoin; Strategy ha adottato un nuovo framework di capital management autorizzando buyback fino a 2 miliardi USD, mentre l'ESMA richiede ai fornitori di servizi crypto non autorizzati di cessare l'attivita' entro il termine MiCA del 1/7.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 59657.29,
+      "stop_loss": 56674.43,
+      "target": 64429.87,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.05% (ALTA) tra CoinMarketCap (59344.77) e Coinbase (59969.80). Il calo settimanale del 6.51% e i segnali derivati ribassisti contrastano con il piano di buyback di Strategy, impedendo un segnale direzionale chiaro. (CoinMarketCap/Coinbase, 29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 59344.77},
+          {"name": "Coinbase", "price": 59969.80}
+        ],
+        "spread_pct": 1.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1570.32,
+      "change_24h": "+0.53% / +0.6% circa secondo le fonti",
+      "trend_5d": "ribassista: -10.74% a 7 giorni e -22.11% nell'ultimo mese secondo Coinbase",
+      "volume_note": "non quantificato in modo univoco dalle fonti odierne",
+      "news": "Morgan Stanley ha modificato i filing S-1 per i trust spot su Ethereum e Solana, nominando BNY Mellon e Coinbase Custody come custodi congiunti, segnale di crescente adozione istituzionale; il trend di prezzo resta tuttavia ribassista nel breve-medio periodo.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1570.32,
+      "stop_loss": 1648.84,
+      "target": 1444.69,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.15% (ALTA) tra Coinbase (1561.25) e Yahoo Finance (1579.38). Il calo del 22% nell'ultimo mese prevale sullo sviluppo istituzionale positivo (filing Morgan Stanley), supportando un segnale di vendita. (Coinbase/Yahoo Finance, 29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 1561.25},
+          {"name": "Yahoo Finance", "price": 1579.38}
+        ],
+        "spread_pct": 1.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 71.92,
+      "change_24h": "+1.49% / +2% circa secondo le fonti",
+      "trend_5d": "in controtendenza positiva rispetto a BTC/ETH secondo le fonti aggregate odierne",
+      "volume_note": "circa 1.35-1.86 miliardi USD nelle 24h, elevato rispetto al market cap (circa 41-42 miliardi USD) ma non segnalato come anomalo",
+      "news": "MoneyGram ha lanciato un validator node attivo su Solana ed e' entrata nella piattaforma di sviluppo istituzionale della rete; Morgan Stanley ha inoltre modificato i filing S-1 per un trust spot su Solana, nominando BNY Mellon e Coinbase Custody come custodi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 71.92,
+      "stop_loss": 68.32,
+      "target": 77.67,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.25% (MEDIA) tra CoinMarketCap (72.73) e Coinbase (71.11). I catalizzatori istituzionali (validator MoneyGram, filing Morgan Stanley) e la controtendenza positiva rispetto a BTC/ETH supportano un segnale di acquisto con cautela. (CoinMarketCap/Coinbase, 29/6/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 72.73},
+          {"name": "Coinbase", "price": 71.11}
+        ],
+        "spread_pct": 2.25,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Trovato un solo prezzo numerico utilizzabile (282.50 USD, range 274.21-285.95 il 28/6) dalla Query1; la Query2 non ha restituito alcun prezzo numerico, solo notizie su fatturato Services e rincari Mac/iPad per la carenza di memoria. Fonti<2 valide"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Trovato un solo prezzo numerico (372.73 USD, range 355.05-376.61 il 28/6) dalla Query1; la Query2 non ha fornito alcun valore assoluto, solo riferimenti percentuali al calo YTD (-32.9%/-35%). Fonti<2 valide"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Trovato un solo prezzo di mercato (337.39 USD, chiusura 26/6) dalla Query1; la Query2 ha fornito solo un analyst price target (337.37 USD, non un prezzo di mercato) e una variazione percentuale (+4.70%) senza valore assoluto comparabile. Fonti<2 valide"
+    },
+    {
+      "asset": "META",
+      "motivo": "Trovato un solo prezzo numerico (558.44 USD, range 558.01-559.00, 29/6) dalla Query1; la Query2 non ha fornito alcun prezzo, solo descrizioni di prodotto (smart glasses) e fatturato Q1. Fonti<2 valide"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Scarto enorme e non verificabile tra Query1 (circa 532 USD, valore approssimativo privo di attribuzione di fonte chiara) e Query2 (283.85 USD, Yahoo Finance/NasdaqGS, +3.24%), ben oltre la soglia del 4%. Escluso"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Scarto del 4.70% tra Query1 (1.929,68 USD, ADR) e Query2 (1.841 USD, ADR Nasdaq), oltre la soglia del 4%; un terzo valore dalla query notizie aggregate (1.783,81 USD) confermerebbe ulteriore dispersione. Escluso (nota: ASML e' quotata su Nasdaq, non NYSE)"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Entrambe le query hanno restituito quasi esclusivamente quotazioni in EUR su Borsa Italiana (5.95-6.71 EUR) per il ticker STLAM; nessun prezzo USD comparabile reperito. Il ticker NYSE corretto per Stellantis e' STLA, distinto da STLAM richiesto"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMZN",
+      "motivo": "Affidabilita' ALTA (spread 0.00%) con segnale BUY; catalizzatori convergenti (rialzo prezzi GPU AWS, Prime Day 2026 atteso da record)."
+    },
+    {
+      "rank": 2,
+      "asset": "NFLX",
+      "motivo": "Affidabilita' MEDIA (spread 1.62%) con segnale BUY; rally odierno legato alla nuova partnership pubblicitaria AI con Omnicom Media."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Affidabilita' MEDIA (spread 2.25%) con segnale BUY; catalizzatori istituzionali (validator MoneyGram, filing Morgan Stanley per trust spot)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Giornata con qualita' dei dati nella media (12/19 asset validati): 3 segnali BUY (AMZN, NFLX, SOL), 2 SELL (USO, ETH) e 7 HOLD (TSLA, NVDA, SAP, RACE, GLD, SLV, BTC).",
+    "allocazione_suggerita": {
+      "AMZN": "6% (BUY, affidabilita' ALTA, catalizzatori AWS/Prime Day)",
+      "NFLX": "5% (BUY, confidenza Media, partnership AI Omnicom)",
+      "SOL": "5% (BUY, confidenza Media, catalizzatori istituzionali MoneyGram/Morgan Stanley)",
+      "ETH": "0% (SELL simulato - nessuna nuova posizione long, calo 22% nell'ultimo mese)",
+      "USO": "0% (SELL simulato - nessuna nuova posizione long, sell-off petrolifero USA-Iran)",
+      "TSLA": "3% (HOLD, in attesa del report consegne Q2)",
+      "NVDA": "4% (HOLD, calo settimanale 8% vs consenso Strong Buy)",
+      "SAP": "0% (HOLD, segnali fondamentali/tecnici contrastanti)",
+      "RACE": "0% (HOLD, dati di variazione 24h incoerenti tra le fonti)",
+      "GLD": "3% (HOLD, sotto la soglia psicologica 4.000 USD/oz)",
+      "SLV": "0% (HOLD, calo strutturale oltre 20% da inizio anno)",
+      "BTC": "0% (HOLD - segnali derivati ribassisti vs buyback Strategy)",
+      "CASH": "74%"
+    },
+    "posizioni_in_attesa": ["TSLA (HOLD - rischio evento pre-consegne Q2)", "NVDA (HOLD - calo settimanale 8% vs consenso Strong Buy)", "SAP (HOLD - segnali fondamentali/tecnici contrastanti)", "RACE (HOLD - dati 24h incoerenti tra le fonti)", "GLD (HOLD - sotto soglia psicologica 4.000 USD/oz)", "SLV (HOLD - calo strutturale oltre 20% YTD)", "BTC (HOLD - segnali derivati ribassisti vs buyback Strategy)"],
+    "posizioni_da_ridurre": ["ETH (SELL - calo 22% nell'ultimo mese nonostante filing istituzionale Morgan Stanley)", "USO (SELL - sell-off petrolifero per negoziati USA-Iran)"],
+    "max_risk_per_trade_azioni": "3% (stop loss standard large cap)",
+    "max_risk_per_trade_etf": "2% (stop loss standard ETF commodity)",
+    "max_risk_per_trade_crypto": "5% (stop loss standard crypto)",
+    "sessioni_da_monitorare": "Continuare a monitorare AAPL, MSFT, GOOGL e META, esclusi oggi per fonti insufficienti (un solo prezzo numerico per query) nonostante notizie rilevanti in circolazione. Verificare ASML con query mirate al Nasdaq (non NYSE) e correggere il ticker STLAM in STLA per le prossime scansioni di Stellantis su NYSE; per RACE, verificare la coerenza tra il dato di variazione 24h e il livello di prezzo riportato dalle fonti."
+  }
+}
