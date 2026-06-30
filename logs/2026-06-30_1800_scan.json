@@ -1,0 +1,513 @@
+{
+  "timestamp": "2026-06-30T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti indipendenti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "30 giugno 2026 — ultimo giorno di contrattazioni del primo semestre H1 2026. Qualità dati: 13 asset ALTA, 3 MEDIA, 2 BASSA, 1 escluso (STLAM). Giornata dominata da tre catalizzatori: (1) ingresso di Alphabet (GOOGL) nel Dow Jones Industrial Average che ha spinto il titolo +4.82% il 29/06; (2) esplosione di oleodotto in Arabia Saudita che ha fatto rimbalzare USO +1.52% oggi; (3) rally dei semiconduttori con Philadelphia Semiconductor Index +3.83% il 29/06 (NVDA +1.27%, ASML +4.93%). Tesla ha guidato i guadagni tech con +8.46% il 29/06 sull'onda di report di consegne Q2 eccezionali; oggi ritraccia leggermente in area 406. Sul fronte macro negativo: PCE maggio al 4.1% (vs 3.8% aprile) — sorpresa inflazionistica che alimenta timori di rialzo Fed e penalizza crypto (BTC sotto i 60.000 USD, ETF Bitcoin con deflussi per 360M USD nelle 24h). MSFT in calo del 17% nel mese di giugno (peggior mese dal 2000) per preoccupazioni sui capex AI. Netflix vicino ai minimi a 52 settimane (70.86 USD). Segnali BUY: TSLA, NVDA, AMZN, GOOGL, ASML, RACE, USO (7 su 16 asset validati). HOLD: AAPL, MSFT, NFLX, SAP, GLD, SLV, BTC, ETH, SOL, META, AMD. SELL: nessuno.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 282.12,
+      "change_24h": "-0.72% (sessione 29/06/2026)",
+      "trend_5d": "ribassista: -11.7% dal picco di metà maggio; underperformance rispetto all'indice tech il 29/06",
+      "volume_note": "non quantificato dalle fonti; contesto di mercato tech con volumi elevati su tutta la categoria",
+      "news": "Apple ha sofferto anche nella sessione positiva del 29/06, cedendo 0.72% mentre il Nasdaq saliva oltre il 2%. Il titolo è sotto pressione per dubbi sulla pipeline AI e attesa del WWDC refresh. ATH $538.66 (ott 2025).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 282.12,
+      "stop_loss": 273.66,
+      "target": 296.23,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.27% (ALTA): $281.74 (MacroTrends/Yahoo Finance, chiusura 29/06) vs $282.50 (Yahoo Finance, 26/06). Il titolo è in trend ribassista di breve (-11.7% dal picco maggio) e ha sottoperformato il mercato nella seduta più forte della settimana (29/06). Nessun catalizzatore positivo immediato visibile. (MacroTrends/Yahoo Finance, 26-29/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / Yahoo Finance (chiusura 29/06)", "price": 281.74},
+          {"name": "Yahoo Finance (chiusura 26/06)", "price": 282.50}
+        ],
+        "spread_pct": 0.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 407.54,
+      "change_24h": "-1.42% intraday 30/06 (da chiusura 29/06 ~411.84; il 29/06 aveva segnato +8.46%)",
+      "trend_5d": "fortemente rialzista: +8.46% il 29/06, guidando la seduta migliore del Nasdaq in settimane; storno marginale oggi",
+      "volume_note": "anomalo al rialzo il 29/06: Tesla ha guidato i guadagni di space stocks e tech con volumi superiori alla media",
+      "news": "Tesla ha segnato +8.46% il 29/06 — la migliore seduta del titolo da settimane — trainata da anticipazioni di consegne Q2 record. Il Nasdaq è salito oltre il 2% il 29/06 con il Philadelphia Semiconductor Index a +3.83%. Oggi il titolo consolida in area 406. CME lancerà single-stock futures su TSLA il 27/07.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 407.54,
+      "stop_loss": 395.31,
+      "target": 427.92,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.76% (ALTA): $405.98 intraday 30/06 (TradingEconomics) vs $409.09 chiusura 29/06 (CNBC/Yahoo Finance). Il momentum post-spike è ancora intatto e il ritracciamento intraday odierno è contenuto (<2%). Il contesto tecnico è positivo dopo il +8.46%. Il rischio principale è un'inversione a V su gain eccessivamente rapidi. (TradingEconomics / CNBC, 29-30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics (intraday 30/06)", "price": 405.98},
+          {"name": "CNBC / Yahoo Finance (chiusura 29/06)", "price": 409.09}
+        ],
+        "spread_pct": 0.76,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 198.32,
+      "change_24h": "+1.72% (30/06 intraday); il 29/06: +1.27%",
+      "trend_5d": "laterale-rialzista: rimbalzo dai minimi recenti; -23% dal picco di maggio (235.47 USD il 14/05) ma in ripresa",
+      "volume_note": "Philadelphia Semiconductor Index +3.83% il 29/06: volumi elevati sull'intero comparto semi",
+      "news": "NVIDIA recupera terreno (+1.72% oggi) sull'onda del rally del comparto semiconduttori. La trimestrale FY2026 ha registrato ricavi di $215.94B (+65.47% YoY). 62 analisti raccomandano Strong Buy con target a 12 mesi di $298.93 (+50.7% dal prezzo attuale). ATH: $235.47 (14/05/2026). CME lancerà futures su NVDA il 27/07.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 198.32,
+      "stop_loss": 192.37,
+      "target": 208.24,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.00% (ALTA): $198.32 confermato da Yahoo Finance e CNBC indipendentemente per il 30/06. Il rimbalzo dal -23% rispetto ai massimi di maggio, supportato dal rally del Philly Semis (+3.83%) e da un consenso analisti unanimemente positivo (target $298.93), offre un setup di mean-reversion favorevole. (Yahoo Finance / CNBC, 30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (30/06)", "price": 198.32},
+          {"name": "CNBC / StockAnalysis (30/06)", "price": 198.32}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 371.18,
+      "change_24h": "-1.18% (sessione 29/06/2026)",
+      "trend_5d": "ribassista: -17% nel mese di giugno 2026 (peggior mese dal 2000); ATH $538.66 (ott 2025)",
+      "volume_note": "non quantificato; contesto di underperformance rispetto al Nasdaq",
+      "news": "Microsoft soffre il suo peggior mese da giugno 2000: -17% a giugno per preoccupazioni sui capex AI eccessivi rispetto ai ritorni. Gli analisti restano cauti in attesa di segnali concreti di monetizzazione AI. Target 12m di Wall St: $676.36 (+82% da prezzi attuali).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 371.18,
+      "stop_loss": 360.04,
+      "target": 389.74,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.11% (ALTA): $371.39 (MacroTrends, 30/06) vs $370.97 (Yahoo Finance/CNBC, chiusura 29/06). Il trend mensile ribassista (-17%) e la sottoperformance nella sessione migliore del periodo (29/06: -1.18% vs Nasdaq +2%) sconsigliano posizioni long aggressive. Il potenziale upside al target analisti è elevato ma richiede un cambio di narrativa AI. (MacroTrends / Yahoo Finance, 29-30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends (30/06)", "price": 371.39},
+          {"name": "Yahoo Finance / CNBC (chiusura 29/06)", "price": 370.97}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 239.33,
+      "change_24h": "+2.50% (TradingView, 30/06 intraday); +3.20% il 29/06",
+      "trend_5d": "rialzista: catalizzato dal Prime Day 2026 (23-26/06, 4 giorni record) e da prospettive Q2 positive",
+      "volume_note": "non quantificato; upside continuativo con due sessioni consecutive positive",
+      "news": "Amazon Prime Day 2026 ha coperto il 23-26/06 come evento quadriennale, superando le aspettative. BofA prevede un beat dei ricavi Q2 nonostante lo spostamento delle date Prime Day. Piano di rialzo prezzi AWS cloud in corso. Il titolo ha guadagnato +3.20% il 29/06 con momentum positivo. 52-week range: $196.00 - $278.56.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 239.33,
+      "stop_loss": 232.15,
+      "target": 251.30,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.89% (ALTA): $238.26 (Robinhood, 30/06 intraday) vs $240.39 (TradingView, 30/06 +2.50%). Il catalizzatore Prime Day e la previsione BofA di un beat Q2 sostengono il momentum. Il titolo è ancora il 14% sotto il massimo annuale ($278.56), con spazio tecnico per il recupero. (Robinhood / TradingView, 30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (30/06 intraday)", "price": 238.26},
+          {"name": "TradingView (30/06)", "price": 240.39}
+        ],
+        "spread_pct": 0.89,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 353.45,
+      "change_24h": "+4.82% (sessione 29/06/2026)",
+      "trend_5d": "rialzista: rimbalzo netto dopo la correzione della settimana precedente (-5% per partenze di ricercatori AI); Dow Jones inclusion è catalizzatore strutturale",
+      "volume_note": "anomalo al rialzo il 29/06: volumi superiori alla media su reazione all'inclusione nel DJIA",
+      "news": "Catalizzatore principale: Alphabet (GOOGL) aggiunta al Dow Jones Industrial Average il 29/06, generando acquisti strutturali (+4.82%). La settimana precedente aveva sofferto un -5% per la partenza di due ricercatori AI senior verso Anthropic e OpenAI (John Jumper, Noam Shazeer). Big Tech capex AI a $725B nel 2026. Market cap 4.28T USD.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 353.45,
+      "stop_loss": 342.85,
+      "target": 371.12,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.11% (ALTA): $353.65 (Morningstar/CNBC, 29/06) vs $353.25 (MarketBeat/multi, 29/06). Il catalizzatore strutturale dell'inclusione nel DJIA genera acquisti da fondi indicizzati in modo non discrezionale. Con un ritorno al precedente livello pre-correzione e supporto istituzionale da ribilanciamento, il profilo rischio/rendimento è favorevole. (Morningstar / CNBC / MarketBeat, 29/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / CNBC (29/06)", "price": 353.65},
+          {"name": "MarketBeat / multi (29/06)", "price": 353.25}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 561.31,
+      "change_24h": "+2.24% (sessione 29/06/2026)",
+      "trend_5d": "ribassista: -13.01% nell'ultimo mese per preoccupazioni su capex AI elevati",
+      "volume_note": "non quantificato",
+      "news": "Meta Platforms ha recuperato +2.24% il 29/06 ma resta -13.01% nell'ultimo mese. Il P/E è sceso da 27.52x (Q4 2025) a 20.50x (Q1 2026), rendendo il titolo più conveniente. 52-week range: $520.26 - $796.25. Capex AI elevati sotto osservazione degli investitori.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 561.31,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "AFFIDABILITÀ BASSA (1 fonte esplicita): $561.31 da Robinhood (30/06, range giornaliero $561.19-$564.99). Seconda fonte (Yahoo Finance/CNBC) conferma l'esistenza delle quotazioni come da 6/29/2026 ma non riporta un valore numerico esplicito nel risultato di ricerca. In assenza di triangolazione a 2 fonti, nessun segnale BUY/SELL generato. (Robinhood, 30/06/2026)",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (30/06 intraday)", "price": 561.31}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "1 sola fonte con prezzo esplicito - dati insufficienti per triangolazione"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.90,
+      "change_24h": "+4.10% (sessione 26/06/2026, dato più recente disponibile)",
+      "trend_5d": "ribassista strutturale: -44.9% dal massimo a 52 settimane ($134.12); a soli $3.04 dal minimo annuale ($70.86)",
+      "volume_note": "non quantificato specificamente",
+      "news": "Netflix è scivolata al secondo minimo storico recente: attualmente a $73.90, solo $3.04 sopra il minimo a 52 settimane di $70.86. Il P/E è di 23.85x. Un analista ha un target di $104 (+40.7% upside). Market cap $310.55B. L'assenza di catalizzatori positivi a breve e la vicinanza al minimo annuale rendono il profilo incerto.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.90,
+      "stop_loss": 71.68,
+      "target": 77.60,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.24% (ALTA): $73.99 (TradingEconomics, 29/06) vs $73.81 (Yahoo Finance/CNBC, chiusura 26/06). Nonostante l'affidabilità alta del prezzo, la situazione tecnica è fragile: il titolo si trova a -44.9% dal massimo annuale, a rischio di rompere il minimo di $70.86. Nessun catalizzatore positivo identificabile nel breve; HOLD finché non emerge un supporto confermato o un news driver positivo. (TradingEconomics / Yahoo Finance, 26-29/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics / Robinhood (29/06)", "price": 73.99},
+          {"name": "Yahoo Finance / CNBC (chiusura 26/06)", "price": 73.81}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 540.26,
+      "change_24h": "n.d. (1 fonte, 30/06 intraday)",
+      "trend_5d": "rialzista strutturale: +260% YTD; vicino al massimo a 52 settimane ($562.99); memory chips AI dominanti",
+      "volume_note": "non quantificato; il comparto semi ha avuto volumi anomali il 29/06 (Philadelphia Semiconductor Index +3.83%)",
+      "news": "AMD ha registrato un rally del 260% da inizio anno, trainato dalla domanda esplosiva per GPU Data Center AI. Cantor Fitzgerald ha alzato il target price da $500 a $700 (28/06). Il titolo è vicino al massimo a 52 settimane ($562.99). 52-week range: $133.50 - $562.99. Memory chips dominano la narrativa AI trade.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 540.26,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "AFFIDABILITÀ BASSA (1 fonte esplicita): $540.26 da IR.AMD/Robinhood (30/06 intraday, range $495.35-$542.19). La seconda query (Yahoo Finance/CNBC) non ha restituito un valore numerico esplicito. In assenza di triangolazione a 2 fonti, nessun segnale BUY/SELL generato. Il contesto fondamentale (Cantor target $700, domanda GPU AI record) è positivo ma non sufficiente a generare un segnale in assenza di verifica prezzi. (IR.AMD / Robinhood, 30/06/2026)",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "IR.AMD / Robinhood (30/06 intraday)", "price": 540.26}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "1 sola fonte con prezzo esplicito - dati insufficienti per triangolazione"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1883.11,
+      "change_24h": "+4.93% (sessione 29/06/2026, +$88.49)",
+      "trend_5d": "rialzista: nuovo ATH EUR il 22/06/2026 (1.711,4 EUR); recupero post-consolidamento; AI chip demand driver",
+      "volume_note": "anomalo al rialzo il 29/06: rally del comparto semiconduttori (Philadelphia Semiconductor Index +3.83%)",
+      "news": "ASML ha guadagnato +4.93% il 29/06 sull'onda del rally dei semiconduttori AI. ATH EUR: 1.711,4 EUR il 22/06/2026. ASML è il monopolista mondiale dei sistemi litografici EUV, indispensabili per la produzione dei chip AI di ultima generazione. 44 analisti: Strong Buy, target medio $1.740.56 (attualmente sotto il prezzo di mercato per la rapida apprezzazione). ASML è la 20a azienda per market cap globale.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1883.11,
+      "stop_loss": 1826.62,
+      "target": 1977.27,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.00% (ALTA): $1.883,11 confermato identicamente da Yahoo Finance/Nasdaq e da StockAnalysis/CNBC per la chiusura del 29/06. Il monopolio strutturale nell'EUV e la domanda AI inesauribile costituiscono un moat difendibile. Il +4.93% del 29/06 conferma il ritorno degli acquirenti dopo la fase di consolidamento. (Yahoo Finance / Nasdaq / CNBC, 29/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Nasdaq (chiusura 29/06)", "price": 1883.11},
+          {"name": "StockAnalysis / CNBC (29/06)", "price": 1883.11}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 154.89,
+      "change_24h": "-0.82% (30/06 intraday, -$1.27)",
+      "trend_5d": "ribassista: a soli $6.83 dal minimo a 52 settimane ($148.06); venduto dal massimo di $313.28 (-50.4%)",
+      "volume_note": "non quantificato",
+      "news": "SAP (NYSE: SAP) è vicina ai minimi storici annuali ($148.06) dopo il selloff post-Q1 2026: cloud cresciuto +27% ma ricavi complessivi mancati le stime. Prossima earnings release: 23/07/2026 (rischio evento). 23 analisti: Strong Buy, target $214.04 EUR (+62.84% upside). P/E 21.62. Mancata la strada dalla Germania per mancato raggiungimento target.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 154.89,
+      "stop_loss": 150.24,
+      "target": 162.63,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.68% (MEDIA): $153.59 (Google Finance/WallStreetZen, 30/06 intraday 10:27 AM ET) vs $156.19 (Investing.com NYSE ADR, chiusura 29/06). Lo spread MEDIA indica incertezza su dove si posizionerà il titolo a fine giornata. Con earnings il 23/07 e il titolo vicino al minimo annuale ($148.06), il rischio evento è elevato; HOLD prudente in attesa dei risultati. (Google Finance / Investing.com, 29-30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance / WallStreetZen (30/06 intraday)", "price": 153.59},
+          {"name": "Investing.com NYSE ADR (chiusura 29/06)", "price": 156.19}
+        ],
+        "spread_pct": 1.68,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 368.26,
+      "change_24h": "-0.04% (da chiusura 29/06 $368.34 a intraday 30/06 $368.18)",
+      "trend_5d": "laterale-ribassista: recupero post-selloff da lancio Ferrari Luce EV (-8% in maggio); Morgan Stanley upgrade è catalizzatore positivo",
+      "volume_note": "non quantificato; stabilità di prezzo indica equilibrio offerta/domanda dopo il selloff EV",
+      "news": "Morgan Stanley ha aggiornato Ferrari (RACE) a Overweight da Equal Weight con target alzato a $438 da $388 (upside +19% dal prezzo corrente). Ferrari ha nominato Massimiliano Di Silvestre nuovo Chief Marketing & Commercial Officer dal 01/07/2026. Il selloff post-lancio Ferrari Luce EV (maggio) sembra esaurito. 14 analisti: Strong Buy, target medio $436.67. 52-week range: $312.51 - $519.10.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 368.26,
+      "stop_loss": 357.21,
+      "target": 386.67,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.04% (ALTA): $368.18 (Robinhood, 30/06 intraday) vs $368.34 (CNN/CNBC, chiusura 29/06). L'upgrade Morgan Stanley a Overweight con target $438 rappresenta un catalizzatore fondamentale solido. Il titolo ha già digerito il selloff EV (-8%) e il forte brand luxury Ferrari offre supporto ai margini. La nuova leadership commerciale può essere positiva per le vendite. (Robinhood / CNN / CNBC, 29-30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (30/06 intraday)", "price": 368.18},
+          {"name": "CNN / CNBC (chiusura 29/06)", "price": 368.34}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 368.76,
+      "change_24h": "-1.35% (chiusura 29/06)",
+      "trend_5d": "ribassista: -11.46% nell'ultimo mese; oro spot in calo dal picco di $5.589 (gen 2026); AUM $131.5B",
+      "volume_note": "non quantificato; deflussi ETF oro segnalati dalle fonti: Wall Street riduce esposizione",
+      "news": "GLD (SPDR Gold Shares, NYSE Arca) chiude il 29/06 a $368.58 (-1.35%). L'oro spot si è ritirato del ~25% dal picco di fine gennaio 2026 ($5.589/oz) e ora si attesta tra $4.200-$4.500/oz. Wall Street sta riducendo i target sull'oro per tassi persistentemente alti e rallentamento dei flussi ETF. Total return YTD +22.36% resta positivo. Expense ratio: 0.40%. AUM: $131.5B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 368.76,
+      "stop_loss": 361.38,
+      "target": 383.51,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.10% (ALTA): $368.94 (Yahoo Finance/Investing.com, chiusura 29/06) vs $368.58 (CNBC/NYSE Arca, chiusura 29/06 4:00 PM EDT). Nonostante l'affidabilità alta, il trend mensile (-11.46%) e il taglio dei target da parte delle banche d'investimento sconsigliano posizioni long aggressive. La PCE al 4.1% (maggio) aggiunge pressione rialzista sui tassi = negativa per gold. Attendere stabilizzazione prima di agire. (Yahoo Finance / CNBC, 29/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (chiusura 29/06)", "price": 368.94},
+          {"name": "CNBC / NYSE Arca (chiusura 29/06 4:00 PM EDT)", "price": 368.58}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.28,
+      "change_24h": "n.d. (prezzo da chiusura 26/06; dato più recente disponibile)",
+      "trend_5d": "ribassista: silver declina in linea con gold; Wall Street taglia i target sull'argento",
+      "volume_note": "volume giornaliero 26/06: 15.469.232 unità (normale)",
+      "news": "SLV (iShares Silver Trust, NYSE Arca) fermo a $53.28 dalla chiusura di venerdì 26/06. L'argento ha perso terreno in linea con l'oro nella correzione di giugno. Wall Street sta abbassando i target su entrambi i metalli preziosi per aspettative di tassi alti persistenti. 52-week range: $32.62 - $109.83. Net assets: $28B. Expense ratio: 0.50%.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 53.28,
+      "stop_loss": 52.21,
+      "target": 55.41,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.00% (ALTA): $53.28 confermato da iShares (chiusura 26/06, volume 15.5M) e Yahoo Finance/Investing.com (stessa data). Il trend ribassista dell'argento, allineato con quello dell'oro in un contesto di PCE sorprendente al rialzo (4.1%), suggerisce cautela. Nessun catalizzatore positivo a breve. (iShares / Yahoo Finance, 26/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "iShares / CNBC (chiusura 26/06)", "price": 53.28},
+          {"name": "Yahoo Finance / Investing.com (chiusura 26/06)", "price": 53.28}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 107.08,
+      "change_24h": "+1.52% (30/06/2026)",
+      "trend_5d": "rialzista: catalizzato da esplosione oleodotto Arabia Saudita; 52-week range $65.99 - $154.08",
+      "volume_note": "non quantificato; catalizzatore geopolitico improvviso genera acquisti direzionali",
+      "news": "USO (United States Oil Fund, NYSE Arca) sale +1.52% oggi per esplosione di un oleodotto in Arabia Saudita che riduce temporaneamente l'offerta globale di greggio WTI. La notizia geopolitica è il driver principale. Technical signal da Macroaxis: Strong Sell (contrarian indicator rispetto al catalizzatore odierno). Expense ratio: 0.86%. Market cap: $1.86B. 52-week range: $65.99 - $154.08.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 107.08,
+      "stop_loss": 104.94,
+      "target": 111.36,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.00% (ALTA): $107.08 confermato da Investing.com/Nasdaq e CNBC/Barchart per il 30/06. Il catalizzatore geopolitico (pipeline Arabia Saudita) è immediato e non ancora scontato completamente. Il segnale tecnico Strong Sell della piattaforma è un lagging indicator che non incorpora la notizia odierna. Target +4% ragionevole per un event-driven trade a breve termine. (Investing.com / CNBC, 30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Nasdaq (30/06 intraday)", "price": 107.08},
+          {"name": "CNBC / Barchart (30/06)", "price": 107.08}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 58979.60,
+      "change_24h": "-2.27% (da ~$59.860 del 29/06 mattina a $58.503 del 30/06 9:15 AM ET)",
+      "trend_5d": "ribassista: BTC sotto $60K; minimo multi-anno il 25/06; PCE 4.1% = hawkish Fed; ETF outflows $360M in 24h",
+      "volume_note": "volume 24h $30.7B (CoinMarketCap); deflussi ETF BTC: iShares -$239.3M, Fidelity -$120.8M",
+      "news": "Bitcoin è scivolato sotto $60K il 25/06 toccando i minimi da settembre 2024. Il PCE di maggio al 4.1% (vs 3.8% aprile) ha sorpreso al rialzo, alimentando timori di rialzo tassi Fed. Gli spot BTC ETF registrano deflussi netti per oltre $360M in 24h. ATH: $126.080 (luglio 2025). Market cap attuale: $1.192T. La strategy della Strategy (ex MicroStrategy) ha annunciato un buyback da $2B ma non ha sostenuto il prezzo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 58979.60,
+      "stop_loss": 56030.62,
+      "target": 63697.17,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.61% (MEDIA): $58.503,73 (Fortune, 30/06 9:15 AM ET) vs $59.455,47 (CoinMarketCap live, 30/06). Lo spread supera la soglia ALTA (1.5%) ma resta sotto quella di esclusione (4%). Segnale limitato a HOLD: la macro (PCE hawkish), i deflussi ETF e la posizione tecnica sotto i $60K non supportano un BUY; il buyback Strategy e il supporto in area $57K-$58K sconsigliano invece il SELL. (Fortune / CoinMarketCap, 30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (30/06, 9:15 AM ET)", "price": 58503.73},
+          {"name": "CoinMarketCap (30/06, live)", "price": 59455.47}
+        ],
+        "spread_pct": 1.61,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1562.33,
+      "change_24h": "-0.95% (da ~$1.573,67 del 29/06 mattina a $1.558,78 del 30/06 9:15 AM ET)",
+      "trend_5d": "ribassista: -2.9% il 25/06; Ethereum Foundation ha tagliato il 20% del personale e il 40% del budget",
+      "volume_note": "non quantificato; sell-off crypto generalizzato in contesto macro hawkish",
+      "news": "Ethereum Foundation ha annunciato il 23/06 il taglio del 20% del personale e la riduzione del budget del 40%, passando a un modello operativo endowment-style. ETH è sceso a $1.558 il 30/06 mattina (Fortune). La PCE al 4.1% e i deflussi dai crypto ETF penalizzano l'intero comparto. ATH ETH: $4.946 (2025). Market cap attuale: ~$233B. Morgan Stanley ha presentato filing per trust spot ETH.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1562.33,
+      "stop_loss": 1484.21,
+      "target": 1687.32,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 0.45% (ALTA): $1.558,78 (Fortune, 30/06 9:15 AM ET) vs $1.565,88 (MetaMask/Coinbase, dato più recente disponibile). Il taglio alla Ethereum Foundation introduce incertezza operativa, mentre la macro hawkish è sfavorevole per asset rischiosi. Il filing Morgan Stanley per trust spot ETH è positivo strutturalmente ma non sufficiente a invertire il trend nel breve. (Fortune / MetaMask, 29-30/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (30/06, 9:15 AM ET)", "price": 1558.78},
+          {"name": "MetaMask / Coinbase (dato recente)", "price": 1565.88}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.50,
+      "change_24h": "+3.53% (CoinMarketCap, 29-30/06)",
+      "trend_5d": "ribassista: da $81.13 inizio giugno a $72.69 il 29/06 (-10.4%); tentativo di rimbalzo nelle ultime 24h",
+      "volume_note": "volume 24h: $3.896B (CoinMarketCap); rimbalzo con volumi nel contesto di news istituzionale positiva",
+      "news": "MoneyGram si è unita come validator su Solana, potenziando i pagamenti stablecoin (notizia positiva strutturale). Morgan Stanley ha depositato filing per un trust spot SOL con expense ratio record di 0.14% (più economico di qualsiasi crypto ETF globale). Il 25/06 SOL aveva toccato $66.26 (-1.5%); ora rimbalza a $72-74. Market cap ~$43.9B (rank #7 su CoinGecko).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.50,
+      "stop_loss": 69.83,
+      "target": 79.38,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.20% (MEDIA): $72,69 (CoinGecko/MetaMask, 29/06) vs $74,31 (CoinMarketCap, 29/06 +3.53%). Lo spread supera la soglia ALTA (1.5%), generando affidabilità MEDIA. Il trend mensile è ribassista (-10.4%) ma le due notizie istituzionali (MoneyGram validator + Morgan Stanley filing 0.14%) sono positive a medio termine. HOLD in attesa di conferma del rimbalzo sopra $75. (CoinGecko / CoinMarketCap, 29/06/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko / MetaMask (29/06)", "price": 72.69},
+          {"name": "CoinMarketCap (29/06)", "price": 74.31}
+        ],
+        "spread_pct": 2.20,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM",
+      "motivo": "Ticker STLAM non quotato su NYSE/Nasdaq: STLAM è il ticker della Borsa Italiana (BIT). Il ticker NYSE corretto per Stellantis è STLA. Le query per STLAM su NYSE/Nasdaq restituiscono esclusivamente prezzi in EUR su Borsa Italiana con spread tra le fonti >19% (€5.022 vs €6.242 = 21.7%). STLA su NYSE: $5.57 (Yahoo Finance, 29/06, -1.94%) — 1 sola fonte esplicita disponibile → BASSA → segnale non generato. Per correttezza si raccomanda di aggiornare il ticker a STLA nella lista asset di monitoraggio."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GOOGL",
+      "motivo": "Catalizzatore strutturale inequivocabile: inclusione nel Dow Jones Industrial Average il 29/06 genera acquisti passivi da fondi indicizzati non discrezionali. Affidabilità ALTA (spread 0.11%), +4.82% il 29/06. Profilo rischio/rendimento ottimale tra tutti i BUY di oggi."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "Monopolio EUV per chip AI, nessun competitor a 5+ anni. +4.93% il 29/06 con spread fonti 0.00%. Strong Buy consenso, driver strutturale pluriennale sull'AI capex da $725B. Affidabilità massima."
+    },
+    {
+      "rank": 3,
+      "asset": "TSLA",
+      "motivo": "+8.46% il 29/06 su anticipazioni consegne Q2 record. Momentum forte con leggero ritracciamento intraday oggi (-1.42%). CME single-stock futures 27/07 = ulteriore catalizzatore di liquidità. Spread fonti 0.76% ALTA."
+    },
+    {
+      "rank": 4,
+      "asset": "USO",
+      "motivo": "Catalizzatore geopolitico immediato: esplosione oleodotto Arabia Saudita, +1.52% oggi. Trade event-driven con orizzonte breve, affidabilità ALTA (spread 0.00%). Bassa correlazione con il resto del portafoglio tech."
+    },
+    {
+      "rank": 5,
+      "asset": "AMZN",
+      "motivo": "Prime Day 2026 (4 giorni, 23-26/06) e previsione BofA di beat ricavi Q2. +3.20% il 29/06, momentum positivo, 52-week range con spazio di recupero al massimo $278.56. Spread 0.89% ALTA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale eseguito su Alpaca. Allocazione indicativa per un portafoglio di riferimento da $10.000 sui 7 segnali BUY validati. Commissioni Alpaca: $0 su azioni USA, ETF e crypto.",
+    "allocazione_suggerita": {
+      "GOOGL": {"percentuale": "22%", "importo_usd": 2200, "prezzo_entry": 353.45, "azioni": 6.22, "note": "Alto conviction: catalizzatore DJIA strutturale"},
+      "ASML": {"percentuale": "18%", "importo_usd": 1800, "prezzo_entry": 1883.11, "azioni": 0.96, "note": "Alto conviction: monopolio EUV AI"},
+      "TSLA": {"percentuale": "18%", "importo_usd": 1800, "prezzo_entry": 407.54, "azioni": 4.42, "note": "Momentum post-surge; consolidamento intraday"},
+      "AMZN": {"percentuale": "15%", "importo_usd": 1500, "prezzo_entry": 239.33, "azioni": 6.27, "note": "Prime Day + Q2 BofA beat"},
+      "NVDA": {"percentuale": "15%", "importo_usd": 1500, "prezzo_entry": 198.32, "azioni": 7.56, "note": "Rimbalzo semiconduttori dal -23%"},
+      "RACE": {"percentuale": "7%", "importo_usd": 700, "prezzo_entry": 368.26, "azioni": 1.90, "note": "MS upgrade Overweight; diversificazione EU"},
+      "USO": {"percentuale": "5%", "importo_usd": 500, "prezzo_entry": 107.08, "azioni": 4.67, "note": "Event-driven geopolitico; breve termine"}
+    },
+    "totale_allocato_usd": 10000,
+    "segnali_hold": ["AAPL", "MSFT", "NFLX", "SAP", "GLD", "SLV", "BTC", "ETH", "SOL"],
+    "segnali_bassa_affidabilita": ["META", "AMD"],
+    "esclusi": ["STLAM"]
+  }
+}
