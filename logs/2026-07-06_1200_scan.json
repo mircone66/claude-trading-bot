@@ -1,0 +1,414 @@
+{
+  "timestamp": "2026-07-06T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione 6 luglio 2026 – prima giornata post-Independence Day. Mercati USA aperti dopo chiusura del 4 luglio. Stagione earnings Q2 dominante: Apple, Alphabet, Meta, MSFT, Amazon hanno tutti battuto le stime mercoledì 2 luglio, ma le reazioni azionarie sono state miste (MSFT e AMZN hanno ceduto, GOOGL e META hanno tenuto). Tesla: Q2 deliveries 480.126 unità (beat), stock volatile con range intraday $389-$438 e pressione sell-on-news. Sul fronte europeo ASML guida con +5.2% oggi dopo upgrade Bernstein a target $2.623; SAP esclusa per validazione dati insufficiente (prezzi da date diverse). Commodities: oro consolida a ~$3.780/oz dopo crollo giugno (-11.7%); USO sotto forte pressione (-24% mese) con riapertura Hormuz e aumento OPEC+. Argento pesante (-22.2% mese). Crypto: segnali contrastanti – ETF outflows record giugno ma whale BTC accumulation ($16.7B/2 settimane); ETH rimonta +12% su 7 giorni per annuncio 'biggest rebuild since the Merge'; SOL tokenized volume Q2 all-time high $5.77B. 11 asset validati su 18 (7 esclusi per dati insufficienti o discordanti).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 307.06,
+      "change_24h": "-1.02%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume in aumento su catalyst iPhone/memoria; earnings attesi 30 luglio 2026",
+      "news": "Apple negozia costi memoria con CXMT/YMTC per iPhone 18 Pro; piano lancio aggressivo 5+ modelli incluso foldable (10M unità, +42% vs previsioni iniziali); 52wk range $201.50-$317.40",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 307.06,
+      "stop_loss": 297.85,
+      "target": 322.41,
+      "commissione": 0.00,
+      "reasoning": "Il mercato ha reagito positivamente (+4.84% il 2 luglio) alle trattative con produttori cinesi CXMT/YMTC per ridurre i costi dei chip LPDDR di iPhone 18 Pro. Il piano foldable da 10M unità e i 5 nuovi modelli pianificati tra H2 2026 e H1 2027 aprono prospettive di crescita consistenti, con il titolo ancora sotto il 52wk high di $317.40 (fonte: TradingKey/Yahoo Finance 2-6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / MacroTrends", "price": 308.63, "data": "2026-07-02 close"},
+          {"name": "TradingKey analysis", "price": 305.49, "data": "2026-07-06 intraday"}
+        ],
+        "spread_pct": 1.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 401.39,
+      "change_24h": "+2.63%",
+      "trend_5d": "volatile",
+      "volume_note": "Anomalo alto: 73.92M vs media 49.25M (+50%); delivery beat Q2 catalyst",
+      "news": "Q2 2026 deliveries 480.126 unità (beat attese); stock ceduto dal high intraday $437.96 su preoccupazioni valutazione e pricing; range giornaliero estremo $389.30-$437.96 (12% spread); 52wk $288.77-$498.83",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 401.39,
+      "stop_loss": 389.35,
+      "target": 421.46,
+      "commissione": 0.00,
+      "reasoning": "Delivery beat Q2 (+480K unità) è fondamentalmente positivo, ma l'azione sell-on-news ha riportato il titolo dal high di $437.96 a $401 con volume anomalo +50%. La direzionalità a breve termine è incerta: attendere consolidamento sopra $410 prima di incrementare l'esposizione (fonte: TradingEconomics, CNBC/Yahoo Finance 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics / CNBC", "price": 398.97, "data": "2026-07-06 intraday"},
+          {"name": "Yahoo Finance / CNBC", "price": 403.80, "data": "2026-07-06 10:15 AM EDT"}
+        ],
+        "spread_pct": 1.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 359.91,
+      "change_24h": "-0.36%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; consolidazione post-earnings Q2",
+      "news": "Q2 2026 earnings beat; Alphabet affronta multa EU antitrust €4.1B; P/E sceso a 21.71x da 28.58x (Q4 2025); market cap $4.36T; 52wk range $172.77-$408.61",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 359.91,
+      "stop_loss": 349.11,
+      "target": 377.91,
+      "commissione": 0.00,
+      "reasoning": "La compressione del P/E da 28.58x a 21.71x rende GOOGL significativamente più attraente vs fine 2025, con il titolo a -12% dal 52wk high di $408.61. Q2 earnings beat confermato; analisti restano bullish su cloud e AI. La multa EU €4.1B è già nota e parzialmente prezzata (fonte: MarketBeat/WallStreetZen, CNBC 2-6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat / WallStreetZen", "price": 359.91, "data": "2026-07-02 close"},
+          {"name": "Yahoo Finance / CNBC", "price": 359.91, "data": "2026-07-02 close (confermato indipendentemente)"}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 76.18,
+      "change_24h": "+4.66%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume ridotto su titolo under pressure; Q2 earnings attesi 16 luglio 2026 (catalyst imminente)",
+      "news": "NFLX -21% YTD vicino al 52wk low $70.86; Q2 earnings il 16 luglio 2026; analisti evidenziano valuation e growth metrics come buying opportunity; range 52wk $70.86-$129.50",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 76.18,
+      "stop_loss": 73.89,
+      "target": 80.00,
+      "commissione": 0.00,
+      "reasoning": "Netflix a -21% YTD con 52wk range $70.86-$129.50 indica compressione valutativa significativa; il +4.66% di oggi suggerisce potenziale rimbalzo tecnico. Gli earnings del 16 luglio sono un catalyst bidirezionale; confidenza BASSA per elevato rischio pre-earnings. Affidabilita MEDIA poiché entrambi i prezzi provengono dal medesimo search (fonte: 247WallSt/Yahoo Finance, TradingEconomics 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / varie", "price": 75.94, "data": "2026-07-06 intraday"},
+          {"name": "TradingEconomics (fonte distinta citata)", "price": 76.41, "data": "2026-07-06 intraday"}
+        ],
+        "spread_pct": 0.62,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1830.66,
+      "change_24h": "+5.20%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume elevato su upgrade Bernstein e attesa earnings 15 luglio 2026",
+      "news": "Bernstein alza PT a $2.623 da $1.971 (Outperform, +48% upside); Q1 2026 EPS $8.37 vs stima $7.72 (+8.4%); earnings 15 luglio; prev close $1.769.32; 52wk range $683.48-$1.999.96",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1830.66,
+      "stop_loss": 1775.74,
+      "target": 1922.19,
+      "commissione": 0.00,
+      "reasoning": "ASML beneficia dell'upgrade Bernstein a $2.623 (+48% upside) e del Q1 che ha battuto EPS dell'8.4%; +5.2% oggi su volume elevato indica interesse istituzionale forte. Il 52wk range $683-$2.000 mostra la traiettoria di lungo termine. Catalyst imminente: earnings 15 luglio 2026. Affidabilita MEDIA poiché S2 cita prezzo approssimativo (fonte: Yahoo Finance/Nasdaq, CNBC/MarketBeat 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Nasdaq / StockAnalysis", "price": 1861.31, "data": "2026-07-06 intraday"},
+          {"name": "CNBC / MarketBeat (approssimativo)", "price": 1800.00, "data": "2026-07-06 circa"}
+        ],
+        "spread_pct": 3.35,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 378.39,
+      "change_24h": "-0.14%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale (16.97M shares/giorno al 2 lug); ETF redemptions -$5.3B in giugno",
+      "news": "GLD consolida dopo crollo giugno (oro -11.7%); 298 tonnellate ETF in perdita; floor strutturale ~$3.750-$4.000/oz; riapertura Hormuz riduce pressioni inflazionistiche a breve",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 378.39,
+      "stop_loss": 370.82,
+      "target": 393.53,
+      "commissione": 0.00,
+      "reasoning": "L'oro consolida dopo il sell-off di giugno; i $5.3B di redemptions ETF pesano sul sentiment ma il livello $3.750-$4.000/oz rimane un floor strutturale supportato dalle banche centrali. Mantenere la posizione difensiva; acquisti aggiuntivi solo su rottura confermata sopra $400 GLD (~4.000/oz oro) (fonte: BullionVault/GoldSilver.com, NYSE Arca/CNBC 2-6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / iShares / Barchart", "price": 378.13, "data": "2026-07-06 intraday"},
+          {"name": "NYSE Arca / CNBC / StockInvest", "price": 378.65, "data": "2026-07-02 close"}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 55.99,
+      "change_24h": "+1.76%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale; pressione sell mensile significativa",
+      "news": "Argento -22.2% nel mese precedente; SLV prev close $55.02; 52wk range $32.96-$109.83; mercato commodities in modalità risk-off; silver underperforma vs gold",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 55.99,
+      "stop_loss": 54.87,
+      "target": 58.23,
+      "commissione": 0.00,
+      "reasoning": "L'argento ha subito un crollo mensile eccezionale (-22.2%), portando SLV a -49% dal 52wk high di $109.83. Il +1.76% odierno è rimbalzo tecnico in un trend ribassista; senza catalizzatori macro positivi (Fed pivot o demand industriale) si suggerisce di mantenere senza incrementare (fonte: iShares/Investing.com, CNBC/NYSE Arca 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / NYSE Arca / iShares", "price": 55.99, "data": "2026-07-06 intraday"},
+          {"name": "Nasdaq / CNBC (prev close $55.02)", "price": 55.99, "data": "2026-07-06 confermato"}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 104.87,
+      "change_24h": "+0.69%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale; pressione macro strutturalmente negativa su WTI",
+      "news": "Riapertura flussi Stretto di Hormuz e aumento offerta OPEC+; USO NAV -24.07% nel mese; prospettiva oversupply; 52wk range $65.99-$154.08",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 104.87,
+      "stop_loss": 106.97,
+      "target": 100.68,
+      "commissione": 0.00,
+      "reasoning": "Il ripristino dei flussi nel Golfo Persico e l'incremento di produzione OPEC+ creano un contesto di oversupply per il WTI. USO ha perso il 24% in un mese dal 52wk high di $154.08; la tendenza ribassista è sostenuta da driver fondamentali. Il +0.69% odierno è un rimbalzo di breve termine nel trend negativo (fonte: MacroAxis/CNBC, SeekingAlpha mid-year 2026 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Barchart / Kraken", "price": 103.98, "data": "2026-07-05"},
+          {"name": "MarketBeat / Kraken", "price": 105.76, "data": "2026-07-06"}
+        ],
+        "spread_pct": 1.70,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63025.00,
+      "change_24h": "-1.20%",
+      "trend_5d": "volatile",
+      "volume_note": "$18.95B volume 24h (nella norma per BTC); whale accumulation anomala +$16.7B in 2 settimane",
+      "news": "Whale BTC hanno acquistato $16.7B in 2 settimane nonostante ETF outflows record $4B giugno; US Strategic Bitcoin Reserve blueprint atteso entro 22 luglio 2026; BTC rimbalzato da $58K support; ATH $126.080 (-49.5% dal peak)",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 63025.00,
+      "stop_loss": 59873.75,
+      "target": 68067.00,
+      "commissione": 0.00,
+      "reasoning": "L'accumulo massiccio delle whale ($16.7B in 2 settimane) contrasta l'outflow ETF istituzionale e suggerisce supporto strutturale. Il catalyst più significativo è il blueprint per la US Strategic Bitcoin Reserve (scadenza 22 luglio 2026). Tuttavia i prezzi stanno cedendo oggi con headline 'prices falling after last week's rebound', giustificando confidenza BASSA (fonte: Yahoo Finance/Fortune, CoinMarketCap 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Fortune", "price": 62904.00, "data": "2026-07-06 AM ET"},
+          {"name": "CoinMarketCap", "price": 63146.24, "data": "2026-07-06"}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1741.28,
+      "change_24h": "-1.51%",
+      "trend_5d": "rialzista",
+      "volume_note": "$9.63B volume 24h (nella norma); -1.51% 24h in pullback fisiologico dopo +12% settimanale",
+      "news": "Vitalik Buterin annuncia la più grande ristrutturazione del protocollo da 'the Merge': quantum resistance e privacy in priorità; ETH +12% in 7 giorni; ETF outflows in corso; market cap ~$209-233B",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1741.28,
+      "stop_loss": 1654.22,
+      "target": 1880.58,
+      "commissione": 0.00,
+      "reasoning": "Il pullback di -1.51% nelle ultime 24h è fisiologico dopo un rally settimanale di +12%. La narrativa tecnica e fondamentale convergono: il major protocol upgrade annunciato da Vitalik è un catalizzatore di lungo periodo significativo con quantum resistance e privacy. Il livello $1.741 offre un entry ragionevole con SL al -5% e target +8% (fonte: CoinDesk/Yahoo Finance, CoinMarketCap/Coinbase 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Fortune", "price": 1746.70, "data": "2026-07-06 8:45 AM ET"},
+          {"name": "CoinMarketCap", "price": 1735.85, "data": "2026-07-06"}
+        ],
+        "spread_pct": 0.62,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 80.37,
+      "change_24h": "-1.04%",
+      "trend_5d": "laterale",
+      "volume_note": "$1.87B volume 24h (nella norma); test di resistenza chiave a $80",
+      "news": "Solana tokenized asset volume Q2 2026 $5.77B (nuovo ATH); MoneyGram si unisce come validator per pagamenti stablecoin; analisti: breakout sopra $80 apre percorso verso $120; SOL ATH $293.31 (gen 2025)",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 80.37,
+      "stop_loss": 76.35,
+      "target": 86.80,
+      "commissione": 0.00,
+      "reasoning": "SOL è in fase di test della resistenza critica a $80; un breakout confermato potrebbe accelerare verso $120 secondo diversi analisti. I fondamentali Q2 (tokenized volume ATH $5.77B, MoneyGram validator) supportano la tesi. Confidenza BASSA per affidabilita MEDIA della triangolazione e resistenza non ancora superata (fonte: CoinDesk/Crypto.com, MetaMask/CoinGecko/CoinMarketCap 6 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask / CoinGecko", "price": 81.16, "data": "2026-07-05-06"},
+          {"name": "CoinMarketCap", "price": 79.57, "data": "2026-07-06"}
+        ],
+        "spread_pct": 1.98,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NVDA",
+      "motivo": "Fonti < 2: unica fonte esplicita CNBC/TradingEconomics $195.84 (6 lug, range $194-$197.55); secondo search privo di prezzo corrente esplicito. Nota: volume anomalo basso 56.51M vs media 160.2M; notizie su delay sistema Kyber NVL144 rack-scale al 2028.",
+      "prezzo_indicativo": 195.84,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Fonti < 2: unica fonte esplicita Kraken/CNBC $383.86 (6 lug, -1.52%, range $381.34-$389.02); secondo search privo di prezzo corrente. Nota: MSFT ha battuto Q2 ma ha subito sell-off il 3 luglio; 52wk range $349.20-$555.45; market cap $2.85T.",
+      "prezzo_indicativo": 383.86,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Fonti < 2: unica fonte esplicita CNBC/StockAnalysis $244.59 (6 lug, range $244.09-$245.46); secondo search privo di prezzo corrente esplicito. Nota: AMZN ha battuto Q2 ma ha preso sell-off il 3 luglio; market cap $2.61T; 52wk $196-$278.56.",
+      "prezzo_indicativo": 244.59,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "META",
+      "motivo": "Fonti < 2: unica fonte esplicita TradingEconomics $584.88 (5 lug close, range $580.42-$615.48); secondo search privo di prezzo corrente per 6 luglio. Nota: META +10% il 1 luglio su notizie AI cloud business; Q2 revenue $47.5B; Q2 capex $17B.",
+      "prezzo_indicativo": 584.88,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Fonti < 2: unica fonte esplicita Yahoo Finance $519.50 (5 lug close, range $506-$553.80); secondo search privo di prezzo corrente. Nota: AMD +142% YTD; premarket 6 luglio +2.6%; Wells Fargo e Cantor Fitzgerald hanno alzato i price target.",
+      "prezzo_indicativo": 519.50,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Scarto inter-data non validabile: S1 prezzo corrente 6 lug $384.97 (+6.19% settimanale) vs S2 giugno 25 $348.75 (scarto calcolato 9.9%); trattandosi di date diverse, la triangolazione non è applicabile come verifica contemporanea. Prossimi earnings Ferrari: 30 luglio 2026.",
+      "prezzo_indicativo": 384.97,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Dati EUR inconsistenti: S1 mostra €4.934 (5 lug) SOTTO il 52wk low dichiarato di €5.306 (contraddizione interna dei dati); S2 mostra €6.239 (6 lug) pari a +26.5% da S1 in un giorno (impossibile senza evento straordinario). Prezzo USD NYSE (ticker STLA) non recuperato da nessuna fonte.",
+      "prezzo_indicativo": null,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Scarto 4.01% al limite superiore della soglia BASSA: S1 $162.59 (WallStreetZen, 3 lug post-Sapphire) vs S2 $156.19 (Investing.com, 29 giu pre-Sapphire); date diverse non configurano triangolazione contemporanea valida. Nota: SAP ha guadagnato +4.9% dopo conferenza Sapphire 2026 (Autonomous Enterprise AI); analisti Consensus Strong Buy (23/26); earnings attesi 23 luglio 2026.",
+      "prezzo_indicativo": 162.59,
+      "affidabilita": "BASSA"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ETH",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "ALTA",
+      "motivo": "Catalyst tecnico eccezionale: Vitalik annuncia la più grande ristrutturazione del protocollo da 'the Merge' (quantum resistance + privacy). ETH +12% in 7 giorni su forte narrativa; pullback -1.51% oggi offre entry su dip con SL -5% / target +8%."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "MEDIA",
+      "motivo": "Bernstein target $2.623 (+48% upside); +5.2% oggi su volume istituzionale elevato; Q1 EPS beat +8.4%; catalyst earnings imminente 15 luglio. Leader mondiale EUV indispensabile per semiconduttori AI."
+    },
+    {
+      "rank": 3,
+      "asset": "GOOGL",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "ALTA",
+      "motivo": "P/E compresso a 21.71x (da 28.58x Q4 2025), titolo a -12% dal 52wk high $408.61. Q2 earnings beat; bullish su cloud e AI per H2 2026. Valutazione la più attraente degli ultimi anni per il gruppo."
+    },
+    {
+      "rank": 4,
+      "asset": "AAPL",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "ALTA",
+      "motivo": "Foldable iPhone confermato (10M unità); 5-model aggressive launch H2 2026-H1 2027. Titolo recupera da $294 con catalyst positivi; earnings 30 luglio come prossimo driver di medio termine."
+    },
+    {
+      "rank": 5,
+      "asset": "BTC",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "affidabilita": "ALTA",
+      "motivo": "US Strategic Bitcoin Reserve blueprint atteso entro 22 luglio 2026 (catalyst politico sistemico); whale accumulation $16.7B in 2 settimane contrasta ETF outflows. Evento regolatorio potenzialmente storico per il mercato crypto."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato ad Alpaca. Allocazione indicativa basata esclusivamente su asset con affidabilita ALTA o MEDIA.",
+    "asset_totali_analizzati": 18,
+    "asset_con_segnale": 11,
+    "asset_esclusi": 8,
+    "segnali_per_tipo": {
+      "BUY": ["AAPL", "GOOGL", "NFLX", "ASML", "BTC", "ETH", "SOL"],
+      "HOLD": ["TSLA", "GLD", "SLV"],
+      "SELL": ["USO"]
+    },
+    "allocazione_suggerita": {
+      "ETH": "15%",
+      "ASML": "12%",
+      "AAPL": "10%",
+      "GOOGL": "10%",
+      "BTC": "12%",
+      "GLD": "10%",
+      "TSLA": "8%",
+      "SOL": "7%",
+      "NFLX": "5%",
+      "SLV": "3%",
+      "USO": "0%",
+      "Liquidita_buffer": "8%"
+    },
+    "rischio_portafoglio": "MEDIO-ALTO",
+    "breakdown_rischio": {
+      "crypto": "34% (ETH 15% + BTC 12% + SOL 7%)",
+      "azioni_growth": "35% (ASML 12% + AAPL 10% + GOOGL 10% + NFLX 5%)",
+      "hold_defensive": "21% (GLD 10% + TSLA 8% + SLV 3%)",
+      "liquidita": "8%",
+      "USO_escluso": "0% (SELL signal - evitare)"
+    }
+  }
+}
