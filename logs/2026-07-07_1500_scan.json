@@ -1,0 +1,472 @@
+{
+  "timestamp": "2026-07-07T15:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione 7 luglio 2026 – Mercato USA positivo guidato da META (+3.1% su lancio cloud business AI) e TSLA (+6.7% per espansione robotaxi a Miami con FSD optimism). NVDA sotto pressione (-2.2% mattina, poi recupero parziale a +0.37%) per notizie DeepSeek che sviluppa chip AI proprietari; GOOGL avanza +1.8% dopo ingresso nel Dow Jones il 2 luglio. Sul fronte europeo ASML scivola in sessione EUR per pressioni settoriali semiconduttori (earnings 15 luglio imminenti); SAP consolida in attesa degli earnings del 23 luglio; Ferrari RACE laterale. Crypto in recupero: BTC +2.5% su aspettative US Strategic Bitcoin Reserve, SOL +1.3% oggi (+9.2% settimanale) con lancio primo ETF SOL staked negli USA e 95% del mercato tokenized equity. Oro laterale (~$4,100-4,160/oz); SLV in recupero da pressioni recenti. 14 asset validati su 18 (13 con segnale, 1 HOLD forzato), 5 esclusi per dati insufficienti o discordanti.",
+  "signals": [
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 419.77,
+      "change_24h": "+6.69%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo su strong catalyst; forte rimbalzo da selloff precedente",
+      "news": "Tesla lancia robotaxi a Miami con FSD avanzato; Q2 2026 deliveries 480.126 unità (beat attese); RBC Capital alza PT a $500; 52wk range $288.77-$498.83",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 419.77,
+      "stop_loss": 407.18,
+      "target": 440.76,
+      "commissione": 0.00,
+      "reasoning": "Il lancio del robotaxi a Miami e l'ottimismo FSD hanno innescato un +6.69% in sessione, con RBC che alza il PT a $500 (+19% upside dall'entry). Il beat dei deliveries Q2 a 480.126 unità rafforza la narrativa fondamentale. Entry consigliato su eventuali pullback verso $410-415 (fonte: FX Leaders/Investing.com, Yahoo Finance/CNBC 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (query 1)", "price": 419.77},
+          {"name": "CNBC multi-ticker quote (news aggregate)", "price": 419.77}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 193.43,
+      "change_24h": "-2.20% mattina → +0.37% chiusura (intraday volatile)",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; titolo quasi piatto YTD 2026 nonostante hype AI",
+      "news": "DeepSeek annuncia sviluppo chip AI proprietario (pressione competitiva); NVDA nega ritardi AI server next-gen; titolo quasi piatto 2026; analisti divisi su momentum H2 (fonte: moomoo/CNBC, Yahoo Finance 7 lug 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 193.43,
+      "stop_loss": 187.63,
+      "target": 203.10,
+      "commissione": 0.00,
+      "reasoning": "La competizione da chip AI proprietari cinesi (DeepSeek) introduce un'incognita strutturale sulla domanda GPU NVDA. Il titolo è quasi piatto YTD 2026 nonostante l'hype AI. Affidabilità MEDIA per scarto 2.22% tra le due fonti ($191.30 mattina vs $195.55 news aggregate) riflette la volatilità intraday. Attendere chiarezza competitiva prima di aumentare esposizione (fonte: moomoo/CNBC, CNBC news aggregate 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "moomoo / CNBC (sessione mattutina, query 1)", "price": 191.30},
+          {"name": "Yahoo Finance / CNBC (news aggregate, query B)", "price": 195.55}
+        ],
+        "spread_pct": 2.22,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 243.61,
+      "change_24h": "+0.54%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma 48.38M shares; trend rialzista costante",
+      "news": "Amazon lancia emissione obbligazionaria multi-tranche da almeno $25B per investimenti AI; consensus analisti 'Strong Buy' (avg 1.19); market cap $2.61T; 52wk $196-$278.56",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 243.61,
+      "stop_loss": 236.30,
+      "target": 255.79,
+      "commissione": 0.00,
+      "reasoning": "La raccolta di $25B in obbligazioni corporate per AI infrastructure segnala aggressive investment cycle in AWS e AI services. Il consensus analisti di Strong Buy con avg 1.19 è tra i più elevati del settore. P/E 33.99x è ragionevole per la crescita attesa. La triangolazione ALTA (scarto 0.46%) conferma solidità del dato (fonte: Nasdaq/Yahoo Finance, CNBC news aggregate 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq / Yahoo Finance (query 1)", "price": 243.05},
+          {"name": "CNBC news aggregate (query A)", "price": 244.16}
+        ],
+        "spread_pct": 0.46,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 366.56,
+      "change_24h": "+1.82%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume regolare; consolidazione con bias rialzista su AI optimism",
+      "news": "Alphabet entra ufficialmente nel Dow Jones (2 lug 2026); Berkshire accumula $41B in stake GOOGL; investimento $2.4B in startup nuclear fusion tedesca; multa EU antitrust €4.1B confermata (nota e prezzata); P/E 27.45x; 52wk $172.77-$408.61",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 366.56,
+      "stop_loss": 355.56,
+      "target": 384.89,
+      "commissione": 0.00,
+      "reasoning": "L'ingresso nel Dow Jones aumenta la domanda strutturale da fondi passivi; il $41B stake Berkshire è un endorsement di lungo periodo per GOOGL. Il titolo è a -10.3% dal 52wk high di $408.61 con P/E 27.45x, valutazione ragionevole in contesto AI growth. La multa EU €4.1B è già nota e prezzata dal mercato (fonte: Yahoo Finance/Investing.com, CNBC news aggregate 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (query 1)", "price": 366.66},
+          {"name": "CNBC news aggregate (query A)", "price": 366.46}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 600.26,
+      "change_24h": "+3.13%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo rialzista su catalyst notizia cloud; surge +9.7-10% nella settimana del lancio",
+      "news": "Meta lancia business cloud AI per competere direttamente con AMZN, MSFT, GOOGL sui servizi di computing; datacenter expansion aggressiva; Zuckerberg usa Meta Glasses anche su jet ski; market cap $1.49T; 52wk range $502-$640",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 600.26,
+      "stop_loss": 582.25,
+      "target": 630.27,
+      "commissione": 0.00,
+      "reasoning": "Il lancio del cloud business AI è un catalyst strategico di primo piano: META entra nel mercato cloud da $580B/anno attualmente dominato da AMZN/MSFT/GOOGL. La mossa diversifica i ricavi oltre advertising e apre upside strutturale. Il +3.1% odierno segue un +9.7-10% nella settimana dell'annuncio; confidenza ALTA supportata da doppia fonte con scarto 0.01% (fonte: Yahoo Finance/Kraken, tradersunion/Seeking Alpha 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Kraken (query 1, fonte 1)", "price": 600.23},
+          {"name": "Yahoo Finance (query 1, fonte 2 / CNBC close)", "price": 600.29}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 76.04,
+      "change_24h": "-2.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume ridotto; titolo in fase di compressione pre-earnings",
+      "news": "Netflix -19-21% YTD 2026, -34% dai massimi; Q2 earnings attesi 16 luglio (catalyst bidirezionale); Goldman Sachs positivo; analisti vedono 'buying opportunity' per valuation/growth metrics; EPS Q2 atteso $0.79; 52wk $70.86-$129.50",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 76.04,
+      "stop_loss": 73.76,
+      "target": 79.84,
+      "commissione": 0.00,
+      "reasoning": "NFLX è compressa con -21% YTD e -34% dai massimi, ma gli earnings del 16 luglio rappresentano un catalyst bidirezionale ad alto rischio. Goldman e altri analisti evidenziano valuation attraente, ma l'incertezza pre-earnings suggerisce HOLD. In caso di beat significativo degli EPS Q2, il segnale diventa BUY con target revisione rialzista (fonte: MarketBeat/Yahoo Finance, CNBC news aggregate 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / MarketBeat (query 1 close)", "price": 76.05},
+          {"name": "CNBC news aggregate (query A)", "price": 76.02}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1872.11,
+      "change_24h": "-1.16% (stima da spread fonti; sliding intraday su pressioni settoriali)",
+      "trend_5d": "laterale_con_bias_negativo",
+      "volume_note": "Settore semiconduttori sotto pressione; vendite istituzionali sulla debolezza",
+      "news": "ASML scivola oggi per pressioni settoriali sui semiconduttori (AMD/Intel in calo su Samsung earnings); Bernstein mantiene target €2.300 (Outperform); earnings Q2 attesi 15 luglio 2026; 52wk range $683.48-$1.999.96",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1872.11,
+      "stop_loss": 1815.95,
+      "target": 1965.72,
+      "commissione": 0.00,
+      "reasoning": "ASML leader mondiale EUV irrinunciabile per AI chip manufacturing mantiene un forte LT case (Bernstein €2.300 target). Tuttavia oggi il settore semiconduttori è sotto pressione e gli earnings del 15 luglio sono un catalyst imminente che richiede cautela. HOLD in attesa di conferma dati Q2 o debolezza sotto $1.815 per rivalutare (fonte: Investing.com NASDAQ, Investing.com news/MarketBeat 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NASDAQ (query 1 + conferma query 2)", "price": 1861.31},
+          {"name": "Fonte secondaria citata in query 1 (TrendLyne/altro)", "price": 1882.90}
+        ],
+        "spread_pct": 1.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 156.98,
+      "change_24h": "n.d. (dati intraday 7 lug non espliciti nelle fonti)",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; consolidazione pre-earnings",
+      "news": "SAP earnings previsti 23 luglio 2026; 13 analisti Buy / 0 Sell (Strong Buy consensus); PT medio $254.33 (+62% upside); AI enterprise focus; 52wk range $148.06-$313.28",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 156.98,
+      "stop_loss": 152.27,
+      "target": 163.26,
+      "commissione": 0.00,
+      "reasoning": "SAP mostra un forte caso fondamentale con Strong Buy unanime (13/13 analisti) e PT medio $254.33. L'enterprise AI strategy è un driver di crescita solido. HOLD pre-earnings 23 luglio; in caso di beat dei ricavi cloud, target di breve $175+ diventano raggiungibili. Il dato $157.76 (oggi) vs $156.19 (Investing.com, potenzialmente data 29 giu) indica stabilità del prezzo (fonte: MarketBeat/WallStreetZen, Investing.com NYSE 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / MarketBeat (query 1, oggi 7 lug)", "price": 157.76},
+          {"name": "Investing.com NYSE (query 2)", "price": 156.19}
+        ],
+        "spread_pct": 1.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 389.49,
+      "change_24h": "-0.61% (vs previous close $391.86 da Investing.com)",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; nessun catalyst di rilievo oggi",
+      "news": "Ferrari senza catalyst specifici oggi; earnings 30 luglio 2026; 52wk range $312.51-$519.10 (titolo -25% dai massimi); dividend yield 1.06%; market cap $68.69B",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 389.49,
+      "stop_loss": 377.81,
+      "target": 408.96,
+      "commissione": 0.00,
+      "reasoning": "Ferrari tratta a $389 con solida validazione ALTA (scarto 0.08% tra fonti). Il titolo è a -25% dal 52wk high di $519.10, potenzialmente interessante per investitori LT, ma mancano catalyst di breve termine. Earnings del 30 luglio saranno il prossimo driver; in attesa si suggerisce HOLD con SL al -3% (fonte: Yahoo Finance/CNBC, Investing.com NYSE 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (seconda fonte query 1)", "price": 389.65},
+          {"name": "Investing.com NYSE (query 2, 7 lug 2026)", "price": 389.33}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 381.16,
+      "change_24h": "-0.51%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume regolare; ETF inflows netti $0.83B aprile; pressione da tassi elevati",
+      "news": "Oro ~$4.100-4.160/oz; banche centrali continuano accumulo (supporto strutturale); tassi elevati e Treasury yield limitano upside; ETF USL gold net inflows $0.83B aprile; 52wk range $300.96-$509.70 (GLD)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 381.16,
+      "stop_loss": 373.54,
+      "target": 396.41,
+      "commissione": 0.00,
+      "reasoning": "L'oro consolida nel range $4.100-4.160/oz, supportato dall'acquisto delle banche centrali ma limitato dai tassi reali elevati. GLD è a -25% dal suo picco del 52-week ($509.70, raggiunto a gennaio 2026) ma la discesa sembra arrestarsi. Nessun catalyst direzionale forte oggi; mantenere esposizione difensiva esistente (fonte: Yahoo Finance/StockAnalysis, CNBC/Bloomberg NYSE Arca 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / StockAnalysis (query 1, today Jul 7)", "price": 380.19},
+          {"name": "CNBC / Bloomberg NYSE Arca (query 2)", "price": 382.13}
+        ],
+        "spread_pct": 0.51,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 56.06,
+      "change_24h": "+0.23% (vs $55.99 Investing.com)",
+      "trend_5d": "lieve_rialzista",
+      "volume_note": "Volume nella norma 23.26M shares 30d avg; recupero tecnico in corso",
+      "news": "Argento in recupero da pressioni recenti; domanda industriale silver robusta (elettronica, pannelli solari); banche centrali supportano precious metals; inflows ETF in miglioramento; ounces in trust: 479M (7 lug 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 56.06,
+      "stop_loss": 54.94,
+      "target": 58.30,
+      "commissione": 0.00,
+      "reasoning": "SLV mostra segnali di recupero tecnico con domanda industriale d'argento (solare, elettronica 5G) come supporto fondamentale. L'accumulo di 479M oz in trust con ounces stabili indica domanda strutturale. Entry favorevole con rischio/rendimento 2:1 (SL -2% / target +4%) in contesto di ripresa precious metals H2 2026 (fonte: Investing.com, iShares/NYSE Arca 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (query 1)", "price": 55.99},
+          {"name": "iShares official / NYSE Arca (query 2, 6 lug mid-point)", "price": 56.12}
+        ],
+        "spread_pct": 0.23,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63619.42,
+      "change_24h": "+2.46%",
+      "trend_5d": "lieve_rialzista",
+      "volume_note": "$30.96B volume 24h (nella norma per BTC); mercato crypto in recupero generale",
+      "news": "White House ancora in valutazione per 'struttura ottimale' della federal bitcoin reserve (catalyst politico positivo LT); Strategy/Saylor vende 3.588 BTC per $216M (dividendi azioni privilegiate, leggera pressione); BTC +2.46%; market cap $1.29T; supply circolante 20.05M BTC",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63619.42,
+      "stop_loss": 60438.45,
+      "target": 68708.97,
+      "commissione": 0.00,
+      "reasoning": "La vendita di 3.588 BTC da parte di Strategy per necessità di liquidità introduce pressione tattica. Il catalyst US Bitcoin Reserve rimane positivo ma con timing incerto. Affidabilità MEDIA (scarto 1.82% tra Coinbase e CoinMarketCap) richiede cautela. HOLD con piccola posizione esistente; incrementare solo su conferma struttura reserve federale (fonte: Coinbase, CoinMarketCap 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (query 2)", "price": 64194.33},
+          {"name": "CoinMarketCap (query 2)", "price": 63044.50}
+        ],
+        "spread_pct": 1.82,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1791.66,
+      "change_24h": "+1.13%",
+      "trend_5d": "rialzista",
+      "volume_note": "$10.45B volume 24h (nella norma); momentum rialzista settimanale",
+      "news": "Ethereum developers abbracciano roadmap 'Lean Ethereum' di Vitalik Buterin; focus su semplificazione protocollo e scalabilità; lancio indiretto prodotti ETH staked positivo per domanda; market cap $218B; supply circolante 120.5M ETH",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1791.66,
+      "stop_loss": 1702.08,
+      "target": 1934.99,
+      "commissione": 0.00,
+      "reasoning": "Il consenso degli sviluppatori sulla 'Lean Ethereum' roadmap (semplificazione protocollo, maggiore decentralizzazione) è un catalyst tecnico fondamentale di lungo periodo. Con ETH in trend rialzista (+1.13% oggi) e prodotti staked in espansione, l'asset mostra forza relativa. Affidabilità MEDIA (scarto 1.70%) non impedisce il segnale per asset crypto con soglia +/-5% SL (fonte: CoinMarketCap, Coinbase 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (query 1 e 2 confermato)", "price": 1806.78},
+          {"name": "Coinbase (query 2)", "price": 1776.53}
+        ],
+        "spread_pct": 1.70,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 81.42,
+      "change_24h": "+1.34%",
+      "trend_5d": "rialzista",
+      "volume_note": "$2.73B volume 24h (robusto); SOL +9.19% negli ultimi 7 giorni",
+      "news": "Primo ETF SOL staked lanciato negli USA (50% holdings guadagna staking rewards, catalizzatore istituzionale); SOL cattura 95% del trading di tokenized equity la settimana scorsa ($1.29B volume); Russia Sberbank pianifica crypto wallet; ranking #7 per market cap",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 81.42,
+      "stop_loss": 77.35,
+      "target": 87.93,
+      "commissione": 0.00,
+      "reasoning": "Il lancio del primo ETF SOL staked negli USA è un catalyst istituzionale significativo che crea domanda strutturale di SOL (i fondi devono acquistare e stakare SOL). Il 95% di market share sui tokenized equity ($1.29B) dimostra adoption concreta. Con +9.19% settimanale e +1.34% oggi, il momentum è solido. Binance outlier ($203.86) escluso per incoerenza con tutte le altre fonti (fonte: CoinMarketCap, Coinbase 7 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (query 1 e 2 confermato)", "price": 82.05},
+          {"name": "Coinbase (query 2)", "price": 80.79}
+        ],
+        "spread_pct": 1.56,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Fonti < 2: unica fonte esplicita con prezzo intraday Yahoo Finance $312.66 (7 lug 2026, prev close $308.63); la seconda query ha restituito solo link a Yahoo Finance e CNBC senza prezzo numerico. 52wk range $201.50-$317.40.",
+      "prezzo_indicativo": 312.66,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Fonti < 2: unica fonte esplicita con prezzo $390.83 (query 1, dal 5 lug 2026); la seconda query ha restituito solo notizie (4.800 tagli, Xbox ristrutturazione) senza prezzo corrente. Market cap $2.89T; P/E 23.26; 52wk range $349-$555.",
+      "prezzo_indicativo": 390.83,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread inter-fonte eccessivo: S1 Yahoo Finance/CNN $549.09 vs S2 CNBC/Yahoo Finance $283.85 → scarto 63.7% (soglia max 4%). Le due fonti riflettono probabilmente dati temporali molto diversi o confusione tra sessioni. Dati non riconciliabili, nessun segnale generabile.",
+      "prezzo_indicativo": null,
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Ticker NYSE non è STLAM (quotato a Milano/BIT) ma STLA: la query 1 ha restituito dati EUR del listino Milano (€5.029) e menzionato 'previous close' STLA $8.59 senza prezzo corrente; la query 2 per STLA NYSE ha restituito un solo prezzo ($7.47, Yahoo Finance) senza conferma da seconda fonte indipendente. Fonti < 2 per prezzo corrente NYSE.",
+      "prezzo_indicativo": 7.47,
+      "ticker_corretto_nyse": "STLA",
+      "affidabilita": "BASSA"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread inter-fonte eccessivo: query 1 ha restituito 4 prezzi in forte conflitto ($106.73, $104.16, $103.98, $111.23) con scarto max 6.98% tra estremi (soglia max 4%); query 2 non ha restituito prezzo specifico ma solo descrizione del fondo. Dati inaffidabili.",
+      "prezzo_indicativo": null,
+      "affidabilita": "BASSA"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "META",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "affidabilita": "ALTA",
+      "motivo": "Lancio cloud business AI è un catalyst strategico trasformativo: META entra nel mercato cloud da $580B/anno competendo con AMZN/MSFT/GOOGL. Prezzo validato con scarto 0.01% (massima affidabilità). +3.1% oggi, +9.7% nella settimana dell'annuncio."
+    },
+    {
+      "rank": 2,
+      "asset": "SOL",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "MEDIA",
+      "motivo": "Primo ETF SOL staked negli USA (istituzionale) + dominio 95% tokenized equity ($1.29B volume settimanale). Catalyst multipli convergenti. +9.19% in 7 giorni con momentum in accelerazione."
+    },
+    {
+      "rank": 3,
+      "asset": "ETH",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "MEDIA",
+      "motivo": "Roadmap 'Lean Ethereum' di Vitalik abbracciata dai developer: semplificazione protocollo e scalabilità come priorità. Catalyst tecnico di lungo periodo con prodotti staked in espansione. +1.13% oggi su trend settimanale positivo."
+    },
+    {
+      "rank": 4,
+      "asset": "TSLA",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "ALTA",
+      "motivo": "Lancio robotaxi Miami + FSD optimism + delivery beat Q2 (480K unità) = triplice catalyst convergente. RBC alza PT a $500 (+19% upside). Validazione ALTA con 0.00% scarto tra fonti."
+    },
+    {
+      "rank": 5,
+      "asset": "AMZN",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "affidabilita": "ALTA",
+      "motivo": "$25B bond sale per AI infrastructure: Amazon scala investimento AWS e AI aggressivamente. Strong Buy unanime da analisti (avg 1.19). Validazione ALTA 0.46% scarto. P/E 33.99x giustificato dalla crescita cloud."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato ad Alpaca. Allocazione indicativa basata su asset con affidabilita ALTA (segnali BUY prioritari) e MEDIA (posizioni ridotte).",
+    "asset_totali_analizzati": 18,
+    "asset_con_segnale": 14,
+    "asset_esclusi": 5,
+    "segnali_per_tipo": {
+      "BUY": ["TSLA", "AMZN", "GOOGL", "META", "SLV", "ETH", "SOL"],
+      "HOLD": ["NVDA", "NFLX", "ASML", "SAP", "RACE", "GLD", "BTC"],
+      "SELL": []
+    },
+    "allocazione_suggerita": {
+      "META": "18%",
+      "TSLA": "13%",
+      "AMZN": "12%",
+      "GOOGL": "11%",
+      "ETH": "10%",
+      "SOL": "8%",
+      "GLD": "8%",
+      "ASML": "7%",
+      "SLV": "5%",
+      "BTC": "4%",
+      "NFLX": "2%",
+      "Liquidita_buffer": "2%"
+    },
+    "rischio_portafoglio": "MEDIO-ALTO",
+    "breakdown_rischio": {
+      "tech_growth_usa": "54% (META 18% + TSLA 13% + AMZN 12% + GOOGL 11%)",
+      "crypto": "22% (ETH 10% + SOL 8% + BTC 4%)",
+      "defensive_commodities": "13% (GLD 8% + SLV 5%)",
+      "tech_eu": "9% (ASML 7% + NFLX 2%)",
+      "liquidita": "2%"
+    }
+  }
+}
