@@ -1,0 +1,414 @@
+{
+  "timestamp": "2026-07-09T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "9 luglio 2026: Mercati tech misti con NVDA in testa (+2.4%) su domanda AI robusta e potenziale riapertura export chip verso Cina; BofA raccomanda BUY. Geopolitica domina commodity: Trump dichiara cessate il fuoco Iran 'finito' al vertice NATO (8 luglio) → USO surge +4.4% ieri, correzione -3.3% oggi; oro in recupero (+1.2%) dopo ribasso. AAPL annuncia deal Broadcom $30B per chipmaking USA. Crypto: Bitcoin ETF interrompono streak deflussi 10 giorni con +$221.7M; SOL mostra record TVL $3.4B in real-world asset; ETH continua underperformance (-32% anno). Europa sotto pressione: STLA con downgrades analisti; RACE ed SAP in attesa earning (30 e 23 luglio). Esclusi 6 asset per dati insufficienti (MSFT, AMZN, GOOGL, NFLX, AMD, ASML).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 312.85,
+      "change_24h": "+0.88%",
+      "trend_5d": "laterale/rialzista",
+      "volume_note": "volume non disponibile da fonti consultate",
+      "news": "Apple annuncia impegno $30B con Broadcom per chipmaking USA (8 luglio 2026); Morgan Stanley: Mag 7 valuations al minimo decennale — segnale di potenziale accumulazione istituzionale",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 312.85,
+      "stop_loss": 303.46,
+      "target": 328.49,
+      "commissione": 0.00,
+      "reasoning": "Deal Broadcom $30B rafforza narrativa supply chain USA-domestica; Apple si posiziona favorevolmente nel quadro tariffario 2026 (fonte: Yahoo Finance / CNBC July 8 2026). Valutazioni Mag 7 al minimo decennale per P/E, price range recente $307-$315 mostra stabilità.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Kraken (vari aggregatori July 9)", "price": 312.30},
+          {"name": "Yahoo Finance close July 8 2026", "price": 313.39}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 201.63,
+      "change_24h": "+2.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume non disponibile esplicitamente; momentum rialzista confermato su due sessioni consecutive (+3.65% July 8, +2.4% July 9)",
+      "news": "BofA raccomanda BUY NVDA definendo il titolo 'Unique, Durable Growth Franchise'; Cina potenzialmente disposta a consentire export di alcuni chip Nvidia; Goldman Sachs: multiplo 21.7x valutazione 'compelling' dopo Kyber delay denial (fonte: TradingKey / Robinhood July 2026)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 201.63,
+      "stop_loss": 195.58,
+      "target": 211.71,
+      "commissione": 0.00,
+      "reasoning": "Duplice catalizzatore: BofA BUY con tesi AI duratura + possibile riapertura mercato cinese per chip meno avanzati. Stock +3.65% July 8, +2.4% July 9 su volumi sostenuti; market cap $4.94T conferma leadership settore (fonte: CNBC / Yahoo Finance July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC real-time (July 9 2026)", "price": 200.78},
+          {"name": "Yahoo Finance (July 9 2026)", "price": 202.47}
+        ],
+        "spread_pct": 0.84,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 399.99,
+      "change_24h": "-3.14%",
+      "trend_5d": "laterale/ribassista",
+      "volume_note": "volume non disponibile; titolo in range $390-$407 negli ultimi 2 giorni",
+      "news": "New Jersey studia legge per vietare operazioni robotaxi nello stato (negativo per business Cybercab); RBC Capital alza PT a $500 (positivo); SpaceX synergies citate come upside (fonte: Yahoo Finance / CNBC July 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 399.99,
+      "stop_loss": 387.99,
+      "target": 419.99,
+      "commissione": 0.00,
+      "reasoning": "NOTA INCERTEZZA (spread fonti 3.24%): segnali contraddittori — NJ ban robotaxi pesa sul sentiment a breve; RBC $500 PT supporta tesi rialzista. Spread tra fonti riflette volatilità intraday. In attesa di chiarimento regolatorio, posizione HOLD consigliata (fonte: TradingEconomics July 8 / Yahoo Finance July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics (July 8 2026 chiusura)", "price": 393.40},
+          {"name": "Yahoo Finance (July 9 2026, stima recente)", "price": 406.59}
+        ],
+        "spread_pct": 3.24,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 609.36,
+      "change_24h": "-2.02%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume non disponibile esplicitamente; -2.02% July 8 in apertura da $614 a $603",
+      "news": "META earning Q2 2026 previsti il 28 luglio; Morgan Stanley segnala Mag 7 al minimo decennale di premium valutativo; apertura July 8 a $614 poi chiusura a $603 (-2.02%) (fonte: Marketbeat / Yahoo Finance July 2026)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 609.36,
+      "stop_loss": 591.08,
+      "target": 639.83,
+      "commissione": 0.00,
+      "reasoning": "NOTA INCERTEZZA (spread fonti 2.05%): earning il 28 luglio crea binary event. Stock sceso da $796 (52w high) a $609; valutazioni più attraenti ma momentum ribassista. Attendere earnings prima di prendere posizione direzionale (fonte: Marketbeat July 8 / Yahoo Finance July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Marketbeat (chiusura July 8 2026)", "price": 603.12},
+          {"name": "Yahoo Finance analyst comparison price (July 9 2026)", "price": 615.60}
+        ],
+        "spread_pct": 2.05,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 159.93,
+      "change_24h": "-0.99%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume non disponibile; titolo da $313 52w high a ~$160 USD attuale",
+      "news": "SAP earning Q2 previsti il 23 luglio 2026; Xetra EUR 136.60 July 9 (da EUR 137.96 precedente chiusura); 52w range NYSE $148-$313 — stock a metà range (fonte: Investing.com / Yahoo Finance July 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 159.93,
+      "stop_loss": 155.13,
+      "target": 167.93,
+      "commissione": 0.00,
+      "reasoning": "NOTA INCERTEZZA (spread fonti 3.55% per confronto USD-EUR su date diverse): earning il 23 luglio crea binary event; stock sceso drasticamente da $313 a ~$160 in anno; analisti 23 BUY 0 SELL con PT medio EUR 213.73 — potenziale upside ma timing richiede conferma earning (fonte: Investing.com / Yahoo Finance July 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance NYSE USD (July 7 2026)", "price": 162.77},
+          {"name": "Investing.com Xetra EUR 136.60 → USD stimato (July 9 2026)", "price": 157.09}
+        ],
+        "spread_pct": 3.55,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 382.18,
+      "change_24h": "-3.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume non disponibile; -3.1% July 8; -30% anno su anno",
+      "news": "Ferrari (RACE) cade -3.1% July 8 a $375.03 nonostante Q1 2026 EPS $2.69 vs $2.37 atteso (+beat); prossimi earning previsti il 30 luglio; GF Score 94/100 — valutazione fondamentale forte ma momentum tecnico debole (fonte: GuruFocus / Investing.com July 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 382.18,
+      "stop_loss": 370.71,
+      "target": 401.29,
+      "commissione": 0.00,
+      "reasoning": "NOTA INCERTEZZA (spread fonti 3.74%): Ferrari batte le attese Q1 ma il titolo scende — segnale di aspettative già scontate. Stock -30% YoY da $519 a $382; supporto fondamentale forte (GF Score 94) ma earning July 30 crea incertezza. Nessuna posizione direzionale consigliata (fonte: GuruFocus July 8 / Investing.com July 7 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "GuruFocus (chiusura July 8 2026)", "price": 375.03},
+          {"name": "Investing.com (July 7 2026)", "price": 389.33}
+        ],
+        "spread_pct": 3.74,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.76,
+      "change_24h": "+0.34%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume non disponibile; stock da $12.22 52w high a $5.76 attuale (-52.8%)",
+      "news": "Citi abbassa PT a EUR 5.50 da EUR 7.20; JPMorgan downgrada a Neutral da Overweight; Stellantis (NYSE: STLA, nota: STLAM è il ticker Borsa Italiana) ha perso il 52% dal massimo annuale (fonte: CNBC / CNN Markets July 2026). ATTENZIONE: asset originariamente richiesto come STLAM (Milano); prezzi basati su STLA NYSE.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 5.76,
+      "stop_loss": 5.93,
+      "target": 5.47,
+      "commissione": 0.00,
+      "reasoning": "Doppio downgrade da Citi (PT EUR 5.50) e JPMorgan (Neutral) segnalano deterioramento prospettive settore auto. Stock a -52% dal massimo di 52 settimane ($12.22 → $5.76); trend ribassista consolidato. STLA NYSE è il ticker corretto per mercato USA (STLAM è Borsa Italiana) (fonte: CNBC / CNN Markets July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / CNN Markets STLA NYSE (July 9 2026)", "price": 5.84},
+          {"name": "Yahoo Finance / MarketBeat STLA (July 9 2026 range mid)", "price": 5.67}
+        ],
+        "spread_pct": 2.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 375.94,
+      "change_24h": "+1.15%",
+      "trend_5d": "ribassista/recupero",
+      "volume_note": "volume non esplicitato; totale riscatti ETF oro USA ~$5.3B nel mese precedente — pressione vendita istituzionale",
+      "news": "Trump dichiara cessate il fuoco Iran 'finito' al vertice NATO (8 luglio) → oro scende su meno incertezza geopolitica; GLD recupera +1.15% July 9; debito globale record $353T in H1 2026 supporta domanda strutturale oro come hedge inflazione (fonte: SSGA Gold Monitor / FX Daily Report July 8 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 375.94,
+      "stop_loss": 368.42,
+      "target": 390.98,
+      "commissione": 0.00,
+      "reasoning": "NOTA INCERTEZZA (spread 1.50% su date consecutive): dopo correzione July 8 da eventi geopolitici Iran/NATO, GLD recupera +1.15% July 9. Debito globale $353T e impulso fiscale record sostengono domanda oro strutturale. Entry su dip post-evento (fonte: Investing.com July 8 / NYSE Arca July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Seeking Alpha (chiusura July 8 2026)", "price": 373.12},
+          {"name": "NYSE Arca / CNBC intraday (July 9 2026, ore 10:07 EDT)", "price": 378.76}
+        ],
+        "spread_pct": 1.50,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.83,
+      "change_24h": "-2.99%",
+      "trend_5d": "ribassista",
+      "volume_note": "net assets $27.98B al July 8 2026; -2.99% su Fed split 9-8 e pressione istituzionale",
+      "news": "Fed split 9 a 8 pesa su argento e oro; argento invertito prima di $64 verso target $54 e $50; domanda industriale strutturale forte (solare, EV, AI, elettronica) — divergenza breve/lungo termine (fonte: Barchart / GoldSilver.com July 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 52.83,
+      "stop_loss": 51.77,
+      "target": 54.94,
+      "commissione": 0.00,
+      "reasoning": "SLV a $52.83 già sotto il target tecnico di $54; analisti vedono supporto a $50. Domanda industriale strutturale da solare ed EV è fattore rialzista di lungo periodo ma momentum tecnico ribassista nel breve. HOLD in attesa di inversione tecnica (fonte: Yahoo Finance / NYSE Arca July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / iShares (July 9 2026)", "price": 52.83},
+          {"name": "NYSE Arca / CNBC (July 9 2026 close July 8)", "price": 52.83}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 108.70,
+      "change_24h": "-3.32%",
+      "trend_5d": "volatile/laterale",
+      "volume_note": "volume non esplicitato; NAV $106.91, premium ETF 1.88%; alta volatilità geopolitica",
+      "news": "Trump dichiara cessate il fuoco Iran 'finito' al vertice NATO (8 luglio) → WTI a $73.52 (+4.37%), Brent a $78.19 (+5.43%), USO +4.38%; July 9 USO -3.32% mentre il mercato ridimensiona spike geopolitico (fonte: CNBC / Investing.com July 8-9 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 108.70,
+      "stop_loss": 106.53,
+      "target": 113.05,
+      "commissione": 0.00,
+      "reasoning": "USO spike +4.38% July 8 su news Iran/NATO, parzialmente riassorbito July 9 (-3.32%). Volatilità geopolitica rende direzione incerta: escalation Iran spingerebbe oil più in alto, de-escalation riporterebbe a livelli pre-evento. Risk/reward non favorevole senza visibilità geopolitica (fonte: Investing.com July 8 / NYSE Arca July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance (chiusura July 8 2026)", "price": 108.92},
+          {"name": "NYSE Arca / CNBC intraday (July 9 2026, ore 13:38 EDT)", "price": 108.48}
+        ],
+        "spread_pct": 0.40,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 62529.59,
+      "change_24h": "+0.93%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 24h $25.7B (CoinMarketCap); Bitcoin ETF USA $221.7M inflow July 9 dopo 10 giorni di deflussi consecutivi",
+      "news": "Bitcoin ETF spot USA invertono 10 giorni di deflussi con $221.7M il più grande afflusso giornaliero in 2 mesi; SEC prepara 'Regulation Crypto' agenda per luglio 2026; BTC ha mantenuto supporto $61K mentre si consolida $58K-$64K (fonte: CoinDesk / Fortune July 9 2026)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 62529.59,
+      "stop_loss": 59403.11,
+      "target": 67531.96,
+      "commissione": 0.00,
+      "reasoning": "Bitcoin consolida in range $58K-$64K. Inversione flussi ETF (+$221.7M) è segnale positivo ma SEC regulatory overhaul crea incertezza normativa. Trend laterale suggerisce HOLD; breakout sopra $64K aprirebbe obiettivo $70K+ (fonte: Yahoo Finance / CoinMarketCap July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Fortune (July 9 2026 ore 12:51 EDT)", "price": 62302.94},
+          {"name": "CoinMarketCap (July 9 2026)", "price": 62756.23}
+        ],
+        "spread_pct": 0.72,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1736.92,
+      "change_24h": "-4.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume 24h $9.88B (CoinMarketCap); investitori in fuga da ETH ETF secondo CoinDesk",
+      "news": "ETH -32.84% anno su anno; investitori in fuga dai Bitcoin/Ether ETF (fonte CoinDesk July 1); Ethereum in underperformance strutturale vs BTC e SOL; -4% in 24h da $1,793 a $1,732 (fonte: CoinDesk / CoinMarketCap July 9 2026)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1736.92,
+      "stop_loss": 1823.77,
+      "target": 1597.97,
+      "commissione": 0.00,
+      "reasoning": "ETH in underperformance strutturale: -32.84% annuale vs BTC stabile e SOL +15-20% mensile. Deflussi ETF Ethereum segnalano riduzione interesse istituzionale. -4% in 24h conferma momentum ribassista. Stop loss sopra entry a $1,823.77 per short position (fonte: CoinDesk / CoinMarketCap July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk / Fortune (July 9 2026)", "price": 1741.08},
+          {"name": "CoinMarketCap (July 9 2026)", "price": 1732.75}
+        ],
+        "spread_pct": 0.48,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 77.08,
+      "change_24h": "-3.57%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume 24h $2.26B (CoinMarketCap); on-chain activity vicino ai massimi annuali",
+      "news": "Solana raggiunge record $3.4B TVL in real-world asset (RWA) il 2 luglio 2026; nuovo meccanismo di governance on-chain lanciato; SOL +15-20% nell'ultima settimana/mese; -6% oggi in sell-off crypto di breve termine (fonte: CoinGecko / CoinMarketCap July 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 77.08,
+      "stop_loss": 73.23,
+      "target": 83.25,
+      "commissione": 0.00,
+      "reasoning": "SOL presenta fondamentali on-chain eccezionali (record RWA $3.4B, governance innovation) con trend 5d fortemente rialzista (+15-20%). Correzione -6% di oggi è opportunità di entry nel contesto di mercato ribassista di breve; supporto chiave a $73. Analisti vedono rialzo verso $80-$120 con chiusura sopra $80 (fonte: Coinbase / CoinMarketCap July 9 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (July 9 2026)", "price": 77.24},
+          {"name": "CoinMarketCap (July 9 2026)", "price": 76.91}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "MSFT",
+      "motivo": "fonti < 2: un solo prezzo numerico confermato ($383.59 da CNN/CNBC July 9). Seconda fonte non ha restituito prezzo esplicito. SL/target non generati per regola disciplina dati."
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "fonti < 2: un solo prezzo numerico confermato ($242.90 da dati aggregati July 9). Seconda fonte (Yahoo Finance / CNBC) non ha restituito prezzo esplicito."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "fonti < 2: un solo prezzo numerico confermato ($361.92 da WallStreetZen July 8). Seconda fonte non ha restituito prezzo esplicito in forma numerica."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "fonti < 2: un solo prezzo esplicito (~$75.59-$75.62 da Investing.com July 8). Seconda fonte ha confermato contesto (Bernstein PT tagliato a $100) ma senza prezzo corrente numerico. Nota: 52w range $70.86-$129.33 — potenziale stock split post-2024."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "fonti < 2: un solo prezzo esplicito ($516.80, range July 9 $498.15-$522.98 da dati aggregati). Seconda fonte (Yahoo Finance/CNBC) non ha restituito prezzo numerico corrente."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "prezzo USD Nasdaq non confermato con precisione da 2 fonti indipendenti. Prezzo Amsterdam Xetra: EUR 1,561.00 (July 9). Stima USD ~$1,795-$1,800 (70% rally YTD 2026) ma senza quotazione NYSE ADR numerica esatta da 2 fonti. Morgan Stanley PT EUR 1,830; Bernstein PT €2,300. Earnings previsti July 15."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "BUY — confidenza ALTA + affidabilità ALTA. Duplice catalizzatore: BofA BUY rating + potenziale riapertura export Cina. AI demand strutturale. +2.4% July 9 dopo +3.65% July 8. Market cap $4.94T. Entry $201.63, target $211.71 (+5%), SL $195.58 (-3%)."
+    },
+    {
+      "rank": 2,
+      "asset": "SOL",
+      "motivo": "BUY — confidenza Medio + affidabilità ALTA. Record RWA TVL $3.4B, +15-20% settimana, governance innovation. Dip -6% oggi offre entry su trend rialzista solido. Entry $77.08, target $83.25 (+8%), SL $73.23 (-5%)."
+    },
+    {
+      "rank": 3,
+      "asset": "ETH",
+      "motivo": "SELL — confidenza Medio + affidabilità ALTA. Underperformance strutturale: -32.84% anno, deflussi ETF continuati, -4% oggi. Short entry $1,736.92, target $1,597.97 (-8%), SL $1,823.77 (+5%)."
+    },
+    {
+      "rank": 4,
+      "asset": "AAPL",
+      "motivo": "BUY — confidenza Medio + affidabilità ALTA. Deal Broadcom $30B per US chipmaking; valutazioni Mag 7 al minimo decennale per P/E. Stabilità del prezzo in range $307-$315. Entry $312.85, target $328.49 (+5%), SL $303.46 (-3%)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca. Portafoglio ipotetico $10,000.",
+    "allocazione_suggerita": {
+      "NVDA_BUY": {"peso_pct": 30, "valore_usd": 3000, "azioni": 14.88, "motivazione": "massima conviction - AI leadership"},
+      "SOL_BUY": {"peso_pct": 20, "valore_usd": 2000, "token": 25.95, "motivazione": "momentum rialzista + fondamentali on-chain"},
+      "AAPL_BUY": {"peso_pct": 20, "valore_usd": 2000, "azioni": 6.39, "motivazione": "large cap stabile, catalizzatore deal"},
+      "GLD_BUY": {"peso_pct": 15, "valore_usd": 1500, "quote": 3.99, "motivazione": "hedge inflazione/debito globale record"},
+      "STLA_SELL": {"peso_pct": 10, "valore_usd": 1000, "azioni": 173.61, "motivazione": "doppio downgrade, short opportunity"},
+      "ETH_SELL": {"peso_pct": 5, "valore_usd": 500, "token": 0.288, "motivazione": "underperformance strutturale, posizione leggera"}
+    }
+  },
+  "meta": {
+    "asset_totali_richiesti": 18,
+    "asset_con_segnale": 13,
+    "asset_esclusi": 6,
+    "breakdown_affidabilita": {
+      "ALTA": ["AAPL", "NVDA", "SLV", "USO", "BTC", "ETH", "SOL"],
+      "MEDIA": ["TSLA", "META", "SAP", "RACE", "STLA", "GLD"],
+      "BASSA_esclusi": ["MSFT", "AMZN", "GOOGL", "NFLX", "AMD", "ASML"]
+    },
+    "breakdown_segnali": {
+      "BUY": ["AAPL", "NVDA", "GLD", "SOL"],
+      "SELL": ["STLA", "ETH"],
+      "HOLD": ["TSLA", "META", "SAP", "RACE", "SLV", "USO", "BTC"]
+    },
+    "nota_stlam": "STLAM = ticker Borsa Italiana (EUR). Prezzi basati su STLA = ticker NYSE (USD). Stesso emittente Stellantis N.V."
+  }
+}
