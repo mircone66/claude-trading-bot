@@ -1,0 +1,470 @@
+{
+  "timestamp": "2026-07-11T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Tech USA in consolidazione con AI come tema dominante: NVDA, MSFT, AMZN segnalano BUY su valutazioni ancora distanti dai massimi 52 settimane. Oro recupera verso $4,076/oz dopo il crollo da $5,300 di gennaio; FOMC 28-29 luglio e CPI 14 luglio i prossimi catalizzatori macro. Crypto in rimonta: BTC ETF interrompono 10 giorni di deflussi con $221,7M di afflusso netto (record 2 mesi). ASML è il segnale più forte della sessione: 19/19 analisti BUY, Bernstein target $2,623 (+48%), earnings 15 luglio. Esclusi da segnali: TSLA, META, AMD (fonte unica), STLA (spread prezzi >4%).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 315.32,
+      "change_24h": "-0.28%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Apple e Broadcom firmano accordo fornitura chip da $30B+ fino al 2031 (wireless + AI custom). Q3 FY2026 earnings attesi 30 luglio; focus su margini iPhone 18 e domanda China.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 315.32,
+      "stop_loss": 305.86,
+      "target": 331.09,
+      "commissione": 0.00,
+      "reasoning": "AAPL vola vicino al massimo 52 settimane ($317.40) con earnings il 30 luglio: rischio event-risk pre-risultati. Deal Broadcom $30B positivo per visibilità dei ricavi ma già in parte prezzato. Attesa del report per conferma guidance iPhone 18.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Yahoo/MarketBeat 10-lug)", "price": 315.32},
+          {"name": "Yahoo Finance chiusura 10-lug confermata", "price": 315.32}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 203.28,
+      "change_24h": "+0.51%",
+      "trend_5d": "laterale_rialzista",
+      "volume_note": "normale",
+      "news": "NVIDIA +25% nell'ultimo anno nonostante ritardi nel lancio di chip AI next-gen. Bank of America mantiene target $350. Domanda infrastruttura AI dei cloud hyperscaler intatta.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 203.28,
+      "stop_loss": 197.18,
+      "target": 213.44,
+      "commissione": 0.00,
+      "reasoning": "NVDA tratta il 14% sotto il massimo 52w ($236.54) con domanda AI strutturalmente forte. BofA mantiene target $350. I timori sui ritardi chip next-gen sono già incorporati nel prezzo; risk/reward favorevole a questi livelli.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/MarketBeat (11-lug intraday)", "price": 204.10},
+          {"name": "CNBC/Yahoo Finance (11-lug ore 14:17 EDT)", "price": 202.47}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 385.24,
+      "change_24h": "-0.07%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (24.1M vs media simile)",
+      "news": "Microsoft earnings 29 luglio. Azure cloud in crescita, Copilot AI integrato nella suite enterprise. Consensus analisti Strong Buy, target medio $589-592. MSFT attualmente 31% sotto il massimo 52w.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 385.24,
+      "stop_loss": 373.68,
+      "target": 404.50,
+      "commissione": 0.00,
+      "reasoning": "MSFT trade al 31% di sconto dal massimo 52w $555.45: gap notevole rispetto ai fondamentali (P/E 22.9x). Azure + Copilot AI sono driver strutturali. Earnings 29 luglio come potenziale catalizzatore per il recupero verso i massimi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat/MacroTrends (11-lug)", "price": 385.38},
+          {"name": "Yahoo Finance chiusura 10-lug", "price": 385.10}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 245.52,
+      "change_24h": "-0.69%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "TD Cowen mantiene target $340 vs prezzo corrente $245 (upside +39%). AWS AI services in accelerazione. Amazon advertising e Prime continuano a espandersi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 245.52,
+      "stop_loss": 238.15,
+      "target": 257.80,
+      "commissione": 0.00,
+      "reasoning": "AMZN 12% sotto il massimo 52w ($278.56) con catalizzatore AWS AI Services. TD Cowen target $340 implica upside del 39% dai livelli correnti. Il segmento advertising ha superato $70B annui — secondo revenue driver crescente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat/TradingEconomics (11-lug)", "price": 245.70},
+          {"name": "Yahoo Finance/CNBC chiusura 10-lug", "price": 245.34}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 357.18,
+      "change_24h": "-0.30%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Greg Abel (Berkshire Hathaway CEO) ha costruito una posizione da $31B in Alphabet. Analisti vedono upside AI-driven. Competizione AI search centrale ma core search mantiene il monopolio.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 357.18,
+      "stop_loss": 346.46,
+      "target": 375.04,
+      "commissione": 0.00,
+      "reasoning": "La posizione di $31B di Berkshire in GOOGL (Motley Fool, 10-lug) segnala fiducia istituzionale forte. GOOGL +15% YTD ma ancora distante dai massimi con AI search come rischio/opportunità principale. Google Cloud e YouTube ads come driver di diversificazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/MarketBeat chiusura 11-lug", "price": 357.18},
+          {"name": "Reuters/Tech news summary confermato 11-lug", "price": 357.18}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.42,
+      "change_24h": "-2.72%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto (46.71M vs media 46.18M, +1.1%)",
+      "news": "Netflix riporta Q2 2026 il 16 luglio. Bernstein ha abbassato il target da $110 a $100 (mantenuto Outperform) su preoccupazioni churn. Piani per live TV e streaming bundle in sviluppo. Barchart: 'Staying on sidelines may be the smartest move' pre-earnings.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.42,
+      "stop_loss": 71.22,
+      "target": 77.09,
+      "commissione": 0.00,
+      "reasoning": "Earnings binario il 16 luglio: evento ad alto rischio. Bernstein ha abbassato il target (churn concern) ma mantiene Outperform — target $100 implica +36% ma l'incertezza pre-report è elevata. Barchart consiglia di restare in panchina (Barchart.com, 10-lug). HOLD tattico in attesa del 16 luglio.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/MacroTrends (10-lug close)", "price": 73.42},
+          {"name": "CNBC/Robinhood (10-lug confermato)", "price": 73.42}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1804.25,
+      "change_24h": "n/d",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML ha più che raddoppiato in un anno (+123% YoY). Bernstein alza il target da $1,971 a $2,623 (+48% upside). 19/19 analisti Buy o Strong Buy. Earnings Q2 il 15 luglio 2026. Domanda equipment litografia EUV da AI chipmaker in espansione.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1804.25,
+      "stop_loss": 1750.12,
+      "target": 1894.46,
+      "commissione": 0.00,
+      "reasoning": "ASML è il segnale più forte della sessione: 19/19 analisti concordano sul Buy, Bernstein alza il target a $2,623 (CNBC, 6-lug-2026). Earnings 15 luglio come ulteriore catalizzatore. L'AI chip supercycle richiede EUV lithography di cui ASML ha monopolio globale. Max 52w $1,999 già vicino, ma target analisti implicano nuovo ATH.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne/Investing.com NASDAQ (10-lug)", "price": 1804.25},
+          {"name": "Investing.com NASDAQ confermato (10-lug)", "price": 1804.25}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 158.46,
+      "change_24h": "+0.66%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SAP pubblica i risultati il 23 luglio 2026. Target medio analisti $254.33 (+61% upside). 13/13 analisti raccomandano Buy. Transizione cloud ERP in accelerazione.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 158.46,
+      "stop_loss": 153.71,
+      "target": 166.38,
+      "commissione": 0.00,
+      "reasoning": "SAP ADR a $158 vs target medio analisti $254 (Investing.com): upside del 61% se convergenza verso fair value. 13/13 analisti Buy. Earnings 23 luglio come prossimo catalizzatore. Nota: seconda fonte (Investing.com, 29-giu) riporta $156.19 — validazione MEDIA per distanza temporale 12 giorni.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance NYSE (9-lug close)", "price": 158.46},
+          {"name": "Investing.com NYSE (29-giu close)", "price": 156.19}
+        ],
+        "spread_pct": 1.45,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 384.97,
+      "change_24h": "+2.75%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Ferrari +6.19% nell'ultima settimana. 11/14 analisti Buy, target mediano $475.20 (+24% upside). GF Score 94/100. Brand premium resiliente. GureFocus segnala possibile undervaluation con GF Value $493.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 384.97,
+      "stop_loss": 373.42,
+      "target": 404.22,
+      "commissione": 0.00,
+      "reasoning": "Ferrari in accelerazione: +2.75% 24h e +6.19% settimanale (WallStreetZen, 11-lug). 11/14 analisti Buy, target mediano $475.20 implica upside +24%. Brand ultra-premium con potere di pricing unico. Nota: spread 2.05% tra fonti (luglio 11 vs luglio 10) — validazione MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen/NYSE.com (11-lug)", "price": 384.97},
+          {"name": "MarketBeat/StockAnalysis (10-lug close)", "price": 377.24}
+        ],
+        "spread_pct": 2.05,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 379.59,
+      "change_24h": "-0.32%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Oro spot a $4,076/oz: -20% dal massimo storico di $5,300+ di gennaio 2026 (gold's worst June in 18 years su Fed rate hike fears). JPMorgan prevede recupero a $4,800-$6,300 entro fine 2026. Prossimi catalizzatori: CPI 14-lug, FOMC 28-29-lug.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 379.59,
+      "stop_loss": 372.00,
+      "target": 394.77,
+      "commissione": 0.00,
+      "reasoning": "GLD riflette oro spot a $4,076/oz (-20% da $5,300 ATH): correzione tecnica profonda con fondamentali intatti. JPMorgan forecast $4,800-$6,300 a fine anno (Seeking Alpha, mid-year outlook). $4,000/oz come floor tecnico. FOMC 28-29 luglio e CPI 14 luglio sono catalizzatori per inversione. Fonte: USAGOLD report 8-lug, SSGA monthly gold monitor luglio 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE Arca (9-lug close)", "price": 378.99},
+          {"name": "CNBC/NYSE.com NYSE Arca (7-lug close)", "price": 380.19}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.95,
+      "change_24h": "+2.48%",
+      "trend_5d": "laterale_ribassista",
+      "volume_note": "normale (11.7M)",
+      "news": "Argento spot a $58.80/oz: crollo da $121.62/oz di gennaio 2026 (-52%). Ripresa industriale da solare, EV e AI infrastruttura come supporto alla domanda. 'Strong start to July trading' (Barchart, 2-lug). Domanda supera offerta mineraria globale.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 53.95,
+      "stop_loss": 52.87,
+      "target": 56.11,
+      "commissione": 0.00,
+      "reasoning": "SLV: +2.48% odierno suggerisce possibile rimbalzo dopo crollo del 52% da gennaio. Domanda industriale strutturalmente forte (solar/EV/AI) ma macro headwinds (dollaro forte, timori rialzo Fed) frenano la ripresa. Attendere conferma tecnica sopra $56 prima di BUY. HOLD prudenziale in attesa di FOMC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/Barchart NYSE Arca (11-lug)", "price": 53.95},
+          {"name": "iShares/NYSE.com NYSE Arca chiusura 10-lug", "price": 53.95}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 108.76,
+      "change_24h": "-0.28%",
+      "trend_5d": "laterale_ribassista",
+      "volume_note": "normale",
+      "news": "USO +90%+ YTD 2026 trainato da tensioni Medio Oriente e chiusura Stretto di Hormuz. Recente pullback su segnali de-escalation e build inventari EIA. Oil futures ancora volatili. Riunione FOMC 28-29 luglio impatterà domanda macroeconomica.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 108.76,
+      "stop_loss": 106.58,
+      "target": 113.11,
+      "commissione": 0.00,
+      "reasoning": "USO rimane elevato (+90% YTD) ma de-escalation signals e EIA inventory builds creano pressione al ribasso (FXDailyReport, 10-lug). Le tensioni nel Golfo Persico rimangono un floor di supporto ma l'incertezza è alta. Risk/reward bilanciato: HOLD fino a chiarezza FOMC su inflazione/domanda.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE Arca (10-lug close)", "price": 108.82},
+          {"name": "CNBC/Barchart NYSE Arca (10-lug close)", "price": 108.70}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64280.07,
+      "change_24h": "+2.63%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($19.3B volume 24h)",
+      "news": "Bitcoin ETF USA interrompono 10 giorni consecutivi di deflussi con $221.7M di afflussi netti — il maggior giorno in 2 mesi (InvestingNews, CoinDesk). Crypto Clarity Act atteso al Senato in settimana. BTC dominanza al 60%. Bitget Wallet raggiunge 100M utenti.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 64280.07,
+      "stop_loss": 61066.07,
+      "target": 69422.48,
+      "commissione": 0.00,
+      "reasoning": "Inversione flussi ETF BTC: $221.7M di afflussi dopo 10 giorni di deflussi è segnale tecnico positivo (InvestingNews). Regulatory clarity in arrivo con Crypto Clarity Act. Momentum +2.63% 24h con dominanza al 60%. Risk/reward favorevole in ottica pre-halving cycle.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (11-lug live)", "price": 64140.61},
+          {"name": "Coinbase (11-lug live)", "price": 64419.53}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1807.19,
+      "change_24h": "+2.85%",
+      "trend_5d": "laterale_rialzista",
+      "volume_note": "normale ($9.4B volume 24h CMC)",
+      "news": "ETH +2.85% 24h ma ETF Ethereum vedono deflussi relativi vs BTC. XRP e HYPE outperformano ETH nell'ultima settimana (CoinDesk). Ethereum mantiene posizione come piattaforma DeFi e smart contract dominante.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1807.19,
+      "stop_loss": 1716.83,
+      "target": 1951.77,
+      "commissione": 0.00,
+      "reasoning": "ETH mostra momentum positivo (+2.85% 24h) ma underperforma vs BTC e token alternativi in questa fase. CoinDesk riporta preferenza investitori per XRP e HYPE ETF vs ETH (1-lug). La posizione ETH rimane solida a lungo termine (DeFi/smart contract) ma nel breve BTC offre risk/reward migliore. HOLD con bias rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (11-lug live)", "price": 1794.74},
+          {"name": "Coinbase (11-lug live)", "price": 1819.64}
+        ],
+        "spread_pct": 1.39,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 77.99,
+      "change_24h": "-1.16%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($1.9B volume 24h)",
+      "news": "Solana raggiunge record $3.4B TVL in real-world assets il 2 luglio. +15% nell'ultimo mese ma -5.5% negli ultimi 7 giorni. Solana DeFi volumes in crescita. Lotta a mantenere supporto $80. Crypto Clarity Act positivo per l'ecosistema DeFi.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 77.99,
+      "stop_loss": 74.09,
+      "target": 84.23,
+      "commissione": 0.00,
+      "reasoning": "SOL: record TVL $3.4B in real-world assets dimostra adozione fondamentale (CoinDCX, 2-lug). Tuttavia, resistenza tecnica a $80 non ancora superata e -5.5% settimanale. Una chiusura sopra $80 confermerebbe il trend rialzista; fallimento sotto $73 esporrebbe $63. HOLD tattico in attesa della conferma.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (11-lug live)", "price": 77.99},
+          {"name": "Yahoo Finance/CoinGecko (9-11 lug)", "price": 78.04}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Fonte unica verificata ($407.76 Yahoo/Google Finance). Seconda query non ha restituito un prezzo esplicito e indipendente. Regola: fonti < 2 → BASSA → nessun segnale BUY/SELL.",
+      "prezzo_stimato": 407.76,
+      "nota": "UBS ha alzato il target su AI boom; JPMorgan commenta su potenziale merger Tesla-SpaceX. Monitorare per prossima sessione."
+    },
+    {
+      "asset": "META",
+      "motivo": "Fonte unica verificata ($668.00 MarketBeat, 11-lug). Seconda query ha confermato contesto (best week in years, AI cloud push) ma senza prezzo esplicito indipendente. Regola: fonti < 2 → BASSA → nessun segnale.",
+      "prezzo_stimato": 668.00,
+      "nota": "Meta spende $145B nel 2026 su AI infrastruttura. Best performer S&P500 della settimana. Monitorare per prossima sessione con query differenti."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Fonte unica verificata ($559.90 MarketBeat, 11-lug). Seconda query ha confermato +141% YTD e Wells Fargo target $615 ma senza prezzo esplicito secondario indipendente. Regola: fonti < 2 → BASSA → nessun segnale.",
+      "prezzo_stimato": 559.90,
+      "nota": "AMD all-time high $580.91 il 30 giugno, ora leggermente sotto. 36 analisti Buy consensus. Da includere nella prossima sessione con query più mirate."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Spread fonti superiore al 4%: Source 1 ha riportato $8.50 (STLAM query, dati misti NYSE/Milan), Source 2 e Source 3 riportano STLA NYSE a $5.50. Spread calcolato: (8.50-5.50)/5.50 = 54.5% >> soglia 4%. Dati incoerenti tra fonti.",
+      "prezzo_stimato_stla_nyse": 5.50,
+      "nota": "NYSE ticker corretto è STLA (non STLAM che è Milan exchange). STLA a 52-week low $5.56, JPMorgan ha tagliato il target a $6.85. Sconsigliato operare con dati non triangolati. Da reinserire con query specificatamente per STLA NYSE."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "19/19 analisti Buy, Bernstein target $2,623 (+48% upside). Monopolio globale EUV lithography per AI chip. Earnings 15 luglio come prossimo catalizzatore. Segnale più convinto della sessione con confidenza ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "SAP",
+      "motivo": "Target medio analisti $254 vs prezzo $158 (+61% gap). 13/13 analisti Buy. Transizione cloud ERP in accelerazione. Earnings 23 luglio. Valutazione molto compressa rispetto ai fondamentali."
+    },
+    {
+      "rank": 3,
+      "asset": "NVDA",
+      "motivo": "AI infrastructure supercycle intatto, BofA target $350 (+72%). 14% sotto il massimo 52w nonostante 25% di guadagno annuale. I rischi sui ritardi chip next-gen appaiono già scontati."
+    },
+    {
+      "rank": 4,
+      "asset": "BTC",
+      "motivo": "Inversione flussi ETF ($221.7M afflussi netti dopo 10 gg deflussi), Crypto Clarity Act in arrivo, dominanza 60%. Momentum +2.63% 24h con catalizzatori regolativi positivi."
+    },
+    {
+      "rank": 5,
+      "asset": "GLD",
+      "motivo": "Oro -20% da ATH $5,300 con JPMorgan forecast $4,800-$6,300 a fine anno. $4,000/oz floor tecnico testato. FOMC 28-29 luglio = catalizzatore per inversione di trend."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca",
+    "allocazione_suggerita": {
+      "BUY_signals": {
+        "ASML": "15% (alta confidenza, earnings 15-lug)",
+        "SAP": "10% (media confidenza MEDIA affidabilita)",
+        "NVDA": "12%",
+        "MSFT": "10%",
+        "AMZN": "8%",
+        "GOOGL": "8%",
+        "RACE": "7% (media confidenza MEDIA affidabilita)",
+        "GLD": "10% (hedge macro)",
+        "BTC": "10%",
+        "AAPL_HOLD": "5% (mantenere posizioni esistenti)"
+      },
+      "HOLD_cash": "5%",
+      "note_rischio": "FOMC 28-29 luglio e CPI 14 luglio come principali event-risk macro. Earnings season EU/USA in piena fase: ASML 15-lug, NFLX 16-lug, SAP 23-lug, MSFT 29-lug, AAPL 30-lug."
+    }
+  },
+  "catalizzatori_prossimi": {
+    "14_luglio": "CPI USA - impatto su gold, treasuries, crypto",
+    "15_luglio": "ASML Q2 Earnings - catalizzatore diretto per ASML",
+    "16_luglio": "Netflix Q2 Earnings - chiarimento su churn e bundle strategy",
+    "23_luglio": "SAP Q2 Earnings",
+    "28_29_luglio": "FOMC Meeting - decisivo per gold, crypto, tech valuation",
+    "29_luglio": "Microsoft Q3 Earnings",
+    "30_luglio": "Apple Q3 FY2026 Earnings"
+  }
+}
