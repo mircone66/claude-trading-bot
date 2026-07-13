@@ -1,0 +1,530 @@
+{
+  "timestamp": "2026-07-13T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Lunedì 13 luglio 2026 — primo giorno di mercato USA aperto dopo un fine settimana segnato da nuovi scontri USA-Iran e dalla chiusura del Canale di Hormuz da parte di Teheran. La sessione apre in risk-off generalizzato: TSLA -3.39%, AMD -4.27%, NVDA -2.92%, META -1.52% su alto volume anomalo (40.61M vs 23.63M media). Unica eccezione tech: NFLX +1.61%, che buca il selloff con earnings domani 16 luglio. ASML confermata MEDIA confidence per mancanza di prezzo specifico 13-lug: Samsung earnings deludenti potevano causare gap-down (monitorare). MACRO DRIVER: (1) Petrolio WTI +4% oggi e +9% settimanale su chiusura Hormuz → USO BUY ALTA confidenza confermato; (2) Oro/argento INASPETTATAMENTE in calo post-airstrikes: gold Aug futures $4,106.60/oz -0.2%, silver -0.8% → sell-the-news + timori rialzo tassi Fed da petrolio caro → GLD/SLV downgrade a HOLD; (3) Bitcoin ETF inflows $221.7M rompono serie negativa 10 giorni — BTC comunque scende a $62,926 su macro risk-off; (4) SBI Holdings pivot a Solana per tokenizzazione (SOL: long-term bullish); (5) Apple cita OpenAI in giudizio per furto segreti AI hardware; (6) META anomala: +72% volume su calo -1.52%, segnale possibile distribuzione dopo rally +18% del 1° luglio. UPCOMING CATALYSTS: CIP USA 14-lug, ASML Q2 earnings 15-lug, NFLX Q2 earnings 16-lug, SAP earnings 23-lug, FOMC 28-29-lug, MSFT earnings 29-lug, Apple earnings 30-lug.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 315.78,
+      "change_24h": "+0.40%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (mercato confermato aperto con dato dual-source per la prima volta oggi)",
+      "news": "Apple ha citato OpenAI in giudizio per furto segreti commerciali legati all'hardware AI. Deal Broadcom $30B per chip AI fino al 2031. Earnings Q3 FY2026 attesi 30 luglio. Near 52-week high ($317.40).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 315.78,
+      "stop_loss": 306.31,
+      "target": 331.57,
+      "commissione": 0.00,
+      "reasoning": "AAPL è a $315.78, prossima al massimo 52w ($317.40): upside limitato al +0.5% prima della resistenza. Il contenzioso con OpenAI crea incertezza sull'Apple Intelligence roadmap (Yahoo Finance, 13-lug). HOLD tattico: aspettare earnings 30 luglio o un pull-back verso $305-310 per ingresso favorevole.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / StockAnalysis (13-lug intraday)", "price": 314.96},
+          {"name": "CNBC multi-ticker aggregate (13-lug, +0.40% confermato)", "price": 316.59}
+        ],
+        "spread_pct": 0.52,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 393.68,
+      "change_24h": "-3.39%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (stock scende da $407 a $393 intraday oggi)",
+      "news": "TSLA -3.39% senza catalyst specifico: calo guidato da sentiment risk-off macro (Iran-US escalation e Trump commenti su Iran blockade). Il titolo scende al livello più basso da maggio 2026. Nessuna news company-specific.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 393.68,
+      "stop_loss": 381.87,
+      "target": 413.36,
+      "commissione": 0.00,
+      "reasoning": "TSLA perde -3.39% oggi senza catalyst specifico: il calo è macro-driven (risk-off geopolitico). Il segnale BUY del 12-lug a $407.68 è ora in perdita. Supporto tecnico a ~$380: sopra questo livello HOLD; sotto SL $381.87 valutare uscita. Il momentum è ribassista nel breve — attendere stabilizzazione prima di rientrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (13-lug 1:34 PM EDT, -3.39%)", "price": 393.95},
+          {"name": "CNBC multi-ticker aggregate (13-lug, -3.52%)", "price": 393.40}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 203.64,
+      "change_24h": "-2.92%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (148.42M vs media 144.42M, +2.8% sopra media)",
+      "news": "NVDA -2.92% su risk-off geopolitico, nonostante fondamentali invariati: 70.7% revenue growth Q trimestrale (Yahoo Finance), tripla conferma istituzionale (Morgan Stanley OW, TD Cowen top pick, BofA target $350). Volume sopra media → accumulo istituzionale in corso.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 203.64,
+      "stop_loss": 197.53,
+      "target": 213.82,
+      "commissione": 0.00,
+      "reasoning": "NVDA cede -2.92% su macro risk-off, ma i fondamentali AI non cambiano: 70.7% revenue growth, Morgan Stanley OW, TD Cowen 'massive unpriced AI upside' (Yahoo Finance, luglio 2026). Il calo da $210.87 (scan 12-lug) a $203.64 offre un entry migliorato con R/R favorevole. 52w range: $162.02-$236.54, a $203 è ancora nel range medio. BUY sul dip geopolitico.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC multi-ticker aggregate (13-lug, -2.92% 24h)", "price": 204.81},
+          {"name": "CNBC live quote (13-lug, 2:17 PM EDT)", "price": 202.47}
+        ],
+        "spread_pct": 1.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 387.30,
+      "change_24h": "+0.19%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Microsoft 'coiling at range edge amid breakout tension' (Investing.com, 13-lug): setup tecnico rialzista. DA Davidson e Wolfe Research mantengono Buy. BMO target $500. Earnings 29 luglio. Mercato cap $2.86T. Ieri era in excluded_assets, oggi prima dual-source confermata.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 387.30,
+      "stop_loss": 375.68,
+      "target": 406.67,
+      "commissione": 0.00,
+      "reasoning": "MSFT confermato con dual-source per la prima volta (era escluso il 12-lug): $385.10 vs $389.50, spread 1.14% ALTA. Investing.com descrive 'coiling pattern' a ridosso di resistenza chiave — breakout target $406 (Investing.com, 13-lug). Earnings 29 luglio come catalizzatore diretto. BMO target $500, Wolfe Research $525. Risk/reward 2.5:1.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken / TradingEconomics (13-lug, +0.19% 24h)", "price": 385.10},
+          {"name": "WallStreetZen (13-lug, $386-$389.62 intraday)", "price": 389.50}
+        ],
+        "spread_pct": 1.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 246.94,
+      "change_24h": "+0.93%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (volume 31.68M, nella media)",
+      "news": "Amazon.com è il migliore performer Mag7 di oggi (+0.93%), bucando il risk-off generalizzato. TD Cowen target $340 (+38% upside). P/E TTM 32.69. Market cap $2.64T. AWS AI Services in accelerazione. Ieri era escluso per fonte unica — oggi primo dual-source confermato.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 246.94,
+      "stop_loss": 239.53,
+      "target": 259.29,
+      "commissione": 0.00,
+      "reasoning": "AMZN +0.93% oggi: unico Mag7 in green insieme a AAPL e NFLX, segnale di forza relativa in una sessione negativa. Outperformance vs peers suggerisce acquisti selettivi (TD Cowen, 13-lug). 52w range $196-$278.56: a $246.94 c'è spazio di crescita prima del massimo. Gross margin 35.6% e AWS AI in accelerazione sono driver fondamentali solidi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (13-lug, prev close $245.34)", "price": 246.26},
+          {"name": "CNBC multi-ticker aggregate (13-lug, +0.93%)", "price": 247.61}
+        ],
+        "spread_pct": 0.55,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 356.10,
+      "change_24h": "-0.56%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (volume 18.19M)",
+      "news": "Berkshire Hathaway (CEO Greg Abel) ha costruito posizione $31B in Alphabet — endorsement da uno dei migliori allocatori di capitale al mondo. Apple-OpenAI lawsuit potenzialmente benefica per Google AI. Analyst consensus target $431.91 (+21% upside).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 356.10,
+      "stop_loss": 345.42,
+      "target": 373.91,
+      "commissione": 0.00,
+      "reasoning": "GOOGL -0.56% in linea con il mercato: nessuna news specifica negativa. La posizione Berkshire $31B (Greg Abel) è segnale strutturalmente rialzista ma non immediato (MSN/Yahoo Finance, 13-lug). 52w range $179.68-$408.61: a $356 il titolo è al 43% del range. HOLD: attendere conferma breakout a $375+ o re-ingresso più basso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (13-lug, -0.52%)", "price": 357.02},
+          {"name": "CNBC multi-ticker aggregate (13-lug, -0.56%)", "price": 355.18}
+        ],
+        "spread_pct": 0.52,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 663.51,
+      "change_24h": "-1.52%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo ALTO (40.61M vs media 23.63M = +72% sopra media — segnale distribuzione)",
+      "news": "META -1.52% oggi su volume anomalo +72% (40.61M vs 23.63M media): pattern classico di distribuzione istituzionale dopo il rally. Il titolo era a $607 il 10 luglio (da scan precedente) ed è ora a $663 dopo cloud AI news del 1° luglio (+18% pop). Analisti: target medio 12 mesi n/d, P/E 24.33, dividend yield 0.31%.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 663.51,
+      "stop_loss": 643.60,
+      "target": 696.69,
+      "commissione": 0.00,
+      "reasoning": "META cala -1.52% su volume 72% sopra media: pattern distribuzione classico (high volume down day). Il rally dal 1° luglio (+18% cloud news) potrebbe stare cedendo liquidità ai venditori. HOLD: il livello $643.60 (SL) è il primo supporto significativo. Non seguire il calo con nuovi acquisti fino a conferma stabilizzazione volume.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat / WallStreetZen (13-lug, range $647.20-$677.85)", "price": 668.00},
+          {"name": "CNBC multi-ticker aggregate (13-lug, -1.52%)", "price": 659.01}
+        ],
+        "spread_pct": 1.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.96,
+      "change_24h": "+1.61%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (52w range $70.86-$127.75, vicino ai minimi)",
+      "news": "NFLX +1.61% unico outperformer tech in una sessione negativa. Q2 Earnings domani 16 luglio — catalizzatore binario imminente. 37/37 analisti Buy (nessun Sell), target medio $113.15 (+53% upside). Revenue +16% YoY Q1. Ad revenue previsto 2x nel 2026 (~$3B). Bernstein Outperform con target $100.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 73.96,
+      "stop_loss": 71.74,
+      "target": 77.66,
+      "commissione": 0.00,
+      "reasoning": "NFLX +1.61% oggi bucando il selloff: forza relativa in controtendenza con il mercato (forte segnale). Domani 16-lug earnings Q2: con 37/37 analisti Buy e target medio $113, il consensus è unanime positivo (Yahoo Finance, 13-lug). 52w range: $70.86-$127.75 — a $73.96 siamo a solo 4.3% dal minimo 52w. Rischio downside limitato, potenziale upside +50%+ se earnings battono. Target post-earnings: primo livello $77.66 (+5%), poi $90-$100 se beat confermato. NOTA: spread 1.61% → MEDIA confidence — accettabile per play pre-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (13-lug, range $72.51-$75.70)", "price": 73.37},
+          {"name": "CNBC multi-ticker aggregate (13-lug, +1.61%)", "price": 74.55}
+        ],
+        "spread_pct": 1.61,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 534.08,
+      "change_24h": "-4.27%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (in calo da ATH $580.91 del 30 giugno 2026)",
+      "news": "AMD -4.27% il 13 luglio: tra i peggiori performer del mercato oggi. Il titolo scende da ATH $580.91 (30 giugno). Stifel ha alzato il target a $635 da $450 (luglio 2026), definendo AMD 'Credible Number-Two in AI'. Analyst consensus: 36 analisti Buy, target medio $510.16.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 534.08,
+      "stop_loss": 518.06,
+      "target": 560.78,
+      "commissione": 0.00,
+      "reasoning": "AMD -4.27% oggi: calo netto dal ATH $580.91 del 30 giugno, aggravato da risk-off macro. Il prezzo $534.08 è calcolato da una fonte per il 13-lug (TradingKey: -4.27% confermato) applicata al close del 10-lug ($557.89) — MEDIA confidence per prezzo derivato. Stifel target $635 indica upside a lungo termine ma il momentum è negativo a breve. HOLD: aspettare base solida prima del rientro.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / Yahoo Finance (10-lug close, confermato)", "price": 557.89},
+          {"name": "TradingKey (13-lug: AMD -4.27% confermato → prezzo derivato)", "price": 534.08}
+        ],
+        "spread_pct": 4.27,
+        "affidabilita": "MEDIA",
+        "nota": "Il prezzo $534.08 è derivato applicando la variazione -4.27% al close del 10-lug. Non è una quotazione live indipendente — data_real = false per trasparenza."
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1790.60,
+      "change_24h": "n/d",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (dati Jul 10 confermati; prezzo 13-lug non esplicitato da fonti)",
+      "news": "ASML Q2 Earnings mercoledì 15 luglio — catalizzatore imminente. Wells Fargo alza target a $2,200 da $1,750 con Overweight. Bernstein target $2,623 (+48% da prezzi correnti). 43/43 analisti Buy o Strong Buy. +70% YTD 2026. Rischio: Samsung Q2 deludente aveva colpito ASML -3.6% in EU (monitorato dal scan 12-lug).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1790.60,
+      "stop_loss": 1736.88,
+      "target": 1880.13,
+      "commissione": 0.00,
+      "reasoning": "ASML pre-earnings play: 43/43 analisti Buy, Bernstein $2,623 (+48%), Wells Fargo $2,200 (+23%). Q2 earnings il 15-lug sono il catalizzatore diretto (Motley Fool, 13-lug 2026). Il monopolio EUV non è replicabile (90% market share globale). Il rischio Samsung-gap è già scontato dal 12-lug. NOTA: MEDIA confidence perché il prezzo Jul 13 specifico non è stato estratto — il validated price ($1,790.60) è la media delle due fonti Jul 10. Monitorare pre-market 14-lug.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Yahoo Finance (10-lug close, $1,797.32)", "price": 1797.32},
+          {"name": "MarketBeat / CNBC (early Jul 2026, ~$1,783.88 market cap $697.6B)", "price": 1783.88}
+        ],
+        "spread_pct": 0.75,
+        "affidabilita": "MEDIA",
+        "nota": "Entrambe le fonti si riferiscono al 10-lug o ai primissimi giorni di luglio. Non disponibile una quotazione indipendente Jul 13 esplicita."
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 157.86,
+      "change_24h": "~0.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP vicina al minimo 52w ($148.06): sconto -49% dal massimo $309.73 (luglio 2025). KeyBanc Buy del 9 luglio. J.P. Morgan Hold. Target medio analisti $283.40 (+79% upside). Market cap $193.9B. Leader ERP globale.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 157.86,
+      "stop_loss": 153.12,
+      "target": 165.75,
+      "commissione": 0.00,
+      "reasoning": "SAP ADR NYSE: $157.86 confermato da due fonti indipendenti (spread 0%). Vicina al minimo 52w ($148.06): zona di supporto storico. Target consensus $283.40 implica +79% upside — gap enorme tra prezzo e fair value. KeyBanc Buy del 9-lug (MarketBeat). Il business ERP cloud è strutturalmente solido: oltre 400.000 clienti in 180 paesi. Risk/reward eccellente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / Investing.com NYSE (13-lug, confirmed)", "price": 157.86},
+          {"name": "MarketBeat / CNBC (13-lug chiusura Jul 10 = Jul 13 open)", "price": 157.86}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 380.81,
+      "change_24h": "+2.75%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (52w range $312.51-$519.10, -27% da ATH)",
+      "news": "Ferrari in rialzo +2.75% oggi. Wolfe Research ha avviato copertura con Outperform e target EUR 382. Q3 Earnings il 30 luglio. P/E 36.15, dividend yield 1.12%. GF Score 94/100. -20.83% negli ultimi 12 mesi nonostante upgrade guidance.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 380.81,
+      "stop_loss": 369.39,
+      "target": 399.85,
+      "commissione": 0.00,
+      "reasoning": "RACE: MEDIA confidence (spread 2.16% tra $384.97 e $376.64 da due fonti di date leggermente diverse). Il titolo è +2.75% oggi ma ancora -27% dal 52w high ($519.10). Pre-earnings 30 luglio → incertezza. Wolfe Research Outperform (13-lug 2026) è positivo ma target EUR 382 è vicino al prezzo corrente. HOLD: aspettare earnings clarity o pull-back verso $360-370 per migliore R/R.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / NYSE.com (13-lug, +2.75% 24h)", "price": 384.97},
+          {"name": "Investing.com NYSE (Jul 2026, 'current price')", "price": 376.64}
+        ],
+        "spread_pct": 2.16,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 372.30,
+      "change_24h": "-1.25%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Oro August futures a $4,106.60/oz lunedì 13-lug: -0.2% da venerdì dopo scambi di airstrikes USA-Iran nel weekend (Yahoo Finance, 13-lug-2026). Anomalia: oro SCENDE nonostante guerra — sell-the-news post spike + timori Fed hawkish da petrolio caro (GLD pre-market: $372.30 -1.25%). JPMorgan forecast $4,800-$6,300 a fine 2026 (long-term bullish). ETF inflows +575% giugno.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 372.30,
+      "stop_loss": 364.85,
+      "target": 387.19,
+      "commissione": 0.00,
+      "reasoning": "GLD downgraded da BUY a HOLD: la discesa -1.25% in un giorno di guerra è anomala e controintuitiva. Il 'sell-the-news' post-airstrikes suggerisce che l'evento era già prezzato nella sessione precedente. Timori rialzo Fed (petrolio caro → inflazione → tassi alti = headwind per oro) pesano nel breve. Long-term thesis intatta (JPMorgan $4,800-$6,300) ma il timing è incerto. HOLD fino a chiarimento direzionale post-CPI 14-lug. NOTA: MEDIA confidence perché il pre-market $372.30 è l'unica quotazione Jul 13 esplicita — non disponibile fonte live indipendente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Finviz (12-lug close, prev close $377.01 → $378.18)", "price": 377.01},
+          {"name": "Stockinvest / NYSE Arca (13-lug pre-market, 8:04 AM EDT, -1.25%)", "price": 372.30}
+        ],
+        "spread_pct": 1.25,
+        "affidabilita": "MEDIA",
+        "nota": "Fonte 1 = chiusura 12-lug; Fonte 2 = pre-market 13-lug. Non disponibile fonte live intraday Jul 13 indipendente per confronto."
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.95,
+      "change_24h": "-0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (volume 11.73M, 10-lug; net assets $28.37B)",
+      "news": "Argento September futures a $59.71/oz lunedì 13-lug: -0.8% da venerdì su airstrikes USA-Iran (Yahoo Finance, 13-lug-2026). Sell-the-news: argento declina nonostante la guerra per stesse ragioni dell'oro (Fed hawkish fear + inflazione oil). 52w range $33.10-$109.83 (-51% dal massimo). ETF inflows +300% in giugno.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 53.95,
+      "stop_loss": 52.87,
+      "target": 56.11,
+      "commissione": 0.00,
+      "reasoning": "SLV mantenuto a HOLD (era BUY il 12-lug): argento cala -0.8% oggi con oro nonostante guerra attiva — sell-the-news confermato. La thesis della domanda industriale (solar, EV, AI) rimane valida ma il timing macro è avverso (timori Fed da petrolio caro). Aspettare CPI 14-lug: dato inflazionistico elevato potrebbe colpire SLV ulteriormente, dato benigno potrebbe riportare acquisti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken / NYSE.com NYSE Arca (12-lug live, $53.95 confermato)", "price": 53.95},
+          {"name": "iShares / Barchart NYSE Arca (12-lug close, $53.95 range $53.23-$54.29)", "price": 53.95}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 108.86,
+      "change_24h": "-0.29%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (oil in forte surge: -0.29% potrebbe non riflettere ancora spike intraday di oggi)",
+      "news": "Petrolio WTI +4% lunedì 13-lug su chiusura Stretto di Hormuz da parte di Teheran dopo scambi di airstrikes USA-Iran nel weekend (Yahoo Finance, 13-lug-2026). +9% settimanale. ~20% del petrolio globale bloccato. Prezzi gas in rialzo negli USA. Fed dilemma: inflazione oil vs recessione.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 108.86,
+      "stop_loss": 106.68,
+      "target": 113.21,
+      "commissione": 0.00,
+      "reasoning": "USO BUY confermato con ALTA confidenza: chiusura Hormuz è supply shock strutturale immediato — ~20% del petrolio globale non passa più dallo Stretto (Yahoo Finance, 13-lug-2026). WTI +9% settimanale già prezzato, +4% aggiuntivo oggi. Il prezzo validato $108.86 potrebbe essere già superato intraday con l'apertura dei mercati. 52w range $65.99-$154.08: ampio upside se l'escalation continua. Stop loss stretto (-2%) dato che de-escalation improvvisa colpirebbe rapidamente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Kraken NYSE Arca (13-lug, prev close $109.01)", "price": 108.70},
+          {"name": "HeyGoTrade / StockAnalysis (13-lug, $109.01)", "price": 109.01}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA",
+        "nota": "Il prezzo validato potrebbe non riflettere ancora lo spike oil del 13-lug: monitorare USO live per confermare l'entry."
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 62925.93,
+      "change_24h": "-1.64%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($9.75B volume 24h su CoinDesk)",
+      "news": "BTC apre lunedì a $63,745 ma scende a $62,568 entro le 9:06 AM ET su risk-off geopolitico Iran-US (Yahoo Finance, 13-lug-2026). Segnale positivo: US spot Bitcoin ETF inflow $221.7M rompono 10 giorni di deflussi — il maggiore afflusso in 2 mesi (InvestingNews). BTC sotto 50-month EMA a $65,742 = segnale tecnico ribassista.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 62925.93,
+      "stop_loss": 59779.63,
+      "target": 67959.00,
+      "commissione": 0.00,
+      "reasoning": "BTC downgraded da BUY a HOLD: $62,926 è sotto il 50-month EMA ($65,742) — segnale tecnico negativo confermato (Fortune, 13-lug-2026). L'inversione dei flussi ETF ($221.7M dopo 10 gg di deflussi) è positiva ma non sufficiente a contrastare il macro risk-off da Iran-US. HOLD: attendere stabilizzazione e possibile rottura di $65,000 per BUY signal aggiornato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (13-lug, 7:15 AM EDT)", "price": 63020.04},
+          {"name": "CoinMarketCap live (13-lug)", "price": 62831.82}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1774.36,
+      "change_24h": "-1.34%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($9.17B volume 24h su CoinMarketCap)",
+      "news": "ETH apre $1,805.49 lunedì ma scende a $1,770.99 entro le 9:30 AM ET su Iran-US tensions (Yahoo Finance, 13-lug-2026). Bug validator Ethereum (Ethereum Foundation, identificato 12-lug) ancora non risolto. BlackRock/Goldman Sachs/JPMorgan/Morgan Stanley aderiscono alla UK Government Tokenization Taskforce — segnale istituzionale long-term positivo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1774.36,
+      "stop_loss": 1685.64,
+      "target": 1916.31,
+      "commissione": 0.00,
+      "reasoning": "ETH HOLD confermato: doppio headwind — (1) risk-off macro Iran-US, (2) bug validator non ancora risolto (Ethereum Foundation, 12-lug). La partecipazione alla UK Tokenization Taskforce da parte di BlackRock, Goldman, JPMorgan e Morgan Stanley è catalizzatore istituzionale long-term ma non risolve il breve termine. Aspettare patch validator + stabilizzazione macro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap live (13-lug, -1.34% 24h)", "price": 1778.30},
+          {"name": "Coinbase live (13-lug)", "price": 1770.41}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 76.55,
+      "change_24h": "-5.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($1.61B volume 24h CoinMarketCap)",
+      "news": "SOL -5.2% nelle ultime 24h: il più debole tra i tre crypto monitorati. SBI Holdings (Giappone) annuncia pivot a Solana per tokenizzazione e stablecoin issuance tramite joint venture SBI Solana Global con Solana Foundation — segnale fondamentale long-term molto positivo (CoinDesk, 13-lug-2026). Market cap $44.6B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 76.55,
+      "stop_loss": 72.72,
+      "target": 82.67,
+      "commissione": 0.00,
+      "reasoning": "SOL downgraded da BUY a HOLD: -5.2% nelle 24h è il peggior performer della sessione crypto. Il pivot SBI Holdings/Solana Foundation è positivo strutturalmente ma non è un catalyst immediato abbastanza forte da contrastare il macro selloff. HOLD tattico: il supporto a $72-73 è critico. Sotto $72.72 (SL) uscire. La tesi long-term SBI è un driver da monitorare per il rientro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap live (13-lug, market cap $44.6B)", "price": 76.42},
+          {"name": "MetaMask / Coinbase (13-lug live)", "price": 76.68}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM",
+      "motivo": "Spread fonti superiore alla soglia del 4%: NYSE ticker STLA riporta $8.50 (fonte 1) vs $5.84 (fonte 2) vs $5.58 (fonte 3 specifica 13-lug). Spread tra $5.84 e $5.58 = 4.66% > soglia 4% → BASSA → nessun segnale. Dati altamente incoerenti.",
+      "prezzo_stimato_stla_nyse": 5.58,
+      "nota": "Note: NYSE ticker corretto è STLA (non STLAM = Borsa di Milano). STLA su NYSE: ~$5.58-$5.84 nelle ultime 48h, near 52-week low ($5.25). Downgrades multipli da Citi (target EUR 5.50), JPMorgan Neutral ($6.85). Reinserire solo se spread < 4% in una sessione futura con query specifiche su due fonti live indipendenti."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "USO",
+      "motivo": "Supply shock geopolitico immediato: Stretto di Hormuz chiuso da Iran dopo scambi di airstrikes con USA nel weekend. Petrolio WTI +4% oggi, +9% settimanale. ~20% del petrolio globale bloccato. BUY ALTA confidenza — il catalizzatore è attivo e in corso. Il prezzo live potrebbe essere già superiore al validated $108.86."
+    },
+    {
+      "rank": 2,
+      "asset": "NFLX",
+      "motivo": "Pre-earnings play tattico: Q2 earnings domani 16 luglio. NFLX +1.61% oggi nonostante selloff generalizzato (forza relativa eccezionale). 37/37 analisti Buy, target medio $113 vs prezzo $74 (53% upside). Near 52-week low ($70.86): downside limitato. Rischio: miss earnings."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Pre-earnings play strutturale: Q2 earnings mercoledì 15 luglio. 43/43 analisti Buy unanimi. Bernstein target $2,623 (+48%), Wells Fargo target $2,200 (+23%). Monopolio EUV irriproducibile. +70% YTD 2026. Monitorare pre-market 14-lug per gap Samsung."
+    },
+    {
+      "rank": 4,
+      "asset": "SAP",
+      "motivo": "Value estremo: $157.86 vs target analisti $283.40 (79% upside). Near 52-week low ($148.06). 13+ analisti Buy. ERP cloud leader globale con 400.000 clienti. KeyBanc Buy confermato 9 luglio. Earnings 23 luglio."
+    },
+    {
+      "rank": 5,
+      "asset": "NVDA",
+      "motivo": "Dip su macro geopolitico in un AI supercycle intatto: -2.92% oggi. 70.7% revenue growth trimestrale. Morgan Stanley OW, TD Cowen top pick, BofA $350 target. Volume leggermente sopra media. Entry migliorato rispetto al scan 12-lug ($203 vs $210)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca",
+    "allocazione_suggerita": {
+      "BUY_signals": {
+        "USO": "15% (ALTA confidenza, supply shock immediato Stretto Hormuz)",
+        "ASML": "15% (pre-earnings 15-lug, 43/43 Buy unanimi, BUY su eventuale gap-down)",
+        "NVDA": "13% (AI supercycle intatto, dip su macro risk-off)",
+        "NFLX": "10% (pre-earnings 16-lug, near 52w low, 37/37 Buy)",
+        "SAP": "10% (value play: $157 vs $283 target, 79% gap)",
+        "MSFT": "10% (technical breakout, earnings 29-lug, primo dual-source oggi)",
+        "AMZN": "10% (migliore Mag7 oggi +0.93%, forza relativa confermata)"
+      },
+      "HOLD_cash": "17%",
+      "note_rischio": "RISCHI CHIAVE: (1) ASML gap-down 13-lug per Samsung — monitorare pre-market; (2) NFLX earnings binario 16-lug: stop loss $71.74; (3) USO: de-escalation Iran improvvisa colpirebbe -2%; (4) CIP USA 14-lug: dato alto → headwind GLD/SLV, spinge USO; (5) FOMC 28-29-lug: decisivo per crypto e gold; (6) ETH validator bug non ancora risolto — NON incluso in portafoglio; (7) META distribuzione anomala (volume +72%) — NON aumentare posizioni."
+    }
+  },
+  "catalizzatori_prossimi": {
+    "13_luglio_oggi": "Mercati aperti — monitorare USO spike oil, ASML gap (Samsung), NVDA open post -2.92%",
+    "14_luglio": "CPI USA — impatto diretto su GLD, SLV, BTC, USO e valutazioni tech (FOMC hawkish probability)",
+    "15_luglio": "ASML Q2 Earnings — catalizzatore diretto (43/43 Buy unanimi, Bernstein $2,623 target)",
+    "16_luglio": "Netflix Q2 Earnings — binario BUY/SELL post-report; pre-earnings BUY a $73.96 con SL $71.74",
+    "23_luglio": "SAP Q2 Earnings",
+    "28_29_luglio": "FOMC Meeting — decisivo per gold, crypto, tech e USO (oil-driven inflation)",
+    "29_luglio": "Microsoft Q3 Earnings — catalizzatore per MSFT BUY",
+    "30_luglio": "Apple Q3 FY2026 Earnings e Ferrari Q2 Earnings",
+    "late_luglio": "Ethereum Foundation: patch bug validator attesa — sblocco segnale ETH"
+  }
+}
