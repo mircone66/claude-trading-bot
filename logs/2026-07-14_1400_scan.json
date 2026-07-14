@@ -1,0 +1,477 @@
+{
+  "timestamp": "2026-07-14T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Martedì 14 luglio 2026 — Il CPI USA di giugno ha registrato il calo mensile più ampio degli ultimi 6 anni (-0.4% m/m, +3.5% a/a), innescando un rimbalzo tecnico sul Nasdaq-100 (+1.3% futures). I semiconduttori guidano il rimbalzo: NVDA +3.2%, ASML +3.0% in attesa degli earnings di domani (15-lug). KeyBanc ha declassato AAPL a Underweight citando 'below-trend growth' e build iPhone in calo, pesando il titolo -1.2%; ha alzato simultaneamente i price target su AMD e NVDA. IBM crolla -25% su profit warning — peggior seduta dalla Black Monday 1987. Lato geopolitico: gli USA hanno istituito un blocco navale dei porti iraniani con tassa del 20% sulle navi nel Golfo di Hormuz → petrolio Brent a $86.99/bbl (+13.7% in 5 giorni) → USO STRONG BUY. Oro paradossalmente in calo nonostante la crisi (-0.14%): flight-to-USD domina su flight-to-gold. Crypto in Extreme Fear (F&G Index 22): BTC -1.98%, ETH -1.80%, SOL -5.20%. UPCOMING CATALYSTS: NFLX Q2 earnings domani 16-lug, ASML Q2 earnings domani 15-lug, SAP Q2 earnings 23-lug, FOMC 28-29-lug, MSFT earnings 29-lug, Apple earnings 30-lug.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 314.76,
+      "change_24h": "-1.20%",
+      "trend_5d": "rialzista_inversione",
+      "volume_note": "anomalo (downgrade-driven selling su alto volume istituzionale)",
+      "news": "KeyBanc declassa AAPL a Underweight (da Sector Weight) citando 'below-trend growth', build iPhone in calo, upgrade weak e modelli di sussidio in cambiamento. Apple ha anche citato in giudizio OpenAI per furto segreti commerciali (11-lug). Il titolo tocca $313.05 nel pomeriggio dopo aver raggiunto record storici ieri. Earnings Q3 FY2026 attesi il 30 luglio.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 314.76,
+      "stop_loss": 324.20,
+      "target": 299.02,
+      "commissione": 0.00,
+      "reasoning": "Downgrade a Underweight da KeyBanc con dati supply-chain negativi sull'Asia — primo declassamento da una major bank in 6 mesi — innesca pressione di vendita istituzionale (CNBC, 14-lug). Il titolo è sceso da record high $323+ a $313 in una seduta: momentum negativo con SL tattico a $324.20 (sopra il pivot del record) e target $299 (-5%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TipRanks / Investing.com (14-lug post-downgrade)", "price": 313.05},
+          {"name": "Yahoo Finance (13-lug chiusura)", "price": 316.47}
+        ],
+        "spread_pct": 1.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 394.35,
+      "change_24h": "-0.21%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Tesla poco mossa (-0.21%) dopo il calo di lunedì (-3.39% su sell-off macro). Fondamentali solidi: $22.39B revenue Q1 e $44.74B cash. Earnings attesi il 22 luglio con sentiment misto degli analisti. Il titolo scambia a $394 nel mezzo del range 52-settimane ($297-$499).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 394.35,
+      "stop_loss": 382.52,
+      "target": 414.07,
+      "commissione": 0.00,
+      "reasoning": "TSLA in trend ribassista da $407+ (lunedì) a $394 oggi: area di supporto ma con earnings il 22-lug come catalizzatore incerto. Cash position forte ($44.7B) e retail investor appeal intatto, ma macro risk-off e rotazione settoriale pesano. HOLD tattico: attendere earnings per definire la direzione (Yahoo Finance / MacroTrends, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends (chiusura 13-lug)", "price": 394.76},
+          {"name": "Yahoo Finance (14-lug pomeriggio)", "price": 393.93}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 205.55,
+      "change_24h": "+3.20%",
+      "trend_5d": "laterale",
+      "volume_note": "elevato (rimbalzo da sell-off lunedì su CPI + nuovo PT KeyBanc)",
+      "news": "KeyBanc alza il price target NVDA a $330 (da $310) citando memory tight market in Asia e AI data-center demand sostenuta. NVDA rimbalza +3.2% dopo calo -3.52% di lunedì (-$7.43 a $203.53). Market cap $4.96T. Range 52w: $162.02 - $236.54. Guidance AI infra spending rimane robust.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 205.55,
+      "stop_loss": 199.38,
+      "target": 215.83,
+      "commissione": 0.00,
+      "reasoning": "NVDA in rimbalzo tecnico +3.2% su CPI freddo + nuovo PT KeyBanc $330: il doppio catalizzatore (macro + analyst upgrade) giustifica un entry dopo lo storno di lunedì. Il sell-off da $210 a $203 appare eccessivo rispetto ai fondamentali AI. Confidence MEDIA causa spread fonti 1.95% tra prezzo intraday e chiusura precedente (CNBC / Yahoo Finance, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken / CNBC (14-lug intraday)", "price": 207.57},
+          {"name": "Yahoo Finance / CNBC (chiusura 13-lug)", "price": 203.53}
+        ],
+        "spread_pct": 1.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 386.10,
+      "change_24h": "-1.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "elevato (classe aziendale in pressione post-taglio occupazione e lawsuit)",
+      "news": "Microsoft -1.0% oggi su preoccupazioni enterprise spending. Il 6 luglio ha annunciato 4,800 esuberi (2.1% workforce) con spin-off di 4 studios Xbox. Class action lawsuit per securities fraud in corso. Il titolo è -24.83% negli ultimi 12 mesi, 2% sotto il 52w high $551.05. Earnings Q4 FY2026 attesi il 29 luglio.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 386.10,
+      "stop_loss": 374.52,
+      "target": 405.41,
+      "commissione": 0.00,
+      "reasoning": "MSFT in trend ribassista post-taglio lavoro e timori enterprise spending. La combinazione di pressione sul personale, lawsuit e macro incertezza giustifica un atteggiamento neutro. HOLD: attendere earnings del 29-lug per avere visibilità su Azure growth e AI Copilot adoption (CNBC / XTB, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Kraken (14-lug)", "price": 386.84},
+          {"name": "Yahoo Finance (14-lug quote)", "price": 385.35}
+        ],
+        "spread_pct": 0.39,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 352.50,
+      "change_24h": "+0.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Alphabet +0.9% oggi, beneficiando del CPI freddo e del sentiment tech positivo. Market cap $4.33T. 64 analisti con rating 'Strong Buy' e PT medio $431.72 (+22.5% upside). Il titolo scambia a $352 con chiusura del 13-lug a $352.51. Nessuna news specifica company-related oggi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 352.50,
+      "stop_loss": 341.93,
+      "target": 370.13,
+      "commissione": 0.00,
+      "reasoning": "GOOGL in trend rialzista con consensus 'Strong Buy' praticamente unanime (64/64 analisti) e PT $431.72 che indica ampio upside strutturale. Il CPI freddo (+0.9% oggi) conferma il ritorno del risk appetite su titoli growth. Entry a $352.50 con SL -3% e target +5% a breve, in attesa di earnings prossimi (Morningstar / Yahoo Finance, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (chiusura 13-lug)", "price": 352.51},
+          {"name": "Yahoo Finance / Google Finance (range 14-lug: $348.84-$356.12, mid)", "price": 352.48}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 661.02,
+      "change_24h": "+1.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (72% sopra media lunedì su calo -1.52%; oggi rimbalzo su volumi normalizzati)",
+      "news": "Meta +1.0% oggi. BofA ha aggiunto META alla US 1 List (highest-conviction buy, 14-lug). Il titolo ha realizzato un +10% il 1° luglio su lancio cloud AI per monetizzare capacità compute in eccesso. Q1 EPS $10.44 vs consensus $6.82 (+53% beat). Il 13-lug il titolo ha chiuso a $656.73 (-1.86%): il calo era segnale di distribuzione temporanea prima del rimbalzo odierno. Range 14-lug: $654-$676.62.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 661.02,
+      "stop_loss": 641.19,
+      "target": 694.07,
+      "commissione": 0.00,
+      "reasoning": "META combina catalizzatori fondamentali eccezionali (EPS Q1 +53% vs consensus, cloud AI business nuovo) con un momentum istituzionale fresco (BofA US 1 List, 14-lug). Il calo di lunedì -1.86% su volume anomalo ha offerto un punto di re-entry; il rimbalzo odierno +1% conferma la domanda strutturale. Segnale BUY con Alta confidence (CNBC / Yahoo Finance, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (chiusura 13-lug)", "price": 656.73},
+          {"name": "StockAnalysis / CNBC (range 14-lug mid: $654-$676.62)", "price": 665.31}
+        ],
+        "spread_pct": 1.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.60,
+      "change_24h": "-0.64%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (attesa earnings domani 16-lug)",
+      "news": "Netflix in laterale $73-74, con earnings Q2 domani 16 luglio. Analisti divisi: preoccupazioni su potential revenue declines e competizione, ma ad revenue attesa raddoppiare quest'anno. Il titolo ha chiuso il 13-lug a $73.83 (+0.63%) e scambia oggi a $73.36. NFLX era stato l'unica eccezione positiva nel sell-off di lunedì (+1.61%).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 73.60,
+      "stop_loss": 71.39,
+      "target": 77.28,
+      "commissione": 0.00,
+      "reasoning": "NFLX in attesa degli earnings domani 16-lug: il rischio binario (beat/miss) sconsiglia posizioni nuove prima dei risultati. Il titolo scambia in banda stretta $73-74: movimento neutro. HOLD tattico — se gli earnings battono le attese, target +5% a $77.28; se mancano, SL -3% a $71.39 (Yahoo Finance / StockAnalysis, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (chiusura 13-lug)", "price": 73.83},
+          {"name": "Yahoo Finance (14-lug intraday)", "price": 73.36}
+        ],
+        "spread_pct": 0.64,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1744.98,
+      "change_24h": "+3.04%",
+      "trend_5d": "rialzista",
+      "volume_note": "elevato (pre-earnings momentum, +3% su ottimismo analysts)",
+      "news": "ASML +3.04% oggi a $1,763.92 (punta della seduta), con earning Q2 domani 15-lug. Proiezioni: revenue €8.83B (+14% YoY), EPS €6.84, net profit €2.61B (+8.8%). Susquehanna si aspetta un beat-and-raise con capacità EUV prenotata fino a fine 2027. Bernstein ha alzato PT a $2,623 da $1,971. Lunedì il titolo era sceso -3.22% su Samsung earnings deludenti, ma recupera oggi. Range 14-lug: $1,718-$1,775.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1744.98,
+      "stop_loss": 1692.63,
+      "target": 1832.23,
+      "commissione": 0.00,
+      "reasoning": "ASML presenta un'opportunità pre-earnings con aspettative di beat: capacità EUV 2027 potenzialmente completamente prenotata (Susquehanna, 14-lug) e nuovi PT da Bernstein a $2,623. Il rimbalzo +3% da un recente storno -3.2% indica rotazione positiva verso semiconduttori. Confidence MEDIA: earnings domani = rischio binario (The Motley Fool / TradingKey, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "NASDAQ / Yahoo Finance (14-lug intraday)", "price": 1726.04},
+          {"name": "TradingKey / CNBC (14-lug, +3.04% confermato)", "price": 1763.92}
+        ],
+        "spread_pct": 2.15,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 159.97,
+      "change_24h": "+1.34%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SAP SE +1.34% oggi a $159.97 (day range $157.07-$161.24). 35 analisti copertura con 71.43% rating BUY e PT medio $248.93 (+55% upside potenziale). Market cap ~$190B. Earnings Q2 SAP attesi il 23 luglio. Nessuna news negativa specifica oggi: il rialzo è guidato da sentiment tech positivo e CPI freddo.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 159.97,
+      "stop_loss": 155.17,
+      "target": 167.97,
+      "commissione": 0.00,
+      "reasoning": "SAP ha il 71% dei propri analisti su BUY con PT medio $248.93 — discount strutturale di oltre 55% rispetto al fair value di consensus. Il CPI freddo di oggi favorisce i titoli growth/enterprise software. Earnings il 23-lug sono il prossimo catalizzatore. BUY con SL -3% e target tattico +5% a $167.97, con upside strutturale molto maggiore nel medio termine (INDmoney / MarketBeat, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "INDmoney (14-lug)", "price": 159.97},
+          {"name": "MarketBeat / WallStreetZen (14-lug)", "price": 159.97}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 370.58,
+      "change_24h": "n/d",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Ferrari scambia a $370.58 (range 14-lug: $368.43-$372.38), in trend ribassista -30% YoY dal picco $519.10. Q1 2026 ha battuto le stime: EPS $2.69 vs $2.37 atteso, revenue $2.14B (+16.94% vs consensus), EBITDA margin 39.1%. Industrial free cash flow >$650M. Earnings Q2 attesi il 30 luglio. Macro: incertezza luxury auto settore.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 370.58,
+      "stop_loss": 359.46,
+      "target": 389.11,
+      "commissione": 0.00,
+      "reasoning": "Ferrari ha fondamentali eccezionali (margin 39.1%, FCF forte, Q1 beat) ma scambia in trend ribassista (-30% YoY) con pressioni macro sul settore luxury auto. Il titolo è lontano dal 52w low $312.51 ma senza catalyst immediato prima degli earnings del 30-lug. HOLD con confidence BASSA: attendere risultati Q2 o segnali di inversione del trend (Robinhood / CNBC / WallStreetZen, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / CNBC (14-lug intraday)", "price": 370.58},
+          {"name": "Robinhood / Investing.com (14-lug confermato, range $368.43-$372.38)", "price": 370.58}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 375.61,
+      "change_24h": "-0.14%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Oro in calo paradossale durante la crisi Iran (-0.14% su GLD). Gold August futures a $4,007.70/oz (7:50am ET), il livello più basso da fine giugno. La crisi USA-Iran sembra innescare un flight-to-USD piuttosto che flight-to-gold. Brent +13.7% in 5 giorni. US listed gold ETF hanno avuto riscatti netti di ~$5.3B nel mese più recente.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 375.61,
+      "stop_loss": 368.10,
+      "target": 390.63,
+      "commissione": 0.00,
+      "reasoning": "GLD in calo nonostante la crisi geopolitica: il movimento atipico (oro giù su tensioni Iran) segnala una dynamic di flight-to-cash/USD che sovrasta la domanda di gold safe-haven. Riscatti $5.3B dagli ETF oro suggeriscono distribuzione istituzionale. HOLD con confidence BASSA: aspettare chiarimento del regime macro (Yahoo Finance / Fortune / SSGA, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com (14-lug intraday)", "price": 376.96},
+          {"name": "Gold spot $4,007/oz × 0.0934 oz/share GLD (derivato)", "price": 374.25}
+        ],
+        "spread_pct": 0.72,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.10,
+      "change_24h": "+1.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "elevato (rimbalzo tecnico da minimi)",
+      "news": "Argento rimbalza +1.80% a $53.10 (NYSE Arca, 12:57 PM EDT) da $52.16 di chiusura del 13-lug. Silver September futures a $57.74-$57.95/oz, il livello più basso da dicembre 2025. Il calo recente è guidato da Iran conflict intensification e timori macro. Rimbalzo odierno potrebbe essere tecnico su mercato ipervenduto. SLV quota $53.10 con chiusura precedente $52.16.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 53.10,
+      "stop_loss": 52.04,
+      "target": 55.22,
+      "commissione": 0.00,
+      "reasoning": "SLV rimbalza +1.8% dai minimi da dicembre 2025: potenziale rimbalzo tecnico su oversold. Le tensioni Iran + inflazione da petrolio potranno supportare l'argento nel medio termine come hedge industriale e store-of-value. Entry a $53.10 con SL -2% ($52.04) stretto e target +4% ($55.22). Confidence MEDIA: trend 5d ribassista pone rischio di continuazione del calo (NYSE.com / CNBC, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "NYSE Arca / CNBC (14-lug 12:57 PM EDT)", "price": 53.10},
+          {"name": "StockAnalysis / MarketBeat (14-lug confermato)", "price": 53.10}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 117.79,
+      "change_24h": "+8.5% stimato",
+      "trend_5d": "fortemente_rialzista",
+      "volume_note": "anomalo (esplosione volume su crisi navale Hormuz, range giornaliero $111.71-$119.05)",
+      "news": "Petrolio Brent a $86.99/bbl (+$8.68 da ieri mattina, +13.7% in 5 giorni). USA hanno instaurato un blocco navale dei porti iraniani e proposta una tassa del 20% sulle navi che transitano nel Golfo di Hormuz. USO scambia a $117.79 con range intraday $111.71-$119.05. Range 52-settimane: $65.99-$154.08. Il rischio geopolitico aggiunge un premium strutturale al WTI/Brent.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 117.79,
+      "stop_loss": 115.44,
+      "target": 122.50,
+      "commissione": 0.00,
+      "reasoning": "USO presenta il catalizzatore geopolitico più forte del giorno: blocco navale Iran + tassa 20% Hormuz è un rischio di fornitura strutturale che non si dissolve in 24h. Brent +13.7% in 5 giorni con momentum positivo. SL -2% ($115.44) coincide con supporto intraday ($111.71 low). Target +4% ($122.50) tattico — upside strutturale molto maggiore se l'escalation continua. Alto confidence (Fortune / Barchart / NYSE Arca, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Barchart (14-lug)", "price": 117.79},
+          {"name": "NYSE Arca ARCX:USO / CNBC (14-lug confermato)", "price": 117.79}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 62664.50,
+      "change_24h": "-1.98%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($37.1B volume 24h, market cap $1.25T, dominanza 58.2%)",
+      "news": "Bitcoin -1.98% in 24h a $62,664.50. L'apertura del 14-lug è stata a $62,259.16, successivamente parzialmente recuperato a $62,865. Fear & Greed Index sceso da 28 (Fear) a 22 (Extreme Fear). Crisi Iran e macro uncertainty pesano sul risk appetite. Tuttavia Bitcoin ETF hanno interrotto una serie di 10 giorni di deflussi: possibile segnale di bottom istituzionale.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 62664.50,
+      "stop_loss": 59531.28,
+      "target": 67677.66,
+      "commissione": 0.00,
+      "reasoning": "BTC in territory Extreme Fear (22): storicamente area di accumulo, ma segnali macro (Iran, CPI pur freddo) impediscono un BUY convinto. I Bitcoin ETF hanno interrotto la serie di 10 giorni di outflow (segnale positivo istituzionale) vs. dominanza 58.2% che indica rotazione fuori dagli altcoin. HOLD: accumulo graduale possibile ma non urgente. SL -5% a $59,531 su supporto chiave (Yahoo Finance / Fortune / CoinMarketCap, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Fortune (14-lug, 8:21am ET)", "price": 62783.14},
+          {"name": "CoinMarketCap (14-lug live, -0.71% 24h)", "price": 62545.86}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1783.59,
+      "change_24h": "-1.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($9.98B volume 24h)",
+      "news": "Ethereum -1.80% in 24h a $1,783.59. L'apertura del 14-lug è stata a $1,774.10 (-1.8% da ieri), range 24h: $1,753.21-$1,790.05. Fear & Greed Index a 22 (Extreme Fear). Crypto market cap totale -1.5% in 24h a $2.23T. Volume trading $68.5B. ETH soffre più di BTC (-1.8% vs -2%) in un contesto risk-off generalizzato.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1783.59,
+      "stop_loss": 1694.41,
+      "target": 1926.28,
+      "commissione": 0.00,
+      "reasoning": "ETH in trend ribassista con Extreme Fear: il calo -1.8% è leggermente meno severo di SOL (-5.2%) ma il contesto macro (crisi Iran + risk-off) non supporta posizioni long aggressive. Il range 24h $1,753-$1,790 indica consolidamento vicino ai minimi recenti. HOLD: risk/reward non favorevole per un nuovo BUY; monitor per segnali di inversione della dominance ETH/BTC (Yahoo Finance / CoinMarketCap, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (14-lug, 8:21am ET)", "price": 1785.68},
+          {"name": "CoinMarketCap (14-lug live)", "price": 1781.50}
+        ],
+        "spread_pct": 0.23,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 76.07,
+      "change_24h": "-5.20%",
+      "trend_5d": "fortemente_ribassista",
+      "volume_note": "elevato ($2.01B volume 24h, -8% da settimana scorsa $81.20)",
+      "news": "Solana -5.20% in 24h, la peggior performance tra i major crypto oggi. SOL scambia a $76.07 (Coinbase $75.07 vs CoinMarketCap $77.06, spread 2.58%). Market cap $43.72B, rank #7. Caduto da $81.20 di settimana scorsa. Unica news positiva: SBI Holdings (Giappone) ha pivotato su Solana per tokenizzazione asset (catalyst long-term). Fear & Greed a 22.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 76.07,
+      "stop_loss": 79.87,
+      "target": 69.98,
+      "commissione": 0.00,
+      "reasoning": "SOL mostra la peggior debolezza relativa tra i crypto (-5.2% vs BTC -2% e ETH -1.8%): underperformance relativa in ambiente risk-off indica distribuzione specifica. Trend 5d fortemente negativo (-8% in una settimana). Il segnale SBI Holdings è positivo long-term ma non cambia la traiettoria tecnica di breve. SELL con confidence BASSA: spread Coinbase/CMC del 2.58% riduce la certezza del prezzo (Coinbase / CoinMarketCap, 14-lug).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (14-lug live)", "price": 75.07},
+          {"name": "CoinMarketCap (14-lug live)", "price": 77.06}
+        ],
+        "spread_pct": 2.58,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AMZN",
+      "motivo": "Solo 1 fonte con prezzo verificato ($246.56, Yahoo Finance 14-lug). La seconda ricerca CNBC/MarketWatch non ha restituito un prezzo specifico confermato. Fonti < 2 → affidabilita BASSA → nessun segnale BUY/SELL generato.",
+      "prezzo_indicativo": 246.56,
+      "fonte_unica": "Yahoo Finance / StockAnalysis (14-lug intraday, range $243.80-$248.90)"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Solo 1 fonte con prezzo verificato (~$534-537, prima ricerca). La seconda ricerca CNBC/MarketWatch non ha restituito un prezzo numerico specifico per il 14-lug. Fonti < 2 → affidabilita BASSA → nessun segnale BUY/SELL generato.",
+      "prezzo_indicativo": 535.00,
+      "fonte_unica": "Prima ricerca web (14-lug: close $534.39, intraday $536.77)"
+    },
+    {
+      "asset": "STLA",
+      "motivo": "Spread prezzi >4% tra le fonti: fonte 1 riporta $5.84 (+0.34%), fonte 2 mostra anche $5.58 e $7.77 (dati inconsistenti da fonti diverse). Lo spread tra $5.58 e $7.77 è del 39% — dato anomalo che invalida la triangolazione. Affidabilita BASSA → nessun segnale generato.",
+      "prezzo_indicativo": 5.84,
+      "note": "Il ticker corretto su NYSE è STLA (non STLAM). Dati da fonte 2 (seconda ricerca) mostrano alta varianza: $5.50 (July 10 close), $5.58, $5.84, $7.77 — impossibile validare."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "META",
+      "tipo": "stock_usa",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "motivo": "Triplo catalizzatore: (1) BofA aggiunge alla US 1 List come highest-conviction buy; (2) lancio cloud AI business il 1-lug ha aggiunto >+10% al titolo; (3) Q1 EPS $10.44 vs $6.82 consensus (+53% beat). Trend rialzista confermato con 2 fonti concordanti (spread 1.29%). Entry $661.02, target $694.07."
+    },
+    {
+      "rank": 2,
+      "asset": "USO",
+      "tipo": "etf_commodity",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "motivo": "Catalizzatore geopolitico diretto: blocco navale USA dei porti iraniani + tassa 20% Hormuz → Brent +13.7% in 5 giorni. USO prezzi confermati da 2 fonti a $117.79 (spread 0%). Momentum fortemente rialzista con range giornaliero $111-$119. L'escalation Iran non si risolve in 24h: premium strutturale di rischio."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "tipo": "stock_eu",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "motivo": "Pre-earnings momentum +3.04% oggi con Susquehanna che vede capacità EUV 2027 completamente prenotata. Bernstein alza PT a $2,623 da $1,971 (+50% vs prezzo attuale $1,745). Earnings domani 15-lug: atteso beat-and-raise su AI chip demand. Rischio earnings = confidence MEDIA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito. Allocazione suggerita su $10,000 ipotetico capitale, pesi proporzionali alla confidence e al momentum del segnale.",
+    "allocazione_suggerita": {
+      "META": "18% ($1,800) — BUY Alto",
+      "USO": "18% ($1,800) — BUY Alto",
+      "NVDA": "14% ($1,400) — BUY Medio",
+      "GOOGL": "14% ($1,400) — BUY Medio",
+      "ASML": "9% ($900) — BUY Medio pre-earnings",
+      "SAP": "9% ($900) — BUY Medio",
+      "SLV": "8% ($800) — BUY Medio rimbalzo tecnico",
+      "Liquidita": "10% ($1,000) — attesa segnali NFLX earnings (16-lug) e ASML earnings (15-lug)"
+    },
+    "segnali_short": {
+      "AAPL": "SELL Medio — entry $314.76, target $299.02",
+      "SOL": "SELL Basso — entry $76.07, target $69.98 (confidence bassa per spread 2.58%)"
+    }
+  }
+}
