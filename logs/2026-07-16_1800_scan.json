@@ -1,0 +1,516 @@
+{
+  "timestamp": "2026-07-16T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA in forte rialzo il 15 luglio 2026 grazie a dati CPI positivi (inflazione giugno -0.4%). Mega-cap tech guidano i guadagni: AAPL +4.01%, NVDA +4.06%, GOOGL +3.17%, MSFT +2.78%, AMZN +2.66%. ASML balza +3.8% dopo aver alzato guidance 2026 per la seconda volta (€43-45B). Oro consolida sopra $4,000/oz, petrolio stabile ~$79.56 con tensioni US-Iran a supporto di USO. Crypto rally: BTC vicino a $65K (+0.6%), ETH +2.6% diventa 'sempre più convincente'. Attenzione: NFLX riporta Q2 earnings oggi (16 luglio); MSFT Q4 il 29 luglio. SAP e Ferrari riportano il 23 e 30 luglio rispettivamente.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 327.50,
+      "change_24h": "+4.01%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - 15° record intraday del 2026",
+      "news": "Citi alza target a $365 da $315 il 13 luglio. AAPL su del 20% YTD 2026, market cap vicina a $5 trilioni. Heading for record territory per la 15° volta nel 2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 327.50,
+      "stop_loss": 317.68,
+      "target": 343.88,
+      "commissione": 0.00,
+      "reasoning": "Rottura di nuovi massimi storici con upgrade analitico (Citi +$50 PT). Market cap quasi $5T conferma momentum strutturale senza resistenze superiori visibili. (Fonte: Yahoo Finance, CNBC, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 327.50},
+          {"name": "CNBC", "price": 327.50}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 395.32,
+      "change_24h": "-0.43%",
+      "trend_5d": "laterale",
+      "volume_note": "normale - trading range $391-$406",
+      "news": "TSLA ha aperto a $404.61 il 15 luglio, chiudendo a $394.46. Range di giornata $391.37-$405.57. Nessun catalizzatore direzionale rilevante rispetto al settore tech.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 395.32,
+      "stop_loss": 383.46,
+      "target": 415.09,
+      "commissione": 0.00,
+      "reasoning": "Range-bound tra $391-$406 con assenza di catalizzatori specifici il 15 luglio. Il settore EV sconta ancora preoccupazioni macroeconomiche. Preferire attesa di breakout sopra $406. (Fonte: TradingEconomics, Yahoo Finance, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics", "price": 394.46},
+          {"name": "Yahoo Finance", "price": 396.18}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 212.15,
+      "change_24h": "+4.06%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - 52W range $164-$236, in zona alta",
+      "news": "NVDA chiude a $211.80 il 15 luglio (+4.06%). Market cap $6.65T. PE 29.69 con EPS 1.60. Pre-market 16 luglio mostra -1.75% a $208.78. AI infrastructure demand remains strong secondo analisti.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 212.15,
+      "stop_loss": 205.79,
+      "target": 222.76,
+      "commissione": 0.00,
+      "reasoning": "NVDA giuda il rimbalzo AI infrastrutture su CPI positivo. Il pullback pre-market (-1.75%) può essere entry migliore. Trend rialzista strutturale intatto con market cap >$6.6T. (Fonte: StockAnalysis/MacroTrends, CNBC, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/MacroTrends", "price": 211.80},
+          {"name": "CNBC/Yahoo Finance", "price": 212.50}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 396.33,
+      "change_24h": "+2.78%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "MSFT chiude a $395.63 il 15 luglio (+2.78%). Heading into Q4 earnings (29 luglio) con 3 banche che hanno tagliato PT su preoccupazioni AI investment profitability. Media analyst target $558.77 ('Strong Buy' da 56 analisti).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 396.33,
+      "stop_loss": 384.44,
+      "target": 416.15,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista ma rischio earnings il 29 luglio con alcune banche che tagliano PT per preoccupazioni sui costi AI. Preferire attendere post-earnings prima di entrare aggressivamente. (Fonte: Kraken/CNN, Yahoo Finance/CNBC, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken/CNN", "price": 397.02},
+          {"name": "Yahoo Finance/CNBC", "price": 395.63}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 254.63,
+      "change_24h": "+2.66%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AMZN tratta a $254.07 il 15 luglio alle 10:13 AM EDT (+2.66%). Market cap $2.74T, PE 29.58. Range giornaliero $247.70-$256.48. Strong performance su CPI positivo e AI cloud demand.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 254.63,
+      "stop_loss": 246.99,
+      "target": 267.36,
+      "commissione": 0.00,
+      "reasoning": "AMZN sale del 2.66% su dato CPI positivo e tema AI cloud. Market cap $2.74T con valutazione ragionevole PE 29.58. Cloud AWS rimane il principale driver di crescita. (Fonte: CNBC, StockAnalysis, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 254.07},
+          {"name": "MarketBeat/StockAnalysis", "price": 255.18}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 370.92,
+      "change_24h": "+3.17%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - pre-market +1.70% il 16 luglio",
+      "news": "GOOGL chiude a $370.92 il 15 luglio (+3.17%), pre-market 16 luglio $377.22 (+1.70%). Endorsement Buffett ha spinto +3.65% su Q1 positivo. Google annuncia investimento solare $3.5B. CPI positivo beneficia tutte le big tech.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 370.92,
+      "stop_loss": 359.79,
+      "target": 389.47,
+      "commissione": 0.00,
+      "reasoning": "Momentum forte con continuazione pre-market +1.70% a $377. Buffett backing + espansione green energy + CPI positivo = combinazione di catalizzatori multipli. Target $389 realistico nel breve. (Fonte: StockAnalysis/MacroTrends, CNBC/Yahoo Finance, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/MacroTrends", "price": 370.92},
+          {"name": "CNBC/Yahoo Finance", "price": 370.92}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 661.04,
+      "change_24h": "+0.65%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - recupero dal picco AI cloud $630",
+      "news": "META a $661.04 il 15 luglio. Annuncio datacenter Louisiana da $50B (più del doppio della capacità pianificata, 5GW). AI demand remains strong. Spike a $630 AI cloud poi recupero a $661.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 661.04,
+      "stop_loss": 641.21,
+      "target": 694.09,
+      "commissione": 0.00,
+      "reasoning": "Commitment capex AI di $50B in un singolo datacenter segnala convinzione strutturale nella domanda AI. Recupero da $630 a $661 indica supporto del mercato al piano strategico. (Fonte: Yahoo Finance, CNBC, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 661.04},
+          {"name": "VantageMarkets", "price": 661.04}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.72,
+      "change_24h": "~0.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - earnings day 16 luglio (oggi), alta volatilità attesa",
+      "news": "NFLX a ~$73.75 prima dei Q2 earnings del 16 luglio. Il titolo è sceso oltre il 20% nel 2026 ('2026 Selloff'). Bernstein taglia PT a $100 da $110. Traders scommettono su una 'comeback quarter'. Ads previste come 25% della crescita 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.72,
+      "stop_loss": 71.51,
+      "target": 77.41,
+      "commissione": 0.00,
+      "reasoning": "Earnings day (16 luglio): rischio binario elevato, nessun nuovo ingresso consigliabile. Post-earnings rivalutare. Downtrend 2026 potrebbe terminare se Q2 batte le attese. (Fonte: MacroTrends, FXLeaders/CNBC, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/StockAnalysis", "price": 73.68},
+          {"name": "FXLeaders/CNBC", "price": 73.75}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 529.32,
+      "change_24h": "-3.46%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - sell-off -3.46% su preoccupazioni AI capex",
+      "news": "AMD scende a $529 (-3.46%) su rallentamento percepito della spesa hyperscaler in AI. Zen 6 Venice in uscita 22 luglio. AI Helios vs NVIDIA Vera Rubin come driver competitivo. Analisti valutano scenario $584 post-lancio.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 529.32,
+      "stop_loss": 513.44,
+      "target": 555.79,
+      "commissione": 0.00,
+      "reasoning": "Correzione -3.46% su sentiment negativo, ma Zen 6 il 22 luglio e AI Helios potrebbero essere catalizzatori positivi. Attendere il lancio e la reazione del mercato prima di posizionarsi. (Fonte: VantageMarkets, Yahoo Finance/CNBC, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "VantageMarkets", "price": 529.14},
+          {"name": "Yahoo Finance/CNBC", "price": 529.49}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1802.16,
+      "change_24h": "+3.80%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo - gap up post Q2 earnings, +53% YTD 2026",
+      "news": "ASML riporta Q2 il 15 luglio: alza guidance 2026 a €43-45B (seconda volta nel 2026). Titolo +3.8% sulla notizia. Domanda AI equipment in forte crescita. European Shares subdued ma ASML outperform. 44 analisti: 'Strong Buy', target medio $1,997.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1802.16,
+      "stop_loss": 1748.10,
+      "target": 1892.27,
+      "commissione": 0.00,
+      "reasoning": "Earnings beat + seconda guidance raise nel 2026 = momentum fondamentale confermato. Up 53% YTD, strutturalmente avvantaggiata nel monopolio EUV per AI chip. Target analisti $1,997 offre ulteriore upside. (Fonte: Investing.com, CNBC, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (USD direct)", "price": 1802.16},
+          {"name": "EUR price 1549.40 × 1.165 FX", "price": 1805.00}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 156.28,
+      "change_24h": "+1.19%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SAP ADR a $155.91-$156.65 il 15 luglio (+1.19%). Earnings Q2 il 23 luglio. 22 analisti: 'Strong Buy'. P/E 21.98, market cap $194.71B. Stock laterale in attesa degli earnings.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 156.28,
+      "stop_loss": 151.59,
+      "target": 164.09,
+      "commissione": 0.00,
+      "reasoning": "SAP in range pre-earnings (23 luglio). Valutazione ragionevole PE 21.98 per un leader ERP europeo con forte cloud transition. Attendere risultati Q2 per conferma direzione. (Fonte: MacroTrends, Google Finance, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends", "price": 155.91},
+          {"name": "Google Finance", "price": 156.65}
+        ],
+        "spread_pct": 0.47,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.90,
+      "change_24h": "+3.34%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "STLA (NYSE) chiude a $5.90 il 15 luglio, pre-market 16 luglio $5.97 (+1.02%). STLAM.MI (Milano) a €5.17 (+3.34%). Q2 earnings il 30 luglio. Shipments +10% in Nord America. 52W range $5.25-$12.22, down oltre 50% dall'high. Profit margin -13.87%, FCF negativo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.90,
+      "stop_loss": 5.72,
+      "target": 6.20,
+      "commissione": 0.00,
+      "reasoning": "Valutazione molto economica (PE forward 6.58) ma fondamentali deteriorati: FCF negativo, margine netto -13.87%. Shipments +10% potrebbe essere catalizzatore al Q2 del 30 luglio. Rischio elevato. (Fonte: MacroTrends/CNBC, STLAM.MI Yahoo Finance, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/CNBC (STLA NYSE USD)", "price": 5.90},
+          {"name": "Yahoo Finance STLAM.MI EUR 5.17 × ~1.14", "price": 5.89}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 373.95,
+      "change_24h": "-1.12%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "GLD a $373.95 il 14 luglio (dato più recente). Oro spot sale +0.4% a $4,015/oz il 14 luglio. Goldman Sachs taglia target a $4,900 (da $5,400), JPM prevede $4,800-$6,300 entro fine 2026. Gold ratio 70:1 vs silver. FOMC 28-29 luglio chiave.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 373.95,
+      "stop_loss": 366.47,
+      "target": 388.91,
+      "commissione": 0.00,
+      "reasoning": "Oro mantiene supporto critico $4,000/oz dopo correzione da $5,000. Goldman e JPM mantengono target rialzisti a fine 2026. FOMC il 28-29 luglio sarà catalizzatore; CPI positivo riduce rischio hike. [Incertezza: spread tra prezzi GLD e oro spot leggermente elevato]. (Fonte: Investing.com, GoldSilver.com/FXDailyReport, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/StockAnalysis", "price": 373.95},
+          {"name": "Gold spot $4,015 × 0.0949 oz/share (implied)", "price": 381.02}
+        ],
+        "spread_pct": 1.87,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.21,
+      "change_24h": "-1.81%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - volume 16.3M, forte sell-off da $121 record",
+      "news": "SLV chiude a $52.21 il 15 luglio (-1.81%). Argento spot a ~$57.68/oz ('Silver Dropped 1.4% Today'). Gold-silver ratio colpisce 70:1 (rivisto verso media 50 anni). Argento sceso da record $121.62 (gen 2026) a $58 = -52% in 6 mesi. Demand industriale (solar, EV, semi) sotto pressione.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 52.21,
+      "stop_loss": 51.17,
+      "target": 54.30,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista primario dominante (-52% da gennaio 2026). Gold-silver ratio a 70 suggerisce argento ipervenduto rispetto all'oro ma il momentum rimane negativo. Attendere segnali di capitolazione o inversione prima di entrare. (Fonte: Investing.com, CNBC/iShares/GoldSilver.com, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 53.12},
+          {"name": "CNBC/iShares (closing July 15)", "price": 52.21}
+        ],
+        "spread_pct": 1.73,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 120.78,
+      "change_24h": "+1.82%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo - geopolitical risk premium elevato",
+      "news": "USO a $121.38 closing il 15 luglio (+1.82%). WTI crude +1.82% a $79.56/bbl, Brent +1.98% a $84.95/bbl. Tensioni US-Iran e chiusura/rischio Stretto di Hormuz guidano la corsa. USO in rally da $104 a $121 in una settimana.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 120.78,
+      "stop_loss": 118.36,
+      "target": 125.61,
+      "commissione": 0.00,
+      "reasoning": "Tensioni geopolitiche US-Iran con rischio chiusura Hormuz supportano prezzi del petrolio. WTI $79.56 con margine verso $85 (Brent). CPI positivo limita upside inflazionistico ma geopolitica rimane driver dominante. (Fonte: Barchart, CNBC/Bloomberg, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Barchart", "price": 120.17},
+          {"name": "CNBC/Bloomberg", "price": 121.38}
+        ],
+        "spread_pct": 1.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64834.00,
+      "change_24h": "+0.60%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - ETF inflows $180M in un giorno",
+      "news": "BTC vicino a $65,000 il 15 luglio (da minimo luglio $57,700). CPI giugno -0.4% = meno probabilità di rialzo Fed. Spot Bitcoin ETF +$180M inflows (iShares BTC Trust +$139M). Japan riclassifica crypto come 'financial assets' e taglia tasse crypto.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 64834.00,
+      "stop_loss": 61592.00,
+      "target": 70020.00,
+      "commissione": 0.00,
+      "reasoning": "Triplo catalizzatore: CPI dovish (meno rischio rialzo tassi Fed), ETF inflows robusti $180M, riforma fiscale giapponese favorevole. Rimbalzo da $57,700 a $65K (+12.5%) in corso. (Fonte: Motley Fool/Yahoo Finance, TradingEconomics/Coinbase, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics/Coinbase", "price": 64728.00},
+          {"name": "Motley Fool/Crypto Market Today", "price": 64939.64}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1918.87,
+      "change_24h": "+2.60%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - ETF Ethereum +$58M inflows",
+      "news": "ETH a $1,918 il 16 luglio (+2.6%). Articolo Yahoo Finance: 'ethereum becomes increasingly compelling' (16 luglio 2026). ETH +6% il 14 luglio su dato CPI positivo. iShares Ethereum ETF +$58M inflows. Japan crypto reclassification positiva.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1918.87,
+      "stop_loss": 1822.93,
+      "target": 2072.38,
+      "commissione": 0.00,
+      "reasoning": "ETH narrativa come asset 'sempre più convincente' con ETF inflows crescenti (+$58M). Outperforma su CPI positivo: +6% il 14 luglio. Riclassificazione giapponese e macro favorevole supportano ulteriore upside verso $2,072. (Fonte: CoinMarketCap, CoinDesk, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 1917.55},
+          {"name": "CoinDesk", "price": 1920.19}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 77.02,
+      "change_24h": "+0.30%",
+      "trend_5d": "laterale",
+      "volume_note": "normale - Solana ETF assets >$1B (Bitwise BSOL, Fidelity FSOL)",
+      "news": "SOL testa $77 come supporto ('SOL Tries to Flip $77 Into Support'). Morgan Stanley rifila S-1 per spot Solana ETF (custody Coinbase, fee 0.14%). Gruppo finanziario giapponese lancia on-chain finance su Solana. Range $63-$80 da inizio giugno.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 77.02,
+      "stop_loss": 73.17,
+      "target": 83.18,
+      "commissione": 0.00,
+      "reasoning": "SOL a livello chiave $77 con potenziale breakout sostenuto da catalyst ETF (Morgan Stanley S-1 + assets >$1B). Ecosistema Solana con forte adozione istituzionale giapponese. Risk/reward 1:1.6 accettabile. (Fonte: MetaMask/Kraken, Crypto Market Today Motley Fool, luglio 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask/Kraken", "price": 76.68},
+          {"name": "Motley Fool/Crypto Market Today", "price": 77.35}
+        ],
+        "spread_pct": 0.87,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "RACE",
+      "motivo": "Fonte corrente unica ($384.97 da aggregatore non nominato). Seconda fonte Investing.com riporta prezzo del 7 luglio ($389.33) con 9 giorni di scarto - non comparabile. Fonti contemporanee < 2 → affidabilita BASSA → escluso da segnali BUY/SELL. Earnings previsti il 30 luglio. Rivalutare nella prossima sessione."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "Earnings Q2 beat + seconda guidance raise 2026 (€43-45B). Up 53% YTD con monopolio EUV per AI chip. Analisti target $1,997 (+10.8% da entry). Momentum fondamentale e tecnico allineati."
+    },
+    {
+      "rank": 2,
+      "asset": "AAPL",
+      "motivo": "15° record intraday del 2026. Citi upgrade target $365 (+11.5% da entry). Market cap quasi $5T senza resistenze sopra. CPI positivo elimina pressioni macro."
+    },
+    {
+      "rank": 3,
+      "asset": "BTC",
+      "motivo": "Triplo catalizzatore: CPI dovish + ETF inflows $180M/giorno + Japan crypto reclassification. Rimbalzo da $57,700 (+12.5%) in corso con momentum crescente."
+    },
+    {
+      "rank": 4,
+      "asset": "GOOGL",
+      "motivo": "Continuazione pre-market +1.70% a $377 il 16 luglio. Buffett endorsement + solare $3.5B + AI strength. Target $389 (+5%) con rischio limitato."
+    },
+    {
+      "rank": 5,
+      "asset": "META",
+      "motivo": "Commitment datacenter $50B in Louisiana (5GW) segnala leadership AI a lungo termine. Recupero da $583 a $661 conferma supporto del mercato al piano strategico."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale su Alpaca. Solo a scopo illustrativo per backtest futuro.",
+    "allocazione_suggerita": {
+      "AAPL": "10%",
+      "NVDA": "10%",
+      "GOOGL": "10%",
+      "META": "10%",
+      "ASML": "10%",
+      "BTC": "10%",
+      "ETH": "8%",
+      "AMZN": "8%",
+      "GLD": "8%",
+      "USO": "8%",
+      "SOL": "5%",
+      "TSLA": "3%"
+    },
+    "segnali_hold_esclusi": ["TSLA", "MSFT", "NFLX", "AMD", "SAP", "STLA", "SLV"],
+    "asset_esclusi_da_portfolio": ["RACE"]
+  }
+}
