@@ -1,0 +1,419 @@
+{
+  "timestamp": "2026-07-20T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Lunedì 20 luglio 2026 - Mercati aperti; scan eseguito circa ore 14:00 UTC. Tech ancora sotto pressione da selloff settimana precedente (Nasdaq -2.9%, SOX -20% dai massimi). AAPL scende da $333.74 a range $326-333 (ampio intraday); NVDA rimbalzo a $203.54 da $202.68. Catalyst odierni: (1) NFLX continua sell-off post-earnings (-2.04% oggi), prezzo vicino 52w low $65.08; (2) META giù >3.5% su sessione nonostante trattative Anthropic compute deal $10B; (3) GOOGL recupera parzialmente (+2.5% da notizia chip Frozen v2) ma Gemini delay pesa; (4) USO/petrolio spike geopolitico: USA-Iran escalation spinge oil +12% settimana, USO chiude Jul 17 a $123.96 (+3.91%) con after-hours $125.52; (5) SLV rimbalza +1.20% oggi dopo -6.8% settimana scorsa; (6) BTC leggermente in calo a $64,289 da $64,530 (Jul 19) - outlook H2 2026 misto; (7) ETH stabile a $1,867 confermando outperformance vs BTC (+7% vs +2% ultimi 5 giorni). RACE torna con validazione ALTA ($376.83) dopo esclusione scan Jul 19. USO torna con validazione ALTA dopo anomalia dati scan Jul 19. Catalysts imminenti: TSLA earnings Jul 22, GOOGL earnings Jul 22, AMD Advancing AI event Jul 22-23, SAP earnings Jul 23, MSFT earnings Jul 29.",
+  "signals": [
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 123.96,
+      "change_24h": "+3.91% (da $119.30 Jul 16 a $123.96 Jul 17; after-hours $125.52 +1.26%)",
+      "trend_5d": "rialzista (oil surge +12% settimanale; escalation USA-Iran; 52w range $65.99-$154.08)",
+      "volume_note": "anomalo - spike volume +3.91% in singola sessione Jul 17; after-hours conferma momentum",
+      "news": "Petrolio surge +12% nella settimana su escalation USA-Iran: USA lancia nuovi airstrikes domenica dopo morti di 3 militari americani. Oil prices surged ~30% from July lows. USO close Jul 17: $123.96 (+$4.66, +3.91%); after-hours: $125.52 (+1.26%). Aspettative Fed rate hike settembre >70% su oil spike - rischio macro. 52w high $154.08. (Fonte: CNBC/USO fund Jul 17 2026, Investing.com Jul 17 2026)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 123.96,
+      "stop_loss": 121.48,
+      "target": 128.92,
+      "commissione": 0.00,
+      "reasoning": "USO +3.91% in singola sessione su escalation USA-Iran (airstrikes domenica). Oil +12% settimanale e +30% dai minimi luglio; geopolitica non accenna a risoluzione. After-hours $125.52 conferma momentum. Stop -2% ($121.48), target +4% ($128.92). Fonte: Investing.com/CNBC Jul 17 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / USO Fund (Jul 20, previous close $119.30)", "price": 123.96},
+          {"name": "Barchart / CNBC (Jul 17 close confirmed, after-hours $125.52)", "price": 123.96}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 376.83,
+      "change_24h": "-1.50% (da $382.58 previous close a $376.83 Jul 20; day range $375.62-$379.58)",
+      "trend_5d": "laterale-ribassista (da 52w high $519.10 a $376.83; -27.4%; range recente $375-383)",
+      "volume_note": "normale",
+      "news": "Ferrari NV (RACE) in correzione dai massimi 2026. Analyst ratings recenti molto bullish: RBC Capital Buy, Jefferies Buy, Deutsche Bank Buy, Wolfe Research Outperform (luglio 2026). Target 1y analisti: $447.03 (+18.6% upside da entry). Market cap $66.52B. P/E 37.31. Dividendo yield 1.10%. 52w range: $312.51-$519.10. (Fonte: Yahoo Finance/Morningstar Jul 17-20 2026, CNBC/WallStreetZen Jul 20 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 376.83,
+      "stop_loss": 365.53,
+      "target": 395.67,
+      "commissione": 0.00,
+      "reasoning": "RACE sceso -27.4% dal 52w high $519.10; 4 case d'investimento (RBC, Jefferies, Deutsche Bank, Wolfe) mantengono Buy/Outperform con target consensus $447 (+18.6% da entry). Brand luxury con domanda resiliente. Correzione di mercato generale crea entry favorevole. Stop -3% ($365.53), target +5% ($395.67). Fonte: CNBC/Yahoo Finance Jul 17-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / CNBC (Jul 20 live, market cap $66.52B)", "price": 376.83},
+          {"name": "Yahoo Finance / Morningstar (Jul 17 close + Jul 20 day range $375.62-$379.55 confermato)", "price": 376.83}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 51.09,
+      "change_24h": "+1.20% (da $50.78 Jul 19 a $51.39 Jul 20; range oggi $49.61-$51.39)",
+      "trend_5d": "rimbalzo (argento spot -6.8% settimana precedente; recupero +2.8% a $56.80/oz London lunchtime Jul 20)",
+      "volume_note": "normale (net assets $26.77B; iShares data Jul 17 2026)",
+      "news": "Silver spot recupera +2.8% a $56.80/oz questa mattina (Londra) dopo calo -6.8% settimana precedente. SLV +1.20% oggi a $51.39. Oil complex in rally (USO +3.91%) supporta metalli industriali. Silver ratio vs gold ~71x (argento relativamente economico). 52w range SLV: $33.10-$109.83. (Fonte: Stock market news CNBC Jul 17-20 2026, ARCX/NYSE Jul 20 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 51.09,
+      "stop_loss": 50.07,
+      "target": 53.13,
+      "commissione": 0.00,
+      "reasoning": "SLV rimbalza +2.50% in 2 sessioni ($50.39 Jul 17 → $51.39 Jul 20 intraday) dopo overselling -6.8% settimana scorsa. Silver spot +2.8% a Londra stamattina conferma momentum recovery. Oil complex in rialzo supporta metalli industriali. Stop -2% ($50.07), target +4% ($53.13). Fonte: CNBC/NYSE Arca Jul 17-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockAnalysis (Jul 19, $50.78)", "price": 50.78},
+          {"name": "CNBC / NYSE Arca (Jul 20, $51.39 live, +$0.61 +1.20%)", "price": 51.39}
+        ],
+        "spread_pct": 1.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1867.49,
+      "change_24h": "+0.14% (da $1,864.82 mattina a $1,875.30 9:35 ET; media validata $1,867.49)",
+      "trend_5d": "rialzista (+7% vs BTC +2% ultimi 5 giorni; ETH da $1,708 Jul 2 a $1,867 oggi; +9.3%)",
+      "volume_note": "normale ($3.30B volume 24h CoinDesk Jul 19)",
+      "news": "Ethereum prezzi misti ma outlook H2 2026 divergente. ETH continua a outperformare BTC: +7% vs +2% ultimi 5 giorni. ETH 'increasingly compelling' come recovery leader del ciclo (Yahoo Finance Jul 16). ETF spot ETH: adozione istituzionale in corso. Crypto prices mixed today (Yahoo Finance Jul 20). Market cap $233B. (Fonte: Fortune/Yahoo Finance Jul 20 2026, CoinDesk Jul 19 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1867.49,
+      "stop_loss": 1774.12,
+      "target": 2016.89,
+      "commissione": 0.00,
+      "reasoning": "ETH mantiene outperformance strutturale vs BTC (+7% vs +2% in 5 giorni). Precedente storico: ETH guida recovery del ciclo crypto (Yahoo Finance Jul 16). Inflazione in raffreddamento (CPI -0.4% giugno) favorisce asset rischiosi. Validazione ALTA spread 0.29% tra Fortune ($1,864.82) e CoinDesk ($1,870.16). Target +8% ($2,017). Fonte: Yahoo Finance/CoinDesk Jul 19-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / Coinbase (Jul 20, 6:00 AM ET)", "price": 1864.82},
+          {"name": "CoinDesk / MetaMask (Jul 19 live, $1,870.16/$1,866.40)", "price": 1870.16}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 394.01,
+      "change_24h": "+0.05% (da $393.82 close Jul 17-19 a $394.01 Jul 20 intraday; stabile pre-earnings)",
+      "trend_5d": "laterale (range $389.43-$398.39 oggi; consolidamento pre-earnings Jul 29; -20% YTD)",
+      "volume_note": "normale",
+      "news": "Microsoft earnings Q4 FY2026 attesi Jul 29 - prossimo catalizzatore chiave. Bank of America: Buy, target $500 (+26.9%). Consensus analisti: $561 (39.9% upside). 'Prediction: Microsoft Stock Will Skyrocket After July 29' (Yahoo Finance/Motley Fool). Azure growth = key metric. 52w range: $349.20-$555.45. Significativamente sotto massimi. (Fonte: Yahoo Finance/Tickzen Jul 20 2026, Motley Fool Jul 16 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 394.01,
+      "stop_loss": 382.19,
+      "target": 413.71,
+      "commissione": 0.00,
+      "reasoning": "MSFT consolida a $394 pre-earnings Jul 29. BofA Buy $500 (+27%); consensus analisti $561 (+42%). Down 20% YTD crea entry value attraente con P/E 22x. Catalyst earnings = possibile re-rating su Azure growth. Stop -3% ($382.19), target +5% ($413.71) conservativo vs consensus. Fonte: Yahoo Finance/Motley Fool Jul 16-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Tickzen (Jul 20, day range $389.43-$398.39)", "price": 394.01},
+          {"name": "CNBC / Yahoo Finance (Jul 15 close $395.63 + Jul 16 pre-market $398.70)", "price": 395.63}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 203.54,
+      "change_24h": "+0.36% (da $202.81 close Jul 17 a $203.54 Jul 20; lieve rimbalzo post-selloff)",
+      "trend_5d": "ribassista (chip sell-off settoriale; PHLX SOX -20% dai massimi; volume anomalo Jul 20)",
+      "volume_note": "anomalo - 144.28M vs media 129.89M (+11%); partecipazione istituzionale elevata",
+      "news": "NVDA lieve rimbalzo +0.36% dopo chip selloff settoriale Jul 17 (SMH -4%+). AMD vince deal Microsoft per rackscale AI (potenziale competitor) ma NVDA mantiene dominanza datacenter. PHLX SOX index -20% dai recenti massimi; valutazioni sotto scrutiny post-AI rally. Google sviluppa chip Frozen v2 per Gemini (competitor indiretto). Market cap ~$4.98T. 52w range: $164.07-$236.54. (Fonte: CNBC Jul 17-20 2026, Yahoo Finance Jul 20 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 203.54,
+      "stop_loss": 197.43,
+      "target": 213.72,
+      "commissione": 0.00,
+      "reasoning": "NVDA in rimbalzo tecnico ma settore chip ancora sotto pressione (-20% SOX dai massimi). AMD-Microsoft deal aumenta competizione AI rack. Valutazioni questionabili post-rally AI. Volume anomalo +11% riflette incertezza. Non segnale direzionale chiaro; preferibile HOLD in attesa del settore. Fonte: CNBC/Yahoo Finance Jul 17-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / investor.nvidia.com (Jul 20, day range $197.97-$206.65)", "price": 203.81},
+          {"name": "Yahoo Finance / CNBC (Jul 17 close $202.81; Jul 20 $203.27)", "price": 203.27}
+        ],
+        "spread_pct": 0.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64289.00,
+      "change_24h": "-0.37% (da $64,530 Jul 19 a $64,289 Jul 20; lieve calo da outlooks H2 misti)",
+      "trend_5d": "rialzista (da $58K early July a $64.3K oggi; +10.8%; ETF inflows positivi)",
+      "volume_note": "anomalo - $11.60B volume 24h (CoinDesk Jul 20; sopra media)",
+      "news": "Bitcoin e Ethereum misti oggi con outlooks H2 2026 contrastanti (Yahoo Finance Jul 20). US spot Bitcoin ETFs hanno rotto serie negativa 10 giorni con +$221.7M inflows (massimo bimestrale). BTC +1.47% in 24h secondo alcune fonti. CPI giugno -0.4% favorisce asset rischiosi. Stablecoin JPYC in deployment Japan (3,000 partners). (Fonte: Yahoo Finance/Fortune Jul 20 2026, CoinDesk Jul 19-20 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 64289.00,
+      "stop_loss": 61074.55,
+      "target": 69432.12,
+      "commissione": 0.00,
+      "reasoning": "BTC mantiene recovery da $58K a $64.3K con ETF USA che chiudono 10 giorni di deflussi (+$221.7M). Inflazione cooling supporta risk assets. Lieve calo odierno -0.37% non inficia trend rialzista strutturale. Volume $11.6B sopra media = partecipazione istituzionale. Stop -5% ($61,075), target +8% ($69,432). Fonte: Yahoo Finance/CoinDesk Jul 20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / Yahoo Finance (Jul 20, 6:00 AM ET, $64,199.13)", "price": 64199.13},
+          {"name": "CoinDesk / CoinMarketCap (Jul 20, $64,378)", "price": 64378.00}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 368.41,
+      "change_24h": "+0.96% (da $364.96 previous close a $368.41 Jul 19; stabile Jul 20)",
+      "trend_5d": "ribassista (-3.4% nella settimana Jul 14-17; oro spot $3,968 sotto $4,000; ETF outflows)",
+      "volume_note": "normale (5a settimana consecutiva di outflows ETF GLD/IAU)",
+      "news": "Oro scende 3.4% nella settimana (maggior calo da giugno 2026): escalation USA-Iran spinge petrolio +12%, alimenta aspettative Fed rate hike settembre >70%. Spot gold $3,968 Jul 17. ETF GLD/IAU in 5 settimane consecutive di outflows. SSGA Monthly Gold Monitor: target $5,000/oz con 70% probabilità $4,750-5,500. Bullion Vault: COMEX trading più bullish dal record peak. 52w range GLD $300.96-$509.70. (Fonte: SSGA Gold Monitor Jul 2026, GoldSilver.com, CNBC Jul 17 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 368.41,
+      "stop_loss": 361.04,
+      "target": 383.15,
+      "commissione": 0.00,
+      "reasoning": "GLD in correzione settimanale -3.4% da pressioni geopolitiche (Iran-USA, petrolio +12%): Fed rate hike fear penalizza oro. ETF outflows persistenti (5 settimane). Dati contraddittori: COMEX trading ultra-bullish vs outflows ETF. Attesa chiarimento direzionale. HOLD conservativo. Fonte: SSGA/CNBC Jul 17-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockAnalysis (Jul 19, day range $363.60-$369.21)", "price": 368.41},
+          {"name": "CNBC / NYSE Arca (Jul 19-20 live, previous close $364.96)", "price": 368.41}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 157.92,
+      "change_24h": "-0.70% (da $159.04 close Jul 17-19 a $157.97 Jul 20 intraday; pre-earnings)",
+      "trend_5d": "laterale (range $156.60-$160.64 oggi; consolidamento pre-earnings Jul 23; 52w range $148.06-$309.73)",
+      "volume_note": "normale",
+      "news": "SAP earnings Q2 2026 attesi Jul 23 (tra 3 giorni). 22/25 analisti Strong Buy, 0 Sell. Target medio EUR 206 (>50% upside teorico). SAP Xetra: €137.92 EUR (-0.67% Jul 20). NYSE ADR: $157.86 (Investing.com). 52w range NYSE: $148.06-$309.73. SAP molto lontano dai massimi di periodo (>50% sotto). (Fonte: Investing.com Jul 20 2026, Yahoo Finance/CNBC Jul 17-20 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 157.92,
+      "stop_loss": 153.18,
+      "target": 165.82,
+      "commissione": 0.00,
+      "reasoning": "SAP in consolidamento pre-earnings Jul 23. Earnings = evento bi-direzionale; consensus 22 analisti Strong Buy con target EUR 206 suggerisce upside potenziale ma momentum negativo. Attendere risultati prima di entry direzionale. HOLD. Fonte: Investing.com/Yahoo Finance Jul 17-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (Jul 20, $157.97 live -0.67%)", "price": 157.97},
+          {"name": "Investing.com NYSE ADR (Jul 20, day range $156.60-$160.64)", "price": 157.86}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 330.55,
+      "change_24h": "-0.96% (da $333.74 close Jul 17-19 a range $326.11-$333.71 oggi; fonti divergenti)",
+      "trend_5d": "laterale-ribassista (da 52w high $334.99 a $327-333 range; tech pressure; earnings Jul 30)",
+      "volume_note": "anomalo - range intraday ampio Jul 20 ($326.11-$333.71 = 2.3%); incertezza direzionale",
+      "news": "Apple under pressure nel broad tech selloff. Fonti divergono su prezzo Jul 20 ($327.44 vs $333.66): range intraday $326.11-$333.71 ampio. Earnings Q3 FY2026 Jul 30 = imminente catalizzatore. Market cap ~$4.81T, P/E 40.31, dividend yield 0.32%. Precedente settimana: Apple supera NVDA per market cap. (Fonte: Morningstar/Yahoo Finance/CNBC Jul 20 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 330.55,
+      "stop_loss": 320.63,
+      "target": 347.08,
+      "commissione": 0.00,
+      "reasoning": "AAPL sotto pressione in selloff tech ma mantiene forza relativa vs chip stocks. Validazione MEDIA (spread 1.88% tra fonti): range intraday ampio riflette incertezza. Earnings Jul 30 = rischio gap. Non entry aggressivo a resistance; HOLD in attesa conferma stabilizzazione. Fonte: Yahoo Finance/CNBC Jul 20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / Yahoo Finance (Jul 20, $327.44 intraday)", "price": 327.44},
+          {"name": "CNBC / Yahoo Finance (Jul 20, $333.66 -0.02%)", "price": 333.66}
+        ],
+        "spread_pct": 1.88,
+        "affidabilita": "MEDIA",
+        "nota": "Spread 1.88% da range intraday ampio ($326.11-$333.71): fonti fotografano momenti diversi della stessa sessione"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 350.29,
+      "change_24h": "+1.10% (da $346.77 close Jul 17 a range $346.77-$353.81; notizia Frozen v2 chip +2.5%)",
+      "trend_5d": "ribassista (da $370.92 Jul 15 a ~$350; -5.6%; Gemini delay pesa; earnings Jul 22)",
+      "volume_note": "normale",
+      "news": "Google +2.5% su notizia sviluppo chip Frozen v2 per servizi Gemini AI. Contestualmente: Gemini delay 'adds to concerns it is falling behind in AI' (CNBC Jul 17). Earnings Q2 attesi Jul 22 = imminente evento bi-direzionale. Market cap $4.20T Jul 20. Jul 17: CNBC riporta $353.81 (-4.43% da $370.92 Jul 15). (Fonte: CNBC Jul 16-17-20 2026, Yahoo Finance Jul 17-20 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 350.29,
+      "stop_loss": 339.78,
+      "target": 367.80,
+      "commissione": 0.00,
+      "reasoning": "GOOGL con segnali contrastanti: chip Frozen v2 positivo (+2.5%) vs Gemini delay negativo. Earnings Jul 22 = evento bi-direzionale imminente; non entry aggressivo pre-annuncio. Validazione MEDIA (spread 2.01%: $346.77 Yahoo Jul 17 vs $353.81 CNBC Jul 17). HOLD. Fonte: CNBC/Yahoo Finance Jul 17-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / StockAnalysis (Jul 17 close)", "price": 346.77},
+          {"name": "CNBC / Yahoo Finance (Jul 17 intraday, down 16.40 -4.43%)", "price": 353.81}
+        ],
+        "spread_pct": 2.01,
+        "affidabilita": "MEDIA",
+        "nota": "Spread 2.01% riflette alta volatilita intraday Jul 17 (-4.43% su Gemini delay; poi rimbalzo +2.5% Frozen v2)"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 68.36,
+      "change_24h": "-2.04% (da $68.95 close Jul 17-19 a $67.54 Yahoo Finance Jul 20; vicino 52w low)",
+      "trend_5d": "ribassista (da $126.71 52w high a $68.36; -46.1%; post-earnings selloff in corso)",
+      "volume_note": "anomalo - continua spike volume post-earnings Q2 Jul 16-20; Bernstein/BofA tagli target",
+      "news": "Netflix continua discesa post-earnings Q2 (-2.04% oggi). Bernstein taglia target del 9% post-risultati. BofA taglia target a $105 da $125. Q2: revenue $12.56B (+13%) miss $12.58B consensus; weak Q3 guidance. Analisti consensus $98.16 (50 analisti) ma momentum negativo. 52w range: $65.08-$126.71 (vicino al low $65.08). 'Can Earnings Finally End the 2026 Selloff?' (FXLeaders Jul 15). (Fonte: Yahoo Finance/CNBC Jul 17-20 2026, FXLeaders Jul 15 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 68.36,
+      "stop_loss": 66.41,
+      "target": 71.78,
+      "commissione": 0.00,
+      "reasoning": "NFLX -2.04% oggi, continua selloff post-earnings. Prossimo al 52w low $65.08 (-4.8% da entry). Analisti tagliano target (Bernstein -9%, BofA $105). Tuttavia -46% da 52w high crea livello oversold tecnico estremo con supporto a $65. HOLD: troppo rischio per SELL vicino al low, troppa incertezza per BUY. Fonte: Yahoo Finance/CNBC Jul 17-20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockAnalysis (Jul 20, $69.17 intraday)", "price": 69.17},
+          {"name": "Yahoo Finance / CNBC (Jul 20, $67.54 -2.04%)", "price": 67.54}
+        ],
+        "spread_pct": 2.38,
+        "affidabilita": "MEDIA",
+        "nota": "Spread 2.38% da volatilita intraday post-earnings; entrambe le fonti riferite al Jul 20"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 75.82,
+      "change_24h": "-0.56% (da $76.25 Jul 19 a $75.82 Jul 20; consolidamento zona supporto $74-75)",
+      "trend_5d": "laterale (resistenza $80 non superata; test zona supporto $74-75; +20% nel mese)",
+      "volume_note": "normale ($1.54B volume 24h CoinMarketCap Jul 20)",
+      "news": "Solana consolida a $75.82 testando zona supporto $74-75. SOL +20% nel mese ma resistenza $80 non superata. 3 exchanges concordi: Coinbase $75.73, CoinMarketCap $75.91, Kraken $76.05 (spread minimo). Crypto market oggi misto (Yahoo Finance Jul 20). Bitget Wallet >100M utenti globali; JPYC stablecoin corporate deployment Giappone. (Fonte: Coinbase/CoinMarketCap/CoinCodex Jul 20 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 75.82,
+      "stop_loss": 72.03,
+      "target": 81.89,
+      "commissione": 0.00,
+      "reasoning": "SOL in consolidamento $75-76 con supporto chiave $74. Resistenza $80 non superata nonostante +20% mensile. Crypto market oggi misto. Attendere breakout sopra $80 o tenuta supporto $74 prima di entry direzionale. HOLD. Fonte: CoinMarketCap/Coinbase Jul 20 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap / Kraken (Jul 20 live, $75.91 / $76.05)", "price": 75.90},
+          {"name": "Coinbase (Jul 20 live, $75.73)", "price": 75.73}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "prezzo_rilevato_fonte1": 380.84,
+      "prezzo_rilevato_fonte2": null,
+      "motivo": "Fonte 1 (Yahoo Finance/MacroTrends): close Jul 17 $380.84, range Jul 19 $377.22-$385.69. Fonte 2 (Yahoo Finance/CNBC second search): nessun prezzo attuale restituito per Jul 20; solo context earnings Jul 22 e EPS projections. Fonti confermanti < 2 → BASSA → nessun segnale BUY/SELL. Nota: TSLA earnings Jul 22 (domani) = rischio gap bi-direzionale elevato in ogni caso."
+    },
+    {
+      "asset": "AMZN",
+      "prezzo_rilevato_fonte1": 247.23,
+      "prezzo_rilevato_fonte2": null,
+      "motivo": "Fonte 1 (Nasdaq/MacroTrends): close Jul 17 $247.23 (-1.06%). Fonte 2 (Yahoo Finance/CNBC second search): nessun prezzo attuale restituito; solo dati fondamentali (gross margin 35.6%, revenue growth 14.22%, free cash flow negativo). Fonti confermanti < 2 → BASSA → nessun segnale BUY/SELL."
+    },
+    {
+      "asset": "META",
+      "prezzo_rilevato_fonte1": 646.01,
+      "prezzo_rilevato_fonte2": null,
+      "motivo": "Fonte 1 (Yahoo Finance/MarketBeat): close Jul 17 $646.01. Fonte 2 (CNBC/Yahoo Finance second search): nessun prezzo esplicito Jul 20; menzionato 'shares remained down more than 3.5% on the session' (implicherebbe ~$623 ma non citato direttamente). Nota informativa: META giù >3.5% oggi nonostante deal Anthropic $10B. Fonti confermanti < 2 per prezzo specifico Jul 20 → BASSA → nessun segnale BUY/SELL."
+    },
+    {
+      "asset": "AMD",
+      "prezzo_rilevato_fonte1": 495.76,
+      "prezzo_rilevato_fonte2": null,
+      "motivo": "Fonte 1 (Yahoo Finance/TradingKey): close Jul 17 $495.76 (-17% dai massimi giugno $584.73). Fonte 2 (Yahoo Finance/CNBC second search): nessun prezzo attuale restituito; solo notizie (Microsoft deal Helios rackscale AI, Jefferies target $615, AMD 'Advancing AI' event Jul 22-23). Fonti confermanti < 2 → BASSA → nessun segnale BUY/SELL. Nota: evento AMD Advancing AI Jul 22-23 = catalizzatore imminente significativo."
+    },
+    {
+      "asset": "ASML",
+      "prezzo_rilevato_fonte1": null,
+      "prezzo_rilevato_fonte2": 1747.58,
+      "motivo": "Fonte 1 (prima query 'ASML NYSE stock price today'): nessun prezzo restituito; solo contesto earnings Q2 e guidance FY26 €43-45B. Fonte 2 (Investing.com/CNBC second search): NASDAQ close Jul 17 $1,747.58 (-2.09%); Amsterdam €1,540 EUR Jul 20. Fonti confermanti < 2 (solo S2 ha restituito dati) → BASSA → nessun segnale. Nota: ieri scan Jul 19 aveva ASML BUY ALTA; oggi prima query non ha restituito prezzo."
+    },
+    {
+      "asset": "STLA",
+      "prezzo_rilevato_fonte1": "EUR 4.83-6.24 (STLAM Milano, non NYSE USD)",
+      "prezzo_rilevato_fonte2": 5.58,
+      "motivo": "Ambiguità persistente: query STLAM ritorna prezzi EUR da Milano Exchange (STLAM.MI). Query STLA NYSE: $5.90 (Jul 15 close) vs $5.58 (altra fonte) = spread 5.57% > soglia 4%. Ticker STLAM non quotato NYSE; l'equivalente NYSE è STLA. Spread tra fonti STLA supera soglia (5.57%) + dati da date diverse. Escluso per regola spread >4% e ambiguità ticker."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "USO",
+      "segnale": "BUY",
+      "confidence": "Alto",
+      "motivo": "Catalizzatore geopolitico chiaro e misurato: USA-Iran escalation con airstrikes domenica. USO +3.91% Jul 17 ($119.30→$123.96) con after-hours $125.52 (+1.26%). Oil surge +30% dai minimi luglio. Validazione ALTA (spread 0.00%). Fonte: Investing.com/CNBC Jul 17-20 2026."
+    },
+    {
+      "rank": 2,
+      "asset": "RACE",
+      "segnale": "BUY",
+      "confidence": "Medio",
+      "motivo": "Ferrari in dip -27.4% da 52w high $519.10. 4 analisti Buy/Outperform (RBC, Jefferies, Deutsche Bank, Wolfe Research) con target consensus $447 (+18.6% upside da $376.83). Brand luxury con domanda resiliente. Validazione ALTA (spread 0.00%). Fonte: Yahoo Finance/WallStreetZen Jul 17-20 2026."
+    },
+    {
+      "rank": 3,
+      "asset": "SLV",
+      "segnale": "BUY",
+      "confidence": "Medio",
+      "motivo": "Silver rimbalza +2.8% a $56.80/oz Londra mattina dopo -6.8% settimana precedente. SLV +1.20% oggi a $51.39. Oil complex in rally supporta metalli industriali. Ratio oro/argento 71x = argento relativamentente economico. Validazione ALTA (spread 1.19%). Fonte: CNBC/NYSE Arca Jul 17-20 2026."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione per sessione aperta lunedì 20 luglio 2026 basata su segnali BUY confermati.",
+    "allocazione_suggerita": {
+      "USO": "30% (BUY Alto - geopolitica Iran-USA, oil surge +30% da lows, validazione ALTA)",
+      "ETH": "20% (BUY Medio - outperformance BTC +7% vs +2%, inflazione cooling, recovery leader)",
+      "RACE": "20% (BUY Medio - dip -27.4% da massimi, 4x analyst Buy, target $447 +18.6%)",
+      "MSFT": "15% (BUY Medio - pre-earnings Jul 29, BofA Buy $500, consensus $561 +42%)",
+      "SLV": "10% (BUY Medio - silver recovery oversold, oil complex supporto)",
+      "BTC": "5% (BUY Medio - ETF inflows $221.7M, trend recovery $58K→$64K)"
+    },
+    "assets_hold": ["NVDA", "GLD", "SAP", "AAPL", "GOOGL", "NFLX", "SOL"],
+    "assets_sell": [],
+    "assets_esclusi_bassa_affidabilita": ["TSLA", "AMZN", "META", "AMD", "ASML", "STLA"],
+    "note_esclusi": "TSLA/GOOGL earnings Jul 22 domani = rischio gap; AMD Advancing AI Jul 22-23 imminente; SAP earnings Jul 23 imminente",
+    "rischio_macro": "ALTO - escalation USA-Iran (oil +12% settimana, +30% da lows luglio); chip sector selloff (SOX -20% dai massimi); Fed rate hike settembre >70% su oil spike; earnings dense: TSLA Jul 22, GOOGL Jul 22, AMD event Jul 22-23, SAP Jul 23, MSFT Jul 29, META Jul 29; Nasdaq -2.9% settimana precedente"
+  }
+}
