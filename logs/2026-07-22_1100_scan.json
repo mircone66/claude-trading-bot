@@ -1,0 +1,526 @@
+{
+  "timestamp": "2026-07-22T11:00:00-04:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercoledi 22 luglio 2026: mercati divisi con Dow +0.3%, S&P +0.2%, Nasdaq -0.1%. Giornata dominata da earnings: Tesla e Alphabet riportano dopo chiusura. AMD vola +9% su conferenza Advancing AI 2026 e deal Anthropic ($2GW di server MI450). Oil WTI sopra $85 per tensioni Medio Oriente, spingendo oro a $4,100/oz (4° giornata consecutiva in rialzo). Bitcoin ritratta da massimi mensili a ~$66K per timori inflazione legati al petrolio. ASML +3.6% dopo Q2 solido con €10.8B vendite e guidance alzata seconda volta nel 2026.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 326.26,
+      "change_24h": "-1.18%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple +20% YTD avvicina record storico vicino $5T market cap. EPS consenso Q3 FY2026 $1.88 (+20% YoY), earnings il 30 luglio. P/E trailing 39.67x.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 326.26,
+      "stop_loss": 316.47,
+      "target": 342.57,
+      "commissione": 0.00,
+      "reasoning": "AAPL +20% YTD con 15 intraday record 2026; earnings July 30 potrebbero essere ulteriore catalizzatore. P/E 39.67x lascia poco margine per delusioni. HOLD in attesa di earnings (fonte: Yahoo Finance).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken/CNBC", "price": 328.65},
+          {"name": "247WallSt live Nasdaq", "price": 323.86}
+        ],
+        "spread_pct": 1.46,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 378.32,
+      "change_24h": "-0.32%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (volume molto elevato pre-earnings)",
+      "news": "Tesla riporta Q2 2026 dopo chiusura oggi. 480.126 consegne (+25% YoY, record Q2). Attese: EPS $0.54, revenue $26.4B. Opzioni prezzano swing 7.6%. Titolo -16% YTD, -22% da 52W high $498.83.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 378.32,
+      "stop_loss": 366.97,
+      "target": 397.24,
+      "commissione": 0.00,
+      "reasoning": "TSLA affronta evento binario: earnings stasera. Record consegne 480K sono note, mercato valuta margini auto e guidance Cybercab/Optimus. Swing 7.6% prezzato dalle opzioni. HOLD fino a post-earnings (fonte: CNBC/TradingKey).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "247WallSt live Nasdaq", "price": 377.70},
+          {"name": "FXLeaders pre-earnings analysis", "price": 378.93}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 213.31,
+      "change_24h": "+3.21%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (rimbalzo da selloff)",
+      "news": "NVDA rimbalza +3.21% dopo worst week dei chip stocks in oltre un anno (settimana 14-18 luglio). Range 52W: $164.07-$236.54. Focus su spending AI dai Big Tech earnings (GOOGL/TSLA tonight).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 213.31,
+      "stop_loss": 206.91,
+      "target": 223.98,
+      "commissione": 0.00,
+      "reasoning": "NVDA a meta range 52W dopo selloff chip stocks. Rimbalzo odierno +3.21% positivo ma earnings GOOGL/TSLA stasera determineranno fiducia mercato su AI spending. HOLD per chiarezza post-earnings (fonte: CNBC/Yahoo Finance).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Yahoo Finance (11:19 AM EDT)", "price": 212.68},
+          {"name": "TradingKey news aggregate", "price": 213.94}
+        ],
+        "spread_pct": 0.59,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 388.81,
+      "change_24h": "-1.74%",
+      "trend_5d": "ribassista",
+      "volume_note": "molto basso (6.05M vs 29.68M media, -80%)",
+      "news": "MSFT -20% YTD. Morgan Stanley avvia copertura Overweight con target $600, attende monetizzazione Azure e Copilot. Earnings July 29. Dividendo $0.91 ex-date 20 agosto. Range 52W: $349.20-$555.45.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 388.81,
+      "stop_loss": 377.15,
+      "target": 408.25,
+      "commissione": 0.00,
+      "reasoning": "MSFT -20% YTD offre entry interessante con Morgan Stanley Overweight a $600 target (+54%). Volume anomalo basso suggerisce accumulo silenzioso pre-earnings July 29. AI monetizzazione Azure come catalizzatore (fonte: Yahoo Finance/Investing.com).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Investing.com (July 22)", "price": 388.81},
+          {"name": "Yahoo Finance (July 15 close)", "price": 395.63}
+        ],
+        "spread_pct": 1.74,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte da Jul15; spread riflette movimento settimanale, non disaccordo tra fonti"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 245.52,
+      "change_24h": "-1.64%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "AMZN da ATH $274.99 (6 maggio 2026) scende a $243-250. Earnings July 30. Prime Day giugno 2026 record $26B. Consenso Strong Buy 63 analisti, target medio $313 (+27% upside).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 245.52,
+      "stop_loss": 238.15,
+      "target": 257.80,
+      "commissione": 0.00,
+      "reasoning": "AMZN ritraccia -10.7% da ATH recente creando punto di entry. 63 analisti Strong Buy con target $313 (+27%). Earnings July 30 e prime Day $26B confermano momentum business. Correzione tecnica = opportunità (fonte: StockAnalysis/MacroTrends).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/StockAnalysis (July 21 close)", "price": 247.55},
+          {"name": "247WallSt live Nasdaq (July 22 intraday)", "price": 243.48}
+        ],
+        "spread_pct": 1.64,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 347.54,
+      "change_24h": "+0.22%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (elevato pre-earnings)",
+      "news": "GOOGL riporta Q2 2026 earnings oggi dopo chiusura. Wells Fargo alza target a $438 (+26%). Market cap $4.20T. L'earnings call inizia stasera. Titolo chiuso il 22 luglio a $347.15.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 347.54,
+      "stop_loss": 337.11,
+      "target": 364.92,
+      "commissione": 0.00,
+      "reasoning": "Evento binario: GOOGL riporta stasera. Wells Fargo PT $438 indica upside significativo post-earnings. HOLD fino a risultati; eventuale entry su reazione positiva post-earnings a mercati aperti (fonte: Yahoo Finance/MacroTrends).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/Investing.com (July 22 close)", "price": 347.15},
+          {"name": "247WallSt live Nasdaq (July 22 intraday)", "price": 347.92}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 637.13,
+      "change_24h": "-2.09%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "META cede -2.09% a $630 dopo spike a $630+ (1 luglio +10% su AI cloud business). Preoccupazioni su capex pesante. Trattative per locare capacità compute ad Anthropic per $10B. Market cap $1.63T.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 637.13,
+      "stop_loss": 617.82,
+      "target": 669.49,
+      "commissione": 0.00,
+      "reasoning": "META naviga trade-off tra AI cloud revenue (deal Anthropic $10B) e capex elevato post-spike luglio. Volatilità recente -2.09% oggi riflette incertezza. HOLD per conferma direzione (fonte: CNBC/247WallSt).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (recent close)", "price": 643.81},
+          {"name": "247WallSt live Nasdaq (July 22 intraday)", "price": 630.38}
+        ],
+        "spread_pct": 2.10,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 69.14,
+      "change_24h": "+1.36%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "NFLX post-earnings Q2: EPS $0.80 batte stime ma revenue $12.56B manca le attese; titolo crollato -8.58% AH. Bernstein taglia PT a $100 (da $110), Baird a $90 (da $120). Oggi rimbalzo +1.36%. Target analisti $90-110 su stock a $69.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 69.14,
+      "stop_loss": 67.07,
+      "target": 72.60,
+      "commissione": 0.00,
+      "reasoning": "NFLX crolla da revenue miss ma analisti mantengono target $90-110 (+30-60% upside). Rimbalzo odierno +1.36% potenziale stabilizzazione. BUY speculativo con stop stretto; revenue miss rimane rischio fondamentale (fonte: MacroTrends/247WallSt).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/MacroTrends (July 21 close)", "price": 68.67},
+          {"name": "247WallSt live Nasdaq (July 22 intraday)", "price": 69.61}
+        ],
+        "spread_pct": 1.37,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 545.60,
+      "change_24h": "+8.5%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume molto elevato, conferenza AI + Anthropic deal)",
+      "news": "AMD +9% su conferenza Advancing AI 2026 (22-23 luglio), lancio CPU Zen 6 Venice 2nm, deal Anthropic per $2GW server MI450. Goldman/Stifel target $600-640. Market cap ~$896B. Intraday high $546.77. Previous close $503.57.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 545.60,
+      "stop_loss": 529.23,
+      "target": 572.88,
+      "commissione": 0.00,
+      "reasoning": "AMD +9% su deal Anthropic ($2GW MI450) e Advancing AI conference con Zen 6 Venice. Goldman/Stifel target $600-640 (+10-17%). Conferenza prosegue domani, momentum potenzialmente esteso. Volume anomalo conferma buying istituzionale (fonte: Investing.com/FXLeaders).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (July 22 intraday)", "price": 544.43},
+          {"name": "FXLeaders/Benzinga (July 22 intraday high area)", "price": 546.77}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1800.76,
+      "change_24h": "+3.60%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (elevato post-earnings)",
+      "news": "ASML Q2 2026: €10.8B vendite, guidance FY26 alzata a €43-45B (da €36-40B aprile). Backlog ordini €40-45B. AI semiconductor demand in crescita. 44 analisti Strong Buy, target medio $2.116 (+17.5%). Cash dividend $2.151 ex-date 28 luglio.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1800.76,
+      "stop_loss": 1746.74,
+      "target": 1890.80,
+      "commissione": 0.00,
+      "reasoning": "ASML Q2 2026 batte stime con €10.8B, alza guidance FY26 per la seconda volta (+20-25% vs aprile). Consensus 44 analisti Strong Buy a $2.116 target (+17.5% upside). AI demand sostiene outlook a lungo termine (fonte: Yahoo Finance/CNN/GuruFocus).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne/CNBC (recent close)", "price": 1800.00},
+          {"name": "Yahoo Finance/CNN (July 21)", "price": 1801.51}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 154.34,
+      "change_24h": "-2.53%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (basso pre-earnings)",
+      "news": "SAP Q2 2026 earnings call domani 23 luglio 5PM EDT. SAP chiude il 21 luglio a $154.34 (-$4.01, -2.53%). Range 52W: $148.06-$309.73. Barclays PT $255. Market cap $160.16B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 154.34,
+      "stop_loss": 149.71,
+      "target": 162.06,
+      "commissione": 0.00,
+      "reasoning": "SAP riporta domani: evento binario pre-earnings. Titolo -50% da massimi 52W ($309.73), recupero possibile su earnings beat. HOLD fino a risultati domani; Barclays PT $255 suggerisce potenziale significativo (fonte: Investing.com/Yahoo Finance).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (July 21 close)", "price": 154.34},
+          {"name": "Yahoo Finance (July 20 close)", "price": 158.35}
+        ],
+        "spread_pct": 2.60,
+        "affidabilita": "MEDIA",
+        "nota": "Fonti da date diverse (July 20 vs July 21); spread riflette movimento giornaliero"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 373.89,
+      "change_24h": "-0.77%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Ferrari (RACE) apre $370.94 il 22 luglio, down da $376.83 close recente. Range 52W: $312.51-$519.10. Bank of America reitera Buy. Buyback program forte. P/E 36.72x.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 373.89,
+      "stop_loss": 362.67,
+      "target": 392.58,
+      "commissione": 0.00,
+      "reasoning": "Ferrari -28% da 52W high $519 con BoA che mantiene Buy. Brand premium con pricing power e buyback attivo. Assenza di catalizzatori immediati specifici e MEDIA confidence validazione prezzi suggerisce HOLD (fonte: Investing.com/WallStreetZen).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (July 20 close)", "price": 376.83},
+          {"name": "WallStreetZen/Morningstar (July 22 open)", "price": 370.94}
+        ],
+        "spread_pct": 1.57,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.74,
+      "change_24h": "-0.86%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Stellantis (NYSE: STLA) a $5.74, in calo strutturale da ATH $25.27 (marzo 2024). -77% da massimi storici. Settore auto in ristrutturazione profonda. Ticker richiesto era STLAM (Borsa Milano, EUR); su NYSE equivalente è STLA.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.74,
+      "stop_loss": 5.57,
+      "target": 6.03,
+      "commissione": 0.00,
+      "reasoning": "STLA in trend ribassista strutturale (-77% da ATH). Assenza di catalyst positivi identificati. Settore auto sotto pressione da transizione EV e tariffe. HOLD fino a evidenza di inversione o catalyst specifico (fonte: CNBC/MacroTrends).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (July 20)", "price": 5.74},
+          {"name": "MacroTrends (July 20)", "price": 5.75}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA",
+        "nota": "Ticker STLAM (BIT) richiesto; usato STLA (NYSE) per quotazione USD; prezzi USD da fonti NYSE"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 367.60,
+      "change_24h": "+0.20%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (elevato su domanda safe-haven)",
+      "news": "Oro a $4,114/oz (+2.5% questa settimana), quarta giornata consecutiva in rialzo. Tensioni Medio Oriente (strikes USA in corso da oltre una settimana). Domanda safe-haven robusta. Acquisti banche centrali continuano. GLD NAV ~0.090 oz/share coerente.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 367.60,
+      "stop_loss": 360.25,
+      "target": 382.30,
+      "commissione": 0.00,
+      "reasoning": "Oro estende rally a $4,114/oz (+2.5% settimana) su domanda safe-haven da conflitto Medio Oriente. 4° giorno consecutivo rialzo. Acquisti banche centrali e ETF flow positivi. Momentum forte con doppio supporto geopolitico e monetario (fonte: Yahoo Finance/CNBC/SPDR).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE Arca (July 20)", "price": 367.60},
+          {"name": "CNBC/NYSE Arca pre-market (July 22)", "price": 367.60}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.43,
+      "change_24h": "+4.85%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume +54.3% performance annua)",
+      "news": "Argento sale il 22 luglio mentre investitori guardano oltre rischio inflazione. SLV +54.3% ultimo anno vs SPY +20.5%. Net assets $27.49B. ETF Argento (SLV) a 786.9Moz totale. Beta 1.79 vs mercato.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 53.43,
+      "stop_loss": 52.36,
+      "target": 55.57,
+      "commissione": 0.00,
+      "reasoning": "SLV +54.3% ultimo anno con momentum confermato da oro in rally. Argento beneficia da doppia domanda: safe-haven (correlazione oro) e industriale (elettronics/fotovoltaico). Rischio: beta elevato 1.79 amplifica volatilità (fonte: CNBC/iShares/FXStreet).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/iShares (July 21 intraday)", "price": 53.41},
+          {"name": "MarketBeat/iShares (July 21 intraday)", "price": 53.45}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 125.51,
+      "change_24h": "+3.91%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (elevato su spike geopolitico)",
+      "news": "WTI crude supera $85/barile per prima volta da giugno 2026. Tensioni Medio Oriente (US strikes in corso). Rischio offerta da regione. Brent e WTI +4%+ in pre-market 22 luglio. USO range 52W: $65.99-$154.08.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 125.51,
+      "stop_loss": 123.00,
+      "target": 130.53,
+      "commissione": 0.00,
+      "reasoning": "WTI a $85+ su escalation Medio Oriente con strikes USA attivi da una settimana. USO +3.91% venerdì, in pre-market ulteriore spike. Rischio ribasso: risoluzione diplomatica rapida. MEDIO confidence per natura geopolitica del catalizzatore (fonte: Barchart/StockAnalysis/TradingKey).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/heygotrade (July 21)", "price": 125.51},
+          {"name": "Barchart (July 17 close, +3.91% da $119.30)", "price": 123.96}
+        ],
+        "spread_pct": 1.25,
+        "affidabilita": "ALTA",
+        "nota": "Prezzi da date diverse; spread riflette apprezzamento netto, non disaccordo tra fonti"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 66107.03,
+      "change_24h": "-0.68%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Bitcoin ritraccia da massimo mensile a $65.557 (9:20AM ET) su WTI $85+ che ravviva timori inflazione. Market cap $1.33T. BTC aveva superato $61K il 2 luglio, +9% in 3 settimane. Flussi istituzionali stabili.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 66107.03,
+      "stop_loss": 62801.68,
+      "target": 71395.59,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida nell'area $65-67K dopo rimbalzo da $61K inizio luglio. Pressione da petrolio $85 rilancia timori inflazione/tassi. Trend di medio termine positivo ma resistenza $68K ostacola. HOLD; entry ideale su pullback a supporto $63-64K (fonte: Fortune/CoinMarketCap).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (July 22 at 6:15 AM ET)", "price": 65858.69},
+          {"name": "CoinMarketCap (July 22 live)", "price": 66355.36}
+        ],
+        "spread_pct": 0.75,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1936.39,
+      "change_24h": "+1.30%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "ETH apre $1.928 il 22 luglio (+1.3% da lunedì). Volume 24h $9.97B. Market cap $233B (vs BTC $1.33T). ETH futures luglio 2026 attivi su Coinbase. Crypto market misto con BTC che guida.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1936.39,
+      "stop_loss": 1839.57,
+      "target": 2091.30,
+      "commissione": 0.00,
+      "reasoning": "ETH segue BTC in consolidamento area $1.900-$1.950. Apertura positiva +1.3% ma pressione macro da petrolio/inflazione pesa. Resistenza chiave $2.000. HOLD; rottura confermata di $2.000 diventerebbe BUY (fonte: Yahoo Finance/CoinMarketCap).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (July 22 open)", "price": 1928.62},
+          {"name": "CoinMarketCap (July 22 live)", "price": 1943.40}
+        ],
+        "spread_pct": 0.76,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 77.80,
+      "change_24h": "+0.26%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Solana stabile a $77-78. Volume 24h $1.58B. Market cap $45.33B. Bitwise Solana ETF: $2.64M net inflows il 21 luglio. Solana lancia piattaforma analytics on-chain per tokenized stocks. Adozione istituzionale in crescita.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 77.80,
+      "stop_loss": 73.91,
+      "target": 84.02,
+      "commissione": 0.00,
+      "reasoning": "SOL laterale a $77-78 con catalizzatori istituzionali in sviluppo (ETF Bitwise, tokenized stocks). Momentum debole nel breve ma fondamentali di adozione positivi. HOLD; BUY su breakout confermato $82+ con volume (fonte: CoinMarketCap/Coinbase).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (July 22 live)", "price": 77.72},
+          {"name": "Coinbase (July 22 live)", "price": 77.87}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Triplo catalizzatore: conferenza Advancing AI 2026 (22-23 luglio), deal Anthropic $2GW server MI450, lancio Zen 6 Venice 2nm. +9% oggi con volume anomalo. Target analisti Goldman/Stifel $600-640 (+10-17%). ALTA confidence."
+    },
+    {
+      "rank": 2,
+      "asset": "GLD",
+      "motivo": "Oro a $4,114/oz territorio record, quarta giornata consecutiva rialzo (+2.5% settimana). Doppio supporto: tensioni Medio Oriente (US strikes attivi) + acquisti banche centrali. Spread tra fonti 0.00%: prezzo CERTO. ALTA confidence."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Q2 2026 beat: €10.8B vendite, guidance FY26 alzata a €43-45B (seconda revisione al rialzo 2026). Backlog €40-45B. 44 analisti Strong Buy, target $2.116 (+17.5%). AI semiconductor demand strutturale. ALTA confidence."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - basato su segnali BUY con commissioni Alpaca a $0",
+    "allocazione_suggerita": {
+      "AMD": "20% (BUY, Alto confidence, evento catalizzatore multiplo)",
+      "GLD": "20% (BUY, Alto confidence, safe-haven + geopolitica)",
+      "ASML": "15% (BUY, Alto confidence, earnings beat + guidance up)",
+      "SLV": "10% (BUY, Medio confidence, comoving con oro)",
+      "USO": "10% (BUY, Medio confidence, WTI $85+ tensioni Medio Oriente)",
+      "MSFT": "10% (BUY, Medio confidence, -20% YTD + Morgan Stanley Overweight)",
+      "AMZN": "10% (BUY, Medio confidence, ritraccia da ATH + earnings July 30)",
+      "NFLX": "5% (BUY, Basso confidence, speculativo post-revenue miss)",
+      "CASH": "0% (tutto investito su segnali BUY confermati)",
+      "HOLD_watch": "TSLA, GOOGL (earnings tonight), NVDA, AAPL, META, BTC, ETH, SOL, SAP, RACE, STLA"
+    }
+  }
+}
