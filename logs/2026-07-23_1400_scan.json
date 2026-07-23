@@ -1,0 +1,466 @@
+{
+  "timestamp": "2026-07-23T14:00:00-04:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Giornata dominata dagli earnings di Big Tech: Alphabet (GOOGL) -6% dopo aumento capex 2026 a $195-205B; Tesla (TSLA) cede 7%+ in pre-market dopo EPS miss Q2 ($0.33 vs $0.50 atteso). AMD +1.6% su deal da $5B con Anthropic; NVDA +1.97% su solida domanda AI. Oro sopra $3.900/oz con FOMC atteso hold il 29/7 (probabilità >85%); argento +1.6%. Bitcoin consolida $65-66K in mercato misto. 3 asset esclusi per affidabilità BASSA (META singola fonte, ASML prezzo non confermato, USO spread 6.59%).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 324.35,
+      "change_24h": "+0.35%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — volumi in linea con media pre-earnings",
+      "news": "Apple Q2 2026 revenue $111.2B (+17% YoY), EPS $2.01 (+22% YoY), entrambi battono consensus nonostante supply constraints. Stock vicino al 52-week high ($334.99).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 324.35,
+      "stop_loss": 314.62,
+      "target": 340.57,
+      "commissione": 0.00,
+      "reasoning": "Doppio beat su revenue e utili nel Q2 2026, fondamentali solidi e market cap 4.76T sostenuto da Apple Intelligence rollout (fonte: Yahoo Finance/CNBC July 22). Rischio: stock al 97% del 52-week high, upside tecnico limitato nel breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (July 22 close)", "price": 324.35},
+          {"name": "CNBC/Investing.com (July 22)", "price": 324.35}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 374.01,
+      "change_24h": "-7.0% stimato (earnings miss post-close July 22)",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo — volumi elevati post-earnings, prezzo in calo significativo July 23",
+      "news": "Tesla Q2 EPS $0.33 vs $0.50 atteso (miss pesante), revenue $28.24B vs $26.32B (beat). Azioni -7% in pre-market July 23 per incremento spesa AI. Prezzo validato è il close July 22; oggi tratta probabilmente ~$347.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 374.01,
+      "stop_loss": 385.23,
+      "target": 355.31,
+      "commissione": 0.00,
+      "reasoning": "EPS miss significativo (-34% vs consensus) in contesto di accelerazione spesa capex AI che comprime margini. La guidance non ha tranquillizzato il mercato (fonte: Yahoo Finance/TheStreet July 22-23). Prezzo July 22 close; il 23 luglio il titolo è sceso ulteriormente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (July 22 close)", "price": 374.01},
+          {"name": "MacroTrends/CNBC (July 22 close)", "price": 374.01}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "nota": "Prezzo July 22 close confermato, ma July 23 in forte calo post-earnings — considerare come stale per operatività intraday"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 211.92,
+      "change_24h": "+1.97%",
+      "trend_5d": "rialzista",
+      "volume_note": "basso — 57.19M vs media 125.33M (volume sotto media, rialzo guidato da sentiment)",
+      "news": "NVDA sale 1.97% nella sessione July 23 su solida domanda AI infrastructure. 61 analisti Strong Buy con target medio $302.83 (+43% da corrente). 52-week range $164-236, corrente $211.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 211.92,
+      "stop_loss": 205.56,
+      "target": 222.52,
+      "commissione": 0.00,
+      "reasoning": "NVDA è il principale beneficiario della corsa AI; domanda data-center H100/B200 robusta confermata da guidance dei clienti hyperscaler (fonte: CNBC/Yahoo Finance July 23). Affidabilità MEDIA per lieve divergenza intraday delle fonti (2.26% spread).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (July 23, intraday)", "price": 209.53},
+          {"name": "Yahoo Finance/CNBC (July 23, 13:02 EDT)", "price": 214.31}
+        ],
+        "spread_pct": 2.26,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 389.98,
+      "change_24h": "-1.13%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "MSFT perde >2% July 23 sulla scia del rialzo capex di Alphabet che genera timori settoriali. Earnings previsti July 29. Analisti consensus Strong Buy con target $589-592. 52-week range $349-555.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 389.98,
+      "stop_loss": 378.28,
+      "target": 409.48,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi (Azure AI, Copilot) ma capex concerns post-Alphabet pesano nel breve; attendere conferma guidance earnings July 29 prima di accumulare (fonte: Investing.com/Forbes July 23). Well off 52-week high $555.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/Yahoo Finance (July 22 close)", "price": 390.34},
+          {"name": "CNBC (July 23 current)", "price": 389.61}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 243.24,
+      "change_24h": "-1.73%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — 34.11M vs media 36.29M",
+      "news": "AMZN scende 4% July 23 per contagio da rialzo capex Alphabet. Earnings July 30, AWS in focus: consensus revenue $198.8B per Q2. Scrutinio Senate panel su presunti legami cinesi aggiunge pressione.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 243.24,
+      "stop_loss": 235.94,
+      "target": 255.40,
+      "commissione": 0.00,
+      "reasoning": "AWS leadership nell'AI cloud rimane un catalizzatore chiave per earnings July 30; sell-off odierno da capex fear è opportunistico ma risk-reward non ancora favorevole prima del report (fonte: CNBC/Yahoo Finance July 23). Market cap 2.66T.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis/Morningstar (July 23)", "price": 241.62},
+          {"name": "CNBC/Yahoo Finance (July 23)", "price": 244.85}
+        ],
+        "spread_pct": 1.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 336.99,
+      "change_24h": "-2.95%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo — titolo tra biggest movers midday July 23",
+      "news": "Alphabet Q2 revenue $119.8B (beat), ma capex 2026 alzato a $195-205B (da max $190B) spaventa mercato. Titolo -6% July 22, continua a fare biggest moves July 23. 57 analisti Strong Buy.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 336.99,
+      "stop_loss": 326.88,
+      "target": 353.84,
+      "commissione": 0.00,
+      "reasoning": "Revenue beat ma il mercato punisce la spesa AI accelerata; sell-off sembra eccessivo date fondamentali (dominio Search, Cloud growth) ma serve stabilizzazione prima di entrare (fonte: Yahoo Finance/TheStreet July 22). Affidabilità MEDIA per spread 3.01% tra fonti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (July 22 intraday)", "price": 342.00},
+          {"name": "Yahoo Finance (July 22 close)", "price": 331.99}
+        ],
+        "spread_pct": 3.01,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 68.10,
+      "change_24h": "+1.58%",
+      "trend_5d": "ribassista",
+      "volume_note": "sotto media — 44.95M vs media 56.6M",
+      "news": "Netflix +1.58% July 23 ma resta in trend discendente (-45% negli ultimi 12 mesi). BofA taglia il target ma scommette su rimbalzo. Titolo con P/E 23.41, market cap $288B. 'Miserable stretch' secondo top investor.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 68.10,
+      "stop_loss": 66.06,
+      "target": 71.51,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo odierno +1.58% positivo ma insufficiente a invertire il downtrend annuale (-45%); valutazione P/E 23.41 interessante se il bottom è vicino, ma mancano catalizzatori chiari nel breve (fonte: Kraken/Morningstar, 247wallst July 21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken/Robinhood (July 22-23)", "price": 67.60},
+          {"name": "CNBC/Morningstar (July 22 close)", "price": 68.60}
+        ],
+        "spread_pct": 1.48,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 548.72,
+      "change_24h": "+1.57%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AMD annuncia investimento fino a $5B in Anthropic per computing deal (July 22). Titolo +100% YTD. Lancio Helios pricing confermato. 52-week range $149-584, corrente al 94% del 52-week high. 41 analisti Buy.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 548.72,
+      "stop_loss": 532.26,
+      "target": 576.16,
+      "commissione": 0.00,
+      "reasoning": "Il deal da $5B con Anthropic conferma il posizionamento di AMD come alternativa credibile a NVDA nell'AI inference; Helios pricing sostiene la narrativa di crescita share nel segmento data-center (fonte: fxleaders/Yahoo Finance July 22). Affidabilità MEDIA (spread 1.57%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FX Leaders/Investing.com (July 23)", "price": 553.00},
+          {"name": "Yahoo Finance/CNBC (July 22 close)", "price": 544.43}
+        ],
+        "spread_pct": 1.57,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 148.75,
+      "change_24h": "-3.62%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale — earnings day, possibile aumento volume",
+      "news": "SAP riporta Q2 2026 earnings oggi July 23 (consensus: EPS $2.00, revenue $11.4B). After-hours July 22 a $150.55 (+1.21%) suggerisce possibile beat. Titolo al 52-week LOW ($148.06 il minimo).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 148.75,
+      "stop_loss": 144.29,
+      "target": 156.19,
+      "commissione": 0.00,
+      "reasoning": "SAP è al 52-week low ($148.75 vs high $309.73) — potenziale rimbalzo tecnico se earnings oggi confermano guidance AI cloud (fonte: Yahoo Finance/Capital.com July 22). Rischio: report in corso = evento binario, non entrare prima della pubblicazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/Yahoo Finance (July 22 close)", "price": 148.75},
+          {"name": "MarketBeat/Capital.com (July 22)", "price": 148.75}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 371.61,
+      "change_24h": "-1.38%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Ferrari annuncia Q2 2026 earnings July 30. Share buyback attivo (€460M investiti). P/E 36.72, dividend yield 1.10%. 52-week range $312-519. Market cap $91.73B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 371.61,
+      "stop_loss": 360.46,
+      "target": 390.19,
+      "commissione": 0.00,
+      "reasoning": "Ferrari mantiene premium di valutazione da brand luxury unico, ma il titolo è al 72% del 52-week high; attendere earnings July 30 per valutare guidance elettrico e pricing power (fonte: WallStreetZen/CNBC July 22). Buyback sostenuto ma non sufficiente da solo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/WallStreetZen (July 22 close)", "price": 371.61},
+          {"name": "CNN/Yahoo Finance (July 22 close)", "price": 371.61}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.76,
+      "change_24h": "-0.69%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Stellantis sotto pressione strutturale: perdita ~5% market share USA ultimi 5 anni, ristrutturazione leadership in corso. Market cap $16.8B. Stock al minimo storico recente.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.76,
+      "stop_loss": 5.59,
+      "target": 6.05,
+      "commissione": 0.00,
+      "reasoning": "Valutazione da deep value (market cap $16.8B per costruttore globale) ma rischi strutturali USA elevati e management in transizione rendono il timing difficile (fonte: CNBC/Capital.com July 21-23). Ticker NYSE: STLA (nota: prompt originale usa STLAM = ticker Euronext Milan).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/NYSE (July 23 live)", "price": 5.74},
+          {"name": "Morningstar/Capital.com (July 21)", "price": 5.78}
+        ],
+        "spread_pct": 0.70,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 379.12,
+      "change_24h": "+1.15%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale, in aumento su geopolitica Iran",
+      "news": "Oro consolida sopra $3.900/oz (~$4.000 in alcuni momenti). FOMC hold atteso July 29 a probabilità >85% rimuove pressione al ribasso. U.S.-Iran tensions (10 notti consecutive di strikes). SSGA target $5.000/oz entro early 2027. GLD su NYSE Arca.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 379.12,
+      "stop_loss": 371.54,
+      "target": 394.28,
+      "commissione": 0.00,
+      "reasoning": "Doppio catalizzatore: Fed hold ormai prezzato (>85% CME FedWatch) elimina headwind tasso; tensioni Iran offrono bid geopolitico strutturale. State Street July Monitor conferma range $3.900-4.300/oz con bias rialzista verso $5.000 nel 2027 (fonte: SSGA/GoldSilver.com July 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/Morningstar (July 22 close)", "price": 379.12},
+          {"name": "NYSE Arca/StockInvest.us (July 22)", "price": 379.12}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.92,
+      "change_24h": "+1.58%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale — 12.77M shares July 21",
+      "news": "Argento +5% recenti sedute (GoldSilver.com: 'Two Catalysts, One Setup'). Outlook July 2026: range $54-64, supportato da Fed hold e acquisti industriali. SLV net assets $28.47B. 52-week range $33.10-109.83.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 53.92,
+      "stop_loss": 52.84,
+      "target": 56.08,
+      "commissione": 0.00,
+      "reasoning": "Silver beneficia dello stesso contesto macro di GLD (Fed dovish, geopolitica) con in più la componente demand industriale (AI hardware, data-center cooling, energia solare). GoldSilver.com identifica due catalizzatori specifici per luglio-agosto (fonte: GoldSilver.com/iShares July 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade/Investing.com (July 23)", "price": 53.92},
+          {"name": "iShares/NYSE Arca (July 23)", "price": 53.92}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 65648.00,
+      "change_24h": "-0.70%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — $28.18B volume 24h, market cap $1.32T",
+      "news": "Bitcoin consolida $65K-66K, 'best stretch since January' ma momentum in pausa. Crypto market July 23: bearish per tensioni geopolitiche e stallo CLARITY Act. BNY Mellon annuncia tokenized US Treasuries entro fine 2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 65648.00,
+      "stop_loss": 62365.60,
+      "target": 70899.84,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida dopo rally; sentiment leggermente bearish su CLARITY Act stalled e geopolitica. L'annuncio BNY Mellon tokenized Treasuries è un catalyst istituzionale a medio termine positivo ma non catalizza breakout nel breve (fonte: Fortune/CoinMarketCap July 23).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune/Yahoo Finance (July 23, 6:30 AM ET)", "price": 65658.67},
+          {"name": "CoinMarketCap (July 23 live)", "price": 65638.31}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1938.36,
+      "change_24h": "-1.78%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale — $10.64B volume 24h",
+      "news": "Ethereum apre July 23 a $1.933, cede a $1.899 in mattinata (-1.78%). CoinMarketCap live $1.943. Crypto market misto. BNY Mellon tokenized Treasuries favorisce ecosistema ETH nel medio termine.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1938.36,
+      "stop_loss": 1841.44,
+      "target": 2093.43,
+      "commissione": 0.00,
+      "reasoning": "ETH in lieve calo giornaliero in contesto crypto complessivamente flat; il supporto istituzionale (BNY Mellon, staking ETF discussions) mantiene bias rialzista nel medio termine ma mancano catalyst immediati (fonte: Yahoo Finance/CoinMarketCap July 23).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/Fortune (July 23 open)", "price": 1933.32},
+          {"name": "CoinMarketCap (July 23 live)", "price": 1943.40}
+        ],
+        "spread_pct": 0.52,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 77.18,
+      "change_24h": "+0.47%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — market cap $45.19B, rank #7",
+      "news": "Solana consolida $76-78 July 23. Prezzi da Kraken ($77.77), Coinbase ($76.82), TradingView ($77.40) tutti convergenti. Nessun catalizzatore specifico SOL oggi; mercato altcoin misto.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 77.18,
+      "stop_loss": 73.32,
+      "target": 83.35,
+      "commissione": 0.00,
+      "reasoning": "SOL in fase laterale senza catalyst direzionale specifico; convergenza prezzi da 3+ fonti è segnale positivo di liquidità ma l'assenza di news proprietarie consiglia neutralità nel breve (fonte: Kraken/Coinbase July 23).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (July 23)", "price": 77.54},
+          {"name": "Coinbase (July 23)", "price": 76.82}
+        ],
+        "spread_pct": 0.94,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "META",
+      "motivo": "Singola fonte con prezzo specifico confermato ($627.17 close recente); seconda ricerca non ha restituito prezzo puntuale verificabile — affidabilità BASSA per regola 'fonti < 2'. Nessun segnale generato."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Nessun prezzo July 23 confermato da 2 fonti: source 1 indica 'hovering ~$1,769.32 a few days ago' (non July 23); source 2 riporta solo ATH $1,989.44 (June 30) e target analisti. Affidabilità BASSA. Nessun segnale generato."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread tra fonti 6.59% > soglia 4%: source 1 (live July 23) $140.98, source 2 (July 23) $132.27. Divergenza eccessiva probabilmente legata a WTI crude oil spike intraday (+7% 'Oil Soars' secondo CoinGape). Nessun segnale generato."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "motivo": "Gold: setup macro ideale — Fed hold July 29 a >85% probabilità + tensioni Iran geopolitiche + State Street target $5.000/oz. ETF con zero commissioni Alpaca. Risk/reward 2:1 (target +4% vs SL -2%)."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "NVDA +1.97% oggi su domanda AI robusta; 61 analisti Strong Buy, target consensus $302 (+43% upside). Unico beneficiario diretto della guerra hyperscaler su capex AI dichiarata da Alphabet e Microsoft."
+    },
+    {
+      "rank": 3,
+      "asset": "AMD",
+      "motivo": "Deal $5B con Anthropic conferma tesi AI inference; Helios chip entra nel pricing. +100% YTD dimostra momentum; Anthropic deal è catalyst di lungo periodo non ancora completamente scontato."
+    },
+    {
+      "rank": 4,
+      "asset": "SLV",
+      "motivo": "Argento: due catalizzatori specifici luglio-agosto (GoldSilver.com), domanda industriale AI/data-center aggiuntiva rispetto all'oro. Range consensus $54-64 offre upside ampio da $53.92 attuale."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale. Pesi indicativi su capitale ipotetico $100.000. Alpaca: zero commissioni azioni USA, ETF, crypto.",
+    "allocazione_suggerita": {
+      "GLD": "20% ($20.000 — ~52 shares)",
+      "SLV": "10% ($10.000 — ~185 shares)",
+      "NVDA": "15% ($15.000 — ~70 shares)",
+      "AMD": "10% ($10.000 — ~18 shares)",
+      "AAPL": "15% ($15.000 — ~46 shares)",
+      "BTC": "10% ($10.000 — ~0.15 BTC)",
+      "ETH": "10% ($10.000 — ~5.2 ETH)",
+      "SOL": "5% ($5.000 — ~64 SOL)",
+      "cash_riserva": "5% ($5.000 — per opportunità post-earnings SAP/RACE/AMZN/MSFT)",
+      "note_rischio": "TSLA in SELL — evitare posizioni long fino a stabilizzazione post-earnings. META/ASML/USO esclusi per insufficiente affidabilità dati."
+    }
+  }
+}
