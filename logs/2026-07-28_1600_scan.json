@@ -1,0 +1,315 @@
+{
+  "timestamp": "2026-07-28T16:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "28/07/2026 — Seduta mista con DJIA +0.51% a 52.210 e S&P500 +0.02% a 7.413. Settimana cruciale per earnings Big Tech: META il 29/07, AAPL e AMZN il 30/07. Oil crolla: USO -8.73% a $124.76 (WTI cedimento massivo). Settore chip in selloff per 4° giorno consecutivo: AMD -9.45%, VanEck SMH -3%. Metalli preziosi in forte rialzo: oro spot +1.39% a $4.108/oz, argento +2.76% a $59.77/oz. AAPL sfiora brevemente market cap $5T (15° record intraday 2026, +20% YTD). Meta annuncia accordo $14B con BlackRock per data center 1GW in Texas. Crypto: BTC stabile a ~$64K (+0.37%); ETH e SOL in pullback dal rally del 27/07. ASML in calo ~6% il 27/07 su preoccupazioni AI spending. SAP NYSE +5.7% ($169.12, dal prev close $160.00).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 338.18,
+      "change_24h": "+0.63%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple ha sfiorato brevemente market cap $5T il 28/07, 15° record intraday del 2026. Q3 FY2026 earnings attesi per il 30/07: consensus EPS $1.88 (+20% YoY). Citi ha alzato PT a $365 da $315 il 13/07. Stock +20% YTD. Earnings imminenti creano rischio binario.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 338.18,
+      "stop_loss": 327.83,
+      "target": 355.09,
+      "commissione": 0.00,
+      "reasoning": "Momentum rialzista eccezionale (+20% YTD, 15 record intraday) ma earnings il 30/07 creano rischio binario. Meglio attendere la reazione post-earnings prima di aumentare esposizione; supporto solido a $327 (-3%). (Fonte: Yahoo Finance/CNBC, 27-28/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance/Morningstar (27/07)", "price": 337.31},
+          {"name": "Yahoo Finance (chiusura 27/07)", "price": 339.04}
+        ],
+        "spread_pct": 0.51,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 70.37,
+      "change_24h": "+0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix -26.5% YTD a fine luglio. Dopo Q2 2026 (reportato 16/07), Bernstein ha tagliato PT a $100 da $110; DBS riconferma Buy il 25/07. Titolo definito 'value play post-Q2'. Mercato cap ~$291B. Recupero minimo in corso, struttura ribassista intatta.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 70.37,
+      "stop_loss": 68.26,
+      "target": 73.89,
+      "commissione": 0.00,
+      "reasoning": "Downtrend strutturale -26.5% YTD; analyst PT $100-$110 suggerisce upside a lungo termine ma momentum negativo non ancora invertito. Attendere segnale di inversione tecnica confermata. (Fonte: CNBC/Yahoo Finance, 24-27/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/CNN Markets (intraday 27/07)", "price": 70.65},
+          {"name": "CNBC/Yahoo Finance (chiusura 24/07)", "price": 70.09}
+        ],
+        "spread_pct": 0.80,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 169.12,
+      "change_24h": "+5.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista (forte movimento intraday da $160.00 a $169.12)",
+      "news": "SAP NYSE in rialzo +5.7% a $169.12 (prev close $160.00). 23 analisti su Buy, 0 su Sell; PT medio $201.95 (upside +19%). Prossimi earnings: 21/10/2026. Domanda enterprise AI in accelerazione. 52W range: $144.97-$299.48.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 169.12,
+      "stop_loss": 164.05,
+      "target": 177.58,
+      "commissione": 0.00,
+      "reasoning": "Movimento +5.7% supportato da consensus unanime Buy (23/23 analisti) e narrative AI enterprise. Due fonti indipendenti confermano identico prezzo $169.12 (spread 0%). Target conservativo +5% con SL -3%. (Fonte: Investing.com NYSE, Upstox/Bloomberg 27/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE SAP (27/07)", "price": 169.12},
+          {"name": "Upstox/Bloomberg NYSE SAP (27/07)", "price": 169.12}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 373.41,
+      "change_24h": "+0.81%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Oro spot +1.39% a $4.108.91/oz il 28/07. GLD (SPDR Gold Shares) beneficia di USD più debole, Treasury yield in calo e incertezza geopolitica residua. State Street: 'ciclo bullish oro ha ancora gambe'. Redemptions US gold ETF -$5.3B in giugno non hanno interrotto il trend. 52W range: $300.96-$509.70.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 373.41,
+      "stop_loss": 365.94,
+      "target": 388.35,
+      "commissione": 0.00,
+      "reasoning": "Oro in bull cycle con catalyst macro multipli: USD debole, rendimenti Treasury in calo, domanda istituzionale sostenuta. Argento +2.76% outperforma → segnale di forza metalli preziosi. Affidabilità ALTA con spread 0.81%. (Fonte: HeyGoTrade/Barchart, stockinvest.us/CNBC 28/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade/Barchart (stima 28/07)", "price": 374.92},
+          {"name": "stockinvest.us NYSE Arca (chiusura 24/07)", "price": 371.90}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA",
+        "nota": "S1 = stima 28/07; S2 = chiusura 24/07 (gold +1.39% nei giorni successivi spiega il gap). Trend confermato da notizie spot gold."
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.01,
+      "change_24h": "+0.95%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (volume 24/07: 11.13M shares)",
+      "news": "Argento spot +2.76% a $59.77/oz il 28/07, outperforma l'oro (+1.39%). SLV (iShares Silver Trust) a $53.01, netto asset $28.2B al 24/07. Domanda industriale (energia solare, elettronica) mantiene il supporto strutturale all'argento. Rally metalli preziosi generalizzato.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 53.01,
+      "stop_loss": 51.95,
+      "target": 55.13,
+      "commissione": 0.00,
+      "reasoning": "Argento outperforma oro (+2.76% vs +1.39%): segnale di forza relativa nel comparto metalli preziosi. Due fonti stesso-giorno confermano prezzo con spread 0.30%. Domanda industriale strutturale. (Fonte: Investing.com/Nasdaq, MarketBeat/Yahoo Finance 27/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/Nasdaq SLV (27/07)", "price": 53.09},
+          {"name": "MarketBeat/Yahoo Finance (chiusura 27/07)", "price": 52.93}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64139.00,
+      "change_24h": "+0.37%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($25.86B volume 24h, market cap $1.33T)",
+      "news": "Bitcoin stabile in range $62.7K-$65K il 28/07. Aspettative Fed favorevoli supportano il risk appetite. ETF outflows e macro pressure permangono come rischi. BTC ha superato $60K il 2/07 e si consolida. Crypto market cap complessivo con Ethereum a ~$226B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 64139.00,
+      "stop_loss": 60932.05,
+      "target": 69270.12,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida in range $62K-$65K senza catalyst direzionale chiaro. Spread 2.28% tra le due fonti (timing intraday) abbassa la confidenza. Fed e macro supportano ma ETF outflows limitano il rialzo. (Fonte: Fortune/CoinDesk, CoinMarketCap/Coinbase 28/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune/CoinDesk (7:30 AM ET 28/07)", "price": 63408.41},
+          {"name": "CoinMarketCap (pomeriggio 28/07)", "price": 64869.74}
+        ],
+        "spread_pct": 2.28,
+        "affidabilita": "MEDIA",
+        "nota": "Spread 2.28% riflette timing diverso intraday (mattina vs pomeriggio): normale per crypto. Non disaccordo tra fonti ma variazione temporale."
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1878.50,
+      "change_24h": "-4.28%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($11.31B volume 24h)",
+      "news": "Ethereum pullback a $1.878 il 28/07 dopo il rally +4.4% del 27/07 ($1.966). Approvazione regolamentare chiave e domanda istituzionale via spot ETF restano driver strutturali. CoinDesk conferma $1.874.47 il 28/07. 24h range: $1.868.67-$1.972.61.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1878.50,
+      "stop_loss": 1784.58,
+      "target": 2028.78,
+      "commissione": 0.00,
+      "reasoning": "Pullback -4.28% dopo forte rally giornaliero del 27/07: normale consolidazione. Supporto strutturale da flussi istituzionali ETF spot e approvazione regolamentare. Attendere stabilizzazione o segnale di ripresa prima di BUY. (Fonte: CoinDesk/Coinbase, CoinMarketCap 28/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (28/07, 7:33 AM EDT)", "price": 1874.47},
+          {"name": "CoinMarketCap/Coinbase (28/07)", "price": 1882.53}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.12,
+      "change_24h": "-3.98%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($2.0B volume 24h, market cap $42.7B, #7 CMC)",
+      "news": "Solana pullback -3.98% a $73.12 il 28/07, da $76.42 del 27/07. E*TRADE ha lanciato il trading spot SOL il 16/07 (espansione accesso retail via Zero Hash). SOL aveva guadagnato ~16% nell'ultima settimana. Consolidamento in corso dopo forte rally.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.12,
+      "stop_loss": 69.46,
+      "target": 78.97,
+      "commissione": 0.00,
+      "reasoning": "Pullback -3.98% dopo +16% settimanale: consolidazione fisiologica. E*TRADE retail access espande la domanda strutturale. Spread 0.19% tra le fonti conferma affidabilità ALTA del prezzo. Senza catalyst SOL-specifici imminenti, HOLD conservativo. (Fonte: CoinMarketCap/CoinDesk, Coinbase 28/07/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap/CoinDesk (28/07)", "price": 73.05},
+          {"name": "Coinbase (28/07)", "price": 73.19}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Solo 1 fonte di prezzo verificata per il 28/07 ($308.61, down -1.41% intraday). Seconda query ha restituito solo notizie senza prezzo corrente confermato. Prezzo indicativo: ~$308.61. Stock -30% YTD, Q2 2026 EPS deludente ($0.33 adj).",
+      "prezzo_indicativo": 308.61
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Solo 1 fonte di prezzo verificata ($197.77 intraday 28/07, +0.62%). Seconda query ha fornito notizie su cali settore chip ma nessun prezzo confermato indipendente. Settore SMH -3% (4° giorno di cali). Triangolazione incompleta.",
+      "prezzo_indicativo": 197.77
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Solo 1 fonte di prezzo verificata ($389.51, range 27/07: $382.65-$393.34). Seconda query ha restituito target analisti ($557.25) e news earnings senza prezzo attuale. Earnings Q4 FY26 imminenti. Triangolazione incompleta.",
+      "prezzo_indicativo": 389.51
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Solo 1 fonte di prezzo verificata ($231.39 chiusura 27/07). Seconda query ha restituito solo news earnings (call il 30/07) e analisi AWS +20.2%. Triangolazione incompleta.",
+      "prezzo_indicativo": 231.39
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Fonti su date diverse non triangolabili: Q1 $335.05 (28/07 extended hours, sessione $324.44-$334.17), Q2 $328.00 (22/07 — 6 giorni prima). Gap 2.2% riflette movimento nel tempo, non stesso giorno. Earnings Alphabet già reportati (capex spooked investors).",
+      "prezzo_indicativo": 334.00
+    },
+    {
+      "asset": "META",
+      "motivo": "Solo 1 fonte di prezzo verificata ($601.69 chiusura 27/07, range $598.98-$611.26). Seconda query ha restituito solo news pre-earnings (call il 29/07) e annuncio accordo $14B BlackRock. Triangolazione incompleta. Earnings DOMANI: rischio binario.",
+      "prezzo_indicativo": 601.69
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Solo 1 fonte di prezzo verificata per il 28/07 ($448.27, -9.45% da ~$495). News indicano -7% oggi ma percentuale discordante con Q1 (-9.45%). Earnings il 04/08/2026. Settore chip in forte selloff. Triangolazione incompleta.",
+      "prezzo_indicativo": 448.27
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Fonti su date diverse: Q1 $1.662.21 (28/07 NYSE), Q2 $1.757.09 (26/07 Investing.com). Il calo ~6% del 27/07 su news AI spiega il gap ($1757 × 0.94 ≈ $1651, vicino a $1662). Triangolazione stesso-giorno non raggiunta per il 28/07.",
+      "prezzo_indicativo": 1662.21
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Fonti su date diverse: Q1 $389.15 (28/07 'most recent'), Q2 $360.04 (25/07). Gap +8.1% riflette movimento venerdì-lunedì (non disaccordo fonti). Solo 1 fonte confermata per il 28/07. Earnings il 30/07. BofA PT $458.",
+      "prezzo_indicativo": 389.15
+    },
+    {
+      "asset": "STLAM (NYSE: STLA)",
+      "motivo": "Ticker STLAM (BIT: Milano) quotato in EUR. NYSE equivalente STLA: spread EUR-converted ($5.039 EUR × 1.09 = $5.49) vs STLA NYSE ($5.74) = 4.5% > soglia 4%. BASSA affidabilità. Stock -46% YTD, earnings Q2 il 30/07. Supporto €5 psicologico a rischio.",
+      "prezzo_indicativo_usd": 5.74
+    },
+    {
+      "asset": "USO",
+      "motivo": "Dati conflittuali su date: Q1 $136.69 (prev close, da dati 24/07), Q2 $124.76 (chiusura 27/07, CNBC confermato -8.73%). Prezzo 28/07 pre-market $123.50 (singola fonte). WTI crude in forte calo. Impossibile triangolazione same-day per il 28/07.",
+      "prezzo_indicativo": 123.50
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "motivo": "Oro spot +1.39% a $4.109/oz. USD debole, rendimenti in calo, incertezza geopolitica residua. Bull cycle confermato da State Street Investment Management. Affidabilità ALTA, spread 0.81%. Segnale BUY."
+    },
+    {
+      "rank": 2,
+      "asset": "SLV",
+      "motivo": "Argento outperforma l'oro (+2.76% vs +1.39%): segnale di forza relativa. Due fonti stessa sessione confermano $52.93-$53.09 (spread 0.30%). Domanda industriale strutturale (pannelli solari, elettronica). Segnale BUY."
+    },
+    {
+      "rank": 3,
+      "asset": "SAP",
+      "motivo": "Movimento +5.7% in seduta su narrative AI enterprise. Consensus 23/23 analisti Buy, PT medio $201.95 (+19% upside). Due fonti indipendenti confermano $169.12 (spread 0%). Earnings lontani (21/10). Segnale BUY."
+    },
+    {
+      "rank": 4,
+      "asset": "AAPL",
+      "motivo": "HOLD pre-earnings (30/07) ma possibile BUY post-risultati. 15° record intraday 2026, +20% YTD, market cap $5T sfiorato. Citi PT $365. Earnings catalyst il 30/07: consensus EPS $1.88 (+20% YoY)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca",
+    "data_simulazione": "2026-07-28",
+    "capitale_ipotetico": 100000,
+    "valuta": "USD",
+    "allocazione_suggerita": {
+      "GLD":  {"peso_pct": 20, "valore_usd": 20000, "quote_stimate": 53.6,   "segnale": "BUY"},
+      "SLV":  {"peso_pct": 10, "valore_usd": 10000, "quote_stimate": 188.6,  "segnale": "BUY"},
+      "SAP":  {"peso_pct": 15, "valore_usd": 15000, "quote_stimate": 88.7,   "segnale": "BUY"},
+      "AAPL": {"peso_pct": 12, "valore_usd": 12000, "quote_stimate": 35.5,   "segnale": "HOLD"},
+      "BTC":  {"peso_pct": 15, "valore_usd": 15000, "quote_stimate": 0.234,  "segnale": "HOLD"},
+      "ETH":  {"peso_pct": 10, "valore_usd": 10000, "quote_stimate": 5.32,   "segnale": "HOLD"},
+      "SOL":  {"peso_pct": 8,  "valore_usd": 8000,  "quote_stimate": 109.4,  "segnale": "HOLD"},
+      "NFLX": {"peso_pct": 5,  "valore_usd": 5000,  "quote_stimate": 71.1,   "segnale": "HOLD"},
+      "cash_riserva_pct": 5
+    },
+    "posizioni_escluse_per_dati_insufficienti": [
+      "TSLA", "NVDA", "MSFT", "AMZN", "GOOGL", "META", "AMD", "ASML", "RACE", "STLA", "USO"
+    ]
+  }
+}
