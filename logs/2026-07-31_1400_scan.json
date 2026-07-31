@@ -1,0 +1,447 @@
+{
+  "timestamp": "2026-07-31T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta dominata dai Big Tech earnings. Microsoft ha segnato la maggiore crescita di market cap in un singolo giorno nella storia borsistica (+15.5%, Azure +43% CC, primo anno sopra $100B). Amazon +14% su AWS solido e chip business. In netto contrasto: Apple -9% (Services e Cina sotto attese, warning supply constraints) e Meta giorno 11 di ribasso consecutivo (-20% dal picco) dopo miss EPS $1.04 e guidance Q3 debole. NVDA consolida su volumi sopra media, trainata dalla mega-spesa AI ($720-745B cumulativa dei 4 hyperscalers). Crypto stabili: BTC ~$64.3K in area laterale, ETH si avvicina alla resistenza chiave $1,980-$2,030. Metalli preziosi in rialzo: oro spot +1.39% a $4,108/oz, argento +2.76% a $59.77/oz su dollaro debole e attesa pausa Fed (probabilità hold >85%).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 301.09,
+      "change_24h": "-7.40%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (giorno earnings, vendite massicce)",
+      "news": "Apple ha deluso su ricavi Services e Cina; avvertito di vincoli di fornitura e atteso aumento prezzi iPhone. Il titolo ha perso ~9% il 30 luglio e continua il ribasso il 31 (da $333 a $301).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 301.09,
+      "stop_loss": 292.06,
+      "target": 316.14,
+      "commissione": 0.00,
+      "reasoning": "Post-earnings selloff in corso (-9% in 2 sedute); attendere stabilizzazione prima di posizionarsi. Debolezza su Services e Cina è headwind strutturale a breve termine. Fonte: CNBC 31 Jul, Yahoo Finance.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (31 Jul intraday)", "price": 301.09},
+          {"name": "Yahoo Finance (30 Jul close ufficiale)", "price": 308.76}
+        ],
+        "spread_pct": 2.51,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 311.57,
+      "change_24h": "+3.53%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Tesla rimbalza +3.53% avvicinandosi ai massimi della settimana, ma rimane lontano dal picco a 52 settimane di $498.83. Nessun catalizzatore specifico odierno; il titolo è rimasto vicino al minimo a 52 settimane di $297.38.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 311.57,
+      "stop_loss": 302.22,
+      "target": 327.15,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico da area di supporto (~$297-300) ma mancanza di catalizzatori fondamentali. Trend principale ribassista da inizio anno (da $489). Attendere conferma inversione. Fonte: Pluang, Macrotrends/Litefinance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Pluang/multiple (31 Jul)", "price": 313.69},
+          {"name": "Macrotrends/Litefinance (31 Jul)", "price": 309.45}
+        ],
+        "spread_pct": 1.36,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 196.85,
+      "change_24h": "+2.65%",
+      "trend_5d": "rialzista",
+      "volume_note": "leggermente anomalo (128.92M vs media 126.38M, +2.0%)",
+      "news": "NVIDIA beneficia dell'annuncio di spesa complessiva $720-745B dei 4 hyperscalers per il 2026. Azure Microsoft ha superato i $100B annui trainando domanda GPU. Il titolo recupera da $191.52 su momentum AI strutturale.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 196.85,
+      "stop_loss": 190.94,
+      "target": 206.69,
+      "commissione": 0.00,
+      "reasoning": "Struttura rialzista supportata da mega-spesa AI in corso; volume leggermente sopra media conferma partecipazione istituzionale. 52-week high $236.54 come target di medio termine. Fonte: CNBC, Macrotrends, Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Macrotrends (30 Jul)", "price": 196.45},
+          {"name": "Yahoo Finance (30 Jul, +1.13%)", "price": 197.24}
+        ],
+        "spread_pct": 0.40,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 448.47,
+      "change_24h": "+15.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (110.16M vs media 31.57M, +249%)",
+      "news": "Microsoft ha segnato il maggiore incremento di valore di mercato in un singolo giorno della storia borsistica (+15.5%). Azure Q4 FY2026 +43% CC supera stime del 40.2%; ricavi Azure annuali oltre $100B per la prima volta.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 448.47,
+      "stop_loss": 435.02,
+      "target": 470.89,
+      "commissione": 0.00,
+      "reasoning": "Dopo rally storico +15.5% in una seduta, alta probabilità di consolidamento a breve. Fondamentali eccellenti ma rischio di pullback post-rally giustifica attesa prima di aggiungere esposizione. Fonte: CNBC, TipRanks, Yahoo Finance.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/multiple (31 Jul)", "price": 448.47},
+          {"name": "CNBC earnings news (inferred +15.5% da ~$391)", "price": 451.65}
+        ],
+        "spread_pct": 0.71,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 270.87,
+      "change_24h": "+14.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (54.70M vs media 44.66M, +22.4%)",
+      "news": "Amazon +14% post-earnings grazie a AWS e espansione chip business. Morgan Stanley ha alzato il target price a $335 da $330. Intraday: range $259.10-$272.04, max a $272.04. CNBC: 'Amazon surges 14%, Apple falls 9%'.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 270.87,
+      "stop_loss": 262.74,
+      "target": 284.41,
+      "commissione": 0.00,
+      "reasoning": "Forte catalyst earnings con AWS growth e chip business expansion. Target Morgan Stanley $335 offre upside del 23.7%. Volume +22% sopra media conferma momentum. Fonte: CNBC 31 Jul, Nasdaq, Morgan Stanley.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq/Robinhood (31 Jul, range $259.10-$272.04)", "price": 270.87},
+          {"name": "CNBC earnings context (+14% da ~$237)", "price": 270.18}
+        ],
+        "spread_pct": 0.26,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 547.49,
+      "change_24h": "-9.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (giorno post-earnings, vendite forti)",
+      "news": "Meta ha mancato stime EPS di $1.04/azione ($6.18 vs $7.22 atteso). Guidance Q3 ricavi $61B-$64B, sotto le stime di $63.15B. Giorno 11 di ribasso consecutivo (-20%+ dal picco). Capex 2026 alzato a $130-145B.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 547.49,
+      "stop_loss": 563.91,
+      "target": 520.12,
+      "commissione": 0.00,
+      "reasoning": "Doppia delusione: miss EPS e guidance ricavi Q3 debole. Record losing streak 11 giorni con -20%+ dal picco. Capex AI in aumento senza chiari ritorni a breve. Pressione ribassista strutturale. Fonte: CNBC, Yahoo Finance.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq/multiple (31 Jul, range $540.24-$557.96)", "price": 547.49},
+          {"name": "CNBC earnings news (-9% da ~$600)", "price": 546.00}
+        ],
+        "spread_pct": 0.27,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.14,
+      "change_24h": "-2.96%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix perde circa 3% nelle ultime 24 ore. Market cap sceso del 6.61% nell'ultima settimana. Nessun catalizzatore specifico odierno; prossimi earnings da monitorare.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.14,
+      "stop_loss": 70.95,
+      "target": 76.80,
+      "commissione": 0.00,
+      "reasoning": "Tendenza ribassista di breve periodo senza catalyst positivi evidenti. Attendere segnali di inversione o prossimi earnings prima di posizionarsi. Fonte: Pluang (31 Jul), Yahoo Finance (28 Jul).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Pluang (31 Jul real-time)", "price": 73.17},
+          {"name": "Yahoo Finance (28 Jul)", "price": 73.10}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 483.62,
+      "change_24h": "+12.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (post-annuncio partnership Microsoft Azure)",
+      "news": "AMD +12.7% su espansione partnership Microsoft: deploy dei nuovi sistemi rack-scale Helios su Azure per carichi di lavoro AI inference. Susquehanna ha alzato target price a $500 da $450 con rating Positive.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 483.62,
+      "stop_loss": 469.11,
+      "target": 507.80,
+      "commissione": 0.00,
+      "reasoning": "Forte catalyst: partnership Microsoft-Azure con Helios per AI inference posiziona AMD come secondo player AI chip dopo NVDA. Target Susquehanna $500 a breve termine. Fonte: Yahoo Finance, Susquehanna via search.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Pluang (31 Jul)", "price": 483.62},
+          {"name": "Yahoo Finance earnings news (+12.7% da ~$428)", "price": 482.64}
+        ],
+        "spread_pct": 0.20,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1658.30,
+      "change_24h": "+6.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML rimbalza +6.5-7.4% dopo sell-off per timori concorrenza cinese (nuovo player statale). Bernstein ha emesso rating Buy il 29 luglio; analisti scettici sulla minaccia EUV cinese. Dividendo $2.151 con ex-date 28 luglio.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1658.30,
+      "stop_loss": 1608.55,
+      "target": 1741.22,
+      "commissione": 0.00,
+      "reasoning": "Forte rimbalzo dopo FUD sulla Cina; mercato conferma moat tecnologico EUV inattaccabile. Bernstein Buy con target analisti $2,140 offre upside +29%. Pre-market 31 Jul a $1,686.55 (+2.1%) conferma momentum. Fonte: Yahoo Finance, CNBC, Bernstein.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "NASDAQ/stockanalysis (30 Jul, +7.38%)", "price": 1665.16},
+          {"name": "Yahoo Finance (30 Jul close)", "price": 1651.44}
+        ],
+        "spread_pct": 0.83,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.80,
+      "change_24h": "-4.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "molto basso (627.2K vs media 21.25M, -97%)",
+      "news": "Stellantis Q2 2026: ricavi +13% a €43.5B ma utile netto €293M ha deluso attese. Piper Sandler taglia a Underweight con target $4 (da $14). Il titolo ha perso ~46% da inizio anno.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 5.80,
+      "stop_loss": 5.97,
+      "target": 5.51,
+      "commissione": 0.00,
+      "reasoning": "Doppio negativo: utile Q2 sotto attese e downgrade Piper Sandler a $4. Volume drasticamente basso (-97% vs media). Trend ribassista strutturale con -46% YTD. Settore auto europeo sotto pressione EV/dazi. Fonte: Investing.com, Piper Sandler.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "heygotrade/NYSE (31 Jul)", "price": 5.70},
+          {"name": "Morningstar/Yahoo Finance (31 Jul range $5.89-$5.98)", "price": 5.90}
+        ],
+        "spread_pct": 3.45,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 375.88,
+      "change_24h": "+1.62%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Oro spot +1.39% a $4,108.91/oz su dollaro debole e calo rendimenti Treasury. GLD ha chiuso a $377.12 il 30 luglio (da prev close $371.08). NAV verificato: 0.092 oz/share × $4,108 ≈ $378. Flussi ETF mensili negativi ma prospettive lungo periodo positive.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 375.88,
+      "stop_loss": 368.36,
+      "target": 390.92,
+      "commissione": 0.00,
+      "reasoning": "Oro beneficia di dollaro debole e attesa pausa Fed (hold >85%). Geopolitica tesa (Iran). A $4,108/oz il prezzo rimane in territorio rialzista strutturale. NAV GLD consistente con spot gold. Fonte: CNBC, State Street, goldsilver.com.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "heygotrade (30 Jul)", "price": 374.63},
+          {"name": "Investing.com/CNBC (30 Jul close)", "price": 377.12}
+        ],
+        "spread_pct": 0.66,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.29,
+      "change_24h": "+2.53%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (16.2M shares, in linea con media)",
+      "news": "Argento spot +2.76% a $59.77/oz, sovraperformando l'oro. Domanda industriale strutturale da AI (data center), EV e rinnovabili. NAV verificato: 0.89 oz/share × $59.77 = $53.20 (consistente con prezzo ETF).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 53.29,
+      "stop_loss": 52.22,
+      "target": 55.42,
+      "commissione": 0.00,
+      "reasoning": "Argento ha doppio driver: monetario (dollaro debole) e industriale (AI/EV/rinnovabili). NAV verificato e consistente. La divergenza con petrolio (+3% su Iran) conferma pricing di inflazione controllata, non di shock energetico. Fonte: iShares, CNBC, goldsilver.com.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (30 Jul)", "price": 53.08},
+          {"name": "iShares/CNBC (30 Jul close)", "price": 53.50}
+        ],
+        "spread_pct": 0.79,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64347.39,
+      "change_24h": "+1.30%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($29.9B volume 24h)",
+      "news": "Bitcoin apre il 31 luglio a $64,724, poi si ritrae a $63,652 alle 8:52am ET. Market cap crypto totale $2.3T (+1.4% 24h), Bitcoin dominance 56.3%. Inflows ETF Bitcoin solo $205M in luglio (deboli). Corea del Sud annuncia tassazione dei guadagni crypto.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 64347.39,
+      "stop_loss": 61130.02,
+      "target": 69495.18,
+      "commissione": 0.00,
+      "reasoning": "BTC laterale in area $62K-$65K. Inflows ETF deboli ($205M luglio) suggeriscono momentum istituzionale limitato. Headwind regolatorio (Korea tax). Attendere breakout sopra $66K per conferma rialzo. Fonte: Fortune, Coinbase, Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune/Yahoo Finance (31 Jul 7am ET)", "price": 63874.59},
+          {"name": "Coinbase (31 Jul)", "price": 64820.18}
+        ],
+        "spread_pct": 1.47,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1900.15,
+      "change_24h": "+0.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($8.35B volume 24h, CoinMarketCap)",
+      "news": "Ethereum si avvicina alla zona di resistenza chiave $1,980-$2,030 dopo aver toccato $1,981 nelle ultime sedute. BitMine ha acquistato 27,801 ETH aggiuntivi (ora detiene 4.8% dell'offerta totale). Apre a $1,917, retrocede a $1,877 alle 8:52am ET.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1900.15,
+      "stop_loss": 1805.14,
+      "target": 2052.16,
+      "commissione": 0.00,
+      "reasoning": "ETH è vicino alla zona di resistenza chiave ($1,980-$2,030); un breakout aprirebbe la strada a $2,100+. L'acquisto massiccio di BitMine (4.8% offerta totale) riduce l'offerta circolante. Target $2,052 corrisponde al superamento della resistenza. Fonte: Yahoo Finance, CoinMarketCap, ZebPay.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune/Yahoo Finance (31 Jul 7am ET)", "price": 1886.41},
+          {"name": "Coinbase (31 Jul)", "price": 1913.88}
+        ],
+        "spread_pct": 1.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.23,
+      "change_24h": "-0.62%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($1.65B volume 24h, CoinMarketCap)",
+      "news": "Solana ha attivato i blocchi da 100M CU il 29 luglio (mainnet upgrade). KSNET (fintech coreana) ha firmato accordo con Solana Foundation per integrare Solana Pay su 330,000+ merchant. Prezzi stabili in area $72-74.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 73.23,
+      "stop_loss": 69.57,
+      "target": 79.09,
+      "commissione": 0.00,
+      "reasoning": "Double catalyst: upgrade tecnico (blocchi 100M CU = maggiore throughput e scalabilità) e espansione adoption in Asia (KSNET 330K merchant). Prezzo laterale rappresenta punto di ingresso prima che i catalyst vengano prezzati. Fonte: ZebPay, crypto.com, CoinMarketCap.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko (31 Jul)", "price": 72.92},
+          {"name": "CoinDesk (31 Jul 7:09am EDT)", "price": 73.53}
+        ],
+        "spread_pct": 0.83,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "GOOGL",
+      "motivo": "unico prezzo esplicito trovato datato July 28 (3 giorni fa, $333.71); nessuna seconda fonte con prezzo aggiornato a July 31"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "spread fonti 5.98% > soglia 4% (Investing.com $169.12 vs fonte alternativa $179.55)"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "dati incompatibili: close July 30 $393.72 vs range intraday July 31 $335.00-$349.79 (apertura $335.00); possibile ex-dividendo o anomalia dati - triangolazione non affidabile"
+    },
+    {
+      "asset": "USO",
+      "motivo": "spread fonti eccessivo e date inconsistenti: Investing.com July 30 $127.93 vs heygotrade $139.49 (data incerta) vs fonte July 28 $120.49 - triangolazione non affidabile"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ETH",
+      "motivo": "Approccio alla resistenza chiave $1,980-$2,030 con BitMine che detiene 4.8% offerta totale; breakout potenzialmente esplosivo verso $2,100+"
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Diretta beneficiaria della mega-spesa AI $720-745B annunciata dai 4 hyperscalers; volume sopra media, trend rialzista confermato"
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Rebound +6.5% dopo FUD sulla Cina; Bernstein Buy con target analisti $2,140 (upside +29%); moat tecnologico EUV strutturalmente inattaccabile"
+    },
+    {
+      "rank": 4,
+      "asset": "SLV",
+      "motivo": "Argento +2.76% con domanda industriale strutturale da AI/EV/rinnovabili; NAV verificato; doppio driver monetario+industriale"
+    },
+    {
+      "rank": 5,
+      "asset": "SOL",
+      "motivo": "Double catalyst: upgrade mainnet 100M CU blocks (29 Jul) + integrazione KSNET 330K merchant Korea; prezzo laterale = ingresso favorevole pre-pricing"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione basata su segnali BUY con affidabilita ALTA/MEDIA.",
+    "allocazione_suggerita": {
+      "NVDA": "15%",
+      "ASML": "10%",
+      "AMZN": "10%",
+      "AMD": "10%",
+      "GLD": "20%",
+      "SLV": "10%",
+      "ETH": "15%",
+      "SOL": "10%"
+    }
+  }
+}
