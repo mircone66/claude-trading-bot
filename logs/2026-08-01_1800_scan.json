@@ -1,0 +1,369 @@
+{
+  "timestamp": "2026-08-01T18:15:02Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Settimana di mega-earnings con forte dispersione: AMZN +15.3% e MSFT +15.5% battono stime record (AWS/Azure AI supercycle), AAPL -7.8% e META -9%+ deludono su guidance/EPS. Gold oggi in rally +1.39% a $4.108/oz su debolezza USD e calo yields. BTC laterale a $63k con sentiment cauto pre-agosto. ASML rimbalza +6.8% dopo timori concorrenza cinese. Ferrari riporta margini operativi record (31.2%) e alza guidance. Petrolio sostenuto da tensioni Medio Oriente/chiusura Stretto di Hormuz.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 202.32,
+      "change_24h": "+1.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista: 139.96M vs media 126.55M (+10.6%)",
+      "news": "NVDA beneficia direttamente della mega-spesa AI: AMZN annuncia $220B CapEx AI, MSFT supera $100B Azure in FY2026. Domanda GPU H200/B200 rimane superiore all'offerta. P/E 29.10 con EPS in forte crescita.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 202.32,
+      "stop_loss": 196.25,
+      "target": 212.44,
+      "commissione": 0.00,
+      "reasoning": "AI supercycle in piena accelerazione: AMZN +$220B CapEx e MSFT Azure >$100B confermano domanda GPU strutturale. Volume anomalo +10.6% con trend rialzista. (Fonte: MacroTrends Jul31 $198.98, CNBC Aug1 $205.65 +1.40%)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / Robinhood (Jul 31 close)", "price": 198.98},
+          {"name": "CNBC live quote (Aug 1, 11:46 AM EDT)", "price": 205.65}
+        ],
+        "spread_pct": 3.35,
+        "affidabilita": "MEDIA",
+        "nota": "Spread dovuto a sessioni diverse (Jul31 close vs Aug1 intraday); trend rialzista confermato da entrambe le fonti"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1652.31,
+      "change_24h": "+0.29%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale: 982K volumi nella seduta",
+      "news": "ASML riceve Strong Buy da Zacks con consensus EPS FY2026 +21.1%. Rimbalzo +6.8% dopo attenuazione timori concorrenza cinese (DUV domestico). Stacco dividendo $2.151 ex-date Jul 28. Quota di mercato litografia >90%.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1652.31,
+      "stop_loss": 1602.74,
+      "target": 1734.93,
+      "commissione": 0.00,
+      "reasoning": "Monopolio de facto nella litografia EUV (>90% market share), momentum earnings forte (+21.1% EPS consensus 2026). Rimbalzo post sell-off concorrenza cinese con catalizzatore tecnico positivo. (Fonte: Trendlyne/CNBC $1,648.42, StockMarketWatch $1,656.19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne / NASDAQ data (Aug 1)", "price": 1648.42},
+          {"name": "StockMarketWatch / CNBC (Aug 1, 1:59 PM EDT)", "price": 1656.19}
+        ],
+        "spread_pct": 0.47,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 393.82,
+      "change_24h": "-0.93%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista: 631.4K vs media 509.76K (+23.9%)",
+      "news": "Ferrari Q2 2026 eccezionale: revenue €1.94B, gross margin 52.6%, operating margin 31.2% (ATH assoluto), guidance FY raised. Lancio Luce (primo EV Ferrari) con forte domanda iniziale. Personalization options in ulteriore crescita.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 393.82,
+      "stop_loss": 381.99,
+      "target": 413.51,
+      "commissione": 0.00,
+      "reasoning": "Operating margin 31.2% è un record assoluto per Ferrari. Guidance FY rialzata. Volume anomalo +23.9% suggerisce accumulo istituzionale. Luce EV apre nuovo mercato di lusso elettrico. (Fonte: WallStreetZen/Investing.com $393.72 Jul30, CNBC/Yahoo Finance $393.91)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / Investing.com (Jul 30)", "price": 393.72},
+          {"name": "CNN / CNBC / Yahoo Finance (più recente)", "price": 393.91}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 310.27,
+      "change_24h": "+0.76%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Tesla -30% YTD: Q2 earnings rivelano margini in calo e preoccupazioni su operazioni in Cina. Speculazioni su fusione SpaceX aggiungono volatilità strutturale. Prossimo earnings report previsto Oct 28, 2026. Market cap $1.23T.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 310.27,
+      "stop_loss": 300.96,
+      "target": 325.78,
+      "commissione": 0.00,
+      "reasoning": "Trend YTD -30% con margini in deterioramento e incertezza China. Speculazione merger SpaceX non catalizzatore fondamentale. Attendere chiarimenti su guidance Q3 prima di accumulare. (Fonte: Kraken/TradingView/Investing.com Q1 search: $311.21/$309.32/$309.31)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken Stocks (Aug 1)", "price": 311.21},
+          {"name": "TradingView / Investing.com (Aug 1)", "price": 309.32}
+        ],
+        "spread_pct": 0.61,
+        "affidabilita": "MEDIA",
+        "nota": "3 letture concordanti da piattaforme diverse nella Q1 search; Q2 search ha confermato contesto senza prezzo specifico"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 374.51,
+      "change_24h": "+1.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale; totale AUM $93.45B",
+      "news": "Spot gold avanza +1.39% a $4,108.91/oz oggi su debolezza USD e calo yields Treasury. Nonostante correzione -27% da ATH gen 2026, State Street conferma: 'bull cycle intatto'. Il trend strutturale post-Covid rimane. GLD: total return +19.13% negli ultimi 12 mesi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 374.51,
+      "stop_loss": 367.02,
+      "target": 389.49,
+      "commissione": 0.00,
+      "reasoning": "Gold oggi +1.39% a $4,108/oz su USD debole e yields in calo. Struttura bull confermata da State Street IM. Prezzo validato (Jul 24-30) potenzialmente stale: GLD oggi potrebbe essere ~$410 (+9% vs validato). (Fonte: Investing.com $377.12 Jul30, StockAnalysis $371.90 Jul24)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockAnalysis (Jul 30)", "price": 377.12},
+          {"name": "StockAnalysis / Bloomberg (Jul 24)", "price": 371.90}
+        ],
+        "spread_pct": 1.40,
+        "affidabilita": "MEDIA",
+        "nota": "ATTENZIONE: prezzi da Jul 24-30; news di oggi indicano gold spot $4,108.91 → GLD stimato ~$410 oggi. Prezzo entry potrebbe essere significativamente inferiore al prezzo corrente"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.36,
+      "change_24h": "-2.26%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale; ETF iShares BlackRock, expense ratio 0.50%",
+      "news": "Spot silver +2.76% a $59.77/oz oggi: metalli preziosi in rally su USD debole e yields in calo. Silver benefit da domanda industriale (transizione energetica, semiconduttori). SeekingAlpha: gold/silver ETF storicamente in ipercomprato 'ma ancora Buy'. SLV price -2.26% potrebbe riflettere dati precedenti al rally odierno.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 52.36,
+      "stop_loss": 51.31,
+      "target": 54.45,
+      "commissione": 0.00,
+      "reasoning": "Silver spot +2.76% a $59.77 oggi su debolezza USD. Domanda industriale strutturale da transizione energetica. Se spot silver $59.77 → SLV fair value ~$54.84, suggerendo upside dal prezzo validato. (Fonte: Investing.com $52.36 Aug1, iShares/CNBC $52.36 confermato)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 1)", "price": 52.36},
+          {"name": "iShares BlackRock / CNBC (Aug 1)", "price": 52.36}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "nota": "Prezzo unanime tra fonti; divergenza con news silver spot $59.77 → SLV potrebbe essere pre-rally nella data extract"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 128.93,
+      "change_24h": "-1.42%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale; AUM ~$8.36B, 162.41M shares outstanding",
+      "news": "Petrolio sostenuto da tensioni Medio Oriente e chiusura Stretto di Hormuz (evento 2026 che ha 'riacceso inflazione e alterato outlook macro'). USO -22% negli ultimi 30 giorni da picchi, ma geopolitica rimane tailwind strutturale. Prezzo WTI odierno in calo nonostante scenario tensivo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 128.93,
+      "stop_loss": 126.35,
+      "target": 134.09,
+      "commissione": 0.00,
+      "reasoning": "Scenario geopolitico (Hormuz) bullish strutturalmente ma USO mostra -22% negli ultimi 30gg e -1.42% oggi. Segnali contrastanti tra macro tensione e azione di prezzo ribassista. Attendere stabilizzazione. (Fonte: TradingView Aug1 $129.93, Investing.com Jul30 $127.93)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView (Aug 1)", "price": 129.93},
+          {"name": "Investing.com (Jul 30)", "price": 127.93}
+        ],
+        "spread_pct": 1.56,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63001.00,
+      "change_24h": "-1.36%",
+      "trend_5d": "laterale",
+      "volume_note": "normale: $22.8B 24h trading volume (CoinMarketCap)",
+      "news": "BTC trading $62,985 con sentiment cauto: 'protezione contro dip a $60k è il trade più popolare di agosto' (CoinDesk). ATH $126,080 → attuale -50.2%. H1 2026: crypto projects perso $1B+ in exploit, hacker Nord Korea in prima linea. BTC si è dissociato dalle tech stocks a luglio con rally indipendente.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63001.00,
+      "stop_loss": 59850.95,
+      "target": 68041.08,
+      "commissione": 0.00,
+      "reasoning": "Sentiment bearish: mercato paga premium per protezione su $60k. BTC -50.2% da ATH $126,080. Supporto $60k critico da monitorare. Trend laterale senza catalizzatori immediati. (Fonte: CoinMarketCap $63,017.35, Coinbase/Yahoo Finance $62,985.64 confermato da CoinDesk news)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Aug 1)", "price": 63017.35},
+          {"name": "Coinbase / Yahoo Finance (Aug 1)", "price": 62985.64}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA",
+        "nota": "Q1 search restituiva $99,887 da pagina Binance price prediction (dato storico stale, scartato). Q2 search con CMC+Coinbase+CoinDesk news convergono tutti a ~$62,985-63,017"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1897.60,
+      "change_24h": "+0.43%",
+      "trend_5d": "laterale",
+      "volume_note": "normale: $8.87B 24h trading volume (CoinMarketCap)",
+      "news": "ETH +0.43% a $1,868-1,920. Catalizzatore istituzionale: Morgan Stanley aggiorna filing SEC per ETH ETF con fee 0.14% (minima globale). ETH down -8.18% nell'ultima settimana per dati stale Binance (scartati). Range 24h: $1,845.89-$1,935.05. Progetto crypto hacks H1 2026 colpisce anche ETH.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1897.60,
+      "stop_loss": 1802.72,
+      "target": 2049.41,
+      "commissione": 0.00,
+      "reasoning": "Morgan Stanley ETH ETF con fee 0.14% (più bassa al mondo) = catalizzatore di adozione istituzionale imminente. ETH laterale con bias rialzista su questo catalizzatore. (Fonte: Investing.com $1,920.52 Q1 search, Coinbase $1,874.68 Q2 search)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 1)", "price": 1920.52},
+          {"name": "Coinbase (Aug 1)", "price": 1874.68}
+        ],
+        "spread_pct": 2.44,
+        "affidabilita": "MEDIA",
+        "nota": "CoinMarketCap ($1,863.88) e news CoinDesk ($1,868.79) confermano range basso; Investing.com leggermente più alto; media multipli = $1,897.60"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.26,
+      "change_24h": "-0.34%",
+      "trend_5d": "laterale",
+      "volume_note": "normale: $1.65B 24h trading volume",
+      "news": "SOL -0.34% a $73.19-73.33. DEX perpetual exchanges Solana: nuovo record trimestrale Q2 2026 con $183.2B notional volume (+42% QoQ). Fee basse e block finality rapida driver di crescita. Solana Foundation nuovo CISO: allarme AI-powered crypto scams. SOL -75.3% da ATH $293.31 (gen 2025).",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 73.26,
+      "stop_loss": 69.60,
+      "target": 79.12,
+      "commissione": 0.00,
+      "reasoning": "Ecosystem metrics record: DEX volume $183.2B (+42% QoQ) indica crescita fondamentale nonostante prezzo depresso (-75% da ATH). Potenziale value play con catalizzatore volume. Rischio: sentiment crypto cauto ad agosto. (Fonte: CoinMarketCap $73.19 Q1, Coinbase $73.33 Q2)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Aug 1)", "price": 73.19},
+          {"name": "Coinbase (Aug 1)", "price": 73.33}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Prezzi conflittuali nella stessa sessione Jul31: $307.36 (intraday post-earnings) vs $333.43 (pre-earnings); spread ~8.5% > soglia 4%. Q2 search senza prezzo confermato. Apple -7.8% da earnings miss su China/Services revenue guidance. Esclusione cautelativa.",
+      "ultimo_prezzo_indicativo": 307.36,
+      "contesto": "Stock caduto ~9% dopo earnings deludenti: revenue $109.4B ma guida debole su Servizi e Cina. ATH $340.08 Jul28."
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Fonti < 2: una sola lettura di prezzo esplicita ($461.99). Q2 search ha confermato solo il contesto (earnings +15.5%, Azure >$100B) senza prezzo numerico indipendente.",
+      "ultimo_prezzo_indicativo": 461.99,
+      "contesto": "MSFT +15.5% sulla sessione di luglio: maggiore aumento di market cap single-day nella storia. Azure supera $100B ricavi FY2026."
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Fonti < 2: una sola lettura esplicita ($271.58 Jul31 close). Q2 search ha confermato solo il rally post-earnings senza prezzo numerico indipendente.",
+      "ultimo_prezzo_indicativo": 271.58,
+      "contesto": "AMZN +15.32% Jul31 su Q2 beat: AWS revenue $42.2B (+36.7% YoY), CapEx AI $220B. Maggiore rialzo giornaliero dal 2020."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Spread 6.73%: Q1 search GOOGL (Class A) $356.13 Jul31, Q2 search riportava GOOG (Class C) $333.68 Jul28 - classi azionarie diverse in sessioni diverse. Dati non comparabili per triangolazione valida.",
+      "ultimo_prezzo_indicativo": 356.13,
+      "contesto": "GOOGL +6.73% Jul31 su earnings Q2. Market cap $4.08T. Revenue $119.8B ma FCF negativo per la prima volta dall'IPO."
+    },
+    {
+      "asset": "META",
+      "motivo": "Fonti < 2: una sola lettura esplicita ($556.71 Jul31). Q2 search confermava solo il contesto bearish (EPS miss, FCF -91%) senza prezzo numerico indipendente.",
+      "ultimo_prezzo_indicativo": 556.71,
+      "contesto": "META -7.95% Jul31, -20% in 11 sessioni consecutive (record). EPS $6.18 miss di $1.04 su stime. Free cash flow -91% YoY a $784M per AI CapEx."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Fonti = 0 affidabili: unico prezzo trovato ($71.71) da StockScan.io che è sito di forecast, non quotazione real-time. Nessun prezzo estratto da Yahoo Finance, CNBC, MarketWatch.",
+      "ultimo_prezzo_indicativo": null,
+      "contesto": "Prezzo $71.71 da fonte forecast: probabilmente errato/stale. NFLX in realtà tratta presumibilmente >$500. Esclusione per assenza di fonte verificabile."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread 67.7% tra fonti: $476.15 (Investing.com Aug1) vs $283.85 (Yahoo Finance Aug1). Discrepanza enormi probabilmente per dati da sessioni/fonti incompatibili. Impossibile triangolare.",
+      "ultimo_prezzo_indicativo": null,
+      "contesto": "Dati irriconciliabili. AMD riportava attesa forte domanda AI/data center per Q2 earnings. La fonte più bassa ($283.85) potrebbe essere la più accurata ma non verificata."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Spread 8.57%: NYSE SAP $183.62 (Jul31) vs Investing.com ADR $169.12. Differenza potrebbe riflettere sessioni diverse o discrepanza dati. Soglia 4% superata.",
+      "ultimo_prezzo_indicativo": 183.62,
+      "contesto": "SAP tra biggest movers midday Jul27. Analyst consensus Strong Buy con target 12m $242.92. Spread tra fonti troppo elevato per segnale affidabile."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Dati non comparabili: STLAM è quotata su Borsa di Milano (€5.027), mentre su NYSE il ticker è STLA (USD $5.76). Exchange e valuta diverse rendono la triangolazione non valida.",
+      "ultimo_prezzo_indicativo": 5.027,
+      "contesto": "Stellantis STLAM (MIL) €5.027 Jul30, 52w range €4.591-€10.494. Consensus Neutral (6 Buy, 4 Sell, 16 Hold). Target 12m €6.946."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Principale beneficiario AI supercycle: AMZN $220B + MSFT Azure >$100B confermano domanda strutturale GPU. Volume anomalo +10.6%. Affidabilita MEDIA ma momentum fondamentale ALTO."
+    },
+    {
+      "rank": 2,
+      "asset": "RACE",
+      "motivo": "Operating margin 31.2% ATH, guidance rialzata, Luce EV lancio con forte ordini. 2 fonti ALTA affidabilita con prezzi quasi identici. Volume anomalo +23.9%. Lusso resiliente."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Monopolio litografia >90% market share, EPS consensus 2026 +21.1%, rimbalzo post sell-off concorrenza cinese. 2 fonti ALTA affidabilita. Unico fornitore EUV al mondo."
+    },
+    {
+      "rank": 4,
+      "asset": "GLD",
+      "motivo": "Gold oggi +1.39% a $4,108.91/oz su USD debole. Bull cycle strutturale confermato da State Street. ATTENZIONE: prezzo validato ($374.51) probabilmente stale, GLD oggi stimato ~$410."
+    },
+    {
+      "rank": 5,
+      "asset": "ETH",
+      "motivo": "Catalizzatore istituzionale: Morgan Stanley ETH ETF con fee 0.14% (più bassa globalmente) in arrivo. Prezzo laterale con potenziale breakout su adozione istituzionale."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - solo a scopo analitico",
+    "allocazione_suggerita": {
+      "NVDA": "20%",
+      "RACE": "20%",
+      "ASML": "15%",
+      "GLD": "15%",
+      "SLV": "10%",
+      "ETH": "10%",
+      "SOL": "10%",
+      "BTC_HOLD": "0% (posizioni esistenti: non aumentare)",
+      "TSLA_HOLD": "0% (posizioni esistenti: non aumentare)",
+      "USO_HOLD": "0% (posizioni esistenti: monitorare)"
+    },
+    "logica": "Concentrazione su AI supercycle (NVDA+ASML), luxury tech (RACE), gold/silver rally strutturale, e ETH con catalizzatore ETF istituzionale. Crypto reduce a SOL/ETH su catalizzatori specifici. BTC/TSLA/USO in HOLD pending chiarimento segnali."
+  }
+}
