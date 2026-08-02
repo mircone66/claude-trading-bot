@@ -1,0 +1,352 @@
+{
+  "timestamp": "2026-08-02T08:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione post-earnings intensa: MSFT +15.5% (Azure $100B FY2026, battuto consenso), AMZN +12.6% (AWS forte), AAPL -8.6% (guidance debole, revenue China delude), META -9% (EPS $6.18 mancato di $1.04). NVDA consolida in attesa earnings 26 agosto. AMD pre-earnings con GPU price hikes attesi. Gold rallenta sotto $4.100/oz (Fed stabile), argento in correzione -2.26%. BTC consolida a $63K dopo +7% luglio. SOL debole -2.77%, ma Alpenglow upgrade in rollout (ago-ott). 9 asset con affidabilita ALTA, 2 con MEDIA; 8 esclusi per insufficienza fonti o spread eccessivo.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 308.91,
+      "change_24h": "-8.60%",
+      "trend_5d": "ribassista",
+      "volume_note": "ANOMALO - 132.49M shares vs media stimata ~55M; forte pressione di vendita istituzionale",
+      "news": "Apple cede 8.6% post-earnings Q3: guidance ricavi inferiore alle attese, servizi delusi, revenue Greater China in calo. Dividendo $0.27 annunciato con ex-date 10 agosto 2026.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 308.91,
+      "stop_loss": 318.18,
+      "target": 293.46,
+      "commissione": 0.00,
+      "reasoning": "Apple ha perso 8.6% in una sola sessione su volume anomalo (132M vs ~55M media), segnale di distribuzione istituzionale. Guidance Q3 e revenue China sotto le attese indicano rallentamento strutturale. Fonte: Yahoo Finance / CNBC aggregator luglio-agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance / MacroTrends", "price": 308.91},
+          {"name": "Yahoo Finance / CNBC", "price": 308.91}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 310.26,
+      "change_24h": "-0.61%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale - 36.63M shares vs media 47.45M; volumi sotto media, mancanza di acquirenti",
+      "news": "Tesla sperimenta la peggiore contrazione dal 2022 a fine luglio. Il titolo tratta a $309-311, lontano dal massimo annuale di $498.83. P/E 289x segnala valutazione elevata rispetto ai fondamentali.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 310.26,
+      "stop_loss": 319.57,
+      "target": 294.75,
+      "commissione": 0.00,
+      "reasoning": "TSLA in peggior calo dal 2022, volumi sotto media confermano assenza di domanda. Trading a $310 vs 52-week high $498.83 (-37.7%), trend ribassista confermato. Fonte: MacroTrends / Yahoo Finance / CNBC agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / Yahoo Finance (intraday 02-ago)", "price": 309.31},
+          {"name": "CNBC / Yahoo Finance (close 31-lug)", "price": 311.21}
+        ],
+        "spread_pct": 0.61,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 199.87,
+      "change_24h": "-0.88%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale - consolida in range $194-$202 in attesa earnings 26 agosto",
+      "news": "NVDA consolida dopo aver toccato highs recenti. Earnings schedulati per il 26 agosto 2026. AI data center demand rimane strutturalmente forte. Market cap $4.94T. P/E 30.74.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 199.87,
+      "stop_loss": 193.87,
+      "target": 209.86,
+      "commissione": 0.00,
+      "reasoning": "NVDA in fase di consolidamento prima degli earnings del 26 agosto. AI infrastructure demand solida (Azure +43% suggerisce domanda GPU in accelerazione). Attesa breakout post-earnings. P/E contenuto vs peers AI. Fonte: Investing.com / Yahoo Finance CNBC agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / vari aggregatori (02-ago)", "price": 198.98},
+          {"name": "Yahoo Finance / CNBC (close 31-lug)", "price": 200.75}
+        ],
+        "spread_pct": 0.89,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 480.77,
+      "change_24h": "+1.94%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale - momentum pre-earnings con interesse crescente",
+      "news": "AMD attesi aumenti prezzi GPU in agosto 2026. Earnings il 4 agosto 2026 con proiezione +37.8% revenue. 41 analisti su 41 raccomandano Strong Buy. Prossimo al centro del 52-week range ($149.22 - $584.73).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 480.77,
+      "stop_loss": 466.35,
+      "target": 504.81,
+      "commissione": 0.00,
+      "reasoning": "AMD presenta un catalizzatore pre-earnings multiplo: GPU price hikes attesi ad agosto e revenue growth +37.8% stimato. Earnings il 4 agosto potrebbero essere il trigger. Consenso unanime Strong Buy (41/41 analisti). Affidabilita MEDIA (spread 1.94% tra fonti). Fonte: Investing.com / Yahoo Finance / CNBC agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (02-ago)", "price": 476.15},
+          {"name": "Yahoo Finance / CNBC", "price": 485.39}
+        ],
+        "spread_pct": 1.94,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1654.25,
+      "change_24h": "+0.17%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale - dopo il +6.77% del 30-lug ora consolida con incertezza competitiva",
+      "news": "ASML Q2 2026: ricavi netti €9.326B, gross margin 54%, guidance annuale alzata a €43-45B. TUTTAVIA: azienda cinese state-backed ha avviato produzione di massa di macchine DUV immersione, primo concorrente credibile nel segmento che vale ~36% dei ricavi ASML.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1654.25,
+      "stop_loss": 1604.62,
+      "target": 1736.96,
+      "commissione": 0.00,
+      "reasoning": "ASML ha battuto le stime Q2 (€9.33B vendite, 54% GM, guidance alzata), ma il rischio competitivo cinese (DUV in mass production locale) pesa su ~36% del revenue mix. Upgrade Zacks #1 contrasta con il nuovo rischio geopolitico. Hold fino a valutazione dell'impatto competitivo. Fonte: MarketBeat / Yahoo Finance / Investing.com luglio-agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / trendlyne (01-ago)", "price": 1657.05},
+          {"name": "Yahoo Finance / Investing.com (30-lug close)", "price": 1651.44}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 393.72,
+      "change_24h": "+2.08%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale - movimento ordinato su beat earnings, nessuna spike anomala",
+      "news": "Ferrari Q2 2026: EPS $2.99 vs stima $2.85 (+5% beat); Revenue $2.22B vs $2.15B stima (+3.3% beat). Guidance annuale alzata, EBIT margin minimo 31.2% in H2 2026. Personalizzazione e FX favorevoli. Consensus: Moderate Buy, target medio analisti $469.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 393.72,
+      "stop_loss": 381.91,
+      "target": 413.41,
+      "commissione": 0.00,
+      "reasoning": "Ferrari ha sorpassato le stime sia su EPS sia su revenue nel Q2 2026, alzando la guidance annuale. Il brand premium e la pipeline di personalizzazione costituiscono un moat difensivo. Target analisti a $469 (+19% dal prezzo attuale). Fonte: Investing.com / MarketBeat agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / trendlyne (30-lug)", "price": 393.72},
+          {"name": "Investing.com / MarketBeat (30-lug confirmed)", "price": 393.72}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 373.27,
+      "change_24h": "-2.04%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale - ETF gold con $5.3B di redemptions mensili nel periodo recente",
+      "news": "Oro scivola sotto $4.100/oz, interrompendo 2 sessioni di guadagni, ma in rotta per primo guadagno mensile in 5 mesi. Fed ha lasciato tassi invariati nonostante tensioni inflazionistiche da Medio Oriente. 63% probabilita di rialzo Fed a settembre. ETF gold USA: $5.3B in redemptions mensili.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 373.27,
+      "stop_loss": 365.80,
+      "target": 388.20,
+      "commissione": 0.00,
+      "reasoning": "L'oro è supportato dalla pausa Fed e tensioni geopolitiche mediorientali, ma le redemptions da $5.3B negli ETF USA segnalano presa di profitto istituzionale. ATH a $5.602/oz (28 gen 2026) ormai lontano. Hold in attesa di segnale direzionale dalla Fed (settembre). Fonte: SSGA Monthly Gold Monitor luglio 2026 / Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade (oggi 02-ago)", "price": 374.63},
+          {"name": "StockAnalysis / SPDR data (24-lug)", "price": 371.90}
+        ],
+        "spread_pct": 0.73,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.36,
+      "change_24h": "-2.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale - argento in correzione tecnica dopo periodo di overbought",
+      "news": "SLV in calo -2.26% in data 1 agosto 2026. ETF argento descritto come 'storicamente overbought' ma con potenziale rialzo strutturale da domanda industriale come 'critical mineral'. 52-week range $33.85-$109.83 indica alta volatilita.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 52.36,
+      "stop_loss": 51.31,
+      "target": 54.45,
+      "commissione": 0.00,
+      "reasoning": "SLV tecnicamente overbought dopo run significativo, in correzione -2.26% oggi. Supporto strutturale da domanda industriale (critical mineral) e correlazione con oro. Attesa normalizzazione tecnica prima di eventuale re-entry BUY. Fonte: iShares / Barchart / SeekingAlpha agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (01-ago)", "price": 52.36},
+          {"name": "iShares / CNBC NYSE Arca (01-ago)", "price": 52.36}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 62943.00,
+      "change_24h": "+0.12%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale - volume 24h $15.68B (CoinMarketCap), consolidamento post-rally luglio",
+      "news": "Bitcoin chiude luglio a $63K, +7% nel mese. ATH a $126.080, ora -50.2% da quel livello. H1 2026: $1B in perdite da hack crypto. Market cap $1.266T. Trading stabile post-rally senza catalyst imminenti.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 62943.00,
+      "stop_loss": 59796.00,
+      "target": 67978.00,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida a $63K dopo +7% in luglio, in range da diversi giorni. La distanza dal ATH ($126K) indica potenziale upside strutturale ma assenza di catalyst a breve. $1B in hack H1 2026 aumenta sentiment risk. Fonte: CoinMarketCap / Coinbase agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 62766.25},
+          {"name": "CoinMarketCap", "price": 63120.61}
+        ],
+        "spread_pct": 0.56,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1865.00,
+      "change_24h": "+1.89%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale - volume 24h $5.95B, recovery moderata",
+      "news": "ETH a $1.875 a fine luglio 2026. Crescita da $2.83 (ago 2015) +66.134%. H1 2026: $332M in perdite da hack su progetti Ethereum (massimo tra blockchain). Market cap $226B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1865.00,
+      "stop_loss": 1771.75,
+      "target": 2014.20,
+      "commissione": 0.00,
+      "reasoning": "ETH in lieve recupero (+1.89% nelle ultime 24h) ma l'ecosistema ha subito $332M in hack H1 2026 (massimo assoluto tra blockchain). La valutazione è supportata da fondamentali istituzionali ma il rischio sicurezza pesa sul sentiment. Fonte: CoinMarketCap / Coinbase / CoinDesk agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 1854.90},
+          {"name": "CoinMarketCap", "price": 1875.09}
+        ],
+        "spread_pct": 1.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 72.12,
+      "change_24h": "-2.77%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale - bearish sentiment 80% da indicatori tecnici",
+      "news": "SOL a $72-73 inizio agosto 2026, giù da $83.96 massimo luglio. Alpenglow consensus upgrade in rollout agosto-ottobre: riduzione finality da 12.8s a ~150ms. Record DEX volume Q2: $183.2B (+42% QoQ). H1 2026: $326M in perdite da hack.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 72.12,
+      "stop_loss": 68.51,
+      "target": 77.89,
+      "commissione": 0.00,
+      "reasoning": "SOL in debolezza tecnica (-2.77% oggi, -14% da luglio high $83.96), bearish sentiment 80%. Tuttavia il lancio dell'upgrade Alpenglow (ago-ott) con finality a ~150ms e i record DEX Q2 ($183B, +42%) sono catalizzatori potenziali. Affidabilita MEDIA (spread 2.86%). Fonte: CoinMarketCap / Bitget / CoinMarketCap AI agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 71.10},
+          {"name": "Robinhood / Bitget aggregatore", "price": 73.13}
+        ],
+        "spread_pct": 2.86,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "MSFT",
+      "motivo": "Seconda fonte (CNBC/Yahoo) riporta prezzo del 15 luglio ($395.63), non contemporaneo al prezzo odierno ($461.99). Impossibile triangolazione su stessa data. Nota: +15.5% segnalato su earnings recenti (Azure $100B FY2026)."
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Seconda fonte restituisce solo stima fair value analisti ($319.69) e non un prezzo di mercato live. Una sola fonte con prezzo corrente ($270.32 intraday 01-ago). Regola: fonti < 2 → BASSA."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Seconda fonte (CNBC/Yahoo) non ha estratto un prezzo numerico specifico, solo link alle pagine. Una sola fonte confermata ($356.13 al 31-lug). Regola: fonti < 2 → BASSA."
+    },
+    {
+      "asset": "META",
+      "motivo": "Seconda fonte (CNBC/Yahoo) non ha estratto un prezzo numerico corrente. Una sola fonte ($556.71 al 31-lug). Nota: earnings recenti -9% su miss EPS ($6.18 vs $7.22 stima)."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Seconda fonte riporta prezzo del 24 luglio ($70.09), non contemporaneo. Prima fonte ($71.76 del 02-ago). Dati non sufficientemente contemporanei per triangolazione valida."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Prima fonte internamente inconsistente: prezzo $183.62 non rientra nel day range dichiarato $167.70-$171.14 nella stessa risposta. Scarto tra fonte 1 ($183.62) e fonte 2 ($169.12) = 8.57% > soglia 4%."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "La seconda fonte riporta solo prezzo in EUR sulla Borsa di Milano (STLAM.MI, €5.027). Per operatività Alpaca serve prezzo NYSE/USD. Una sola fonte USD confermata (STLA NYSE $5.76). Fonti non omogenee per valuta/exchange."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Scarto eccessivo tra le fonti: heygotrade $139.49 vs MacroTrends/Investing $127.93 = spread 8.87% > soglia 4%. Impossibile determinare prezzo affidabile."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "RACE",
+      "motivo": "Beat earnings Q2 su EPS e revenue, guidance annuale alzata, EBIT margin minimo 31.2% H2. Trend rialzista confermato, confidenza ALTA, upside analitico fino a $469 (+19%). Migliore combinazione fondamentali/tecnica della sessione."
+    },
+    {
+      "rank": 2,
+      "asset": "AAPL_SHORT",
+      "motivo": "SELL signal ad alta confidenza: -8.6% post-earnings su volume anomalo 132M, guidance Q3 e China revenue deludenti. Momentum ribassista istituzionale confermato. Operazione direzionale con setup tecnico chiaro."
+    },
+    {
+      "rank": 3,
+      "asset": "AMD",
+      "motivo": "Pre-earnings catalyst duplice (GPU price hikes + strong revenue growth +37.8%). Earnings il 4 agosto possono essere trigger di breakout. 41/41 analisti Strong Buy. Affidabilita MEDIA ma setup tecnico favorevole."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca. Dati a solo scopo analitico.",
+    "allocazione_suggerita": {
+      "RACE": "25% - BUY, catalizzatore fondamentale chiaro, confidenza ALTA",
+      "AAPL_SHORT": "20% - SELL, earnings shock + volume anomalo, confidenza ALTA",
+      "AMD": "15% - BUY pre-earnings, confidenza MEDIA (spread prezzi 1.94%)",
+      "BTC": "15% - HOLD, consolidamento post-rally luglio",
+      "NVDA": "10% - HOLD, pre-earnings 26 agosto, optionality positiva",
+      "GLD": "10% - HOLD, hedge macro, pausa Fed confermata",
+      "ETH": "5% - HOLD, recovery ma rischio hack ecosystem"
+    }
+  }
+}
