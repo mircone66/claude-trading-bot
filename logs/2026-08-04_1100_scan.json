@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-08-04T11:00:00+02:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione rialzista guidata da tech e AI: S&P 500 vicino ai massimi storici, Nasdaq in rally. ISM Manufacturing luglio a 55.6 (stima 53.8), segnale macro positivo. Petrolio crolla -5% (possibile riapertura Stretto di Hormuz). Oro a $4.139/oz, argento sopra $58. Crypto mercato a $2.27T (+1.1%), Bitcoin stabile a ~$63.800. AMD riporta earnings dopo la chiusura. Geopolitica Iran ancora monitorata.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 206.74,
+      "change_24h": "+2.93%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma, interesse crescente su accumulo istituzionale",
+      "news": "Nvidia riconquista $200 ma la resistenza a $210 è chiave. Cloud spending supporta domanda Blackwell. Bernstein mantiene Buy con target $315. Wells Fargo reitera target. AI trade si amplia da chip a storage e server (FX Leaders, Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 206.74,
+      "stop_loss": 200.54,
+      "target": 217.08,
+      "commissione": 0.00,
+      "reasoning": "AI trade in accelerazione con supporto cloud spending; Bernstein indica accumulo istituzionale per target $315. Superamento di $210 aprirebbe via verso $220-230.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/CNN (aggregato)", "price": 206.83},
+          {"name": "Yahoo Finance / Seeking Alpha", "price": 206.64}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 308.59,
+      "change_24h": "-4.19%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume inferiore alla media (934.98K vs media 47.45M su dato parziale)",
+      "news": "Tesla ai minimi da agosto 2025. Titolo ha perso -26% nelle ultime 4 settimane. Avvicina il minimo 52 settimane a $297.38. Nessun catalyst positivo di breve termine identificato (CNBC, Yahoo Finance)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 308.59,
+      "stop_loss": 317.85,
+      "target": 293.16,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista strutturale con -26% in 4 settimane; minimo 52W a $297.38 come target naturale. Stop sopra la resistenza intraday a $317.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics / CNBC", "price": 313.00},
+          {"name": "Yahoo Finance / Robinhood", "price": 304.18}
+        ],
+        "spread_pct": 2.86,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 72.96,
+      "change_24h": "+2.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma",
+      "news": "Netflix -21% YTD 2026. Market cap $305B. Capo contenuti Sarandos pianifica vendita di 105.850 azioni (insider selling). TipRanks: 'NFLX Stock Looks Attractive Even as Growth Slows'. 52W range $65.08-$126.71 (Nasdaq, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 72.96,
+      "stop_loss": 70.77,
+      "target": 76.61,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico del +2.26% ma trend YTD negativo. Insider selling segnala cautela. Area $65-70 come supporto strutturale; attendere conferma inversione prima di posizionarsi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase / Morningstar", "price": 72.58},
+          {"name": "Yahoo Finance / MacroTrends", "price": 73.33}
+        ],
+        "spread_pct": 1.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 480.40,
+      "change_24h": "-0.87%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo in aumento pre-earnings (giornata catalizzatore)",
+      "news": "AMD riporta utili Q2 dopo la chiusura oggi: stime $1.62 EPS, $11.3B ricavi. Stock -8.77% nell'ultima settimana per derisking pre-earnings. 'AMD extends AI lead as Anthropic megadeal fuels price target surge' (Timothy Sykes, Yahoo Finance). Analisti target medio $577.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 480.40,
+      "stop_loss": 465.99,
+      "target": 504.42,
+      "commissione": 0.00,
+      "reasoning": "Earnings oggi dopo chiusura creano rischio binario. Stime positive su AI ma derisking della settimana indica cautela. Attendere reazione post-earnings prima di aprire posizione direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (aggregato)", "price": 484.64},
+          {"name": "MarketBeat / 247WallSt", "price": 476.15}
+        ],
+        "spread_pct": 1.77,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1670.67,
+      "change_24h": "+3.06%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; interesse istituzionale elevato",
+      "news": "Bernstein nomina ASML 'Top Q3 Pick'; aggiunto alla Goldman Sachs European Conviction List. Aumento dividendo interim +17%. Rischio: azienda cinese statale avvia produzione di massa di macchine DUV immersione domestiche (primo competitor credibile). (Yahoo Finance, TradingKey)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1670.67,
+      "stop_loss": 1620.55,
+      "target": 1754.20,
+      "commissione": 0.00,
+      "reasoning": "Dual endorsement Bernstein+Goldman con dividend hike segnala momentum forte. Il rischio China DUV è già parzialmente scontato. Affidabilità MEDIA per prezzi da date di 3 giorni fa.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne / CNBC (1 agosto 2026)", "price": 1648.42},
+          {"name": "Morningstar / CNBC (4 agosto 2026)", "price": 1692.91}
+        ],
+        "spread_pct": 2.66,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 393.50,
+      "change_24h": "+1.28%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "Ferrari Q2 2026 batte stime: €1.94B ricavi, utile netto +9%. Guidance annuale alzata. Morgan Stanley alza target a $442 da $438 (Overweight). Forte domanda di personalizzazioni e pricing power. (Yahoo Finance, Robinhood)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 393.50,
+      "stop_loss": 381.70,
+      "target": 413.18,
+      "commissione": 0.00,
+      "reasoning": "Risultati Q2 superiori alle attese e guidance alzata confermano la qualità del business. Morgan Stanley $442 come target a 12 mesi. Titolo scambia ben al di sotto del massimo 52W $504.49.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / Robinhood", "price": 393.50},
+          {"name": "Yahoo Finance / Finviz", "price": 393.50}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.71,
+      "change_24h": "-1.67%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma",
+      "news": "Stellantis Q2 2026: ricavi +13% ma miss sull'utile. UBS downgrade per turnaround USA in stallo. Confermato outlook annuale. Price/Book storicamente basso ma rischi esecutivi alti. (Yahoo Finance, CNBC)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 5.71,
+      "stop_loss": 5.88,
+      "target": 5.42,
+      "commissione": 0.00,
+      "reasoning": "UBS downgrade e profit miss confermano pressioni strutturali. Trend ribassista persistente con assenza di catalyst positivi di breve. Rischio downside verso minimi storici.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Capital.com (NYSE:STLA)", "price": 5.76},
+          {"name": "Yahoo Finance / CNBC (NYSE:STLA)", "price": 5.66}
+        ],
+        "spread_pct": 1.75,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.41,
+      "change_24h": "+0.19%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume normale: 11.97M azioni (3 agosto)",
+      "news": "Argento spot mantiene livello sopra $58/oz. Iran escalation in pausa ma non risolta: mantiene premium geopolitico. Silver futures agosto aprono a $58.38 (+0.9%). Gold-Silver ratio ancora favorevole all'argento su breakout oro. (Yahoo Finance, Fortune)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 52.41,
+      "stop_loss": 51.36,
+      "target": 54.51,
+      "commissione": 0.00,
+      "reasoning": "Argento spot sopra $58 con supporto da tensioni geopolitiche Iran e rally oro ($4.139/oz). Doppia funzione industrial/safe-haven. SLV segue il sottostante con buona tracking efficiency.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (2 agosto 2026)", "price": 52.36},
+          {"name": "iShares / CNBC (3 agosto 2026)", "price": 52.46}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63801.00,
+      "change_24h": "+0.49%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale: $26.25B nelle 24h",
+      "news": "Bitcoin stabile a $63.500-64.000. Investitori monitorano avanzamento Clarity Act al Congresso USA (regolamentazione crypto). Dominanza BTC al 56%. Market cap $1.27T. Coinbase: ~$63.803. (Yahoo Finance, Fortune, CoinGabbar)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 63801.00,
+      "stop_loss": 60611.00,
+      "target": 68905.00,
+      "commissione": 0.00,
+      "reasoning": "Range laterale con incertezza regolatoria Clarity Act. Consolidamento sano dopo anni di volatilità. Aspettare breakout di $65.000 o supporto $60.000 per ingresso direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bitget live", "price": 63942.97},
+          {"name": "Fortune / TradingView", "price": 63660.00}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1873.60,
+      "change_24h": "-1.13%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale: $8.03B nelle 24h",
+      "news": "H1 2026: $1B in perdite crypto per hack, Ethereum il più colpito con $332M per vulnerabilità codice protocollo. ETH giù -1.13% oggi. BlackRock ha lanciato veicolo su Solana (non ETH), sottraendo momentum istituzionale. (CoinGabbar, CoinMarketCap)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1873.60,
+      "stop_loss": 1967.28,
+      "target": 1723.71,
+      "commissione": 0.00,
+      "reasoning": "Narrativa negativa H1 hacks ($332M su ETH) e scelta BlackRock di Solana come chain istituzionale penalizzano ETH. Trend ribassista a breve termine. Affidabilità MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (4 agosto 2026)", "price": 1854.59},
+          {"name": "Coinbase live", "price": 1892.61}
+        ],
+        "spread_pct": 2.03,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.43,
+      "change_24h": "-0.17%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale: $1.45B nelle 24h",
+      "news": "BlackRock lancia nuovo veicolo stablecoin reserve su Solana il 3 agosto 2026: importante catalyst istituzionale. Solana in posizione CMC #7. Market cap $42.6B. Rischio: $326M persi per hack su progetti Solana in H1 2026. (CoinGabbar, CoinMarketCap)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 73.43,
+      "stop_loss": 69.76,
+      "target": 79.30,
+      "commissione": 0.00,
+      "reasoning": "Lancio BlackRock stablecoin su Solana è catalyst istituzionale significativo e differenziante rispetto a ETH. Prezzo ancora nel range $70-74 pre-reazione. Rischio bilanciato da hack narrative.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bitget / WEEX live", "price": 73.07},
+          {"name": "Yahoo Finance / CoinMarketCap", "price": 73.79}
+        ],
+        "spread_pct": 0.98,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Solo 1 fonte con prezzo confermato per oggi (S1=$303.42 da Investing.com/Yahoo). La seconda ricerca non ha restituito un prezzo numerico verificabile per il 4 agosto 2026. Fonti < 2 → BASSA → escluso da segnali."
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Solo 1 fonte con prezzo confermato per oggi (S1=$479.20 da Robinhood/Yahoo/CNN). La seconda ricerca ha restituito solo target analisti ($562.73) e notizie senza prezzo spot per il 4 agosto 2026. Fonti < 2 → BASSA → escluso."
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "Solo 1 fonte con prezzo (S1=$284.02 per il 3 agosto 2026). La seconda ricerca ha restituito dati su fatturato Q2 e AWS senza prezzo spot verificabile per il 4 agosto. Fonti < 2 → BASSA → escluso."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Prezzi da date diverse: S1=$356.13 (31 luglio 2026) vs S2=$372.90 (3 agosto 2026). Scarto inter-temporale 4.71%. Nessun prezzo confermato per oggi 4 agosto. → BASSA → escluso."
+    },
+    {
+      "asset": "META",
+      "motivo": "S1=$590.24 (4 agosto, fonte unica). S2 ha restituito solo il close del 31 luglio ($556.71). Una sola fonte per il prezzo odierno. Fonti < 2 per data corrente → BASSA → escluso."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Prezzi da date molto distanti: S1=$169.12 (27 luglio 2026) vs S2=$183.62 (3 agosto 2026). Scarto inter-temporale 8.22% riflette settimane di movimento, non divergenza tra fonti. → BASSA → escluso."
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Scarto eccessivo tra le due fonti per la stessa data: S1=$374.97 (4 agosto) vs S2=$412.90 (data incerta, fonte CNBC/Bloomberg riporta dato 'da data precedente'). Spread 9.6% > soglia 4% → BASSA → escluso."
+    },
+    {
+      "asset": "USO",
+      "motivo": "S1=$122.12 (4 agosto, -5.46% oggi, coerente con petrolio -5%). S2=$129.17 è il previous close riportato da heygotude.com come 'prezzo odierno' (dato stantio). Spread 5.6% > soglia 4% per dati di date diverse → BASSA → escluso."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "RACE",
+      "motivo": "Q2 2026 superiore alle stime (€1.94B, utile +9%), guidance annuale alzata, Morgan Stanley target $442. Affidabilità ALTA. Titolo 22% sotto il massimo 52W con pricing power strutturale."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "AI trade in accelerazione, Bernstein target $315, cloud spending supporta domanda Blackwell. Affidabilità ALTA. Superamento $210 apre via verso area $220-230."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "BlackRock lancia stablecoin reserve su Solana (3 agosto 2026): primo catalyst istituzionale differenziante. Prezzo ancora in range pre-reazione $70-74. Affidabilità ALTA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Ipotetica allocazione su portafoglio $10.000 per test modello.",
+    "allocazione_suggerita": {
+      "RACE_BUY": "20% ($2.000) - massima confidenza, fondamentali Q2",
+      "NVDA_BUY": "20% ($2.000) - AI trade momentum, ALTA affidabilità",
+      "SLV_BUY": "15% ($1.500) - hedge geopolitico e oro, ALTA affidabilità",
+      "SOL_BUY": "15% ($1.500) - BlackRock catalyst istituzionale",
+      "ASML_BUY": "10% ($1.000) - endorsement Goldman+Bernstein, affidabilità MEDIA",
+      "TSLA_SELL": "10% ($1.000) - trend ribassista confermato, MEDIA affidabilità",
+      "ETH_SELL": "5% ($500) - hack narrative + perdita momentum istituzionale",
+      "STLA_SELL": "5% ($500) - UBS downgrade + profit miss",
+      "HOLD_CASH": "0% - AMD e BTC e NFLX classificati HOLD: nessuna esposizione nuova"
+    }
+  }
+}
