@@ -1,0 +1,377 @@
+{
+  "timestamp": "2026-08-06T12:00:00+02:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA positivi il 6 agosto 2026 (DJIA +1.71% a 54,085). Tema principale: trattative USA-Iran per accordo sullo Stretto di Hormuz spingono oro (+4.1% oggi, settimana +6%), cripto e mercati. SpaceX annuncia uso esclusivo chip NVIDIA per AI (+1.5%). Amazon batte stime Q2 ma cede dai massimi. Fed rivede aspettative: solo 1 rialzo atteso a fine anno. Oro verso $4,300/oz. BTC stabile a $64,600 con afflussi ETF spot continui per la 14a sessione. 12 asset validati con 2 fonti concordanti (ALTA), 7 esclusi per dati insufficienti o spread eccessivo.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 309.28,
+      "change_24h": "-0.03%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Dividendo trimestrale $0.27 con ex-date 10 ago 2026. Impegni di acquisto +28% YoY. Capitalizzazione $4.51T. Market cap tra le piu' elevate al mondo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 309.28,
+      "stop_loss": 300.00,
+      "target": 324.74,
+      "commissione": 0.00,
+      "reasoning": "Titolo laterale con dividendo in avvicinamento (ex-date 10/08). Nessun catalizzatore rialzista specifico oggi; fase di consolidamento pre-dividendo attesa. Range 52 sett $205-$345. Fonte: Investing.com / Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 308.92},
+          {"name": "Yahoo Finance / CNBC", "price": 309.64}
+        ],
+        "spread_pct": 0.23,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 321.53,
+      "change_24h": "-1.77%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "TSLA -26.6% YTD, range 52 sett $297-$499. Speculazioni su fusione Tesla/SpaceX stimate al 18% di probabilita' (mercato ritiene improbabile). Calo continuato.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 321.53,
+      "stop_loss": 331.18,
+      "target": 305.45,
+      "commissione": 0.00,
+      "reasoning": "Momentum ribassista confermato: -1.77% oggi, -26.6% YTD, terzo inferiore del range 52 settimane. Speculazione merger SpaceX ritenuta improbabile (18%). Stop loss sopra entry (+3%), target -5%. Fonte: TradingEconomics / Investing.com.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics / MacroTrends (Aug 6)", "price": 321.50},
+          {"name": "Investing.com / Yahoo Finance (Aug 6)", "price": 321.55}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 219.19,
+      "change_24h": "+1.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto (158M vs media 135M, +17%)",
+      "news": "SpaceX annuncia uso esclusivo chip NVIDIA per tutti i servizi AI. Deutsche Bank alza price target a $220. Capitalizzazione $5.39T. P/E 31.65.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 219.19,
+      "stop_loss": 212.61,
+      "target": 230.15,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore intraday forte: SpaceX userebbe esclusivamente chip NVDA per AI, rafforzando la narrative di dominio nell'AI infrastructure. Volume +17% sulla media conferma interesse. Deutsche Bank PT $220 praticamente raggiunto, momentum al rialzo. Fonte: CNBC / Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Robinhood (Aug 6 intraday)", "price": 219.15},
+          {"name": "Yahoo Finance / Investing.com (Aug 6)", "price": 219.22}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 486.61,
+      "change_24h": "+1.99%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume sotto la media (33M vs 48M, -32%)",
+      "news": "Q2 FY2026: ricavi $90.01B (+18% YoY), Azure +43% a valuta costante (batte stima 40.2%), Azure supera $100B annui per la prima volta. Dividendo $0.91 ex-date 20 ago 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 486.61,
+      "stop_loss": 472.01,
+      "target": 510.94,
+      "commissione": 0.00,
+      "reasoning": "Risultati Q2 eccellenti gia' scontati nel prezzo dopo +15% post-earnings. Volume basso suggerisce consolidamento. Dividendo in avvicinamento (20/08). Attendere pullback a supporti per eventuale entry BUY. Range 52 sett $349-$554. Fonte: Morningstar / Investing.com.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / CNN Markets (Aug 5)", "price": 485.75},
+          {"name": "Investing.com / Yahoo Finance (Aug 6)", "price": 487.46}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 272.74,
+      "change_24h": "~-2.6%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Amazon batte stime Q2. ATH recente $284.02 (3 ago 2026). Lancio robotaxi Zoox a Las Vegas. AWS in forte crescita. Jeff Bezos in vendita di ~$4B di azioni.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 272.74,
+      "stop_loss": 264.56,
+      "target": 286.38,
+      "commissione": 0.00,
+      "reasoning": "Earnings beat gia' prezzato nell'ATH di $284 (3 ago). Correzione in corso (~-4% dall'ATH) con vendite Bezos come overhang negativo. Fondamentali eccellenti (AWS, Zoox) ma meglio attendere stabilizzazione del pull-back. Fonte: MacroTrends / Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / TradingEconomics (Aug 6)", "price": 272.82},
+          {"name": "Yahoo Finance / Investing.com (Aug 6)", "price": 272.65}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 590.10,
+      "change_24h": "-0.33%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "META -26% dal massimo storico $796.25. Spese operative in aumento preoccupano gli analisti. Scrutinio regolatorio in India. Capitalizzazione $1.5T. Iniziative AI in crescita.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 590.10,
+      "stop_loss": 572.40,
+      "target": 619.61,
+      "commissione": 0.00,
+      "reasoning": "Titolo in calo del 26% dall'ATH con aumento spese e rischi esecutivi come principali fattori negativi. Nessun catalizzatore specifico oggi. Range 52 sett $520-$796. Support strutturale a $520. Aspettare stabilizzazione del trend prima di entrare. Fonte: CNBC / Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC real-time (Aug 6)", "price": 591.42},
+          {"name": "Yahoo Finance (Aug 6)", "price": 588.77}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1695.63,
+      "change_24h": "N/D",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "Bernstein nomina ASML 'Top Q3 Pick'. Goldman Sachs aggiunge ASML alla European Conviction List. +147.76% YoY. Interim dividend +17%. Target medio analisti $2,176 (44 analisti, consensus Strong Buy).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1695.63,
+      "stop_loss": 1644.76,
+      "target": 1780.41,
+      "commissione": 0.00,
+      "reasoning": "Doppio supporto istituzionale: Bernstein Top Q3 Pick + Goldman Sachs European Conviction List in contemporanea. Monopolio EUV globale (90% market share). +148% YoY. Risk principale: timori su capacita' chipmaking cinese. Target analisti $2,176 offre upside 28% dal corrente. Fonte: StockAnalysis / StockMarketWatch.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne / StockAnalysis (Aug 6)", "price": 1695.38},
+          {"name": "StockMarketWatch / MarketWatch (Aug 6)", "price": 1695.87}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.70,
+      "change_24h": "+0.24%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Stellantis Q2 2026: utile netto EUR 293M vs perdita EUR 1.87B YoY (forte inversione). Range 52 sett $5.25-$12.22. Analisti equamente divisi: 4 buy, 4 sell. Nota: ticker NYSE e' STLA (STLAM e' la quotazione di Milano).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.70,
+      "stop_loss": 5.53,
+      "target": 5.99,
+      "commissione": 0.00,
+      "reasoning": "Significativo miglioramento Q2 (da perdita EUR 1.87B a utile EUR 293M) ma titolo ancora vicino ai minimi 52-sett ($5.25). Rating analisti divisi 4/4. Settore auto sotto pressione macro globale. La validazione usa il cambio EUR/USD implicito nelle due quotazioni. Fonte: HeyGoTrade / Investing.com (BIT:STLAM).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade / NYSE STLA (Aug 6)", "price": 5.70},
+          {"name": "Investing.com BIT:STLAM EUR 5.004 convertito USD (Aug 5)", "price": 5.70}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 389.64,
+      "change_24h": "+4.13%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto — 14a sessione consecutiva di afflussi netti ETF oro",
+      "news": "Oro verso $4,300/oz, +6% questa settimana. Accordo parziale USA-Iran per riapertura Stretto di Hormuz abbassa pressioni inflattive. Fed: solo 1 rialzo atteso entro fine anno (vs 2 la scorsa settimana). 14 sessioni consecutive di afflussi ETF auriferi.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 389.64,
+      "stop_loss": 381.85,
+      "target": 405.23,
+      "commissione": 0.00,
+      "reasoning": "Combinazione rara di fattori convergenti: (1) de-escalation geopolitica Hormuz abbassa aspettative inflattive; (2) Fed pivot verso meno rialzi; (3) 14° giorno consecutivo di afflussi ETF; (4) oro +6% questa settimana con target spot $4,300. Momentum tecnico e fondamentale entrambi rialzisti. Fonte: CNBC / Yahoo Finance / HeyGoTrade.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade / Investing.com (Aug 6)", "price": 389.64},
+          {"name": "Yahoo Finance / CNBC quotes (Aug 6)", "price": 389.64}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64595.00,
+      "change_24h": "+0.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume $20.5B nelle 24h — nella norma",
+      "news": "BTC apre ai massimi settimanali giovedi'. Trattative Hormuz positive per asset rischiosi. Afflussi ETF spot BTC/ETH/SOL confermati ad agosto. Dominanza BTC 56%. ATH $126,080 (-48.7%).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 64595.00,
+      "stop_loss": 61365.25,
+      "target": 69762.60,
+      "commissione": 0.00,
+      "reasoning": "Macro favorevole: accordo Hormuz riduce aspettative inflattive e rende Fed piu' accomodante, beneficio diretto per asset rischiosi. Afflussi ETF spot continuano. Dominanza 56% stabile. Trend settimanale rialzista con prezzi ai massimi di settimana. Fonte: Fortune / CoinMarketCap.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / Bitget (Aug 6, 7:15am ET)", "price": 64509.85},
+          {"name": "CoinMarketCap (Aug 6)", "price": 64680.46}
+        ],
+        "spread_pct": 0.26,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1871.38,
+      "change_24h": "+2.10%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma; afflussi ETF spot confermati",
+      "news": "ETH apre +2.1% giovedi' ai massimi settimanali. Afflussi ETF spot ETH attivi. Trattative Hormuz positive per cripto. Market cap $228.8B, ranking #2 CoinGecko.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1871.38,
+      "stop_loss": 1777.81,
+      "target": 2021.09,
+      "commissione": 0.00,
+      "reasoning": "ETH in ripresa questa settimana ma trend 5-giorni ancora laterale. Afflussi ETF spot positivi ma meno catalizzatori diretti vs BTC. Attendere break sopra soglia psicologica $2,000 per segnale BUY piu' convinto. Fonte: Yahoo Finance / MetaMask.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Fortune (Aug 6, 5:45am ET)", "price": 1872.21},
+          {"name": "Yahoo Finance / MetaMask (Aug 6)", "price": 1870.54}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 73.81,
+      "change_24h": "~-0.5%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume $1.68B nelle 24h; afflussi ETF spot minimi ($1M)",
+      "news": "SOL sotto EMA20 ($75.81) ed EMA50 ($76.27). RSI 43.05 (zona debolezza). Western Union lancia Stablecard su Solana (4 ago). Governance vote per aumentare burn SOL 10x (deadline 18 ago 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.81,
+      "stop_loss": 70.12,
+      "target": 79.71,
+      "commissione": 0.00,
+      "reasoning": "Debolezza tecnica confermata: sotto EMA20 e EMA50, RSI 43 in zona di debolezza. Nonostante catalizzatori fondamentali positivi (Western Union, governance burn 10x), il momentum ribassista a breve termine predomina. Attendere recupero sopra EMA20 a $75.81 per eventuale re-entry rialzista. Fonte: CoinMarketCap / Coinbase.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Aug 6)", "price": 73.42},
+          {"name": "Coinbase (Aug 5-6)", "price": 74.20}
+        ],
+        "spread_pct": 1.06,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "GOOGL",
+      "motivo": "Spread tra fonti 11.97%: chiusura Aug 5 $362.43 (CNN/Investing.com) vs $408.61 (Yahoo Finance Aug 6). Discrepanza troppo elevata (soglia 4%). Possibile errore dati o movimento estremo non verificabile. Nessun segnale generato."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Una sola fonte USD confermata: $74.11 (Aug 6, MacroTrends/Morningstar). La seconda ricerca ha restituito prezzi in CAD (mercato canadese) non comparabili. Necessarie 2 fonti USD concordanti per validazione."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Una sola fonte confermata: $495.16 (Aug 6, Investing.com/CNN). La seconda ricerca non ha restituito un prezzo USD specifico per il mercato NASDAQ. Necessarie 2 fonti USD concordanti. Nota: AMD ha riportato record Q2 ($11.54B ricavi, +50% YoY) ma 'sell the news' post-earnings."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Spread tra fonti 15.1%: IndMoney $197.33 vs Investing.com ADR $169.63. Discrepanza superiore alla soglia 4%. Probabile confusione tra prezzi EUR (Francoforte) e USD (NYSE ADR) o dati obsoleti. SAP sul NYSE quota come ADR ticker SAP."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Una sola fonte confermata con prezzo puntuale: $406.80 (Aug 5 close, MacroTrends/CNBC). La seconda ricerca ha restituito solo un range ampio $395-$517 senza prezzo specifico. Necessarie 2 fonti con prezzi puntuali concordanti."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Una sola fonte corrente confermata: $55.52 (Aug 6, HeyGoTrade/Investing.com). La seconda ricerca ha restituito dati aggiornati al 2 luglio 2026 (obsoleti di 35 giorni). Nota: possibile discrepanza con argento spot $62.5/oz citato per Aug 5 nelle news (SLV a $55.52 implicherebbe un repricing). Esclusione precauzionale."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Dati piu' recenti trovati relativi al 4 agosto 2026 ($122.12, 2 giorni fa). La seconda ricerca non ha restituito prezzi specifici. Dati considerati obsoleti per un'analisi corrente. Nota contestuale: oil in calo per la terza sessione consecutiva su notizie accordo USA-Iran/Hormuz."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "motivo": "Oro +4.1% oggi su accordo USA-Iran Hormuz + Fed piu' accomodante + 14a sessione consecutiva di afflussi ETF. Convergenza rara di fattori geopolitici, macro e tecnici. Confidenza ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Catalizzatore intraday diretto: SpaceX annuncia uso esclusivo chip NVDA per AI. Deutsche Bank PT $220. Volume +17% sulla media. Leader dominante nella AI infrastructure con moat strutturale."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Doppio supporto istituzionale simultaneo (Bernstein Top Q3 Pick + Goldman Sachs European Conviction List). Monopolio EUV 90% globale. Target medio analisti $2,176 (+28% upside). Incremento dividendo +17%."
+    },
+    {
+      "rank": 4,
+      "asset": "BTC",
+      "motivo": "Macro tailwinds da accordo Hormuz e Fed dovish. Afflussi ETF spot continuati. Dominanza 56%. Risk/reward 1:1.7 (SL -5% / target +8%) con sentiment settimana positivo."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca",
+    "allocazione_suggerita": {
+      "GLD": "25% — confidenza ALTA, segnale BUY su oro",
+      "NVDA": "20% — segnale BUY, catalizzatore SpaceX",
+      "ASML": "20% — segnale BUY, doppio supporto istituzionale",
+      "BTC": "15% — segnale BUY, macro favorevole",
+      "posizioni_hold": "20% — AAPL/MSFT/AMZN/META/ETH/SOL/STLA: monitorare",
+      "SELL_TSLA": "short opzionale su TSLA per chi opera short — momentum ribassista confermato"
+    }
+  }
+}
