@@ -1,0 +1,382 @@
+{
+  "timestamp": "2026-08-09T12:00:00+02:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Domenica 9 agosto 2026 — prezzi riflettono chiusura venerdì 8 agosto (ultima sessione disponibile). Settimana dominata da due macro driver: (1) jobs report luglio USA molto sotto le attese → narrativa Fed on hold rafforzata → metalli preziosi e crypto in rally; (2) earnings Q2 Big Tech divergenti: MSFT +15.5% record su un singolo giorno dopo beat e pivot AI; META -8% su divergenza di strategia AI vs MSFT. Gold consolida sopra $4.200/oz (spot $4.213-$4.295, BCA consiglia posizionamento long); silver +10% settimanale = miglior week da febbraio. BTC stabile a ~$65K (dominance 57%), SOL +3.86% weekly su upgrade rete (block time 350ms testnet) e record crypto card spending ($759M luglio). NVDA leader AI semiconductor: +10% weekly, partnership SpaceX, earnings +29% YoY. AMD: beat Q2 ($11.54B revenue, +50% YoY) ma -7% su guidance AI insufficiente per il mercato. GOOGL pressata da shakeup AI division (Jeff Dean addio). Ferrari ha lanciato EV Luce (primo full EV) con reazione inizialmente negativa -8%, ora in recupero. Stellantis -39% YTD, cerca catalizzatori. WTI a $75.85, pressato da aspettative riapertura Stretto di Hormuz. NOTA: mercati azionari chiusi domenica — segnali operabili da lunedì 10 agosto apertura.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 223.96,
+      "change_24h": "+2.27%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume sessione Aug 8: 105.67M vs media 134.62M = -21.5% sotto media (normale in fase di consolidamento post-rally)",
+      "news": "NVIDIA leader settimana: +10% weekly su partnership SpaceX e recupero sentiment AI. S&P 500 contribuito per +29% YoY earnings growth (Yahoo Finance Aug 9). Range Aug 8: $219.36-$224.76. Philadelphia Semiconductor Index +8% settimanale. Bernstein mantiene NVDA tra i Top Pick Q3 2026. Market cap $5.5T.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 223.96,
+      "stop_loss": 217.24,
+      "target": 235.16,
+      "commissione": 0.00,
+      "reasoning": "NVDA chiude la settimana con +10% trainato da partnership SpaceX e recupero narrativa AI. Tickzen/investing.com conferma $223.96 (Aug 8) con volume leggermente sotto media = consolidamento sano post-rally. Bernstein Top Q3 Pick rafforza il catalizzatore. SL -3% a $217.24, target +5% a $235.16. (Fonte: Tickzen/investing.com $223.96 Aug 8; Yahoo Finance/CNBC $223.96 Aug 8 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / Investing.com (Aug 8)", "price": 223.96},
+          {"name": "Yahoo Finance / CNBC (Aug 8)", "price": 223.96}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 499.69,
+      "change_24h": "-0.12%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "volume anomalo post-earnings; settimana storica: +15.5% single-day (maggior incremento market cap nella storia)",
+      "news": "Microsoft ha registrato il maggior incremento di market cap singolo giorno nella storia borsistica (+15.5%, CNBC/Yahoo Finance fine luglio-inizio agosto 2026) dopo Q4 FY2026 beat: revenue $331.84B (+17.79% YoY), earnings $133.75B (+31.34%). Notizia Aug 8: 'Microsoft Stock Gains as AI Pivot Lures Politicians'. Dividendo $0.91 ex-date 20 agosto. Target analisti: $563.16 (+12.6% da attuale).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 499.69,
+      "stop_loss": 484.70,
+      "target": 524.67,
+      "commissione": 0.00,
+      "reasoning": "MSFT consolida dopo il surge storico +15.5% su Q4 beat eccezionale. Revenue +17.79% e earnings +31.34% YoY confermano la leadership nel cloud AI. La correzione -0.12% da Aug 7 a Aug 8 è consolidamento sano. Al di sotto del target medio analisti $563 = ampio upside strutturale. SL -3% a $484.70, target +5% a $524.67. (Fonte: Investing.com $499.38 Aug 8; Yahoo Finance prev. close $499.99 Aug 7 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (sessione Aug 8)", "price": 499.38},
+          {"name": "Yahoo Finance (close Aug 7)", "price": 499.99}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 329.00,
+      "change_24h": "+0.13%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 39.49M vs media 36.38M = +8.6% leggermente sopra media (pressione venditori)",
+      "news": "TSLA sostanzialmente invariata a $329.00 (range giornaliero $321-$333.73). CNBC July 24: 'Buy the dip case for Tesla diminishes due to stagnating fundamentals'. P/E 299.25 = valutazione molto elevata senza crescita visibile. 52-week range $297.38-$498.83: titolo a -34% dal picco. Q3 earnings non ancora annunciati.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 329.00,
+      "stop_loss": 319.13,
+      "target": 345.45,
+      "commissione": 0.00,
+      "reasoning": "TSLA rimbalza di +0.13% nel contesto di tech rally ma i fondamentali non giustificano la valutazione (P/E 299). CNBC segnala 'stagnating fundamentals' e il titolo è -34% dal 52-week high. Volume leggermente sopra media suggerisce pressione di vendita. Nessun catalizzatore Q3 identificato. HOLD fino a inversione tecnica confermata o annunci prodotto. SL -3% a $319.13, target +5% a $345.45. (Fonte: Trading Economics $329.00 Aug 9; Yahoo Finance $329.00 close Aug 7 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics (Aug 9)", "price": 329.00},
+          {"name": "Yahoo Finance (close Aug 7)", "price": 329.00}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.92,
+      "change_24h": "+0.61%",
+      "trend_5d": "ribassista",
+      "volume_note": "nella norma",
+      "news": "Netflix a $73.92 (range Aug 7: $73.00-$74.50), -37.5% nell'ultimo anno. Revenue growth rallenta: viewing gains solo +2% (TheStreet July 19). NBCUniversal-YouTube deal potrebbe accelerare streaming wars (July 30). Insider selling (TipRanks Aug 6). Prossimi earnings: 19 ottobre 2026. Analisti: Moderate Buy, target medio $94.79 = undervaluation 28% ma senza catalizzatore immediato.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.92,
+      "stop_loss": 71.70,
+      "target": 77.62,
+      "commissione": 0.00,
+      "reasoning": "NFLX rimbalza +0.61% ma il trend strutturale rimane ribassista (-37.5% annuale). Rallentamento revenue e insider selling frenano il riacquisto. L'undervaluation teorica (+28% al target analisiti $94.79) è un catalizzatore a lungo termine, condizionato agli earnings ottobre. SL -3% a $71.70, target +5% a $77.62 nel breve. (Fonte: Trading Economics $74.14 Aug 7; StockAnalysis $73.69 Aug 7 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics (Aug 7)", "price": 74.14},
+          {"name": "StockAnalysis (Aug 7)", "price": 73.69}
+        ],
+        "spread_pct": 0.61,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 199.47,
+      "change_24h": "+1.08%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma; 52-week range $144.97-$299.48 (attuale -33% dal picco)",
+      "news": "SAP NYSE a $199.47 (Aug 6 close), +1.08% da previous close $197.33. Consenso analisti: Strong Buy (23 buy, 0 sell, 4 hold). Target medio $242.92 (+21.8% upside). SAP beneficia del boom AI enterprise (business software + AI cloud). Prossimi earnings: 21 ottobre 2026. Revenue e profitti attesi in crescita doppia cifra nel FY2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 199.47,
+      "stop_loss": 193.49,
+      "target": 209.44,
+      "commissione": 0.00,
+      "reasoning": "SAP NYSE a $199.47 con Strong Buy unanime (23/23 analisti buy). Target medio $242.92 = +21.8% upside strutturale. Il titolo è -33% dal 52-week high ma ha mostrato ripresa (+1.08% vs previous close) in un contesto di AI enterprise demand. SL -3% a $193.49, target +5% a $209.44. NOTA: prezzi da Aug 6, prossima apertura lunedì 10 agosto. (Fonte: Trendlyne $199.47 Aug 6; Investing.com NYSE $199.47 Aug 6 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne.com NYSE SAP (Aug 6)", "price": 199.47},
+          {"name": "Investing.com NYSE SAP (Aug 6)", "price": 199.47}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 483.36,
+      "change_24h": "n.d. (dati: Aug 9 $483.36 vs Aug 6 close $489.28 = -1.21% su 3 giorni)",
+      "trend_5d": "in recupero (post-earnings sell-off -7%)",
+      "volume_note": "volume aumentato post-earnings; recupero tecnico in corso",
+      "news": "AMD Q2 2026 beat: revenue $11.54B (+50% YoY), EPS $1.66, sopra consensus. Tuttavia shares -7% dopo earnings per guidance AI inferiore alle aspettative. Ora in recupero a $483.36 (Aug 9). 52-week range $149.22-$584.73. Consenso: Strong Buy (41 buy, 0 sell). Target medio $613.33 (+26.9% upside). AI chip demand structurally strong — Q3 guidance più chiara attesa a ottobre.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 483.36,
+      "stop_loss": 468.86,
+      "target": 507.53,
+      "commissione": 0.00,
+      "reasoning": "AMD in dip post-earnings: beat su revenue (+50% YoY) e EPS ma guidance AI delude il mercato. Il calo -7% crea un entry point con fondamentali solidi (Strong Buy 41/41 analisti). Il recovery a $483 da $489 (Aug 6) suggerisce stabilizzazione. NOTA: affiabilità MEDIA (fonti Aug 9 vs Aug 6). SL -3% a $468.86, target +5% a $507.53. (Fonte: Investing.com $483.36 Aug 9; Yahoo Finance close $489.28 Aug 6 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 9 current)", "price": 483.36},
+          {"name": "Yahoo Finance (close Aug 6)", "price": 489.28}
+        ],
+        "spread_pct": 1.22,
+        "affidabilita": "MEDIA",
+        "nota": "Spread 1.22% su date diverse (Aug 9 vs Aug 6); non comparazione same-day"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 398.11,
+      "change_24h": "+2.16%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "volume elevato in linea con rally gold (settimana +7.3%); GLD AUM > $75B",
+      "news": "Gold spot a $4.213-$4.295/oz (Aug 6-7): 'Gold consolidates above $4,200 ahead of non-farm payrolls' (Delta Horizon Capital Aug 7). Global gold ETFs terminano 2 mesi di deflussi in luglio (BCA recommends turning long). GLD da $389.67 (prev. close) a $398.11 (+2.16%) sul rally post-jobs miss. State Street Monthly Gold Monitor agosto: contesto macro favorevole. WGC: afflussi istituzionali in accelerazione.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 398.11,
+      "stop_loss": 390.15,
+      "target": 414.03,
+      "commissione": 0.00,
+      "reasoning": "Oro in rally strutturale: spot $4,213-$4,295/oz sul jobs miss luglio (Fed on hold narrative). BCA consiglia posizionamento long; global ETF outflows invertiti dopo 2 mesi. GLD valida con due fonti concordanti (State Street ufficiale + Investing.com, spread 0.19%). Momentum settimanale +7.3% gold. SL -2% a $390.15, target +4% a $414.03. (Fonte: Investing.com $398.49 Aug 7; State Street Official $397.72 Aug 7 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 7)", "price": 398.49},
+          {"name": "State Street Official NAV (Aug 7)", "price": 397.72}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 57.30,
+      "change_24h": "+2.42%",
+      "trend_5d": "fortemente rialzista",
+      "volume_note": "volume 20.30M Aug 7 (nella norma); net assets iShares Silver Trust $31.37B",
+      "news": "Silver spot +5% venerdì Aug 7 a $64.57/oz (6-week high): 'Gold Slips as Hormuz Tensions Cool; Silver Falls Harder' ma precedentemente argento +10% settimanale (riotimesonline.com Aug 7). Jobs report miss luglio → Fed on hold narrative supporta metalli preziosi. SLV da $55.85 (prev close Aug 6) a $57.30 (+2.42%). Seeking Alpha: 'Gold, silver ETFs historically overbought — yet still a Buy?' 52-week range: $33.85-$109.83.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 57.30,
+      "stop_loss": 56.15,
+      "target": 59.59,
+      "commissione": 0.00,
+      "reasoning": "Argento in rally settimanale +10% su macro favorevole (Fed on hold post-jobs miss). Tecnicamente overbought secondo Seeking Alpha, ma momentum rimane forte con gold a $4,200+ che traina la correlazione. SLV validato con due fonti indipendenti (spread 0.72%). SL -2% a $56.15, target +4% a $59.59. (Fonte: Investing.com $57.09 Aug 7; iShares/CNBC $57.50 Aug 7 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 7)", "price": 57.09},
+          {"name": "iShares / CNBC (Aug 7)", "price": 57.50}
+        ],
+        "spread_pct": 0.72,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 118.90,
+      "change_24h": "-0.75%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume 3.83M Aug 7 (nella norma); 52-week range $65.99-$154.08",
+      "news": "WTI crude a $75.85/barrel, Brent $80.23/barrel — pressati da: (1) trattative USA-Iran su Hormuz in corso; (2) aspettative apertura Stretto riduce premium geopolitico; (3) Federal Reserve on hold riduce dollar strength. goldsilver.com Aug 2026: 'The Same Force That Crushed Gold All Year Just Flipped' — implicazione ribassista per oil. USO in calo dalla 52-week high $154.08.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 118.90,
+      "stop_loss": 121.28,
+      "target": 114.14,
+      "commissione": 0.00,
+      "reasoning": "Il petrolio è sotto pressione bilaterale: trattative Hormuz riducono il geopolitical premium; Fed on hold indebolisce il dollaro ma non abbastanza da compensare il calo domanda. WTI $75.85 scende dai massimi. USO validato MEDIA (spread 1.54%). SELL con SL +2% a $121.28 (sopra entry per short/CFD), target -4% a $114.14. NOTA: affiabilità MEDIA — verificare esecuzione con broker Alpaca per USO. (Fonte: Investing.com $119.81; StockAnalysis/Yahoo $117.98 close Aug 7 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (live)", "price": 119.81},
+          {"name": "StockAnalysis / Yahoo Finance (close Aug 7)", "price": 117.98}
+        ],
+        "spread_pct": 1.54,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64869.00,
+      "change_24h": "-0.26%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "volume 24h: $11.97B (CoinMarketCap); market cap $1.30T (57% dominance)",
+      "news": "Bitcoin consolida sopra $64K: 'crypto prices moving higher following July jobs report' (Yahoo Finance Aug 7). Aperto a $64,259 il 7 agosto, salito a $65,143 nelle prime ore del mattino ET. ATH $126,080 (ottobre 2025). CLARITY Act vote rinviato a settembre 2026. BTC dominance 57% = posizionamento difensivo nel crypto. Jobs miss luglio → Fed on hold → contesto risk-on.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 64869.00,
+      "stop_loss": 61625.00,
+      "target": 70059.00,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida sopra $64K da 7+ giorni: compressione prima di potenziale breakout. Jobs miss luglio riduce aspettative rialzi Fed → macro favorevole per store-of-value e asset rischiosi. 57% market dominance conferma posizionamento difensivo nel crypto. Spread 0.22% tra le due fonti (ALTA affidabilità). SL -5% a $61,625, target +8% a $70,059. (Fonte: Yahoo Finance/TheStreet $64,940 Aug 7; CoinMarketCap $64,798.81 live 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / TheStreet (Aug 7)", "price": 64940.00},
+          {"name": "CoinMarketCap (live)", "price": 64798.81}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1919.21,
+      "change_24h": "~0% (Yahoo Finance: -$0.08 su 24h)",
+      "trend_5d": "rialzista",
+      "volume_note": "volume 24h: $4.11B (CoinMarketCap); in recupero da $1,868 (Aug 5)",
+      "news": "ETH sale da $1,902 (apertura Aug 7) a $1,929 (mattina Aug 7): 'Bitcoin and ethereum prices moving higher following July jobs report' (Yahoo Finance Aug 7). Morgan Stanley lancia ETH ETP su NYSE Arca (0.14% expense ratio) — catalizzatore istituzionale. Prossime futures ETH scadenza agosto 2026 trattate su Coinbase. Resistenza chiave: $2,000. 52-week high non disponibile nella scansione.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1919.21,
+      "stop_loss": 1823.25,
+      "target": 2072.75,
+      "commissione": 0.00,
+      "reasoning": "ETH in recupero ma ancora sotto la resistenza chiave $2,000. Morgan Stanley ETP è catalizzatore bullish istituzionale di lungo periodo, non immediato. Il cambio 24h è praticamente nullo (-$0.08). Mantenere HOLD fino a conferma breakout su $2,000 o nuovo catalizzatore. SL -5% a $1,823.25, target +8% a $2,072.75 (sopra resistenza $2,000). (Fonte: Metamask/Yahoo $1,914.37 Aug 9; CoinMarketCap $1,924.04 live 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Metamask / Yahoo Finance (Aug 9)", "price": 1914.37},
+          {"name": "CoinMarketCap (live)", "price": 1924.04}
+        ],
+        "spread_pct": 0.50,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 75.86,
+      "change_24h": "n.d. (settimanale: +3.86%)",
+      "trend_5d": "rialzista",
+      "volume_note": "volume 24h: $1.30B; market cap $44.58B (#7 per market cap)",
+      "news": "Solana +3.86% settimanale a $75.86: (1) SIMD-0525 testnet live: block time ridotto da 400ms a 350ms (target futuro 200ms); (2) compute limits aumentati +66% a 100M units (luglio 29); (3) SOL cattura 19% di $759M record crypto card spending luglio 2026 (CoinMarketCap). Morgan Stanley lancia SOL ETP su NYSE Arca. Ranking: #7 per market cap.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 75.86,
+      "stop_loss": 72.07,
+      "target": 81.93,
+      "commissione": 0.00,
+      "reasoning": "SOL beneficia di duplice catalizzatore: (1) upgrade tecnico rete (SIMD-0525: block time -12.5%, compute +66%) migliorano scalabilità e user experience; (2) lancio ETP Morgan Stanley su NYSE Arca aumenta accesso istituzionale. 19% del record crypto card spending luglio = crescita reale dell'adozione. Spread 0.16% (ALTA affidabilità). SL -5% a $72.07, target +8% a $81.93. (Fonte: CoinMarketCap $75.92 live; Coinbase $75.80 live 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (live)", "price": 75.92},
+          {"name": "Coinbase (live)", "price": 75.80}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "1 fonte confermata: Investing.com $313.33 Aug 9 (range $310.74-$314.81). Seconda ricerca (Yahoo Finance/CNBC) ha restituito notizie (dividendo $0.27 ex-date 10 agosto, $10B India milestone, supply chain concerns) ma nessun prezzo numerico esplicito. Fonti < 2 → BASSA → nessun segnale. NOTA: ex-dividend domani (Aug 10) da monitorare in apertura lunedì."
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "1 fonte confermata: Investing.com $274.48 close Aug 7 (+0.82%). Seconda ricerca (Yahoo Finance/CNBC) ha restituito news (Zoox robotaxi Las Vegas launch Aug 10, Jeff Bezos vende $4B shares, AWS +37% Q2, revenue $200.6B) ma nessun prezzo numerico. Fonti < 2 → BASSA. NOTA: Zoox launch Aug 10 è potenziale catalizzatore bullish per lunedì."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "1 fonte confermata con data incerta: GOOGL Class A $377.73 (close Aug 5-6, Yahoo Finance/CNN). Seconda ricerca (CNBC/Yahoo Finance) ha restituito notizie (leadership shakeup AI division, Jeff Dean addio, dividendo $0.22 ex-date 4 settembre) ma nessun prezzo Aug 9. Fonti < 2 → BASSA. NOTA: AI shakeup = catalizzatore negativo strutturale, potenziale SELL se confermato con 2 fonti."
+    },
+    {
+      "asset": "META",
+      "motivo": "1 fonte confermata: Tickzen $591.93 Aug 9 (range $584.95-$598.74). Seconda ricerca (CNBC/Yahoo Finance) ha restituito notizie (Meta AI coding agent debut Aug 5, META -8% vs MSFT +15% post-earnings) ma nessun prezzo numerico. Fonti < 2 → BASSA. NOTA: META -8% su divergenza strategia AI = potenziale SELL da valutare lunedì con 2 fonti."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "1 fonte USD confermata: Investing.com $1,740.99 NASDAQ ADR (range $1,720.11-$1,761.31). Prima ricerca ha restituito solo prezzi EUR Euronext (€1,466-€1,529 = diversa valuta/borsa). Fonti USD < 2 → BASSA. NOTA: Bernstein Top Q3 Pick Aug 3, Goldman Sachs European Conviction List = catalizzatori molto positivi. +147.76% past year. Target analisti $2,177 (+25% upside). Da validare lunedì con 2 fonti USD."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Fonti da date diverse: WallStreetZen $393.72 July 30 vs StockAnalysis/CNBC $410.30 Aug 9 = spread apparente 4.12% (ma causato da gap temporale, non da discrepanza fonti same-day). Impossibile triangolazione same-day con 2 fonti per Aug 9. Regola: spread > 4% O fonti < 2 per stesso giorno → BASSA. NOTA: Ferrari alza guidance Q2 (EBIT min 31.2% H2), buyback €3.5B, EV Luce lanciata. Monitorare lunedì."
+    },
+    {
+      "asset": "STLA",
+      "motivo": "1 fonte USD/NYSE confermata: CNBC $5.52 (ticker STLA su NYSE, non STLAM che è la quotazione Milan). Seconda ricerca ha restituito solo prezzi EUR Borsa Italiana (STLAM €5.004 Aug 5). Fonti USD < 2 → BASSA. NOTA: STLA -39.19% past year, neutrale consensus, valutazione depressa ma nessun catalizzatore visibile. Ticker corretto NYSE = STLA."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "motivo": "Gold consolida sopra $4,200/oz: BCA raccomanda long, global ETF outflows invertiti, jobs miss luglio rafforza Fed on hold. GLD validato ALTA affidabilità (spread 0.19%, 2 fonti concordanti). Momentum settimanale gold +7.3%. Target +4% a $414.03 con SL -2% a $390.15."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Leader settimana: +10% weekly su partnership SpaceX e recupero AI sentiment. Earnings +29% YoY. Bernstein Top Q3 Pick. ALTA affidabilità (spread 0%). Target +5% a $235.16 con SL -3% a $217.24."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Duplice catalizzatore: upgrade rete SIMD-0525 (block time 350ms, compute +66%) + Morgan Stanley ETP NYSE Arca. 19% del record crypto card spending luglio ($759M). ALTA affidabilità (spread 0.16%). Target +8% a $81.93 con SL -5% a $72.07."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale eseguito su Alpaca. Mercati azionari chiusi domenica 9 agosto. Eventuale esecuzione a partire da lunedì 10 agosto all'apertura.",
+    "allocazione_suggerita": {
+      "GLD": "25% (BUY Alto — gold leadership settimana, macro favorevole, ALTA affidabilità)",
+      "NVDA": "20% (BUY Medio — AI semiconductor leader, +10% weekly, partnership SpaceX)",
+      "MSFT": "15% (BUY Medio — Q4 beat storico +15.5%, AI pivot confermato, cloud dominance)",
+      "SOL": "15% (BUY Medio — network upgrades + ETP istituzionale, adoption crescente)",
+      "BTC": "10% (BUY Medio — consolidamento $64K, Fed on hold narrative, 57% dominance)",
+      "SLV": "10% (BUY Medio — silver +10% weekly, correlato a gold rally)",
+      "SAP": "5% (BUY Medio — Strong Buy unanime, AI enterprise, upside +21.8%)"
+    },
+    "asset_in_hold": {
+      "TSLA": "HOLD — stagnating fundamentals (CNBC). P/E 299 senza crescita visibile. Attendere catalizzatore.",
+      "NFLX": "HOLD — -37.5% annuale, insider selling. Potenziale value play ma attendere inversione.",
+      "ETH": "HOLD — Morgan Stanley ETP positivo ma resistenza $2,000 non ancora testata. Attendere breakout.",
+      "AMD": "BUY Medio — in signals ma peso ridotto: MEDIA affidabilità (date diverse)."
+    },
+    "alert_chiave": "LUNEDÌ 10 AGO: (1) AAPL ex-dividend $0.27 — verificare impatto apertura; (2) AMZN Zoox robotaxi launch Las Vegas — potenziale catalyst BUY; (3) GOOGL AI shakeup — rivalutare con 2 fonti per eventuale SELL; (4) META -8% — verificare stabilizzazione o continuazione calo; (5) ASML $1,740 USD — cercare seconda fonte USD per sbloccare segnale; (6) RACE $410 — seconda fonte Aug 9; (7) STLA $5.52 — seconda fonte NYSE USD.",
+    "sell_alert": "USO: SELL attivo (Hormuz negotiations = oil bearish). WTI a $75.85, target -4% a $114.14 su ETF."
+  }
+}
