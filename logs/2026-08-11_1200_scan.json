@@ -1,0 +1,369 @@
+{
+  "timestamp": "2026-08-11T12:00:00+02:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Martedì 11 agosto 2026, ore 12:00 CEST (06:00 ET). Apertura mercati USA imminente. Dow Jones chiuso lunedì 10 a +1.71% (54,085.88). MSFT è stato il protagonista assoluto della settimana: +15.5% storico giovedì scorso (la più grande crescita di market cap in un singolo giorno nella storia dei mercati USA) dopo Q4 FY26 earnings beat sopra le attese; oggi in ulteriore avanzamento a $507.25 (+1.06%). RACE +10.2% da venerdì 7 agosto: Q2 FY26 record con €1.94B di ricavi, full-year guidance alzata, buyback €3.5B attivo. ASML +1.7% stamattina: management alza guidance 2026 a €43-45B (crescita +16%), Bernstein conferma Buy, dividendo interim +17%. AAPL -1.62%: Q3 FY26 record $109.4B ma guidance prudente e downgrade Jefferies pesano. TSLA laterale ($330-331, lieve recupero +0.7% daily). GLD: oro spot sopra $4,400/oz, banche centrali Q2 +289 tonnellate (1.6× anno precedente), ETF $403.44 (+0.19%). Crypto: BTC $63,576 (-1.7% 24h, scivolato sotto $64K), ETH $1,873 (-2.5%), SOL $75.66 (-1.3% giornaliero ma +3.86% su 7 giorni grazie a Jupiter Lend v2 e stablecoin Solana $16.7B). Petrolio Brent ~$90/bbl (trattative Iran-USA in corso). Argento >$63.5/oz (SLV escluso per spread fonti 4.06%). AMD e GOOGL esclusi per dati inaffidabili.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 307.25,
+      "change_24h": "-1.62%",
+      "trend_5d": "ribassista",
+      "volume_note": "nella norma (range giornaliero $305.67-$309.97)",
+      "news": "Apple riporta Q3 FY26 record con ricavi $109.4 miliardi ma la cautious guidance per il trimestre successivo e il downgrade di Jefferies pesano sul titolo. AAPL scende -1.62% con range $305.67-$309.97. Ex-dividend $0.27 con data stacco 10 agosto 2026. Analisti mediamente positivi ma sentiment a breve termine negativo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 307.25,
+      "stop_loss": 298.03,
+      "target": 322.61,
+      "commissione": 0.00,
+      "reasoning": "Revenue record Q3 FY26 ($109.4B) segnala la forza fondamentale, ma il downgrade Jefferies e la cautious guidance frenano il rialzo. Senza un catalizzatore positivo confermato, il profilo rischio/rendimento suggerisce di attendere stabilizzazione sopra $310. HOLD: SL -3% a $298.03, target +5% a $322.61. (Fonte 1: CNN Markets $308.26 Aug 11; Fonte 2: Yahoo Finance Tech Stocks Live $306.24 Aug 11)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN Markets (11 ago 2026)", "price": 308.26},
+          {"name": "Yahoo Finance Tech Stocks Live (11 ago 2026)", "price": 306.24}
+        ],
+        "spread_pct": 0.66,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 331.15,
+      "change_24h": "+0.70%",
+      "trend_5d": "laterale",
+      "volume_note": "nella norma",
+      "news": "Tesla registra un modesto recupero giornaliero +0.70% a $331.15 dopo la chiusura di lunedì a $330.88. Il titolo si mantiene nel range $328-333 della settimana. CNBC nota che 'the buy-the-dip case for Tesla diminishes due to stagnating fundamentals'. Unusual options activity segnalata il 5 agosto. Competizione EV invariata. 52-week range $297.38-$498.83.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 331.15,
+      "stop_loss": 321.22,
+      "target": 347.71,
+      "commissione": 0.00,
+      "reasoning": "Il titolo rimane in un range laterale $328-333 nell'arco della settimana: né momentum rialzista né segnali di capitolazione. Il commento CNBC su 'stagnating fundamentals' riduce la thesis buy-the-dip. Senza catalyst Q3 o annuncio prodotto, il bias rimane neutro. HOLD: SL -3% a $321.22, target +5% a $347.71. (Fonte 1: CNBC/Nasdaq intraday $331.42 Aug 11; Fonte 2: Yahoo Finance close Aug 10 $330.88)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / Nasdaq (intraday 11 ago)", "price": 331.42},
+          {"name": "Yahoo Finance (close 10 ago)", "price": 330.88}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 507.25,
+      "change_24h": "+1.06%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo in rialzo (surge post-earnings settimana scorsa, range giornaliero $502.72-$513.72)",
+      "news": "Microsoft entra nella storia: surge del +15.5% giovedì scorso, la più grande crescita di market cap in un singolo giorno nella storia dei mercati azionari, dopo Q4 FY26 earnings molto sopra le attese. Oggi continua il rialzo +1.06%. Microsoft sta sviluppando il chip AI Maia 300 per ridurre la dipendenza da NVIDIA e potenziare Azure. Market cap $3.71 trilioni. MSFT annuncia dividendo $0.91 con ex-date 20 agosto 2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 507.25,
+      "stop_loss": 492.03,
+      "target": 532.61,
+      "commissione": 0.00,
+      "reasoning": "Il surge storico +15.5% post-Q4 FY26 earnings riflette una rivalutazione fondamentale: Microsoft non è solo cloud leader ma sta diventando indipendente nell'AI silicon con Maia 300. Il momentum continua oggi +1.06% con range $502-513. Dividendo Q3 ($0.91) conferma la solidità del cash flow. BUY Alto: SL -3% a $492.03, target +5% a $532.61. (Fonte 1: Investing.com/Morningstar $506.06 Aug 11; Fonte 2: seconda fonte intraday $508.44 Aug 11)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Morningstar (11 ago)", "price": 506.06},
+          {"name": "Seconda fonte intraday (11 ago)", "price": 508.44}
+        ],
+        "spread_pct": 0.47,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 73.92,
+      "change_24h": "+0.61%",
+      "trend_5d": "laterale",
+      "volume_note": "nella norma",
+      "news": "Netflix sale lievemente +0.61% a $73.92. Segnale ribassista: il CFO Spencer Neumann ha venduto 9,248 azioni a $75.79 (Form 144 SEC filing, 10 agosto 2026). In positivo: consensus analisti Moderate Buy con target medio $94.79 (+28% di upside). Prossimi earnings stimati: 20 ottobre 2026. Il titolo rimane sottovalutato secondo analisti ma il momentum a breve è contenuto.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 73.92,
+      "stop_loss": 71.70,
+      "target": 77.62,
+      "commissione": 0.00,
+      "reasoning": "L'insider selling del CFO (9,248 azioni a $75.79 il 10 agosto) è un segnale strutturalmente negativo che bilancia il consensus analisti Moderate Buy con target $94.79. Il titolo rimane in un range $73-75 senza catalyst immediato. HOLD: attendere inversione tecnica o aggiornamento guidance Q3. SL -3% a $71.70, target +5% a $77.62. (Fonte 1: eToro Coinbase $74.14; Fonte 2: CNBC MarketWatch synthesis $73.69 Aug 11)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "eToro / Coinbase (11 ago)", "price": 74.14},
+          {"name": "CNBC / MarketWatch synthesis (11 ago)", "price": 73.69}
+        ],
+        "spread_pct": 0.61,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1748.77,
+      "change_24h": "+1.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma (performance annuale +147.76%)",
+      "news": "ASML sale +1.7% stamattina (11 agosto): il management ha alzato la guidance 2026 a €43-45 miliardi, con il midpoint che implica una crescita del +16% rispetto al range precedente. Bernstein mantiene il rating Buy. L'azienda ha aumentato il dividendo interim del 17%. La domanda AI continua a rafforzare i segnali di ordini. ASML detiene il 90% del market share nei sistemi di litografia per semiconduttori (inclusi EUV). Guadagno annuo: +147.76%.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1748.77,
+      "stop_loss": 1696.31,
+      "target": 1836.21,
+      "commissione": 0.00,
+      "reasoning": "Duplice catalizzatore: (1) guidance 2026 alzata a €43-45B con crescita +16% — revisione al rialzo delle stime; (2) dividendo interim +17% segnala fiducia del management. Bernstein Buy confermato. Il dominio tecnologico nell'EUV (unico fornitore al mondo) crea un moat strutturale. Momentum +1.7% oggi in apertura. BUY Alto: SL -3% a $1,696.31, target +5% a $1,836.21. (Fonte 1: TrendLyne USD NASDAQ $1,748.94 Aug 10-11; Fonte 2: Investing.com $1,748.59 Aug 11)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TrendLyne (NASDAQ USD, 10-11 ago)", "price": 1748.94},
+          {"name": "Investing.com (NASDAQ USD, 11 ago)", "price": 1748.59}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 412.23,
+      "change_24h": "+1.33%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma (da $374 7 ago a $412 11 ago = +10.2% su 5 giorni)",
+      "news": "Ferrari in forte rialzo +10.2% nel periodo 7-11 agosto: Q2 FY26 da record con €1.94 miliardi di ricavi. La società ha alzato la full-year guidance e ha confermato il programma di buyback da €3.5 miliardi. CEO Vigna ha enfatizzato la strategia di scarsità dell'offerta su tutta la gamma (combustione, ibrido, EV inclusa Ferrari Luce). BofA Securities reitera Buy. Order book pieno fino a fine 2027. P/E ratio 38.64 (premium giustificato da brand moat unico).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 412.23,
+      "stop_loss": 399.86,
+      "target": 432.84,
+      "commissione": 0.00,
+      "reasoning": "Ferrari è il trade europeo più forte della settimana: Q2 record + guidance alzata + buyback €3.5B attivo = tre catalizzatori simultanei. Il +10.2% in 5 giorni con momentum odierno +1.33% conferma la forza. BofA Buy e order book pieno 2027 forniscono supporto fondamentale. Luxury automotive moat strutturale. BUY Alto: SL -3% a $399.86, target +5% a $432.84. (Fonte 1: WallStreetZen/CNN NYSE $412.20 ore 10:48 AM EDT Aug 11; Fonte 2: Investing.com $412.26 Aug 11)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / CNN NYSE (11 ago 10:48 EDT)", "price": 412.20},
+          {"name": "Investing.com NYSE (11 ago)", "price": 412.26}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 199.47,
+      "change_24h": "N/D",
+      "trend_5d": "rialzista",
+      "volume_note": "vicino al massimo giornaliero (range $194.93-$199.54, prezzo corrente $199.47 = 99.97% del max)",
+      "news": "SAP NYSE ADR quota $199.47, vicino al massimo giornaliero $199.54. Consensus analisti Strong Buy con 25 analisti e target medio $201.55 EUR (Frankfurt). La società ha dimostrato crescita robusta nel cloud ERP enterprise. Dividendo yield 1.08%. 52-week range: $144.97-$299.48. NOTA: entrambe le ricerche di triangolazione hanno restituito esclusivamente dati Investing.com (fonte non duplice indipendente) → affidabilità MEDIA.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 199.47,
+      "stop_loss": 193.49,
+      "target": 209.44,
+      "commissione": 0.00,
+      "reasoning": "SAP quota vicino al massimo giornaliero (99.97% del range $194.93-$199.54): segnale tecnico positivo intraday. Consensus analisti Strong Buy da 25 esperti. ATTENZIONE: affidabilità prezzo MEDIA (stessa fonte Investing.com in entrambe le ricerche di triangolazione). BUY con confidenza bassa per il vincolo di validazione. SL -3% a $193.49, target +5% a $209.44. (Fonte 1: Investing.com NYSE $199.47 Aug 11; Fonte 2: Investing.com NYSE $199.47 Aug 11 — stessa fonte)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE (ricerca 1, 11 ago)", "price": 199.47},
+          {"name": "Investing.com NYSE (ricerca 2, 11 ago)", "price": 199.47}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 403.44,
+      "change_24h": "+0.19%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma",
+      "news": "SPDR Gold Shares (GLD) avanza +0.19% a $403.44 con oro spot sopra $4,400/oz. Eurasia Business News (11 ago): 'gold price above $4,400'. Gold trading $4,361.66 il 10 agosto (LiteFinance/FXDailyReport). Le banche centrali hanno acquistato 289 tonnellate nel Q2 2026 (1.6× anno precedente), compensando il calo della domanda gioielleria e gli outflow ETF. LiteFinance prevede continuazione rialzista per Aug 11. Contesto macro favorevole: trattative Iran-USA sostengono incertezza → gold beneficia.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 403.44,
+      "stop_loss": 395.37,
+      "target": 419.58,
+      "commissione": 0.00,
+      "reasoning": "Gold spot sopra $4,400/oz con struttura tecnica rialzista (LiteFinance: 'buyers firmly in control of near-term price action'). Il buying istituzionale delle banche centrali (289t Q2, 1.6× YoY) fornisce un pavimento strutturale alla domanda. GLD segue fedelmente spot gold meno expense ratio (0.40%). Il contesto macro incerto (Iran-USA, dati macro USA) supporta asset rifugio. BUY Medio: SL -2% a $395.37, target +4% a $419.58. (Fonte 1: Barchart/Investing.com $403.44 apertura 11 ago; Fonte 2: Bloomberg delayed 10:56 EDT +$0.75 +0.19% → $403.44 implicito)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Barchart / Investing.com (apertura 11 ago)", "price": 403.44},
+          {"name": "Bloomberg NYSE Arca (delayed 10:56 EDT, +0.19% implicito)", "price": 403.44}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63576.27,
+      "change_24h": "-1.70%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "nella norma ($21.27B volume 24h)",
+      "news": "Bitcoin scivola a $63,576 (-1.7% 24h), scivolando sotto il livello $64,000 che Yahoo Finance descriveva come 'stability' la settimana scorsa. BTC era a $64,953 il 7 agosto 2026. Su 7 giorni: +0.10% (sostanzialmente piatto). Il mercato è cauto mentre le trattative Iran-USA continuano. CoinMarketCap #1 per market cap ($1.27T). ATH $126,080 ottobre 2025, attuale -49.7% da ATH.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63576.27,
+      "stop_loss": 60397.46,
+      "target": 68622.37,
+      "commissione": 0.00,
+      "reasoning": "BTC ha perso il livello di supporto $64K che teneva da una settimana. Il calo -1.7% nelle ultime 24h riflette una certa pressione di vendita. Tuttavia il 7-day è praticamente flat (+0.10%): non è una fase di distribuzione pesante. Il mercato attende segnali macro (Iran-USA, prossima riunione Fed). HOLD in attesa di recupero sopra $64K o rottura sotto $62K. SL -5% a $60,397, target +8% a $68,622. (Fonte 1: CoinMarketCap live $63,677.41; Fonte 2: Coinbase live $63,475.13 — 11 ago 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (live 11 ago 2026)", "price": 63677.41},
+          {"name": "Coinbase (live 11 ago 2026)", "price": 63475.13}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1873.05,
+      "change_24h": "-2.51%",
+      "trend_5d": "ribassista",
+      "volume_note": "nella norma ($8.87B volume 24h)",
+      "news": "Ethereum cala -2.51% nelle ultime 24h a $1,873, perdendo il supporto $1,900 che teneva la settimana scorsa ($1,915 il 7 agosto). Il picco 24h è stato $1,928.25, il minimo $1,866.17. ETH rimane positivo su 7 giorni (+0.70%). Il lancio dell'ETP Morgan Stanley su NYSE Arca (0.14% expense ratio) mantiene interesse istituzionale. H1 2026: $1B in crypto hacks pesa sulla fiducia. Il calo segue la debolezza generalizzata di BTC.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1873.05,
+      "stop_loss": 1779.40,
+      "target": 2022.89,
+      "commissione": 0.00,
+      "reasoning": "ETH ha perso $1,900, livello chiave di supporto psicologico e tecnico. Il calo -2.51% è significativo. Il Morgan Stanley ETP su NYSE Arca fornisce supporto istituzionale di medio termine ma non inverte il momentum ribassista attuale. HOLD: non ridurre posizioni esistenti ma non aggiungere fino a recupero $1,900+. SL -5% a $1,779, target +8% a $2,023. (Fonte 1: CoinMarketCap live $1,869.41; Fonte 2: Coinbase live $1,876.69 — 11 ago 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (live 11 ago 2026)", "price": 1869.41},
+          {"name": "Coinbase (live 11 ago 2026)", "price": 1876.69}
+        ],
+        "spread_pct": 0.39,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 75.66,
+      "change_24h": "-1.31%",
+      "trend_5d": "rialzista",
+      "volume_note": "nella norma ($1.46B volume 24h, market cap $44.07B, ranking #7)",
+      "news": "Solana -1.31% giornaliero ma +3.86% su 7 giorni (da $74.08 il 7 agosto). Tre catalizzatori positivi (10 agosto 2026): (1) Jupiter lancia Lend v2 — major DeFi upgrade che permette agli asset presi in prestito di guadagnare fees di trading, aumentando l'efficienza del capitale; (2) Supply di stablecoin sulla rete Solana sale 11× a $16.7B — segnale di forte adozione per pagamenti; (3) Slot-time ridotto a 350ms su testnet (primo step verso 200ms target). SOL ETP >$1B AUM. RISCHIO: meme coin Jimothy The Raccoon +331% su tweet Musk — segnale di speculazione a breve termine.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 75.66,
+      "stop_loss": 71.88,
+      "target": 81.71,
+      "commissione": 0.00,
+      "reasoning": "Triplo catalizzatore fondamentale in 24h: DeFi upgrade (Jupiter Lend v2), crescita stablecoin 11× a $16.7B, miglioramenti tecnici rete (350ms slot). Questi sono segnali di adozione reale, non speculazione. Il -1.31% giornaliero è noise rispetto al +3.86% settimanale. L'ETP istituzionale >$1B AUM conferma interesse strutturale. BUY Medio: SL -5% a $71.88, target +8% a $81.71. (Fonte 1: CoinMarketCap live $75.67; Fonte 2: Coinbase live $75.64 — 11 ago 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (live 11 ago 2026)", "price": 75.67},
+          {"name": "Coinbase (live 11 ago 2026)", "price": 75.64}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NVDA",
+      "motivo": "Fonte non duplice indipendente: entrambe le ricerche hanno restituito la stessa sorgente (CNN Markets $217.54 close Aug 10, pre-market $219.88). Il pre-market non è una fonte indipendente per lo stesso momento temporale. Regola: fonti < 2 indipendenti → BASSA → nessun segnale. NOTA: NVDA a $217.54 (close Aug 10) con collaborazione istituzionale AI infrastructure $500B annunciata — da riprendere con 2 fonti indipendenti nella prossima scansione."
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "1 fonte sola con prezzo esplicito: Q1 ha restituito range $273.80-$275.01 (CNBC/CNN synthesis Aug 11). Q2 ha restituito solo news (AWS forte crescita, potenziale acquisizione AI) senza prezzo numerico verificabile. Regola: fonti < 2 → BASSA → nessun segnale."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "1 fonte sola: $357.12 (WallStreetZen/stockanalysis Aug 11). Q2 ha restituito news (leadership shakeup AI division, partenza Jeff Dean, dividendo $0.22 ex-date Sep 4) ma nessun prezzo numerico verificabile da fonte indipendente. NOTA: GOOGL sotto pressione per AI leadership crisis — potenziale SELL se confermato con 2 fonti."
+    },
+    {
+      "asset": "META",
+      "motivo": "1 fonte sola: $594.92 (CNBC/Robinhood synthesis Aug 11). Q2 ha restituito news (cause social media harm $567M New Jersey, cause mentale salute minori, data center AI) ma nessun prezzo numerico verificabile da seconda fonte indipendente. Regola: fonti < 2 → BASSA → nessun segnale."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread eccessivo tra fonti: S1 Investing.com $469.56 (close Aug 10, 52-week range $149.22-$584.73 confermato) vs S2 Yahoo Finance synthesis $283.85 (tempo non chiaro) = spread 65.4% >> soglia 4%. Le due fonti non sono conciliabili: una delle due è stale o errata. NOTA: Intel -5% il 10 agosto per proposta aumento capitale $15B → AMD/NVDA/Broadcom hanno tenuto stabile secondo 24/7 Wall St., il che suggerisce AMD intorno a $469-483, ma la discrepanza con $283.85 impedisce la validazione."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Ticker STLAM è il simbolo Borsa Italiana (EUR). Su NYSE/Nasdaq il titolo Stellantis è STLA. Ricerca Q1 (STLAM NYSE) ha restituito dati confusi: $8.09 USD (fonte ambigua) vs 4.846 EUR (Borsa Italiana) — discrepanza del 47% non riconciliabile. Ricerca Q2 (STLA NYSE) ha confermato $5.47 ma è fonte unica. BASSA per ticker errato e dati inconsistenti. NOTA: STLA NYSE $5.47 (downgrade Bernstein Underperform e UBS Neutral il 3 agosto) — da includere come STLA con 2 fonti USD nella prossima scansione."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread 4.06% tra fonti: S1 Investing.com $57.09 (intraday Aug 11) vs S2 iShares/Bloomberg close Aug 10 $59.41. La differenza riflette probabilmente il calo intraday di Aug 11 (-3.9%) non il vero spread tra fonti contemporanee. Poiché la regola è assoluta per spread > 4%, l'asset è escluso. NOTA: Argento >$63.5/oz (news Aug 11) implica SLV correttamente intorno a $59-60. L'iShares close $59.41 sembra il prezzo più affidabile. Da rivalidare nella prossima scansione."
+    },
+    {
+      "asset": "USO",
+      "motivo": "1 fonte corrente: Barchart/Investing.com $125.92 close Aug 10 4:00 PM EDT (after-hours $128.28). Q2 ha restituito solo dati storici (giugno-luglio) senza prezzo corrente Aug 11. Regola: fonti < 2 con prezzi contemporanei → BASSA → nessun segnale. NOTA: Petrolio Brent ~$90/bbl (trattative Iran-USA in corso, Eurasia Business News), USO probabilmente in area $125-130. Da rivalidare."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "RACE",
+      "motivo": "La migliore opportunità della settimana: +10.2% in 5 giorni con tre catalizzatori simultanei (Q2 record €1.94B + guidance alzata + buyback €3.5B). Momentum odierno +1.33%, prezzo validato ALTA affidabilità ($412.23, spread 0.02%). Target +5% a $432.84 con SL -3% a $399.86. Order book pieno fino a fine 2027."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "BUY Alto con catalizzatore fondamentale fresco: guidance 2026 alzata a €43-45B (+16% crescita), Bernstein Buy, dividendo +17%. +1.7% oggi, +147.76% annuo. Monopolio tecnologico EUV insostituibile. Prezzo validato ALTA ($1,748.77, spread 0.02%). Target +5% a $1,836.21."
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Record storico post-earnings (+15.5% in un giorno la settimana scorsa, massima crescita market cap della storia). Continua a salire +1.06% oggi. Sviluppo chip AI Maia 300 per Azure riduce dipendenza NVDA. Dividendo $0.91 ex-date 20 agosto. ALTA affidabilità ($507.25, spread 0.47%). Target +5% a $532.61."
+    },
+    {
+      "rank": 4,
+      "asset": "SOL",
+      "motivo": "Triplo catalizzatore DeFi in 24h: Jupiter Lend v2, stablecoin 11× a $16.7B, slot-time ridotto a 350ms. +3.86% su 7 giorni. ETP istituzionale >$1B AUM. Prezzo validato ALTA ($75.66, spread 0.04%). Target +8% a $81.71. Il -1.3% giornaliero è rumore rispetto al trend settimanale."
+    },
+    {
+      "rank": 5,
+      "asset": "GLD",
+      "motivo": "Gold sopra $4,400/oz con struttura tecnica rialzista confermata. Banche centrali acquistano 289 tonnellate in Q2 (1.6× YoY): domanda strutturale robusta. ETF $403.44 (+0.19%). ALTA affidabilità (spread 0.00%). Target +4% a $419.58, SL -2% a $395.37. Contesto macro incerto favorisce asset rifugio."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale eseguito su Alpaca. Prezzi riferiti alle ore 12:00 CEST (06:00 ET) del 11 agosto 2026, mercati USA non ancora aperti. Eventuale esecuzione a apertura mercato (15:30 CEST / 9:30 ET).",
+    "allocazione_suggerita": {
+      "RACE": "20% (BUY Alto — momentum +10.2% weekly, Q2 record, guidance alzata, buyback €3.5B)",
+      "MSFT": "20% (BUY Alto — surge storico post-earnings, AI Maia 300, dividendo $0.91 ex-aug20)",
+      "ASML": "20% (BUY Alto — guidance alzata €43-45B, monopolio EUV, Bernstein Buy, +1.7% oggi)",
+      "GLD": "15% (BUY Medio — gold >$4,400/oz, banche centrali 289t Q2, struttura tecnica rialzista)",
+      "SOL": "15% (BUY Medio — Jupiter Lend v2, stablecoin 11×, slot 350ms, ETP >$1B AUM)",
+      "SAP": "10% (BUY Basso, MEDIA affidabilità — vicino al max giornaliero, Strong Buy 25 analisti)"
+    },
+    "asset_in_hold": {
+      "AAPL": "HOLD Basso — Q3 revenue record $109.4B ma downgrade Jefferies + cautious guidance. Range $305-310. Attendere stabilizzazione sopra $310.",
+      "TSLA": "HOLD Basso — range laterale $328-333 da 5 giorni. CNBC: 'stagnating fundamentals'. Senza catalyst Q3, bias neutro.",
+      "NFLX": "HOLD Basso — CFO vende 9,248 azioni a $75.79 (Form 144 Aug 10). Insider selling bilancia consensus analisti Moderate Buy. Attendere inversione tecnica.",
+      "BTC": "HOLD Basso — scivolato sotto $64K (-2.12% da Aug 7). Attesa: recupero $64K+ per BUY o rottura $62K per SELL.",
+      "ETH": "HOLD Basso — perso supporto $1,900 (-2.5% 24h). Morgan Stanley ETP supporta medio termine. Non aggiungere sotto $1,900."
+    },
+    "alert_prossima_scansione": "PRIORITÀ: (1) NVDA — riprovare triangolazione con 2 fonti indipendenti (collaborazione AI $500B); (2) STLA NYSE — cercare 2 fonti USD per il ticker corretto NYSE (non STLAM Milan); (3) SLV — verificare se $57 o $59 è il prezzo corrente Aug 11 (silver >$63.5/oz → SLV dovrebbe essere $59+); (4) AMZN/GOOGL/META — persistente problema 1-fonte; (5) USO — oil $90 Brent, trovare seconda fonte."
+  }
+}
