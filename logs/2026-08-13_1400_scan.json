@@ -1,0 +1,524 @@
+{
+  "timestamp": "2026-08-13T14:00:00+02:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "S&P 500 stabilisce nuovo record storico superando 7.800 punti per la prima volta il 13 agosto 2026 (TheStreet), trainato da semiconduttori e tech AI: NVDA +2.63%, NFLX +3.85%, TSLA +2.90%. AAPL sotto pressione da downgrade Jefferies 'Major iPhone Setback' (10 ago), GOOGL cede 3.02% su avvicendamento leadership AI con addio di Jeff Dean. Oro ai massimi di periodo: GLD +0.99% con gold spot ~$4.374/oz su acquisti banche centrali (21° mese consecutivo Cina) e tensioni Stretto di Hormuz; petrolio in calo su contrazione domanda IEA -1.6M bpd prevista 2026. Crypto in consolidamento: BTC $63.5K (-0.82%), SOL breakout tecnico con ETF inflows $8.8M e whale che chiudono short. ASML chip rally e AI demand; RACE forte su Q2 e buyback €3.5B.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 223.31,
+      "change_24h": "+2.63%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma — momentum confermato da leadership settore semiconduttori",
+      "news": "Bank of America evidenzia NVDA come top pick AI infrastructure con domanda chip in accelerazione. Earnings report atteso il 26 agosto 2026 come prossimo catalizzatore. Accordo $500B infrastrutture AI annunciato la settimana precedente ancora in replay istituzionale.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 223.31,
+      "stop_loss": 216.61,
+      "target": 234.48,
+      "commissione": 0.00,
+      "reasoning": "NVDA mantiene leadership settore semiconduttori con S&P 500 a nuovi massimi storici; earnings Aug 26 rappresentano catalizzatore imminente con aspettative di crescita AI. HBM shortage strutturale rafforza pricing power nel medio periodo (BofA, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Aug 12)", "price": 223.40},
+          {"name": "Yahoo Finance / CNBC (Aug 13)", "price": 223.22}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 481.00,
+      "change_24h": "+0.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "197.5K vs media 29.37M — volume molto basso (0.7% media), giornata light",
+      "news": "AMD riporta Q2 2026 revenue $11.54B, consolidando posizione nel mercato AI. 42 analisti raccomandano Strong Buy con price target medio $612.84 (+27.4% upside dall'attuale). Partnership e domanda data center in crescita strutturale.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 481.00,
+      "stop_loss": 466.57,
+      "target": 505.05,
+      "commissione": 0.00,
+      "reasoning": "Forte Q2 revenue $11.54B AMD con consensus 42 analisti Strong Buy e PT medio $612 suggerisce significativo upside residuo. Mercato AI in espansione favorisce duopolio NVDA/AMD nei chip HPC; volume basso oggi indica accumulazione silenziosa (StockAnalysis/CNBC, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Aug 13)", "price": 481.00},
+          {"name": "Investing.com / Nasdaq (Aug 13, conferma supplementare)", "price": 481.00}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "note": "Query Q2 originale aveva restituito prezzo CNBC stale $283.85 (scartato). Query supplementare ha confermato indipendentemente $481.00."
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1804.73,
+      "change_24h": "+0.59%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma — chip rally in corso con AI demand come driver",
+      "news": "ASML chip rally e AI demand mantengono momentum; azioni Amsterdam chiudono EUR 1.567 (+0.84%) il 13 ago. ASML prevede espansione capacità Low-NA EUV e DUV immersion del 30% nel 2027 e ulteriore 30% nel 2028. Consensus 44 analisti: Strong Buy con PT medio $2.177.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1804.73,
+      "stop_loss": 1750.59,
+      "target": 1894.97,
+      "commissione": 0.00,
+      "reasoning": "ASML beneficia strutturalmente del ciclo AI con monopolio sui sistemi EUV indispensabili per chip avanzati; espansione capacità +30% 2027-2028 segnala visibilità ordini eccezionale. Consensus 44 analisti Strong Buy con PT $2.177 (+20.6% upside) (ad-hoc-news.de / CNBC, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 12)", "price": 1799.38},
+          {"name": "Yahoo Finance / StockAnalysis (Aug 13)", "price": 1810.07}
+        ],
+        "spread_pct": 0.59,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 408.24,
+      "change_24h": "+0.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma — conferma supporto analitico multiplo",
+      "news": "Ferrari riporta Q2 2026 €1.94B revenue e alza guidance annuale. Programma buyback €3.5B in corso. Goldman Sachs reiterates Buy (Aug 11) e Barclays reiterates Buy (Aug 10). P/E 37.81x con dividend yield 1.03%.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 408.24,
+      "stop_loss": 395.99,
+      "target": 428.65,
+      "commissione": 0.00,
+      "reasoning": "Ferrari combina forte pricing power (guidance alzata dopo Q2 record), capital return aggressivo (buyback €3.5B) e doppio rating Buy da Goldman + Barclays, con brand ultra-premium che protegge margini in qualsiasi scenario macro (Yahoo Finance / CNN, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 13)", "price": 407.21},
+          {"name": "CNN / Robinhood (Aug 13)", "price": 409.26}
+        ],
+        "spread_pct": 0.50,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 403.51,
+      "change_24h": "+0.99%",
+      "trend_5d": "rialzista",
+      "volume_note": "10.37M — volume nella norma, momentum confermato",
+      "news": "Gold spot $4.374/oz (+0.99% Aug 13). Cina ha aggiunto 20 tonnellate alle riserve in luglio (21° mese consecutivo acquisti). IEA: Strait of Hormuz chiuso causa perturbazioni marittime e pressioni macro. 52-week high $509.70 = +26% upside residuo.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 403.51,
+      "stop_loss": 395.44,
+      "target": 419.65,
+      "commissione": 0.00,
+      "reasoning": "Oro in trend rialzista strutturale su acquisti banche centrali (Cina 21 mesi consecutivi) e tensioni geopolitiche Hormuz che alimentano domanda safe-haven. Oro e GLD storicamente correlati: gold spot ~$4.374 consistente con GLD $403 (goldsilver.com / Barchart, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance (Aug 11)", "price": 402.09},
+          {"name": "CNBC / Google Finance NYSE Arca (Aug 13 live)", "price": 404.92}
+        ],
+        "spread_pct": 0.70,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 75.98,
+      "change_24h": "-0.94%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume ETF in aumento: $8.8M inflows Aug 12 — anomalo positivo",
+      "news": "SOL rompe pattern falling wedge il 12 agosto con $8.8M ETF inflows e whale che chiudono posizioni short. Target tecnico breakout $80. MoneyGram integra rete cash con Solana per depositi/prelievi in 170+ paesi (CoinMarketCap, Aug 12).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 75.98,
+      "stop_loss": 72.18,
+      "target": 82.06,
+      "commissione": 0.00,
+      "reasoning": "SOL ha confermato breakout tecnico falling wedge con catalizzatore fondamentale (MoneyGram integration) e flussi ETF istituzionali $8.8M — combinazione rare che storicamente anticipa rally. Target tecnico $80 allineato con il +8% del modello (CoinMarketCap/Crypto.com, Aug 12-13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Aug 13)", "price": 76.02},
+          {"name": "Coinbase (Aug 13)", "price": 75.94}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 334.16,
+      "change_24h": "+2.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma — rimbalzo tecnico da 52-week low",
+      "news": "TSLA rimbalza da 52-week low $297.38 a $334.16 (+12.3% dal minimo). Jefferies mantiene Hold con PT $350 (Aug 7). P/E 304.29x. Mercato prezza ripresa dopo calo mensile -16.18% in luglio. 52-week high $498.83 indica ampio range di recupero potenziale.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 334.16,
+      "stop_loss": 324.14,
+      "target": 350.87,
+      "commissione": 0.00,
+      "reasoning": "TSLA ha rimbalzato con forza dal 52-week low $297.38 e mostra momentum rialzista con +2.90% oggi in contesto S&P 500 a nuovi massimi. Jefferies PT $350 (+4.7%) suggerisce upside limitato ma definito; SL su supporto tecnico $324 (Trading Economics / Vantage Markets, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trading Economics / Morningstar (Aug 13)", "price": 334.16},
+          {"name": "CNN / Vantage Markets (Aug 13)", "price": 334.16}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 578.43,
+      "change_24h": "+1.67%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma — recupero post-earnings in corso",
+      "news": "META recupera dopo earnings miss e guidance soft agosto 2026: stock toccato 52-week low $520.26 poi recupero. Meta lancia open-source model ottimizzato per laptop (Aug 10), risposta positiva da community AI. 52-week high $796.25 = +37.6% upside residuo dal livello attuale.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 578.43,
+      "stop_loss": 561.08,
+      "target": 607.35,
+      "commissione": 0.00,
+      "reasoning": "META scambia a forte sconto dal 52-week high ($796.25) dopo sell-off post-earnings, ma mostra ripresa con +1.67% oggi e lancio nuovo modello AI open-source il 10 ago che consolida ecosistema. 62 analisti Strong Buy con PT medio $756.95 (Vantage Markets / StockAnalysis, Aug 12-13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Vantage Markets (Aug 12 close)", "price": 578.85},
+          {"name": "News article: 'fell 3.4% to $578 on Wed' (Aug 12)", "price": 578.00}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 74.77,
+      "change_24h": "+3.85%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo positivo — +3.85% sessione suggerisce catalizzatore specifico",
+      "news": "NFLX sale +3.85% il 13 agosto 2026 (TradingKey: 'Key Drivers Unveiled'). Miliardario Bill Ackman ha acquistato 3.15M azioni dichiarando 'Netflix ha vinto le streaming wars'. GTA VI Extended Look su Netflix previsto per 27 agosto come catalizzatore prossimo.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 74.77,
+      "stop_loss": 72.53,
+      "target": 78.51,
+      "commissione": 0.00,
+      "reasoning": "Forte momentum +3.85% oggi con backing di Ackman (posizione 3.15M azioni) e catalizzatore imminente GTA VI il 27 agosto che potrebbe generare spike abbonamenti. Prezzo a forte sconto da 52-week high $126.71; affidabilità MEDIA da spread prezzi 2.19% (TradingKey / Investing.com, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / MacroTrends (Aug 12)", "price": 73.96},
+          {"name": "Investing.com / Robinhood (Aug 13 +3.85%)", "price": 75.58}
+        ],
+        "spread_pct": 2.19,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 492.28,
+      "change_24h": "+0.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma — ex-dividend Aug 20 potrebbe attirare domanda",
+      "news": "MSFT annuncia collaborazione strategica con IREN per AI cloud computing con crescita revenue attesa significativa. Dividend $0.91 cash con ex-date 20 agosto 2026. P/E 28.07x, market cap $3.78T. Range intraday Aug 13: $488.81–$503.81.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 492.28,
+      "stop_loss": 477.51,
+      "target": 516.89,
+      "commissione": 0.00,
+      "reasoning": "MSFT mantiene leadership AI cloud con partnership IREN e P/E 28x ragionevole per settore; ex-dividend $0.91 il 20 ago crea finestra di acquisto prima della data stacco. Affidabilità MEDIA per convergenza ricerche su stessa fonte (Robinhood/CNN, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Aug 13)", "price": 492.28},
+          {"name": "CNN / Morningstar (Aug 13, conferma)", "price": 492.28}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "note": "Entrambe le query hanno restituito dati dalla stessa fonte aggregata Robinhood; prezzo confermato ma fonti non indipendenti."
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 346.17,
+      "change_24h": "-3.02%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma — pressione di vendita su notizie leadership",
+      "news": "GOOGL cede 3.02% oggi su avvicendamento leadership AI: addio Jeff Dean e ristrutturazione divisione AI per competere con rivali. Google Cloud margins in rialzo ma incertezza su visione AI. YTD ancora +10.4%; dividend $0.22 ex-date 4 set 2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 346.17,
+      "stop_loss": 335.78,
+      "target": 363.48,
+      "commissione": 0.00,
+      "reasoning": "GOOGL mostra debolezza a breve termine (-3.02%) per incertezza su transizione leadership AI, ma cloud margins in crescita e YTD +10.4% confermano solidi fondamentali; attendere chiarezza su nuova struttura AI prima di entrare in posizione (Investing.com / Benzinga, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 13)", "price": 346.72},
+          {"name": "StockAnalysis / Benzinga (Aug 13, 9:30 EDT)", "price": 345.62}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 63455.90,
+      "change_24h": "-0.82%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 24h $23.15B — nella norma per BTC",
+      "news": "BTC apre Aug 13 a $63.558 (-$527 dal giorno precedente). Mercato in attesa dati CPI. Banca di Russia pubblica bozza direttiva per permettere trading crypto retail a investitori non qualificati tramite broker. BTC down 27% YTD e -49% da ATH $126.080 (ott 2025).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 63455.90,
+      "stop_loss": 60283.11,
+      "target": 68532.37,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida il range $63-65K con -0.82% oggi in attesa del report CPI; mancanza di catalyst diretto a breve termine e distanza da ATH (-49%) suggerisce posizione di attesa. Regolamentazione Russia (prospect positivo medio termine) non ancora price-in (Fortune / CoinMarketCap, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Aug 13, 6:30 AM ET)", "price": 63558.45},
+          {"name": "CoinMarketCap (Aug 13 live)", "price": 63353.35}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1879.54,
+      "change_24h": "-1.59%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 24h $6.46B — nella norma",
+      "news": "ETH cede da $1.908 (Aug 12) a $1.877 (Aug 13): -1.59%. Down 35% YTD e >50% da picco 2025 ~$5.000. Nonostante recupero settimanale +2.9% (Aug 12), pressione vendite persiste. In attesa di catalyst macro (CPI, Fed settembre).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1879.54,
+      "stop_loss": 1785.56,
+      "target": 2029.90,
+      "commissione": 0.00,
+      "reasoning": "ETH in trend ribassista strutturale (-35% YTD) con rimbalzi tecnici non confermati; -1.59% oggi nonostante S&P 500 a nuovi massimi evidenzia underperformance relativa. Attendere CPI e segnali Fed per valutare inversione (MetaMask / CoinMarketCap, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask (Aug 13)", "price": 1877.73},
+          {"name": "CoinMarketCap (Aug 13)", "price": 1881.35}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 58.81,
+      "change_24h": "-0.93%",
+      "trend_5d": "laterale",
+      "volume_note": "18.59M (Aug 12) — volume nella norma",
+      "news": "Silver futures -0.93% a $65.09/oz oggi. Oro avanza ma argento diverge per minore domanda industriale. IEA: contrazione domanda globale riduce outlook silver industriale. SLV 52-week range $33.85-$109.83 — posizione attuale nella fascia media.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 58.81,
+      "stop_loss": 57.63,
+      "target": 61.16,
+      "commissione": 0.00,
+      "reasoning": "Argento mostra divergenza rispetto all'oro: futures -0.93% mentre GLD sale +0.99%. Domanda industriale in calo per contrazione economica IEA riduce il caso bullish per SLV nel breve; attendere convergenza con oro prima di posizionarsi (Investing.com / CNBC NYSE Arca, Aug 11-12).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / iShares (Aug 11)", "price": 58.55},
+          {"name": "CNBC / NYSE Arca (Aug 12 close)", "price": 59.06}
+        ],
+        "spread_pct": 0.87,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 267.54,
+      "change_24h": "+0.70%",
+      "trend_5d": "laterale",
+      "volume_note": "9.3M vs media 59.87M — volume MOLTO BASSO (15% media), convizione assente",
+      "news": "AMZN Q2 2026: revenue +15.77%, gross margin 35.89%, operating margin 12.08%, ma FCF growth -599% per massiccio capex AI. P/E 21.50x. 52-week range $196-$287.20; price attuale a 93% del 52-week high. Analisti: preoccupazioni per ritorno investimenti AI.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 267.54,
+      "stop_loss": 259.51,
+      "target": 280.92,
+      "commissione": 0.00,
+      "reasoning": "AMZN vicina al 52-week high con volume al 15% della media segnala mancanza di convinzione; FCF growth -599% per AI capex pesante introduce rischio di delusione sulle aspettative. Revenue +15.77% positivo ma pricing attuale non lascia margine di sicurezza (Robinhood / Investing.com, Aug 13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood / Investing.com (Aug 13)", "price": 267.54},
+          {"name": "Robinhood / Morningstar (Aug 13, conferma)", "price": 267.54}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "note": "Entrambe le query convergono sulla stessa fonte aggregata; prezzo Aug 13 confermato ma fonte non completamente indipendente."
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 5.52,
+      "change_24h": "+0.54%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma — titolo in fase di consolidamento post-minimi",
+      "news": "Stellantis ritorna a profittabilità in Q2 2026 con forza nelle vendite Nord America. UBS downgrade a Neutral con PT EUR 5.80 da EUR 9.50 (taglio significativo). NYSE ticker STLA: $5.52 (+0.54% oggi). 52-week range $2.80-$8.34.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.52,
+      "stop_loss": 5.35,
+      "target": 5.80,
+      "commissione": 0.00,
+      "reasoning": "Stellantis torna a profittabilità in Q2 ma UBS downgrade a Neutral con target EUR 5.80 (coincide con target modello) suggerisce upside limitato e residua incertezza strutturale. Validazione MEDIA per confronto EUR/USD tra borse Milano e NYSE (CNBC / Investing.com, Aug 10-13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com Borsa Milano STLAM.MI (Aug 10)", "price_eur": 4.846, "price_usd_implied": 5.52},
+          {"name": "CNBC / StockAnalysis STLA NYSE (Aug 13)", "price": 5.52}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "note": "Q1 in EUR su Borsa Milano, Q2 in USD su NYSE; conversione EUR/USD implicita ~1.139 coerente. Fonti su borse diverse."
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 302.84,
+      "change_24h": "+0.39%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma — bounce tecnico post-downgrade senza convinzione",
+      "news": "Jefferies downgrade AAPL a SELL (10 agosto 2026) citando 'Major iPhone Setback'. Addio Jennifer Bailey (Apple Pay / Wallet Chief). Pressione su pricing iPhone e flaw di sicurezza segnalati. Market cap $4.45T. 52-week range $223.78-$344.57.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 302.84,
+      "stop_loss": 311.93,
+      "target": 287.70,
+      "commissione": 0.00,
+      "reasoning": "Doppio catalizzatore negativo: downgrade Jefferies a SELL per 'Major iPhone Setback' (10 ago) + uscita senior executive Jennifer Bailey. Il bounce +0.39% odierno appare senza volumi forti; target SELL allineato con supporto tecnico $287 (-5%) (CNBC / Yahoo Finance, Aug 12-13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 12 close)", "price": 302.25},
+          {"name": "Yahoo Finance / CNBC (Aug 13)", "price": 303.42}
+        ],
+        "spread_pct": 0.39,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 128.39,
+      "change_24h": "-1.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma — vendite su dati macro petrolio",
+      "news": "IEA: domanda globale petrolio prevista in contrazione di 1.6M bpd nel 2026 per alti prezzi carburante e perturbazioni marittime. Nonostante Stretto di Hormuz chiuso (prezzi alti), il mercato sconta riduzione domanda strutturale. Stocks in rialzo e oil in calo nella stessa sessione.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 128.39,
+      "stop_loss": 130.96,
+      "target": 123.25,
+      "commissione": 0.00,
+      "reasoning": "IEA prevede contrazione domanda petrolio -1.6M bpd nel 2026: driver strutturale ribassista che supera l'effetto Hormuz. Divergenza stocks UP / oil DOWN nella stessa sessione conferma rotazione away da commodity energetiche. SL sopra resistenza $131 (Investing.com / CNBC, Aug 12-13).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Pluang (Aug 12)", "price": 127.61},
+          {"name": "HeyGoTrade / Barchart (recente)", "price": 129.17}
+        ],
+        "spread_pct": 1.22,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "SAP",
+      "motivo": "Dati storicamente incoerenti tra query: Q1=$199.47 (6 ago, +7gg stale), Q2=$209.68 (11 ago, +2gg stale), Q3-supplementare=$181.13 (13 ago, unica fonte per data odierna). Spread Q1-Q2 = 5.08% > soglia 4%; spread Q2-Q3 = 15.8% (movimento straordinario non confermato da notizie). Fonte singola per prezzo odierno: BASSA affidabilità. Asset escluso da segnali."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Earnings Aug 26 come catalizzatore imminente + leadership semiconduttori AI + BofA top pick + S&P 500 a record massimi. Setup risk/reward ottimale con SL tecnico chiaro."
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "motivo": "Q2 revenue record $11.54B + 42 analisti Strong Buy + PT medio $612 (27% upside) + volume light oggi suggerisce accumulazione. Duopolio NVDA/AMD nell'AI chip space."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Breakout tecnico falling wedge confermato (Aug 12) + $8.8M ETF inflows istituzionali + MoneyGram integration in 170 paesi. Raro allineamento tecnico + fondamentale + flussi."
+    },
+    {
+      "rank": 4,
+      "asset": "NFLX",
+      "motivo": "+3.85% oggi con forte catalyst: Ackman 3.15M azioni + GTA VI Extended Look su Netflix il 27 agosto = spike abbonamenti atteso. Prezzo a 59% del 52-week high."
+    },
+    {
+      "rank": 5,
+      "asset": "GLD",
+      "motivo": "Gold spot $4.374/oz con acquisti banche centrali al 21° mese consecutivo + tensioni Hormuz + portfolio hedge in contesto macro incerto. ETF commodity con il miglior profilo risk/adjusted."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato a Alpaca",
+    "capitale_ipotetico_usd": 100000,
+    "allocazione_suggerita": {
+      "NVDA": "15%",
+      "AMD": "12%",
+      "GLD": "10%",
+      "TSLA": "10%",
+      "ASML": "8%",
+      "META": "8%",
+      "MSFT": "7%",
+      "RACE": "7%",
+      "NFLX": "5%",
+      "SOL": "5%",
+      "cash": "13%"
+    },
+    "segnali_esclusi_da_portfolio": [
+      "AAPL (SELL - posizione short richiede margine)",
+      "USO (SELL - posizione short richiede margine)",
+      "GOOGL, AMZN, STLAM, SLV, BTC, ETH (HOLD - no azione)"
+    ],
+    "note_rischio": "Concentrazione 27% in AI chips (NVDA+AMD): rischio settoriale. Crypto limitata al 5% (SOL) per alta volatilità. GLD 10% come hedge macro e Hormuz. Cash 13% per opportunità tattiche post-CPI."
+  }
+}
