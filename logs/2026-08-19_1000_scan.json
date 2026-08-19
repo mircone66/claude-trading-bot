@@ -1,0 +1,509 @@
+{
+  "timestamp": "2026-08-19T10:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati sotto pressione mercoledì 19 agosto 2026: Treasury 30 anni ai massimi da quasi 20 anni, stallo USA-Iran alimenta incertezza su petrolio e risk appetite. QQQ ~716.50, SPY ~767.75 in calo. Settore tech misto: NVDA tiene supporto chiave $220 in attesa earnings 26 agosto; META cede -3.54% per processo California ($200B in gioco); AMD -3.82% da pressione tassi. Note positive: MSFT con Azure >$100B annui, AMZN con AWS $42.2B Q2. Oro in correzione tecnica (-1.5%) ma bull market strutturale confermato da acquisti record banche centrali Q2 (+74% YoY, 289 tonnellate). Oil in equilibrio fragile vicino $90 per tensioni Iran. Crypto in bear market: BTC -29%, ETH -37%, SOL -40% da gennaio; Fear&Greed Index 40 (Paura). Attesi FOMC Minutes nel pomeriggio — possibile volatilità. Ferrari e MSFT emergono come top pick per solidità fundamentale.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 317.07,
+      "change_24h": "+2.27%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume non rilevato anomalo",
+      "news": "Apple annuncia piano investimento USA da $60 miliardi con focus manifattura Mac Mini in Texas. Analisti discutono potenziale iPhone pieghevole. Dividendo $0.27 ex-date 10 agosto.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 317.07,
+      "stop_loss": 307.56,
+      "target": 332.92,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore notizia forte ($60B investimento USA) supporta momentum rialzista, titolo sale +2.27% nella sessione del 19 agosto. La 52-settimane range $223-344 indica spazio verso i massimi con target +5%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockInvest.us", "price": 310.03, "date": "2026-08-18 close"},
+          {"name": "Yahoo Finance / CNBC", "price": 317.07, "date": "2026-08-19 intraday"}
+        ],
+        "spread_pct": 2.27,
+        "affidabilita": "MEDIA",
+        "note": "Scarto riflette variazione daily (+2.27%): $310.03 chiusura Aug 18, $317.07 intraday Aug 19 — valori coerenti"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 336.49,
+      "change_24h": "+0.23%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 27.99M vs avg 30.46M — leggermente sotto media, normale",
+      "news": "Tesla market cap scesa sotto $1.5T. Titolo in range consolidamento $331-340. P/E ratio elevato a 315x riflette attese crescita future su autonomous driving e energia.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 336.49,
+      "stop_loss": 326.40,
+      "target": 353.31,
+      "commissione": 0.00,
+      "reasoning": "TSLA in trading range con momentum neutro (+0.23%), nessun catalizzatore diretto rilevato nella sessione. Attesa lateralità fino a prossimi sviluppi su Robotaxi o earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics", "price": 336.10, "date": "2026-08-18"},
+          {"name": "Investing.com / Yahoo Finance", "price": 336.87, "date": "2026-08-19"}
+        ],
+        "spread_pct": 0.23,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 219.74,
+      "change_24h": "0.00%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "volume 102.66M vs avg 110.68M — leggermente sotto media, normale",
+      "news": "NVDA al supporto chiave $220 — eventuale tenuta del pivot potrebbe spingere verso $227.25 poi $234.50 (Benzinga, 19 agosto). Earnings previsti 26 agosto 2026. Deutsche Bank alza target a $220. 58 analisti raccomandano Buy.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 219.74,
+      "stop_loss": 213.15,
+      "target": 230.73,
+      "commissione": 0.00,
+      "reasoning": "NVDA presidia supporto tecnico critico $220 con mercato in attesa degli earnings del 26 agosto — catalyst fondamentale. Consenso analisti Strong Buy con target medio $302.83 supporta la tesi rialzista di lungo periodo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / Investing.com", "price": 219.74, "date": "2026-08-19"},
+          {"name": "CNBC / Yahoo Finance", "price": 219.74, "date": "2026-08-18"}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 481.12,
+      "change_24h": "+0.32%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "Azure supera $100 miliardi di ricavi annui — pietra miliare AI/cloud. Dividendo $0.91 ex-date 20 agosto 2026. Analisti: 56 Buy, target medio $569.56 (+18.26% dall'attuale). Market cap $3.57T.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 481.12,
+      "stop_loss": 466.69,
+      "target": 505.18,
+      "commissione": 0.00,
+      "reasoning": "Milestone storica Azure >$100B annui conferma leadership AI/cloud; dividendo ex-date imminente (20 agosto) supporta domanda. Consenso analisti uniforme su Buy con upside +18% a $569 su 12 mesi (Yahoo Finance, agosto 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 481.88, "date": "2026-08-18 intraday"},
+          {"name": "Yahoo Finance", "price": 480.35, "date": "2026-08-18 prev close"}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 260.10,
+      "change_24h": "stabile",
+      "trend_5d": "ribassista dal massimo",
+      "volume_note": "volume 33.17M vs avg 34.37M — nella norma",
+      "news": "AWS Q2 revenue $42.2B (+beats StreetAccount consensus $40.54B). Amazon supera market cap $3T post-earnings (3 agosto). Espansione drone delivery verso 500 città entro fine 2026. Analisti vedono +25.6% upside.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 260.10,
+      "stop_loss": 252.30,
+      "target": 273.11,
+      "commissione": 0.00,
+      "reasoning": "Pullback -8.4% dall'ATH $284 (3 agosto) offre entry su titolo con AWS in forte crescita (+beat Q2) e momentum drone delivery. Doppia conferma prezzo $260.10 da fonti indipendenti (VantageMarkets + Nasdaq/Yahoo Finance, 19 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "VantageMarkets", "price": 260.10, "date": "2026-08-19"},
+          {"name": "Nasdaq / Yahoo Finance", "price": 260.10, "date": "2026-08-19"}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 342.25,
+      "change_24h": "-1.06%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Alphabet sotto pressione relativa (-1% dalla sessione precedente). Berkshire Hathaway aumenta quota del 83% (segnale istituzionale positivo). Cloud revenue +82% Q2. Uscita Jeff Dean da AI division pesa sul sentiment (Benzinga, 19 agosto).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 342.25,
+      "stop_loss": 331.98,
+      "target": 359.36,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi (cloud +82%, Berkshire aumenta quota) ma leadership shakeup AI division e debolezza tecnica relativa frenano momentum. Attesa chiarezza su nuova struttura AI prima di incrementare posizioni.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen", "price": 345.90, "date": "2026-08-14"},
+          {"name": "Benzinga market analysis", "price": 342.25, "date": "2026-08-19"}
+        ],
+        "spread_pct": 1.06,
+        "affidabilita": "MEDIA",
+        "note": "Prima fonte ha 5 giorni di ritardo; seconda fonte da aggregato notizie Aug 19"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 549.14,
+      "change_24h": "-3.54%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Meta affronta processo federale in California con $200 miliardi in gioco per temi sicurezza minori (agosto 2026). Il titolo è sceso da $591.91 (10 agosto) a $549.14 (-7.2% in 9 giorni). Precedente close Aug 18: $568.97.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 549.14,
+      "stop_loss": 532.67,
+      "target": 576.60,
+      "commissione": 0.00,
+      "reasoning": "Rischio legale significativo ($200B California trial) pesa sul titolo con -3.54% nella sessione. Non vendere a supporto in assenza di sentenza; attesa sviluppi legali prima di riaprire posizioni long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "VantageMarkets", "price": 549.14, "date": "2026-08-19 corrente"},
+          {"name": "Yahoo Finance (derivato da chiusura Aug 18 $568.97 × (1-3.54%))", "price": 548.83, "date": "2026-08-19 derivato"}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 77.33,
+      "change_24h": "-1.93%",
+      "trend_5d": "ribassista",
+      "volume_note": "ANOMALIA VOLUME: 589K vs avg 29.34M (-97.9%) — dati early morning o blocco contrattazioni",
+      "news": "Netflix cede -13.4% post Q2 con guidance debole e uscita Reed Hastings. Bill Ackman riacquista NFLX (13 agosto) citando vittoria nelle streaming wars — segnale contrarian. Range 52 settimane: $65.08-$126.71.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 77.33,
+      "stop_loss": 75.01,
+      "target": 81.20,
+      "commissione": 0.00,
+      "reasoning": "Titolo in downtrend marcato da massimi $126.71 ma Ackman contrarian buy e supporto $65 creano floor. Volume estremamente anomalo (589K vs avg 29M) richiede cautela — possibile dato pre-mercato parziale (Morningstar / Yahoo Finance, 19 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / Stockanalysis", "price": 78.00, "date": "2026-08-19"},
+          {"name": "Yahoo Finance / CNBC", "price": 76.65, "date": "2026-08-17-18"}
+        ],
+        "spread_pct": 1.75,
+        "affidabilita": "MEDIA",
+        "note": "Volume anomalia estrema (97.9% sotto media) — usare prezzi con cautela"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 465.90,
+      "change_24h": "-3.82%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma — pressione da aumento Treasury yields",
+      "news": "AMD scende -3.82% da $484.39 per pressione rialzo Treasury yield. Maverick Capital entra con investimento significativo (segnale istituzionale). CEO Lisa Su su compute AI Q2. Data center growth forte. Range 52wk: $149-$584.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 465.90,
+      "stop_loss": 451.92,
+      "target": 489.20,
+      "commissione": 0.00,
+      "reasoning": "Pressione di breve da macro (tassi Treasury). Ingresso istituzionale Maverick Capital e forza data center AI supportano tesi rialzista di medio periodo. Attendere stabilizzazione tassi prima di riaprire posizioni (CNBC / Yahoo Finance, 19 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 465.90, "date": "2026-08-19"},
+          {"name": "Yahoo Finance / StockAnalysis", "price": 465.90, "date": "2026-08-19"}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 207.97,
+      "change_24h": "-0.11%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "SAP ADR stabile con 13 analisti su 13 che raccomandano Buy. Target consensus $242.92 (+17% dall'attuale). Xetra Aug 19: 183.68 EUR coerente con ADR USD a tasso EUR/USD ~1.131. Earnings previsti 21 ottobre 2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 207.97,
+      "stop_loss": 201.73,
+      "target": 218.37,
+      "commissione": 0.00,
+      "reasoning": "Consenso analisti unanime (13/13 Buy, target $242.92) su solida piattaforma cloud ERP. Prezzo confermato da cross-validazione NYSE ADR $207.97 e Xetra EUR 183.68 convertito in USD $207.74 — coerenza 0.11% (Investing.com + Bloomberg, agosto 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / NYSE ADR", "price": 207.97, "date": "2026-08-17 (ultimo giorno trading NYSE)"},
+          {"name": "Xetra / Yahoo Finance EUR convertito", "price": 207.74, "date": "2026-08-19 (183.68 EUR × 1.131 USD/EUR)"}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 413.50,
+      "change_24h": "-0.26%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "Ferrari Q2 2026: ricavi €1.94 miliardi, guidance annuale alzata. Buyback da €3.5 miliardi in corso. Bank of America, Goldman Sachs, Citi, Barclays reiterano Buy con target $471.97 (agosto 2026). Range 52wk: $312-$504.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 413.50,
+      "stop_loss": 401.10,
+      "target": 434.18,
+      "commissione": 0.00,
+      "reasoning": "Q2 beat con guidance alzata e buyback €3.5B — catalizzatori multipli di solido supporto. Consenso buy coerente da 4+ case di investimento (BofA, Goldman, Citi, Barclays) con target $471.97 (+14%). Entry interessante con -18% dal massimo $504 (StockAnalysis / Yahoo Finance, 18 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Investing.com", "price": 414.55, "date": "2026-08-18 intraday"},
+          {"name": "Yahoo Finance / Morningstar", "price": 412.44, "date": "2026-08-18 chiusura"}
+        ],
+        "spread_pct": 0.51,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 401.65,
+      "change_24h": "-1.51%",
+      "trend_5d": "ribassista a breve",
+      "volume_note": "volume nella norma",
+      "news": "Oro in correzione tecnica da massimi gennaio ($5,598/oz): gold spot vicino $4,000-$4,020. Banche centrali: acquisti record Q2 2026, 289 tonnellate (+74% YoY). Analisti bullish su recupero nella seconda metà agosto. Intraday Aug 19: $397.47 (1 fonte).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 401.65,
+      "stop_loss": 393.62,
+      "target": 417.72,
+      "commissione": 0.00,
+      "reasoning": "Correzione tecnica -3.9% in 3 sessioni su trend rialzista strutturale (acquisti record banche centrali +74% YoY Q2). Analisti vedono oro 'poised to keep climbing through the back half of August' (GoldSilver.com / Investing.com, agosto 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Investing.com", "price": 399.39, "date": "2026-08-18 chiusura"},
+          {"name": "State Street SSgA ufficiale", "price": 403.90, "date": "2026-08-18"}
+        ],
+        "spread_pct": 1.12,
+        "affidabilita": "ALTA",
+        "note": "Intraday Aug 19 (1 fonte): $397.47 — trend in lieve calo confermato"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 57.63,
+      "change_24h": "-3.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume 13.48M nella norma",
+      "news": "Argento -3.26% nella sessione, oltre $55 sotto il massimo gennaio 2026 ($109/oz). Correzione da parabola rialzista 2025-inizio 2026. Analisti prevedono ripresa nella seconda metà agosto insieme all'oro.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 57.63,
+      "stop_loss": 56.48,
+      "target": 59.94,
+      "commissione": 0.00,
+      "reasoning": "Correzione profonda da massimi ma catalisi attesa nella seconda metà agosto (insieme a oro). Attendere conferma segnale rialzista prima di entrare — per ora HOLD su posizioni esistenti (iShares / Investing.com, 18 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 57.82, "date": "2026-08-18"},
+          {"name": "iShares / Yahoo Finance", "price": 57.44, "date": "2026-08-18 chiusura"}
+        ],
+        "spread_pct": 0.66,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 132.19,
+      "change_24h": "+1.17%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume 10-day avg 5.42M nella norma",
+      "news": "Petrolio in 'equilibrio instabile vicino $90' per stallo USA-Iran. Titoli in calo nella sessione per fading speranze risoluzione conflitto Iran. Range 52wk: $65.99-$154.08 (max maggio 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 132.19,
+      "stop_loss": 129.55,
+      "target": 137.48,
+      "commissione": 0.00,
+      "reasoning": "USO +1.17% supportato da tensioni geopolitiche USA-Iran che tengono premium risk. Ma incertezza su risoluzione del conflitto e correlazione con equity in calo rendono la posizione rischiosa nel breve (CNBC / Barchart, 19 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Pluang / Kraken", "price": 132.77, "date": "2026-08-19"},
+          {"name": "Barchart open price", "price": 131.61, "date": "2026-08-19 apertura"}
+        ],
+        "spread_pct": 0.88,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64306.38,
+      "change_24h": "+0.39%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "volume 24h $18.4B — nella norma per BTC",
+      "news": "BTC rimbalza da minimo $62,679 verso $64,722 ma rimane in bear market (-29% da gennaio). SEC propone framework regolatorio 'Regulation Crypto Assets' — positivo long term. Fear&Greed Index: 40 (Paura).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 64306.38,
+      "stop_loss": 61090.70,
+      "target": 69450.49,
+      "commissione": 0.00,
+      "reasoning": "BTC in bear market confermato (-29% da gennaio), rimbalzo tecnico da supporto $62,679 non ancora confermato. Framework SEC positivo ma incertezza macro (tassi, Iran) e Fear&Greed a 40 sconsigliano nuovi ingressi ora (Fortune / CoinMarketCap, 19 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune.com", "price": 64339.33, "date": "2026-08-19 06:30 ET"},
+          {"name": "CoinMarketCap", "price": 64273.42, "date": "2026-08-19"}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1904.27,
+      "change_24h": "+1.90%",
+      "trend_5d": "laterale con leggero rimbalzo",
+      "volume_note": "volume 24h $6.9B — nella norma",
+      "news": "ETH apre Aug 18 a $1,911.89 (+2% da lunedì). Analisti osservano resistenza $1,900 e livello psicologico $2,000 come prossimo target. Bear market: -37% da gennaio. Iran stalemate mantiene mercato sotto pressione.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1904.27,
+      "stop_loss": 1809.06,
+      "target": 2056.61,
+      "commissione": 0.00,
+      "reasoning": "ETH testa resistenza $1,900 con rimbalzo debole. Bear market strutturale (-37%) e contesto macro avverso (Treasury yields, Iran) non supportano posizioni long aggressive. Monitorare break $2,000 per segnale rialzista (CoinMarketCap / Yahoo Finance, 18-19 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Metamask", "price": 1895.85, "date": "2026-08-18 06:45 ET"},
+          {"name": "CoinMarketCap", "price": 1912.69, "date": "2026-08-19"}
+        ],
+        "spread_pct": 0.88,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 76.93,
+      "change_24h": "+3.00%",
+      "trend_5d": "rialzista (+ 8.3% in 7 giorni)",
+      "volume_note": "volume 24h $1.45B — nella norma",
+      "news": "SOL outperforms BTC/ETH: +3% in 24h, +8.3% in 7 giorni. Upgrade testnet (6 agosto): blocchi ridotti da 400ms a 350ms. MoneyGram integra rete cash su Solana (12 agosto): 170 paesi. Bear market: -40% da gennaio.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 76.93,
+      "stop_loss": 73.08,
+      "target": 83.08,
+      "commissione": 0.00,
+      "reasoning": "SOL mostra forza relativa vs BTC/ETH con catalizzatori concreti (MoneyGram, speed upgrade). Trend 7gg +8.3% positivo ma contesto bear market generale (-40%) e Fear&Greed 40 mantengono la raccomandazione su HOLD in attesa di conferma inversione di tendenza (CoinMarketCap / Coinbase, 19 agosto).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase / Robinhood", "price": 76.97, "date": "2026-08-19"},
+          {"name": "CoinMarketCap", "price": 76.88, "date": "2026-08-19"}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "ASML",
+      "motivo": "Solo 1 fonte confermata per prezzo corrente Aug 18-19 ($1,792.87 da Investing.com). La seconda fonte (CNBC/Yahoo) conferma Aug 17 close $1,883.12 ma non il prezzo intraday Aug 18. Spread apparente tra sessioni: 4.91% > soglia 4%. No BUY/SELL generato.",
+      "prezzo_disponibile": 1792.87,
+      "fonte_unica": "Investing.com 2026-08-18"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Ticker STLAM è la quotazione Milan (EUR). Su NYSE il ticker Stellantis è STLA. Spread tra fonti STLA August 2026: $5.66 (StockAnalysis, data incerta) vs $5.09 (CNBC/Robinhood, Aug 18) = 10.6% > soglia 4%. Dati insufficienti per segnale affidabile.",
+      "prezzo_disponibile": 5.09,
+      "ticker_corretto_nyse": "STLA",
+      "note": "Dati STLA NYSE disponibili ma spread eccessivo tra fonti"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "RACE",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "motivo": "Ferrari Q2 beat + guidance alzata + buyback €3.5B + consenso buy unanime (BofA, Goldman, Citi, Barclays) con target $471.97 (+14%). Entry ottimale su correzione da massimi $504."
+    },
+    {
+      "rank": 2,
+      "asset": "MSFT",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "motivo": "Azure supera $100B annui — milestone storica AI/cloud. Dividendo $0.91 ex-date 20 agosto. 56 analisti raccomandano Buy con target medio $569.56 (+18.26%). Fondamentale solido in mercato volatile."
+    },
+    {
+      "rank": 3,
+      "asset": "AMZN",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "motivo": "AWS Q2 $42.2B (+beat +4.1%). Titolo -8.4% dall'ATH $284 offre entry favorevole. Analisti vedono +25.6% upside. Prezzo validato con scarto 0.00% da due fonti indipendenti."
+    },
+    {
+      "rank": 4,
+      "asset": "AAPL",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "motivo": "Catalizzatore notizia $60B investimento USA + momentum +2.27% oggi. Dividendo $0.27 ex-date 10 agosto. Titolo a $317 vs 52wk high $344 — spazio rialzista."
+    },
+    {
+      "rank": 5,
+      "asset": "GLD",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "motivo": "Correzione tecnica -3.9% su trend bull strutturale. Banche centrali: acquisti record Q2 (+74% YoY, 289t). Analisti bullish fine agosto. Hedge naturale contro volatilità tassi e geopolitica Iran."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato su Alpaca",
+    "capitale_simulato": 10000,
+    "allocazione_suggerita": {
+      "MSFT": {"pct": 25, "usd": 2500, "motivo": "BUY Alto confidence, fondamentale solido"},
+      "RACE": {"pct": 20, "usd": 2000, "motivo": "BUY Alto confidence, Q2 beat + buyback"},
+      "AMZN": {"pct": 20, "usd": 2000, "motivo": "BUY Medio confidence, AWS forte"},
+      "AAPL": {"pct": 15, "usd": 1500, "motivo": "BUY Medio confidence, catalizzatore news"},
+      "GLD": {"pct": 10, "usd": 1000, "motivo": "BUY Medio confidence, hedge inflazione/geopolitica"},
+      "SAP": {"pct": 10, "usd": 1000, "motivo": "BUY Medio confidence, consenso analisti unanime"}
+    },
+    "assets_hold_in_portafoglio": ["TSLA", "NVDA", "NFLX", "AMD", "META", "GOOGL", "SLV", "USO", "BTC", "ETH", "SOL"],
+    "assets_esclusi": ["ASML", "STLAM"]
+  }
+}
