@@ -1,0 +1,502 @@
+{
+  "timestamp": "2026-08-22T18:00:00+00:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta del 22 agosto 2026 dominata dal rally di oro e argento (+1.95% GLD, +1.72% SLV) sull'annuncio del Tesoro USA di raddoppiare i riacquisti di bond a lungo termine, che ha indebolito il dollaro. TSLA in forte rialzo +5.14% dopo l'approvazione del Nevada per 5.000 veicoli autonomi. MSFT consolida a $483 dopo il record di +15.5% giovedì 20 agosto (beat EPS Q4). Crypto in rally: BTC +4.4% a $77.500, ETH +5.5% grazie al Clarity Act promosso da Trump. NVDA attende earnings il 26 agosto. META debole a $545, -8% dai massimi per preoccupazioni su antitrust ($1.4T trial) e cambi di leadership AI. SOL escluso per spread eccessivo tra fonti (10%).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 309.52,
+      "change_24h": "-0.63%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale (46.88M vs media 42.25M, +10.9%)",
+      "news": "Apple espande la produzione in Texas e continua le discussioni sull'iPhone pieghevole. Nessun catalizzatore urgente questa settimana.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 309.52,
+      "stop_loss": 300.23,
+      "target": 324.99,
+      "commissione": 0.00,
+      "reasoning": "AAPL trading laterale tra $307-$312, lieve calo -0.63% senza notizie significative. Aspettare breakout del range o ingresso sotto $305 per opportunità (fonte: CNBC/Yahoo Finance Aug 21-22).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen/General (Aug 22 live)", "price": 309.69},
+          {"name": "Yahoo Finance/CNBC (Aug 21 close)", "price": 309.35}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 362.86,
+      "change_24h": "+5.14%",
+      "trend_5d": "rialzista",
+      "volume_note": "Anomalo alto (forte movimento da catalizzatore regolatorio)",
+      "news": "Nevada approva flotta Tesla di 5.000 veicoli completamente autonomi (Aug 21). Primo passo verso commercializzazione su larga scala di FSD senza supervisore umano.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 362.86,
+      "stop_loss": 351.97,
+      "target": 380.99,
+      "commissione": 0.00,
+      "reasoning": "Il via libera del Nevada per 5.000 robotaxi è un catalizzatore regolatorio storico per Tesla. Rialzo +5.14% con momentum rialzista. Range 52w: $297-$498, spazio di salita verso il target (fonte: StockInvest/Yahoo Finance Aug 21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockInvest (Aug 21 close)", "price": 362.86},
+          {"name": "Yahoo Finance/CNBC (Aug 21 close)", "price": 362.86}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 215.05,
+      "change_24h": "-0.98%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Jensen Huang difende l'AI open-source. Earnings NVDA attesi il 26 agosto 2026. BMO mantiene NVDA come 'Top AI Pick'. Incertezza pre-earnings.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 215.05,
+      "stop_loss": 208.60,
+      "target": 225.80,
+      "commissione": 0.00,
+      "reasoning": "NVDA -0.98% oggi con earnings il 26 agosto che creano incertezza. Range 52w: $164-$236. Meglio attendere post-earnings per confermare direzione. Market cap $5.25T (fonte: Tickzen/CNBC Aug 21-22).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen (Aug 22 live)", "price": 214.72},
+          {"name": "CNBC/Yahoo Finance (Aug 21 AH)", "price": 215.38}
+        ],
+        "spread_pct": 0.31,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 483.25,
+      "change_24h": "+0.00%",
+      "trend_5d": "rialzista forte",
+      "volume_note": "Anomalo alto (giovedì 20 agosto: record storico +15.5%)",
+      "news": "Microsoft +15.5% giovedì 20 agosto: la più grande variazione di market value singolo giorno nella storia del mercato azionario, dopo Q4 earnings che hanno battuto le stime. Cash dividend $0.91 ex-date 20 agosto.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 483.25,
+      "stop_loss": 468.75,
+      "target": 507.41,
+      "commissione": 0.00,
+      "reasoning": "MSFT consolida dopo record assoluto +15.5% giovedì su beat EPS Q4. Momentum post-earnings storicamente positivo. P/E 26.81 ragionevole per crescita AI/cloud (fonte: MacroTrends/Yahoo Finance Aug 21-22).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/General (Aug 22 range)", "price": 483.25},
+          {"name": "Yahoo Finance (Aug 21 close)", "price": 483.24}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 258.63,
+      "change_24h": "-0.57%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale",
+      "news": "Amazon Q2 2026 batte stime: ricavi $200.6B, EPS $5.75, AWS +37%, capex $220B. Market cap supera $3 trilioni. Servizio drone verso 500 città nel 2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 258.63,
+      "stop_loss": 250.87,
+      "target": 271.56,
+      "commissione": 0.00,
+      "reasoning": "AMZN -0.57% oggi è un'opportunità di ritracciamento dopo Q2 record: AWS +37%, EPS $5.75. Crescita EPS +89.48% YoY indica fondamentali eccezionali. Ingresso su debolezza intraday (fonte: CNBC/Yahoo Finance Aug 21-22).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase Stocks/General (Aug 21 close)", "price": 258.63},
+          {"name": "Yahoo Finance/CNBC (Aug 21 AH +$0.92)", "price": 259.55}
+        ],
+        "spread_pct": 0.36,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 344.82,
+      "change_24h": "+1.22%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Alphabet +1.22% oggi. Partnership con Marvell per chip (warrant 58.97M azioni, valore $12.2B). Dirigenti chiave AI (tra cui Jeff Dean) lasciano. Aumento spesa AI 2026-2027. Cash dividend $0.22 ex-date 4 settembre.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 344.82,
+      "stop_loss": 334.47,
+      "target": 362.06,
+      "commissione": 0.00,
+      "reasoning": "GOOGL bilanciato tra rialzo chip (Marvell) e preoccupazioni leadership AI. Il mercato ha reagito negativamente alla perdita di figure chiave AI nonostante Q2 solido. Attendere stabilizzazione (fonte: CNBC/Yahoo Finance Aug 21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Aug 21 close)", "price": 344.82},
+          {"name": "Yahoo Finance (Aug 21)", "price": 344.82}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 545.84,
+      "change_24h": "-0.06%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "META in calo da $591 il 17 agosto a $545 per earnings miss, guidance debole, spesa AI pesante e processo antitrust da $1.4 trilioni in arrivo. RSI a 35 (territorio ipervenduto). Bernstein mantiene 'Still Attractive'.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 545.84,
+      "stop_loss": 529.47,
+      "target": 573.13,
+      "commissione": 0.00,
+      "reasoning": "META ipervenduta (RSI 35) dopo calo -8% da $591. Supporto a $539-545. Il rischio legale ($1.4T trial) limita upside. Attendere stabilizzazione o rottura del supporto prima di agire (fonte: Vantage Markets/Yahoo Finance Aug 20-21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Vantage Markets (Aug 20 close)", "price": 546.01},
+          {"name": "Yahoo Finance/CNBC (Aug 21 close)", "price": 545.67}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 80.14,
+      "change_24h": "+3.15%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale (prezzo con 2 giorni di latenza)",
+      "news": "Bill Ackman riacquista NFLX ad agosto 2026, 4 anni dopo la precedente uscita, affermando 'Netflix ha vinto le streaming wars'. NFLX +17.06% nell'ultimo mese. Ricavi pubblicitari proiettati a $3B nel 2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 80.14,
+      "stop_loss": 77.74,
+      "target": 84.15,
+      "commissione": 0.00,
+      "reasoning": "Ackman che rientra è un segnale bullish da investitore di riferimento. Trend mensile +17%, streaming wars vinte. Prezzo probabilmente da aggiornare (dato Aug 20, 2 giorni fa) prima dell'ingresso (fonte: JournalArta/Yahoo Finance Aug 20).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "JournalArta (Aug 20 close)", "price": 80.14},
+          {"name": "Yahoo Finance/CNBC (Aug 20)", "price": 80.14}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzo con 2 giorni di latenza (Aug 20). Verificare prezzo attuale prima dell'esecuzione."
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 472.88,
+      "change_24h": "-0.16%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "AMD Q2 2026: ricavi $11.54B (+50% YoY), EPS $1.66 batte stime. CEO Lisa Su difende AI open-source. AMD acquista startup di chip AI che 'hardwires' modelli direttamente nel silicio.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 472.88,
+      "stop_loss": 458.69,
+      "target": 496.52,
+      "commissione": 0.00,
+      "reasoning": "AMD con Q2 eccezionale (+50% revenue YoY) trading 18% sotto l'ATH di $580 (giugno 2026). Acquisizione strategica di startup AI amplia il moat. Ottimo punto di ingresso su ritracciamento (fonte: Yahoo Finance/MacroTrends Aug 21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/Yahoo Finance (Aug 21 close)", "price": 473.25},
+          {"name": "Investing.com (Aug 21 intraday)", "price": 472.50}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1750.87,
+      "change_24h": "-0.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "ASML Q2: $10.64B ricavi, EPS $8.65 (vs $8.01 atteso). Outlook secondo semestre richiede crescita 38-49% vs primo semestre. Dividend +17% interim. 44 analisti: Strong Buy, target medio $2.195.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1750.87,
+      "stop_loss": 1698.34,
+      "target": 1838.41,
+      "commissione": 0.00,
+      "reasoning": "ASML scesa da $1.844 (14 agosto) a $1.751 (-5% in 6 giorni) nonostante Q2 beat. Pullback tecnico su stock fondamentalmente forte con 44 analisti Strong Buy. Ingresso su debolezza (fonte: Investing.com Nasdaq / cross-check EUR Aug 20-21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com Nasdaq USD (Aug 20)", "price": 1751.73},
+          {"name": "CNBC/Euronext EUR 1508 x 1.16 FX (Aug 21)", "price": 1749.28}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 216.91,
+      "change_24h": "+3.67%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale (dato con 3 giorni di latenza)",
+      "news": "SAP in trend rialzista: da $207.97 (Aug 17) a $215.60 (Aug 19) +3.67%. Consensus analisti: Buy con target $242.92 (+12%). Earnings Q3 attesi il 21 ottobre 2026.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 216.91,
+      "stop_loss": 210.40,
+      "target": 227.76,
+      "commissione": 0.00,
+      "reasoning": "SAP NYSE in salita con consensus Buy e target $242 (+12%). Cross-check EUR/USD: Frankfurt EUR 188.12 = ~$218.22 (spread 1.21%). Dato NYSE più recente è del 19 agosto (3 giorni fa): verificare aggiornamento prezzo (fonte: Investing.com NYSE Aug 17-19).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE USD (Aug 19)", "price": 215.60},
+          {"name": "Investing.com Frankfurt EUR 188.12 x 1.16 FX (Aug 21)", "price": 218.22}
+        ],
+        "spread_pct": 1.21,
+        "affidabilita": "ALTA",
+        "nota": "Prezzo NYSE con 3 giorni di latenza. Cross-check con Frankfurt EUR coerente (spread 1.21%)."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 433.26,
+      "change_24h": "+0.20%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Ferrari Q2 2026: ricavi €1.94B, guidance annuale alzata, buyback da €3.5B. Prima EV 'Ferrari Luce' presentata ma gli investitori delusi dall'esterno (-8% nel giorno dell'unveiling). RACE consolida dopo calo da $504 ATH.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 433.26,
+      "stop_loss": 420.26,
+      "target": 454.92,
+      "commissione": 0.00,
+      "reasoning": "RACE laterale a $432-435, -14% dall'ATH $504. Fondamentali eccellenti (guidance alzata, maxi buyback) controbilanciati dalla delusione EV. Attendere rottura del range o ingresso su correzzione verso $420 (fonte: Investing.com/CNBC Aug 21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE (Aug 21)", "price": 433.26},
+          {"name": "CNBC/Yahoo Finance (Aug 21)", "price": 433.26}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 423.23,
+      "change_24h": "+1.95%",
+      "trend_5d": "rialzista forte",
+      "volume_note": "Anomalo alto (5a settimana consecutiva di rialzi, +5% settimanale)",
+      "news": "Il Tesoro USA raddoppia i riacquisti di bond a 10-30 anni: dollaro in calo, rendimenti in ribasso, oro ai massimi di 3 mesi. GLD +5% questa settimana, 5a settimana rialzista di fila. Domanda strutturale asiatica in crescita. Futures dicembre oro: $4.569/oz.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 423.23,
+      "stop_loss": 414.77,
+      "target": 440.16,
+      "commissione": 0.00,
+      "reasoning": "GLD con catalizzatore fondamentale (Tesoro USA, dollaro debole) + domanda strutturale asiatica + 5a settimana consecutiva di rialzi. Momentum forte senza segni di esaurimento. SL su perdita del supporto a $415 (fonte: StockAnalysis Aug 22 / MacroTrends Aug 21 close).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/Robinhood (Aug 22 live)", "price": 423.09},
+          {"name": "MacroTrends/Yahoo Finance (Aug 21 close)", "price": 423.36}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 62.80,
+      "change_24h": "+1.72%",
+      "trend_5d": "rialzista forte",
+      "volume_note": "Anomalo alto (+7% settimanale, argento spot $65.9/oz)",
+      "news": "Argento +7%+ questa settimana seguendo l'oro. Spot silver a $65.9/oz. Catalizzatori condivisi con oro: Tesoro USA, dollaro debole. Gold/silver ratio in compressione (bullish per argento). Historically overbought ma analisti bullish.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 62.80,
+      "stop_loss": 61.54,
+      "target": 65.31,
+      "commissione": 0.00,
+      "reasoning": "SLV segue GLD con momentum ancora più forte (+7% settimanale vs +5% oro). Compressione ratio gold/silver è tipicamente bullish per argento in rally prolungati. Range 52w: $34-109, ampio spazio di upside (fonte: Investing.com/Barchart Aug 21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 21 close)", "price": 62.88},
+          {"name": "Barchart/CNBC (Aug 21/22 live)", "price": 62.72}
+        ],
+        "spread_pct": 0.25,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 134.59,
+      "change_24h": "+0.07%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale",
+      "news": "Brent crude a $93/barile (massimo dal 24 luglio), secondo rialzo settimanale consecutivo. Sanzioni USA all'Iran minacciano forniture attraverso Stretto di Hormuz. USO +14% dal segnale Buy dell'7 agosto.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 134.59,
+      "stop_loss": 131.90,
+      "target": 139.97,
+      "commissione": 0.00,
+      "reasoning": "USO +14% dal 7 agosto è già esteso. Il rischio geopolitico Iran è noto e probabilmente prezzato. Con Brent a $93 (vs range 52w $66-154) il momentum è positivo ma la cautela è opportuna. Attendere ritracciamento verso $128-130 per ingresso (fonte: Investing.com/Barchart Aug 20-21).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/StockAnalysis (Aug 20)", "price": 134.54},
+          {"name": "CNBC/Barchart (Aug 21 close)", "price": 134.64}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 77500.36,
+      "change_24h": "+4.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "Anomalo alto (volume 24h: $172.7B, market cap crypto +6% in 24h)",
+      "news": "Doppio catalizzatore: 1) Tesoro USA raddoppia riacquisti bond → dollaro debole → crypto rally. 2) Trump spinge per Clarity Act che regolamenta crypto come securities o commodities. BTC dominance 57.3%, global crypto market cap $2.73T.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 77500.36,
+      "stop_loss": 73625.34,
+      "target": 83700.39,
+      "commissione": 0.00,
+      "reasoning": "BTC +4.4% con dual catalyst (Tesoro + regolamentazione favorevole). Volume anomalo alto conferma il segnale. Range sopra $73K indica supporto tecnico valido. Target +8% coerente con momentum. SL -5% su perdita $73.600 (fonte: Yahoo Finance/CoinGabbar Aug 22).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/Fortune (Aug 22, 12:42 EDT)", "price": 76976.30},
+          {"name": "CoinGabbar News (Aug 22)", "price": 78024.41}
+        ],
+        "spread_pct": 1.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2417.47,
+      "change_24h": "+5.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "Anomalo alto (volume 24h: $13.58B, ETH dominance 11.1%)",
+      "news": "Ethereum rally da $2.251 (20 agosto open) a $2.425 (+7.7% in 2 giorni) su Clarity Act e Tesoro USA. ETH rallies con BTC in correlazione positiva. DeFi +7.8% nelle ultime 24h.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2417.47,
+      "stop_loss": 2296.60,
+      "target": 2610.87,
+      "commissione": 0.00,
+      "reasoning": "ETH beneficia degli stessi catalisti di BTC (Clarity Act, dollaro debole) con momentum potenzialmente superiore (+5.5% vs +4.4% BTC). DeFi in forte crescita (+7.8%). Risk/reward 1:1.6 con SL a $2.296 e target $2.610 (fonte: Yahoo Finance/Changelly Aug 22).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/Fortune (Aug 22)", "price": 2425.44},
+          {"name": "Changelly/CoinDesk estimate (Aug 22)", "price": 2409.49}
+        ],
+        "spread_pct": 0.66,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM",
+      "motivo": "Fonte unica confermata (Investing.com BIT: EUR 4.640). STLAM è quotata su Borsa Italiana (Milano) non su NYSE/Nasdaq. Il ticker NYSE per Stellantis è STLA. Dati con 3 giorni di latenza (Aug 19). Insufficiente triangolazione per segnale affidabile.",
+      "price_found": 4.640,
+      "currency": "EUR",
+      "exchange": "BIT (Borsa Italiana)",
+      "note": "Il task specifica STLAM ma il ticker NYSE di Stellantis è STLA. Per il ticker corretto USA, eseguire ricerche su STLA."
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread tra fonti 10.03% (CoinGabbar: $91.64, Coinbase: $101.32) superiore alla soglia del 4%. Alta volatilità intraday: range 24h $89.77-$102.37. Impossibile determinare prezzo affidabile per segnale operativo.",
+      "prices_found": [91.64, 101.32],
+      "spread_pct": 10.03
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "motivo": "Catalizzatore macroeconomico forte (Tesoro USA raddoppia buyback bond), 5a settimana rialzista consecutiva (+5% settimanale), domanda strutturale asiatica. Confidenza Alta."
+    },
+    {
+      "rank": 2,
+      "asset": "TSLA",
+      "motivo": "Nevada approva 5.000 veicoli autonomi: catalizzatore regolatorio storico per il business robotaxi. +5.14% con momentum confermato da volume anomalo."
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Post-earnings momentum dopo record storico +15.5% giovedì 20 agosto (Q4 EPS beat). Consolidamento sano a $483 prima di possibile nuovo impulso."
+    },
+    {
+      "rank": 4,
+      "asset": "SLV",
+      "motivo": "Argento +7% settimanale con momentum superiore all'oro, catalizzatori condivisi. Gold/silver ratio in compressione storicamente bullish per SLV."
+    },
+    {
+      "rank": 5,
+      "asset": "BTC",
+      "motivo": "Doppio catalizzatore: dollaro debole (Tesoro USA) + Clarity Act crypto regulation. Volume $172.7B in 24h conferma forza del movimento. +4.4% con upside target $83.700."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "capitale_ipotetico": 100000,
+    "allocazione_suggerita": {
+      "GLD": "20% ($20.000) - ETF commodity bullish",
+      "SLV": "10% ($10.000) - ETF commodity momentum",
+      "MSFT": "15% ($15.000) - large cap post-earnings",
+      "TSLA": "10% ($10.000) - catalizzatore regolatorio",
+      "AMZN": "10% ($10.000) - Q2 beat, momentum",
+      "BTC": "10% ($10.000) - crypto catalyst",
+      "ETH": "5% ($5.000) - crypto DeFi",
+      "AMD": "10% ($10.000) - AI chips, Q2 +50% YoY",
+      "ASML": "5% ($5.000) - pullback su stock fondamentale",
+      "CASH": "5% ($5.000) - riserva"
+    },
+    "asset_esclusi_dal_portfolio": ["STLAM", "SOL"],
+    "asset_in_hold": ["AAPL", "NVDA", "GOOGL", "META", "RACE", "USO"]
+  }
+}
