@@ -1,0 +1,488 @@
+{
+  "timestamp": "2026-08-24T13:00:00+00:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Lunedì 24 agosto 2026. Mercati aperti. Nasdaq cede -0.69% in apertura: tech-selloff guidato da AMD -3.33% e NVDA -0.99% in attesa degli earnings NVDA (mercoledì 26 agosto). Dow Jones +0.15% supportato da blue chip e defensivi. Iran sanctions + war premium spingono safe-haven: gold futures Dic a $4.673, oro spot in rialzo per terza settimana consecutiva. Crypto in rally esplosivo: BTC +23.53% settimanale, trainato da ETF inflows, short covering e Trump Clarity Act. Silver +2.09% intraday. META affronta trial da $1.4T (23 stati vs algoritmi); titolo rimbalza +0.22% ma rimane debole post-earnings miss. MSFT ex-dividend $0.91 (20 ago), avanzo modesto +0.16%. ASML: bookings record €13.2B in Q2 (doppio delle stime), H2 sales +38-49%. NVDA earnings evento macro-chiave.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 309.35,
+      "change_24h": "+0.71%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Apple +0.71% in controtendenza rispetto al sell-off tech. Transizione CEO (John Ternus subentrerà a Tim Cook il 1° settembre 2026) continua a pesare sul sentiment. Analyst avg PT $324.45. Prossimi earnings: 29 ottobre 2026. (fonte: Investing.com/Tickzen, Schwab market update Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 309.35,
+      "stop_loss": 300.07,
+      "target": 324.82,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica per triangolazione: BASSA affidabilità, nessun segnale direzionale generato. Incertezza CEO transition a breve termine; monitorare conferma secondaria del prezzo.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Tickzen (Aug 23, 2026)", "price": 309.35}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Solo 1 fonte numerica disponibile — seconda query non ha restituito prezzo esplicito"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 356.12,
+      "change_24h": "-2.44%",
+      "trend_5d": "laterale",
+      "volume_note": "sotto media: 21.56M vs avg 33.8M (-36%)",
+      "news": "TSLA -2.44% oggi dopo rally +5.14% venerdì 21/08. Take-profit post-Nevada robotaxi approval. Volume sotto media. P/E 337, market cap $1.41T. 52w range $297-$499. (fonte: Investing.com/Robinhood, CNBC Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 356.12,
+      "stop_loss": 345.44,
+      "target": 373.93,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica: BASSA affidabilità. Correzione post-spike attesa; attendere stabilizzazione del prezzo e conferma da seconda fonte.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Robinhood (Aug 24, 2026)", "price": 356.12}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Solo 1 fonte numerica — seconda query ha confermato trend ribassista intraday senza prezzo esplicito"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 212.48,
+      "change_24h": "-0.99%",
+      "trend_5d": "laterale",
+      "volume_note": "sotto media: 62.77M vs avg 98.54M (-36.3%)",
+      "news": "NVDA -0.99% in attesa degli earnings Q2 FY2027 (mercoledì 26 agosto, ore 17:00 EDT). Nasdaq -0.69% early trade per 'Nvidia earnings jitters'. Market cap $5.17T, P/E 32.88. 52w range $164-$237. (fonte: Tickzen/Yahoo Finance + Yahoo Finance/CNBC Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 212.48,
+      "stop_loss": 206.11,
+      "target": 223.10,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA (spread 2.11%). Rischio evento earnings mercoledì: nessuna posizione direzionale raccomandata prima del report. Post-earnings: rivalutare a seconda del guidance AI datacenter.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / Investing.com (Aug 24, 2026)", "price": 210.24},
+          {"name": "Yahoo Finance / CNBC (Aug 24, 2026)", "price": 214.72}
+        ],
+        "spread_pct": 2.11,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 482.22,
+      "change_24h": "+0.16%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "MSFT +0.16% trainato da AI cloud expansion. Azure AI-related capex $115.9B. Dividendo $0.91 pagato (ex-date 20 agosto). JPMorgan alza PT a $625 per 2027. Q2 earnings positivi. (fonte: Investing.com + Yahoo Finance/CNBC Aug 24)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 482.22,
+      "stop_loss": 467.75,
+      "target": 506.33,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità ALTA (spread 0.42%). Momentum AI cloud positivo, catalizzatore dividendo confermato, PT analisti in aumento. Nasdaq debole offre entry a sconto rispetto alla tendenza primaria rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 24, 2026)", "price": 483.24},
+          {"name": "Yahoo Finance / CNBC (Aug 24, 2026)", "price": 481.20}
+        ],
+        "spread_pct": 0.42,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.59,
+      "change_24h": "+1.31%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AMZN +1.31% tra i migliori del tech oggi. 52w range $196-$287. Market cap $2.79T. (fonte: VantageMarkets analysis Aug 23, CNBC Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 259.59,
+      "stop_loss": 251.80,
+      "target": 272.57,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica: BASSA affidabilità. Movimento positivo di giornata non supportato da seconda fonte numerica verificata.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "VantageMarkets / Investing.com (Aug 23, 2026)", "price": 259.59}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Solo 1 fonte numerica disponibile"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 344.82,
+      "change_24h": "+1.22%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "GOOGL +1.22% ma sotto le medie mobili a 20 e 50 giorni: fase laterale. Leadership shakeup divisione AI (uscita Jeff Dean), ex-dividend $0.22 (ex-date 4 settembre 2026). Investimenti AI infrastruttura in aumento. (fonte: JournalArta Aug 24, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 344.82,
+      "stop_loss": 334.48,
+      "target": 362.06,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica: BASSA affidabilità. Trend laterale confermato dall'analisi tecnica; attendere break delle medie mobili per segnale direzionale.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "JournalArta / Google Finance (Aug 24, 2026)", "price": 344.82}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Solo 1 fonte numerica disponibile"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 549.90,
+      "change_24h": "+0.22%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "META rimbalza +0.22% ma rimane debole post-earnings miss Q2 (EPS e revenue sotto stime). Trial $1.4T (23 stati) in corso. Margine operativo sceso a 38.08% da 41.21% Q1. P/E 21x in calo. Caduto da $595 pre-earnings a ~$520 minimo poi rimbalzo a $550. (fonte: VantageMarkets, Yahoo Finance Aug 21)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 549.90,
+      "stop_loss": 533.40,
+      "target": 577.40,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica con dato Aug 21 (venerdì): BASSA affidabilità. Doppio rischio: trial in corso + earnings miss. Trend ribassista dal picco $595. Attendere chiarimento legale prima di posizionarsi.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "VantageMarkets / Yahoo Finance (Aug 21, 2026 close)", "price": 549.90}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Solo 1 fonte numerica (dato venerdì 21/08)"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 79.63,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Nessun catalyst specifico identificato per NFLX in data Aug 24 2026. 52w range $65.08-$126.71. Market cap $331.51B. (fonte: MacroTrends/Morningstar Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 79.63,
+      "stop_loss": 77.24,
+      "target": 83.61,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica: BASSA affidabilità. Nessun catalyst di giornata identificato; lateralità confermata dal range 52w ampio.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / MacroTrends (Aug 24, 2026)", "price": 79.63}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Solo 1 fonte numerica disponibile"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 465.20,
+      "change_24h": "-3.33%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (sell-off settore semiconductor con Micron e SanDisk)",
+      "news": "AMD -3.33% in sell-off settore semiconductor. Calo contestuale con NVDA pre-earnings. Precedente ATH $584.73 (30 giugno 2026). Last close venerdì $473.25. (fonte: MacroTrends/Investing.com Aug 24, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 465.20,
+      "stop_loss": 451.24,
+      "target": 488.46,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica: BASSA affidabilità. Forte sell-off intraday legato a risk-off pre-earnings NVDA. Attendere conferma prezzi e fine evento macro NVDA.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / Investing.com (Aug 24, 2026)", "price": 465.20}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Solo 1 fonte numerica disponibile"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1763.76,
+      "change_24h": "+0.4%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML +0.4% (dato notizia Aug 24). Record bookings €13.2B in Q2 (doppio delle stime). H2 2026 sales projection +38-49%. Revenue Q2 +6.4% QoQ, installed base +11%, nuovi sistemi litografia +28.4%. Analyst avg PT €2,001 (Strong Buy, 39 vs 1). Earnings prossimi: 14 ottobre 2026. (fonte: ts2.tech/CNBC Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1763.76,
+      "stop_loss": 1710.85,
+      "target": 1851.95,
+      "commissione": 0.00,
+      "reasoning": "Prezzo USD disponibile solo per Nasdaq Aug 21 (venerdì): BASSA affidabilità. Fondamentali eccellenti (record bookings), ma prezzo non triangolato con seconda fonte USD per Aug 24.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq / StockAnalysis (Aug 21, 2026 close)", "price": 1763.76},
+          {"name": "Investing.com Amsterdam (Aug 24, 2026)", "price": "€1506.00 EUR — valuta diversa, non comparabile direttamente"}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Seconda fonte in EUR (Amsterdam): impossibile triangolare senza tasso EUR/USD Aug 24 2026 verificato"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 218.55,
+      "change_24h": "-0.06%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SAP lieve calo -0.06%. Q2 EPS $1.82 (miss stime $2.03), revenue $11.28B (miss $11.44B) ma cloud backlog +26% a €23B. Cloud revenue +24%. Analyst avg PT $245.33 (Buy, 13/0). Daily signal: Strong Buy tecnico. (fonte: Investing.com + CNBC/Bloomberg Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 218.55,
+      "stop_loss": 211.99,
+      "target": 229.48,
+      "commissione": 0.00,
+      "reasoning": "Entrambe le fonti restituiscono lo stesso dato Investing.com ($218.55): considerata fonte unica per triangolazione, BASSA affidabilità. Fondamentali in miglioramento (cloud backlog) ma EPS miss richiede cautela.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Upstox (Aug 24, 2026)", "price": 218.55},
+          {"name": "Investing.com (Aug 24, 2026) — stessa fonte ripetuta", "price": 218.55}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "BASSA",
+        "nota": "Stessa fonte Investing.com restituita da entrambe le query — non conta come seconda fonte indipendente"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.41,
+      "change_24h": "+2.85%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "NOTA: Ticker utente STLAM = Borsa Italiana (€4.646 EUR Aug 24). Ticker NYSE equivalente: STLA. Stellantis STLA NYSE: $5.41 +2.85% (07:45 PM EDT after-hours Aug 24). Down 50%+ YTD a causa di recall software 955.000 veicoli. Market cap $15.66B. 52w range $5.05-$12.22. (fonte: CNBC/StockTwits Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.41,
+      "stop_loss": 5.25,
+      "target": 5.68,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica USD (STLA NYSE): BASSA affidabilità. Attenzione: STLAM (BIT) ≠ STLA (NYSE). Tendenza ribassista profonda (-50% YTD) con catalizzatore negativo recall software ancora aperto.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / StockTwits NYSE (STLA, Aug 24, 2026 after-hours)", "price": 5.41},
+          {"name": "Yahoo Finance BIT (STLAM, Aug 24, 2026)", "price": "€4.646 EUR — ticker/exchange diverso"}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "STLAM (Borsa Italiana) ≠ STLA (NYSE) — ticker diversi, non triangolabili senza conversione EUR/USD"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 423.09,
+      "change_24h": "N/D",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Gold: terza settimana consecutiva di rialzi, +5% nella settimana. Gold futures Dic $4.673/oz, spot in salita. Iran war premium e safe-haven demand. Analyst stance: 'Gold to stay hot through end of month'. GLD 52w range $306-$510. (fonte: Investing.com Aug 23, Yahoo Finance/CNBC Aug 24)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 423.09,
+      "stop_loss": 414.63,
+      "target": 440.01,
+      "commissione": 0.00,
+      "reasoning": "Fonte unica con dato mercato chiuso (Aug 23, domenica): BASSA affidabilità. Seconda fonte restituisce dato obsoleto Aug 7 ($398.47) — scarto >11 giorni, esclusa dalla triangolazione. Fondamentali oro positivi ma prezzo non validato.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / StockAnalysis (Aug 23, 2026 — domenica)", "price": 423.09},
+          {"name": "Yahoo Finance NYSE Arca (Aug 7, 2026 — obsoleto 17 giorni)", "price": 398.47}
+        ],
+        "spread_pct": null,
+        "affidabilita": "BASSA",
+        "nota": "Seconda fonte obsoleta (17 giorni), non utilizzabile per triangolazione. Solo 1 fonte recente."
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 62.22,
+      "change_24h": "-0.31%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Silver spot $68.80/oz (-0.25%), poi risalita a $69.53 (+2.09%). Oro bullish 'through end of month', Iran war premium, 'Gold and silver ETFs historically overbought but still a Buy' (Seeking Alpha). SLV tracking ~0.9289 oz/share — NAV coerente con spot. (fonte: StockAnalysis/Yahoo Finance Aug 24 + Barchart/iShares Aug 24)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 62.22,
+      "stop_loss": 60.98,
+      "target": 64.71,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità ALTA (spread 0.31%). Silver in trend rialzista con supporto macro (Iran war safe-haven, oro al top mensile). Lieve ritracciamento giornaliero (-0.31%) offre entry favorevole rispetto al trend settimanale positivo. SLV coherente con spot silver.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Yahoo Finance (Aug 24, 2026)", "price": 62.31},
+          {"name": "Barchart / iShares NYSE Arca (Aug 24, 2026, 12:02 EDT)", "price": 62.12}
+        ],
+        "spread_pct": 0.31,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 78168.36,
+      "change_24h": "+0.72%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume ETF spot in forte crescita; short covering derivati)",
+      "news": "BTC supera $79.000 alle 9am EDT Aug 24. +23.53% su 7 giorni. Driver: ETF spot BTC in forte domanda, short covering derivati, Trump Clarity Act (pathway per crypto projects raccogliere $75M+), SEC proposal. CoinStats: 'buyers kept foot on gas'. (fonte: Fortune/CoinStats Aug 24 + CoinMarketCap Aug 24)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 78168.36,
+      "stop_loss": 74259.94,
+      "target": 84421.83,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA (spread 2.07% tra Fortune $78.976 e CMC $77.361 — normale intraday volatility crypto). Momentum settimanale eccezionale (+23.5%), supporto regolatorio Trump/SEC e ETF inflows. Risk: profit taking dopo rally esplosivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / CoinStats (Aug 24, 2026 — 9am EDT)", "price": 78976.18},
+          {"name": "CoinMarketCap (Aug 24, 2026)", "price": 77360.54}
+        ],
+        "spread_pct": 2.07,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2474.41,
+      "change_24h": "+3.07%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume $16.84B in 24h — istituzionale confermato da Bitmine acquisition)",
+      "news": "ETH +3.07% intraday, +26% settimanale. Bitmine ha acquisito ~$81M in ETH (totale holdings 5.85M ETH = 4.8% supply). SEC proposal pathway crypto projects fino a $75M. Volume 24h $16.84B. (fonte: MetaMask/CoinDesk Aug 24 + CoinMarketCap Aug 24)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2474.41,
+      "stop_loss": 2350.69,
+      "target": 2672.36,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità ALTA (spread 0.29%). Acquisto istituzionale massiccio (Bitmine $81M), momentum +26% settimanale, catalizzatore regolatorio positivo. Rischio: rally molto accelerato, possibile correzione tecnica a breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask / CoinDesk (Aug 24, 2026)", "price": 2470.76},
+          {"name": "CoinMarketCap (Aug 24, 2026)", "price": 2478.05}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 95.83,
+      "change_24h": "+1.48%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (volume 24h $4.93B)",
+      "news": "SOL +1.48%. Governance milestone: prima on-chain governance votes epoch 1021 (~23 ago 2026) — proposte su Solana Constitution e fee mechanics. Block production time ridotto del 12.5% (22 ago), verso target 200ms. Washington pro-crypto SEC pathway. (fonte: Bitget Aug 24 + CoinMarketCap/Coinbase Aug 24)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 95.83,
+      "stop_loss": 91.04,
+      "target": 103.50,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA (spread 1.90%). Catalizzatori tecnici specifici (governance + block time improvement) uniti a backdrop crypto rialzista. Rischio: correlazione con BTC potrebbe amplificare correzioni.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bitget (Aug 24, 2026)", "price": 96.74},
+          {"name": "CoinMarketCap (Aug 24, 2026)", "price": 94.92}
+        ],
+        "spread_pct": 1.90,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "RACE",
+      "motivo": "Dati obsoleti: entrambe le fonti restituiscono prezzi del 13-14 agosto 2026 (>10 giorni fa). Nessun prezzo verificabile per Aug 24 2026."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread fonti 4.15% > soglia 4%: Fonte 1 $134.64 (Investing.com Aug 23), Fonte 2 $129.17 (HeyGoTrade, data incerta). Discrepanza eccessiva — nessun segnale generato."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SLV",
+      "motivo": "Affidabilità ALTA (spread 0.31%). Silver rialzista: Iran war premium, gold al top mensile +5%, Seeking Alpha 'overbought but still a Buy'. Entry favorevole su ritracciamento -0.31% giornaliero."
+    },
+    {
+      "rank": 2,
+      "asset": "ETH",
+      "motivo": "Affidabilità ALTA (spread 0.29%). Acquisto istituzionale massiccio: Bitmine $81M. +26% settimanale, +3.07% oggi. Catalizzatore SEC reform. Volume istituzionale $16.84B/24h."
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Affidabilità ALTA (spread 0.42%). Unico large cap tech con segnale BUY: AI/Azure in crescita, dividendo pagato, JPM PT $625 (2027). Nasdaq debole offre entry con sconto."
+    },
+    {
+      "rank": 4,
+      "asset": "BTC",
+      "motivo": "Affidabilità MEDIA (spread 2.07%). Rally +23.5% settimanale con supporto strutturale: Clarity Act, ETF spot inflows, short covering. Rischio correzione dopo accelerazione."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale eseguito su Alpaca",
+    "allocazione_suggerita": {
+      "SLV": "20% — massima affidabilità ETF commodity rialzista",
+      "ETH": "25% — acquisti istituzionali + momentum settimanale",
+      "MSFT": "20% — large cap tech con segnale BUY validato",
+      "BTC": "25% — trend rialzista crypto con supporto regolatorio",
+      "SOL": "10% — catalyst tecnici specifici ma rischio correlazione BTC"
+    },
+    "asset_in_attesa": ["NVDA — ri-valutare post earnings 26 agosto"],
+    "asset_da_rivalutare": ["AAPL, TSLA, AMD, AMZN, GOOGL, META, NFLX, ASML, SAP, STLA, GLD — triangolazione incompleta"],
+    "asset_esclusi": ["RACE (dati obsoleti)", "USO (spread >4%)"]
+  }
+}
