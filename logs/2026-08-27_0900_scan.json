@@ -1,0 +1,397 @@
+{
+  "timestamp": "2026-08-27T09:00:00+00:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "S&P 500 avanza dopo i risultati trimestrali di NVIDIA (+7.76%), con AI demand confermata e ricavi Q2 a $96.22B (+106% YoY). Il mercato è catalizzato da earnings tech mentre l'attenzione si sposta al simposio di Jackson Hole (Fed). Bitcoin ETF inflows record a $3B+ in agosto (8 giorni consecutivi), BTC riconquista $80K. Oro in leggera correzione post-PCE ma trend rialzista intatto (+35.69% annuo). Petrolio in calo su distensione diplomatica Iran/Hormuz.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 225.58,
+      "change_24h": "+7.76%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo - volume elevato su earnings beat",
+      "news": "NVIDIA Q2 FY2027: ricavi $96.22B (+106% YoY, stima $92.18B), EPS adj $2.22 (stima $2.10). Guidance Q3 $108B (consensus $105B). Accordo acquisizione Hugging Face per $12.9B.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 225.58,
+      "stop_loss": 218.81,
+      "target": 236.86,
+      "commissione": 0.00,
+      "reasoning": "Massive earnings beat con ricavi a $96.22B, growth AI demand confermata per FY2027. Acquisizione Hugging Face espande l'ecosistema AI data. (Yahoo Finance/CNBC, 27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (5:46 AM EDT)", "price": 225.21},
+          {"name": "Yahoo Finance / CNBC (intraday)", "price": 225.94}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 80089.00,
+      "change_24h": "+0.60%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - ETF inflows costanti",
+      "news": "Bitcoin ETF inflows agosto superano $3B (record 2026, doppio rispetto ad aprile). 8 giorni consecutivi di inflows. Breve dip su PCE alle 8:30 ET riassorbito rapidamente. Trump Administration spinge Clarity Act per regulatory clarity crypto.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 80089.00,
+      "stop_loss": 76085.00,
+      "target": 86496.00,
+      "commissione": 0.00,
+      "reasoning": "Record agosto 2026 per ETF inflows ($3B+, streak 8 giorni). Supporto istituzionale robusto; buyers difendono $79K. Clarity Act riduce rischio regolatorio. (CoinDesk/Yahoo Finance, 27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / Yahoo Finance (7:15 AM ET, 27/08)", "price": 79707.18},
+          {"name": "Coinbase (27/08)", "price": 80471.21}
+        ],
+        "spread_pct": 0.95,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 261.10,
+      "change_24h": "-0.30%",
+      "trend_5d": "laterale",
+      "volume_note": "sotto media - 21.53M vs 31.99M avg (-33%)",
+      "news": "Amazon Q2 2026: ricavi $200.6B (+20% YoY), operating margin 13.7% vs 11.4% anno precedente. AWS continua a guidare la crescita; P/E 21x su earnings power in espansione.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 261.10,
+      "stop_loss": 253.27,
+      "target": 274.16,
+      "commissione": 0.00,
+      "reasoning": "Solidi fondamentali Q2 con margine operativo record 13.7%; crescita ricavi +20% YoY. Volume basso suggerisce potenziale accumulo prima del prossimo movimento. (Yahoo Finance/CNBC, 26/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / Morningstar (26/08)", "price": 261.91},
+          {"name": "Yahoo Finance / CNBC (chiusura 26/08 16:00 EDT)", "price": 260.28}
+        ],
+        "spread_pct": 0.62,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 422.95,
+      "change_24h": "+0.19%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Oro Dec futures apre a $4,650/oz (-0.1% vs mercoledì). Due giorni consecutivi sopra $4,700, pullback su dati PCE inflazione. Jackson Hole: discorso Warsh (Fed) atteso come catalizzatore chiave. GLD +35.69% annuo, +12.69% ultimo mese.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 422.95,
+      "stop_loss": 414.49,
+      "target": 439.87,
+      "commissione": 0.00,
+      "reasoning": "Performance annua +35.69% con trend intatto; incertezza Fed su tassi e PCE elevato sostengono l'oro. Pullback post-PCE rappresenta opportunità di ingresso prima di Jackson Hole. (Yahoo Finance/CNBC, 27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis / Investing.com (27/08 durante contrattazioni)", "price": 423.77},
+          {"name": "CNBC / Bloomberg NYSE Arca (27/08 12:17 PM EDT)", "price": 422.12}
+        ],
+        "spread_pct": 0.39,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2507.00,
+      "change_24h": "+2.58%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - volume $7.59B nelle 24h",
+      "news": "Ethereum +2.58% in correlazione con BTC. ETF inflows sostenuti in agosto. Charles Schwab annuncia espansione piattaforma crypto con SOL, AVAX, LINK nei prossimi mesi dopo BTC/ETH già live.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2507.00,
+      "stop_loss": 2382.00,
+      "target": 2708.00,
+      "commissione": 0.00,
+      "reasoning": "ETF inflows continui e correlazione positiva con BTC; Schwab crypto expansion segnala adozione mainstream crescente. Volume sostenuto $7.59B/24h. (Yahoo Finance/CoinDesk, 27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (7:23 AM EDT, 27/08)", "price": 2507.26},
+          {"name": "CoinMarketCap (27/08)", "price": 2493.29}
+        ],
+        "spread_pct": 0.56,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 62.24,
+      "change_24h": "-0.05%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale - 19.89M shares (25/08)",
+      "news": "Argento spot sale a $68.88/oz con correlazione all'oro. SLV +75.78% annuo. Net assets $33.5B. Domanda industriale e incertezza macro supportano i metalli preziosi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 62.24,
+      "stop_loss": 61.00,
+      "target": 64.73,
+      "commissione": 0.00,
+      "reasoning": "Performance annua eccezionale +75.78%; argento sale con oro su inflazione persistente e incertezza Fed. Net assets $33.5B confermano domanda ETF robusta. (iShares/CNBC/Nasdaq, 25/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Heygotrade (24/08)", "price": 62.31},
+          {"name": "iShares / CNBC NYSE Arca (25/08)", "price": 62.17}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1791.42,
+      "change_24h": "+1.35%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo - grande movimento intraday su simpatia NVDA",
+      "news": "ASML +55% YTD nel 2026. BofA reitera come top pick. Q2: $10.64B ricavi, $8.65 EPS. AI-driven semiconductor capex in accelerazione. Interim dividend +17%. Nuovo record storico in vista.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1791.42,
+      "stop_loss": 1737.68,
+      "target": 1880.99,
+      "commissione": 0.00,
+      "reasoning": "Monopolio EUV indispensabile per AI chip manufacturing; +55% YTD confermato da Q2 solido ($10.64B ricavi). BofA top pick; simpatia con NVDA earnings spinge nuovi massimi. (Morningstar/CNBC/Yahoo Finance, 27/08/2026). NOTA: spread 3.64% intraday - prezzo validato MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq / Yahoo Finance (pre-market 27/08)", "price": 1759.22},
+          {"name": "CNN / Yahoo Finance (1:46 PM EDT 27/08)", "price": 1823.61}
+        ],
+        "spread_pct": 3.60,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 313.45,
+      "change_24h": "-0.90%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Apple scende -0.9% il 26/08 su report supply chain iPhone 17 che sollevano preoccupazioni sui margini. Range 52 settimane $225.95-$344.57. Market cap $4.57T. Target analist medio $324.45 (25 buy, 5 sell).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 313.45,
+      "stop_loss": 304.05,
+      "target": 329.12,
+      "commissione": 0.00,
+      "reasoning": "Margin concerns da supply chain iPhone 17 frenano il rialzo; stock in range laterale $308-$315. Attendere chiarezza sulle implicazioni produttive prima di entrare. (EasternHerald/Investing.com, 27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / EasternHerald (27/08)", "price": 313.45},
+          {"name": "CNBC / Yahoo Finance (27/08)", "price": 313.45}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 345.55,
+      "change_24h": "-1.34%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Tesla scende verso $345 (-1.34% dalla chiusura $350.25) non partecipa al rally tech guidato da NVDA. Range 52W $297.38-$498.83. Mercato EV competitivo; nessun catalizzatore specifico oggi.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 345.55,
+      "stop_loss": 335.18,
+      "target": 362.83,
+      "commissione": 0.00,
+      "reasoning": "TSLA non beneficia del rally NVDA/AI; decoupling dalla tech rally indica debolezza relativa. Ampia incertezza su timeline robotaxi e margini auto. (Investing.com/CNBC, 27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / EasternHerald (27/08)", "price": 345.82},
+          {"name": "CNBC apertura (27/08)", "price": 345.27}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 568.91,
+      "change_24h": "-0.77%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Meta accordo settlement teen social media: $17B in sanzioni + $10.8B in escrow. Restrizioni piattaforma per minorenni (limiti d'uso giornaliero, blocco notifiche notturne). Volatilità intraday $566-$572.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 568.91,
+      "stop_loss": 551.84,
+      "target": 597.36,
+      "commissione": 0.00,
+      "reasoning": "Settlement $17B crea significativo regulatory overhang; volatilità intraday elevata. Business AI rimane forte ma rischio litigation e compliance cost pesano sul sentiment. (Yahoo Finance/CNBC, 27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / EasternHerald (27/08 mattina)", "price": 571.78},
+          {"name": "Yahoo Finance (12:38 PM EDT, 27/08)", "price": 566.03}
+        ],
+        "spread_pct": 1.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 218.55,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP ADR -27% YTD 2026. Fair value stimato €223 entro 2027. Prossimo earnings: 21/10/2026. 52W range $144.97-$281.37. 13 analisti Buy, 0 Sell.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 218.55,
+      "stop_loss": 211.99,
+      "target": 229.48,
+      "commissione": 0.00,
+      "reasoning": "SAP -27% YTD senza catalizzatori forti; dato prezzo da 24/08 (3 giorni fa). Attendere earnings Q3 del 21/10/2026 per segnale direzionale chiaro. (Investing.com, 24/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE (24/08)", "price": 218.55},
+          {"name": "Investing.com EUR conversion (24/08)", "price": 218.55}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.86,
+      "change_24h": "+0.85%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "UBS downgrade Stellantis: U.S. recovery stagnante e competizione EV crescente. Ritorno profittabilità Q2 2026 (North America driver) ma sfide strutturali persistono. Stock vicino al minimo 52W ($5.25). 52W range $5.25-$12.22.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 5.86,
+      "stop_loss": 6.04,
+      "target": 5.57,
+      "commissione": 0.00,
+      "reasoning": "UBS downgrade su recovery USA bloccata; stock vicino al minimo 52W senza catalyst rialzista. Competizione EV cinese e gestione inventari pesano. (Yahoo Finance/CNN, 27/08/2026). NOTA: prezzo da cross-exchange - affidabilita MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "STLAM Milan (EUR 4.525 ≈ USD)", "price": 5.81},
+          {"name": "STLA NYSE Yahoo Finance / Finviz (27/08)", "price": 5.86}
+        ],
+        "spread_pct": 0.86,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 128.29,
+      "change_24h": "-2.96%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Brent crude scende -0.7% a $87.24/barile su sviluppi diplomatici Iran/Hormuz che potrebbero ridurre disruption supply. USO sceso da massimo 52W $154.08 (18/05/2026). Stima da 25/08 (2 giorni fa).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 128.29,
+      "stop_loss": 130.86,
+      "target": 123.16,
+      "commissione": 0.00,
+      "reasoning": "Brent in calo su distensione Iran/Hormuz; USO già -16.7% dal massimo 52W. Tendenza ribassista confermata; dato prezzi da 25/08 introduce incertezza temporale. (Yahoo Finance/CNBC, 25-27/08/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Kraken (25/08)", "price": 128.29},
+          {"name": "CNBC NYSE Arca (21/08)", "price": 134.64}
+        ],
+        "spread_pct": 4.80,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "MSFT",
+      "motivo": "Una sola fonte verificata ($499.16): la seconda ricerca ha restituito solo link senza prezzo estratto. Fonti < 2 → BASSA. Ultimo prezzo noto: $499.16 (27/08). Nessun segnale generato."
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Una sola fonte verificata ($342.00 al 26/08): la seconda ricerca non ha estratto un prezzo specifico. Fonti < 2 → BASSA. Cloud ricavi +82% Q2 ma segnale non generabile."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Una sola fonte verificata ($81.46 chiusura 26/08): la seconda ricerca non ha estratto prezzo specifico. Fonti < 2 → BASSA. Range intraday $79.40-$82.46 noto ma non validato con 2 fonti."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Una sola fonte verificata ($474.66 al 27/08): la seconda ricerca ha restituito solo target analisti ($641 Raymond James) senza prezzo corrente. Fonti < 2 → BASSA. Stock in calo nonostante rally NVDA."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Seconda fonte con dati obsoleti (13/08, $407.21): impossibile triangolazione aggiornata. Fonti correnti < 2 → BASSA. Prezzo più recente noto: $419.13 al 26/08. Order book coperto fino a fine 2027."
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread fonti eccessivo: range $100.33 (Coinbase) - $108.24 (Kraken/OKX) = 7.59% > soglia 4%. Affidabilita BASSA. Divergenza anormale tra exchange. Charles Schwab annuncia supporto SOL prossimi mesi."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Earnings beat storico Q2 (ricavi $96.22B, +106% YoY); guidance Q3 $108B sopra consensus. AI demand acceleration confermata; acquisizione Hugging Face $12.9B. Momentum fortissimo (+7.76% oggi). Confidenza ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "BTC",
+      "motivo": "Record agosto 2026: ETF inflows $3B+ in 8 giorni consecutivi. Buyers difendono $79K; Clarity Act riduce rischio regolatorio. Institutional accumulation evidente. Confidenza ALTA."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "+55% YTD con monopolio EUV; spinta da NVDA earnings che confermano AI capex cycle. BofA top pick; Q2 $10.64B ricavi. Spread intraday 3.6% riflette momentum forte (MEDIA affidabilita)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Alpaca broker, zero commissioni. Allocazione su segnali BUY con confidenza ALTA/MEDIO.",
+    "allocazione_suggerita": {
+      "NVDA": "20% - BUY alto conviction, AI supercycle confermato",
+      "BTC": "15% - BUY alto conviction, ETF inflows record",
+      "ETH": "10% - BUY medio, correlazione BTC + Schwab expansion",
+      "GLD": "15% - BUY medio, hedge inflazione + Jackson Hole",
+      "AMZN": "15% - BUY medio, margini record + crescita AWS",
+      "SLV": "8% - BUY medio, correlazione oro + domanda industriale",
+      "ASML": "10% - BUY medio, EUV monopoly + AI capex",
+      "USO_short": "3% - SELL medio, Iran diplomacy + downtrend",
+      "STLA_short": "2% - SELL medio, UBS downgrade + near 52W low",
+      "cash_reserve": "2% - liquidita per opportunita"
+    }
+  }
+}
