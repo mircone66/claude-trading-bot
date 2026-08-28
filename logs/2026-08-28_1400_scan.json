@@ -1,0 +1,451 @@
+{
+  "timestamp": "2026-08-28T14:00:00+00:00",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta bullish guidata dagli utili record di NVIDIA (ricavi annuali raddoppiati, guidance solida fino al 2028). Il Nasdaq sale circa +1%. Solana balza +6.89% dopo l'annuncio di Schwab Crypto. L'oro resta stabile a ~$4.650/oz in attesa del discorso del nuovo Fed Chair Warsh a Jackson Hole. Fear & Greed index crypto a 70 (Greed). Tech AI ed asset reali in bull trend. 4 asset esclusi per insufficiente triangolazione dati (META, SAP, RACE, STLA).",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 226.27,
+      "change_24h": "+6.10%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo — volumi elevati post-earnings",
+      "news": "NVIDIA riporta Q2 FY2027 sopra le attese: ricavi annuali raddoppiati, EPS e guidance battono Wall Street. Il Nasdaq sale ~1% sulla scia dei risultati. Analisti confermano la leadership nell'AI.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 226.27,
+      "stop_loss": 219.48,
+      "target": 237.58,
+      "commissione": 0.00,
+      "reasoning": "Earnings beat strutturale con revenue datacenter in forte crescita e guidance solida fino al 2028 (fonte: Reuters/Yahoo Finance). La domanda AI resta il principale driver di crescita per NVDA, con catalizzatori multipli nei prossimi trimestri.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 226.15},
+          {"name": "Stock Analysis", "price": 226.39}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 476.67,
+      "change_24h": "-0.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AMD Q2 2026: ricavi $11.54B (+50% YoY), datacenter raddoppiato a $6.7B (58% del totale). Raymond James upgrades a Strong Buy con target $641. EPS $1.66 batte le stime.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 476.67,
+      "stop_loss": 462.37,
+      "target": 500.50,
+      "commissione": 0.00,
+      "reasoning": "Crescita datacenter +100% YoY dimostra che AMD è un'alternativa credibile a NVDA nell'AI (fonte: Yahoo Finance/CNBC). Upgrade di Raymond James con price target +35% suggerisce potenziale upside significativo nei prossimi trimestri.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / varie fonti", "price": 476.67},
+          {"name": "Yahoo Finance / CNBC (close Aug 27)", "price": 476.67}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 107.62,
+      "change_24h": "+6.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo — volume crypto settimanale +20%",
+      "news": "Charles Schwab annuncia l'aggiunta di Solana, Avalanche e Chainlink a Schwab Crypto. SOL balza al minimo +6.89% a $109.21 nella sessione intraday. Weekly performance: SOL +20%.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 107.62,
+      "stop_loss": 102.24,
+      "target": 116.23,
+      "commissione": 0.00,
+      "reasoning": "Catalyst istituzionale forte: Schwab aggiunge SOL alla propria piattaforma crypto, aumentando l'accessibilità per investitori retail/istituzionali (fonte: CoinSpectator/Riot Times Online Aug 28). Fear & Greed index a 70 (Greed) supporta il momentum rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 107.00},
+          {"name": "Kraken", "price": 108.24}
+        ],
+        "spread_pct": 1.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 422.00,
+      "change_24h": "-1.41%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "L'oro resta stabile a ~$4.650/oz mentre i mercati attendono il discorso del nuovo Fed Chair Warsh a Jackson Hole. GLD +35.69% YoY, ETF trading leggermente sotto NAV ($424.78). Iran apre su Stretto di Hormuz.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 422.00,
+      "stop_loss": 413.56,
+      "target": 438.88,
+      "commissione": 0.00,
+      "reasoning": "L'oro è in trend rialzista strutturale (+35.69% YoY) sostenuto da incertezza geopolitica e attesa pivot Fed (fonte: Yahoo Finance/Fortune Aug 28). Il discorso di Warsh a Jackson Hole potrebbe essere un ulteriore catalizzatore se tono dovish.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stock Analysis (intraday)", "price": 422.54},
+          {"name": "Investing.com (close Aug 26)", "price": 421.47}
+        ],
+        "spread_pct": 0.25,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 62.59,
+      "change_24h": "+1.92%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "L'argento sale a $70.41/oz (+1.68%) il 28 agosto 2026. SLV +1.92% nella sessione del 27 agosto. FXStreet segnala momentum rialzista. Seek Alpha nota i metalli preziosi storicamente ipercomprati ma ancora in trend positivo.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 62.59,
+      "stop_loss": 61.34,
+      "target": 65.09,
+      "commissione": 0.00,
+      "reasoning": "Argento in rally correlato all'oro con beta più elevato: al prezzo attuale di $70.41/oz offre leva sul bull trend dei metalli preziosi (fonte: FXStreet Aug 28). Supporto da domanda industriale (pannelli solari, elettronica) e safe-haven.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stock Analysis / iShares (close Aug 27)", "price": 62.77},
+          {"name": "Investing.com", "price": 62.40}
+        ],
+        "spread_pct": 0.59,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 80368.48,
+      "change_24h": "+2.69%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo — volume 24h $35.4B",
+      "news": "Bitcoin oscilla sopra $81K prima di consolidare a ~$80.258. Settimana: BTC +9%. Crypto Fear & Greed Index a 70 (Greed). Nvidia earnings fungono da catalizzatore risk-on per tutto il mercato.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 80368.48,
+      "stop_loss": 76350.06,
+      "target": 86797.96,
+      "commissione": 0.00,
+      "reasoning": "BTC in bull trend settimanale (+9%) trainato da sentiment risk-on post-NVDA earnings e attesa Warsh speech a Jackson Hole (fonte: Yahoo Finance/CoinMarketCap Aug 28). Fear & Greed a 70 segnala euforia controllata con spazio ancora per upside.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 79859.20},
+          {"name": "CoinMarketCap", "price": 80877.75}
+        ],
+        "spread_pct": 1.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 501.68,
+      "change_24h": "+1.01%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Microsoft Q4 FY2026: ricavi $331.84B (+17.79% YoY), utili +31.34%. AI cloud (Azure) principale driver. 42/47 analisti Buy, consensus target $560.27. Articolo TradingPedia Aug 28: 'tokenized shares look stretched as AI cloud surges'.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 501.68,
+      "stop_loss": 486.63,
+      "target": 526.76,
+      "commissione": 0.00,
+      "reasoning": "Crescita strutturale AI/cloud con margini in espansione. FY2026 utili +31.34% YoY confermano la traiettoria rialzista (fonte: Stock Analysis/Yahoo Finance). Target consensus $560 suggerisce ~12% upside dalla valutazione attuale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / Investing.com (close Aug 27)", "price": 499.16},
+          {"name": "TradingPedia tokenized (Aug 28)", "price": 504.20}
+        ],
+        "spread_pct": 1.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 341.33,
+      "change_24h": "-0.40%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo — 23.39M vs media 20.53M (+13.9%)",
+      "news": "Alphabet annuncia dividendo $0.22 con ex-date 4 settembre 2026. Volume sopra media del 13.9%. Market cap $4.17T. 59 analisti Strong Buy, target medio $428.07 (+25.4% upside). P/E 17.18 su base earnings.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 341.33,
+      "stop_loss": 331.09,
+      "target": 358.40,
+      "commissione": 0.00,
+      "reasoning": "Dividendo annunciato con ex-date imminente (4 sep) potrebbe attirare acquisti da investitori income-oriented (fonte: Yahoo Finance Aug 28). Volume anomalo +13.9% suggerisce accumulo istituzionale. P/E 17.18 è attraente per una società con market cap $4.17T.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / varie fonti (Aug 26)", "price": 342.00},
+          {"name": "Investing.com / Robinhood (Aug 28)", "price": 340.65}
+        ],
+        "spread_pct": 0.40,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 260.90,
+      "change_24h": "+0.50%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Amazon punta a 1 milione di consegne drone nel 2026 espandendosi a ~500 città (CNBC Aug 19). Recente ATH a $284.02 il 3 agosto 2026. Amazon ha superato i $3T di market cap post-earnings.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 260.90,
+      "stop_loss": 253.07,
+      "target": 273.95,
+      "commissione": 0.00,
+      "reasoning": "AMZN tratta ~8% sotto il recente ATH di $284.02 (3 agosto) con fondamentali solidi e strong Buy consensus (fonte: CNBC/Yahoo Finance). Espansione drone delivery e AWS AI potrebbero riportare il titolo verso i massimi. NOTA: affidabilità prezzo MEDIA (spread 3.65%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / varie (Aug 28 range)", "price": 256.22},
+          {"name": "CNBC / Yahoo Finance (Aug 28)", "price": 265.58}
+        ],
+        "spread_pct": 3.65,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 317.77,
+      "change_24h": "+1.02%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Apple annuncia iPhone launch event per il 9 settembre 2026, primo evento sotto il nuovo CEO John Ternus. Atteso foldable iPhone e nuovi chip M6. Range di giornata $309.40-$315.40. 52W range: $225.95-$344.57.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 317.77,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Il catalizzatore prossimo (evento iPhone 9 settembre) potrebbe spingere il titolo verso i massimi 52W ($344.57). Attendere conferme pre-evento prima di entrare (fonte: CNBC/Yahoo Finance). NOTA: affidabilità prezzo MEDIA (spread 2.02%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Eastern Herald / Investing.com (Aug 28)", "price": 314.58},
+          {"name": "CNBC / Yahoo Finance (Aug 28)", "price": 320.95}
+        ],
+        "spread_pct": 2.02,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2509.90,
+      "change_24h": "+0.20%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — volume 24h $6.17B",
+      "news": "ETH apre a $2.511.31 il 28 agosto (+0.2% vs giovedì). Meno momentum rispetto a BTC (+2.69%) e SOL (+6.89%). Fear & Greed crypto a 70 (Greed). Mercato crypto complessivamente bullish.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 2509.90,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "ETH meno reattivo di BTC e SOL nella sessione odierna, con momentum laterale che suggerisce attendismo (fonte: Yahoo Finance/CoinDesk Aug 28). Attendere segnale direzionale più forte prima di aumentare l'esposizione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / CoinDesk (Aug 28)", "price": 2499.54},
+          {"name": "MetaMask (Aug 28)", "price": 2520.25}
+        ],
+        "spread_pct": 0.83,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 353.03,
+      "change_24h": "+0.89%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Tesla non ha catalizzatori specifici nella sessione odierna. Market cap $1.40T. Range di giornata $345.45-$355.74. 52W range $297.38-$498.83. Target medio analisti: $390.09 (+10.5% upside).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 353.03,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Senza catalizzatori specifici oggi, TSLA resta in range laterale lontano dal 52W high ($498.83). Il target medio analisti a $390 suggerisce upside ma assenza di trigger immediato (fonte: Investing.com/Yahoo Finance Aug 28). Attendere segnale tecnico.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / varie (Aug 28)", "price": 354.81},
+          {"name": "CNBC / Yahoo Finance (Aug 24)", "price": 351.25}
+        ],
+        "spread_pct": 1.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 79.82,
+      "change_24h": "-2.06%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix scende -2.06% nella sessione odierna. Bill Ackman ha recentemente acquisito una posizione nel titolo. 52W range $65.08-$126.71. Market cap $332.45B (+2.51% settimanale). Previous close $81.46.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 79.82,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Trend giornaliero negativo (-2.06%) con titolo in fase ribassista dal 52W high di $126.71. L'ingresso di Bill Ackman è positivo ma non ancora sufficiente a invertire il trend (fonte: Yahoo Finance/CNBC Aug 28). Attendere supporto tecnico prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken / CNN (Aug 28 intraday)", "price": 79.80},
+          {"name": "Yahoo Finance (close Aug 27)", "price": 79.84}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 128.46,
+      "change_24h": "+1.01%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — 1.05M shares",
+      "news": "Mercato petrolifero relativamente stabile con USO +1.01%. Iran annuncia preparativi per apertura Stretto di Hormuz (rischio geopolitico). Oil 52W range: $65.99-$154.08. Diesel invia segnali divergenti dal greggio.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 128.46,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Stabilità del petrolio ma rischio geopolitico elevato (Iran/Stretto di Hormuz) crea incertezza direzionale (fonte: Riot Times Online/varie Aug 28). Attendere chiarezza sulla situazione geopolitica prima di aumentare l'esposizione al WTI.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Aug 25)", "price": 128.29},
+          {"name": "Investing.com / Stock Analysis (Aug 28)", "price": 128.63}
+        ],
+        "spread_pct": 0.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1752.43,
+      "change_24h": "+0.39%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale — 295.89K vs media 393.78K",
+      "news": "ASML mantiene livelli sopra $1.750 dopo nuovo forecast vendite 2026 di €43-45B e forte domanda per sistemi litografici avanzati. Dividend interim +17%. Analyst BUY reiterato con target $2.452. Prossimi earnings: 14 ottobre 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1752.43,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "ASML in posizione rialzista ma attesa earnings del 14 ottobre prima di aumentare l'esposizione (fonte: ad-hoc-news.de/Yahoo Finance). NOTA: affidabilità prezzo MEDIA — prezzi da date adiacenti (USD Nasdaq Aug 26-27).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq / Yahoo Finance (close Aug 26)", "price": 1745.64},
+          {"name": "Various (pre-market Aug 27)", "price": 1759.22}
+        ],
+        "spread_pct": 0.78,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "META",
+      "motivo": "Fonti temporalmente discordanti: Aug 24 range $537.27-$554.07 vs Aug 28 $570.56. Impossibile triangolare due prezzi per la stessa data di riferimento con sufficiente affidabilità. Affidabilità effettiva: BASSA (1 fonte affidabile per Aug 28)."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Prezzo USD NYSE disponibile solo per Aug 24 ($218.55). Prezzo EUR disponibile per Aug 28 (€189.14, Xetra) ma non convertibile senza tasso di cambio EUR/USD validato. Affidabilità effettiva: BASSA."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Entrambe le ricerche hanno restituito gli stessi dati identici ($420.12, range $411.08-$416.39) dallo stesso bacino di fonti. Fonte unica effettiva, triangolazione impossibile. Affidabilità: BASSA."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Spread fonti eccessivo per Aug 28: CNBC $5.66 vs Stock Analysis $5.28 = spread 7.2% > soglia 4%. Nota: ticker NYSE è STLA (non STLAM che è la quotazione di Milano). Affidabilità: BASSA."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SOL",
+      "motivo": "Catalyst istituzionale forte: Schwab aggiunge SOL a Schwab Crypto. +6.89% intraday, +20% settimanale. Momentum rialzista con alta affidabilità dei dati (spread fonti 1.16%)."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Earnings record con ricavi annuali raddoppiati e guidance solida. Principale beneficiario dell'AI boom. Volume anomalo post-earnings. Alta affidabilità dati (spread 0.11%)."
+    },
+    {
+      "rank": 3,
+      "asset": "AMD",
+      "motivo": "Q2 +50% YoY, datacenter revenue raddoppiata. Raymond James upgrade Strong Buy target $641. Alta affidabilità dati (spread 0.00%)."
+    },
+    {
+      "rank": 4,
+      "asset": "GLD",
+      "motivo": "Gold in bull trend strutturale (+35.69% YoY). Discorso Warsh a Jackson Hole potrebbe essere ulteriore catalizzatore. ETF a leggero sconto rispetto al NAV. Alta affidabilità dati."
+    },
+    {
+      "rank": 5,
+      "asset": "MSFT",
+      "motivo": "Q4 2026 utili +31.34% YoY, AI cloud come principale driver. Strong Buy consensus con upside ~12% verso target analisti. Alta affidabilità dati."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "NVDA": "15%",
+      "AMD": "12%",
+      "SOL": "8%",
+      "GLD": "10%",
+      "SLV": "8%",
+      "BTC": "10%",
+      "MSFT": "12%",
+      "GOOGL": "10%",
+      "AMZN": "8%",
+      "CASH_RISERVA": "7%"
+    },
+    "asset_hold": ["AAPL", "ETH", "TSLA", "NFLX", "USO", "ASML"],
+    "asset_esclusi": ["META", "SAP", "RACE", "STLA"]
+  }
+}
