@@ -1,0 +1,455 @@
+{
+  "timestamp": "2026-09-02T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "September 2, 2026: Mercati in calo ('September hangover') per tre fattori convergenti: (1) escalation militare in Iran che spinge oil +6% ma pesa su risk assets, (2) Fed Chair Kevin Warsh segnala ~70% probabilità di rialzo tassi il 16 settembre, spingendo Treasury 10Y ~4.79% e colpendo oro e crypto, (3) $369M di liquidazioni su derivati crypto. Nota positiva: Apple con nuovo CEO John Ternus (succede Tim Cook) e product launch atteso 9 settembre. ASML in rialzo del 55% nel 2026. Ferrari batte le stime Q2. Petrolio (USO) in trend rialzista 5 giorni.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 325.13,
+      "change_24h": "+2.61%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "John Ternus succede a Tim Cook come CEO Apple, azione +2.61% sulla notizia; product launch atteso il 9 settembre 2026 (Fonte: CNBC, Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 325.13,
+      "stop_loss": 315.38,
+      "target": 341.39,
+      "commissione": 0.00,
+      "reasoning": "Cambio CEO con catalizzatore positivo (Ternus ben visto dagli analisti) e imminente product launch il 9/9. Confidenza media per incertezza sulla transizione dirigenziale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 325.13},
+          {"name": "CNBC", "price": 325.13}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 360.99,
+      "change_24h": "±incerto (-3.22% Yahoo vs +4.91% CNBC)",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo - volume 30.6M su media 20M circa",
+      "news": "Dati di prezzo contrastanti tra fonti nella stessa sessione; alta volatilità intraday segnalata (Fonte: Yahoo Finance, CNBC)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 360.99,
+      "stop_loss": 350.16,
+      "target": 379.04,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA con spread fonti 2.71% e direzione intraday conflittuale tra fonti; attendere conferma direzione prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 356.09},
+          {"name": "CNBC", "price": 365.88}
+        ],
+        "spread_pct": 2.71,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 499.35,
+      "change_24h": "-0.67%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Microsoft in consolidamento dopo +15.5% post Q4 earnings; CEO Nadella difende AI open-source contro possibili restrizioni USA (Fonte: Yahoo Finance, Stockanalysis/Morningstar)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 499.35,
+      "stop_loss": 484.37,
+      "target": 524.32,
+      "commissione": 0.00,
+      "reasoning": "Forte momentum post-earnings Q4 (+15.5%), solido posizionamento AI e cloud. Consolidamento attuale (-0.67%) rappresenta punto di ingresso favorevole nel trend rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close Sep 1)", "price": 501.02},
+          {"name": "Stockanalysis/Morningstar (Sep 2)", "price": 497.67}
+        ],
+        "spread_pct": 0.67,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 257.89,
+      "change_24h": "-1.98%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale - volume 12.5M",
+      "news": "Amazon in calo nonostante earnings positivi recenti; pressione generale su growth stocks da rialzo tassi attesi (Fonte: Yahoo Finance, CNBC)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 257.89,
+      "stop_loss": 250.15,
+      "target": 270.78,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA (spread 2.30%), trend ribassista 5 giorni e ambiente macro sfavorevole (rialzo tassi atteso). Attendere stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 254.92},
+          {"name": "CNBC", "price": 260.86}
+        ],
+        "spread_pct": 2.30,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 221.11,
+      "change_24h": "-1.51%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "CEO Jensen Huang difende AI open-source; USA minaccia restrizioni su modelli AI open-source. Dividend $0.25 annunciato, ex-date 10 settembre (Fonte: Yahoo Finance, Stockanalysis)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 221.11,
+      "stop_loss": 214.48,
+      "target": 232.17,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA (spread 3.32%, prezzi $217-$224 tra fonti). Rischio regolatorio AI open-source pesa sul titolo; attendere chiarimento su politica USA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 224.78},
+          {"name": "Stockanalysis/Morningstar (14:27 ET)", "price": 217.44}
+        ],
+        "spread_pct": 3.32,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 336.64,
+      "change_24h": "-0.81%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Alphabet in range stretto $332-$340; settore AI sotto scrutinio regolatorio; earnings recenti positivi (Fonte: Google Finance, CNBC)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 336.64,
+      "stop_loss": 326.54,
+      "target": 353.47,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA (spread 1.61%); nessun catalizzatore diretto oggi. Scenario macro di rialzo tassi pesa sui multiple di crescita. Lateralità attesa.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 339.35},
+          {"name": "CNBC (apertura)", "price": 333.93}
+        ],
+        "spread_pct": 1.61,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 580.27,
+      "change_24h": "-0.59%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Meta raggiunge accordo nel processo sui social media per un totale fino a $16.7 miliardi; impatto legale pesa sulle prospettive (Fonte: Yahoo Finance, Investing.com)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 580.27,
+      "stop_loss": 562.86,
+      "target": 609.28,
+      "commissione": 0.00,
+      "reasoning": "Settlement da $16.7B crea incertezza sulle prospettive di cash flow; nonostante affidabilità ALTA dei prezzi, il rischio legale suggerisce cautela e posizione neutrale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close Sep 1)", "price": 581.99},
+          {"name": "CNBC/Investing.com (Sep 2)", "price": 578.54}
+        ],
+        "spread_pct": 0.59,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 80.31,
+      "change_24h": "-2.06%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale - volume 13.18M",
+      "news": "Netflix in calo; sell-off tecnologico ampio; 52 settimane range $65.08-$126.71, attuale nel terzo inferiore del range (Fonte: Investing.com, Morningstar)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 80.31,
+      "stop_loss": 77.90,
+      "target": 84.33,
+      "commissione": 0.00,
+      "reasoning": "Sell-off di settore e macro sfavorevole (rialzo tassi); il titolo è nel terzo inferiore del range 52 settimane ma senza catalizzatori positivi imminenti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/TradingView (intraday)", "price": 79.80},
+          {"name": "Morningstar (close Sep 1)", "price": 80.81}
+        ],
+        "spread_pct": 1.26,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 457.58,
+      "change_24h": "-2.79%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "CEO Lisa Su difende AI open-source contro restrizioni USA; titolo in calo da $470.72 (chiusura precedente); settore semiconductor sotto pressione (Fonte: Investing.com, Stockanalysis)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 457.58,
+      "stop_loss": 443.85,
+      "target": 480.46,
+      "commissione": 0.00,
+      "reasoning": "Rischio regolatorio AI open-source e calo dal close precedente di $470.72; pur con fondamentali solidi nel lungo periodo, il momentum a breve è sfavorevole.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis (Sep 2 intraday)", "price": 459.45},
+          {"name": "Investing.com (close Sep 1)", "price": 455.70}
+        ],
+        "spread_pct": 0.82,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 421.45,
+      "change_24h": "+0.00%",
+      "trend_5d": "laterale",
+      "volume_note": "sottomedia - 278.8K vs media 396.6K",
+      "news": "Ferrari Q2 2026: EPS $2.99 batte stima $2.85; revenue €1.94B supera €1.93B previsto; personalization >20% dei ricavi; buyback attivo €3.5B; guidance annuale alzata (Fonte: Morningstar, Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 421.45,
+      "stop_loss": 408.81,
+      "target": 442.52,
+      "commissione": 0.00,
+      "reasoning": "Eccellente Q2 con EPS e revenue sopra le attese, buyback attivo €3.5B e guidance alzata forniscono supporto strutturale al titolo. Volume basso oggi tipico per azioni europee su NYSE.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar/Yahoo Finance", "price": 421.05},
+          {"name": "Bloomberg/CNBC (close Aug 25)", "price": 421.85}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "ticker_note": "STLAM quotata Milano; ticker NYSE: STLA",
+      "price": 5.65,
+      "change_24h": "-1.71%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - 30.84M vs media normale",
+      "news": "Stellantis in calo, vicino ai minimi 52 settimane ($5.05); sfide settore auto europeo e contrazione margini (Fonte: Kraken, Robinhood/CNBC)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.65,
+      "stop_loss": 5.48,
+      "target": 5.93,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità MEDIA (spread 3.89% tra sessioni consecutive); trend ribassista confermato con titolo vicino al minimo 52 settimane. Nessun catalizzatore positivo identificato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Kraken (close Sep 1)", "price": 5.76},
+          {"name": "Robinhood/CNBC (Sep 2 intraday)", "price": 5.54}
+        ],
+        "spread_pct": 3.89,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 397.36,
+      "change_24h": "-2.75%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Oro scende sotto $4.400/oz; Fed Chair Kevin Warsh indica ~70% probabilità rialzo tassi il 16 settembre; escalation Iran spinge oil ma colpisce oro; Treasury 10Y ~4.79% (Fonte: Yahoo Finance, Morningstar/CNBC)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 397.36,
+      "stop_loss": 405.31,
+      "target": 381.47,
+      "commissione": 0.00,
+      "reasoning": "Rialzo tassi al 70% di probabilità per 16/9 e Treasury 10Y al 4.79% aumentano il costo opportunità dell'oro. Oro già sceso a minimi di 3 settimane. Trend chiaramente ribassista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Sep 2 intraday)", "price": 397.36},
+          {"name": "Morningstar/CNBC (close Sep 1)", "price": 408.42}
+        ],
+        "spread_pct": 2.75,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 132.83,
+      "change_24h": "-0.24%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Petrolio WTI +6% recente spinto da escalation militare in Iran; prezzi oil in rialzo +3.69% negli ultimi 5 giorni; bond yield e inflazione al rialzo (Fonte: Kraken, StockAnalysis; notizie: Yahoo Finance)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 132.83,
+      "stop_loss": 130.17,
+      "target": 138.14,
+      "commissione": 0.00,
+      "reasoning": "Escalation Iran è catalizzatore diretto per oil; +6% recente con momentum a 5 giorni solido. USO come proxy WTI beneficia della situazione geopolitica. Stop stretto (-2%) data volatilità geopolitica.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken", "price": 132.76},
+          {"name": "StockAnalysis", "price": 132.89}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 76876.93,
+      "change_24h": "-0.60%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale - volume 24h $29.8B",
+      "news": "Bitcoin e crypto in calo: $369M liquidazioni derivati, guerra Iran reignites, rialzo tassi Fed al 70% probabilità per 16/9; BTC regge sopra $76K (Fonte: CoinDesk, CoinMarketCap; Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 76876.93,
+      "stop_loss": 73033.08,
+      "target": 83026.68,
+      "commissione": 0.00,
+      "reasoning": "Multipli fattori avversi (Iran, rate hike, liquidazioni $369M) ma BTC mantiene supporto sopra $76K. Trend laterale/ribassista; attendere chiarimento su politica Fed 16/9.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (Sep 2, 9:51 AM ET)", "price": 77118.98},
+          {"name": "CoinMarketCap", "price": 76634.88}
+        ],
+        "spread_pct": 0.63,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2392.43,
+      "change_24h": "-1.56%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - liquidazioni $369M su altcoin",
+      "news": "Ethereum aperto a $2,417.66, sceso a $2,373.76 per tensioni Iran e rate hike; SEC propone nuove regole blockchain transfer agent, roundtable 17/9 con BlackRock, Nasdaq, NYSE (Fonte: Coinbase, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2392.43,
+      "stop_loss": 2272.81,
+      "target": 2583.82,
+      "commissione": 0.00,
+      "reasoning": "Sell-off crypto ampio con liquidazioni massive; SEC overhaul blockchain rules crea incertezza regolatorio-legale. Nonostante affidabilità MEDIA, troppi rischi simultanei per entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 2411.10},
+          {"name": "Yahoo Finance (Sep 2, 7:13 AM ET)", "price": 2373.76}
+        ],
+        "spread_pct": 1.56,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 98.78,
+      "change_24h": "-3.11%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - volume 24h $3.1B, liquidazioni settore",
+      "news": "Solana scende sotto $100; rete ha processato 5.2B transazioni non-vote in agosto (adozione solida); prediction market 67% probabilità SOL tocchi $90 entro anno (Fonte: CoinMarketCap, Yahoo Finance)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 98.78,
+      "stop_loss": 93.84,
+      "target": 106.68,
+      "commissione": 0.00,
+      "reasoning": "Forte calo -3.11% e possibile ulteriore pressione verso $90; il dato fondamentale (5.2B tx in agosto) è positivo ma il mercato è in sell-off. Attendere stabilizzazione sopra $100.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap", "price": 99.08},
+          {"name": "Yahoo Finance (Sep 2)", "price": 98.47}
+        ],
+        "spread_pct": 0.62,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "ASML",
+      "motivo": "Solo 1 fonte USD verificata (NASDAQ: $1,674.53); seconda fonte solo in EUR (Amsterdam: €1,435.40) - impossibile triangolazione su stessa valuta/mercato"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Spread fonti 4.09% > soglia 4% (S1: $220.89 close Sep1 Investing.com; S2: $212.04 close Sep2 Google Finance)"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread fonti 7.45% > soglia 4% (S1: $57.92 TradingView; S2: $62.40 StockAnalysis) - dati non concordanti"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "USO",
+      "motivo": "Escalation militare Iran = catalizzatore diretto per petrolio WTI; oil +6% recente, trend 5d rialzista +3.69%; dati ALTA affidabilità (spread 0.10%)"
+    },
+    {
+      "rank": 2,
+      "asset": "AAPL",
+      "motivo": "Cambio CEO John Ternus (successore Tim Cook) + product launch atteso 9 settembre; momentum +2.61% oggi; dati ALTA affidabilità"
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "Q2 2026 EPS $2.99 vs $2.85 stima (+4.9% beat); revenue sopra attese; buyback attivo €3.5B; dati ALTA affidabilità (spread 0.19%)"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - scenario macro avverso (rialzo tassi 70%, Iran tensions): allocazione difensiva con focus su segnali BUY validati",
+    "allocazione_suggerita": {
+      "USO": "30% - hedge geopolitico petrolio",
+      "AAPL": "30% - catalizzatore CEO + product launch",
+      "RACE": "20% - fondamentali solidi, buyback attivo",
+      "MSFT": "20% - post-earnings consolidamento, AI leader"
+    }
+  }
+}
