@@ -1,0 +1,483 @@
+{
+  "timestamp": "2026-09-03T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Nasdaq Composite +1.32% intraday Sep 3 2026, broad tech rally guidato da NVDA (+0.7%, acquisizione Hugging Face $12.93B) e TSLA (+2.4%, lancio Cybercab). Apple CEO Tim Cook lascia: John Ternus nuovo CEO, AAPL -1.5%. Alphabet vince causa antitrust (nessuna dismissione ad exchange), GOOGL +0.6%. META +4.09%. Fed: probabilità 66.4% di rialzo tassi 25bps, penalizzando crypto (BTC -29% YTD, ETH -37%, SOL -40%) e oro (GLD flat YTD). Oil in rialzo per escalation US-Iran: USO +103.9% YTD. STLA e SLV esclusi per spread eccessivo tra fonti.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 324.96,
+      "change_24h": "-1.50%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale, vendite moderate su notizia CEO",
+      "news": "Tim Cook lascia Apple dopo 15 anni; John Ternus (VP Hardware Engineering) diventa CEO. Cook ha anticipato un 'lancio enorme' la settimana prossima. Jefferies downgrades AAPL a Sell per cancellazione iPhone all-glass.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 324.96,
+      "stop_loss": 315.21,
+      "target": 341.21,
+      "commissione": 0.00,
+      "reasoning": "Transizione CEO crea incertezza a breve termine; downgrade Jefferies pesa sul titolo. Il potenziale lancio di prodotto la settimana prossima potrebbe rappresentare un catalyst positivo ma il rischio di volatilità rimane elevato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/CNBC/Yahoo Finance (Q1)", "price": 324.96},
+          {"name": "CNBC/Yahoo Finance (Q2 - chiusura 2 Set 4:00 PM EDT)", "price": 324.96}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 357.68,
+      "change_24h": "+2.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto, sessione intensa per lancio Cybercab",
+      "news": "Tesla in rialzo +2.4% il 3 Set 2026 in attesa del lancio del Cybercab. Market cap $1.51T, P/E 331.70. Il lancio del veicolo autonomo è il principale catalyst di giornata.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 357.68,
+      "stop_loss": 346.95,
+      "target": 375.56,
+      "commissione": 0.00,
+      "reasoning": "Lancio Cybercab è catalyst chiaro (+2.4% oggi con volume anomalo). Rally tech Nasdaq +1.32% supporta il momentum. Trend rialzista su 5 giorni. Due fonti concordanti (Yahoo Finance $357.01 + CNBC $358.34, spread 0.37%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (chiusura precedente/intraday)", "price": 357.01},
+          {"name": "CNBC/Yahoo Finance (Q2 - 3 Set 2026)", "price": 358.34}
+        ],
+        "spread_pct": 0.37,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 227.46,
+      "change_24h": "+0.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto, titolo più attivo per volume in dollari",
+      "news": "Nvidia acquisisce Hugging Face per ~$12.93 miliardi, rafforzando la leadership AI open-weight. Dividendo cash $0.25 annunciato, ex-date 10 Set 2026. Titolo più attivo per volume in dollari sulla sessione.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 227.46,
+      "stop_loss": 220.64,
+      "target": 238.83,
+      "commissione": 0.00,
+      "reasoning": "Acquisizione Hugging Face ($12.93B) segnala strategia di leadership nell'AI open-source, sentiment molto positivo. Dividendo cash ex-date 10 Set. Nasdaq +1.32%. 52-week low $164.07, ampio margine di upside verso high $236.54. Validazione ALTA con spread 0.09%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/CNBC (Q1)", "price": 227.35},
+          {"name": "Yahoo Finance/CNBC (Q1 alternativo)", "price": 227.56}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 497.51,
+      "change_24h": "n/d",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "BofA ha aggiornato MSFT a Buy con target $600. Azure ha superato $100B di fatturato in FY2026. Outages segnalate per Microsoft Outlook e ChatGPT Work. Azure cresce costantemente, riorganizzazione segmenti in corso.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 497.51,
+      "stop_loss": 482.58,
+      "target": 522.39,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi (Azure $100B+ FY2026) e upgrade BofA supportano outlook positivo. Tuttavia dati di prezzo validati da una sola fonte (MEDIA); outages Outlook/ChatGPT Work creano incertezza operativa a breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood/Morningstar/Yahoo Finance (Q1 - 3 Set 2026)", "price": 497.51},
+          {"name": "CNBC/Yahoo Finance (Q2 - nessun prezzo esplicito secondario)", "price": 497.51}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 255.96,
+      "change_24h": "n/d",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma dopo -11% da picco agosto",
+      "news": "FTC ha intentato causa contro Amazon per pubblicità ingannevole verso inserzionisti (31 Ago 2026). AMZN -11% dal picco di agosto. 52-week range $196-$287.20, AWS continua a crescere nonostante l'headwind legale.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 255.96,
+      "stop_loss": 248.28,
+      "target": 268.76,
+      "commissione": 0.00,
+      "reasoning": "Causa FTC su pubblicità ingannevole pesa sul sentiment (-11% dal picco agosto). Fondamentali AWS rimangono solidi ma incertezza legale e trend ribassista a breve suggeriscono cautela. Validazione MEDIA (fonte secondaria senza prezzo esplicito).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/CNBC/Morningstar (Q1 - 2 Set 2026)", "price": 255.96},
+          {"name": "CNBC/Yahoo Finance (Q2 - contesto senza prezzo esplicito)", "price": 255.96}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 337.12,
+      "change_24h": "+0.60%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Giudice federale ha stabilito che Google non deve cedere il suo ad exchange, richiedendo solo interoperabilità con i concorrenti (vittoria antitrust). Lancio Gemini 3.8 Flash. Berkshire Hathaway aumenta la sua quota. Dividendo $0.22, ex-date 4 Set 2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 337.12,
+      "stop_loss": 327.01,
+      "target": 353.98,
+      "commissione": 0.00,
+      "reasoning": "Sentenza antitrust positiva elimina il rischio di dismissione dell'ad exchange, rimuovendo un'incertezza chiave. Lancio Gemini 3.8 Flash rafforza posizione AI. Dividendo ex-date 4 Set. Market cap $4.12T. Validazione MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Yahoo Finance (Q1 - 2 Set 2026 chiusura)", "price": 337.12},
+          {"name": "Yahoo Finance/CNBC (Q2 - contesto antitrust senza prezzo esplicito)", "price": 337.12}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 592.22,
+      "change_24h": "+4.09%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo, forte buying pressure",
+      "news": "Meta Platforms in forte rialzo +4.09% il 3 Set 2026. Guadagno +3.96% nelle ultime 4 settimane. Broad tech rally supporta il momentum. La sessione di ieri aveva un range $574.20-$600.38.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 592.22,
+      "stop_loss": 574.45,
+      "target": 621.83,
+      "commissione": 0.00,
+      "reasoning": "META +4.09% oggi con forte momentum rialzista (+3.96% ultime 4 settimane). Broad Nasdaq rally (+1.32%) supporta il titolo. Due fonti Sep 2 concordanti ($591.58 e $592.85, spread 0.21%) confermano il prezzo base; rialzo odierno sostenuto da multipli fonti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/CNBC (Q1 - 2 Set 2026 chiusura)", "price": 591.58},
+          {"name": "Yahoo Finance (Q1 - 2 Set 2026 alternativo)", "price": 592.85}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 82.42,
+      "change_24h": "+1.77%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale",
+      "news": "Netflix +1.77% nelle ultime 24h. Market cap $344.44B, P/E 25.46. Range 2 Set: $80.30-$83.12. Chiusura 1 Set: $80.81. Trend in recupero nelle ultime sessioni.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 82.42,
+      "stop_loss": 79.95,
+      "target": 86.54,
+      "commissione": 0.00,
+      "reasoning": "NFLX in recupero (+1.77% 24h) ma mancano catalyst specifici per incrementare la confidenza. P/E 25.46 valutazione ragionevole. Prossimi earnings attesi per confermare crescita abbonati. Hold in attesa di catalyst direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/Morningstar/CNBC (Q1)", "price": 82.34},
+          {"name": "Robinhood/CNBC/MarketBeat (Q2)", "price": 82.50}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 456.38,
+      "change_24h": "-2.90%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma dopo scivolata AI chips",
+      "news": "AMD scivolato -2.90% (da $470.72 a $457.06) nonostante highlight su efficienza chip AI il 2 Set 2026. AI chip stocks in calo in pre-market 2 Set. AMD +115% YTD (da $149 a oltre $450), profit taking probabile. Market cap $750.27B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 456.38,
+      "stop_loss": 442.69,
+      "target": 479.20,
+      "commissione": 0.00,
+      "reasoning": "AMD -2.90% il 2 Set nonostante outlook AI positivo: profit taking dopo +115% YTD. AI chip sector in correzione. 43 analisti Buy. Trend 5 giorni laterale dopo la scivolata. Attendere stabilizzazione prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/Yahoo Finance (1 Set 2026)", "price": 455.70},
+          {"name": "Yahoo Finance/CNBC (2 Set 2026 chiusura)", "price": 457.06}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1667.15,
+      "change_24h": "-1.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "ASML -4.15% nell'ultima settimana nonostante domanda AI positiva. Titolo -1.80% in pre-market 3 Set. Prossimi earnings 14 Ott 2026. Analisti: 39 Buy, 1 Sell, target medio €2,032. Dividendo interim +17%.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1667.15,
+      "stop_loss": 1617.14,
+      "target": 1750.51,
+      "commissione": 0.00,
+      "reasoning": "ASML -4.15% ultima settimana, correzione tecnica in atto. Fondamentali AI chips eccellenti (39 analisti Buy, upside +40.97%). Attendere stabilizzazione pre-earnings 14 Ott. Validazione MEDIA (prezzo NASDAQ USD da close 2 Set $1,682.30 + pre-market 3 Set $1,652.00).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/Yahoo Finance NASDAQ USD (2 Set chiusura)", "price": 1682.30},
+          {"name": "Yahoo Finance/CNBC NASDAQ pre-market (3 Set)", "price": 1652.00}
+        ],
+        "spread_pct": 1.83,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 216.08,
+      "change_24h": "+3.05%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo, forte accelerazione rialzista",
+      "news": "SAP ADR (NYSE:SAP) +3.05% il 3 Set (da $209.69 a $216.08). SAP AG (ETR:SAPG) +1.91% in EUR. Prossimi earnings 21 Ott 2026. 13 analisti Buy, target medio $247.25. Range 52 settimane $144.97-$281.37.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 216.08,
+      "stop_loss": 209.60,
+      "target": 226.88,
+      "commissione": 0.00,
+      "reasoning": "SAP +3.05% oggi con forte momentum. Prezzo validato ALTA da due ricerche indipendenti concordanti a $216.08. Trend rialzista confermato su 5 giorni. Target medio analisti $247.25 (+14.4% dal livello attuale). Earnings 21 Ott possibile catalyst aggiuntivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE:SAP (Q1 - 3 Set 2026)", "price": 216.08},
+          {"name": "Investing.com (Q2 - conferma)", "price": 216.08}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 414.50,
+      "change_24h": "+0.31%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Ferrari Q2 2026: EPS $2.99 (stima $2.85), ricavi $2.22B (stima $2.15B). Personalization >20% dei ricavi. Guidance FY2026 alzata: EBIT margin min 31.2% nel H2. Order book coperto fino fine 2027. Lancio Luce (EV) e 12Cilindri Manuale.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 414.50,
+      "stop_loss": 402.07,
+      "target": 435.23,
+      "commissione": 0.00,
+      "reasoning": "Ferrari ha alzato la guidance FY2026 con Q2 EPS beat ($2.99 vs $2.85 stima). Order book coperto fino fine 2027 dimostra domanda robusta. Strategia scarcity consolidata. Due fonti concordanti a $414.50 (spread 0%). Lancio Ferrari Luce EV rafforza la narrativa di transizione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/Robinhood/Yahoo Finance (Q1 - 3 Set 2026)", "price": 414.50},
+          {"name": "Investing.com (Q2 - conferma)", "price": 414.50}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 402.78,
+      "change_24h": "+1.52%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma, ETF outflows in corso",
+      "news": "GLD +1.52% il 2 Set (da $396.75 a $402.78). Flat YTD (+0.1%) nonostante +24.7% trailing year. Headwinds: Fed hawkish (66.4% prob. rialzo), yield Treasury elevati, dollaro più forte, energy prices alte. 52-week high $509.70, attualmente -20.8% dal massimo. Sostegno da rischio geopolitico Iran.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 402.78,
+      "stop_loss": 394.72,
+      "target": 418.89,
+      "commissione": 0.00,
+      "reasoning": "GLD +1.52% il 2 Set sostenuto da geopolitica Iran, ma l'headwind strutturale (Fed hawkish al 66.4%, ETF outflows) limita l'upside. Ben lontano dal massimo $509.70. Prezzi validati ALTA da due fonti concordanti ($402.78, spread 0%). Hold in attesa di segnale direzionale chiaro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade/Investing.com (Q1 - 2/3 Set 2026)", "price": 402.78},
+          {"name": "Bloomberg/CNBC NYSE Arca (Q2 - 2 Set chiusura)", "price": 402.78}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 141.07,
+      "change_24h": "+0.12%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "USO +103.9% YTD, migliore ETF commodity 2026. Oil in rialzo per escalation militare US-Iran (nuovi raid USA su target iraniani). Range 52 settimane $65.99-$154.08. Front month WTI futures contango ridotto. USO leader assoluto tra commodity ETF 2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 141.07,
+      "stop_loss": 138.25,
+      "target": 146.71,
+      "commissione": 0.00,
+      "reasoning": "USO +103.9% YTD con momentum fortissimo. Escalation US-Iran fornisce catalyst geopolitico immediato all'oil. 52-week high $154.08 a +9.2% di distanza dall'attuale. Due fonti concordanti ($140.98 e $141.15, spread 0.12%). ETF commodity miglior performer 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Pluang/Investing.com (Q1 - 2 Set 2026)", "price": 140.98},
+          {"name": "Barchart.com/CNBC NYSE Arca (Q2 - 2 Set chiusura)", "price": 141.15}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 79454.00,
+      "change_24h": "+3.62%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume $15.52B nelle 24h, nella norma per BTC",
+      "news": "BTC in recupero il 3 Set: da $77,934 (8 AM EDT) a $80,974 (1:30 PM EDT). Crypto in calo nelle ultime settimane per: escalation Iran (risk-off), Fed hawkish (66.4% prob. rialzo 25bps). BTC -29% YTD. SEC pubblica proposta 421 pagine su transfer agent blockchain (1 Set). Hashdex ETF filing include BTC+ETH+SOL+XRP (1 Set).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 79454.00,
+      "stop_loss": 75481.00,
+      "target": 85810.00,
+      "commissione": 0.00,
+      "reasoning": "BTC recupera +3.62% il 3 Set da $76,672 (2 Set) verso $80,974 ma trend YTD -29% rimane bearish. Fed rate hike al 66.4% crea headwind strutturale. Hashdex ETF filing con BTC+ETH+SOL potrebbe essere catalyst positivo. Validazione MEDIA (spread 3.90% tra ore diverse della stessa giornata).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/Fortune (3 Set 2026 ore 8 AM EDT)", "price": 77934.11},
+          {"name": "CoinDesk/Yahoo Finance (3 Set 2026 ore 1:30 PM EDT)", "price": 80974.15}
+        ],
+        "spread_pct": 3.90,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2499.61,
+      "change_24h": "+4.34%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume $6.85B nelle 24h, leggermente sotto media",
+      "news": "ETH +4.34% il 3 Set (da ~$2,395 a $2,499). Crypto in recupero questa mattina nonostante oil costs in aumento (Yahoo Finance). ETH -37% YTD. Hashdex ETF filing include ETH (1 Set). ETH guadagno mensile +32.5% in agosto. SEC proposal transfer agent blockchain pubblicata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2499.61,
+      "stop_loss": 2374.63,
+      "target": 2699.58,
+      "commissione": 0.00,
+      "reasoning": "ETH in recupero intraday +4.34% ma contesto YTD -37% rimane bearish strutturale. Il Hashdex ETF filing con ETH è potenziale catalyst positivo. Fed rate hike 66.4% pesa sul sentiment crypto. Due fonti concordanti per prezzi pomeridiani ($2,495.30 e $2,503.92, spread 0.35%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase/CoinDesk (3 Set 2026 ore 12:36 PM EDT)", "price": 2495.30},
+          {"name": "Yahoo Finance/Bybit (3 Set 2026 pomeriggio)", "price": 2503.92}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 99.82,
+      "change_24h": "-1.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume $2.9B nelle 24h, nella norma",
+      "news": "SOL intorno a $99-100. Wallet dormiente acquista $8M di SOL il 1 Set (accumulo istituzionale). Solana riduce slot time target da 400ms a 350ms (piano 4 fasi verso 200ms). Record transazioni agosto 2026: 5.2B non-vote transactions (+19% da luglio). Hashdex ETF filing include SOL. SOL -40% YTD.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 99.82,
+      "stop_loss": 94.83,
+      "target": 107.80,
+      "commissione": 0.00,
+      "reasoning": "SOL al supporto psicologico $100. Accumulo whale ($8M il 1 Set) e miglioramenti tecnici (350ms slot) sono segnali positivi. Hashdex ETF filing potenziale catalyst. Tuttavia -40% YTD e Fed hawkish limitano l'upside immediato. Due fonti Coinbase $99.63 e CoinGecko $100.01 concordanti (spread 0.38%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Q1/Q2 - 3 Set 2026)", "price": 99.63},
+          {"name": "CoinGecko (Q1/Q2 - 3 Set 2026)", "price": 100.01}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM/STLA",
+      "motivo": "spread fonti 28.3% > soglia 4%: primo search STLA $7.91 vs ricerche specifiche 3 Set STLA $5.66. Conflitto irrisolvibile. Nota: STLAM è ticker BIT (Milano), il ticker NYSE è STLA."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "spread fonti 5.63% > soglia 4%: Q1 $62.40 (StockAnalysis/Barchart) vs Q2 $59.07 (CNBC/Yahoo Finance NYSE Arca chiusura 2 Set). NAV reportato $57.55 non coerente con prezzo mercato."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Acquisizione Hugging Face $12.93B rafforza leadership AI open-source. Nasdaq +1.32% oggi. Volume anomalo, titolo più attivo. Validazione ALTA (spread 0.09%). Dividendo ex-date 10 Set. Confidence Alto."
+    },
+    {
+      "rank": 2,
+      "asset": "USO",
+      "motivo": "USO +103.9% YTD, best-performer commodity ETF 2026. Escalation US-Iran fornisce catalyst geopolitico immediato. 52-week high a +9.2% di distanza. Validazione ALTA (spread 0.12%). Confidence Alto."
+    },
+    {
+      "rank": 3,
+      "asset": "TSLA",
+      "motivo": "Lancio Cybercab catalyst chiarissimo con +2.4% e volume anomalo alto. Trend rialzista 5 giorni. Validazione ALTA (spread 0.37%). Nasdaq in rialzo supporta tech. Confidence Medio."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Dati solo a scopo informativo.",
+    "allocazione_suggerita": {
+      "NVDA": "15%",
+      "USO": "12%",
+      "TSLA": "10%",
+      "META": "10%",
+      "SAP": "8%",
+      "RACE": "8%",
+      "GOOGL": "8%",
+      "GLD": "7%",
+      "ETH": "5%",
+      "SOL": "5%",
+      "BTC": "5%",
+      "cash_reserve": "7%"
+    }
+  }
+}
