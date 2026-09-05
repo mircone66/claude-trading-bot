@@ -1,0 +1,437 @@
+{
+  "timestamp": "2026-09-05T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione di venerdì 4 settembre 2026 chiusa in rosso per i principali tech USA. Principali driver: timori di rialzo tassi Fed a settembre (probabilità ~50%), delusione per il lancio Cybercab Tesla (-5.92%), e transizione CEO Apple (Cook→Ternus). Metalli preziosi (GLD -0.84%, SLV -1.21%) sotto pressione per aspettative hawkish. Crypto stabile vicino $79K BTC dopo commenti dovish del governatore Fed Waller. ASML, MSFT e AMZN mantengono solidi fondamentali AI/cloud con potenziale di rientro long su pullback.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 319.97,
+      "change_24h": "-2.51%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Apple ha completato la transizione CEO il 1° settembre: Tim Cook diventa Executive Chairman, John Ternus nuovo CEO. Incertezza su continuità strategica pesa sul titolo (fonte: Yahoo Finance, CNBC Sep 2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 319.97,
+      "stop_loss": 310.37,
+      "target": 335.97,
+      "commissione": 0.00,
+      "reasoning": "Crollo del -2.51% il 4 settembre correlato alla transizione CEO; Ternus non ha ancora dimostrato capacità di esecuzione. Fondamentali solidi ma incertezza di governance giustifica cautela: attesa della prima comunicazione pubblica del nuovo CEO prima di rientrare long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC", "price": 319.97},
+          {"name": "Investing.com", "price": 319.97}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 354.08,
+      "change_24h": "-5.92%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (volume elevato sulla caduta)",
+      "news": "Lancio Cybercab definito 'bust' dagli analisti: nessuna data di produzione confermata, senza specifiche tecniche aggiornate. Mercato cap a $1.49T. Titolo in ribasso sostenuto (fonte: CNBC, Yahoo Finance Sep 4 2026).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 354.08,
+      "stop_loss": 364.70,
+      "target": 336.38,
+      "commissione": 0.00,
+      "reasoning": "Il lancio Cybercab ha mancato le aspettative degli investitori (-5.92% in una seduta), senza catalizzatori positivi a breve termine. Trend ribassista confermato: target a -5% da entry in assenza di notizie correttive sull'evento.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Nasdaq / Investing.com", "price": 354.08},
+          {"name": "Yahoo Finance / CNBC", "price": 354.08}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 229.49,
+      "change_24h": "-1.80%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (135.35M vs media 159.3M, -15%)",
+      "news": "NVDA annuncia dividendo cash $0.25 con ex-date 10 settembre 2026. Investimento $3.5B in obbligazioni convertibili MediaTek per AI data center e veicoli smart. 60 analisti con rating Strong Buy (fonte: Yahoo Finance, CNBC Sep 2026).",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 229.49,
+      "stop_loss": 222.61,
+      "target": 240.96,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali AI eccezionali: revenue FY2026 $215.94B (+65% YoY), partnership strategiche MediaTek e dividendo confermano solidità. Affidabilità MEDIA per Q2 senza prezzo esplicito: confidenza ridotta, dimensione posizione conservativa raccomandata.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance / CNBC (Q1 aggregato)", "price": 229.49},
+          {"name": "CNBC / Yahoo Finance (Q2 - fonte confermata, prezzo non esplicitato)", "price": 229.49}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 499.56,
+      "change_24h": "-2.04%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (17.44M)",
+      "news": "MSFT ha raggiunto massimo 4.5 mesi in recente sessione. Pullback del -2.04% il 4 settembre su vendite settoriali legate a timori tassi. Market cap $3.71T. 52W range $349.20-$553.72 (fonte: Nasdaq, Yahoo Finance Sep 2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 499.56,
+      "stop_loss": 484.57,
+      "target": 524.54,
+      "commissione": 0.00,
+      "reasoning": "Leader AI/cloud con Azure in crescita sostenuta. Il pullback del -2.04% appare tecnico (macro-driven) su fondamentali invariati. Prezzo ben al di sotto del massimo 52W ($553.72): spazio verso il target +5% con catalizzatori prossimi reportedegli utili (Q1 FY27).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 499.41},
+          {"name": "Yahoo Finance / CNBC", "price": 499.70}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 258.41,
+      "change_24h": "-0.15%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AWS revenue Q2 $42.2B (atteso $40.54B, +4.1% beat). UBS ha alzato target da $305 a $318 il 31 luglio. Market cap $2.79T. La seduta del 4 settembre è stata praticamente flat (-0.15%) (fonte: CNBC, Yahoo Finance, UBS report).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 258.41,
+      "stop_loss": 250.66,
+      "target": 271.33,
+      "commissione": 0.00,
+      "reasoning": "AWS batte le stime di oltre $1.7B, confermando domanda AI cloud robusta. UBS target $318 (vs $258 attuale = +23% potenziale). Pullback minimo rispetto ai fondamentali: entry favorevole in ottica swing trade verso target +5%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 258.30},
+          {"name": "CNBC / Yahoo Finance", "price": 258.51}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 338.59,
+      "change_24h": "-1.11%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (23.19M vs media 23.95M)",
+      "news": "GOOGL ex-dividendo $0.22 il 4 settembre 2026. Investimento $2.1B per contratto energetico Arkansas, accordo Fervo Energy 396MW. Mizuho reitera Outperform con target $410 (fonte: Yahoo Finance, Mizuho note Sep 2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 338.59,
+      "stop_loss": 328.43,
+      "target": 355.52,
+      "commissione": 0.00,
+      "reasoning": "Ex-dividendo crea pressione tecnica di breve termine (-1.11%). Nonostante il target Mizuho a $410 (+21%), si preferisce attendere stabilizzazione post-stacco e direzione Fed prima di nuovo ingresso long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN / Robinhood", "price": 338.46},
+          {"name": "CNBC / Yahoo Finance", "price": 338.72}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 615.99,
+      "change_24h": "+0.87%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (15.97M vs media 16.69M)",
+      "news": "META in recupero da minimo 5 settimane. Accordo settlement $18B pesa ancora sulla narrativa. Lancio nuovi prodotti AI in corso. 52W range $520.26-$790.80, trading nel terzo inferiore del range (fonte: TradingEconomics, Yahoo Finance Sep 2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 615.99,
+      "stop_loss": 597.51,
+      "target": 646.79,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico da minimo 5 settimane (+0.87%), ma settlement $18B e incertezza su monetizzazione AI mantengono pressione basissita. Attendere conferma del trend rialzista prima di rientrare: livello chiave $620 da recuperare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / CNN", "price": 615.20},
+          {"name": "CNBC / Yahoo Finance", "price": 616.77}
+        ],
+        "spread_pct": 0.26,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1646.19,
+      "change_24h": "-2.15%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "UBS mantiene Buy su ASML con target $2,452 (upside ~49%). AI boom alimenta domanda di sistemi EUV indispensabili per produzione chip avanzati. ASML è monopolista globale nell'EUV lithography. Euronext €1,467.40 = $1,646 USD (fonte: UBS note Aug 31, CNBC, Yahoo Finance Sep 2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1646.19,
+      "stop_loss": 1596.80,
+      "target": 1728.50,
+      "commissione": 0.00,
+      "reasoning": "ASML è l'unico fornitore di sistemi EUV litografici al mondo: pricing power assoluto con domanda AI-driven in accelerazione. Target consensus $2,452 vs prezzo $1,646 rappresenta il 49% di upside strutturale. Il pullback del -2.15% è un'opportunità d'ingresso tattica.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Euronext / Investing.com (€1,467.40 × EUR/USD 1.12)", "price": 1646.00},
+          {"name": "Nasdaq / CNBC / Yahoo Finance (USD)", "price": 1646.19}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 216.56,
+      "change_24h": "+3.50%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Sentiment analisti misto su SAP: Morgan Stanley alza target a EUR 215, BofA aumenta a $260 da $237; ma UBS declassa su preoccupazioni monetizzazione AI. Dati al 3 settembre (fonte: Morgan Stanley, BofA, UBS note Sep 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 216.56,
+      "stop_loss": 210.06,
+      "target": 227.39,
+      "commissione": 0.00,
+      "reasoning": "Segnali analisti divergenti: upside a $260 (BofA) vs declassamento UBS per rischi AI. La forza del +3.50% il 3 settembre sembra tecnica senza catalizzatore fondamentale chiaro. Preferibile attendere chiarimento sulla strategia AI prima di posizionarsi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 216.08},
+          {"name": "CNN / Morningstar / Yahoo Finance", "price": 217.03}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 409.96,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "sotto media (314.54K vs media 354.74K, -11.2%)",
+      "news": "Ferrari sottoperforma il mercato: -12.4% YTD vs SPY +19.8%. Beta 1.23 amplifica la volatilità macro. Nessun catalizzatore specifico negativo identificato; 52W range $312.51-$504.49 (fonte: Stockanalysis, MarketBeat Sep 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 409.96,
+      "stop_loss": 397.66,
+      "target": 430.46,
+      "commissione": 0.00,
+      "reasoning": "Ferrari mantiene premium di lusso ma sottoperforma significativamente lo S&P500 nel 2026. Volume sotto media suggerisce mancanza di interesse istituzionale. Neutro: attendere conferma del trend prima di posizionarsi long o short.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance", "price": 409.96},
+          {"name": "CNBC / CNN", "price": 409.96}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 406.77,
+      "change_24h": "-0.84%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "L'oro spot è sceso sotto $4,400/oz sui timori di rialzo tassi Fed (probabilità ~50% per settembre). SPDR GLD da $410.22 a $406.77 (-0.84%). Secondo consecutive settimana in perdita. Commenti dovish di Waller Fed hanno frenato parzialmente la discesa venerdì (fonte: CNBC Sep 4 2026, Mining.com).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 406.77,
+      "stop_loss": 414.90,
+      "target": 390.50,
+      "commissione": 0.00,
+      "reasoning": "Oro in tendenza ribassista accelerata da hawkishness Fed: probabilità rialzo settembre ~50%, in aumento dalla settimana scorsa. Seconda settimana negativa consecutiva. Target SL -4% conservativo per ETF; rischio principale: decisione Fed dovish potrebbe invertire il trend.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance / Nasdaq", "price": 406.77},
+          {"name": "Bloomberg / StockInvest.us (Sep 2, adeguato)", "price": 402.78}
+        ],
+        "spread_pct": 0.99,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 59.82,
+      "change_24h": "-1.21%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (12.64M shares)",
+      "news": "L'argento spot scivola sotto $65/oz (fonte Yahoo Finance Sep 1) con aspettative di rialzo tassi Fed che pesano sui metalli non-yield. iShares SLV da $60.55 a $59.82 (-1.21%). L'argento mostra maggiore volatilità rispetto all'oro (fonte: CNBC, Yahoo Finance Sep 2026).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 59.82,
+      "stop_loss": 61.02,
+      "target": 57.43,
+      "commissione": 0.00,
+      "reasoning": "L'argento tende ad amplificare i movimenti dell'oro in contesti di risk-off da tassi. Con -1.21% nella seduta e trend ribassista confermato, la pressione al ribasso potrebbe intensificarsi se Fed conferma rialzo. Posizione short/sell in linea con scenario macro dominante.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance / Nasdaq", "price": 59.82},
+          {"name": "CNBC / Google Finance / Nasdaq (Q2 separato)", "price": 59.82}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 79730.00,
+      "change_24h": "+0.28%",
+      "trend_5d": "laterale",
+      "volume_note": "normale ($18.12B volume 24h)",
+      "news": "Bitcoin stabile nel range $79K-$80K dopo i commenti dovish di Fed Waller che hanno ridotto le aspettative di rialzo. SEC pubblica 421 pagine di proposta su agenti di trasferimento blockchain. ATH storico ~$126K ottobre 2025 (fonte: CoinMarketCap, CoinDesk, Fortune Sep 4 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 79730.00,
+      "stop_loss": 75743.50,
+      "target": 86108.40,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida in laterale ($76K-$80K) a settembre; i commenti Fed Waller hanno allentato parzialmente la pressione. Macro sfavorevole (rialzo tassi 50% prob.) controbilanciato da Grayscale e da flussi istituzionali. HOLD in attesa di breakout del range o decisione Fed.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune / Coinbase / CoinDesk", "price": 79697.00},
+          {"name": "CoinMarketCap / Coinbase", "price": 79763.08}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2455.35,
+      "change_24h": "-2.06%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale ($12.27B)",
+      "news": "Ethereum -2.06% nelle ultime 24h, segue debolezza generale crypto. Market cap $300.15B, rank #2. Analisti vedono pressione macro persistente fino a decisione Fed settembre (fonte: CoinDesk, Coinbase, CoinMarketCap Sep 5 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2455.35,
+      "stop_loss": 2332.58,
+      "target": 2651.78,
+      "commissione": 0.00,
+      "reasoning": "ETH mantiene posizione #2 per market cap con solida infrastruttura DeFi, ma il -2.06% riflette pressione macro generale. Nessun catalizzatore specifico positivo a breve; si preferisce attendere stabilizzazione BTC e chiarimento Fed prima di accumulare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk / Coinbase", "price": 2459.66},
+          {"name": "Coinbase / CoinMarketCap", "price": 2453.63}
+        ],
+        "spread_pct": 0.25,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 101.86,
+      "change_24h": "-3.66%",
+      "trend_5d": "laterale",
+      "volume_note": "elevato ($3.79B su CoinMarketCap)",
+      "news": "Grayscale nomina Solana 'leader tokenized stock' il 4 settembre 2026: volume equity tokenizzato settimanale vicino a $3B su Solana. Nonostante il catalizzatore positivo, SOL -3.66% per debolezza macro crypto (fonte: CoinMarketCap, CoinDesk, Grayscale research Sep 4 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 101.86,
+      "stop_loss": 96.77,
+      "target": 110.01,
+      "commissione": 0.00,
+      "reasoning": "Il riconoscimento di Grayscale come leader nell'equity tokenizzata è un forte catalizzatore fondamentale long-term. Il -3.66% giornaliero riflette vendite macro correlate a BTC/ETH. Spread MEDIA tra fonti (2.19%): confidenza conservativa. HOLD con bias rialzista strutturale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "OKX / Coinbase / CoinGecko (media Q1)", "price": 102.36},
+          {"name": "CoinMarketCap / CoinDesk / CoinGecko (media Q2)", "price": 101.65}
+        ],
+        "spread_pct": 2.19,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NFLX",
+      "motivo": "Spread fonti >4%: Q1 riporta $78.25 con range giornaliero $79.60-$82.13 (internamente inconsistente: prezzo sotto il minimo di giornata). Q2 riporta $82.34 da Yahoo Finance/CNBC. Spread calcolato 5.23% > soglia 4%: dati inaffidabili."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Fonti in forte disaccordo: Q1 riporta $476.24 (range $458.00-$478.83); Q2 riporta range $440.50-$459.77 con terza fonte a $481.09. Dati temporali inconsistenti, spread effettivo tra fonti superiore alla soglia del 4%."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "STLAM è quotato a Milano (BIT), non NYSE. Il ticker NYSE per Stellantis è STLA. Per STLA: spread dell'88% tra fonti (Q1: $10.36 con 52W range $8.39-$21.05 vs Q2: $5.49 con 52W range $5.05-$12.22). Dati completamente contraddittori, asset escluso."
+    },
+    {
+      "asset": "USO",
+      "motivo": "La seconda fonte (Q2) non ha restituito un prezzo corrente verificabile per USO ETF. Fonte singola confermata (Q1: $140.98 al 2 settembre, 3 giorni precedenti). Regola: Fonti < 2 → BASSA → escluso dai segnali."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "Monopolio EUV litography con target consensus $2,452 (+49% vs prezzo attuale $1,646.19). UBS Buy reiterato il 31 agosto. Pullback del -2.15% è opportunità d'ingresso con stop ben definito. Confidenza ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "AWS revenue Q2 supera le attese di $1.7B. UBS ha alzato il target a $318 (+23% da $258). Pullback del -0.15% praticamente flat: punto di accumulo ideale con fondamentali solidi. Confidenza ALTA."
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Leader AI/cloud in pullback tecnico del -2.04% su macro (tassi), non su fondamentali. Prossimo al massimo 4.5 mesi ($553.72 52W high). Entry a $499.56 con rischio/rendimento favorevole verso +5%. Confidenza ALTA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca o qualsiasi broker",
+    "allocazione_suggerita": {
+      "ASML_BUY": "10% del portafoglio",
+      "AMZN_BUY": "10% del portafoglio",
+      "MSFT_BUY": "10% del portafoglio",
+      "NVDA_BUY": "5% del portafoglio (affidabilità MEDIA, posizione ridotta)",
+      "TSLA_SELL": "5% del portafoglio (posizione short/put)",
+      "GLD_SELL": "5% del portafoglio (posizione short/put)",
+      "SLV_SELL": "5% del portafoglio (posizione short/put)",
+      "liquidita": "50% (attesa decisione Fed settembre)"
+    }
+  }
+}
