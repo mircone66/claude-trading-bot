@@ -1,0 +1,498 @@
+{
+  "timestamp": "2026-09-10T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta del 10 settembre 2026 con pressione ribassista sul settore tech USA (Nasdaq -0.95%, XLK -1.3%), con raffreddamento del rally AI e NVDA in calo dell'1.4%. Tensioni geopolitiche USA-Iran spingono i prezzi del petrolio ai massimi di 3 mesi e supportano l'oro sopra i $4.390/oz. La Fed si mostra più hawkish: UBS rivede previsioni a 2 rialzi tassi nel 2026 (settembre e dicembre), creando vento contrario per metalli preziosi e crypto. Standout positivi: META +6.5% sul lancio dell'agente AI Muse, Ferrari +1.56%, e Solana con riconoscimento SEC come core ETF asset. BTC scivola sotto gli $80.000 in ambiente risk-off. USD debole supporta oro nonostante i rialzi attesi.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 315.34,
+      "change_24h": "-0.5%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; sessione tech debole",
+      "news": "Settore tech USA sotto pressione (-1.3% XLK); nessun catalizzatore specifico per Apple. 52-week range $226.65-$344.57, trading in zona mediana. Market cap $4.60T, 25 analisti Buy, 5 Sell.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 315.34,
+      "stop_loss": 305.88,
+      "target": 331.11,
+      "commissione": 0.00,
+      "reasoning": "Assenza di catalizzatori specifici per AAPL in una giornata di debolezza tech generalizzata (Nasdaq -0.95%). Posizione attesa finché non emergono dati o notizie societarie.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/CNBC aggregated", "price": 315.34}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte non ha restituito prezzo esplicito per il 10/09/2026; usato unico prezzo verificato"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 367.52,
+      "change_24h": "+0.16%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume anomalo basso: 32.56M vs media 43.58M (-25.3%)",
+      "news": "Tesla trading in range $363.80-$375.44. Volume significativamente sotto media, P/E altissimo a 342. Nessun catalizzatore specifico; settore tech debole. 52-week $297.38-$498.83.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 367.52,
+      "stop_loss": 356.49,
+      "target": 385.90,
+      "commissione": 0.00,
+      "reasoning": "Volume 25% sotto media indica scarso interesse direzionale. P/E di 342 riflette valutazione speculativa. Attendere segnali di volume più robusti prima di prendere posizione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Robinhood (Q1)", "price": 367.22},
+          {"name": "CNBC/Investing.com (Q2)", "price": 367.81}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 224.37,
+      "change_24h": "-1.40%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo: 39.52M vs media 158.08M (-75%) - acquisti quasi assenti",
+      "news": "NVDA esplicitamente citata come -1.4% oggi in ambiente di raffreddamento del trade AI. Volume al 25% della media storica. Ex-dividendo oggi ($0.25). VanEck Semiconductor ETF (SMH) -2.09%. Micron Technology -3%.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 224.37,
+      "stop_loss": 231.10,
+      "target": 213.15,
+      "commissione": 0.00,
+      "reasoning": "Calo esplicito -1.4% + volume al 25% della media = assenza di demand; raffreddamento AI trade confermato da CNBC/Yahoo Finance. Ex-dividendo come ulteriore catalizzatore ribassista short-term.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/CNBC (Q1)", "price": 224.37}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Q2 ha confermato ex-div $0.25 il 10/09 ma non ha fornito prezzo alternativo esplicito"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 499.70,
+      "change_24h": "-2.04%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "MSFT -2.04% oggi. Market cap $3.65T. Consensus Strong Buy con target 12m $569.45 (+14%). Nessuna notizia societaria specifica; calo attribuito al pullback generalizzato del settore tech.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 499.70,
+      "stop_loss": 484.71,
+      "target": 524.69,
+      "commissione": 0.00,
+      "reasoning": "Calo intraday -2% su pressioni di settore, non su notizie societarie. Fondamentali solidi (Strong Buy consensus, +14% target). Attendere stabilizzazione per potenziale BUY.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen/CNBC aggregated (Q1)", "price": 499.70}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Q2 ha confermato analyst sentiment senza prezzo alternativo esplicito"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 252.05,
+      "change_24h": "-0.22%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "AMZN close $251.85, -0.22%. Revenue Q2 +15.77% YoY accelerante vs +14.22% Q1. CapEx 2026 $220B per AI/cloud. 52-week $196-$287.20. Rischi: debito crescente e sfide regolamentari (da Yahoo Finance/MarketBeat).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 252.05,
+      "stop_loss": 244.49,
+      "target": 264.65,
+      "commissione": 0.00,
+      "reasoning": "Crescita revenue accelerante è positiva ma pesante capex e contesto tech debole limitano upside a breve. Monitorare per eventuale BUY su pullback a supporto.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/StockAnalysis (Q1)", "price": 252.05}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Q2 non ha restituito prezzo esplicito; confermata crescita revenue e CapEx plan"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 333.93,
+      "change_24h": "+1.71%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "GOOGL apre Sept 10 a $333.93 (prev close $328.31, +1.71%). Range intraday $332.82-$340.00. Nessuna notizia societaria specifica; outperformance relativa rispetto al settore tech (CNBC).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 333.93,
+      "stop_loss": 323.91,
+      "target": 350.63,
+      "commissione": 0.00,
+      "reasoning": "Performance relativa positiva (+1.71% vs Nasdaq -0.95%) ma dati limitati e contesto di settore debole. Attendere conferma direzionale con secondo giorno di forza.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC aggregated (Q1) - apertura Sept 10", "price": 333.93}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Unica fonte per prezzo di apertura; prev close $328.31 (Sept 9) come riferimento"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 653.69,
+      "change_24h": "+6.54%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo ALTO - lancio AI Muse genera interesse",
+      "news": "META +6.54% oggi (da $613.48 a $653.69). Lancio agente AI Muse per shopping, biglietti cinema e scheduling. 55/55 analisti rating Buy/Strong Buy. Market cap $1.67T. 52-week $520.26-$790.80, trading a metà range. Prossimi earnings Oct 28, 2026 (Yahoo Finance/CNBC).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 653.69,
+      "stop_loss": 634.08,
+      "target": 686.37,
+      "commissione": 0.00,
+      "reasoning": "Forte momentum +6.54% su catalizzatore concreto (AI Muse); 55 analisti unanimemente bullish. Momentum positivo in ambiente tech altrimenti debole indica forza relativa eccezionale (fonte: Yahoo Finance/CNBC).",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/Investing.com (Q1)", "price": 653.69}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Q2 ha confermato lancio Muse e 55 analisti Buy senza prezzo alternativo esplicito"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 80.46,
+      "change_24h": "+4.80%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo - gap up da $76.77 a $82.17 il 9 settembre",
+      "news": "NFLX ha registrato un gap up il 9 settembre: prev close $76.77, open $82.17 (+7%), range $78.23-$82.69. Prezzo stimato 10 settembre: ~$80.46 (midpoint range). Dati insufficienti per conferma precisa (CNBC/Yahoo Finance).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 80.46,
+      "stop_loss": 78.05,
+      "target": 84.48,
+      "commissione": 0.00,
+      "reasoning": "Gap up del 7% il 9 settembre segnala catalizzatore non identificato; dati Sept 10 insufficienti per validare continuazione. HOLD in attesa di conferma della nuova base di supporto ~$78-79.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC aggregated (Q1) - stima midpoint range Sept 9", "price": 80.46}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Dato impreciso: range Sept 9 $78.23-$82.69 usato per stima; Q2 non ha fornito prezzo Sept 10"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 519.95,
+      "change_24h": "+0.44%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "AMD +0.44% oggi a $521.10 (close Sept 9: $518.80). Guidance Q3: revenue $13.0B (+41% YoY), sopra consensus FactSet $12.5B. ATH $584.73 il 30 giugno. 52-week $149.85-$584.73. Forte crescita ma AI sector sotto pressione oggi (CNBC/Pintu News).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 519.95,
+      "stop_loss": 504.35,
+      "target": 545.95,
+      "commissione": 0.00,
+      "reasoning": "Guidance eccezionale +41% YoY è catalizzatore positivo forte, ma l'ambiente AI/chip negativo oggi (NVDA -1.4%, SMH -2.09%) crea vento contrario. Monitorare per BUY se settore si stabilizza.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/CNBC (Q1 - close Sept 9)", "price": 518.80},
+          {"name": "CNBC aggregated (Q2 - Sept 10)", "price": 521.10}
+        ],
+        "spread_pct": 0.44,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1732.31,
+      "change_24h": "-1.61%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 561K (inferiore alla media, giornata di correzione)",
+      "news": "ASML -1.61% a $1,736.45 (open $1,727.72). Samsung ed ASML espandono collaborazione strategica per produzione semiconduttori High-NA EUV (8 settembre 2026). 43 analisti Strong Buy, target medio $2,168 (+22.75%). ATH close $1,986.87 il 30 giugno. 52-week $791-$1,999 (Seeking Alpha/CNBC).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1732.31,
+      "stop_loss": 1680.34,
+      "target": 1818.93,
+      "commissione": 0.00,
+      "reasoning": "Partnership Samsung-ASML per High-NA EUV (generazione successiva litografia) è catalizzatore strutturale a lungo termine. Correzione giornaliera -1.61% offre entry favorevole. 43 analisti Strong Buy con target +22.75% (fonte: CNBC/Seeking Alpha).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/news aggregated (Q1 - Sept 9)", "price": 1728.16},
+          {"name": "Seeking Alpha/CNBC (Q2 - Sept 10)", "price": 1736.45}
+        ],
+        "spread_pct": 0.48,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 216.08,
+      "change_24h": "+2.18%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "SAP ADR su NYSE a $216.08 oggi (vs $211.49 il 8 settembre). Consensus Strong Buy: 24 analisti Buy, 0 Sell, 4 Hold. Target medio $207.77 EUR. Business AI in crescita. 52-week $144.97-$281.37 (Investing.com/Bloomberg).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 216.08,
+      "stop_loss": 209.60,
+      "target": 226.88,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi e consensus Strong Buy, ma assenza di catalizzatori immediati e prezzo di oggi confermato da una sola fonte. HOLD prudente in attesa di conferma da earnings o notizie societarie.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE (Q2 - oggi)", "price": 216.08},
+          {"name": "Investing.com NYSE (Q1 - Sept 8)", "price": 211.49}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Le due fonti sono da date diverse (Sept 8 vs Sept 10); solo un prezzo confermato per oggi"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 408.60,
+      "change_24h": "+1.56%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "Ferrari +1.56% a $408.60 il 10 settembre. Bank of America Securities reitera Buy rating. Earnings attesi 3 novembre 2026. 52-week $312.51-$504.49; prezzo corrente a metà range con ampio upside verso ATH. Market cap $71.77B (Yahoo Finance/CNBC).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 408.60,
+      "stop_loss": 396.34,
+      "target": 429.03,
+      "commissione": 0.00,
+      "reasoning": "Momentum positivo +1.56% con Bank of America che reitera Buy. Ferrari dimostra resilienza nel contesto di debolezza tech, sostenuta da brand esclusivo e pricing power su mercati luxury. Fonte: Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Robinhood (Q1 - Sept 8)", "price": 405.38},
+          {"name": "Yahoo Finance/Seeking Alpha (Q2 - Sept 10)", "price": 408.60}
+        ],
+        "spread_pct": 0.79,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 398.85,
+      "change_24h": "-1.42%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; pressione geopolitica sostiene interesse",
+      "news": "GLD a $398.85 il 9 settembre (range $398.48-$404.60). Oro spot sale sopra $4.390/oz supportato da USD debole e tensioni USA-Iran. UBS rivede previsioni Fed a 2 rialzi 2026 (headwind), ma instabilità geopolitica e rischio inflazione bilanciano. Gold +10.5% in agosto (GlobeNewswire/Sprott Money).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 398.85,
+      "stop_loss": 390.87,
+      "target": 414.80,
+      "commissione": 0.00,
+      "reasoning": "Tensioni USA-Iran spingono oro sopra $4.390/oz. USD debole amplifica il supporto. Sebbene rialzi Fed siano headwind, il risk-off geopolitico tende a prevalere nel breve termine. Fonte: GlobeNewswire/Sprott Money.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/StockAnalysis (Q1 - Sept 9)", "price": 398.85}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Q2 ha fornito prezzo $402.78 datato 2 settembre (stale); usato prezzo più recente da Q1"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 59.98,
+      "change_24h": "+0.27%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "SLV a $59.98 (8 settembre), range $59.47-$60.08. Titolo 'Gold Slips, Silver Tumbles on Rate-Hike Bets' da Sept 2. UBS aumenta aspettative di rialzi Fed. 52-week $37.01-$109.83 - argento estremamente volatile. Supporto geopolitico ma headwind tassi (Investing.com/iShares).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 59.98,
+      "stop_loss": 58.78,
+      "target": 62.38,
+      "commissione": 0.00,
+      "reasoning": "Forze contrastanti: tensioni geopolitiche supportano argento come safe haven, ma aspettative di rialzi Fed creano vento contrario. Volatilità storica estrema (52-week da $37 a $109) richiede cautela senza catalizzatore direzionale chiaro.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/iShares (Q1 - Sept 8)", "price": 59.98},
+          {"name": "Barchart/CNBC (Q2 - Sept 8)", "price": 59.98}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Entrambe le fonti restituiscono la stessa data (8 settembre); effettivamente una sola fonte"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 78057.00,
+      "change_24h": "-1.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume $28.5B (elevato - vendite prevalenti)",
+      "news": "BTC sotto $80.000 (livello chiave). -29% YTD. Mercati crypto in calo su combattimenti USA-Iran. 95/100 asset CoinDesk 100 in rosso. BTC a $78.136 (CoinDesk) e $77.977 (CoinMarketCap) il 10 settembre. Volume 24h $28.5B (Yahoo Finance/CoinMarketCap).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 78057.00,
+      "stop_loss": 81959.85,
+      "target": 71812.44,
+      "commissione": 0.00,
+      "reasoning": "Rottura sotto $80.000 supporta il bear trend (-29% YTD). Ambiente risk-off da tensioni USA-Iran. Volume elevato con 95% asset crypto in rosso indica pressione di vendita strutturale. Fonte: CoinDesk/CoinMarketCap.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (Q1 - Sept 9/10)", "price": 78136.76},
+          {"name": "CoinMarketCap (Q2 - Sept 10)", "price": 77977.17}
+        ],
+        "spread_pct": 0.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2463.42,
+      "change_24h": "+1.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume $13.54B (nella norma per ETH)",
+      "news": "ETH a $2.491 (CoinDesk) e $2.436 (Coinbase) il 10 settembre; spread 2.26%. -37% YTD. Una fonte mostra +1.3% nelle ultime 24h ma contesto macro crypto negativo. Market cap $301.38B (#2 crypto). Range 24h $2.445-$2.521 (Yahoo Finance/Coinbase).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2463.42,
+      "stop_loss": 2340.25,
+      "target": 2660.49,
+      "commissione": 0.00,
+      "reasoning": "Segnali contrastanti: +1.3% nelle 24h ma -37% YTD e ambiente macro negativo per crypto (USA-Iran, rate hike). Spread del 2.26% tra fonti indica volatilità intraday elevata. HOLD finché non emerge tendenza chiara.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (Q1)", "price": 2491.27},
+          {"name": "Coinbase (Q2)", "price": 2435.56}
+        ],
+        "spread_pct": 2.26,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 100.96,
+      "change_24h": "-1.50%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume $3.09B (sopra media - interesse istituzionale)",
+      "news": "SOL a $101.06 (CoinMarketCap) e $100.85 (Coinbase). SEC ha ufficialmente designato SOL come core ETF asset. Solana Foundation lancia Payment Channels con 1 milione pagamenti/secondo. Solana guida boom tokenized equity $3B settimanali. -40% YTD ma recente riconoscimento istituzionale è game-changer (CoinMarketCap/Coinbase).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 100.96,
+      "stop_loss": 95.91,
+      "target": 109.04,
+      "commissione": 0.00,
+      "reasoning": "Il riconoscimento SEC di SOL come core ETF asset è un catalizzatore istituzionale fondamentale (prima volta). Il lancio di Payment Channels (1M tx/sec) rafforza il caso tecnico. Volume sopra media indica interesse genuino nonostante il pullback YTD. Fonte: CoinMarketCap/Coinbase.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Q2)", "price": 101.06},
+          {"name": "Coinbase (Q1+Q2)", "price": 100.85}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLA",
+      "motivo": "Spread tra fonti 8.5% (>4%): Q1 NYSE=$5.76, Q2 Morningstar/CNBC=$5.29. Discrepanza non riconciliabile su prezzi dello stesso giorno. Nota: ticker NYSE è STLA (non STLAM che è Milano/EUR).",
+      "price_range_observed": "$5.29-$5.76"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread tra fonti 12.3% (>4%): Q1 CNBC/Investing.com=$146.03 (Sept 9), Q2 HeyGoTrade=$129.17 (data non certa). Nonostante notizie rialziste su petrolio (USA-Iran, +103.9% YTD), spread eccessivo impedisce validazione.",
+      "price_range_observed": "$129.17-$146.03"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "tipo": "stock_eu",
+      "signal": "BUY",
+      "motivo": "Partnership Samsung-ASML per High-NA EUV (nuova generazione litografia). ALTA price validation (spread 0.48%). 43 analisti Strong Buy, target +22.75%. Correzione giornaliera -1.61% offre entry favorevole su trend strutturale AI/semiconduttori."
+    },
+    {
+      "rank": 2,
+      "asset": "META",
+      "tipo": "stock_usa",
+      "signal": "BUY",
+      "motivo": "+6.54% oggi su lancio agente AI Muse. Forza relativa eccezionale in giornata di debolezza tech. 55/55 analisti Buy/Strong Buy. Prossimi earnings 28 ottobre come ulteriore catalizzatore."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "tipo": "crypto",
+      "signal": "BUY",
+      "motivo": "Riconoscimento SEC come core ETF asset (prima volta nella storia di SOL). Payment Channels 1M TPS. ALTA price validation (spread 0.21%). Catalizzatore istituzionale strutturale raramente visto in crypto."
+    },
+    {
+      "rank": 4,
+      "asset": "GLD",
+      "tipo": "etf_commodity",
+      "signal": "BUY",
+      "motivo": "Tensioni USA-Iran spingono oro sopra $4.390/oz. USD debole amplifica supporto. Gold +10.5% in agosto, trend commodity bullish confermato da USO +103.9% YTD."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - solo a scopo analitico",
+    "allocazione_suggerita": {
+      "ASML_BUY": "12%",
+      "META_BUY": "10%",
+      "SOL_BUY": "8%",
+      "GLD_BUY": "8%",
+      "RACE_BUY": "5%",
+      "NVDA_SELL_short": "5%",
+      "BTC_SELL_short": "5%",
+      "cash_e_hold": "47%"
+    },
+    "ratio_long_short": "43% long / 10% short / 47% neutrale",
+    "bias_di_mercato": "Cauto - pressione tech, geopolitica destabilizzante, Fed hawkish"
+  }
+}
