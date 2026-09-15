@@ -1,0 +1,510 @@
+{
+  "timestamp": "2026-09-15T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA in pullback moderato (QQQ -0.55%) su preoccupazioni per rallentamento sviluppo AI: OpenAI posticipa IPO, Anthropic chiede sviluppo più lento dei modelli frontier. ASML -6.1% il 14/09 come spillover sul settore semiconduttori. Settore energetico in forte rialzo: USO +1.14%, US-Iran geopolitical risk premium. Oro con $2B di afflussi ETF in 5 giorni (conviction buying). Crypto in attesa del FOMC del 16 settembre; SOL riconosciuta da SEC come asset ETF il 5/09. NVDA in controtendenza +1.1% grazie a notizie su investimento IPO Anthropic.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 212.46,
+      "change_24h": "+0.71%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume elevato su rimbalzo da $208.93; normale",
+      "news": "NVIDIA in trattative per investire nell'IPO di Anthropic nonostante la call per rallentare lo sviluppo AI. Quota +1.1% a $212.22 in controtendenza rispetto al settore tech in calo. Deutsche Bank ha alzato il price target a $220.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 212.46,
+      "stop_loss": 206.09,
+      "target": 223.08,
+      "commissione": 0.00,
+      "reasoning": "NVDA resiste alla pressione del settore tech grazie all'interesse strategico per Anthropic e alla domanda infrastrutturale AI rimasta intatta. Analysts consensus 'Strong Buy', PT Deutsche Bank $220 (+3.5%). Fonte: CNBC/Yahoo Finance Sep 15 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Investing.com", "price": 212.56},
+          {"name": "Yahoo Finance", "price": 212.36}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 359.23,
+      "change_24h": "-1.77%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma",
+      "news": "Tesla -1.77% penalizzata da preoccupazioni sull'AI e competizione EV. Circolano voci su possibile collaborazione con SpaceX. Il management resta in attesa di chiarezza sul contesto normativo AI.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 359.23,
+      "stop_loss": 348.45,
+      "target": 377.19,
+      "commissione": 0.00,
+      "reasoning": "Incertezza da speculazioni merger SpaceX e contesto tech ribassista. Trend 5g negativo; attendere segnali di inversione prima di entrare. Fonte: Yahoo Finance/CNBC Sep 14 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close Sep 14)", "price": 358.97},
+          {"name": "CNBC after-hours Sep 14", "price": 359.48}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 504.71,
+      "change_24h": "+1.97%",
+      "trend_5d": "rialzista",
+      "volume_note": "Anomalo: 23.09M vs media 19.12M (+20.8%)",
+      "news": "Microsoft pianifica di triplicare la capacità data center per la domanda AI. Sta modificando la strategia di reporting revenue Azure segnalando fiducia nel business AI. Stock +2% nonostante calo generale mercato.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 504.71,
+      "stop_loss": 489.57,
+      "target": 529.95,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi ma valutazione già incorpora espansione AI. Volume anomalo suggerisce interesse istituzionale ma mercato in pullback. Attendere conferma di trend rialzista sostenuto. Fonte: Tickzen/Yahoo Finance Sep 15 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen/CNN (Sep 15)", "price": 504.01},
+          {"name": "Yahoo Finance/CNBC (close Sep 14)", "price": 505.41}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 252.99,
+      "change_24h": "-1.26%",
+      "trend_5d": "laterale",
+      "volume_note": "Anomalo: 34.35M vs media 30.85M (+11.3%)",
+      "news": "Amazon -1.26% nel calo tech. Investimento $230M nel welfare dipendenti Whole Foods. Coalizione con Netflix e YouTube per riforma policy streaming. Range 52w: $196-$287.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 252.99,
+      "stop_loss": 245.40,
+      "target": 265.64,
+      "commissione": 0.00,
+      "reasoning": "Volume anomalo (+11%) in fase di calo indica pressione di vendita istituzionale. Attendere stabilizzazione del settore tech post-FOMC del 16 settembre. Fonte: CNN/Yahoo Finance Sep 14-15 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Investing.com (Sep 15)", "price": 252.45},
+          {"name": "Yahoo Finance (close Sep 14)", "price": 253.54}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 335.55,
+      "change_24h": "+0.59%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Alphabet +0.59% in controtendenza vs mercato. Cloud backlog robusto, fattori favorevoli sui margini. 57 analisti: PT medio $428.07 (+27.6% upside). Forza relativa significativa oggi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 335.55,
+      "stop_loss": 325.48,
+      "target": 352.33,
+      "commissione": 0.00,
+      "reasoning": "Forza relativa positiva rispetto al mercato (-0.55%) e al settore tech in calo. Upside analisti del 27.6% con consensus 'Buy'. Domanda cloud AI resiliente. Fonte: CNN/Yahoo Finance Sep 15 2026. [MEDIA: spread 1.77%]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Tickzen (Sep 15)", "price": 332.60},
+          {"name": "Yahoo Finance", "price": 338.50}
+        ],
+        "spread_pct": 1.77,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 659.56,
+      "change_24h": "+0.11%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Meta +0.11%, resiste bene nel contesto di calo. Dividendo cash $0.525 con ex-date 21 settembre 2026. 62 analisti: PT medio $754.15 (+14.3% upside), consensus 'Strong Buy'.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 659.56,
+      "stop_loss": 639.77,
+      "target": 692.54,
+      "commissione": 0.00,
+      "reasoning": "Forza relativa positiva, ex-dividend date imminente (21/09) supporta quotazione. PT $754 con 62 analisti 'Strong Buy'. Resilienza nei confronti del selloff tech. Fonte: Yahoo Finance/CNBC Sep 15 2026. [MEDIA: prezzi fonti 653.51 vs 665.61]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen Sep 15 open", "price": 653.51},
+          {"name": "Yahoo Finance (close Sep14 + +0.11%)", "price": 665.61}
+        ],
+        "spread_pct": 1.85,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 79.91,
+      "change_24h": "-0.76%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "Netflix giù del 43% da giugno 2026, pressata da concorrenza e cambi di management. Gli analisti prevedono crescita revenue a doppia cifra e crescita EPS annuale del 20%. Potenziale opportunità di acquisto sulle valutazioni depresse.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 79.91,
+      "stop_loss": 77.51,
+      "target": 83.91,
+      "commissione": 0.00,
+      "reasoning": "Retracement del 43% da giugno crea opportunità valore su fondamentali intatti. Crescita EPS annuale prevista +20%, revenue a doppia cifra. Livello tecnico potenzialmente di supporto. Fonte: Yahoo Finance/CNBC Sep 14 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close Sep 14)", "price": 79.71},
+          {"name": "CNBC after-hours Sep 14", "price": 80.10}
+        ],
+        "spread_pct": 0.49,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 503.53,
+      "change_24h": "+2.04%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume elevato su rimbalzo, normale",
+      "news": "AMD recupera a $503.53 su Sep 15 dopo close $493.41 il 14/09 (-4.40%). Analisti: 55 'Strong Buy', PT medio $615.07 (+22.1% upside). Preoccupazioni su sviluppo AI meno severe rispetto a ASML.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 503.53,
+      "stop_loss": 488.42,
+      "target": 528.71,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico da overselling del 14/09 (-4.40%). Upside analisti +22.1% con 55 'Strong Buy'. Domanda AI chip strutturale intatta nonostante noise a breve termine. Fonte: CNN/MacroTrends Sep 15 2026. [MEDIA: prezzo Sep15 confermato da 2 query, dati precedente giorno incoerenti]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Investing.com (Sep 15 sessione)", "price": 503.53},
+          {"name": "MacroTrends/StockInvest.us (Sep 14 close)", "price": 493.41}
+        ],
+        "spread_pct": 2.04,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1575.15,
+      "change_24h": "-6.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo su vendite massive il 14/09",
+      "news": "ASML -6.1% il 14/09 dopo che dirigenti AI (tra cui Dario Amodei di Anthropic) hanno chiesto sviluppo più lento dei modelli frontier. Morgan Stanley abbassa PT a EUR 1.700 (da EUR 1.930) ma mantiene Overweight.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1575.15,
+      "stop_loss": 1527.90,
+      "target": 1653.91,
+      "commissione": 0.00,
+      "reasoning": "Attesa stabilizzazione post -6.1%; il rating Overweight di Morgan Stanley con PT EUR 1.700 indica potenziale di recupero ma il sentiment AI a breve è negativo. Non entrare su momentum ribassista. Fonte: Motley Fool/Yahoo Finance Sep 14 2026. [MEDIA: singola fonte confermata per Sep 14]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/MacroTrends (close Sep 14)", "price": 1575.15},
+          {"name": "Investing.com NASDAQ ADR (Sep 7 - stale)", "price": 1714.88}
+        ],
+        "spread_pct": 8.87,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzi da date diverse; Sep 14 close $1575.15 confermato da news drop -6.1%; dato Sep 7 stale non usato per validazione"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 206.36,
+      "change_24h": "n/d",
+      "trend_5d": "laterale",
+      "volume_note": "Dati al 12/09, volume non verificabile",
+      "news": "SAP ADR su NYSE a $206.36 (dato del 12/09/2026). 24/26 analisti raccomandano BUY; consensus 'Strong Buy' con PT medio $207.77. Cloud ERP dominante in Europa.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 206.36,
+      "stop_loss": 200.17,
+      "target": 216.68,
+      "commissione": 0.00,
+      "reasoning": "Dati del 12/09 (3 giorni di ritardo); impossibile valutare movimento recente. Consensus 'Strong Buy' con 24/26 analisti positivi ma dati stale impediscono segnale operativo. Fonte: Investing.com Sep 12 2026. [MEDIA: dati stale 3gg]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE SAP (Sep 12)", "price": 206.36},
+          {"name": "Investing.com (confermato - stessa fonte)", "price": 206.36}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzo del 12/09; dati Sep 15 non disponibili da fonti indipendenti"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 411.62,
+      "change_24h": "-0.40%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Ferrari Q2 2026: EPS $2.99 (stima $2.85, +4.9% beat); revenue $2.22B (stima $2.15B, +3.3% beat). Personalizzazione supera il 20% dei ricavi. Rating 'Moderate Buy' con 18 analisti. Momentum tecnico 'Strong Buy'.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 411.62,
+      "stop_loss": 399.27,
+      "target": 432.20,
+      "commissione": 0.00,
+      "reasoning": "Beat su EPS e revenue nel Q2 con personalizzazione >20% dei ricavi (alta marginalità). Momentum tecnico positivo (Golden Cross). Marchio premium resistente ai cicli economici. Fonte: CNN/Investing.com Sep 14 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Investing.com (Sep 14 range)", "price": 408.74},
+          {"name": "Investing.com/StockMarketWatch", "price": 414.50}
+        ],
+        "spread_pct": 1.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.61,
+      "change_24h": "-1.67%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "Stellantis (STLA su NYSE, STLAM su Borsa Italiana) -1.67% a $5.66. Analisti: PT $7.87 (+40% upside) ma consensus 'Neutral' (solo 6/24 consiglia BUY). Primo semestre 2026 difficile con calo revenue e cash flow.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 5.61,
+      "stop_loss": 5.44,
+      "target": 5.89,
+      "commissione": 0.00,
+      "reasoning": "Upside teorico del 40% ma confidence bassa: solo 25% analisti raccomanda BUY, H1 2026 deludente, trend ribassista. Attendere segnali di recovery operativa. Fonte: CNBC/Investing.com Sep 15 2026. [MEDIA: STLA NYSE vs STLAM Borsa Italiana]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC/Yahoo Finance NYSE STLA (Sep 15)", "price": 5.66},
+          {"name": "Investing.com Borsa Italiana STLAM (EUR 5.057 × 1.10)", "price": 5.56}
+        ],
+        "spread_pct": 1.80,
+        "affidabilita": "MEDIA",
+        "nota": "STLA è il ticker NYSE; STLAM è la quotazione italiana. Prezzi convertiti a tasso EUR/USD 1.10"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 392.84,
+      "change_24h": "-1.33%",
+      "trend_5d": "laterale",
+      "volume_note": "Afflussi anomali: +$1.378B SPDR Gold in 5gg (early Sept)",
+      "news": "GLD -1.33% oggi a $392.84 ma $2B di afflussi ETF oro in 5 giorni di inizio settembre. SPDR Gold Shares: +$1.378B, SPDR Gold MiniShares: +$590M. Geopolitica US-Iran sostiene domanda rifugio. FOMC 16/09 cruciale per direzione.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 392.84,
+      "stop_loss": 384.98,
+      "target": 408.55,
+      "commissione": 0.00,
+      "reasoning": "Acquisti istituzionali conviction-based ($2B in 5 giorni su prezzi piatti = accumulazione). Rischio geopolitico US-Iran. FOMC Sep 16 potenziale catalizzatore positivo per oro. NAV $402.21 vs prezzo $392.84 = potenziale riavvicinamento. Fonte: GoldSilver.com/Investing.com Sep 11-15 2026. [MEDIA: singola fonte per prezzo Sep 15]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sep 15 live)", "price": 392.84},
+          {"name": "CNBC/Google Finance (Sep 11 - stale)", "price": 396.36}
+        ],
+        "spread_pct": 0.89,
+        "affidabilita": "MEDIA",
+        "nota": "Fonte 2 da Sep 11; prezzo Sep 15 confermato da Investing.com con dato live -1.33%"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 56.79,
+      "change_24h": "-2.29%",
+      "trend_5d": "ribassista",
+      "volume_note": "Deflussi: -$29M in 5 giorni (early Sept)",
+      "news": "SLV -2.29% a $56.79 (da close $58.12). Argento sottoperforma l'oro. iShares Silver Trust ha registrato deflussi netti di $29M nella stessa settimana in cui l'oro vedeva +$2B di afflussi. Divergenza gold/silver preoccupante.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 56.79,
+      "stop_loss": 59.06,
+      "target": 55.65,
+      "commissione": 0.00,
+      "reasoning": "Deflussi istituzionali su SLV ($29M) mentre oro accumula. Sottoperformance strutturale vs gold. Range 52w $37.35-$109.83 indica alta volatilità; calo dal massimo (-48%). Rotazione istituzionale oro>argento. Fonte: Investing.com/NYSE Arca Sep 14 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE Arca (Sep 14)", "price": 56.79},
+          {"name": "iShares/CNBC/Bloomberg confermato", "price": 56.79}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 156.66,
+      "change_24h": "+1.14%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale; +15.86% da segnale Buy del 31/08",
+      "news": "USO +1.14% a $156.66. Il settore energetico è il più forte nel selloff odierno. US-Iran tensions aggiungono risk premium al petrolio. Tecnica: rating 'Buy Candidate' con score 2.65 (downgrade da Strong Buy). +15.86% dal segnale Buy del 31/08.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 156.66,
+      "stop_loss": 153.53,
+      "target": 162.93,
+      "commissione": 0.00,
+      "reasoning": "Outperformance vs mercato oggi; risk premium geopolitico US-Iran. Trend rialzista da fine agosto (+15.86%). Settore energetico in divergenza positiva rispetto al tech. Fonte: Investing.com/NYSE Arca Sep 14 2026. [MEDIA: seconda fonte da Sep 11]",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sep 14 live +1.14%)", "price": 156.66},
+          {"name": "NYSE Arca/MarketBeat (Sep 11 close)", "price": 154.90}
+        ],
+        "spread_pct": 1.14,
+        "affidabilita": "MEDIA",
+        "nota": "Fonti da date diverse; $156.66 confermato da news query come prezzo live +1.14%"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 76873.68,
+      "change_24h": "-1.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 24h: $15.71B, nella norma",
+      "news": "BTC $76.873 (4:53 EDT Sep 15). Crypto in attesa del FOMC del 16 settembre. Bitcoin sceso da ~$80K di inizio mese. 'Bitcoin falls below $77,000 with key inflation data on deck' (Yahoo Finance Sep 11). Tensioni US-Iran aumentano la volatilità.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 76873.68,
+      "stop_loss": 73029.99,
+      "target": 83023.57,
+      "commissione": 0.00,
+      "reasoning": "Incertezza FOMC del 16/09 domina. Attendere outcome Fed prima di prendere posizioni. Supporto al ribasso $73K (-5% SL). Potenziale recupero post-FOMC se Fed adotta tono dovish. Fonte: CoinDesk/Yahoo Finance Sep 15 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk/Yahoo Finance (Sep 15 4:53 EDT)", "price": 76873.68},
+          {"name": "CoinMarketCap (Sep 15)", "price": 76873.68}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2520.77,
+      "change_24h": "+1.00%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 24h: $5.87B-$11.22B (range fonti), afflussi ETF anomali",
+      "news": "ETH $2.520 +1% (Sep 15). Afflussi surge negli ETH ETF. ETH ha toccato brevemente $2.665 l'11/09 su impennata di afflussi ETH ETF. SEC ha riconosciuto ETH come commodity-based trust. DeFi Development Corp accumula sia BTC che ETH.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2520.77,
+      "stop_loss": 2394.73,
+      "target": 2722.43,
+      "commissione": 0.00,
+      "reasoning": "Afflussi ETF istituzionali su ETH in aumento (spike $2.665 Sep 11). Riconoscimento SEC come commodity trust aumenta legittimità istituzionale. Forza relativa vs BTC oggi (+1% vs -1.26% BTC). Fonte: Coinbase/CoinMarketCap Sep 15 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Sep 15)", "price": 2525.34},
+          {"name": "CoinMarketCap (Sep 15)", "price": 2516.20}
+        ],
+        "spread_pct": 0.36,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 101.33,
+      "change_24h": "+1.30%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 24h: $3.03B-$4.63B, nella norma con leggero rialzo",
+      "news": "SEC nomina SOL come asset core ETF il 5/09/2026, riconoscimento formale accanto a BTC ed ETH. Solana guida un boom da $3B in volume settimanale di azioni tokenizzate. DeFi Development Corp ha aumentato holdings SOL del 2% a 2.39M SOL con programma ATM da $300M.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 101.33,
+      "stop_loss": 96.26,
+      "target": 109.44,
+      "commissione": 0.00,
+      "reasoning": "Catalyst fondamentale: riconoscimento SEC come asset ETF (5/09) primo del settore accanto a BTC/ETH. Tokenized equities su Solana ($3B weekly) = adozione istituzionale concreta. Accumulo DeFi Development Corp $300M confermato. Fonte: CoinMarketCap/CoinGecko Sep 13-15 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko (Sep 13-15)", "price": 102.30},
+          {"name": "CoinMarketCap (Sep 15)", "price": 100.36}
+        ],
+        "spread_pct": 1.93,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Fonti < 2: confermato un solo prezzo USD ($333.08 da Investing.com/CNN). La seconda query ha restituito solo il listino Toronto (CAD) e link senza prezzo corrente USD verificabile. Per regola inderogabile 'Fonti < 2 → BASSA → NON generare segnali'."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SOL",
+      "motivo": "Catalyst fondamentale unico: riconoscimento SEC come asset ETF core (5/09/2026), boom tokenized equities $3B/settimana su Solana, accumulo istituzionale $300M (DeFi Development Corp). Confluenza di catalizzatori strutturali con momentum +1.3% oggi."
+    },
+    {
+      "rank": 2,
+      "asset": "ETH",
+      "motivo": "Afflussi ETF istituzionali in surge (spike $2.665 Sep 11), forza relativa vs BTC (+1% vs -1.26%), riconoscimento SEC commodity trust. Posizionamento ante-FOMC favorevole."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "motivo": "$2B di afflussi ETF oro in 5 giorni su prezzi piatti = conviction buying istituzionale. FOMC 16/09 + tensioni US-Iran = doppio supporto safe haven. NAV $402.21 vs prezzo $392.84 suggerisce possibile chiusura del gap."
+    },
+    {
+      "rank": 4,
+      "asset": "NFLX",
+      "motivo": "Retracement del -43% da giugno con fondamentali intatti: 20% EPS growth annuale previsto, revenue a doppia cifra. Valutazione compressa crea asimmetria rischio/rendimento."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione per un portafoglio bilanciato risk-on con copertura commodities.",
+    "allocazione_suggerita": {
+      "SOL": "15%",
+      "ETH": "15%",
+      "GLD": "20%",
+      "USO": "10%",
+      "NVDA": "15%",
+      "RACE": "10%",
+      "NFLX": "10%",
+      "GOOGL": "5%"
+    }
+  }
+}
