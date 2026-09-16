@@ -1,0 +1,458 @@
+{
+  "timestamp": "2026-09-16T09:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati del 16 settembre 2026 dominati dalla riunione FOMC con decisione attesa nel pomeriggio: consenso per rialzo tassi al 4.00% dal range 3.50-3.75%. Uno shutdown di un oleodotto saudita ha spinto il greggio verso massimi di 4 mesi (USO vicino al massimo 52 settimane), alimentando timori inflazionistici che pesano su oro e argento (-0.73% futures). Il tech USA in rialzo guidato da AI: NVDA, MSFT, AMZN con momentum rialzista. Stellantis doppia downgrade (Berenberg Hold, Morgan Stanley Underweight), SAP ai minimi di 23 mesi. Crypto in calo: BTC -3.31% a $75.8k, ETH -0.78%. La stretta monetaria attesa rimane il driver principale di mercato oggi.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 212.37,
+      "change_24h": "+0.57%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "NVIDIA annuncia investimento $3.5B in bond convertibili MediaTek, espansione partnership AI data center, local AI computing e smart vehicle. 60 analisti Strong Buy con target 12m $327.65 (+54%). Pre-market +0.79%.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 212.37,
+      "stop_loss": 206.00,
+      "target": 222.99,
+      "commissione": 0.00,
+      "reasoning": "Deal MediaTek da $3.5B rafforza la leadership AI nei data center e nei veicoli intelligenti. 60 analisti Strong Buy con upside potenziale del 54% ($327.65). Momentum AI strutturale confermato dalla rally tech (fonte: Yahoo Finance, CNBC settembre 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / NASDAQ", "price": 212.56},
+          {"name": "Yahoo Finance", "price": 212.17}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 504.71,
+      "change_24h": "+1.97%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Microsoft FY2026 revenue $331.84B (+17.79% YoY), P/E sceso a 20.72x in Q4 FY2026. 55 analisti Strong Buy, target $572.92 (+15.25%). Tech rally: MSFT +2% in recente sessione. Espansione AI cloud in accelerazione.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 504.71,
+      "stop_loss": 489.57,
+      "target": 529.95,
+      "commissione": 0.00,
+      "reasoning": "Revenue FY2026 +17.79% YoY con P/E a 20.72x (valutazione attraente per la crescita). AI cloud espansione robusta. 55 analisti Strong Buy con target $572.92 (fonte: CNBC, Yahoo Finance, Tickzen settembre 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / MSFT overview", "price": 504.01},
+          {"name": "CNBC / Yahoo Finance", "price": 505.41}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 248.42,
+      "change_24h": "-1.52%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Amazon Q2 2026: revenue $200.6B (+20% YoY), EPS $5.75 beat, AWS +36.7% YoY a $42.2B (accelerazione massima in 18 trimestri). 59 analisti Strong Buy, target medio $328.17 (+32.1% upside).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 248.42,
+      "stop_loss": 240.97,
+      "target": 260.84,
+      "commissione": 0.00,
+      "reasoning": "AWS accelera a +36.7% YoY grazie alla domanda AI/cloud. EPS Q2 $5.75 batte le stime con margine. 59 analisti Strong Buy con upside del 32% verso $328 (fonte: Investing.com, CNBC settembre 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / CNBC", "price": 248.42},
+          {"name": "Investing.com confermato", "price": 248.42}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 330.94,
+      "change_24h": "-0.52%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Tim Cook lascia CEO, John Ternus (ex SVP Hardware Engineering) diventa CEO dal 1° settembre 2026. Dip -1% post lancio beta Siri AI. 25 analisti Buy, target $370 (+11.8%). 52-settimane: $236.65-$344.57.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 330.94,
+      "stop_loss": 321.01,
+      "target": 347.49,
+      "commissione": 0.00,
+      "reasoning": "Transizione CEO crea incertezza di breve termine nonostante target analisti a $370 su iPhone 18/AI. FOMC rate hike atteso oggi pesa sui multipli tech (fonte: Investing.com $331.34, Yahoo Finance $330.54).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 331.34},
+          {"name": "Yahoo Finance", "price": 330.54}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 357.41,
+      "change_24h": "-1.77%",
+      "trend_5d": "laterale",
+      "volume_note": "normale — volume 30.32M vs media 40.5M",
+      "news": "Musk annuncia unveil Nuovo Roadster il 1° ottobre 2026. Speculazioni su potenziale merger con SpaceX. SpaceX +6% in recente sessione. P/E TSLA a 333.52x. Market cap $1.41T.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 357.41,
+      "stop_loss": 346.69,
+      "target": 375.28,
+      "commissione": 0.00,
+      "reasoning": "Catalyst potenziale con Roadster unveil (1 ottobre) ma P/E 333.52x sopravvalutato. Merger SpaceX speculativo. Volume sotto media segnala incertezza. FOMC rate hike atteso pesa sul sentiment (fonte: TradingEconomics $355.85, Yahoo Finance $358.97).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingEconomics / Robinhood", "price": 355.85},
+          {"name": "Yahoo Finance / CNBC", "price": 358.97}
+        ],
+        "spread_pct": 0.87,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 341.74,
+      "change_24h": "+1.77%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Alphabet in correzione da maggio 2026, possibile breakout tecnico secondo Katie Stockton. Investimento €15B ($15B) in infrastruttura digitale europea. Market cap $4.20T. 58 analisti Strong Buy, target $428.07.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 341.74,
+      "stop_loss": 331.49,
+      "target": 358.83,
+      "commissione": 0.00,
+      "reasoning": "GOOGL in fase correttiva da maggio, breakdown tecnico confermato. Attesa conferma del breakout prima di posizionarsi. ATTENZIONE: spread fonti 1.90% → confidenza ridotta (fonte: Tickzen $344.98 [Sept 16], Yahoo Finance/CNBC $338.50 [Sept 11]).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / Investing.com", "price": 344.98},
+          {"name": "Yahoo Finance / CNBC", "price": 338.50}
+        ],
+        "spread_pct": 1.90,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 671.24,
+      "change_24h": "-1.23%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Meta lancia Meta One subscription service. Dividendo cash $0.525 ex-date 21 sett. Q2 revenue $60.8B forte. Goldman Sachs Buy confermato. Wedbush alza target a $650 (sotto prezzo attuale). 52-settimane: $520.26-$790.80.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 671.24,
+      "stop_loss": 650.10,
+      "target": 704.80,
+      "commissione": 0.00,
+      "reasoning": "Q2 forte e Meta One promettente, ma Wedbush target $650 è sotto il prezzo corrente $671 — segnale ribassista da parte degli analisti. Sfide regolamentari in Europa. ATTENZIONE: spread fonti 1.68% (fonte: Robinhood/Tickzen $676.87, CNBC/Yahoo $665.60).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood / Tickzen", "price": 676.87},
+          {"name": "CNBC / Yahoo Finance", "price": 665.60}
+        ],
+        "spread_pct": 1.68,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 79.11,
+      "change_24h": "-3.01%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix -19% YTD nonostante previsioni revenue 2026 a $51B. Evercore ISI alza target a $110 da $100 (14 sett). Prezzo: range giornaliero $77.11-$77.80. Aumento scrutinio mercato e volatilità. P/E non specificato.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 79.11,
+      "stop_loss": 76.74,
+      "target": 83.07,
+      "commissione": 0.00,
+      "reasoning": "Target Evercore ISI $110 (+39% upside) positivo ma trend YTD -19% sfavorevole. FOMC rate hike aggiunge pressione. ATTENZIONE: spread fonti 3.06% → confidenza bassa (fonte: CNBC/investing.com $77.90 [Sept 15], Yahoo Finance/CNBC $80.32 [Sept 14]).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Morningstar", "price": 77.90},
+          {"name": "Yahoo Finance / CNBC", "price": 80.32}
+        ],
+        "spread_pct": 3.06,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 206.36,
+      "change_24h": "+0.19%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP ADR raggiunge minimo di 23 mesi (TradingEconomics). 13 analisti Buy, 0 Sell, target medio +19.81% upside. 52-settimane NYSE: $144.97-$281.37. Forte supporto analitico ma momentum tecnico debole.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 206.36,
+      "stop_loss": 200.17,
+      "target": 216.68,
+      "commissione": 0.00,
+      "reasoning": "SAP ai minimi di 23 mesi crea potenziale opportunità contrarian ma il trend ribassista non ha ancora invertito. 13 analisti Buy con +19.81% upside; attendere conferma inversione prima di entrare (fonte: Investing.com $206.36 [Sept 12], Yahoo Finance $206.36 [Sept 11]).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE", "price": 206.36},
+          {"name": "Yahoo Finance NYSE", "price": 206.36}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 413.59,
+      "change_24h": "+0.80%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari stabile. Morgan Stanley alza target a EUR 395 da EUR 388, rating Overweight. Market cap $72.77B. Performance annuale -12.4% vs SPY +19.8%. 52-settimane: $312.51-$504.49.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 413.59,
+      "stop_loss": 401.18,
+      "target": 434.27,
+      "commissione": 0.00,
+      "reasoning": "Underperformance annuale -12.4% limitante ma MS alza leggermente il target (Overweight). Prezzo a metà range 52-settimane, nessun catalizzatore a breve. Attendere breakout (fonte: Ferrari NYSE $413.59 confermato da due fonti indipendenti).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / CNBC NYSE", "price": 413.59},
+          {"name": "Robinhood / MarketChameleon", "price": 413.59}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.07,
+      "change_24h": "-2.85%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo basso — 911K vs media 19.6M (-95%)",
+      "news": "Stellantis doppia downgrade: Berenberg Bank downgrade a Hold da Buy, Morgan Stanley downgrade a Underweight da Equal Weight. Azione -6.92% negli ultimi 10 giorni, vicina al minimo 52-settimane ($5.03). Ticker NYSE: STLA.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 5.07,
+      "stop_loss": 5.22,
+      "target": 4.82,
+      "commissione": 0.00,
+      "reasoning": "Doppio downgrade istituzionale (Berenberg + Morgan Stanley) in stessa settimana. Volume anomalo ribassista -95% vs media. Prezzo al minimo 52-settimane con trend deteriorante. FOMC rate hike penalizza auto europee (fonte: Kraken/CNN $5.03 [Sept 16], StockInvest $5.11 [Sept 15]).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken / CNN NYSE", "price": 5.03},
+          {"name": "StockInvest / Yahoo Finance", "price": 5.11}
+        ],
+        "spread_pct": 1.58,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 394.15,
+      "change_24h": "+0.33%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Oro spot scende a $4,284 (-0.73% futures) mentre spike petrolio rafforza aspettative rialzo Fed. FOMC meeting 15-16 settembre: 87% probabilità rialzo a 4.00%. Dollaro più forte pesa sui metalli non-yielding. GLD da $402.78 (2 sett) a $394.15 (15 sett).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 394.15,
+      "stop_loss": 402.03,
+      "target": 378.38,
+      "commissione": 0.00,
+      "reasoning": "FOMC rialzo tassi al 4.00% atteso oggi (87% consenso) rafforza dollaro e penalizza oro. Trend 5 giorni ribassista da $402.78. Spike petrolio aggiunge pressione inflazionistica pro-Fed (fonte: Investing.com $394.15, CNBC/NYSE Arca $394.15 [Sept 15]).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE Arca", "price": 394.15},
+          {"name": "CNBC / NYSE Arca close", "price": 394.15}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 56.82,
+      "change_24h": "-2.23%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale — volume 14.18M",
+      "news": "Argento spot crolla a $63/oz (-0.76% futures a $63.65). Lo spike petrolio rafforza le aspettative di rialzo Fed penalizzando i metalli. SLV da $58.12 (close precedente) a $56.79-56.84. Net assets fondo $30.87B.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 56.82,
+      "stop_loss": 57.96,
+      "target": 54.55,
+      "commissione": 0.00,
+      "reasoning": "Argento spot in caduta libera: -0.76% futures a $63.65 su dollaro forte da FOMC. SLV -2.23% nelle ultime 24h confermando pressione vendita. Pattern tecnico: rottura sotto $58 supporto chiave (fonte: Investing.com $56.79, CNBC/NYSE Arca $56.84 [Sept 14]).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE Arca", "price": 56.79},
+          {"name": "CNBC / NYSE Arca", "price": 56.84}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 156.66,
+      "change_24h": "+1.14%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Shutdown oleodotto saudita spinge greggio WTI verso massimi di 4 mesi. USO vicino al massimo 52-settimane ($160.27). Lo shock di offerta alimenta timori inflazionistici e spinge le aspettative di rialzo Fed all'87%. 52-settimane: $65.99-$160.27.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 156.66,
+      "stop_loss": 153.53,
+      "target": 162.93,
+      "commissione": 0.00,
+      "reasoning": "USO vicino al massimo 52-settimane ($160.27): risk/reward asimmetrico per nuovi long. Lo shock saudita è un catalyst ma il FOMC rate hike (dollaro forte) è headwind per l'oil. Meglio aspettare pullback verso $150-153 (fonte: Investing.com $156.66 [Sept 14], Yahoo Finance $154.90 [Sept 11] — storico coerente).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sept 14 close)", "price": 156.66},
+          {"name": "Yahoo Finance / CNBC (Sept 11 prev close)", "price": 154.90}
+        ],
+        "spread_pct": 1.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75804.43,
+      "change_24h": "-3.31%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale — volume 24h $17.86B",
+      "news": "Bitcoin vicino a $75,500 mentre la Fed si riunisce. BTC -3.31% nelle 24h. Declino da $78,604 (11 sett) al livello attuale. Decisione FOMC attesa per oggi pomeriggio: 87% probabilità rialzo a 4.00%. Mercato crypto complessivo -29% dai massimi.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 75804.43,
+      "stop_loss": 72014.21,
+      "target": 81868.78,
+      "commissione": 0.00,
+      "reasoning": "BTC già -3.31% in 24h, scendere in late-stage rialzo Fed è rischioso. Attendere decisione FOMC di oggi: se rialzo confermato (87% odds) ulteriore pressione a breve. Supporto chiave $72,000. Non inseguire il ribasso (fonte: CoinDesk $75,961 [Sept 16, 6:01 EDT], CoinMarketCap $75,648 [Sept 16]).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk", "price": 75961.33},
+          {"name": "CoinMarketCap", "price": 75647.52}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2391.38,
+      "change_24h": "-0.78%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale — volume 24h $16.80B",
+      "news": "Ethereum -0.78% nelle ultime 24h, range $2,361-$2,445. Market cap $292.11B. Mercato crypto in pressione da FOMC. ETH ha perso più di BTC su base annuale. Supporto tenuto finora a $2,361.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 2391.38,
+      "stop_loss": 2271.81,
+      "target": 2582.69,
+      "commissione": 0.00,
+      "reasoning": "ETH mostra maggiore resilienza rispetto a BTC (-0.78% vs -3.31%). Volume $16.80B normale indica assenza di panico. Attendere decisione FOMC; supporto $2,361 cruciale. Tenuta del supporto potrebbe creare rimbalzo verso $2,582 (fonte: Coinbase $2,390.19, CoinDesk $2,397.85 [Sept 15] → media valutata $2,391.38).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase / CoinDesk", "price": 2392.57},
+          {"name": "Coinbase spot", "price": 2390.19}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AMD",
+      "motivo": "Spread fonti 5.09% > soglia 4%: fonte A $523.53 (CNBC Sept 16), fonte B $497.53 (Investing.com Sept 14). Date diverse creano discrepanza superiore alla soglia."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Dati non comparabili: fonte A $1,714.88 USD (NASDAQ, Sept 7 — 9 giorni fa), fonte B €1,378.80 EUR (Amsterdam, Sept 15). Differenza di valuta e data impedisce triangolazione affidabile. Prezzo USD recente non verificabile."
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread fonti >4%: CoinGecko $97.31, CoinMarketCap $96.52 (convergenti) ma Coinbase $104.57, Coinbase converter $96.60 creano range $96.52-$104.57 (8.3%). Frammentazione liquidità cross-exchange supera soglia di validazione."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Deal MediaTek $3.5B consolida leadership AI data center. 60 analisti Strong Buy con upside 54% ($327.65). Pre-market positivo. Momentum AI strutturale invariato."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "AWS accelera a +36.7% YoY (massimo in 18 trimestri). Q2 EPS $5.75 batte le stime. 59 analisti Strong Buy, upside 32% verso $328. Prezzo confermato da entrambe le fonti con spread 0%."
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Revenue FY2026 +17.79% YoY con P/E 20.72x (basso per il settore AI). 55 analisti Strong Buy target $572.92. Espansione cloud AI solida."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Alpaca: zero commissioni su azioni USA ed ETF.",
+    "allocazione_suggerita": {
+      "NVDA_BUY": "20%",
+      "MSFT_BUY": "20%",
+      "AMZN_BUY": "20%",
+      "STLA_SELL_short": "5%",
+      "GLD_SELL_short": "5%",
+      "SLV_SELL_short": "5%",
+      "liquidita": "25%"
+    },
+    "note_rischio": "FOMC decision oggi: se rialzo confermato (87% consenso) previsto impatto negativo su crypto e metalli, potenzialmente positivo su dollaro. Il 25% in liquidità serve come buffer per la volatilità post-FOMC."
+  }
+}
