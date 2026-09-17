@@ -1,0 +1,551 @@
+{
+  "timestamp": "2026-09-17T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercoledì 17 settembre 2026. FOMC ha alzato i tassi 25bp a 3.75-4.00% ieri 16 settembre (voto unanime 12-0, primo rialzo dal 2023). Oggi mercati in ripresa: il governatore Waller ha dichiarato che le aspettative di ulteriori rialzi potrebbero allentarsi, scatenando una forte rotazione BUY in tech. TSLA +3.09%, AMD +6.05%, META +1.84%, MSFT +0.65%, GOOGL +0.89%. WTI crude rimane sopra $105/bbl per disruption geopolitica Middle East (Saudi pipeline); USO pullback da 52W high $163.35 (Sep 15) a $155.36. Oro spot risalito a $4,328/oz (+0.80%) dopo la decisione Fed; argento spot $64.60/oz (+1.50% Sep 16). BTC sotto pressione a $76,298 (-0.96%) per fallimento del CLARITY Act e outflow ETF crypto (-$296M BlackRock). SOL sovraperforma (+1.3%) grazie a catalyst SEC (5 sett: designazione asset core ETF). AMD surge +6% su forte momentum AI. STLA in calo su downgrade Morgan Stanley a Underweight. Apple: transizione CEO completata il 1° settembre (Tim Cook → John Ternus).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 332.73,
+      "change_24h": "+0.10%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Apple CEO transition completata 1 settembre: John Ternus (ex SVP Hardware Engineering) sostituisce Tim Cook come CEO; Cook diventa Executive Chairman. Mercato monitora la visione AI del nuovo CEO. 52W high $344.57 a portata ma resistenza tecnica in zona $340-$345.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 332.73,
+      "stop_loss": 322.75,
+      "target": 349.37,
+      "commissione": 0.00,
+      "reasoning": "AAPL laterale tra $332-$335 in attesa di chiarezza strategica dal nuovo CEO Ternus. Post-FOMC rally tech aiuta ma 52W high $344.57 offre resistenza significativa. Buyback e dividendo supportano il downside. Fonte: Investing.com $332.07, CNBC/Yahoo pre-mkt $333.38.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sep 17 live)", "price": 332.07},
+          {"name": "CNBC/Yahoo Finance (pre-mkt Sep 17)", "price": 333.38}
+        ],
+        "spread_pct": 0.39,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 369.13,
+      "change_24h": "+3.09%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo_alto (forte acquisto post-FOMC)",
+      "news": "Tesla +3.09% a 10:49 EDT Sep 17: Waller (Fed) segnala possibile pausa hike → rirotazione in growth stocks. SpaceX +6% (correlazione Musk-sentiment). Analisti target medio $398.17. P/E 333.52 con market cap $1.41T. 52W range $297.38-$498.83; in posizione centrale.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 369.13,
+      "stop_loss": 358.06,
+      "target": 387.59,
+      "commissione": 0.00,
+      "reasoning": "TSLA guida il rally post-FOMC growth stocks (+3.09%): Waller easing rate expectations è catalyst diretto per titoli high-P/E come Tesla. Momentum positivo da $355.85 (Sep 15) a $369.13 (Sep 17). Nota: source 1 (Sep 15) vs source 2 (Sep 17) → spread cross-date 3.7%, affidabilità MEDIA; prezzo Sep 17 confermato da Yahoo Finance alle 10:49 EDT.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends/Yahoo Finance (Sep 15 close)", "price": 355.85},
+          {"name": "Yahoo Finance/CNBC (Sep 17 10:49 EDT)", "price": 369.13}
+        ],
+        "spread_pct": 3.73,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 214.76,
+      "change_24h": "+0.43%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (stabilizzazione post sell-off settoriale)",
+      "news": "NVDA stabile dopo sell-off AI-safety (Sep 14). Deutsche Bank alza target a $220. Nvidia in trattative per investire nell'IPO Anthropic. Market cap $5.26T. P/E 26.82. Tech rally Waller aiuta ma momentum ancora debole rispetto al sell-off -3.2% di lunedì scorso.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 214.76,
+      "stop_loss": 208.32,
+      "target": 225.50,
+      "commissione": 0.00,
+      "reasoning": "NVDA in consolidamento laterale $213-$218. Deutsche Bank upgrade a $220 offre supporto ma il recupero post-sell-off AI-safety è lento. Affidabilità MEDIA per inconsistenza dati Robinhood (range vs current price contradittori); source 2 (Yahoo/CNBC) è del Sep 15.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (approx. Sep 17)", "price": 215.68},
+          {"name": "CNBC/Yahoo Finance (Sep 15 close)", "price": 213.84}
+        ],
+        "spread_pct": 0.86,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 493.47,
+      "change_24h": "+0.65%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Microsoft +0.65% nel rally Waller post-FOMC. Azure +42% a/a, cloud +27%. Consensus analyst $569.45 (+14% upside). Market cap stabile. Capex AI $115B+ discusso ma outlook cloud solido. 52W high $553 ancora distante.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 493.47,
+      "stop_loss": 478.67,
+      "target": 518.14,
+      "commissione": 0.00,
+      "reasoning": "MSFT recovery post-FOMC da $490.30 (Sep 16) a ~$493 oggi. Azure growth +42% a/a supporta outlook. Ma 52W high a $553 e capex AI massiccio limitano upside immediato. Spread ALTA 0.42%: Tickzen $492.44 e Yahoo pre-mkt $494.50 concordanti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen (Sep 17 intraday)", "price": 492.44},
+          {"name": "Yahoo Finance (pre-mkt Sep 17)", "price": 494.50}
+        ],
+        "spread_pct": 0.42,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 254.09,
+      "change_24h": "+2.54%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Amazon recupera post-FOMC nell'ambito del rally tech. AWS mantiene 28% market share cloud, capex $220B atteso 2026. UBS Buy con target $318 (+25% upside). Analyst consensus supporta acquisto a lungo termine. AMZN apre Sep 17 a $254.09 in range $253-$257.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 254.09,
+      "stop_loss": 244.04,
+      "target": 266.79,
+      "commissione": 0.00,
+      "reasoning": "AMZN recupera da $247.80 (Sep 16) a range $253-$257 (Sep 17): rally +2.5%. Dati parzialmente inconsistenti tra le due sessioni (spread 3.06%); solo open Sep 17 confermato. UBS $318 target offre upside strutturale. Confidenza BASSA per data inconsistency.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood/Stockanalysis (Sep 17 open)", "price": 254.09},
+          {"name": "CNBC/Yahoo Finance (Sep 16 close est.)", "price": 247.80}
+        ],
+        "spread_pct": 2.54,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 342.38,
+      "change_24h": "+0.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Alphabet torna a quota $342-$348 post-FOMC: era stato escluso dallo scan Sep 14 per spread elevato (9.94%). Recupero da area $332-$339 verso range $342-$348 su Sep 17. Analyst Katie Stockton prevede potenziale breakout. GOOGL +1% nel rally tech Waller di oggi.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 342.38,
+      "stop_loss": 332.11,
+      "target": 359.50,
+      "commissione": 0.00,
+      "reasoning": "GOOGL in ripresa dalla correzione da maggio 2026. Sep 16 close $339.36 → Sep 17 range $342-$348 (+0.89%). Breakout tecnico segnalato da Stockton. Spread MEDIA 1.78%: Tickzen range Sep17 center $345.39 vs Yahoo Sep16 $339.36 (date diverse).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen (Sep 17 range center $342.70-$348.07)", "price": 345.39},
+          {"name": "Yahoo Finance/CNBC (Sep 16 close)", "price": 339.36}
+        ],
+        "spread_pct": 1.78,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 677.87,
+      "change_24h": "+1.84%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "META +1.84% oggi a $677.87: Goldman Sachs Buy reaffirmed, Wedbush alza target a $650 (precedente $595). Q2 revenue $60.8B forte. Lancio Meta One subscription. DIVIDENDO ex-date 21 settembre ($0.525/az). Market cap $1.72T. 52W range $520.26-$790.80.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 677.87,
+      "stop_loss": 657.53,
+      "target": 711.76,
+      "commissione": 0.00,
+      "reasoning": "META ha catalizzatori multipli: (1) dividendo ex-date Sep 21 crea demand immediata; (2) Meta One subscription amplia revenue streams; (3) Goldman Sachs Buy + Wedbush upgrade; (4) forza relativa vs QQQ. Target +5% raggiungibile entro data stacco dividendo. Spread MEDIA 1.84%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Tickzen (Sep 17 intraday)", "price": 677.87},
+          {"name": "CNBC/Yahoo Finance (Sep 16 close implied)", "price": 665.60}
+        ],
+        "spread_pct": 1.84,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 75.95,
+      "change_24h": "-0.62%",
+      "trend_5d": "ribassista",
+      "volume_note": "non disponibile",
+      "news": "Netflix -0.62% a $75.95 confermando trend ribassista da $77.81 (Sep 14). Evercore ISI alza target da $100 a $110. Buyback $25B offre supporto strutturale. Market cap stimato ~$33B. Titolo -43% da giugno 2026 su pressione competitiva. 51 analisti Buy, target medio $93+.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 75.95,
+      "stop_loss": 73.67,
+      "target": 79.75,
+      "commissione": 0.00,
+      "reasoning": "NFLX continua il trend ribassista (-2.4% in 3 giorni). Buyback $25B e upgrade Evercore non bastano a invertire il momentum negativo. Attesa stabilizzazione tecnica prima di riconsiderare. Dati MEDIA: Sep 17 price $75.95 (Morningstar) vs Sep 11 close $77.40 (stale).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar/CNN (Sep 17 intraday)", "price": 75.95},
+          {"name": "Yahoo Finance (Sep 11 close)", "price": 77.40}
+        ],
+        "spread_pct": 1.91,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 543.47,
+      "change_24h": "+6.05%",
+      "trend_5d": "fortemente_rialzista",
+      "volume_note": "anomalo_alto (surge AI momentum, +6% da $512.50)",
+      "news": "AMD surge +6.05% a $543.47 (prev close $512.50): forte momentum AI su settore semiconduttori. 44 analisti Strong Buy, 0 Sell. Market cap $889.49B. 52W range $149.85-$584.73; a $543 vicino al massimo storico. Collaborazione Intel su AI Compute Extensions. NOTA: segnale BUY/SELL sospeso per fonti < 2 confermate (una fonte confermata su Sep 17).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 543.47,
+      "stop_loss": 527.17,
+      "target": 570.64,
+      "commissione": 0.00,
+      "reasoning": "AMD +6.05% oggi con catalizzatori AI forti (44 analyst Strong Buy). Candidato BUY prioritario al prossimo scan con 2 fonti confermate. Attuale segnale HOLD per regola 'fonti < 2': Investing.com/CNN confermano $543.47 (Sep 17) ma CNBC/Yahoo non hanno estratto prezzo specifico Sep 17.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/CNN (Sep 17 confirmed)", "price": 543.47},
+          {"name": "CNBC/Yahoo Finance (Sep 17, no price extracted)", "price": null}
+        ],
+        "spread_pct": null,
+        "affidabilita": "MEDIA",
+        "nota": "Fonti < 2 con prezzo specifico Sep 17 - segnale BUY/SELL sospeso"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1610.76,
+      "change_24h": "+1.74%",
+      "trend_5d": "laterale_ribassista",
+      "volume_note": "normale",
+      "news": "ASML recupera +1.74% a $1,630 (prev close $1,602.22) dopo il sell-off -6.2% di Sep 14 (AI safety fears). New Eindhoven campus in costruzione. Partnership TSMC per Large-Format Photomasks High NA EUV (settembre 2026). Q2 vendite €9.326B, gross margin 54%, guidance 2026 alzata a €43-45B. 39 analisti Strong Buy, target $2,133.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1610.76,
+      "stop_loss": 1562.44,
+      "target": 1691.30,
+      "commissione": 0.00,
+      "reasoning": "ASML inizia recupero da sell-off AI-safety (Sep 14: -6.2% a $1,717). Fondamentali eccellenti (EUV monopoly, guidance alzata) ma trend tecnico a breve ribassista. Spread MEDIA 2.42%: Investing.com $1,630.01 (Sep 17) vs StockAnalysis $1,591.5 (recente).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/CNN (Sep 17 live)", "price": 1630.01},
+          {"name": "StockAnalysis/MarketBeat (recente)", "price": 1591.50}
+        ],
+        "spread_pct": 2.42,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 206.36,
+      "change_24h": "+0.20%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (dati stale - ultima conferma Sep 12)",
+      "news": "SAP NYSE ADR a $206.36 (dato confermato Sep 12 - 5 giorni fa). Prossimi earnings: 21 ottobre 2026. Argus ha alzato target a $247.25. SAP ERP dominance nell'enterprise software: moat strutturale. EUR listing a €186.36 (Sep 14). Nota: nessun dato Sep 17 confermato; prezzo probabilmente invariato in assenza di news specifiche.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 206.36,
+      "stop_loss": 200.17,
+      "target": 216.68,
+      "commissione": 0.00,
+      "reasoning": "SAP stabile a $206.36 (dati stale Sep 12: spread 0% tra le due fonti, ma 5 giorni fa). Nessun catalizzatore negativo identificato tra Sep 12-17. Target Argus $247.25 offre +19.8% upside. Confidenza BASSA per dati stale. Prossima conferma con earnings 21 ottobre.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sep 12)", "price": 206.36},
+          {"name": "CNBC/Yahoo Finance (Sep 12)", "price": 206.36}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Dati da Sep 12 (5 giorni fa) - prezzo potenzialmente variato"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 412.17,
+      "change_24h": "+0.51%",
+      "trend_5d": "laterale_rialzista",
+      "volume_note": "basso (167.75K vs media 314.81K, -46.7%)",
+      "news": "Bank of America Securities reitera Buy su Ferrari. Analisti target $471.97 (+14.5% upside). Buyback €3.5B fino al 2030. P/E 38.28, market cap $95.97B. Ferrari ha battuto le stime EPS nell'ultimo trimestre e alzato guidance 2026. 52W range $312.51-$504.49. RACE in leggero recupero da sell-off azioni EU.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 412.17,
+      "stop_loss": 399.80,
+      "target": 432.78,
+      "commissione": 0.00,
+      "reasoning": "RACE: Bank of America reitera Buy, target analysts $471.97 (+14.5%), buyback massiccio €3.5B. Ferrari pricing power luxury impermeabile ai cicli macro. Volume basso (-46.7%) segnala bassa convinzione ribassista. Spread ALTA 0%: due fonti confermano $412.17 su Sep 17. Target +5% conservativo vs potenziale +14.5%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/Robinhood (Sep 17 intraday)", "price": 412.17},
+          {"name": "Morningstar/MarketBeat (Sep 17 confermato)", "price": 412.17}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 5.66,
+      "change_24h": "-1.67%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (downgrade-driven selling)",
+      "news": "Morgan Stanley taglia STLA a Underweight da Equal Weight, abbassa price target: pipeline prodotto debole, cash generation in calo, rischio rifinanziamento elevato. Unifor dichiara IMPASSE con Stellantis per chiusura pianificata Brampton Assembly Plant (Windsor/Etobicoke a rischio). Contratto scade 20 settembre 2026. Stellantis net revenue H1 2025: €74.3B (-13% a/a), AOI -94% a/a.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 5.66,
+      "stop_loss": 5.83,
+      "target": 5.38,
+      "commissione": 0.00,
+      "reasoning": "STLA ha catalizzatori negativi multipli simultanei: (1) MS downgrade Underweight; (2) labor impasse Unifor con scadenza contratto Sep 20; (3) pipeline prodotto debole; (4) AOI -94% H1. Scenario bearish strutturale. Nota: una fonte Sep 17 confermata ($5.66 CNN/Yahoo); seconda fonte stale (MarketBeat $6.76 marzo 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN/Yahoo Finance (Sep 17 live)", "price": 5.66},
+          {"name": "MarketBeat (marzo 2026 - stale)", "price": 6.76}
+        ],
+        "spread_pct": 19.43,
+        "affidabilita": "MEDIA",
+        "nota": "Spread alto riflette movimento multi-mese (marzo vs settembre), non divergenza fonti; Sep 17 price $5.66 confermato da CNN/Yahoo"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 397.07,
+      "change_24h": "+1.48%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (ETF outflow $603M questa settimana ma gold fisico stabile)",
+      "news": "Gold spot $4,328.39/oz il 16 sett (+0.80%): rimbalzo dopo decisione Fed 25bp. FOMC: 16/18 funzionari vogliono ancora tightening. GLD 52W range $333.81-$509.70. Investitori hanno ritirato $603M dal più grande gold ETF questa settimana. Crude sopra $105 mantiene pressione inflattiva.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 397.07,
+      "stop_loss": 389.13,
+      "target": 412.95,
+      "commissione": 0.00,
+      "reasoning": "GLD recupera da $394.15 (Sep 15) a $399.98 (Sep 17) = +1.48%: oro rimbalza post-hike Fed. Ma 16/18 FOMC officials hawkish e outflow ETF $603M questa settimana limitano upside. Posizionamento equilibrato con HOLD. Spread ALTA 1.48% (appena sotto soglia 1.5%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood/SPDR (Sep 17 range: $396.14-$401.65)", "price": 399.98},
+          {"name": "CNBC/Bloomberg (Sep 15-16 close)", "price": 394.15}
+        ],
+        "spread_pct": 1.48,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 56.82,
+      "change_24h": "-2.28%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 14.18M shares (Sep 14)",
+      "news": "ATTENZIONE DATO STALE: SLV $56.82 è dato confermato Sep 14. Argento spot risalito a $64.60/oz il Sep 16 (+1.50%), il che implica SLV stimato ~$60.10 su Sep 17 (0.9304 oz/share × $64.60). Hike Fed 25bp storicamente bearish per metalli preziosi nel breve; ma successiva pausa prevista è bullish strutturale.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 56.82,
+      "stop_loss": 55.68,
+      "target": 59.09,
+      "commissione": 0.00,
+      "reasoning": "SLV: entrambe le fonti concordano a $56.79-$56.84 (Sep 14) ma il dato è stale. Stima Sep 17: ~$60 (argento spot $64.60 × 0.9304 oz/share). Nessun dato Sep 17 confermato da fonti: segnale HOLD conservativo. 52W range $37.35-$109.83 indica ampio spazio long-term.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/iShares (Sep 14 close)", "price": 56.79},
+          {"name": "CNBC/NYSE Arca (Sep 14 close)", "price": 56.84}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "MEDIA",
+        "nota": "Dati da Sep 14 (3 giorni fa); stima Sep 17 ~$60.10 non verificata da fonte diretta"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 155.77,
+      "change_24h": "-0.52%",
+      "trend_5d": "laterale_ribassista",
+      "volume_note": "volume 2.32M shares (12:39 EDT)",
+      "news": "USO -0.52% a $155.36 intraday da $156.17 prev close. 52W HIGH $163.35 raggiunto il 15 settembre (Saudi East-West pipeline outage). WTI crude sopra $105/bbl su disruption Middle East. Fed hike done → inflationary outlook più incerto. USO ha guadagnato +24% nell'ultimo periodo su event geopolitico.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 155.77,
+      "stop_loss": 152.65,
+      "target": 162.00,
+      "commissione": 0.00,
+      "reasoning": "USO pullback da 52W high $163.35 (Sep 15): il peak fear-trade sembra parzialmente prezzato. WTI ancora sopra $105 su disruption geopolitica persistente. Fed hike già eseguito riduce un headwind. Spread ALTA 0.52%: Investing.com $156.17 (prev close) vs Barchart/CNBC $155.36 (intraday 12:39 EDT).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/CNN (Sep 17 prev close/opening)", "price": 156.17},
+          {"name": "Barchart/CNBC (Sep 17 12:39 EDT intraday)", "price": 155.36}
+        ],
+        "spread_pct": 0.52,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 76298.48,
+      "change_24h": "-0.96%",
+      "trend_5d": "laterale_ribassista",
+      "volume_note": "volume 24h $30.41B (CoinMarketCap)",
+      "news": "Bitcoin ETFs: outflow $295.98M il 17 settembre (secondo maggiore del mese), guidato da BlackRock. Crypto prices in calo dopo fallimento del CLARITY Act al Congresso USA. BTC -0.96% a $76,298. ATH $126,000 (6 ott 2025). Market cap $1.53T. In attesa di stabilizzazione legislativa crypto USA.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 76298.48,
+      "stop_loss": 72483.56,
+      "target": 82402.36,
+      "commissione": 0.00,
+      "reasoning": "BTC -0.96% su doppio headwind: (1) outflow ETF $296M guidato da BlackRock; (2) CLARITY Act fallito → incertezza regolatoria USA. ATH $126k a -39% di distanza offre potenziale strutturale ma timing sfavorevole. Spread ALTA 0.98%: Coinbase $76,670.09 vs CoinMarketCap $75,926.87.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Sep 17 live)", "price": 76670.09},
+          {"name": "CoinMarketCap (Sep 17 live)", "price": 75926.87}
+        ],
+        "spread_pct": 0.98,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2417.76,
+      "change_24h": "-1.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume 24h $16.08B (CoinMarketCap)",
+      "news": "Ethereum ETFs: outflow $224.11M il 17 settembre (maggiore del mese), anche se whale hanno fatto staking ETH. CLARITY Act fallito penalizza tutto il settore crypto. ETH apre il 17 settembre a $2,397.64 (-4.6% dall'apertura di martedì). Market cap $298.47B. Rank #2 per capitalizzazione.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 2417.76,
+      "stop_loss": 2296.87,
+      "target": 2611.18,
+      "commissione": 0.00,
+      "reasoning": "ETH -1.80% su outflow ETF record mensile ($224M) e CLARITY Act failure. Trend ribassista da Sep 14 $2,510 a $2,418 (-3.7% in 3 giorni). Nessun catalizzatore Ethereum specifico questa settimana. Spread MEDIA 2.31%: CoinMarketCap $2,445.32 vs Coinbase $2,390.19.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Sep 17 live)", "price": 2445.32},
+          {"name": "Coinbase (Sep 17 live)", "price": 2390.19}
+        ],
+        "spread_pct": 2.31,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 101.07,
+      "change_24h": "+1.30%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 24h $3.24B (CoinMarketCap) - inflows freschi",
+      "news": "Solana sovraperforma il crypto market in ribasso: (1) SEC designa SOL asset core per ETF commodity-based il 5 settembre 2026 - catalyst istituzionale strutturale; (2) Solana guida $3B/settimana in tokenized equity volume on-chain; (3) XRP e SOL sono gli unici con fresh daily inflows il 17 settembre (BTC/ETH in outflow). Market cap $59.63B, rank #7.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 101.07,
+      "stop_loss": 96.02,
+      "target": 109.16,
+      "commissione": 0.00,
+      "reasoning": "SOL è la principale divergenza positiva nel crypto market oggi: BTC/ETH in outflow, SOL con inflows freschi. Catalyst strutturale SEC designation (5 settembre) rimane intatto. $3B/settimana tokenized stock su Solana consolida il ruolo nell'on-chain finance. Tiene sopra $100 chiave. Target +8% conservativo. Spread ALTA 0.95%: Bitget/CoinGecko $101.55 vs CoinMarketCap $100.59.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bitget/CoinGecko (Sep 17, aggiornato 3h fa)", "price": 101.55},
+          {"name": "CoinMarketCap (Sep 17 live)", "price": 100.59}
+        ],
+        "spread_pct": 0.95,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SOL",
+      "signal": "BUY",
+      "motivo": "Unico crypto con fresh inflows (+$XRP) in giornata di outflow generalizzati (BTC -$296M, ETH -$224M). Catalyst SEC istituzionale (5 sett: designazione asset core ETF) + $3B/settimana tokenized stock su Solana. Divergenza positiva strutturale. Confidenza ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "signal": "MONITOR (BUY se confermato 2 fonti)",
+      "motivo": "+6.05% oggi a $543.47 da $512.50: 44 analisti Strong Buy, 0 Sell. Momentum AI fortissimo nel rally Waller. Candidato BUY #1 al prossimo scan con seconda fonte confermata. Segnale sospeso per regola fonti < 2."
+    },
+    {
+      "rank": 3,
+      "asset": "META",
+      "signal": "BUY",
+      "motivo": "Dividendo ex-date 21 settembre ($0.525/az) crea demand immediata. Goldman Sachs Buy reaffirmed + Wedbush upgrade target $650. Meta One subscription launch amplia revenue. Forza relativa +1.84% oggi. Confidenza MEDIO."
+    },
+    {
+      "rank": 4,
+      "asset": "TSLA",
+      "signal": "BUY",
+      "motivo": "Tesla +3.09% guida il rally post-FOMC growth stocks su commenti Waller dovish. SpaceX +6% correlato (Musk-sentiment). Analyst target medio $398.17 (+7.9% upside da entry). Momentum positivo da $355 (Sep 15) a $369 (Sep 17). Confidenza MEDIO."
+    },
+    {
+      "rank": 5,
+      "asset": "STLA",
+      "signal": "SELL",
+      "motivo": "Triplice catalyst negativo: (1) Morgan Stanley downgrade Underweight; (2) Unifor impasse con scadenza contratto 20 settembre (rischio sciopero); (3) AOI -94% H1 2026. Pipeline prodotto debole strutturalmente. -1.67% oggi. Confidenza MEDIO."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito su Alpaca",
+    "allocazione_suggerita": {
+      "SOL_BUY": "20% del portafoglio crypto (SEC catalyst, divergenza positiva)",
+      "META_BUY": "15% del portafoglio azioni USA (dividendo Sep 21, Goldman Buy)",
+      "TSLA_BUY": "15% del portafoglio azioni USA (post-FOMC rally +3%)",
+      "RACE_BUY": "10% del portafoglio azioni EU (BofA Buy, buyback €3.5B)",
+      "STLA_SELL_short": "5% del portafoglio azioni EU (MS downgrade, labor risk)",
+      "AMD_MONITOR": "0% ora - BUY se seconda fonte conferma $543 al prossimo scan",
+      "GLD_HOLD": "10% hedging geopolitico (crude sopra $105)",
+      "cash": "25% in attesa di chiarezza su CLARITY Act e futura pausa Fed"
+    }
+  },
+  "macro_context": {
+    "fomc_decision": "Sep 16, 2026: +25bp a 3.75%-4.00% (voto unanime 12-0, primo hike dal 2023)",
+    "waller_comments_sep17": "Fed Gov. Waller segnala possibile allentamento delle aspettative di ulteriori hike → rally tech",
+    "16_18_officials_hawkish": "16 di 18 funzionari FOMC vogliono ancora tightening",
+    "wti_crude": ">$105/bbl (Saudi East-West pipeline disruption - 52W high USO $163.35 Sep 15)",
+    "gold_spot": "$4,328.39/oz (Sep 16, +0.80% post-hike)",
+    "silver_spot": "$64.60/oz (Sep 16, +1.50%)",
+    "clarity_act": "Fallito al Congresso USA → bearish crypto short-term",
+    "btc_etf_outflow": "$295.98M Sep 17 (BlackRock guidato, secondo maggiore del mese)",
+    "sol_sec_designation": "5 settembre 2026: SOL designato asset core per ETF commodity-based",
+    "apple_ceo_transition": "1 settembre 2026: John Ternus (ex SVP Hardware) succede a Tim Cook come CEO"
+  }
+}
