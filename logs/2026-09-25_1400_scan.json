@@ -1,0 +1,498 @@
+{
+  "timestamp": "2026-09-25T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta del 25 settembre 2026 caratterizzata da un forte rally AI/tech guidato da META (+4.4%, evento Connect 2026 con Muse AI e nuovi AI glasses) e AMD (nuovo ATH, superato $1T di market cap per la prima volta). MSFT in forte recupero (+3.2%) dopo debolezza post-Q1. Sul fronte macro la Fed ha alzato i tassi di 25bps (primo rialzo in 3 anni); il petrolio è alla sesta sessione consecutiva di calo su progressi diplomatici USA-Iran e attesa ripristino export sauditi. Il settore crypto mostra consolidamento su BTC ($84K) ma SOL è in forte rally (+15.5% settimana) in vista dell'upgrade Alpenglow del 28 settembre. Stellantis (STLA) sotto forte pressione con downgrade da Berenberg e Morgan Stanley. TSLA e META esclusi dai segnali per insufficienza di fonti validate.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 337.81,
+      "change_24h": "+1.12%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "iPhone 18 appena lanciato; CNBC riporta 'testing premium demand after a big stock run'. Azione vicina al massimo 52 settimane di $345.34.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 337.81,
+      "stop_loss": 327.68,
+      "target": 354.70,
+      "commissione": 0.00,
+      "reasoning": "Azione a 2.2% dal massimo 52 settimane ($345.34), con iPhone 18 già nel prezzo dopo un lungo rally. Il risk/reward è meno favorevole vicino ai massimi storici. Attendere consolidamento o conferma di guidance Q4.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Tickzen.app", "price": 335.92},
+          {"name": "CNBC / Yahoo Finance", "price": 339.69}
+        ],
+        "spread_pct": 1.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 224.77,
+      "change_24h": "-0.17%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "NVDA consolida sotto i massimi ($236.54 52w high); articolo Motley Fool 'I'm Buying More Nvidia Stock Right Now'. AMD ha superato $1T il 21 settembre, potenziale rotazione.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 224.77,
+      "stop_loss": 218.03,
+      "target": 236.01,
+      "commissione": 0.00,
+      "reasoning": "NVDA scambia a $225 con max 52w a $236.54 (-5.3%). I fondamentali AI rimangono solidi (P/E 28.39, market cap $5.53T) ma il rally AMD potrebbe comprimere il premio di NVDA a breve. Attendere break sopra $230 per BUY.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase / Multiple sources", "price": 224.96},
+          {"name": "Yahoo Finance / CNBC", "price": 224.58}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 516.38,
+      "change_24h": "+3.22%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista (range intraday ampio $496.85-$519.10)",
+      "news": "MSFT riceve 2 price target bumps il 21 settembre. Yahoo Finance riporta: 'Down More Than 12% Since Q1 2026 Results' - ora in forte recupero. Max 52w: $553.72.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 516.38,
+      "stop_loss": 500.89,
+      "target": 542.20,
+      "commissione": 0.00,
+      "reasoning": "MSFT recupera dalla debolezza post-Q1 (-12% dai massimi) con forte momentum oggi (+3.2%) e sentiment analisti in miglioramento. L'azione tratta ancora a ~7% di sconto rispetto all'ATH $553.72, con catalizzatori AI (Azure, Copilot) ancora intatti. (Fonte: Yahoo Finance, CNBC Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Multiple", "price": 518.82},
+          {"name": "Yahoo Finance / CNBC", "price": 513.94}
+        ],
+        "spread_pct": 0.95,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 249.38,
+      "change_24h": "+0.04%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Amazon supera i $3T di market cap in agosto. EPS growth FY2026 Q2 +89.48%, AWS margin in miglioramento. Azione è scesa da $258 (22 settembre) a $249 oggi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 249.38,
+      "stop_loss": 241.90,
+      "target": 261.85,
+      "commissione": 0.00,
+      "reasoning": "AMZN ha pullback di ~3.5% dai massimi recenti ($258) nonostante fondamentali eccezionali (EPS +89%, AWS in accelerazione). Il recente superamento dei $3T di market cap conferma il momentum strutturale. (Fonti: CNBC, Yahoo Finance Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase / Multiple sources", "price": 249.38},
+          {"name": "CNBC / Yahoo Finance", "price": 249.38}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 71.45,
+      "change_24h": "-0.76%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "NFLX è scesa dal massimo 52w di $124.86 al minimo recente di $65.08; ora a $71.45. Target analisti $93.66 (31% upside). Volatilità annualizzata elevata: 35.57%.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 71.45,
+      "stop_loss": 69.31,
+      "target": 75.02,
+      "commissione": 0.00,
+      "reasoning": "NFLX ha perso oltre il 42% dal massimo 52w ($124.86). Il target analisti di $93.66 suggerisce significativo upside, ma il trend rimane ribassista senza catalizzatori visibili a breve. Alta volatilità (35.57%) richiede cautela. (Fonte: Tickzen.app, CNBC Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen.app / Multiple", "price": 71.17},
+          {"name": "CNBC / Yahoo Finance", "price": 71.72}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 341.26,
+      "change_24h": "-3.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Yahoo Finance riporta 'Why Alphabet (GOOGL) Stock Is Down Today': preoccupazioni su modelli AI più economici di OpenAI e Anthropic che comprimono i margini del portfolio Gemini. P/E 17.20.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 341.26,
+      "stop_loss": 331.02,
+      "target": 358.32,
+      "commissione": 0.00,
+      "reasoning": "GOOGL sotto pressione da concorrenza AI (OpenAI/Anthropic) con preoccupazioni su pricing guerre enterprise. P/E 17.20 è attraente vs peers ma il rischio competitivo strutturale richiede cautela. Attendere stabilizzazione prima di entrare. (Fonte: Yahoo Finance, CNBC Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN / Multiple sources - Sep 25", "price": 344.59},
+          {"name": "Yahoo Finance / CNBC - Sep 22-23", "price": 337.93}
+        ],
+        "spread_pct": 1.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 629.26,
+      "change_24h": "+2.38%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista (10% surge il 21 settembre su $1T milestone, volume record)",
+      "news": "AMD ha superato per la prima volta $1T di market cap il 21 settembre (+9-10% in un giorno). ATH a $629.26 il 24 settembre. +185% YTD, surclassando il Nasdaq. Domanda AI chip in forte espansione.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 629.26,
+      "stop_loss": 610.38,
+      "target": 660.72,
+      "commissione": 0.00,
+      "reasoning": "AMD in territorio di massimi storici con il supporto del $1T milestone e della domanda strutturale AI. +185% YTD riflette un cambio di paradigma nei chip AI. Momentum positivo ma rischio di consolidazione a breve dopo rally estremo. (Fonte: TradingView, Yahoo Finance Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView / Multiple - Sep 24-25 ATH", "price": 629.26},
+          {"name": "Yahoo Finance - Sep 23 close", "price": 613.10}
+        ],
+        "spread_pct": 2.60,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1719.76,
+      "change_24h": "+0.43%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML stock sale +3.08% il 19 settembre. AI boom continua ad alimentare la domanda di equipment litografico EUV. Q3 risultati attesi il 14 ottobre 2026. Range 52w: $935.41-$1,999.96.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1719.76,
+      "stop_loss": 1668.17,
+      "target": 1805.75,
+      "commissione": 0.00,
+      "reasoning": "ASML beneficia direttamente del boom AI con domanda crescente per lithography avanzato. L'azione è a $1,720 vs ATH $2,000 (-14%), con catalizzatore di breve periodo negli earnings Q3 del 14 ottobre. Trend rialzista confermato. (Fonte: StockAnalysis, Yahoo Finance Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Multiple - Sep 24", "price": 1709.64},
+          {"name": "StockAnalysis / Yahoo Finance - Sep 25", "price": 1729.88}
+        ],
+        "spread_pct": 1.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 206.36,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Consensus analisti: Strong Buy (24 Buy, 0 Sell, 4 Hold su 28 analisti). Price target medio €207.77. Range 52w NYSE ADR: $144.97-$281.37. SAP tratta a forte sconto vs ATH.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 206.36,
+      "stop_loss": 200.17,
+      "target": 216.68,
+      "commissione": 0.00,
+      "reasoning": "SAP NYSE ADR a $206.36 con consenso analisti nettamente bullish (24/28 Buy) e target medio $207.77. L'azione tratta a 27% di sconto rispetto all'ATH $281.37. Principale rischio: fonte singola (Investing.com). (Fonte: Investing.com NYSE SAP Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NYSE:SAP - Sep 25", "price": 206.36},
+          {"name": "Investing.com NYSE:SAP (seconda query)", "price": 206.36}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzo confermato ma da unica fonte sottostante (Investing.com). Affidabilità ridotta a MEDIA."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 411.81,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari Q2 2026: EPS $2.99 (beat $2.85), revenue $2.22B (beat $2.15B). Guidance annuale alzata. Order book coperto fino a fine 2027. Lancio Ferrari Luce EV. P/E 38.35.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 411.81,
+      "stop_loss": 399.46,
+      "target": 432.40,
+      "commissione": 0.00,
+      "reasoning": "Ferrari mostra fondamentali eccellenti con order book pieno fino a 2027 e margini in espansione (EBIT >31.2% H2). L'azione a $411 è nel range medio del 52w ($312-$504). Nota: seconda fonte prezzi risalente al 15 settembre. (Fonte: Investing.com, Google Finance Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance / Robinhood NYSE:RACE - Sep 24-25", "price": 411.81},
+          {"name": "Investing.com NYSE:RACE - Sep 15 (10gg fa)", "price": 406.92}
+        ],
+        "spread_pct": 1.19,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte risalente al 15 settembre. Spread tecnico ALTA ma affidabilità ridotta a MEDIA per staleness."
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "asset_note": "Stellantis: ticker NYSE = STLA (non STLAM che è Milan Exchange BIT:STLAM)",
+      "price": 4.47,
+      "change_24h": "-3.25%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Stellantis downgradate da Berenberg (Buy→Hold, target €5.10) e Morgan Stanley (Equal Weight→Underweight, target $5.20). L'azione è scesa da ~$5.56 (fine agosto) a $4.47 (-20% in 3 settimane). Timori competizione cinese e richiami qualità.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 4.47,
+      "stop_loss": 4.60,
+      "target": 4.25,
+      "commissione": 0.00,
+      "reasoning": "STLA in forte downtrend (-20% in 3 settimane) con doppio downgrade da analisti tier-1. La concorrenza dei produttori cinesi EV e i problemi di qualità/richiami erodono i margini. Target Morgan Stanley $5.20 è già violato. (Fonte: Yahoo Finance, CNBC Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance NYSE:STLA - Sep 24 close", "price": 4.47},
+          {"name": "Bloomberg / StockAnalysis NYSE:STLA - Sep 24", "price": 4.47}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 391.14,
+      "change_24h": "-0.59%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "GLD da $401.17 il 18 settembre a $391.14 oggi (-2.5% in 5 giorni). L'oro spot implied ~$4,190/oz. Il calo del petrolio (6a sessione) riduce le pressioni inflazionistiche, pesando sul gold. Fed ha alzato i tassi di 25bps.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 391.14,
+      "stop_loss": 383.32,
+      "target": 406.79,
+      "commissione": 0.00,
+      "reasoning": "GLD sotto pressione a breve termine dal calo oil e dalla Fed hawkish, ma supportata da tensioni geopolitiche (Iran, MENA) e domanda di safe haven. Il recente pullback da $401 a $391 potrebbe offrire un punto di ingresso più favorevole a breve. (Fonte: CNBC, StockAnalysis Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Multiple sources (Robinhood, Nasdaq) - Sep 24", "price": 391.71},
+          {"name": "CNBC / StockAnalysis NYSE Arca:GLD - Sep 24", "price": 390.57}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 57.89,
+      "change_24h": "-0.93%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SLV NAV $57.43 al 24 settembre, net assets $31.39B. Il silver ha avuto un forte rally (52w high $109.83) ed è ora sceso a metà del range. Volatilità molto elevata per il settore.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 57.89,
+      "stop_loss": 56.73,
+      "target": 60.21,
+      "commissione": 0.00,
+      "reasoning": "SLV a $57.89 è al 46% del range 52 settimane ($39.64-$109.83), con alta volatilità strutturale. Senza catalizzatori chiari per un recupero del silver, si suggerisce di attendere segnali di inversione. (Fonte: iShares, Yahoo Finance Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance - Sep 23", "price": 58.16},
+          {"name": "CNBC / iShares NYSE Arca:SLV - Sep 24 close", "price": 57.62}
+        ],
+        "spread_pct": 0.93,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 148.05,
+      "change_24h": "-3.29%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo ribassista (6a sessione consecutiva in calo)",
+      "news": "USO -3.29% oggi, dalla 6a sessione consecutiva in calo. Progressi diplomatici USA-Iran e attesa ripristino export Saudi Arabia via East-West pipeline pesano sul WTI. Range 52w: $65.99-$163.35.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 148.05,
+      "stop_loss": 150.97,
+      "target": 142.13,
+      "commissione": 0.00,
+      "reasoning": "USO in downtrend accelerato (6 sessioni consecutive negative) su driver geopolitici concreti: accordo diplomatico USA-Iran in corso e potenziale aumento offerta OPEC. Il momentum ribassista è confermato da volume anomalo. (Fonte: CNBC, Barchart NYSE Arca:USO Sep 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Multiple sources (Nasdaq, Kraken) - Sep 25", "price": 148.05},
+          {"name": "CNBC / Investing.com NYSE Arca:USO - Sep 25", "price": 148.05}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 84062.16,
+      "change_24h": "-0.55%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (24h volume $38.3B)",
+      "news": "BTC consolida tra $83,500-$85,000. CoinDesk: BTC era a $84,525 il 23 settembre (-2.6% 24h). NYSE e Blockchain.com esplorano partnership per trading tokenizzato 24/7 di azioni/ETF USA (positivo per adozione crypto). BTC -2.6% nelle ultime 24h al 23 settembre.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 84062.16,
+      "stop_loss": 79859.05,
+      "target": 90787.13,
+      "commissione": 0.00,
+      "reasoning": "BTC in fase di consolidamento senza direzionalità chiara. La notizia NYSE/Blockchain.com è un catalizzatore di medio termine positivo. Attendere break sopra $85,000 per BUY o break sotto $82,000 per SELL. (Fonte: Coinbase, CoinMarketCap Sep 25 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase - Sep 25 2026", "price": 83939.84},
+          {"name": "CoinMarketCap - Sep 25 2026", "price": 84184.47}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2682.73,
+      "change_24h": "-0.25%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (24h volume $6.59B, market cap $328.79B)",
+      "news": "ETH su del 10.2% la settimana scorsa ma ora consolida. Upgrade Glamsterdam ritardato da giugno 2026 a Q4 2026 (fattore ribassista). NYSE/Blockchain.com partnership news positivo per ETH. CoinDesk: $2,677.42 il 23 settembre (-3.1% 24h).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2682.73,
+      "stop_loss": 2548.59,
+      "target": 2897.35,
+      "commissione": 0.00,
+      "reasoning": "ETH consolida dopo +10.2% la scorsa settimana. Il ritardo dell'upgrade Glamsterdam (da Q2 a Q4 2026) è un fattore tecnico negativo. Il segnale sarà confermato solo con break sopra $2,750. (Fonte: CoinDesk, CoinMarketCap Sep 25 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk - Sep 25 2026", "price": 2689.28},
+          {"name": "CoinMarketCap - Sep 25 2026", "price": 2676.17}
+        ],
+        "spread_pct": 0.49,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 120.78,
+      "change_24h": "+3.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo rialzista ($18M in short liquidations il 21 settembre su rally a 9-month high)",
+      "news": "SOL +15.5% la scorsa settimana, 9-month high. Upgrade Alpenglow previsto per il 28 settembre (riduzione costi transazione). Anchorage (banca regolata) ha scelto LayerZero per cross-chain su Solana. $18M di short liquidations confermano il momentum bullish.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 120.78,
+      "stop_loss": 114.74,
+      "target": 130.44,
+      "commissione": 0.00,
+      "reasoning": "SOL ha il catalizzatore più specifico del portafoglio: upgrade Alpenglow il 28 settembre (3 giorni) che ridurrà i costi di transazione. Il rally del 15.5% settimana scorsa con short liquidazioni conferma il momentum. L'adozione istituzionale (Anchorage) consolida il trend. (Fonte: CoinGecko, Coinbase Sep 25 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko - Sep 25 2026", "price": 120.94},
+          {"name": "Coinbase - Sep 25 2026", "price": 120.62}
+        ],
+        "spread_pct": 0.26,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Fonti < 2: solo 1 prezzo verificato ($381.64, Investing.com Sep 25). La seconda query web non ha restituito un prezzo esplicito ma solo notizie. Non si generano segnali per regola BASSA.",
+      "prezzo_indicativo": 381.64,
+      "fonte_unica": "Investing.com Sep 25 2026"
+    },
+    {
+      "asset": "META",
+      "motivo": "Fonti < 2: solo 1 prezzo verificato ($777.59, Coinbase Sep 25). La seconda query web (CNBC/Yahoo Finance) ha confermato il rialzo (+4.3% evento Connect 2026) ma non ha restituito un prezzo numerico esplicito. Non si generano segnali per regola BASSA.",
+      "prezzo_indicativo": 777.59,
+      "fonte_unica": "Coinbase Sep 25 2026",
+      "contesto": "META up +4.3-6% su lancio Muse AI, nuovi AI glasses Ray-Ban/Oakley, Meta VR Glasses annunciati per Spring 2027"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SOL",
+      "motivo": "Catalizzatore immediato e specifico: upgrade Alpenglow previsto il 28 settembre (3 giorni). Momentum confermato da +15.5% settimana scorsa, 9-month high, $18M short liquidations. Affidabilità ALTA. Target +8% a $130.44."
+    },
+    {
+      "rank": 2,
+      "asset": "USO",
+      "motivo": "SELL: downtrend strutturale confermato (6 sessioni consecutive in calo, -3.3% oggi). Catalizzatori geopolitici concreti (accordo USA-Iran, aumento offerta OPEC atteso). Setup tecnico chiaro con momentum volume anomalo."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "BUY con alta confidenza: AI boom strutturale, upcoming Q3 earnings il 14 ottobre 2026 (pre-earnings run atteso), a -14% dall'ATH. Momentum rialzista (+3.08% il 19 settembre) e domanda litografia EUV in crescita."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Broker: Alpaca (zero commissioni azioni USA/ETF). Solo a scopo educativo e informativo.",
+    "allocazione_suggerita": {
+      "BUY_azioni_usa": {
+        "MSFT": "15% - recupero post-Q1, alta conviction",
+        "AMZN": "15% - pullback da ATH, fondamentali solidi",
+        "AMD": "10% - momentum AI, ATH, rischio consolidazione"
+      },
+      "BUY_azioni_eu": {
+        "ASML": "20% - best conviction EU, AI boom + earnings catalyst",
+        "SAP": "5% - fonte singola, posizione piccola",
+        "RACE": "5% - fondamentali solidi, fonte seconda stale"
+      },
+      "SELL_short": {
+        "STLA": "5% - downtrend strutturale",
+        "USO": "10% - geopolitica bearish oil confermata"
+      },
+      "BUY_crypto": {
+        "SOL": "10% - top pick, upgrade Alpenglow imminente",
+        "BTC": "5% - consolidamento, posizione difensiva"
+      },
+      "HOLD_cash_reserve": "0% - tutte le allocazioni sopra esaurite"
+    }
+  }
+}
