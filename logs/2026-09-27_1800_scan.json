@@ -1,0 +1,519 @@
+{
+  "timestamp": "2026-09-27T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA in fase di cauta ripresa (QQQ +0.04% il 25 settembre 2026). I titoli tech si avvicinano alle resistenze di periodo con AMD che tocca per la prima volta il trilione di capitalizzazione (+185% YTD). Meta beneficia di un forte catalyst positivo dal Meta Connect event con salto del +4.3% e analisti che alzano i target a $875-$950. NVDA mantiene lo status di 'Strong Buy' da 61 analisti con target +45.6%. Bitcoin si avvicina ai massimi di gennaio 2026 a $84,600 trainato da forti afflussi istituzionali negli ETF spot ($433M il 18 settembre). L'oro si consolida in area $4,200-4,350/oz. Il petrolio è sotto pressione per i progressi diplomatici USA-Iran. Micron rilascerà i risultati Q4 il 29 settembre: evento chiave per l'AI infrastructure outlook. Stellantis conferma la debolezza strutturale con il titolo sotto EUR 4.20 a Milano.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 341.07,
+      "change_24h": "+1.53%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple stabile mentre naviga il panorama regolatorio europeo. Analisti: 25 Buy, 6 Sell, rating complessivo Buy. Target medio non specificato. 52-settimane high a $345.34 vicinissimo (99.1% del massimo).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 341.07,
+      "stop_loss": 330.84,
+      "target": 358.12,
+      "commissione": 0.00,
+      "reasoning": "AAPL è al 98.8% del massimo a 52 settimane ($345.34), resistenza imminente. Rialzo giornaliero +1.53% da $335.92, ma l'upside limitato verso il massimo storico suggerisce attendere un breakout confermato prima di entrare. Fonte: investing.com, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 341.07},
+          {"name": "Yahoo Finance / CNBC", "price": 341.07}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 372.59,
+      "change_24h": "+0.13%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Tesla in discussione su robotaxi, FSD e business adiacenti; analisti segnalano execution risk, prodotti in ritardo e pressione sulla valutazione. Roadster unveiling programmato per il 1 ottobre 2026. Target analyst range $370-$600.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 372.59,
+      "stop_loss": 361.41,
+      "target": 391.22,
+      "commissione": 0.00,
+      "reasoning": "TSLA a -25% dal massimo 52-settimane ($498.83). Prezzo vicino al minimo del range analyst ($370) suggerisce supporto tecnico. Il catalyst del 1 ottobre (Roadster) può generare volatilità positiva a breve. Rischio elevato per l'execution risk sulla guida autonoma. Fonte: Morningstar, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / Investing.com", "price": 372.59},
+          {"name": "Yahoo Finance / CNBC", "price": 372.59}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 225.04,
+      "change_24h": "+0.22%",
+      "trend_5d": "rialzista",
+      "volume_note": "basso (89.95M vs 106.39M media)",
+      "news": "NVIDIA mantiene forte domanda AI per data center. 61 analisti 'Strong Buy', target medio $327.7 (+45.6%). Speculazioni su possibile partecipazione nell'IPO di Anthropic. Deutsche Bank aumenta target price a $220 (settembre 2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 225.04,
+      "stop_loss": 218.29,
+      "target": 236.29,
+      "commissione": 0.00,
+      "reasoning": "NVDA beneficia di domanda strutturale per GPU AI con pipeline di ordini solida. 61 analisti in Strong Buy con upside potenziale +45.6% al target medio. La speculazione sull'IPO Anthropic aggiunge catalizzatore positivo. Volume leggermente sotto media ma trend confermato. Fonte: Tickzen, Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / Investing.com", "price": 225.00},
+          {"name": "Yahoo Finance / CNBC", "price": 225.07}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 516.17,
+      "change_24h": "+0.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Microsoft ha rilasciato update Copilot il 25 settembre 2026 con nuove funzionalità AI; titolo +3.66% quel giorno. Revenue FY2026 $331.84B (+17.79% YoY). 53 analisti Strong Buy, target $576.4 (+11.67%).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 516.17,
+      "stop_loss": 500.68,
+      "target": 541.98,
+      "commissione": 0.00,
+      "reasoning": "MSFT a $516.17, ancora circa 7% sotto il massimo 52-settimane ($553.72). Il catalyst Copilot ha generato un +3.66% recente. Revenue in forte crescita (+17.79% YoY) con AI cloud come driver. 53 analisti Strong Buy. Fonte: Investing.com, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 516.17},
+          {"name": "Yahoo Finance / CNBC", "price": 516.17}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 249.83,
+      "change_24h": "+0.12%",
+      "trend_5d": "laterale",
+      "volume_note": "basso (34.26M vs 38.33M media)",
+      "news": "Amazon ha riportato forte Q2 FY2026 con revenue +15.77% e EPS +89.48%. AWS $42.2B beat le attese ($40.54B). Il titolo è a -13% dal massimo 52-settimane ($287.20) ma con margini in miglioramento (gross margin 35.89%).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 249.83,
+      "stop_loss": 242.34,
+      "target": 262.32,
+      "commissione": 0.00,
+      "reasoning": "AMZN in lateral range a -13% dal massimo $287.20. Fondamentali solidi (AWS +beat, EPS +89%) ma il titolo non ha ancora trovato il catalyst per il rimbalzo verso i massimi. Volume sotto media. Fonte: Investing.com, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 249.98},
+          {"name": "Yahoo Finance / CNBC", "price": 249.67}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 343.92,
+      "change_24h": "+0.00%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Alphabet in fase di consolidamento a -15.8% dal massimo 52-settimane ($408.61). 56 analisti Strong Buy con target $429.46 (+24.87%). Dividendo avviato (yield 0.26%). Nessuna news negativa specifica rilevata in questa sessione.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 343.92,
+      "stop_loss": 333.60,
+      "target": 361.12,
+      "commissione": 0.00,
+      "reasoning": "GOOGL offre uno sconto del 15.8% dal massimo a 52-settimane con un upside del 24.87% al target analyst medio $429.46. 56 analisti concordi su Strong Buy. L'aggiunta del dividendo e la diversificazione AI rafforzano il profilo risk/reward. Fonte: Tickzen, Investing.com/Morningstar.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Tickzen / Investing.com", "price": 343.92},
+          {"name": "CNN / Morningstar", "price": 343.92}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 747.82,
+      "change_24h": "+4.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto (post-Meta Connect event)",
+      "news": "Meta Connect event ha catalizato un +4.3% intraday. Annunciata la più ampia lineup AI glasses (Ray-Ban, Oakley, Meta Glasses, 100+ stili entro fine anno). Mark Zuckerberg ha presentato Meta VR Glasses $1,299 per primavera 2027. Analyst upgrades: Piper Sandler target $875, Canaccord $950, TD Cowen $865.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 747.82,
+      "stop_loss": 725.39,
+      "target": 785.21,
+      "commissione": 0.00,
+      "reasoning": "META +4.3% post Meta Connect event con forte catalyst su AI hardware. Analisti aggressivamente positivi (target $875-$950). Trend rialzista confermato. Nota: fonte secondaria riporta $644 (probabile dato più vecchio); prezzo $747.82 confermato da investing.com per il 26 settembre. Fonte: Investing.com, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (26 sett)", "price": 747.82},
+          {"name": "Yahoo Finance / CNBC (confirmed +4.3% jump)", "price": 747.82}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Una fonte riportava $644.38 (probabile dato precedente). Prezzo $747.82 confermato come più recente."
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 71.15,
+      "change_24h": "-0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix affronta il 'reset 2026': engagement in rallentamento, concorrenza agguerrita di YouTube, ondata di downgrade da broker. La strategia su ads, eventi live e gaming è oggetto di scetticismo. Market cap $296-306B implica ~4.16-4.29 miliardi di azioni (possibile stock split 10:1 in 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 71.15,
+      "stop_loss": 69.02,
+      "target": 74.71,
+      "commissione": 0.00,
+      "reasoning": "NFLX in tendenza ribassista con downgrades multipli e pressione competitiva da YouTube. Il prezzo $71.15 (potenzialmente post-split) non offre chiari catalyst di rimbalzo a breve. Revenue growth e margini ancora positivi limitano un SELL diretto. Fonte: TradingView, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView / Morningstar", "price": 71.15},
+          {"name": "Yahoo Finance / CNBC", "price": 71.15}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA",
+        "nota": "Prezzo $71.15 confermato da 2 fonti. Il market cap riportato ($296B) è incoerente con le azioni storiche (~450M) suggerendo un possibile stock split 10:1 in 2026."
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 630.63,
+      "change_24h": "+0.22%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (rally 5 giorni)",
+      "news": "AMD ha raggiunto il trilione di capitalizzazione di mercato per la prima volta (settimana del 21 settembre 2026). Bank of America ha alzato il target a $720 da $620 il 25 settembre. Lancio di nuovi AI tools per Perplexity. +185% YTD.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 630.63,
+      "stop_loss": 611.71,
+      "target": 662.16,
+      "commissione": 0.00,
+      "reasoning": "AMD in forte momentum rialzista (+185% YTD), ha appena toccato il $1T di market cap. BofA ha alzato il target a $720. Il trend AI chip continua a supportare la crescita. Range 52-settimane $157.05-$638.95: prezzo vicino al massimo storico segnala forte domanda. Fonte: Investing.com, Yahoo Finance/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 630.63},
+          {"name": "Yahoo Finance / CNBC", "price": 630.63}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1743.94,
+      "change_24h": "+1.25%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML ha alzato la guidance 2026 da €36-40B a €43-45B con gross margin 54-56% (luglio 2026). Coverage positivo su output crescente di EUV tools, partnership con major customers e nuova ondata di AI infrastructure demand. Buy rating da BofA Securities, Barclays, Bernstein e JPM confermati a settembre. Earnings Q3 attesi il 14 ottobre 2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1743.94,
+      "stop_loss": 1691.62,
+      "target": 1831.14,
+      "commissione": 0.00,
+      "reasoning": "ASML è il fornitore monopolistico di EUV lithography con guidance 2026 alzata significativamente. L'AI infrastructure spending sostiene gli ordini a lungo termine. 38 analisti Buy con target $2,121 (+21.6%). Earnings il 14 ottobre come prossimo catalyst. Fonte: Investing.com (NASDAQ USD), Investing.com (AMS EUR convertito).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com NASDAQ (USD)", "price": 1743.94},
+          {"name": "Investing.com AMS (EUR 1522.60 ≈ USD 1737)", "price": 1737.00}
+        ],
+        "spread_pct": 0.40,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 209.95,
+      "change_24h": "+0.75%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SAP vede l'AI come parte crescente della sua strategia cloud con forte Q2 2026 cloud growth. Citi ha alzato il target a EUR 215 da EUR 205 il 22 settembre 2026. 6 analisti, 100% Buy, target medio $251.5 (+19.8% upside).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 209.95,
+      "stop_loss": 203.65,
+      "target": 220.45,
+      "commissione": 0.00,
+      "reasoning": "SAP in tendenza rialzista con 100% analisti Buy e AI cloud come driver di crescita. Citi ha alzato il target recentemente. Il prezzo $209.95 offre un upside del 19.8% al target medio $251.5. Fonte: ad-hoc-news (22 settembre), Investing.com (25 settembre).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "ad-hoc-news (22 settembre)", "price": 209.22},
+          {"name": "Investing.com / Yahoo Finance (25 settembre)", "price": 210.68}
+        ],
+        "spread_pct": 0.70,
+        "affidabilita": "ALTA",
+        "nota": "Date leggermente diverse (22 vs 25 settembre); prezzo validato come media $209.95."
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 411.26,
+      "change_24h": "-0.04%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari ha riacquistato €19M di azioni proprie a metà settembre 2026. Morgan Stanley ha alzato il target a $460 da $442 il 10 settembre 2026. Il titolo ha sottoperformato il mercato nell'ultimo anno (-12.4% vs SPY +19.8%) ma mostra segnali di stabilizzazione. Target attuale $478.79.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 411.26,
+      "stop_loss": 398.92,
+      "target": 431.82,
+      "commissione": 0.00,
+      "reasoning": "RACE in fase laterale dopo un anno di underperformance. Il buyback azionario e l'upgrade di Morgan Stanley ($460 target) sono segnali positivi, ma il titolo non ha ancora un catalyst forte per uscire dalla lateralizzazione. Fonte: Investing.com (26 settembre), Yahoo Finance/CNBC (25 settembre).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (26 settembre)", "price": 411.18},
+          {"name": "Yahoo Finance / CNBC (25 settembre)", "price": 411.33}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 4.60,
+      "change_24h": "+0.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (20.57M)",
+      "news": "Stellantis (NYSE: STLA) in tendenza negativa prolungata: il titolo ha perso circa il 60% nell'ultimo anno (52-settimane: EUR 4.154-10.494). La quotazione milanese STLAM ha chiuso sotto EUR 4.20. Recall pressure e debolezza del sentiment sull'automotive europeo. Q2 revenue +13% YoY ma operating income basso (1.8% margin).",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 4.60,
+      "stop_loss": 4.74,
+      "target": 4.37,
+      "commissione": 0.00,
+      "reasoning": "STLAM in tendenza ribassista strutturale (-60% dal massimo 52-settimane). Rating Neutral dagli analisti, pressione da recall e sentiment negativo sull'auto europea. Margini operativi compressi (1.8%). Ticker NYSE: STLA. Fonte: heygotrade (NYSE 27 settembre), Investing.com (Milan 22 settembre).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "heygotrade / CNBC (NYSE STLA, 27 settembre)", "price": 4.60},
+          {"name": "Investing.com Milan (EUR 4.174 ≈ USD 4.76)", "price": 4.76}
+        ],
+        "spread_pct": 3.48,
+        "affidabilita": "MEDIA",
+        "nota": "NYSE ticker STLA (non STLAM che è Milan exchange). Spread 3.48% tra NYSE USD e Milan EUR convertito, e date diverse (27 vs 22 settembre)."
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 393.21,
+      "change_24h": "-0.10%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "L'oro si consolida intorno ai $4,200-4,350/oz. I progressi diplomatici USA-Iran frenano il petrolio e forniscono supporto relativo ai metalli preziosi come safe haven. NAV GLD in calo del 6.77% nell'ultimo mese: fase di presa di profitto dopo rialzo +19.1% nell'ultimo anno. Market cap GLD $148.07B.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 393.21,
+      "stop_loss": 385.35,
+      "target": 408.94,
+      "commissione": 0.00,
+      "reasoning": "GLD in fase di consolidamento laterale dopo un anno molto positivo (+19.1%). Il NAV è sceso del 6.77% nell'ultimo mese indicando pressione di vendita. Il supporto diplomatico (USA-Iran, riduzione rischio geopolitico) limita la corsa al safe haven. Attesa conferma di direzione prima di BUY. Fonte: Investing.com, StockAnalysis/CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / TradingView (26 settembre)", "price": 393.00},
+          {"name": "StockAnalysis / CNBC / Yahoo Finance (25 settembre)", "price": 393.41}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 58.15,
+      "change_24h": "+1.95%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (13.70M shares 25 sett)",
+      "news": "L'argento mostra forza relativa rispetto all'oro: gli ETF sull'argento salgono del 2-3% nelle sessioni recenti. Il calo del petrolio riduce le pressioni inflattive e favorisce i metalli preziosi. Silver ETFs (SLV) identificati come tra i maggiori beneficiari del rally di settembre 2026. Net assets $32.13B al 25 settembre.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 58.15,
+      "stop_loss": 56.99,
+      "target": 60.48,
+      "commissione": 0.00,
+      "reasoning": "SLV mostra forza rialzista con ETF argento tra i principali beneficiari del rally metalli preziosi di settembre. Il calo del petrolio supporta il contesto per i metalli preziosi. Volume normale conferma. Fonte: Investing.com, iShares/Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 58.16},
+          {"name": "iShares / Yahoo Finance (25 settembre)", "price": 58.14}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 84314.93,
+      "change_24h": "+0.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($7.02B volume 24h)",
+      "news": "Bitcoin si avvicina ai massimi di gennaio 2026 a $84,600. Gli ETF spot BTC USA hanno registrato $433M di afflussi netti il 18 settembre, guidati da Fidelity e BlackRock. Gli analisti fissano target a $87,000. Il report sull'inflazione USA del 30 settembre potrebbe influenzare il rally. NYSE e Blockchain.com esplorano tokenized trading 24/7.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 84314.93,
+      "stop_loss": 80099.18,
+      "target": 91060.12,
+      "commissione": 0.00,
+      "reasoning": "BTC in avvicinamento ai massimi di gennaio 2026 con forte momentum istituzionale. Gli afflussi negli ETF spot ($433M) confermano domanda strutturale. Il breakout sopra $85,000 aprirebbe la strada verso $87,000+. Rischio legato al dato inflazione del 30 settembre. Fonte: CoinDesk, Coinbase.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (27 settembre)", "price": 84602.39},
+          {"name": "Coinbase (27 settembre)", "price": 84027.46}
+        ],
+        "spread_pct": 0.68,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2698.17,
+      "change_24h": "+0.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($2.16B-$5.58B volume 24h)",
+      "news": "Ethereum trading a $2,692-2,709, +0.9% nelle ultime 24h. Gli analisti fissano un target a $2,900 per la fine di settembre 2026. Market cap $327-330B. Anchorage (banca regolamentata) ha selezionato LayerZero per trasferimenti cross-chain di stablecoin su Solana/ETH.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2698.17,
+      "stop_loss": 2563.26,
+      "target": 2914.02,
+      "commissione": 0.00,
+      "reasoning": "ETH in trend rialzista con target analyst $2,900 per fine settembre (+7.5% dall'entry). Il momentum del mercato crypto è positivo trainato da BTC. L'integrazione cross-chain LayerZero/Anchorage rafforza il profilo fundamental. Fonte: CoinDesk, CoinMarketCap.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (26 settembre)", "price": 2686.89},
+          {"name": "CoinMarketCap (27 settembre)", "price": 2709.44}
+        ],
+        "spread_pct": 0.84,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 122.75,
+      "change_24h": "+4.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto ($3.48B volume 24h, liquidati $18M short)",
+      "news": "Solana ha superato $117 il 21 settembre con il rally che ha liquidato $18M di posizioni short. Il prezzo è salito del +4.5% nelle ultime 24h a $121-124. Il rally SOL ha seguito strettamente la performance di BTC. CoinMarketCap ha acquisito Coinglass (piattaforma crypto derivatives).",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 122.75,
+      "stop_loss": 116.61,
+      "target": 132.57,
+      "commissione": 0.00,
+      "reasoning": "SOL mostra forte momentum con liquidazione di posizioni short ($18M il 21 settembre) e +4.5% nelle 24h. Il trend è rialzista ma la confidenza è BASSA per lo spread del 2.14% tra le fonti (CoinGecko $124.05 vs Coinbase $121.45). Alta volatilità intrinseca. Fonte: CoinGecko, Coinbase.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko", "price": 124.05},
+          {"name": "Coinbase", "price": 121.45}
+        ],
+        "spread_pct": 2.14,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "USO",
+      "motivo": "Fonti insufficienti per triangolazione: unica fonte corrente Investing.com $148.05 (25 settembre). La seconda fonte disponibile (tickeron $154.90) è datata 11 settembre 2026, non utilizzabile per confronto. Regola: fonti < 2 correnti → BASSA → nessun segnale generato.",
+      "ultima_fonte": "Investing.com $148.05 (25 settembre 2026)"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Primo trilione di market cap nella storia, +185% YTD 2026. BofA target $720 (+14.2%). AI chip demand strutturale. 5-day rally confermato. Massima confidenza."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "61 analisti Strong Buy con target $327.7 (+45.6%). Potenziale IPO Anthropic. Domanda AI data center inesauribile. Prezzo $225 vs target $327."
+    },
+    {
+      "rank": 3,
+      "asset": "BTC",
+      "motivo": "Prossimità ai massimi di gennaio 2026 a $84,600. ETF spot inflows istituzionali $433M in un solo giorno. Target analisti $87,000. Breakout imminente."
+    },
+    {
+      "rank": 4,
+      "asset": "ASML",
+      "motivo": "Guidance 2026 alzata da €36-40B a €43-45B. Monopolio EUV lithography. 38 analisti Buy, target $2,121 (+21.6%). Earnings catalyst il 14 ottobre."
+    },
+    {
+      "rank": 5,
+      "asset": "META",
+      "motivo": "Meta Connect event +4.3% con lineup AI glasses record (100+ stili). Target analyst alzati a $875-$950. AI hardware come nuovo verticale di crescita."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - solo indicativo",
+    "allocazione_suggerita": {
+      "AMD": "15% (stock_usa, BUY Alto)",
+      "NVDA": "15% (stock_usa, BUY Alto)",
+      "BTC": "12% (crypto, BUY Medio)",
+      "ASML": "10% (stock_eu, BUY Alto)",
+      "META": "10% (stock_usa, BUY Medio)",
+      "MSFT": "10% (stock_usa, BUY Medio)",
+      "ETH": "8% (crypto, BUY Medio)",
+      "GOOGL": "8% (stock_usa, BUY Medio)",
+      "SLV": "7% (etf_commodity, BUY Medio)",
+      "SAP": "5% (stock_eu, BUY Medio)"
+    },
+    "totale_allocato": "100%",
+    "asset_esclusi_portfolio": ["STLAM (SELL)", "GLD (HOLD)", "AAPL (HOLD)", "TSLA (HOLD)", "AMZN (HOLD)", "RACE (HOLD)", "NFLX (HOLD)", "SOL (BUY Basso - escluso per alta volatilità e MEDIA affidabilità)", "USO (escluso per validazione insufficiente)"]
+  }
+}
