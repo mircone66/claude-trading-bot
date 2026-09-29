@@ -1,0 +1,513 @@
+{
+  "timestamp": "2026-09-29T11:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione mista del 29 settembre 2026. Tech USA in correzione: META -4.79%, TSLA -3.94%, AMD -3.61% su base Sep 28; NVDA in controtendenza +1.68%. AMZN e AAPL in lieve calo ma fondamentali solidi. ASML spicca in Europa grazie alla revisione al rialzo della guidance 2026 e al boom AI nei semiconduttori. Petrolio in forte rally WTI +4% a $96.16 (XTB market wrap Sep 28), sostenendo USO. Oro sotto pressione da rendimenti obbligazionari in rialzo; argento in ribasso ~10% su 5 giorni. Crypto: BTC e SOL mostrano slancio positivo con forti afflussi negli ETF spot Bitcoin ($5.3B da inizio settimana); hack Bitget ($350M) pesa sul sentiment generale crypto.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 339.70,
+      "change_24h": "-0.78%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "iPhone 17 sales top Wall Street estimates; AI agent builder OpenClaw boosting Mac mini/Studio demand; supply backlog previsto per mesi. Giuria USA ha ordinato pagamento di ~$5.7B in causa haptics (in appello).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 339.70,
+      "stop_loss": 329.51,
+      "target": 356.69,
+      "commissione": 0.00,
+      "reasoning": "Earnings beat con forte domanda iPhone 17 e accelerazione AI su Mac; $147B in cassa e piano di buyback conferma solidità. Causa haptics in appello non impatta bilancio a breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC", "price": 338.32},
+          {"name": "Pluang / Investing.com", "price": 341.07}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 357.73,
+      "change_24h": "-3.94%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Calo -3.94% il 28 set senza catalizzatore specifico identificato. 52-week range $297.38-$498.83; 19 analisti Buy vs 4 Sell. Market cap $1.41T.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 357.73,
+      "stop_loss": 346.99,
+      "target": 375.62,
+      "commissione": 0.00,
+      "reasoning": "Calo sharp -3.94% senza notizia specifica; attendere stabilizzazione e conferma di supporto sopra $350 prima di entrare. Trend a 5 giorni rimane ribassista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (close Sep 28)", "price": 357.45},
+          {"name": "Investing.com", "price": 358.01}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 230.00,
+      "change_24h": "+1.68%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo positivo",
+      "news": "Q2 FY2027 (ending Jul 26, 2026): revenue +106% YoY a $96.2B; data center AI revenue +117% a $89B. Earnings prossima data: 20/11/2026. Consensus 61 analisti: Strong Buy, target medio $327.70 (+42% da attuale).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 230.00,
+      "stop_loss": 223.10,
+      "target": 241.50,
+      "commissione": 0.00,
+      "reasoning": "Crescita AI senza precedenti: revenue raddoppiato con margini in espansione. Upside di lungo periodo +42% su target analisti. In controtendenza rispetto al tech oggi (+1.68%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC / MarketBeat (close Sep 28)", "price": 228.86},
+          {"name": "StockAnalysis / Yahoo Finance (current Sep 29)", "price": 231.14}
+        ],
+        "spread_pct": 1.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 510.51,
+      "change_24h": "-0.87%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume sotto media (14.1M vs 23.89M media)",
+      "news": "MSFT in calo >12% dai massimi Q1 2026 ($553.72). Risultati solidi, Copilot redesign in corso. P/E 28.76, dividend yield 0.71%.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 510.51,
+      "stop_loss": 495.20,
+      "target": 536.04,
+      "commissione": 0.00,
+      "reasoning": "Stock in downtrend strutturale dal Q1 2026 (-12%): attendere segnali di inversione. Fondamentali solidi ma mercato ha incorporato guidance deludente Q1. Supporto chiave a $500.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN / Investing.com", "price": 509.37},
+          {"name": "Yahoo Finance / CNBC", "price": 511.65}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 246.58,
+      "change_24h": "-1.51%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "FY2026 Q2: broad-based profitability improvement; gross margin 35.89%, operating margin 12.08%; revenue growth +15.77%, EPS growth +89.48%. Wells Fargo Overweight con target $338 (+37% upside). AWS e advertising in forte crescita.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 246.58,
+      "stop_loss": 239.18,
+      "target": 258.91,
+      "commissione": 0.00,
+      "reasoning": "Espansione dei margini record e crescita EPS +89%; Wells Fargo PT $338 implica 37% upside. Monetization e-commerce + AWS cloud + advertising convergono positivamente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC", "price": 245.91},
+          {"name": "Coinbase / CNN", "price": 247.25}
+        ],
+        "spread_pct": 0.54,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 340.96,
+      "change_24h": "-0.45%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Solid Q2 earnings (riportato insieme a META, AMZN, MSFT). 3a società al mondo per market cap a luglio 2026. AI search integrations e Gemini models in deployment. Range giornaliero $341.11-$347.03.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 340.96,
+      "stop_loss": 330.73,
+      "target": 358.01,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi ma mancano catalizzatori specifici a breve termine vs NVDA e AMZN. Trend laterale a 5 giorni; attendere rottura al rialzo oltre $345 con volume.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Morningstar", "price": 342.75},
+          {"name": "Yahoo Finance / CNBC", "price": 339.16}
+        ],
+        "spread_pct": 1.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 715.62,
+      "change_24h": "-4.79%",
+      "trend_5d": "volatile",
+      "volume_note": "volume anomalo negativo",
+      "news": "Sep 28: annuncio piattaforma enterprise + assunzione CJ Desai (ex MongoDB CEO) → stock -4.79%. Sep 21: +10% su aumento target prezzo e download Muse AI agent. Pivot enterprise visto negativamente a breve.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 715.62,
+      "stop_loss": 694.15,
+      "target": 751.40,
+      "commissione": 0.00,
+      "reasoning": "La forte volatilità (+10% poi -4.79% in una settimana) richiede stabilizzazione. Il pivot enterprise può essere positivo a lungo ma il mercato ha punito l'annuncio; attendere conferma di supporto a $710-715.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close Sep 28)", "price": 715.62},
+          {"name": "CNBC / CNN (close Sep 28)", "price": 715.62}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 69.93,
+      "change_24h": "-1.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "NFLX -14% mensile; 52-week range $65.08-$124.86, attualmente al 4.4% dal minimo. Analisti proiettano ritorno sopra $100 solo entro 2030. Concorrenza da YouTube live sports.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 69.93,
+      "stop_loss": 67.83,
+      "target": 73.43,
+      "commissione": 0.00,
+      "reasoning": "Stock in trend ribassista strutturale, -14% mensile con obiettivo $100 solo nel 2030 da analisti. Vicino a supporto chiave $65-66; attendere segnali di inversione prima di agire. ATTENZIONE: affidabilità prezzi MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar / StockAnalysis (Sep 29)", "price": 70.46},
+          {"name": "Yahoo Finance / CNBC", "price": 69.40}
+        ],
+        "spread_pct": 1.53,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 612.21,
+      "change_24h": "-3.61%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo negativo",
+      "news": "AMD ha raggiunto $1T di market cap il 21 set. ATH $639 il 25 set. BofA ha alzato PT a $720 da $620 il 25 set. Poi calo -3.61% il 28 set. Sep 29: parziale recupero a $616.55.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 612.21,
+      "stop_loss": 594.04,
+      "target": 643.32,
+      "commissione": 0.00,
+      "reasoning": "Pullback tecnico da ATH $639 dopo il raggiungimento del $1T market cap; BofA PT $720 implica +17.6% upside. AI GPU momentum solido; il calo sembra fisiologico dopo il rally di settembre.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MacroTrends / current Sep 29", "price": 616.55},
+          {"name": "Yahoo Finance (close Sep 28)", "price": 607.87}
+        ],
+        "spread_pct": 1.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1771.41,
+      "change_24h": "N/D",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma",
+      "news": "Luglio 2026: management ha alzato guidance 2026 da €36-40B a €43-45B con gross margin 54-56%. AI boom e capex semiconduttori in forte espansione. Rating Buy mantenuto da UBS, BofA, Barclays. Market cap #1 nel settore attrezzature semiconduttori (90% quota EUV).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1771.41,
+      "stop_loss": 1718.27,
+      "target": 1859.98,
+      "commissione": 0.00,
+      "reasoning": "Guidance alzata significativamente (+18% midpoint) nel luglio 2026; posizione monopolistica nell'EUV lithography con zero concorrenti diretti. AI capex boom garantisce domanda pluriennale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne / Investing.com (Sep 29)", "price": 1771.41},
+          {"name": "Finviz / StockMarketWatch", "price": 1771.41}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 209.31,
+      "change_24h": "-0.65%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Consensus analisti: Strong Buy (24/26 analisti Buy, 0 Sell). Prossimi earnings: 21 ottobre 2026. Range 52w: $144.97-$281.37. Trasformazione cloud in corso, margini in miglioramento.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 209.31,
+      "stop_loss": 203.03,
+      "target": 219.78,
+      "commissione": 0.00,
+      "reasoning": "Consensus analisti unanime (24/26 Buy); momentum pre-earnings (21 ottobre) storicamente positivo per SAP. Stock laterale, buon punto di ingresso prima del catalizzatore earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Trendlyne (Sep 28)", "price": 209.31},
+          {"name": "Investing.com / CNBC (Sep 28)", "price": 209.31}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 401.59,
+      "change_24h": "~-1.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Q2 2026: EPS $2.99 batte stime $2.85; ricavi $2.22B batte $2.15B. Guidance FY2026 alzata; personalizzazione >20% ricavi; order book copre fino fine 2027. Lancio Ferrari Luce (EV sports car). UBS Buy con PT $490.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 401.59,
+      "stop_loss": 389.54,
+      "target": 421.67,
+      "commissione": 0.00,
+      "reasoning": "Brand premium con scarsità strutturale; order book sold out fino fine 2027 garantisce visibilità ricavi. UBS PT $490 implica +22% upside. Q2 earnings beat e guidance alzata supportano il titolo. ATTENZIONE: affidabilità prezzi MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / WallStreetZen (Sep 29)", "price": 401.59},
+          {"name": "Investing.com (Sep 15 - 2 settimane fa)", "price": 406.92}
+        ],
+        "spread_pct": 1.33,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 386.69,
+      "change_24h": "-1.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "XTB Market Wrap Sep 28: 'Oil drives yields higher and gold lower'. 30y Treasury yield a 5.613% (massimo da giugno 2002); 10y yield a 5.281%. USD forte. Pressione vendite su metalli preziosi. ATTENZIONE: spread GLD tra fonti 3.54%.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 386.69,
+      "stop_loss": 379.36,
+      "target": 402.16,
+      "commissione": 0.00,
+      "reasoning": "Rendimenti obbligazionari ai massimi pluriennali e USD forte pesano sull'oro (asset non-yielding). Attesa inversione tassi prima di entrare long. ATTENZIONE: affidabilità prezzi MEDIA (spread 3.54%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sep 28)", "price": 393.41},
+          {"name": "State Street / SSGA (Sep 28)", "price": 379.97}
+        ],
+        "spread_pct": 3.54,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 54.95,
+      "change_24h": "-3.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo negativo",
+      "news": "iShares Silver ETF (SLV) ha perso quasi 10% negli ultimi 5 giorni. Pressione da rendimenti obbligazionari elevati e USD forte. Volatilità argento molto elevata. 52-week range: $41.66-$109.83.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 54.95,
+      "stop_loss": 56.05,
+      "target": 53.75,
+      "commissione": 0.00,
+      "reasoning": "SLV in downtrend accentuato: -10% in 5 giorni su pressione combinata di alti rendimenti obbligazionari e USD forte. Trend ribassista confermato da più fonti news; rischio di ulteriore discesa verso supporto $50.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sep 28 close)", "price": 54.95},
+          {"name": "CNBC / iShares (Sep 28 close)", "price": 54.95}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 148.33,
+      "change_24h": "-3.11%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo positivo (after-hours)",
+      "news": "XTB Market Wrap Sep 28: WTI crude oil +4.04% a $96.16; Brent +3.47% a $100.79. After-hours USO +3.70% a $153.82 dopo chiusura a $148.33. 52-week range: $65.99-$163.35. Tensioni geopolitiche e offerta OPEC+.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 148.33,
+      "stop_loss": 145.36,
+      "target": 154.26,
+      "commissione": 0.00,
+      "reasoning": "Il petrolio WTI ha surged +4% post-chiusura; after-hours USO +3.70% anticipa apertura positiva. Momentum crude oil supportato da tensioni offerta. NOTA: la chiusura regolare -3.11% è già recuperata in after-hours.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Sep 28 close)", "price": 148.33},
+          {"name": "Yahoo Finance / CNBC (Sep 28 close)", "price": 148.33}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83906.20,
+      "change_24h": "+1.36%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume $33.9B (24h) — nella norma",
+      "news": "US spot Bitcoin ETF inflows: $5.3B da annuncio Treasury buyback long-bond, inclusi $2.4B la settimana scorsa. NYSE-Blockchain.com partnership per trading 24/7 tokenizzato in esame. Hack Bitget $350M (hot wallets) pesa sul sentiment settore.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 83906.20,
+      "stop_loss": 79710.89,
+      "target": 90618.70,
+      "commissione": 0.00,
+      "reasoning": "Forte domanda istituzionale tramite ETF spot ($5.3B inflows settimanali); NYSE blockchain partnership suggerisce adozione mainstream. Hack Bitget è evento isolato, non sistemico. Trend rialzista confermato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Sep 29)", "price": 83905.66},
+          {"name": "CoinMarketCap (Sep 29)", "price": 83906.74}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2690.62,
+      "change_24h": "+0.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume $15.3B (24h) — elevato",
+      "news": "ETH Q3 2026 rally: +58% nel trimestre, ponendo fine a 3 trimestri consecutivi di perdite. Market cap #2 a $332B. Adozione istituzionale in crescita. ATTENZIONE: spread tra fonti 2.27% (affidabilità MEDIA).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2690.62,
+      "stop_loss": 2556.09,
+      "target": 2905.87,
+      "commissione": 0.00,
+      "reasoning": "Il rally Q3 +58% interrompe 3 trimestri di perdite, segnalando possibile inversione strutturale. Volume elevato ($15.3B/24h) conferma interesse istituzionale. ATTENZIONE: affidabilità prezzi MEDIA (spread Coinbase vs CoinMarketCap 2.27%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Sep 29)", "price": 2660.38},
+          {"name": "CoinMarketCap (Sep 29)", "price": 2720.86}
+        ],
+        "spread_pct": 2.27,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 118.64,
+      "change_24h": "+0.94%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume $3.4B (24h) — nella norma",
+      "news": "SOL up +68% negli ultimi 2 mesi; perdita YTD 2026 ridotta a solo -2.7%. CoinMarketCap: sentiment bullish su crescita ecosystem e asset tokenizzati. Futures Solana Oct 2026 attivi su Coinbase.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 118.64,
+      "stop_loss": 112.71,
+      "target": 128.13,
+      "commissione": 0.00,
+      "reasoning": "Rally +68% in 2 mesi con perdita YTD quasi azzerata (-2.7%); momentum forte e sentiment ecosistema bullish. Crescita asset tokenizzati su Solana è driver fondamentale di lungo periodo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Sep 29)", "price": 118.00},
+          {"name": "CoinMarketCap (Sep 29)", "price": 119.27}
+        ],
+        "spread_pct": 1.08,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM",
+      "motivo": "Ticker STLAM è quotato su Borsa Italiana (BIT). Il ticker NYSE per Stellantis è STLA ($5.76 USD). Spread tra NYSE STLA ($5.76) e BIT STLAM convertito in USD (5.057 EUR × ~1.085 = $5.49) = 4.93% > soglia 4%. Segnale non generato per affidabilità BASSA. Raccomandazione: usare ticker STLA per operatività su Alpaca."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Record revenue AI Q2: +106% YoY a $96.2B; data center +117% a $89B. Consensus Strong Buy 61 analisti, target $327.70 (+42% upside da $230). In controtendenza rispetto al mercato oggi."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "EPS growth +89.48% Q2 2026, operating margin 12.08%. Wells Fargo PT $338 (+37% upside da $247). AWS + advertising + e-commerce convergono positivamente."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Guidance 2026 alzata da €36-40B a €43-45B (+18% midpoint). Monopolio EUV con 90% market share. AI capex boom garantisce domanda pluriennale con zero concorrenti diretti."
+    },
+    {
+      "rank": 4,
+      "asset": "BTC",
+      "motivo": "ETF spot inflows $5.3B in una settimana. NYSE-Blockchain partnership per trading 24/7. Trend rialzista confermato con alta affidabilità prezzi (spread 0.00%)."
+    },
+    {
+      "rank": 5,
+      "asset": "SOL",
+      "motivo": "Rally +68% in 2 mesi con perdita YTD quasi azzerata. Ecosystem tokenizzazione asset in crescita. Prezzo $118.64 lontano dai massimi storici — upside strutturale."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Basato sui 5 segnali BUY con confidenza ALTA/MEDIO più alta.",
+    "allocazione_suggerita": {
+      "NVDA": "25%",
+      "AMZN": "20%",
+      "ASML": "20%",
+      "BTC": "20%",
+      "SOL": "15%"
+    },
+    "riepilogo_segnali": {
+      "BUY": ["AAPL", "NVDA", "AMZN", "AMD", "ASML", "SAP", "RACE", "USO", "BTC", "ETH", "SOL"],
+      "SELL": ["SLV"],
+      "HOLD": ["TSLA", "MSFT", "GOOGL", "META", "NFLX", "GLD"],
+      "ESCLUSI": ["STLAM"]
+    }
+  }
+}
