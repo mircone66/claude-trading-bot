@@ -1,0 +1,501 @@
+{
+  "timestamp": "2026-10-01T16:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Apertura Q4 2026 con volatilità moderata. Treasury yield a massimi di 24 anni pesano sull'indice generale. META e AMD trainano il settore tech su AI momentum. Petrolio in rialzo (+1.6%) su divieto esportazioni carburante da raffinerie cinesi. Metalli preziosi stabili/positivi dopo dati PCE sotto attese (-38% probabilità rialzo Fed in ottobre). BTC consolida $82K-$85K; ETH outperforma con +57% nell'ultimo trimestre. Apple e Netflix in calo. SAP esclusa per fonte singola non verificabile indipendentemente.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 229.45,
+      "change_24h": "+0.93%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Analysts bullish for Monster October on AI cycle; NVDA +21% YTD; important catalyst date Oct 15 (chip event). Nvidia could lead AI infrastructure capex acceleration in Q4 2026 (Motley Fool, 30 Sep 2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 229.45,
+      "stop_loss": 222.57,
+      "target": 240.92,
+      "commissione": 0.00,
+      "reasoning": "NVDA in trend rialzista (+21% YTD) con forte domanda AI datacenter; analisti segnalano 'Monster October' con evento prodotto atteso il 15/10/2026 come potenziale catalyst.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat/StockAnalysis", "price": 230.51},
+          {"name": "Yahoo Finance (CNBC confirmed)", "price": 228.38}
+        ],
+        "spread_pct": 0.93,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 731.58,
+      "change_24h": "-0.62%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto (miglior mese da 2022)",
+      "news": "Meta ha chiuso settembre con +27%, il miglior mese da 2022, trainato dal lancio dell'app Muse (AI agent personale) il 08/09/2026 che ha superato ChatGPT di OpenAI nei download iOS (CNBC, 30 Sep 2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 731.58,
+      "stop_loss": 709.63,
+      "target": 768.16,
+      "commissione": 0.00,
+      "reasoning": "META ha appena vissuto il mese migliore dal 2022 (+27% in settembre); l'app Muse batte ChatGPT in iOS; momentum AI forte e analisti prevedono ulteriore rialzo in Q4.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/TrendLyne", "price": 728.92},
+          {"name": "CNBC", "price": 734.23}
+        ],
+        "spread_pct": 0.73,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 611.88,
+      "change_24h": "+0.73%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AMD +185% YTD, in corsa nel mercato AI-agent chip; Fool segnala data chiave 15/10/2026 per investitori AMD, Nvidia e Broadcom. Si avvicina al massimo 52 settimane $639 (Motley Fool, 30 Sep 2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 611.88,
+      "stop_loss": 593.52,
+      "target": 642.47,
+      "commissione": 0.00,
+      "reasoning": "AMD +185% nel 2026 con AI-agent chip adoption accelerata; catalizzatore tecnico il 15/10/2026; massimo 52w $639 come target naturale a breve termine.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Etoro/MarketBeat", "price": 611.76},
+          {"name": "CNBC", "price": 612.00}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 516.19,
+      "change_24h": "+0.55%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Wells Fargo alza il target da $700 a $725; forte sentiment analisti con target medio $578.42; earnings attesi il 28/10/2026. Crypto-economist.ch: MSFT chiude settembre flat ma trend rialzista intatto.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 516.19,
+      "stop_loss": 500.70,
+      "target": 542.00,
+      "commissione": 0.00,
+      "reasoning": "Wells Fargo upgrade target a $725; AI cloud (Azure) continua a crescere; MSFT in trend rialzista con earnings il 28/10 come prossimo catalyst.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 515.70},
+          {"name": "StockAnalysis/initial quote", "price": 516.68}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 247.25,
+      "change_24h": "-0.76%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Goldman Sachs aggiunge AMZN alla sua flagship list (Investing.com, 01 Oct 2026); Amazon supera $3T market cap in agosto 2026 su forte crescita AI cloud; earnings stimati 29/10/2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 247.25,
+      "stop_loss": 239.83,
+      "target": 259.61,
+      "commissione": 0.00,
+      "reasoning": "Goldman aggiunge AMZN alla flagship list con rating positivo su mix revenue growth+margin expansion AI; lieve calo intraday non cambia il quadro fondamentale rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 247.02},
+          {"name": "CNBC", "price": 247.48}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2715.26,
+      "change_24h": "+2.01%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto",
+      "news": "ETH +57% nell'ultimo trimestre; ETH e SOL stanno outperformando BTC nel 2026; 24/7 Wall St. (01 Oct 2026): 'Can Ethereum reach $3,000 again?' con scenario positivo sul forte momentum Q3.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2715.26,
+      "stop_loss": 2579.50,
+      "target": 2932.48,
+      "commissione": 0.00,
+      "reasoning": "ETH outperforma BTC con +57% nell'ultimo trimestre; la resistenza psicologica $3,000 è il target naturale; momentum confermato da volumi elevati.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 2716.89},
+          {"name": "CoinDesk", "price": 2713.63}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 55.07,
+      "change_24h": "+1.03%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Silver futures +1.62% in apertura mercato; dati PCE sotto attese riducono probabilità rialzo Fed ottobre (38% da 51%); metalli preziosi beneficiano di aspettative tassi (Yahoo Finance, 01 Oct 2026).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 55.07,
+      "stop_loss": 53.97,
+      "target": 57.27,
+      "commissione": 0.00,
+      "reasoning": "Silver in rialzo +1.03% con futures +1.62%; PCE sotto attese riduce aspettative Fed-hawkish; metalli preziosi in rally da deflazione aspettative.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "iShares/Initial quote (Sep 30 close)", "price": 54.51},
+          {"name": "CNBC NYSE Arca (Oct 1)", "price": 55.07}
+        ],
+        "spread_pct": 1.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 146.63,
+      "change_24h": "+1.33%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Raffinerie cinesi vietano esportazioni carburante ad ottobre riducendo offerta globale; Trump offre 40M barili SPR ma compratori assenti (Benzinga, 01 Oct 2026); WTI in rialzo su tensioni supply.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 146.63,
+      "stop_loss": 143.70,
+      "target": 152.50,
+      "commissione": 0.00,
+      "reasoning": "Divieto export carburante da raffinerie cinesi riduce supply globale; mancanza di acquirenti per lo SPR americano conferma domanda strutturale; WTI in trend rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/StockAnalysis (Sep 30 close)", "price": 145.66},
+          {"name": "NYSE Arca pre-market Oct 1", "price": 147.60}
+        ],
+        "spread_pct": 1.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 327.00,
+      "change_24h": "-2.09%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Apple in calo dopo che Morgan Stanley ha ridotto il price target; attesa iPhone Duo pieghevole a $1,999; earnings 29/10/2026. CEO Ternus ha incrementato il valore da $350B a $4.75T in 15 anni (Motley Fool, 30 Sep).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 327.00,
+      "stop_loss": 316.99,
+      "target": 343.35,
+      "commissione": 0.00,
+      "reasoning": "Morgan Stanley taglia target; stock vicino al massimo 52w $345.34 ma in calo oggi (-2.09%); attendere earnings 29/10 per conferma direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "GainBot/StockAnalysis", "price": 326.07},
+          {"name": "CNBC", "price": 327.92}
+        ],
+        "spread_pct": 0.57,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 354.81,
+      "change_24h": "+0.56%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Tesla punta a espansione vendite globali su nuovo mercato (Motley Fool, 01 Oct 2026); YTD -21.10% ma recupero da minimo $297.38 del 29/07/2026; P/E TTM 355x indica forte valutazione speculativa.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 354.81,
+      "stop_loss": 344.17,
+      "target": 372.55,
+      "commissione": 0.00,
+      "reasoning": "TSLA in laterale tra $297-$499 range 52w; nuovo mercato globale è catalyst potenziale ma P/E 355x e YTD -21% segnalano rischio elevato; attendere conferma direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase Stock/TradingView", "price": 354.81},
+          {"name": "CNBC/Yahoo Finance", "price": 354.81}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 343.76,
+      "change_24h": "-1.73%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Google lancia Gemini 4 Argon, primo modello flagship AI da febbraio; GOOGL +2% in apertura poi ripiega -1.73%; AI chip in orbita su SpaceX Falcon 9. Earnings attesi 28/10/2026 (Yahoo Finance, 01 Oct 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 343.76,
+      "stop_loss": 333.45,
+      "target": 360.95,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 3.33% (MEDIA affidabilità); giornata volatile malgrado lancio Gemini 4 Argon; prudenza fino a conferma direzionale post-earnings 28/10.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen", "price": 349.39},
+          {"name": "Yahoo Finance (1:19 PM EDT)", "price": 338.12}
+        ],
+        "spread_pct": 3.33,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 68.23,
+      "change_24h": "-2.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (sotto media)",
+      "news": "Netflix riporta il 20/10/2026; stock calo dopo ciascuno degli ultimi 4 report earnings; -25% YTD; 52w low $65.08, 52w high $124.86. Motley Fool (01 Oct): 'Most investors are wrong about selling Netflix'.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 68.23,
+      "stop_loss": 66.18,
+      "target": 71.64,
+      "commissione": 0.00,
+      "reasoning": "NFLX vicino al minimo 52w ($65.08); tasso di calo -2.26% oggi ma già sceso del 44% dal massimo; troppo tardi per SELL, troppo rischioso BUY prima di earnings 20/10.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/Morningstar", "price": 68.44},
+          {"name": "CNBC", "price": 68.01}
+        ],
+        "spread_pct": 0.63,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1818.31,
+      "change_24h": "-0.88%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "ASML earnings attesi 14/10/2026; calo da profit-taking pre-risultati; domanda AI positiva ma Jefferies segnala possibile picco ciclo in Q4 2026. ADR NASDAQ in rialzo di +69.3% YTD (Investing.com, 01 Oct 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1818.31,
+      "stop_loss": 1763.76,
+      "target": 1909.23,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 1.79% (MEDIA affidabilità); earnings 14/10 creano incertezza; Jefferies avverte di possibile ciclo-peak Q4; prudenza pre-risultati.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/TrendLyne", "price": 1802.22},
+          {"name": "Investing.com ADR", "price": 1834.39}
+        ],
+        "spread_pct": 1.79,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 388.76,
+      "change_24h": "-2.09%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Ferrari in calo -2.09%; share buyback attivo; partnership Rakuten per 2027 annunciata; analisti hanno target medio $462.35. Stock dal massimo $504.49 in downtrend. (Yahoo Finance, 01 Oct 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 388.76,
+      "stop_loss": 377.10,
+      "target": 408.20,
+      "commissione": 0.00,
+      "reasoning": "Spread 2.13% (MEDIA affidabilità); RACE in correzione da $504 (-23%); buyback e nuova partnership sono positivi ma non sufficienti a invertire il trend ribassista attuale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com/MarketChameleon", "price": 384.66},
+          {"name": "Yahoo Finance", "price": 392.85}
+        ],
+        "spread_pct": 2.13,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.36,
+      "change_24h": "-1.02%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "CEO Filosa riconferma guidance 2026 (ricavi +MSD%, OI margin low-single-digit) mentre il titolo è ai minimi storici; YTD -60%; mercato scettico sulla turnaround. (Yahoo Finance, 01 Oct 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 4.36,
+      "stop_loss": 4.23,
+      "target": 4.58,
+      "commissione": 0.00,
+      "reasoning": "STLA a minimi storici su NYSE; CEO reafferma guidance (segnale difensivo positivo) ma -60% YTD indica profonda crisi; rapporto rischio/rendimento sfavorevole senza catalizzatore chiaro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/Google Finance (11:31 AM)", "price": 4.33},
+          {"name": "CNBC/Yahoo Finance", "price": 4.38}
+        ],
+        "spread_pct": 1.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 381.58,
+      "change_24h": "+0.19%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Oro piatto dopo dati PCE sotto attese; probabilità rialzo Fed ottobre scende da 51% a 38%; GLD ora 26% sotto il massimo $509.70. Yahoo Finance (01 Oct 2026): 'Gold prices rather muted after softer inflation data'.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 381.58,
+      "stop_loss": 373.95,
+      "target": 396.84,
+      "commissione": 0.00,
+      "reasoning": "GLD stabilizzato dopo la correzione dal massimo $509.70; PCE morbido riduce pressione rialzi Fed (positivo per oro) ma upside limitato in laterale; attendere conferma rottura al rialzo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/Investing.com", "price": 381.58},
+          {"name": "NYSE Arca CNBC confirmed", "price": 381.58}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83738.07,
+      "change_24h": "+1.01%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "BTC apre Q4 nello stesso range $82K-$85K del Q3; Citigroup prevede movimento imminente; crypto hacks costati $1.26B nell'ultimo periodo. CoinDesk (01 Oct 2026): 'Not much price movement this morning'.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 83738.07,
+      "stop_loss": 79551.17,
+      "target": 90437.12,
+      "commissione": 0.00,
+      "reasoning": "BTC in laterale $82K-$85K senza rottura direzionale chiara; massimo storico $126,210 del 06/10/2025 lontano; attendere breakout confermato prima di BUY.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 83516.22},
+          {"name": "CoinDesk", "price": 83959.91}
+        ],
+        "spread_pct": 0.53,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 117.00,
+      "change_24h": "+1.01%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SOL +68% negli ultimi 2 mesi; Alpenglow upgrade in testnet (finality 150ms vs 12.8s); ETF spot USA ha attirato $272M in settembre. Attenzione: token unlocks importanti previsti in ottobre (CryptoTicker, 01 Oct 2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 117.00,
+      "stop_loss": 111.15,
+      "target": 126.36,
+      "commissione": 0.00,
+      "reasoning": "SOL in trend rialzista ma pullback da $124 a $117 segnala pressione; token unlocks in ottobre (DoubleZero, Trump, Pump.fun) creeranno selling pressure; attendere risoluzione prima di BUY.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 116.96},
+          {"name": "CoinMarketCap", "price": 117.03}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "SAP",
+      "motivo": "Fonte indipendente secondaria non disponibile per Oct 1: Investing.com mostra $206.36 USD ma datato 12 settembre 2026 (19 giorni fa); unica fonte corrente confermata Yahoo Finance $212.79. Regola: Fonti < 2 → BASSA → nessun segnale generato."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "+185% YTD, AI-agent chip race, catalizzatore tecnico 15/10/2026, approccio al massimo 52w $639 con momentum confermato da doppia fonte ALTA affidabilità"
+    },
+    {
+      "rank": 2,
+      "asset": "META",
+      "motivo": "Miglior mese da 2022 in settembre (+27%); Muse AI agent supera ChatGPT in iOS; valutazione P/E 25x ragionevole con crescita ricavi attesa +26.47% 2026"
+    },
+    {
+      "rank": 3,
+      "asset": "ETH",
+      "motivo": "+57% nell'ultimo trimestre; outperforma BTC; resistenza psicologica $3,000 come target naturale con volume elevato; correlazione positiva con cycle AI"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "NVDA": "15%",
+      "META": "15%",
+      "AMD": "15%",
+      "MSFT": "12%",
+      "AMZN": "10%",
+      "ETH": "10%",
+      "SLV": "8%",
+      "USO": "8%",
+      "HOLD_cash": "7%"
+    }
+  }
+}
