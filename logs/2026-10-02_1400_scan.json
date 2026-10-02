@@ -1,0 +1,259 @@
+{
+  "timestamp": "2026-10-02T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA in rialzo il 2 ottobre 2026: Nasdaq +1.16% con forte momentum nel settore AI/semiconduttori. VanEck Semiconductor ETF +2.66%. Morgan Stanley ha reinserito NVDA come top pick. Tesla attesa sui dati consegne Q3 2026 (~460K unità stimate). Bitcoin a $84.5K con Citigroup che alza target a $113K e Fear & Greed Index a 72. Oro in lieve calo post dati lavoro USA deboli (oro spot a ~$61.87/oz per l'argento); Dollar Index ai massimi del 2026. Q4 earnings season alle porte: MSFT e GOOGL riportano il 27 ottobre.",
+  "signals": [
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 494.74,
+      "change_24h": "+0.85%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma; Morgan Stanley aggiunge MSFT tra i top pick AI",
+      "news": "Microsoft Q4 FY2026 earnings previsti per il 27 ottobre; investimento annunciato di $106.9 miliardi in AI (Azure); analisti: consensus Strong Buy con target medio $569. (Fonte: TheStreet, stockanalysis.com, 1-2 ott 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 494.74,
+      "stop_loss": 479.90,
+      "target": 519.48,
+      "commissione": 0.00,
+      "reasoning": "MSFT consolida sopra $490 con catalyst Q4 earnings il 27/10; Azure AI domanda strutturalmente in crescita. Analyst target $569 implica +15% upside da livelli attuali. (Fonte: TheStreet 02/10/2026, stockanalysis.com)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "investsmart.com.au", "price": 496.75},
+          {"name": "Yahoo Finance (12:07pm EDT)", "price": 492.72}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 257.50,
+      "change_24h": "+0.16%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma; consolidamento post-earnings",
+      "news": "Amazon ha battuto le stime nel recente trimestre (earnings beat); AWS continua la crescita AI cloud. Q4 holiday season in avvicinamento come catalizzatore. (Fonte: Yahoo Finance 'Amazon beats', TheStreet 01-02 ott 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 257.50,
+      "stop_loss": 249.78,
+      "target": 270.38,
+      "commissione": 0.00,
+      "reasoning": "AMZN consolida dopo earnings beat; AWS AI cloud in crescita strutturale. Avvicinamento Q4 holiday season (catalizzatore stagionale storico). Prezzo in zona di accumulo. (Fonte: Yahoo Finance, investsmart.com.au 02/10/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "investsmart.com.au", "price": 258.48},
+          {"name": "coingecko.com / hapi.trade", "price": 256.52}
+        ],
+        "spread_pct": 0.76,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 376.12,
+      "change_24h": "+0.32%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume 44.75M (21/09); notizie deliveries Q3 attese imminenti",
+      "news": "Tesla Q3 2026 delivery data attesi a breve; stime analisti ~460,000 unità. TSLA +5% in apertura il 2/10. Anno YTD: da $456 a ~$376, recupero in corso. (Fonte: TheStreet 02/10/2026, moomoo)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 376.12,
+      "stop_loss": 364.84,
+      "target": 394.93,
+      "commissione": 0.00,
+      "reasoning": "TSLA in attesa del report Q3 deliveries: se superiori a 460K → catalyst rialzista; se sotto → rischio ribasso. Alta incertezza pre-dato; preferibile attendere conferma prima di prendere posizione. (Fonte: TheStreet, investsmart.com.au 02/10/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "investsmart.com.au (02/10/2026)", "price": 380.12},
+          {"name": "moomoo / Yahoo Finance (25/09/2026)", "price": 372.11}
+        ],
+        "spread_pct": 2.13,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 343.28,
+      "change_24h": "+1.34%",
+      "trend_5d": "laterale",
+      "volume_note": "volume 23.56M (nella norma)",
+      "news": "Google ha lanciato una 'AI price war' da $1 miliardo espandendo le infrastrutture AI. Q4 earnings Alphabet previsti 27 ottobre. 70 analisti rating Buy, target medio $429. (Fonte: TheStreet, equibles.com 02/10/2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 343.28,
+      "stop_loss": 332.98,
+      "target": 360.44,
+      "commissione": 0.00,
+      "reasoning": "GOOGL su +1.34% con AI momentum; lancio $1B AI price war segnale di investimento aggressivo nelle infrastrutture. Earnings il 27/10 come catalizzatore; 70 analisti Buy, target $429 implica +25% upside. (Fonte: TheStreet, equibles.com 02/10/2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "equibles.com / Yahoo Finance (02/10/2026)", "price": 342.36},
+          {"name": "stockanalysis.com (18/08/2026)", "price": 344.20}
+        ],
+        "spread_pct": 0.54,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 84521.71,
+      "change_24h": "+1.20%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume $33.2B/24h (elevato, sopra media)",
+      "news": "Citigroup alza target BTC a $113,000 (da $82,000). Fear & Greed Index a 72 (Greed). Market cap crypto totale a $2.99T (+1.1%). BTC dominance al 59.4%. Fed meeting 27-28 ott con 64% prob hike al 25bps. (Fonte: coingabbar.com, Yahoo Finance 02/10/2026)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 84521.71,
+      "stop_loss": 80295.62,
+      "target": 91283.45,
+      "commissione": 0.00,
+      "reasoning": "BTC in trend rialzista solido con Citigroup target $113K (+34% da livelli attuali). Supporto istituzionale confermato; crypto market cap quasi $3T. Fed meeting potenziale headwind ma momentum positivo dominante. (Fonte: coingabbar.com, Yahoo Finance Oct 2 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "coingabbar.com / Yahoo Finance (02/10/2026)", "price": 84521.71},
+          {"name": "CoinMarketCap (implied da market cap $1.70T / 20.12M BTC)", "price": 84493.00}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2698.93,
+      "change_24h": "+0.60%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume $13.56B/24h (nella norma)",
+      "news": "Citigroup alza target ETH a $3,028 (da $2,240). Market cap $330.17B. Recupero da minimi di giugno ($1,571). US institutions caute su ETH secondo analisi Coinbase. (Fonte: coingabbar.com, Yahoo Finance 02/10/2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2698.93,
+      "stop_loss": 2564.00,
+      "target": 2914.84,
+      "commissione": 0.00,
+      "reasoning": "ETH in recupero da $1,571 (giugno) a $2,698 con Citigroup che alza target a $3,028. Correlazione positiva con BTC in risk-on. Attenzione: US institutions leggermente caute (segnale di Coinbase da monitorare). (Fonte: coingabbar.com, Yahoo Finance Oct 2 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "coingabbar.com / Yahoo Finance (02/10/2026)", "price": 2698.93},
+          {"name": "Market cap derivato ($330.17B / ~120.1M ETH in circolazione)", "price": 2749.00}
+        ],
+        "spread_pct": 1.85,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Una sola fonte corrente (investsmart $339.71); seconda fonte (Yahoo Finance $274.90) datata dicembre 2025 — troppo obsoleta per triangolazione"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Direzione segnale conflittuale: investsmart mostra -2.34% ($219.74) mentre le notizie intraday indicano NVDA +1.6% (momenti diversi). Nessuna seconda fonte con prezzo attuale"
+    },
+    {
+      "asset": "META",
+      "motivo": "Una sola fonte corrente (investsmart $653.69 +6.55%); nessuna seconda fonte indipendente per oggi 02/10/2026"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Prezzi incompatibili tra fonti: ~$79.73 (ott 2026, post-split) vs $672.41 (dati pre-split stantii non filtrati). Una sola fonte valida corrente"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread estremo: investsmart $624.00 (2026) vs Yahoo Finance $159.47 (dati opzioni 2024, obsoleti). Nessuna seconda fonte corrente confermata"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Mismatch valutario: investsmart €1,503.20 (Euronext) vs $1,741.12 USD (NYSE, dati agosto). Nessun prezzo NYSE USD confermato per oggi"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Una sola fonte corrente (investsmart NYSE $210.68); seconda fonte (Benzinga $241.47) datata dicembre 2025 — obsoleta"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread 21.8% tra fonti: investing.com $435.38 vs Benzinga $340.55 — supera soglia 4%; dati da date diverse non comparabili"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Solo prezzo EUR disponibile da notizie di oggi (€4.037 Parigi); nessun prezzo USD NYSE confermato per STLA/STLAM"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Spread 17.4% tra fonti: BullionVault $382.76 (01/10) vs dhan.co $462.62 — supera ampiamente soglia 4%"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread >28% tra fonti: Yahoo Finance $75.54 vs heygotrade.com $105.57 — dati incoerenti, impossibile triangolazione affidabile"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread >47% tra fonti: robinhood/historicaloptiondata $141.67 (04/09) vs benzinga $75.28 — dati da date molto diverse"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Nessun prezzo verificato per 02/10/2026: fonte più recente CoinMarketCap $101.37 (settembre 2026); dati ottobre non disponibili da 2 fonti indipendenti"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "BTC",
+      "motivo": "Target Citigroup $113K (+34%); dominance 59.4%; volume $33B elevato; Fear & Greed 72; crypto market cap quasi $3T. Migliore risk/reward con ALTA affidabilità dati"
+    },
+    {
+      "rank": 2,
+      "asset": "MSFT",
+      "motivo": "Earnings catalyst 27/10; Azure AI domanda strutturale; target analisti $569 (+15%); investimento $107B in AI annunciato. Dati ALTA affidabilità"
+    },
+    {
+      "rank": 3,
+      "asset": "GOOGL",
+      "motivo": "AI price war $1B; earnings 27/10; 70 analisti Buy; target $429 (+25%); +1.34% oggi su momentum AI"
+    },
+    {
+      "rank": 4,
+      "asset": "ETH",
+      "motivo": "Citi alza target a $3,028 (+12%); correlazione BTC risk-on; recupero da minimi di giugno; mercato crypto in espansione a $3T"
+    },
+    {
+      "rank": 5,
+      "asset": "AMZN",
+      "motivo": "Earnings beat recente; AWS AI cloud crescita; Q4 holiday season in avvicinamento (catalizzatore stagionale); prezzo in consolidamento"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - solo per analisi didattica",
+    "allocazione_suggerita": {
+      "BTC": "25%",
+      "MSFT": "20%",
+      "GOOGL": "20%",
+      "ETH": "15%",
+      "AMZN": "10%",
+      "TSLA": "10% (HOLD - monitoraggio deliveries Q3)"
+    },
+    "asset_esclusi_per_dati_insufficienti": 13,
+    "asset_validati": 6,
+    "asset_con_segnale_operativo": 5
+  }
+}
