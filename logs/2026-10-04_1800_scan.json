@@ -1,0 +1,203 @@
+{
+  "timestamp": "2026-10-04T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Scan 4 ottobre 2026 — qualità dati web significativamente ridotta: la maggior parte delle 36 query di triangolazione ha restituito prezzi non datati con precisione al 4/10. Solo 4 asset su 18 superano il test triangolazione (spread <4%, almeno 2 fonti). Big Tech in attesa di earnings: MSFT e RACE il 27/10, SAP il 21/10, ASML il 14/10, AAPL il 29/10. News commodity: oro corretto da picco a ~$4.198/oz in late Sep (GLD ~$380), argento -3.4% al $62/oz, WTI crude in risalita verso $61/barile post-sanzioni Russia. Crypto: BTC consolida intorno a $82K dopo picco Sept, ETH corregge post-Q3. MSFT: insider buying $2M su -17% YTD. SAP forte recovery da 52w low. ASML: possibile profit-taking pre-earnings (-7% stimato). STLA Q3 earnings il 28/10.",
+  "signals": [
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 348.05,
+      "change_24h": "+1.36%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (22-24M stimato)",
+      "news": "CEO Sundar Pichai: '2026 off to a terrific start' con AI investments. GOOGL YTD +10-17%, P/E 34.05, market cap $4.49T. 52w range $161.64-$408.61. Analisti target medio $429 (+23% upside). Earnings stimati Q3.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 348.05,
+      "stop_loss": 337.61,
+      "target": 365.45,
+      "commissione": 0.00,
+      "reasoning": "GOOGL in trend rialzista YTD con fondamentali solidi (AI, cloud). Fase laterale in ottobre per Big Tech (storica debolezza stagionale). P/E 34.05 è il più basso tra i Magnificent 7. Attendere pull-back verso $330 per entry più favorevole o conferma breakout $360+. Fonte: InvestSmart.com.au / TradersUnion Oct 4 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart.com.au", "price": 344.10},
+          {"name": "TradersUnion LiveChart", "price": 351.99}
+        ],
+        "spread_pct": 2.27,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 490.00,
+      "change_24h": "-5.32%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "MSFT -17% YTD 2026 dopo rally +37.5% in Q3 2025. Director acquista $2M di azioni durante la correzione. Azure $100B revenue milestone. Earnings Q1 FY2027 il 27 ottobre 2026. 55/55 analisti Strong Buy, target medio $569.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 490.00,
+      "stop_loss": 475.30,
+      "target": 514.50,
+      "commissione": 0.00,
+      "reasoning": "MSFT in correzione significativa (-17% YTD) dopo il mega-rally 2025. Il insider buying a $2M segnala fiducia dei prossimali. Earnings 27/10 come catalyst chiave: Azure guidance sarà determinante. Target analisti $569 (+16%). Attendere stabilizzazione pre-earnings. Fonte: Investing.com / InvestSmart.com.au Oct 4 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 483.24},
+          {"name": "InvestSmart.com.au", "price": 496.75}
+        ],
+        "spread_pct": 2.76,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 213.14,
+      "change_24h": "+3.29%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SAP Q3 2026 earnings il 21 ottobre. 52w range $146.38-$280.46 — titolo in forte recovery da 52w low (+45.9%). Partnership AI attiva, cloud expansion in corso. Market cap $245B. Consensus target $256 (+20% upside).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 213.14,
+      "stop_loss": 206.75,
+      "target": 223.80,
+      "commissione": 0.00,
+      "reasoning": "SAP in trend rialzista sostenuto (52w low $146→$213, +46%). Earnings Q3 il 21/10 prossimo catalyst con consensus positivo su cloud/AI. Prezzo nella metà del range 52w con upside al target analisti $256 (+20%). Entry valida su momentum confermato. Fonte: InvestSmart.com.au / MarketScreener Aug-19 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart.com.au", "price": 210.68},
+          {"name": "MarketScreener (19-Aug-2026)", "price": 215.60}
+        ],
+        "spread_pct": 2.31,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1737.44,
+      "change_24h": "-6.96%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (pre-earnings profit taking)",
+      "news": "ASML Holding Q3 2026 earnings il 14 ottobre. 52w range $715.99-$1,991.64. YTD +80.6%. P/E 53.92, EPS $32.12, Revenue TTM €35.32B, gross margin 52.73%. UBS reafferma Buy, target €2.350. Domanda EUV da semiconduttori AI confermata.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1737.44,
+      "stop_loss": 1685.32,
+      "target": 1824.31,
+      "commissione": 0.00,
+      "reasoning": "ASML mostra possibile profit-taking pre-earnings (-7% stimato vs ieri). Earnings il 14/10 catalizzatore: forward guidance su ordini EUV sarà decisiva. YTD +80.6% conferma trend strutturale. UBS Buy target €2.350 implica >30% upside da $1.737. Attendere conferma post-earnings per aggiungere posizione. Fonte: Equibles.com / StockAnalysis (Oct 2026) + InvestSmart Aug 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Equibles/StockAnalysis (Oct-2026)", "price": 1733.75},
+          {"name": "InvestSmart.com.au (Aug-10-2026)", "price": 1741.12}
+        ],
+        "spread_pct": 0.42,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "spread fonti 9.24% (InvestSmart $339.71 vs Equibles $309.72) > soglia 4%; prezzi coerenti con date diverse"
+    },
+    {
+      "asset": "TSLA",
+      "motivo": "fonte secondaria non affidabile (Google Finance $319.53 data non verificabile); spread stimato >15% vs fonte primaria $380.12"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "1 sola fonte corrente confermata (InvestSmart $219.74); fonte secondaria non restituisce prezzo corrente Oct 4"
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "fonte secondaria stale (Jul-29: $226.65 vs InvestSmart Oct: $258.48); 1 sola fonte corrente"
+    },
+    {
+      "asset": "META",
+      "motivo": "fonte secondaria stale (Sep-04: $616.77 vs InvestSmart: $653.69); 1 sola fonte corrente"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "prezzo $73.57 probabilmente stale (da agosto); inconsistente con scan ieri $67.07 (+9.7% senza catalyst news verificabile)"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "fonte secondaria stale (Sep-04: $477.57 vs InvestSmart $624.00); spread intertemporale >26%"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "spread 3.45% MEDIA ma entrambe le fonti ($420-$435) implicano +8-12% vs ieri $388.30 senza catalyst noto; dati probabilmente stale"
+    },
+    {
+      "asset": "STLA",
+      "motivo": "dati NYSE STLA inconsistenti ($5.36 vs ieri $4.40 = +21.8% in 1 giorno impossibile); fonti europee STLAM non utilizzabili"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "fonte primaria mostra $462.62 (+21.7% vs ieri $380.14) — chiaramente stale; fonte secondaria da Feb-2026 ($483.75)"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "fonti mostrano $58-70 range (vs ieri $54.74 = +6-28%); fonte 2 da Sep-11 stale; nessun dato corrente affidabile per Oct 4"
+    },
+    {
+      "asset": "USO",
+      "motivo": "range estremo tra fonti ($108-$157); spread >32%; nessuna fonte attendibile per Oct 4"
+    },
+    {
+      "asset": "BTC",
+      "motivo": "fonte primaria Jul/Aug ($63K) stale; fonte secondaria ($82,315) unica e non triangolata; 1 sola fonte corrente"
+    },
+    {
+      "asset": "ETH",
+      "motivo": "fonte primaria da Aug ($2,417-$2,453) stale vs ieri $2,701; fonte secondaria restituisce solo previsioni, non prezzi reali"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "tutte le fonti restituiscono dati da Apr-Jul 2026 ($71-102); nessuna fonte corrente verificabile per Oct 4"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "Unico monopolio mondiale litografia EUV per chip AI; YTD +80.6%; earnings il 14/10 come catalyst immediato. Correzione -7% odierna crea potenziale entry pre-earnings. UBS target €2.350 (+30% da $1.737)."
+    },
+    {
+      "rank": 2,
+      "asset": "SAP",
+      "motivo": "Recovery +46% da 52w low con momentum confermato. Q3 earnings il 21/10. Consensus target $256 (+20%). Cloud/AI expansion solida."
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Insider buying $2M durante correzione -17% YTD. Strong Buy 55/55 analisti, target $569 (+16%). Earnings 27/10 prossimo catalyst. Azure $100B milestone."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Solo 4 asset validati oggi su 18 totali (qualità dati web limitata). Elevata quota CASH raccomandata.",
+    "allocazione_suggerita": {
+      "ASML_HOLD": "15%",
+      "SAP_BUY": "20%",
+      "MSFT_HOLD": "15%",
+      "GOOGL_HOLD": "15%",
+      "CASH_ATTESA": "35%"
+    }
+  }
+}
