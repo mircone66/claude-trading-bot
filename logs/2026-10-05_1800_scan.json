@@ -1,0 +1,526 @@
+{
+  "timestamp": "2026-10-05T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "S&P 500 e Nasdaq in rialzo il 5 ottobre 2026 guidati dal tech: NVDA tocca nuovi massimi storici ($237.87 ATH), AMD supera $1T di market cap, META estende il rally post-settembre (+27%). TSLA rimbalza con solide consegne Q3. MSFT ottiene upgrade Melius a Buy con target $665 su AI security. Lato debole: NFLX -17.9% in 30gg per rallentamento abbonati dichiarato dal Co-CEO; STLA -59.6% YTD con doppio downgrade e sospensione produzione in Francia. Oro sotto pressione dal yield 10y al 5.3%, argento in controtendenza (+2.94% futures). BTC consolida sopra $85K con acquisti istituzionali continuativi (Strategy+Strive) ma TD Sequential sell signal su 4h.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 333.67,
+      "change_24h": "+1.02%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple annuncia evento 13 ottobre per nuovo smart home hub; analisti vedono upside. Earnings previsti 29 ottobre 2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 333.67,
+      "stop_loss": 323.66,
+      "target": 350.35,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore prossimo: evento smart home 13 ottobre con potenziale annuncio hub; titolo +22.7% YTD con momentum pre-earnings 29/10. Fonte: blockchain.news, stockanalysis.com Oct 5.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis.com / Investing.com", "price": 333.65},
+          {"name": "Yahoo Finance / Bloomberg", "price": 333.69}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 374.37,
+      "change_24h": "+2.04%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto (55.3M shares)",
+      "news": "Tesla rimbalza su solide consegne Q3; Q3 delivery strength come principale catalizzatore. Earnings 21 ottobre. P/E 343x su forward.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 374.37,
+      "stop_loss": 363.14,
+      "target": 393.09,
+      "commissione": 0.00,
+      "reasoning": "Rally guidato da solide consegne Q3 con earnings in arrivo 21/10. MEDIA affidabilita: scarto 2.02% tra fonte intraday Oct 5 ($378.15) e close Oct 2 Yahoo Finance ($370.59). Fonte: investing.com, Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Stockanalysis (Oct 5, 1:08 PM EDT)", "price": 378.15},
+          {"name": "Yahoo Finance (Oct 2 close - ultimo disponibile)", "price": 370.59}
+        ],
+        "spread_pct": 2.02,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 237.15,
+      "change_24h": "+1.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "basso (52.72M vs avg 106.18M)",
+      "news": "NVDA tocca nuovo ATH intraday $237.87; market cap $5.73T; Cantor Fitzgerald reiterates su outlook crescita AI.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 237.15,
+      "stop_loss": 229.94,
+      "target": 249.01,
+      "commissione": 0.00,
+      "reasoning": "Titolo letteralmente a massimi storici ($237.87 ATH Oct 5); rischio/rendimento sfavorevole nel breve termine. Target 12m analisti $327.70 (+38%) interessante ma overextended intraday. Fonte: Yahoo Finance, stockanalysis.com.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis.com (Oct 5)", "price": 237.15},
+          {"name": "Yahoo Finance / Morningstar (Oct 5 intraday)", "price": 237.15}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 526.21,
+      "change_24h": "+1.75%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Melius Research upgrades MSFT a Buy con target $665 su crescita domanda AI security. Earnings 28 ottobre.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 526.21,
+      "stop_loss": 510.42,
+      "target": 552.52,
+      "commissione": 0.00,
+      "reasoning": "Upgrade Melius a Buy con target $665 (+26%) su domanda AI security (Investing.com Oct 5); forte momentum pre-earnings 28/10. Market cap $3.85T con P/E 28.83 ragionevole per la qualita.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradersUnion / Investing.com (Oct 5)", "price": 526.46},
+          {"name": "Yahoo Finance (Oct 5, 10:35 AM EDT)", "price": 525.96}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 252.52,
+      "change_24h": "+1.33%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Amazon trading 21% sotto i massimi storici; forte thesis AWS+AI+Advertising. 59 analisti Strong Buy con target medio $330.59.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 252.52,
+      "stop_loss": 244.94,
+      "target": 265.15,
+      "commissione": 0.00,
+      "reasoning": "Sconto 21% dai massimi con robusta thesis AWS/AI (Fool.com Oct 5); target medio analisti $330.59 (+31%) e P/E 20.23 attraente per la crescita. Momentum positivo +1.33%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis.com (Oct 5)", "price": 252.52},
+          {"name": "Yahoo Finance / Morningstar (Oct 5)", "price": 252.52}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 344.81,
+      "change_24h": "+0.53%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (6.4M)",
+      "news": "Alphabet firma accordo volontario AI safety White House; forte crescita Cloud; earnings 28 ottobre. P/E 17.26 conveniente.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 344.81,
+      "stop_loss": 334.47,
+      "target": 362.05,
+      "commissione": 0.00,
+      "reasoning": "AI safety accord White House + Cloud strength; +40% negli ultimi 12 mesi con P/E 17.26 relativamente basso per il settore. Target analisti $429.36 (+24.45%). Fonte: Yahoo Finance, CNBC Oct 5.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "WallStreetZen / Google Finance (Oct 5)", "price": 344.30},
+          {"name": "Yahoo Finance / CNBC (Oct 5)", "price": 345.31}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 744.16,
+      "change_24h": "+2.04%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "META +27% in settembre; lancio Muse AI agent con monetizzazione via fee e abbonamenti. Earnings 28 ottobre. Rischio: caso privacy New Mexico.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 744.16,
+      "stop_loss": 721.84,
+      "target": 781.37,
+      "commissione": 0.00,
+      "reasoning": "Momentum eccezionale +27% settembre con lancio Muse AI agent; 62 analisti Strong Buy target $793.91. Pre-earnings 28/10 supporta accumulo verso 52-week high $779.82. Fonte: CNBC, Yahoo Finance Oct 5.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis.com (Oct 5, 12:06 PM EDT)", "price": 742.95},
+          {"name": "TrendLyne.com (Oct 5)", "price": 745.36}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 67.06,
+      "change_24h": "-1.16%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto (38.67M)",
+      "news": "Co-CEO Sarandos: crescita abbonati piu lenta del previsto; drawdown 30gg -17.9%. 52-week low $65.08 in avvicinamento.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 67.06,
+      "stop_loss": 69.07,
+      "target": 63.71,
+      "commissione": 0.00,
+      "reasoning": "Dichiarazioni negative Co-CEO su crescita abbonati + trend ribassista persistente (-17.9% in 30gg). 52-week low $65.08 a rischio con supporto tecnico debole. Fonte: Yahoo Finance, heygotrade.com Oct 2.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade (Oct 2 close)", "price": 67.06},
+          {"name": "Yahoo Finance / Morningstar (Oct 2 close)", "price": 67.06}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 632.79,
+      "change_24h": "-0.35%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (17.9M)",
+      "news": "AMD raggiunge $1T di market cap (Fool.com Oct 4); Stifel alza target a $700 (da $635) il 5 ottobre. 52-week high $645.46 recente.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 632.79,
+      "stop_loss": 613.81,
+      "target": 664.43,
+      "commissione": 0.00,
+      "reasoning": "Traguardo storico $1T market cap (Fool.com Oct 4) + upgrade target Stifel a $700 Oct 5; trend rialzista eccezionale +196% YTD. Piccola pausa intraday dopo 52-week high a $645.46. Fonte: Yahoo Finance / CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis.com (Oct 5, 1:58 PM EDT)", "price": 631.66},
+          {"name": "Yahoo Finance / CNBC (Oct 2 close)", "price": 633.91}
+        ],
+        "spread_pct": 0.36,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1867.31,
+      "change_24h": "+3.25%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML avanza +3.2% con buyback attivo (277K azioni, Sep 28 - Oct 2); Q3 earnings 14 ottobre; dibattito export China. GF Score 93.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1867.31,
+      "stop_loss": 1811.29,
+      "target": 1960.68,
+      "commissione": 0.00,
+      "reasoning": "Doppio catalizzatore: buyback attivo in corso + earnings Oct 14 come prossimo catalyst. AI chip infrastructure demand sostenuta; GF Score 93 (GuruFocus); target analisti $2,087.60 (+11.8%). Fonte: Investing.com, ad-hoc-news.de.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com / Yahoo Finance (NASDAQ, Oct 2 close)", "price": 1867.31},
+          {"name": "Investing.com (seconda verifica indipendente)", "price": 1867.31}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 208.57,
+      "change_24h": "-1.05%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SAP Q3 earnings il 21 ottobre; focus su cloud AI e backlog in crescita. Trading 23.46% sotto il 52-week high $281.37.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 208.57,
+      "stop_loss": 202.31,
+      "target": 219.00,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali cloud solidi ma trend laterale con calo -1.05% oggi; earnings 21/10 come prossimo catalizzatore. 23.46% sotto ATH con target analisti medio $251.50 (+20.6%). Fonte: Yahoo Finance / Morningstar.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (NYSE:SAP, Oct 2 close)", "price": 208.57},
+          {"name": "Morningstar / CNN Markets", "price": 208.57}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 382.78,
+      "change_24h": "-1.58%",
+      "trend_5d": "laterale",
+      "volume_note": "basso (194.71K)",
+      "news": "Ferrari Q2: revenue +8% YoY a EUR 1.938B, EBIT +10% ma shipments -3,366 veicoli. UBS abbassa target a $450 da $490 (mantiene Buy).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 382.78,
+      "stop_loss": 371.30,
+      "target": 401.92,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi Q2 (revenue +8%, EBIT +10%) controbilanciati da calo spedizioni e target UBS ridotto a $450. 13/14 analisti bullish con target mediano $472.50 (+23%). Fonte: ad-hoc-news.de, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Google Finance (Oct 5 intraday)", "price": 382.16},
+          {"name": "Day range midpoint Oct 5 ($381.92-$384.86)", "price": 383.39}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.40,
+      "change_24h": "-6.18%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto (22.8M avg, con picchi)",
+      "news": "Doppio downgrade: Berenberg a Hold (target EUR 5.10), Morgan Stanley a Underweight (target $5.20). Stop produzione 3 impianti Francia per carenza batterie EV long-range.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 4.40,
+      "stop_loss": 4.53,
+      "target": 4.18,
+      "commissione": 0.00,
+      "reasoning": "Confluenza negativa: doppio downgrade analisti + sospensione produzione EV in Francia + YTD -59.6%. 52-week low $4.30 vicino. Nota: ticker NYSE e STLA (il prompt usa STLAM che e il ticker Milan). Fonte: timothysykes.com, Yahoo Finance Oct 2.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Google Finance (STLA NYSE, Oct 2 close)", "price": 4.40},
+          {"name": "Morningstar / MarketScreener (STLA NYSE)", "price": 4.40}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 378.98,
+      "change_24h": "-0.31%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (1.34M)",
+      "news": "Oro spot scende a $4,156-4,189/oz (da $4,218 venerdi) pressato da yield 10y al 5.3% e risk-on Nasdaq 100 a record. GLD -0.4% Oct 5.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 378.98,
+      "stop_loss": 371.40,
+      "target": 394.14,
+      "commissione": 0.00,
+      "reasoning": "Pressione doppia: yield 10y al 5.3% riduce appeal oro non-yielding; risk-on con Nasdaq a record compete come asset rifugio. Attesa chiarezza Fed prima di nuove posizioni. Fonte: TheStreet, CNBC Oct 5.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (GLD NYSE Arca, Oct 5, 10:31 AM EDT)", "price": 378.98},
+          {"name": "CNBC / Barchart (NYSE Arca, stessa sessione)", "price": 378.98}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 55.21,
+      "change_24h": "+0.86%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (6.51M)",
+      "news": "Argento futures +2.94% a $62.19/oz Oct 5; SLV +0.6% outperforma oro in contesto risk-on. Domanda industriale supporta.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 55.21,
+      "stop_loss": 54.11,
+      "target": 57.42,
+      "commissione": 0.00,
+      "reasoning": "Argento futures +2.94% a $62.19/oz su forza domanda industriale (Business Standard Oct 5); silver outperforma oro nell'attuale contesto risk-on. SLV traccia prezzo fisico argento LBMA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade / Investing.com (Oct 5, 11:58 AM EDT)", "price": 55.21},
+          {"name": "CNBC / iShares NYSE Arca (stessa sessione)", "price": 55.21}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 145.00,
+      "change_24h": "-1.49%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (7.78M)",
+      "news": "Oil misto: G7 accordo su rilascio riserve strategiche (ribassista) vs Arabia Saudita avverte scorte 'spaventosamente scarse' (rialzista). Volatilita elevata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 145.00,
+      "stop_loss": 142.10,
+      "target": 150.80,
+      "commissione": 0.00,
+      "reasoning": "Segnali diametralmente opposti: G7 strategic reserve release pressa al ribasso, Saudi Aramco CEO avverte scorte esaurite. Alta volatilita con range 52w $65.99-$163.35; evitare nuove posizioni. Fonte: TheStreet, CNBC Oct 5.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Oct 5 intraday)", "price": 144.82},
+          {"name": "CNBC NYSE Arca (Oct 5, pre-market 7:23 AM EDT)", "price": 145.18}
+        ],
+        "spread_pct": 0.25,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 85862.40,
+      "change_24h": "+2.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($10.69B 24h)",
+      "news": "BTC supera il $85K sell wall; Strategy acquista 334 BTC, Strive acquista 2000 BTC ($169M). TD Sequential sell signal su 4h chart (KuCoin) segnala cautela.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 85862.40,
+      "stop_loss": 81569.28,
+      "target": 92731.39,
+      "commissione": 0.00,
+      "reasoning": "Acquisti istituzionali continuativi (Strategy+Strive) con $85K sell wall superato (BitcoinMagazine); ma TD Sequential sell signal su 4h (KuCoin Oct 5) suggerisce cautela. Attendere conferma break $87K prima di add.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (Oct 5, 4:24 AM EDT)", "price": 86377.26},
+          {"name": "CoinMarketCap (Oct 5)", "price": 85347.53}
+        ],
+        "spread_pct": 1.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2709.44,
+      "change_24h": "+0.66%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ETH con TD Sequential sell signal su 4h chart; analista Ali Charts: ultimi 2 segnali simili portarono correzioni del -5.40% e -3.31% rispettivamente.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2709.44,
+      "stop_loss": 2573.97,
+      "target": 2926.20,
+      "commissione": 0.00,
+      "reasoning": "Momentum positivo +10.74% in 30gg ma TD Sequential sell signal su 4h chart (KuCoin Oct 5); pattern storico indica potenziale correzione 3-5% nel breve. Attendere conferma direzionale prima di nuove posizioni.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Oct 5, 2:23 PM EDT)", "price": 2718.40},
+          {"name": "CoinMarketCap (Oct 5)", "price": 2700.48}
+        ],
+        "spread_pct": 0.66,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 121.17,
+      "change_24h": "+2.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale ($1.95B 24h)",
+      "news": "90 banche e credit union del North Dakota adottano Solana per settlement in 400ms (live da Oct 1). Lancio DGLD gold token su Solana da MKS PAMP. Tokenized stocks $12.4B volume DEX YTD.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 121.17,
+      "stop_loss": 115.11,
+      "target": 130.86,
+      "commissione": 0.00,
+      "reasoning": "Multipli catalizzatori fondamentali: 90 banche USA adottano settlement Solana (CryptoTicker) + lancio DGLD tokenized gold product (Cryptonomist Oct 5). Differenziazione fondamentale vs BTC/ETH.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap / Coinbase (Oct 5)", "price": 121.66},
+          {"name": "Various exchanges median (Oct 5)", "price": 120.68}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Raggiunto $1T market cap storico (Oct 4); Stifel alza target a $700 (Oct 5); +196% YTD con momentum tecnico intatto. BUY confidence Alto."
+    },
+    {
+      "rank": 2,
+      "asset": "META",
+      "motivo": "+27% in settembre, lancio Muse AI agent con nuovi revenue streams, pre-earnings 28/10. 62 analisti Strong Buy target $793.91. BUY confidence Alto."
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Doppio catalizzatore fondamentale unico: 90 banche USA (North Dakota) adottano Solana live + lancio DGLD tokenized gold. Differenziazione forte rispetto al mercato crypto. BUY confidence Medio."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "AMD": "10%",
+      "META": "10%",
+      "MSFT": "8%",
+      "AAPL": "7%",
+      "GOOGL": "7%",
+      "AMZN": "7%",
+      "ASML": "6%",
+      "TSLA": "5%",
+      "SOL": "5%",
+      "SLV": "4%",
+      "BTC": "4%",
+      "NFLX_short": "3%",
+      "STLA_short": "2%",
+      "CASH_riserva": "22%"
+    }
+  }
+}
