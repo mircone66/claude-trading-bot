@@ -1,0 +1,330 @@
+{
+  "timestamp": "2026-10-09T09:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercato tech USA positivo: Nasdaq +0.53%, S&P 500 a 7.735 il 5 ott 2026; tech il settore leader +0.5%. BTC pullback da 8-mesi high $87K (21 set) verso $85K con forti ETF inflows ($2.4B ultima settimana set). SOL in deciso rialzo da giugno con record ETF inflows $188M in una settimana. Oro/argento sotto pressione per probabilità Fed hike in ottobre (64%) e 10Y Treasury al 5.30%. Calendario earnings denso: NFLX 15 ott, TSLA 22 ott, AMZN 22 ott, ASML 14 ott, RACE 27 ott, GOOGL 27-28 ott, META 28 ott.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 337.45,
+      "change_24h": "+0.45%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Tech sector +0.5% il 5 ott sul Nasdaq; AAPL near 52W high $345.34; earnings attesi ~29 ottobre (non confermato)",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 337.45,
+      "stop_loss": 327.33,
+      "target": 354.32,
+      "commissione": 0.00,
+      "reasoning": "Prezzo prossimo al massimo 2026 di $345.34 con momentum positivo. Earnings attesi il 29 ottobre limitano ulteriore esposizione pre-catalyst. Entrambe le fonti concordano (scarto 1.34%). Source: stockhub.kr (5 ott) & investsmart.com.au (23 set)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "stockhub.kr", "price": 335.18, "date": "2026-10-05"},
+          {"name": "investsmart.com.au", "price": 339.71, "date": "2026-09-23"}
+        ],
+        "spread_pct": 1.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 374.21,
+      "change_24h": "-0.28%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "YTD -17% da $456.05 di inizio 2026; earnings attesi 22 ottobre; nessun catalizzatore positivo imminente rilevato",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 374.21,
+      "stop_loss": 362.98,
+      "target": 392.92,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista YTD confermato (-17% da inizio anno). Pre-earnings del 22 ottobre creano incertezza direzionale. Scarto 2.48% tra 2 fonti = affidabilità MEDIA. Source: stockhub.kr (5 ott) & investsmart.com.au (23 set 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "stockhub.kr", "price": 369.57, "date": "2026-10-05"},
+          {"name": "investsmart.com.au", "price": 378.85, "date": "2026-09-23"}
+        ],
+        "spread_pct": 2.48,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 233.56,
+      "change_24h": "+1.38%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "NVDA vicino al massimo 52W ($237); Nvidia investe $3B in SB Energy ($1.5B prepaid il 17 ago); TSMC earnings 15 ott come catalyst settore semiconduttori",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 233.56,
+      "stop_loss": 226.55,
+      "target": 245.24,
+      "commissione": 0.00,
+      "reasoning": "Momentum rialzista con +1.38% il 5 ott; prossimo al massimo 52W $237; AI capex continua a crescere. TSMC Q3 earnings il 15 ott potrebbero essere catalyst positivo per tutto il settore chip. Source: stockhub.kr (5 ott) & Coinglass (30 set 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "stockhub.kr", "price": 237.18, "date": "2026-10-05"},
+          {"name": "Coinglass", "price": 229.93, "date": "2026-09-30"}
+        ],
+        "spread_pct": 3.10,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 255.13,
+      "change_24h": "+0.10%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "FTC complaint Amazon Sponsored Ads (rischio regolatorio, richiede injunctive relief e sanzioni); earnings est. 22 ottobre; 52W range $196-$287.20",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 255.13,
+      "stop_loss": 247.48,
+      "target": 267.89,
+      "commissione": 0.00,
+      "reasoning": "Movimento laterale con overhead di rischio regolatorio FTC su Sponsored Ads (filed 31 agosto). Earnings del 22 ottobre limitano la direzionalità a breve. Scarto 2.63% tra 2 fonti. Source: stockhub.kr (5 ott) & investsmart.com.au (5 set 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "stockhub.kr", "price": 251.78, "date": "2026-10-05"},
+          {"name": "investsmart.com.au", "price": 258.48, "date": "2026-09-05"}
+        ],
+        "spread_pct": 2.63,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 344.13,
+      "change_24h": "+0.19%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Alphabet alza capex 2026 a $195-205B per AI; Q3 earnings attesi 27-28 ottobre; accordo European Search Dataset Licensing applicato da nov 2026",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 344.13,
+      "stop_loss": 333.81,
+      "target": 361.34,
+      "commissione": 0.00,
+      "reasoning": "Due fonti indipendenti concordano praticamente identiche a $344 (scarto 0.01% = ALTA affidabilità). Trend laterale sotto il massimo 2026 di $408.61. Mercato in attesa del Q3 earnings (27-28 ott). Source: stockhub.kr (5 ott) & investsmart.com.au",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "stockhub.kr", "price": 344.15, "date": "2026-10-05"},
+          {"name": "investsmart.com.au", "price": 344.10, "date": "2026-09-18"}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 81.03,
+      "change_24h": "n/d",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Netflix earnings attesi 15 ottobre (unconfirmed); range stimato $79-83; subscriber growth focus su ad-supported tier",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 81.03,
+      "stop_loss": 78.60,
+      "target": 85.08,
+      "commissione": 0.00,
+      "reasoning": "Earnings il 15 ottobre imminenti = alta incertezza direzionale. Le due fonti concordano nel range (scarto 3.20%) ma mancano date precise. Attendere l'esito earnings prima di prendere posizione. Source: Google Finance & equibles.com (date non verificabili con precisione)",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 82.32, "date": "n/d"},
+          {"name": "equibles.com", "price": 79.73, "date": "n/d"}
+        ],
+        "spread_pct": 3.20,
+        "affidabilita": "MEDIA",
+        "nota": "Fonti senza data precisa - data_real=false"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 407.81,
+      "change_24h": "+0.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Ferrari Q2 2026 beat + guidance revenue alzata a €7.6B per il 2026 grazie a mix prodotti premium e personalizzazioni in surge; earnings Q3 est. 27 ottobre",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 407.81,
+      "stop_loss": 395.58,
+      "target": 428.20,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali eccellenti: Q2 beat + guidance 2026 alzata a €7.6B revenue. YTD +8% dimostra resilienza. Prossimo al max annuo $437.15. Earnings Q3 il 27 ott come potential catalyst di conferma. Scarto 3.45% MEDIA. Source: trade-ideas.com (29 set) & equibles.com (14 ago 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "trade-ideas.com", "price": 400.77, "date": "2026-09-29"},
+          {"name": "equibles.com", "price": 414.85, "date": "2026-08-14"}
+        ],
+        "spread_pct": 3.45,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 58.70,
+      "change_24h": "-1.96%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Argento in forte correzione da record sopra $120 SLV; Fed rate hike probability 57-64% in ottobre pesa sui metalli preziosi non-yielding; 10Y Treasury yield 5.30%",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 58.70,
+      "stop_loss": 59.87,
+      "target": 56.35,
+      "commissione": 0.00,
+      "reasoning": "Argento sceso ~50%+ dai massimi record (SLV >$120). Fed rate hike probability 57-64% in ottobre è headwind strutturale per commodity non-yielding. Treasury yield 5.30% aumenta costo opportunità di detenere argento. Source: heygotrade.com (19 ago) & Yahoo Finance (11 set 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "heygotrade.com", "price": 59.28, "date": "2026-08-19"},
+          {"name": "Yahoo Finance", "price": 58.12, "date": "2026-09-11"}
+        ],
+        "spread_pct": 1.98,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 85231.50,
+      "change_24h": "-0.63%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo positivo (+$2.4B ETF inflows ultima settimana settembre)",
+      "news": "BTC da 8-mesi high di $87K (21 set) pullback a ~$85K; spot Bitcoin ETF inflows $2.4B nell'ultima settimana di settembre; Fed hike probability 64% ottobre = headwind",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 85231.50,
+      "stop_loss": 80969.93,
+      "target": 92050.02,
+      "commissione": 0.00,
+      "reasoning": "Forte domanda ETF istituzionale ($2.4B/settimana) supporta il prezzo ma pullback da ATH $87K segnala resistenza. Rischio Fed hike al 64% in ottobre è headwind macro significativo per crypto. BTC resta ~33% sotto il picco ottobre 2025. Source: crypto.news (5 ott) & Changelly",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "crypto.news", "price": 85771.00, "date": "2026-10-05"},
+          {"name": "Changelly", "price": 84692.00, "date": "2026-10-recente"}
+        ],
+        "spread_pct": 1.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 118.74,
+      "change_24h": "+1.25%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo positivo (record ETF inflows $188M in una settimana)",
+      "news": "Record ETF inflows $188M in una settimana per Solana; SOL raddoppiato dai minimi di giugno 2026; Accelerate China events 16-22 ottobre come catalyst",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 118.74,
+      "stop_loss": 112.80,
+      "target": 128.24,
+      "commissione": 0.00,
+      "reasoning": "Record ETF inflows $188M/settimana segnalano domanda istituzionale strutturale. SOL ha raddoppiato dai minimi di giugno. Due fonti concordano (scarto 1.25% = ALTA). Upcoming Accelerate China events 16-22 ott come catalyst. Source: 247wallst.com & RoboForex (entrambi 1 ott 2026)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "247wallst.com", "price": 118.00, "date": "2026-10-01"},
+          {"name": "RoboForex", "price": 119.48, "date": "2026-10-01"}
+        ],
+        "spread_pct": 1.25,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "MSFT",
+      "motivo": "spread fonti 6.5% > soglia 4%: stockhub.kr $530.28 (5 ott) vs investsmart $496.75 (2 set) — gap temporale di 5 settimane con forte apprezzamento. Prezzo indicativo ~$530 ma non validato con 2 fonti concordanti in data ravvicinata."
+    },
+    {
+      "asset": "META",
+      "motivo": "spread fonti 18.4% > soglia 4%: stockhub.kr $736.76 (5 ott) vs investsmart $613.31 (9 set) — META apparentemente in forte rialzo dopo Q2 earnings."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "spread fonti 29.0% > soglia 4%: stockhub.kr $627.05 (5 ott) vs Benzinga $469.56 (10 ago) — AMD in forte rally Q3 2026, ma scarto temporale rende la triangolazione non affidabile."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "spread fonti 8.4% > soglia 4%: EUR 1,649.20 (ad-hoc-news, 2 ott) vs EUR 1,515.80 (investsmart, 24 set) — earnings Q3 il 14 ottobre aumentano volatilità. Prezzo indicativo EUR ~1,649 / ~USD 1,814."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "fonte singola disponibile: equibles.com $215.60 (19 ago) — nessuna seconda fonte recente trovata. Earnings est. 21-23 ottobre."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "spread fonti 20.8% > soglia 4%: Yahoo Finance $4.40 NYSE STLA (2 ott) vs quote page $5.42 (28 ago) — YTD -50.64%, titolo in forte downtrend. NOTA: ticker NYSE è STLA non STLAM (Milano)."
+    },
+    {
+      "asset": "GLD",
+      "motivo": "fonti stale e stessa famiglia: Yahoo Finance $421.32 (26 ago) vs Yahoo Finance Canada $431.04 (23 apr) — gap di 4 mesi, oro apparentemente a ~$4,500-5,000/oz in periodo recente per poi correggere. Prezzo attuale non verificabile con 2 fonti indipendenti recenti."
+    },
+    {
+      "asset": "USO",
+      "motivo": "spread fonti 9.2% > soglia 4%: Robinhood $141.67 (4 set) vs MarketBeat $129.17 (31 lug) — WTI crude ~$89.63 il 5 ott (fonte: stockhub). Prezzo indicativo ~$135-142 ma non triangolato."
+    },
+    {
+      "asset": "ETH",
+      "motivo": "spread fonti 36.1% > soglia 4%: 247wallst $2,706 (1 ott) vs The Block $1,881.79 (28 lug) — ETH in forte rally Q3-Q4 2026 ma scarto temporale rende triangolazione non valida. Glamsterdam upgrade Q4 2026 atteso."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SOL",
+      "motivo": "Record ETF inflows $188M/settimana, momentum raddoppiato da giugno, 2 fonti ALTA concordanza (scarto 1.25%), catalysts Accelerate China 16-22 ott"
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Near 52-week high $237, momentum +1.38% il 5 ott, AI capex in accelerazione, TSMC earnings 15 ott come sector catalyst"
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "Ferrari: Q2 beat + guidance €7.6B alzata, YTD +8%, fondamentali premium, earnings Q3 il 27 ott come conferma"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato ad Alpaca",
+    "allocazione_suggerita": {
+      "SOL_BUY": "25% del capitale risk",
+      "NVDA_BUY": "25% del capitale risk",
+      "RACE_BUY": "20% del capitale risk",
+      "SLV_SELL": "15% del capitale risk",
+      "HOLD_CASH": "15% - attesa earnings NFLX (15 ott), TSLA (22 ott), AMZN (22 ott)"
+    }
+  }
+}
