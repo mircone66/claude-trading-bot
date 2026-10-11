@@ -1,0 +1,528 @@
+{
+  "timestamp": "2026-10-11T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "nota_mercato": "Domenica 11 ottobre 2026 — mercati azionari USA chiusi. Prezzi da chiusura venerdì 9 ottobre 2026. Crypto aggiornate a oggi.",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Settimana positiva per Wall Street: S&P 500 e Dow Jones chiudono venerdì 9 ottobre in rialzo dopo il sell-off di giovedì causato da dati OpenAI AI revenue inferiori alle attese (NVDA -3%, AMD -4% giovedì). Rimbalzo tech in chiusura di settimana grazie a calo rendimenti su forte asta Treasury 30Y. Oro spot a $4,183/oz (+1.57% GLD venerdì). Petrolio Brent ~$103 su dialogo Iran-US. BTC laterale a ~$83,000. ETH con ETF outflows record (peggior settimana da gennaio). ASML earnings martedì 14 ottobre — catalizzatore critico. Tesla e Netflix earnings il 20 ottobre, META/MSFT/AMZN/GOOGL a fine mese.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 336.36,
+      "change_24h": "-1.11%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 37.9M vs media 36.3M — normale",
+      "news": "Skyworks Solutions -6.41% su news tagli ordini componenti iPhone 18 Pro da parte di Apple. Possibile rallentamento domanda pro. Earnings stimati fine ottobre.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 336.36,
+      "stop_loss": 326.27,
+      "target": 353.18,
+      "commissione": 0.00,
+      "reasoning": "Flussi laterali da 10 giorni (range $330-$341). Preoccupazione ordini iPhone 18 Pro pesa sul sentiment; attesa earnings per direzionalità. Fonti: StockAnalysis, Robinhood.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Morningstar", "price": 336.64},
+          {"name": "Robinhood", "price": 336.08}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 382.71,
+      "change_24h": "+2.05%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume 38.95M — nella norma",
+      "news": "Tesla rimbalza +2.05% venerdì in recupero dal sell-off AI di giovedì. Earnings il 20 ottobre — catalizzatore imminente. La scommessa Robotaxi continua a sostenere sentiment.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 382.71,
+      "stop_loss": 371.23,
+      "target": 401.85,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista da $297 (52w low). Rimbalzo forte su AI-recovery. Pre-earnings momentum tecnico favorevole. Fonti: StockAnalysis, Robinhood.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 382.70},
+          {"name": "Robinhood", "price": 382.72}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 229.31,
+      "change_24h": "-0.52%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 84.65M vs media 121.63M — inferiore alla media",
+      "news": "NVDA -3% giovedì su dati OpenAI revenue inferiori alle attese; rimbalzo parziale venerdì. YTD +23%. AI spending outlook ancora incerto nel breve.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 229.31,
+      "stop_loss": 222.43,
+      "target": 240.78,
+      "commissione": 0.00,
+      "reasoning": "Incertezza AI revenue a breve termine dopo shock OpenAI; trend lungo periodo resta bullish. Attendere stabilizzazione. Fonti: StockAnalysis, Benzinga.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 229.28},
+          {"name": "Benzinga", "price": 229.33}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 535.04,
+      "change_24h": "+2.38%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "Microsoft +2.38% venerdì, recupero settimanale. Earnings Q1 FY2027 attesi 28 ottobre, EPS stimato $4.72. Narrative AI cloud Azure resta dominante.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 535.04,
+      "stop_loss": 518.99,
+      "target": 561.79,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista confermato (+2.38% venerdì). Azure AI tra i leader. Pre-earnings momentum. Analyst target medio $575 (22 analisti). Fonti: StockAnalysis, Robinhood.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 535.07},
+          {"name": "Robinhood", "price": 535.00}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 262.48,
+      "change_24h": "+3.29%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume 34.77M — nella norma",
+      "news": "Amazon miglior performer della settimana +3.29% venerdì. AWS AI cloud continua a crescere. Earnings stimati 29 ottobre. P/E 21.1 — valutazione ragionevole per FAANG.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 262.48,
+      "stop_loss": 254.61,
+      "target": 275.60,
+      "commissione": 0.00,
+      "reasoning": "Il maggiore rialzo settimanale tra i megacap (+3.29%). AWS AI mantiene crescita. Valutazione P/E 21x razionale. Analyst target medio $332. Fonti: CNN Markets, Robinhood.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN Markets", "price": 262.43},
+          {"name": "Robinhood", "price": 262.53}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 351.63,
+      "change_24h": "+0.97%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "Alphabet lieve rimbalzo +0.97% venerdì. Earnings stimati 26-28 ottobre. Incognita antitrust DoJ resta in background. P/E 17.5 — tra i più economici dei Magnificent 7.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 351.63,
+      "stop_loss": 341.08,
+      "target": 369.21,
+      "commissione": 0.00,
+      "reasoning": "Movimento laterale confermato. Pre-earnings incertezza antitrust limita upside. Aspettare earnings Q3 per conferma breakout. Fonti: CNN Markets, Yahoo Finance.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNN Markets", "price": 351.66},
+          {"name": "Yahoo Finance", "price": 351.60}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 718.14,
+      "change_24h": "-0.31%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "Meta settembre +27%. Segnale tecnico 'golden cross' raro registrato a ottobre (Morningstar/MarketWatch). Earnings 28 ottobre. Analyst target medio $793.91 (62 analisti Strong Buy).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 718.14,
+      "stop_loss": 696.60,
+      "target": 754.05,
+      "commissione": 0.00,
+      "reasoning": "+27% settembre, golden cross tecnico, forte monetizzazione AI Ads/Reels. AI Capital Expenditure elevata ma revenue in accelerazione. Fonti: Yahoo Finance, Robinhood.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 718.67},
+          {"name": "Robinhood", "price": 717.60}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 70.30,
+      "change_24h": "-1.77%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 29.12M vs media 37.21M — inferiore alla media",
+      "news": "Netflix -1.77% venerdì. News: potenziali tagli ~5% del personale (~800 dipendenti). Earnings il 20 ottobre. 52w high $124.86 lontano — downtrend evidente.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 70.30,
+      "stop_loss": 68.19,
+      "target": 73.82,
+      "commissione": 0.00,
+      "reasoning": "Ribassista da 52w high. Tagli personale segnalano pressione sui costi. Earnings il 20/10 sono catalizzatore binario — attendere prima di posizionarsi. Fonti: Yahoo Finance, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 70.30},
+          {"name": "CNBC", "price": 70.30}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 608.10,
+      "change_24h": "-2.03%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "AMD -4% giovedì su AI revenue doubts, -2.03% venerdì. All-time high $649.42 raggiunto il 6 ottobre. Pullback tecnico da record. Earnings 3 novembre.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 608.10,
+      "stop_loss": 589.86,
+      "target": 638.51,
+      "commissione": 0.00,
+      "reasoning": "Pullback -6% da ATH. AI sentiment volatile. Attendere consolidamento prima di nuovo ingresso. Earnings il 3/11 sono prossimo catalizzatore. Fonti: StockAnalysis, Investing.com.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 608.10},
+          {"name": "Investing.com", "price": 608.10}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1780.34,
+      "change_24h": "+0.60%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "ASML Q3 2026 earnings martedì 14 ottobre (pre-market) — catalizzatore imminente critico. BoA alza target a EUR 2,557 da 2,452. Ordini EUV in focus per AI chip supply chain.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1780.34,
+      "stop_loss": 1726.93,
+      "target": 1869.36,
+      "commissione": 0.00,
+      "reasoning": "Earnings il 14/10 con forte attesa AI capex. Bank of America alza il target. Monopolio EUV unico al mondo. Fonti: Yahoo Finance, StockAnalysis.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 1780.34},
+          {"name": "StockAnalysis", "price": 1780.34}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 214.78,
+      "change_24h": "+1.12%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "SAP +1.12% venerdì. Q3 2026 earnings il 21 ottobre. BMO Capital alza target 177→235 (8 ottobre). Migrazione cloud ERP con AI integrato guida crescita ricorrente.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 214.78,
+      "stop_loss": 208.34,
+      "target": 225.52,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings momentum. BMO Capital alza target a $235. Crescita cloud ERP con AI in accelerazione. Fonti: Yahoo Finance, Morningstar.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 214.78},
+          {"name": "Morningstar", "price": 214.78}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 390.13,
+      "change_24h": "+0.49%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "Ferrari lieve rialzo +0.49%. Posizionamento luxury resiliency confermato. Earnings 3 novembre. 13 analisti Strong Buy con target medio $454.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 390.13,
+      "stop_loss": 378.43,
+      "target": 409.64,
+      "commissione": 0.00,
+      "reasoning": "Titolo laterale. Brand premium difensivo. Attendere earnings del 3/11 per breakout. Fonti: CNBC, Robinhood.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 389.91},
+          {"name": "Robinhood", "price": 390.35}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.48,
+      "change_24h": "-0.88%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma",
+      "news": "Stellantis vicino al 52w low ($4.30). Crollo da $12.22 (52w high). Settore auto europeo sotto pressione: costi elettrificazione, dazi USA, rallentamento domanda. Earnings 28 ottobre.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 4.48,
+      "stop_loss": 4.61,
+      "target": 4.26,
+      "commissione": 0.00,
+      "reasoning": "Downtrend severo (-63% dal 52w high). Nessun catalizzatore rialzista identificato. Prossimo supporto a $4.30. Fonti: Yahoo Finance, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 4.48},
+          {"name": "CNBC", "price": 4.48}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 384.54,
+      "change_24h": "+1.57%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume 7.47M — nella norma",
+      "news": "GLD +1.57% venerdì su forte asta Treasury 30Y che abbassa i rendimenti. Spot gold a $4,183/oz. Polymarket stima 79.5% probabilità di toccare $4,200 in ottobre.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 384.54,
+      "stop_loss": 376.85,
+      "target": 399.92,
+      "commissione": 0.00,
+      "reasoning": "Rally oro supportato da calo yield e incertezza macro (Fed rate hike dibattito). Trend tecnico rialzista confermato. Fonti: StockAnalysis, Benzinga.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 384.58},
+          {"name": "Benzinga", "price": 384.50}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 54.83,
+      "change_24h": "+2.49%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume 13.6M — nella norma",
+      "news": "SLV +2.49% venerdì — argento traina con oro. Spot silver ~$60.40. Correlazione elevata con GLD nelle sessioni con calo yield.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 54.83,
+      "stop_loss": 53.73,
+      "target": 57.02,
+      "commissione": 0.00,
+      "reasoning": "Argento movimentato in scia all'oro con beta più elevato. SLV +2.49% vs GLD +1.57% — outperformance silver confermata. Fonti: StockAnalysis, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 54.78},
+          {"name": "CNBC (after-hours)", "price": 54.88}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 148.33,
+      "change_24h": "+0.42%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma",
+      "news": "USO +0.42% venerdì. Brent crude ~$103/barile. Trattative Iran-US frenano ulteriori rialzi. Potenziale tetto a breve se diplomazia avanza.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 148.33,
+      "stop_loss": 145.36,
+      "target": 154.26,
+      "commissione": 0.00,
+      "reasoning": "Petrolio elevato ($103 Brent) ma dialogo Iran-US crea incertezza sul lato offerta. Posizione neutrale prudente. Fonti: StockAnalysis, StockAnalysis after-hours.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 148.20},
+          {"name": "StockAnalysis after-hours", "price": 148.45}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83353.00,
+      "change_24h": "-0.50%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 24h: $5.56B — normale",
+      "news": "BTC appena sotto $85K. Outflows ETF crypto -$678.9M la scorsa settimana. Settimana big macro in arrivo. All-time high ~$126K (ottobre 2025). BTC -34% da ATH.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 83353.00,
+      "stop_loss": 79185.00,
+      "target": 90021.00,
+      "commissione": 0.00,
+      "reasoning": "Laterale senza direzionalità chiara. ETF outflows negativi. Resistenza a $85K. Attendere breakout confermato. Fonti: Coinbase, CoinMarketCap.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 82979.00},
+          {"name": "CoinMarketCap", "price": 83727.00}
+        ],
+        "spread_pct": 0.90,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2516.00,
+      "change_24h": "-1.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 24h: $2.86B — sotto la media",
+      "news": "Ethereum ETF outflows: peggiore settimana da gennaio 2026 (9 sessioni consecutive deflussi, -$697.2M da 29 settembre). ETH sottoperforma BTC. Potenziale support a $2,400.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2516.00,
+      "stop_loss": 2390.00,
+      "target": 2717.00,
+      "commissione": 0.00,
+      "reasoning": "ETF outflows record pesano su ETH. Ribassista a breve termine. Risk/reward non favorevole senza catalizzatori positivi. Fonti: Coinbase, CoinDesk.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 2505.00},
+          {"name": "CoinDesk", "price": 2527.00}
+        ],
+        "spread_pct": 0.88,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 109.73,
+      "change_24h": "-0.16%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 24h: $1.53B — sotto la media",
+      "news": "Solana cala da $116 (7 ottobre) a $110 (-5.74% giovedì). Primo outflow ETF dopo 14 settimane consecutive di inflows. Sentiment in deterioramento.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 109.73,
+      "stop_loss": 115.22,
+      "target": 101.00,
+      "commissione": 0.00,
+      "reasoning": "Inversione di flussi ETF dopo 14 settimane: segnale distribuzione. -5.74% giovedì indica debolezza strutturale a breve. Target supporto tecnico ~$101. Fonti: Coinbase, Bybit.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 109.91},
+          {"name": "Bybit", "price": 109.55}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "Earnings Q3 martedì 14 ottobre (pre-market): catalizzatore binario imminente. Monopolio EUV unico, AI chip demand structuralmente in crescita. BoA target alzato a EUR 2,557."
+    },
+    {
+      "rank": 2,
+      "asset": "META",
+      "motivo": "Golden cross tecnico raro + trend rialzista (+27% settembre). AI Ads/Reels monetization accelera. 62 analisti Strong Buy, target medio $793.91. Earnings 28 ottobre."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "motivo": "Oro spot a $4,183/oz in trend rialzista. Calo rendimenti su forte asta Treasury 30Y. Polymarket 79.5% probabilità $4,200 ottobre. Hedge macro/inflazione."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale inviato ad Alpaca",
+    "allocazione_suggerita": {
+      "BUY_signals": {
+        "TSLA": "8%",
+        "MSFT": "12%",
+        "AMZN": "12%",
+        "META": "12%",
+        "ASML": "10%",
+        "SAP": "8%",
+        "GLD": "15%",
+        "SLV": "10%"
+      },
+      "SELL_signals": {
+        "STLA": "short 3%",
+        "SOL": "short 5%"
+      },
+      "cash_riserva": "5%"
+    }
+  }
+}
