@@ -1,0 +1,296 @@
+{
+  "timestamp": "2026-10-12T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "nota_mercato": "Lunedì 12 ottobre 2026 — mercati azionari USA aperti (Columbus Day: chiuse le obbligazioni, aperte le azioni). Dow +0.4%, S&P 500 -0.1%, Nasdaq -0.3% (tech debole). Petrolio sale a ~$106/barile su sviluppi Medio Oriente. Fed rate hike bets in aumento. NOTA DATI: ricerca web ha restituito prezzi datati agosto-settembre 2026 per la maggioranza dei titoli azionari; solo BTC ed ETH verificati con fonti del 12 ottobre. Per AAPL, TSLA, AMZN, GOOGL, RACE i prezzi sono da settembre 2026 (margine di errore stimato 1-3%).",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Wall Street apre la settimana in territorio misto: Dow +0.4%, Nasdaq -0.3% con rotazione dai titoli tech verso i value (energia, bancari). Petrolio Brent ~$106/barile spinge il settore energy. La Fed vede salire le aspettative di un rialzo dei tassi in ottobre (Polymarket 57%), pesando su tech e crypto. ASML cede -1.21% in apertura in attesa degli earnings del 14 ottobre (attese: revenue €11.73B, +55% YoY). BTC laterale a $83,353 sotto resistenza $85K. ETH recupera +1.85% ma ETF outflows continuano: Bitcoin+Ethereum ETFs -$1.22B settimanale. TSLA e NFLX in attesa degli earnings del 20 ottobre. Earnings stagione USA entra nel vivo: GOOGL/META/MSFT/AMZN attesi a fine mese.",
+  "signals": [
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83353.00,
+      "change_24h": "+0.04%",
+      "trend_5d": "laterale",
+      "volume_note": "ETF BTC+ETH outflows $1.22B nella settimana — deflusso istituzionale",
+      "news": "Bitcoin ed Ethereum ETF invertono la rotta con $1.22B di deflussi netti settimanali (BitcoinFoundation, 12 ott). BTC sotto resistenza chiave $85K. Aspettative rialzo tassi Fed pesano su asset rischiosi.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 83353.00,
+      "stop_loss": 79185.00,
+      "target": 90021.00,
+      "commissione": 0.00,
+      "reasoning": "BTC laterale ($80K-$85K) con deflussi ETF in corso e Fed hawkish. Attendere breakout confermato sopra $85K prima di nuovo ingresso long. Fonti: Fortune (12 ott), CoinMarketCap (12 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (12 ott 2026, 6:45am ET)", "price": 83388.63},
+          {"name": "CoinMarketCap (12 ott 2026)", "price": 83316.86}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2548.50,
+      "change_24h": "+1.85%",
+      "trend_5d": "ribassista",
+      "volume_note": "ETF ETH: deflussi record (-$697.2M da 29 set) — 9 sessioni consecutive outflows",
+      "news": "ETH +1.85% rimbalzo tecnico ma -6.36% negli ultimi 7 giorni (U.Today, 12 ott). Un whale acquista $36M di ETH (U.Today). ETF spot USA continuano a registrare deflussi, indebolendo la domanda istituzionale. Resistenza chiave a $2,800.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2548.50,
+      "stop_loss": 2421.00,
+      "target": 2752.00,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico a breve termine (+1.85%) ma il trend settimanale resta ribassista (-6.36%). ETF outflows persistenti limitano il rialzo. Accumulo whale suggerisce supporto ma non è sufficiente per invertire il trend. Fonti: Fortune (12 ott), CoinGecko (12 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (12 ott 2026)", "price": 2553.97},
+          {"name": "CoinGecko (12 ott 2026)", "price": 2543.03}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 380.12,
+      "change_24h": "n.d.",
+      "trend_5d": "rialzista",
+      "volume_note": "Dati volume non disponibili per la sessione odierna",
+      "news": "Tesla in rally da $297 (52w low) con trend rialzista confermato. Elon Musk annuncia progressi su chip AI5 (notizia senza data precisa, probabilmente settembre 2026). Earnings attesi il 20 ottobre — catalizzatore binario imminente. Scommessa Robotaxi sostiene il sentiment.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 380.12,
+      "stop_loss": 368.72,
+      "target": 399.13,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista da $297 (52w low) verso quota $383. Pre-earnings momentum con catalizzatore AI5 chip. Earnings il 20/10 rappresentano acceleratore potenziale. ATTENZIONE: prezzo da InvestSmart (23 set 2026) — confermare prima dell'ingresso. Fonti: InvestSmart (23 set 2026), CoinGecko.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (23 set 2026)", "price": 380.12},
+          {"name": "CoinGecko (data non confermata)", "price": 369.93}
+        ],
+        "spread_pct": 2.70,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.38,
+      "change_24h": "n.d.",
+      "trend_5d": "rialzista",
+      "volume_note": "Dati volume non disponibili per la sessione odierna",
+      "news": "Amazon in trend rialzista da $235.50 (luglio 2026). AWS AI cloud continua crescita. Earnings stimati 29 ottobre. Investing.com (10 ott) segnala AMZN ~$260, in linea con il trend. P/E valutazione razionale per FAANG.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 259.38,
+      "stop_loss": 251.60,
+      "target": 272.35,
+      "commissione": 0.00,
+      "reasoning": "Uptrend confermato da $235 (luglio) a ~$260 (settembre-ottobre). AWS AI mantiene crescita sostenuta. Earnings il 29/10 come prossimo catalizzatore. ATTENZIONE: prezzo da InvestSmart (5 set 2026) — confermare prima dell'ingresso. Fonti: InvestSmart (5 set 2026), StockAnalysis (26 ago 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (5 set 2026)", "price": 258.48},
+          {"name": "StockAnalysis (26 ago 2026)", "price": 260.28}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 339.71,
+      "change_24h": "n.d.",
+      "trend_5d": "laterale",
+      "volume_note": "Dati volume non disponibili per la sessione odierna",
+      "news": "Apple in movimento laterale ($330-$341). Skyworks Solutions -6.41% su notizie di tagli ordini componenti iPhone 18 Pro da parte di Apple — possibile rallentamento domanda premium. Earnings stimati fine ottobre. 52w high $345.34.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 339.71,
+      "stop_loss": 329.52,
+      "target": 356.69,
+      "commissione": 0.00,
+      "reasoning": "Movimento laterale con preoccupazioni su ordini iPhone 18 Pro. Near 52w high ($345). Attendere earnings per direzionalità. Nasdaq -0.3% oggi pesa sul titolo. ATTENZIONE: prezzo da InvestSmart (23 set 2026). Fonti: InvestSmart (23 set 2026), StockHub (31 lug 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (23 set 2026)", "price": 339.71},
+          {"name": "StockHub (31 lug 2026)", "price": 333.43}
+        ],
+        "spread_pct": 1.87,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 344.84,
+      "change_24h": "n.d.",
+      "trend_5d": "laterale",
+      "volume_note": "Dati volume non disponibili per la sessione odierna",
+      "news": "Alphabet in movimento laterale. Earnings attesi 26-28 ottobre — catalizzatore. Antitrust DoJ resta in background come incognita. Target consensus analisti ~$428 (14 analisti Buy). P/E ~17.5 tra i più economici dei Magnificent 7. BMO Capital ha alzato target a $290 su AI+Chrome.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 344.84,
+      "stop_loss": 334.49,
+      "target": 362.08,
+      "commissione": 0.00,
+      "reasoning": "Trend laterale con incertezza antitrust. Pre-earnings positioning: aspettare Q3 earnings del 27/10 per conferma breakout. Valutazione P/E 17.5 attraente ma risk/reward richiede catalizzatore. ATTENZIONE: prezzo interpolato tra InvestSmart (18 ago) e TECHi (14 set 2026). Fonti: InvestSmart (18 ago 2026), TECHi (14 set 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (18 ago 2026)", "price": 344.10},
+          {"name": "TECHi (14 set 2026)", "price": 345.58}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1758.88,
+      "change_24h": "-1.21%",
+      "trend_5d": "lieve ribasso pre-earnings",
+      "volume_note": "Dati volume non disponibili; mercato imputa ±$91.96 (±5.17%) per earnings",
+      "news": "ASML -1.21% in apertura del 12 ottobre in attesa degli earnings Q3 il 14 ottobre (pre-market). Revenue attesa €11.73B (+55% YoY), EPS atteso €10.76. Bank of America alza target a EUR 2,557. Guidance Q2 era €11-12B revenue, margine lordo 55-57%. Monopolio EUV critico per AI chip supply chain.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 1758.88,
+      "stop_loss": 1706.11,
+      "target": 1846.82,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings pullback a $1,758 (-1.21%) crea opportunità di ingresso. Earnings il 14/10 (pre-market): aspettative +55% revenue. BoA alza target a EUR 2,557. EUV monopolio strutturalmente bullish per AI chip demand. Rischio: earnings miss (-5.17% implied). Fonti: StockAnalysis (12 ott 2026 apertura), Yahoo Finance (chiusura 9 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (12 ott 2026, apertura)", "price": 1758.88},
+          {"name": "Yahoo Finance (chiusura 9 ott 2026)", "price": 1780.34}
+        ],
+        "spread_pct": 1.21,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 400.77,
+      "change_24h": "n.d.",
+      "trend_5d": "lieve ribasso",
+      "volume_note": "Dati volume non disponibili per la sessione odierna",
+      "news": "Ferrari in lieve correzione da ATH $519.10 (luglio 2025). 14 analisti Strong Buy con target medio $437-$446. YTD -13%. Earnings stimati 3 novembre. Brand premium difensivo con margini resilienti. Nota: prezzo da 29 settembre, possibile ulteriore correzione verso $390.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 400.77,
+      "stop_loss": 388.75,
+      "target": 420.81,
+      "commissione": 0.00,
+      "reasoning": "Correzione da ATH (-23%) con supporto analisti (target medio $440). Earnings il 3/11 come prossimo catalizzatore. Titolo luxury difensivo in contesto di incertezza macro. ATTENZIONE: prezzo da 29 set 2026, potrebbe essere inferiore oggi. Fonti: Yahoo/MarkChameleon (29 set 2026), Roboforex (data n.d.).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/MarkChameleon (29 set 2026)", "price": 400.77},
+          {"name": "Roboforex (data non confermata)", "price": 405.72}
+        ],
+        "spread_pct": 1.23,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NVDA",
+      "motivo": "Dati ricerca troppo datati (agosto-settembre 2026): prezzo trovato ~$219-229 vs chiusura 9 ott ~$229; divergenza 4%+ tra fonti di date diverse. Impossibile triangolazione affidabile per la sessione odierna."
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Dati ricerca molto datati (settembre 2026): prezzo trovato ~$493-497 (set 2026) vs chiusura 9 ott ~$535; divergenza 7.7% — fonti troppo vecchie per operatività."
+    },
+    {
+      "asset": "META",
+      "motivo": "Spread fonti superiore al 4%: InvestSmart set 9 ($613.31) vs Yahoo Finance set 1 ($578.54) = 5.6%. Investigating.com (10 ott) segnala META rally +3.8% a ~$747 ma non confermato da seconda fonte indipendente."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Spread fonti superiore al 4%: Yahoo Finance set 11 ($77.40) vs Google Finance set 2 ($82.32) = 6.0%. Titolo in downtrend, earnings 20 ottobre — attendere."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Dati ricerca estremamente datati: prezzo trovato ~$469-483 (agosto 2026) vs chiusura 9 ott ~$608; divergenza >21% — fonti vecchie 2 mesi, non utilizzabili."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Dati inconsistenti: MarketBeat (marzo 2026) $193.02, Yahoo Finance (luglio 2026) $146.38 — spread 24% su 4 mesi. Impossibile triangolazione. Earnings SAP attesi 21-22 ottobre."
+    },
+    {
+      "asset": "STLA",
+      "motivo": "Dati datati e in forte discesa: Yahoo Finance set 11 ($5.40) vs Aug 26 ($5.15) = spread 4.6%; chiusura 9 ott ~$4.48 indica ulteriore -17% rispetto ai dati trovati."
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Dati ricerca da luglio 2026 (Dhan $371.06, Kraken $372.74): spread fonti 0.45% ma chiusura 9 ott era $384.54, divergenza 3.4% — dati troppo datati. Gold in area $4,183/oz (9 ott) ma direzione odierna incerta (ritiro yield + oil surge)."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread fonti superiore al 4%: Kraken ($54.01) vs Yahoo Finance ago 28 ($60.02) = 10.5%. Volatilità argento elevata nel 2026 (da $120 ad ATH a -25% correzione). Dati non affidabili."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread fonti superiore al 4%: Benzinga ago 24 ($132.44) vs Yahoo (undated) ($142.09) = 7.0%. Petrolio in forte rialzo oggi (~$106/barile, +2-3% da ieri) — prezzo USO potenzialmente $152+, dati troppo datati."
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Unica fonte datata recente: RoboForex 1 ott 2026 ($119.48). MEXC undated ($131.31) — spread 9.4%. ETF Solana: primo outflow dopo 14 settimane di inflows (notizia 9 ott). Dati non triangolabili."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Pre-earnings momentum (20 ottobre): recupero da $297 (52w low) a ~$383 (+29%). Catalyst AI5 chip Elon Musk. Robotaxi narrative. Risk/reward favorevole con SL -3%/target +5% pre-earnings. NOTA: prezzo da set 2026."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "Earnings Q3 il 14 ottobre (pre-market): attesa revenue +55% YoY. BoA alza target a EUR 2,557. Pullback -1.21% oggi crea entry pre-earnings. Monopolio EUV su AI chip supply chain — unico fornitore mondiale."
+    },
+    {
+      "rank": 3,
+      "asset": "AMZN",
+      "motivo": "AWS AI cloud in crescita sostenuta. Trend rialzista da $235 (luglio) a $260+ (settembre-ottobre). Earnings 29 ottobre. Valutazione razionale P/E rispetto ai peer FAANG. NOTA: prezzo da set 2026."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale inviato ad Alpaca. Prezzi azioni da agosto-settembre 2026: VERIFICARE su Alpaca prima di qualsiasi ordine reale.",
+    "allocazione_suggerita": {
+      "BUY_signals": {
+        "TSLA": "8%",
+        "AMZN": "10%",
+        "ASML": "7%"
+      },
+      "HOLD_signals": {
+        "BTC": "12%",
+        "ETH": "8%",
+        "AAPL": "8%",
+        "GOOGL": "7%",
+        "RACE": "5%"
+      },
+      "cash_riserva": "35%"
+    }
+  }
+}
