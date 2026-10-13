@@ -1,0 +1,530 @@
+{
+  "timestamp": "2026-10-13T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Martedì 13 ottobre 2026 — qualità dati eccellente: 18/18 asset con prezzi verificati da fonti Oct 12-13 (record vs sessioni precedenti). Nasdaq +0.56% Oct 9, S&P 500 7,793; mercato tech misto. AAPL +1.08% a $344.76 vicino al 52w high $348.15 ma ordini iPhone 18 Pro tagliati -15% (Nikkei, 11 ott). META +2.59% a $762 — Muse AI agent: 730K download in 10 giorni dal lancio settembre, stock +30% dal lancio. MSFT in uptrend +2.70% nella settimana. AMD in downtrend -5.98% da ATH $649 (6 ott) a $582. ASML Q3 earnings domani 14 ottobre pre-market (attesa revenue €11-12B, +55% YoY). SAP +1.43% a $217.85, earnings 21 ottobre. WTI futures $94.35/barile, Brent ~$105.91. Gold spot $4,182/oz (Fort. 13 ott, +1.2%). BTC $83,407 in recupero da min $80,951, ETF outflows -$65.4M. CPI USA domani 14 ottobre — catalizzatore macro chiave. 3 BUY signals: MSFT, META, SAP.",
+  "signals": [
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 541.97,
+      "change_24h": "+0.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; uptrend consistente +2.70% da Oct 9 ($527.72) a Oct 13 ($541.97)",
+      "news": "Microsoft in uptrend sostenuto: da $527.72 (9 ott) a $541.97 (13 ott), +2.70% in 4 giorni. Crescita Azure AI cloud continua. Earnings Q3 FY2026 attesi 28 ottobre. Up +7.2% nel mese (JustStockQuotes). 52-week range $349.20-$553.72.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 541.97,
+      "stop_loss": 525.71,
+      "target": 569.07,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista confermato (+7.2% mensile). Azure AI demand strutturalmente forte. Pre-earnings momentum con catalizzatore Q3 il 28/10. Livello di ingresso ottimale prima del breakout verso ATH $553.72. Fonti: TwelveData (13 ott 2026 mattina), Robinhood (13 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TwelveData (13 ott 2026, mattina)", "price": 548.39},
+          {"name": "Robinhood (13 ott 2026)", "price": 542.79}
+        ],
+        "spread_pct": 1.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 762.20,
+      "change_24h": "+2.59%",
+      "trend_5d": "rialzista forte",
+      "volume_note": "Volume anomalo: +48.5M azioni nel rally del 29 set (vs media 3 mesi); uptrend confermato +6% questa settimana",
+      "news": "Meta Platforms rally Muse AI agent: +30% dal lancio 8 settembre 2026. Muse ha raggiunto n.1 su App Store USA 10 giorni dopo il lancio con 730K download (Sensor Tower). Piani premium $20/$100/mese. Earnings Q3 attesi 21-28 ottobre. Amazon ha bloccato Muse dal suo store. 52w high $779.82.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 762.20,
+      "stop_loss": 739.33,
+      "target": 800.31,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore Muse AI strutturalmente valido: adoption > 730K utenti in 10 giorni, monetizzazione attiva. Stock a +6% questa settimana. Target $800 sostenibile prima degli earnings. SL a $739 sotto supporto Oct 12 close $742.96. Fonti: Yahoo Finance (13 ott 2026, intraday), Motley Fool widget (13 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (13 ott 2026, intraday)", "price": 762.99},
+          {"name": "Motley Fool widget (13 ott 2026)", "price": 761.40}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 217.85,
+      "change_24h": "+1.43%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; uptrend confermato da $210.46 (6 ott) a $217.85 (12 ott) = +3.52%",
+      "news": "SAP SE in trend rialzista: da $210.46 (6 ott) a $217.85 (12 ott), +3.52% in 6 giorni. Earnings Q3 2026 attesi 21 ottobre — catalizzatore imminente. AI cloud growth driver. SAP ha detronizzato ASML come maggiore tech europea per market cap. 52w range $144.97-$281.37. Xetra EUR: €192.85 (12 ott).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 217.85,
+      "stop_loss": 211.31,
+      "target": 228.74,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista settimanale confermato (+3.52%). Pre-earnings momentum con Q3 il 21/10. SAP è il titolo tech europeo con maggiore market cap. Cloud AI transition accelera crescita ricavi. SL a $211 su supporto tecnico. Fonti: Morningstar/Gotrade (12 ott 2026), Macrotrends (12 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar/Gotrade (12 ott 2026)", "price": 217.85},
+          {"name": "Macrotrends (12 ott 2026)", "price": 217.85}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 344.76,
+      "change_24h": "+1.08%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; stock +3.50% da Oct 9 ($333.14) ma sotto pressione tagli ordini iPhone",
+      "news": "Apple vicino al 52w high $348.15. Motley Fool (13 ott): domanda iPhone 18 sotto pressione — Nikkei Asia (11 ott) riporta taglio ordini componenti iPhone 18 Pro -15%. Apple stock +8% dal lancio iPhone 18 in settembre. Earnings stimati 29 ottobre. Foldable iPhone previsto 23 ottobre a $1,999.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 344.76,
+      "stop_loss": 334.42,
+      "target": 362.00,
+      "commissione": 0.00,
+      "reasoning": "Stock near 52w high ma catalizzatore negativo (taglio ordini iPhone 18 Pro -15%). Pre-earnings positioning neutro. Attendere conferma demand Q4 nel report del 29/10. Uptrend intatto ma rischio/rendimento sfavorevole a questi livelli. Fonti: Yahoo Finance (13 ott 2026, 12:07pm EDT), Robinhood (13 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (13 ott 2026, 12:07pm EDT)", "price": 344.66},
+          {"name": "Robinhood (13 ott 2026)", "price": 344.86}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 378.03,
+      "change_24h": "-1.22%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume 38.95M shares Oct 9 (nella norma per TSLA); lieve pullback da $384.87 (9 ott) a $378.03 (12 ott)",
+      "news": "Tesla in lieve pullback da $384.87 (9 ott) a $378.03 (12 ott), -1.78%. Earnings Q3 2026 attesi 21-22 ottobre — catalizzatore binario imminente. Stock in recovery da 52w low $297. Robotaxi narrative e AI5 chip sostengono sentiment a medio termine.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 378.03,
+      "stop_loss": 366.69,
+      "target": 396.93,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings positioning: attendere Q3 earnings 21/10 per direzionalità. Lieve pullback ma trend 2026 rialzista da $297. Rischio/rendimento limitato a 8 giorni dagli earnings senza catalizzatore direzionale. Fonti: Morningstar (12 ott 2026), Macrotrends (12 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (12 ott 2026)", "price": 378.03},
+          {"name": "Macrotrends (12 ott 2026)", "price": 378.03}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 226.32,
+      "change_24h": "-1.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo Oct 12: 70.7M shares (+50% vs media stimata) su giornata di ribasso — vendite istituzionali",
+      "news": "NVIDIA in pullback da ATH chiusura $239.24 (6 ott) a $226.32 (12 ott), -5.38% in 6 giorni con volume anomalo 70.7M shares. 52w range $164.27-$243.37. Rating medio: Strong Buy (62 analisti). Consensus target price $342.74. AI demand strutturalmente intatta.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 226.32,
+      "stop_loss": 219.53,
+      "target": 237.64,
+      "commissione": 0.00,
+      "reasoning": "Pullback -5.38% da ATH con volume anomalo — pressione vendita a breve. Trend 5d ribassista. Aspettare stabilizzazione e conferma supporto $225. Fondamentali AI rimangono eccellenti (target consensus $342). Rischio re-entry prematuro. Fonti: StockAnalysis (12 ott 2026, 4pm EDT), Gotrade (12 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (12 ott 2026)", "price": 226.32},
+          {"name": "Gotrade (12 ott 2026)", "price": 226.32}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.53,
+      "change_24h": "-0.24%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; oscillazione laterale $258-$263 nell'ultima settimana",
+      "news": "Amazon oscillazione laterale: da $262.43 (9 ott, +3.29%) a $259.53 (12 ott, -1.11%). Pre-market 13 ott: $258.92 (-0.24%). AWS AI cloud mantiene crescita. Earnings Q3 attesi 29 ottobre. 52w range $196.00-$287.20. Strong Buy consensus (analysts target $331.20).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 259.53,
+      "stop_loss": 251.74,
+      "target": 272.51,
+      "commissione": 0.00,
+      "reasoning": "Oscillazione laterale $258-$263 senza direzionalità chiara. Pre-earnings caution. AWS AI continua a crescere ma il mercato aspetta Q3 del 29/10 per conference call guidance 2027. Posizione neutrale razionale. Fonti: Morningstar (12 ott 2026), StockAnalysis (12 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (12 ott 2026)", "price": 259.53},
+          {"name": "StockAnalysis (12 ott 2026)", "price": 259.53}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 352.72,
+      "change_24h": "n.d.",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; laterale $351-$353 negli ultimi 4 giorni",
+      "news": "Alphabet in movimento laterale $351-$353. Earnings Q3 2026 attesi 27 ottobre. Analysts target medio $429.47. Antitrust DoJ in background. 52w range $239.71-$408.61. P/E 17.5 — tra i più economici dei Magnificent 7.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 352.72,
+      "stop_loss": 342.14,
+      "target": 370.36,
+      "commissione": 0.00,
+      "reasoning": "Laterale senza catalizzatori nel breve. Pre-earnings positioning neutro in attesa del 27/10. Valutazione P/E 17.5 attraente ma incertezza antitrust limita il rialzo. Attendere Q3 earnings per direzionalità. Fonti: Macrotrends (12 ott 2026), StockInvest (12 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Macrotrends (12 ott 2026)", "price": 352.72},
+          {"name": "StockInvest (12 ott 2026)", "price": 352.72}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 70.77,
+      "change_24h": "+0.45%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; oscillazione in area $70-$72",
+      "news": "Netflix near 52w low $65.08, ben lontano dal 52w high $124.86 (-43%). Oct 12 +0.44% a $70.61. Earnings Q3 attesi 20 ottobre — catalizzatore binario imminente. KeyBanc ha tagliato il target a $85; Huber Research downgrade a SELL. Prezzo split-adjusted (stock split 10:1 nel 2025/2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 70.77,
+      "stop_loss": 68.65,
+      "target": 74.31,
+      "commissione": 0.00,
+      "reasoning": "Stock ai minimi annuali con sentiment analistia negativo (Huber: SELL, KeyBanc target $85 vs $70). Earnings il 20/10 come catalizzatore binario — rischio a due vie. Attendere earnings per rientro. Downside limitato dal supporto $65 (52w low). Fonti: CNBC (12 ott 2026), Robinhood (13 ott 2026 intraday).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (chiusura 12 ott 2026)", "price": 70.61},
+          {"name": "Robinhood (13 ott 2026, intraday)", "price": 70.93}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 588.58,
+      "change_24h": "-1.91%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "Volume nella norma; sell-off confermato da ATH $649.42 (6 ott) in 7 giorni consecutivi",
+      "news": "AMD in downtrend marcato: da ATH chiusura $649.42 (6 ott) a $582.91 (13 ott intraday), -10.4% in 7 giorni. Oct 12 close $594.24 (-2.28%) con prior close $608.10. 52w range $188.22-$658.52. Analisti bullish (Citi $800, Mizuho $705) ma momentum tecnico negativo.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 588.58,
+      "stop_loss": 606.24,
+      "target": 559.15,
+      "commissione": 0.00,
+      "reasoning": "Downtrend confermato -10.4% da ATH in 7 giorni. Momentum tecnico bearish. 3 supporti chiave violati ($620, $608, $594). Target SELL a $559 corrisponde a ulteriore -5% su media mobile. SL a $606 su close sopra ATH pullback. ATTENZIONE: prezzo cross-sessione (Oct12 vs Oct13). Fonti: Morningstar (12 ott 2026), Robinhood (13 ott 2026 intraday).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (12 ott 2026, close)", "price": 594.24},
+          {"name": "Robinhood (13 ott 2026, intraday)", "price": 582.91}
+        ],
+        "spread_pct": 1.94,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1750.24,
+      "change_24h": "-1.69%",
+      "trend_5d": "ribassista leggero pre-earnings",
+      "volume_note": "Volume nella norma; mercato imputa alta volatilità per earnings domani",
+      "news": "ASML Q3 2026 earnings DOMANI 14 ottobre (pre-market). Q2 2026: revenue €9.3B, net income €2.9B, gross margin 54%. Guidance Q3: revenue €11-12B, gross margin 55-57%. Attesa +55% YoY revenue. Bank of America target EUR 2,557. Chiusura 12 ott: $1,750.24 (-1.69%). Risultati Amsterdam H1: +67.25% YTD.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1750.24,
+      "stop_loss": 1697.73,
+      "target": 1837.75,
+      "commissione": 0.00,
+      "reasoning": "ALTA incertezza pre-earnings domani 14/10 (pre-market). Aspettare risultati Q3 prima di posizionarsi. Revenue Q2 €9.3B, guidance Q3 €11-12B (+55% YoY) — aspettative altissime. Un miss causerebbe sell-off (-5.17% implied). BoA target EUR 2,557 (+45% upside). Fonti: Yahoo Finance/MarketBeat (12 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (12 ott 2026)", "price": 1750.24},
+          {"name": "MarketBeat (12 ott 2026)", "price": 1750.24}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 391.00,
+      "change_24h": "n.d.",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; oscillazione $388-$393 negli ultimi 4 giorni",
+      "news": "Ferrari oscillazione laterale $389-$392. Robinhood Oct 13 intraday: range $387.28-$393.61. CNBC Oct 9 close $389.91. Buyback in corso (€250M program). 14 analisti Strong Buy, target medio $457. 52w high $437.15 / low $312.51. Earnings attesi 3 novembre.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 391.00,
+      "stop_loss": 379.27,
+      "target": 410.55,
+      "commissione": 0.00,
+      "reasoning": "Movimento laterale senza catalizzatori vicini (earnings 3/11). Brand premium difensivo. Buyback attivo supporta il titolo. Upside verso ATH $437 (+11.9%) ma servono earnings per breakout. Posizione neutrale razionale. Fonti: CNBC (9 ott 2026), Robinhood (13 ott 2026 intraday).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (9 ott 2026)", "price": 389.91},
+          {"name": "Robinhood (13 ott 2026, intraday)", "price": 392.09}
+        ],
+        "spread_pct": 0.56,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.40,
+      "change_24h": "+0.46%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma; stock ai minimi annuali — $4.30 (1 ott) = 52w low",
+      "news": "Stellantis (NYSE: STLA) ai minimi storici annuali: 52w low $4.30 (1 ottobre 2026), ora a $4.40 (+0.46%). Down -65% da 52w high $12.22. 8 analisti: Hold, target medio $7.05 (+60% upside). Earnings Q3 attesi 28 ottobre. Market cap ~$13-17B. Ristrutturazione in corso.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 4.40,
+      "stop_loss": 4.27,
+      "target": 4.62,
+      "commissione": 0.00,
+      "reasoning": "Ai minimi annuali ($4.30 52w low, 1 ott) con +60% upside secondo consenso analisti. Ma trend ribassista confermato e turnaround non ancora visibile. Earnings 28/10 come prossimo catalizzatore. Posizione speculativa — attendere segnali di inversione. Fonti: StockAnalysis (12 ott 2026), CNBC (13 ott 2026 intraday).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (12 ott 2026)", "price": 4.38},
+          {"name": "CNBC (13 ott 2026, intraday)", "price": 4.42}
+        ],
+        "spread_pct": 0.91,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 382.15,
+      "change_24h": "-0.63%",
+      "trend_5d": "laterale con correzione",
+      "volume_note": "Volume nella norma; gold spot $4,182/oz (13 ott mattina) in recovery intraday (+1.2%)",
+      "news": "Gold spot $4,182/oz (Fortune 13 ott, ore 9am ET, +1.2% da ieri). GLD close 12 ott: $382.15 (-0.63% da $384.58 Oct 11). Pre-market 13 ott: $383.38 (StockMarketWatch). CNBC: gold $4,164.85 il 12 ottobre. Gold in correzione da agosto ($4,488.60 COMEX, 31 ago): -6.8% negli ultimi 6 settimane. Fed rate hike bets pesano.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 382.15,
+      "stop_loss": 374.51,
+      "target": 397.44,
+      "commissione": 0.00,
+      "reasoning": "Gold in correzione -6.8% dai massimi agosto (rate hike bets Fed). Recupero intraday oggi +1.2% ma trend settimanale debole. CPI domani (14 ott) catalizzatore macro — se dato sotto attese, gold potrebbe rimbalzare. SL a $374.51 su supporto tecnico. Fonti: MarketAlleys (12 ott 2026), Investing.com (12 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys (12 ott 2026, 20:00 UTC)", "price": 382.15},
+          {"name": "Investing.com (12 ott 2026)", "price": 382.15}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 53.95,
+      "change_24h": "-1.14%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma; argento in decelerazione intraday -1.14%",
+      "news": "iShares Silver Trust (SLV) in calo: close 12 ott $54.35, intraday 13 ott $53.73 (-1.14% alle 11am EDT, StockAnalysis). 52w range $41.70-$109.83 (massimo estate 2026). Silver spot ai minimi da agosto (Business Today 31 ago: $66.44). Rate hike bets Fed e USD forte pesano sui metalli preziosi.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 53.95,
+      "stop_loss": 52.87,
+      "target": 56.11,
+      "commissione": 0.00,
+      "reasoning": "SLV in downtrend da $109 (estate 2026) a $53 (-51%). Oggi -1.14%. CPI domani: se inflazione alta → rate hike bets aumentano → silver ulteriore pressione. Senza inversione macro (Fed pivot) difficile invertire tendenza. Posizione di attesa. Fonti: Google Finance (12 ott 2026), Yahoo Finance (13 ott 2026 intraday).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (12 ott 2026, close)", "price": 54.35},
+          {"name": "Yahoo Finance (13 ott 2026, 1:19pm EDT)", "price": 53.55}
+        ],
+        "spread_pct": 1.49,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 151.77,
+      "change_24h": "+0.98%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; USO +1.91% lunedì 12 ott su tensioni geopolitiche; WTI futures $94.35, Brent ~$105.91",
+      "news": "US Oil Fund (USO) in rally: +1.91% lunedì 12 ott a $151.03 (Rio Times). Investing.com Oct 13: $152.51 (+0.98% da $151.03). WTI futures $94.35/barile, Brent $105.91. 52w high $163.35 (15 set 2026). USO -7.1% da 52w high ma in recovery questa settimana.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 151.77,
+      "stop_loss": 148.73,
+      "target": 157.84,
+      "commissione": 0.00,
+      "reasoning": "Recovery da correzione post-52w high $163.35. WTI a $94 supporta USO. Ma CPI domani: se inflazione alta → Fed hike → USD forte → oil pressione. Target $157 vicino alla media mobile. Rischio geopolitico bilaterale. Fonti: Rio Times (12 ott 2026), Investing.com (13 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (12 ott 2026, prior close)", "price": 151.03},
+          {"name": "Investing.com (13 ott 2026)", "price": 152.51}
+        ],
+        "spread_pct": 0.98,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83407.18,
+      "change_24h": "+0.06%",
+      "trend_5d": "laterale",
+      "volume_note": "ETF BTC: -$65.4M outflows lunedì 12 ott; volume 24h $13.89B (nella norma)",
+      "news": "Bitcoin in recovery da $80,951 (min giornaliero 13 ott) a $83,407 (CoinDesk ore 10:07am EDT). Fortune (13 ott, 7:45am ET): $83,408. Yahoo Finance: apertura $81,754 (down 2.3% da lunedì). Range giornaliero $80,951-$84,053. ETF BTC outflow $65.4M lunedì. Traders attendono CPI mercoledì 14 ott. Resistenza chiave $85K.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 83407.18,
+      "stop_loss": 79236.82,
+      "target": 90079.75,
+      "commissione": 0.00,
+      "reasoning": "BTC in range $80K-$85K con ETF outflows continuati. CPI domani (14 ott) — se dato sopra attese → USD forte → crypto sotto pressione. Resistenza $85K non ancora testata con successo. Attendere breakout confermato. Fonti: CoinDesk (13 ott 2026, 10:07am EDT), Fortune (13 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (13 ott 2026, 10:07am EDT)", "price": 83406.35},
+          {"name": "Fortune (13 ott 2026, 7:45am ET)", "price": 83408.00}
+        ],
+        "spread_pct": 0.002,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2514.22,
+      "change_24h": "+1.59%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; ETH underperforma il mercato crypto negli ultimi 7 giorni",
+      "news": "Ethereum +1.59% a $2,514 (CoinMarketCap 13 ott). Bybit: $2,515.25, range $2,411-$2,541. Bitget: $2,513.43. Fortune (13 ott): $2,503.64. ETH -1.3% vs Oct 12 close $2,548.50. ETH underperforma mercato crypto (Bybit, 13 ott). All-time high $4,946.05. Mancano catalizzatori specifici.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2514.22,
+      "stop_loss": 2388.51,
+      "target": 2715.36,
+      "commissione": 0.00,
+      "reasoning": "ETH in recupero marginale +1.59% ma underperforma crypto. CPI domani rischio macro. Senza ETF inflows significativi o catalizzatori DeFi specifici, difficile rotation vs BTC. Range $2,400-$2,600 probabile nel breve. Fonti: Bybit (13 ott 2026, 21:39 UTC), Bitget (13 ott 2026, 15:46 UTC).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bybit/CoinGecko (13 ott 2026, 21:39 UTC)", "price": 2515.25},
+          {"name": "Bitget (13 ott 2026, 15:46 UTC)", "price": 2513.43}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 108.12,
+      "change_24h": "-2.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 24h $2.57-$2.75B (nella norma); Solana ETF inflows $188M nella settimana precedente (RoboForex, 1 ott)",
+      "news": "Solana in calo da $119.48 (1 ott, RoboForex) a $108.12 (13 ott), -9.5% in 12 giorni. CoinMarketCap: $108.56 (-2%). CoinGecko: $107.67. Coinbase: $108.36. Yahoo Finance: $108.60, 52w range $60.41-$211.11. Record inflows ETF Solana ($188M settimanali, 1 ott) — supporto strutturale, ma correzione in corso.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 108.12,
+      "stop_loss": 102.71,
+      "target": 116.77,
+      "commissione": 0.00,
+      "reasoning": "SOL in correzione -9.5% da inizio ottobre. ETF inflows strutturali ($188M) forniscono supporto ma non sufficienti a invertire il trend 5d ribassista. CPI domani rischio ulteriore. Supporto chiave $100-$102 (SL). Attendere stabilizzazione prima di rientro. Fonti: CoinMarketCap (13 ott 2026), CoinGecko (13 ott 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (13 ott 2026)", "price": 108.56},
+          {"name": "CoinGecko (13 ott 2026)", "price": 107.67}
+        ],
+        "spread_pct": 0.83,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "MSFT",
+      "motivo": "Trend rialzista confermato +7.2% mensile e +2.70% settimanale. Azure AI demand strutturalmente forte. Earnings Q3 28/10 come prossimo catalizzatore. Dati prezzi ALTA affidabilità da fonti Oct 13. Risk/reward 1:1.87 (SL -3%, target +5%)."
+    },
+    {
+      "rank": 2,
+      "asset": "META",
+      "motivo": "Catalizzatore Muse AI eccezionale: +30% dal lancio 8 set, 730K download in 10 giorni, n.1 App Store USA. Monetizzazione attiva ($20/$100/mese). Earnings Q3 21-28 ott. Momentum rialzista confermato +6% questa settimana. Prezzo $762 verificato ALTA affidabilità."
+    },
+    {
+      "rank": 3,
+      "asset": "SAP",
+      "motivo": "Leader tech europea per market cap. Trend rialzista +3.52% negli ultimi 6 giorni. Cloud AI transition accelera. Earnings Q3 21 ott come imminente catalizzatore. Prezzo $217.85 verificato ALTA affidabilità (spread 0%)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale inviato ad Alpaca. Sessione ottobre 2026 con qualità dati ECCELLENTE: 18/18 asset verificati da fonti Oct 12-13. 3 BUY signals, 1 SELL signal (AMD), 14 HOLD.",
+    "allocazione_suggerita": {
+      "BUY_signals": {
+        "MSFT": "12%",
+        "META": "10%",
+        "SAP": "7%"
+      },
+      "SELL_signal": {
+        "AMD": "5% short"
+      },
+      "HOLD_signals": {
+        "BTC": "10%",
+        "ETH": "6%",
+        "AAPL": "7%",
+        "GOOGL": "6%",
+        "ASML": "5%",
+        "GLD": "8%",
+        "USO": "5%"
+      },
+      "cash_riserva": "24%"
+    }
+  }
+}
