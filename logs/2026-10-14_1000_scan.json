@@ -1,0 +1,220 @@
+{
+  "timestamp": "2026-10-14T10:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercoledì 14 ottobre 2026 — Qualità dati DEGRADATA (2/18 asset validati). Le ricerche web hanno restituito prevalentemente prezzi di agosto-settembre 2026 per la maggioranza degli asset, impedendo triangolazione affidabile. Catalizzatori macro OGGI: (1) CPI USA settembre: +0.6% MoM, +3.7% YoY — sopra attese (3.6%), con benzina +9.1% driver principale. Dato HOT che aumenta bets per rialzo tassi Fed il 28 ottobre. (2) ASML Q3 2026 earnings (pre-market): revenue €11.7B, gross margin 57.5%, net income €5.0B (incl. €0.5B gain Mistral). Q4 guidance €14.2-15.2B. EPS beat ma titolo in calo -1.86% nella seduta regolare + -2.26% AH — sell-the-news. Mercato USA odierno: Nasdaq -1.37% (26,832), S&P 500 -0.92% (7,733). Settore tech -2.73%, semiconduttori (SOX) 6° calo consecutivo. Unica eccezione AAPL +1%. CPI hot → USD forte → pressione su oro, argento, crypto. Solo AMZN (ALTA) e ASML (MEDIA) superano la triangolazione; 16 asset esclusi.",
+  "signals": [
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.38,
+      "change_24h": "n.d. (estimato ≈-1.4% da context comm services -1.39%)",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; oscillazione confermata $258-263 nelle ultime settimane",
+      "news": "AMZN +1.9% il 6 ottobre su rally S&P/Nasdaq verso ATH. Oggi settore Communication Services -1.39% su CPI hot. Q3 earnings attesi 29 ottobre — catalizzatore imminente. Analyst consensus Buy, target $310-340 vs prezzo ~$259. AWS AI cloud growth strutturalmente forte. (Fonti: TradingEconomics Oct 6, StockAnalysis Aug 26, InvestSmart Sep 5)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 259.38,
+      "stop_loss": 251.60,
+      "target": 272.35,
+      "commissione": 0.00,
+      "reasoning": "Oscillazione laterale $258-263 da settimane; confermata da 2 fonti indipendenti (spread 0.69% ALTA). CPI hot oggi pesa sul settore tech/growth. Pre-earnings neutralità raccomandata (Q3 il 29/10). Upside strutturale verso target $310-340 degli analisti. Attendere Q3 report per direzionalità. NOTA: prezzi triangolati da fonti Aug 26-Sep 5 — dato aggiornato ≈ coerente con scan precedente ($259.53 il 13 ott). Fonti: InvestSmart (Sep 5, $258.48), StockAnalysis (Aug 26, $260.28).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 5, 2026)", "price": 258.48},
+          {"name": "StockAnalysis (Aug 26, 2026)", "price": 260.28}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1787.63,
+      "change_24h": "-1.86% (regolare) -2.26% (AH) — post Q3 earnings oggi",
+      "trend_5d": "ribassista leggero pre-earnings → sell-the-news post-earnings",
+      "volume_note": "Volume anomalo atteso post-earnings: stock in calo nonostante EPS beat — sell-the-news classico",
+      "news": "ASML Q3 2026 earnings OGGI (pre-market): revenue €11.7B (in guidance €11-12B), gross margin 57.5% (top di guidance), EPS beat consensus. Q4 guidance €14.2-15.2B (+55% YoY atteso). TUTTAVIA: titolo cala -1.86% seduta regolare + -2.26% AH. Estimato prezzo post-earnings: ~$1,717-1,718. Hot CPI (3.7%) aggiunge pressione macro su tech. UBS Buy, target EUR 2,350. Semiconduttori (SOX) in calo da 6 sessioni. (SEC 6-K filing 14 ott 2026, Investing.com, Globe&Mail)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1787.63,
+      "stop_loss": 1733.60,
+      "target": 1877.01,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali eccellenti (Q3 beat, Q4 guide ambiziosa) ma mercato reagisce negativamente — sell-the-news. Hot CPI aggiunge vento contrario a breve. Post-earnings dip potenziale opportunità di ingresso a ~$1,717 (stimato), ma aspettare stabilizzazione. SL a $1,734 (-3% da entry triangolata). Target $1,877 (+5%). NOTA: entry calcolata da triangolazione pre-earnings Oct 8-9 ($1,770-$1,805); prezzo effettivo oggi stimato ~$1,717-1,750. Fonti: InvestSmart (Oct 9, $1,770.29), StockAlarm/SEC EDGAR (Oct 8, $1,804.96).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart NASDAQ (Oct 9, 2026)", "price": 1770.29},
+          {"name": "StockAlarm/EDGAR (Oct 8, 2026)", "price": 1804.96}
+        ],
+        "spread_pct": 1.94,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Unica fonte recente affidabile: InvestSmart $339.71 (Sep 23, 2026). Seconda fonte non confermata per 2026 recente. NOTA: da contesto mercato Oct 14 AAPL è l'unico titolo tech in rialzo oggi (+1%).",
+      "last_known_price": 344.76,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "TSLA",
+      "motivo": "Fonte 1: InvestSmart $380.12 (Sep 23). Fonte 2: CoinGecko $369.93 non datata. Seconda fonte senza timestamp → validazione impossibile.",
+      "last_known_price": 378.03,
+      "last_known_date": "2026-10-12"
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Spread 4.53% > 4%: Coinglass Sep 30 ~$229.93 vs InvestSmart Aug 18 $219.74. SOX in calo da 6 sessioni consecutive — pressione semis.",
+      "last_known_price": 226.32,
+      "last_known_date": "2026-10-12"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Spread 4.65% > soglia 4%: journalarta $517.53 (Oct 2) vs Yahoo Finance $493.95 (ago-set 2026). Dati troppo divergenti.",
+      "last_known_price": 541.97,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Spread 5.03% > 4%: InvestSmart $344.10 (Aug 18) vs Bloomberg $361.86 (Aug 5). Date diverse, spread elevato.",
+      "last_known_price": 352.72,
+      "last_known_date": "2026-10-12"
+    },
+    {
+      "asset": "META",
+      "motivo": "Spread >22%: journalarta $728.08 (Oct 2) vs Yahoo Finance $578.54 (Sep 1). Dati da mesi diversi, delta troppo ampio.",
+      "last_known_price": 762.20,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Spread 9.6%: InvestSmart $70.30 (Oct 10) vs Yahoo Finance $77.40 (Sep 11). Date di un mese di distanza, spread > 4%.",
+      "last_known_price": 70.77,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread >28%: InvestSmart $624.00 (Sep 23) vs Yahoo/Benzinga $469.56 (Aug 10). Dati da mesi diversi, spread inaccettabile. SOX in calo da 6 sessioni.",
+      "last_known_price": 588.58,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Fonti troppo vecchie: MarketBeat ~$193-209 (mar 2026), Yahoo Finance $146.38 (lug 2026). Q3 earnings previsti Oct 21. Dati non recenti.",
+      "last_known_price": 217.85,
+      "last_known_date": "2026-10-12"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread 8.27%: Sep 29 $400.77 vs Benzinga Aug 21 $435.34. Date distanti 5 settimane, spread > 4%.",
+      "last_known_price": 391.00,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "STLA",
+      "motivo": "Fonti Aug 2026 ($5.38-5.42) divergono significativamente dal prezzo noto Oct 13 ($4.40). Dati stantii di 6-7 settimane con movimento -18%.",
+      "last_known_price": 4.40,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Spread 21.9% tra Dhan Jul 30 $371.06 e TradingView $462.62 (non datato). Dato CPI hot oggi (3.7%) impatta metalli preziosi, ma senza prezzi verificati non si genera segnale.",
+      "last_known_price": 382.15,
+      "last_known_date": "2026-10-12"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread 6.48% tra dati luglio e fonti CoinGecko non datate. CPI hot + USD forte pesano sull'argento. Senza 2 fonti concordanti non si genera segnale.",
+      "last_known_price": 53.95,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Fonti disponibili (MarketBeat Sep 2 $141.15, Yahoo undatato $143.85) discostate ~6% dal prezzo noto Oct 13 ($151.77). Benzina +9.1% nel dato CPI Sept ma senza triangolazione aggiornata non si genera segnale.",
+      "last_known_price": 151.77,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "BTC",
+      "motivo": "Nessuna fonte affidabile datata Oct 2026: fonti disponibili da feb 2026 ($61-73K). CPI hot 3.7% → USD forte → pressione su crypto. Senza triangolazione non si genera segnale.",
+      "last_known_price": 83407.18,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Spread 35.5%: The Block $1,881 (Jul 28) vs Pluang $2,694 (Sep 27). Date distanti 2 mesi, spread inaccettabile. Glamsterdam upgrade Q4 positivo ma senza prezzi verificati.",
+      "last_known_price": 2514.22,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Fonti dirette (The Block $75.94 Aug 12, DappRadar $73.85 Jun 22) stantie e divergenti dal range Oct 2026 ($118 citato in analisi Crypto.com). Senza 2 fonti concordanti non si genera segnale.",
+      "last_known_price": 108.12,
+      "last_known_date": "2026-10-13"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMZN",
+      "motivo": "Unico asset con triangolazione ALTA (spread 0.69%). Prezzo ~$259 coerente con dati recenti ($259.53 il 13 ott). Analyst consensus Buy target $310-340 (+20-30% upside). AWS AI cloud growth strutturale. Q3 earnings Oct 29 come prossimo catalizzatore. CPI hot impatta settore ma AWS non è energia-sensitive."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "Triangolazione MEDIA (spread 1.94%, Oct 8-9). Q3 earnings oggi beat: €11.7B revenue, gross margin 57.5%, Q4 guide €14.2-15.2B. Post-earnings dip (-1.86% + -2.26% AH) può rappresentare opportunità di ingresso. UBS target EUR 2,350 (+37% upside). SOX debole a breve termine ma domanda EUV strutturalmente intatta."
+    }
+  ],
+  "macro_context_today": {
+    "cpi_sept_2026": {
+      "headline_mom": "+0.6%",
+      "headline_yoy": "+3.7%",
+      "core_mom": "+0.3%",
+      "core_yoy": "+2.6%",
+      "vs_expectations": "sopra attese (headline: 3.7% vs 3.6% stim; core: 0.3% vs 0.2% stim)",
+      "driver_principale": "Benzina +9.1% MoM",
+      "implicazioni": "Aumenta probabilità rialzo tassi Fed il 28 ottobre. USD forte. Pressione su growth stocks, oro, crypto."
+    },
+    "mercati_usa_oct14": {
+      "nasdaq": "26,832 (-1.37%)",
+      "sp500": "7,733 (-0.92%)",
+      "settore_tech": "-2.73%",
+      "settore_semis_sox": "6° calo consecutivo",
+      "eccezione": "AAPL +1% unico titolo tech in verde",
+      "fonte": "TheStreet, Yahoo Finance Markets (14 ott 2026)"
+    },
+    "asml_earnings_oct14": {
+      "q3_revenue": "€11.7B",
+      "q3_gross_margin": "57.5%",
+      "q3_net_income": "€5.0B",
+      "q4_guidance_revenue": "€14.2-15.2B",
+      "fy2026_guidance": "€44-45B",
+      "market_reaction_regular": "-1.86%",
+      "market_reaction_ah": "-2.26%",
+      "fonte": "SEC 6-K filing ASML (14 ott 2026), Investing.com, Globe&Mail"
+    }
+  },
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale inviato ad Alpaca. Sessione 14 ottobre 2026 con qualità dati DEGRADATA: solo 2/18 asset triangolati. CPI hot e ASML sell-the-news dominano la giornata. Posizionamento cauto raccomandata.",
+    "allocazione_suggerita": {
+      "HOLD_signals": {
+        "AMZN": "8% (ALTA validazione, pre-earnings caution)",
+        "ASML": "5% (MEDIA validazione, post-earnings dip watchlist)"
+      },
+      "cash_riserva": "87%",
+      "note_rischio": "CPI 3.7% sopra attese → Fed hawkish Oct 28. Attendere stabilizzazione mercato prima di aumentare esposizione."
+    }
+  }
+}
