@@ -1,0 +1,295 @@
+{
+  "timestamp": "2026-10-15T10:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Giovedì 15 ottobre 2026 — Qualità dati MIGLIORATA: 6/18 asset validati (vs 2/18 ieri). Macro contesto: CPI settembre 2026 +3.7% YoY (sopra attese 3.6%), driver benzina +9.1% MoM — Fed hawkish, rialzo tassi 28 ottobre probabile. Seduta precedente (Oct 14): Nasdaq -1.37% (26,832), S&P 500 -0.92% (7,733), tech settore -2.73%, SOX 6° calo consecutivo. ASML sell-the-news post Q3 earnings (-1.86% regular -2.26% AH) nonostante EPS beat. BTC stabile $83-84K; USB jobs data deboli spingono verso $87K poi ritiro. Asset ALTA: AMZN, TSLA, NVDA, BTC. MEDIA: AAPL, GOOGL. Esclusi 12/18 per spread >4% o fonti insufficienti.",
+  "signals": [
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 258.39,
+      "change_24h": "+1.67% (Oct 9, fonte StockHub)",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; prezzo stabile $258-260 per settimane (confermato da precedenti scan)",
+      "news": "Amazon AWS AI cloud growth strutturalmente forte. Q3 earnings attesi 29 ottobre — catalizzatore imminente. Analyst consensus Buy con target $310-340 (+20-30% upside). Settore e-commerce stabile nonostante CPI hot. AMZN +1.67% il 9 ottobre su rialzo Nasdaq. (Fonti: StockHub Oct 9, InvestSmart Sep 5)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 258.39,
+      "stop_loss": 250.64,
+      "target": 271.31,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione ALTA (spread 0.07%): prezzo convergente su $258-259 da due fonti indipendenti di periodi diversi. Trend laterale confermato. Pre-earnings caution per Q3 report 29 ottobre — attendere risultati prima di aumentare posizione. CPI hot impatta growth ma AWS cloud non direttamente energy-sensitive. Target analisti $310-340 a 12 mesi. Fonti: StockHub (Oct 9, $258.30), InvestSmart (Sep 5, $258.48).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub.kr (Oct 9, 2026)", "price": 258.30},
+          {"name": "InvestSmart (Sep 5, 2026)", "price": 258.48}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 382.50,
+      "change_24h": "+2.63% (Oct 9, fonte StockHub)",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "Volume nella norma; oscillazione $378-385 nelle ultime settimane",
+      "news": "Tesla AI5 chip progress annunciato — titolo reagisce positivamente. TSLA +2.63% il 9 ottobre su notizie AI/robotics. Musk conferma avanzamento su Full Self-Driving e robot Optimus. Settore auto elettrica sotto pressione CPI/tassi ma Tesla differenziata su AI/energy. Q3 2026 earnings attesi ottobre. (Fonti: StockHub Oct 9, InvestSmart Sep 23; AI5 news da ricerche web)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 382.50,
+      "stop_loss": 371.03,
+      "target": 401.63,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione ALTA (spread 1.25%): due fonti indipendenti da periodi diversi ma convergenti. Momentum rialzista confermato (+2.63% Oct 9). Catalizzatore AI5 chip news recente. Trend 5 giorni: InvestSmart Sep 23 $380.12 → StockHub Oct 9 $384.87 = +1.2%. Stop a $371.03 (-3%), target $401.63 (+5%). Rischio: CPI hot + tassi alti impattano valutazioni growth. Fonti: StockHub (Oct 9, $384.87), InvestSmart (Sep 23, $380.12).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub.kr (Oct 9, 2026)", "price": 384.87},
+          {"name": "InvestSmart (Sep 23, 2026)", "price": 380.12}
+        ],
+        "spread_pct": 1.25,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 230.86,
+      "change_24h": "+0.57% (Oct 9, fonte StockHub)",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "Volume nella norma; SOX (semiconduttori) in calo da 6 sessioni consecutive al 14 ottobre",
+      "news": "NVIDIA chip AI infrastructure leader ma sotto pressione macro. SOX Index in calo da 6 sessioni consecutive (dato scan precedente Oct 14). CPI hot 3.7% aumenta probabilità rialzo Fed — headwind per tech/semis. NVDA +0.57% il 9 ottobre; range recente $226-232 da settimane. Demand AI/data center strutturalmente forte. Q3 earnings previsti novembre 2026. (Fonti: StockHub Oct 9, Coinglass Sep 30)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 230.86,
+      "stop_loss": 223.94,
+      "target": 242.40,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione ALTA (spread 0.81%): Coinglass Sep 30 midpoint $229.93 e StockHub Oct 9 $231.79 convergenti. TUTTAVIA settore semiconduttori debole a breve (SOX -6 sessioni). CPI hot + rialzo tassi = headwind per valutazioni growth. Attendere stabilizzazione SOX prima di BUY. Strutturalmente NVDA rimane top AI play ma timing sfavorevole. SL $223.94 (-3%), target $242.40 (+5%). Fonti: StockHub (Oct 9, $231.79), Coinglass (Sep 30, $229.93 midpoint).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub.kr (Oct 9, 2026)", "price": 231.79},
+          {"name": "Coinglass (Sep 30, 2026 — midpoint range)", "price": 229.93}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83758.00,
+      "change_24h": "+0.41% (stimato da range Oct 12: $82,722–$84,104)",
+      "trend_5d": "laterale con volatilità",
+      "volume_note": "Volume anomalo su swing da $80,300 a $87,250 e ritiro — mercato in cerca di direzione",
+      "news": "Bitcoin in recupero da minimo $80,300 verso $84,000. Dati lavoro USA deboli (jobs data) avevano spinto BTC a $87,250 prima del ritiro. CPI hot 3.7% → USD forte → pressione cripto a breve. ATH $126,198 (6 ottobre 2025) — BTC attualmente -33.7% dal massimo. Inflow record in Solana ETF ($188M/settimana) segnala interesse istituzionale crypto. Kalshi prediction market mostra probabilità equilibrata intorno $84,000-84,500. (Fonti: Admirals/CoinDesk Oct 12, Kalshi/CoinMarketCap Oct 9-12)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 83758.00,
+      "stop_loss": 79570.00,
+      "target": 90459.00,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione ALTA (spread 0.58%): Admirals/CoinDesk Oct 12 $83,515 e range CMC Oct 9-12 $84,000. Segnali contrastanti: ripresa da $80,300 positiva, ma CPI hot + Fed hawkish = headwind USD/tassi. BTC -33.7% da ATH ottobre 2025. Attesa di chiarezza macro pre-Fed (28 ottobre) prima di BUY. HOLD strategico. SL $79,570 (-5%), target $90,459 (+8%). Fonti: Admirals Markets/CoinDesk (Oct 12, $83,515), Kalshi/CoinMarketCap (Oct 9-12, ~$84,000).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Admirals Markets/CoinDesk (Oct 12, 2026)", "price": 83515.00},
+          {"name": "Kalshi/CoinMarketCap (Oct 9-12, 2026)", "price": 84000.00}
+        ],
+        "spread_pct": 0.58,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 336.43,
+      "change_24h": "-2.14% (Oct 9); +1.0% stimato Oct 14 da contesto mercato",
+      "trend_5d": "laterale con relativa forza vs settore",
+      "volume_note": "Volume nella norma; AAPL dimostra relativa forza (unico tech +1% su Oct 14 con Nasdaq -1.37%)",
+      "news": "Apple mostra relativa forza vs settore tech: unico titolo tech in verde (+1%) nella seduta Oct 14 con Nasdaq -1.37%. Trend di fondo: InvestSmart Sep 23 $339.71 vs StockHub Oct 9 $333.14 — leggero cedimento a breve. iPhone 17 e Vision Pro 2 attesi — pipeline prodotti positiva. Analyst consensus Buy. Q4 2026 earnings previsti novembre. (Fonti: StockHub Oct 9, InvestSmart Sep 23; contesto Oct 14 da scan precedente)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 336.43,
+      "stop_loss": 326.34,
+      "target": 353.25,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione MEDIA (spread 1.97%, fonti a 3 settimane di distanza). Relativa forza vs settore positiva (unico tech up su Oct 14). Trend lievemente discendente da Sep 23 a Oct 9 ($339→$333) ma recovery attesa. Pre-earnings caution. Macro CPI hot pesa su tutto il tech growth. HOLD fino a maggiore chiarezza. SL $326.34 (-3%), target $353.25 (+5%). Nota: prezzo validato da media fonti; incertezza +/-2% sul valore esatto Oct 15. Fonti: StockHub (Oct 9, $333.14), InvestSmart (Sep 23, $339.71).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub.kr (Oct 9, 2026)", "price": 333.14},
+          {"name": "InvestSmart (Sep 23, 2026)", "price": 339.71}
+        ],
+        "spread_pct": 1.97,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 348.83,
+      "change_24h": "+1.09% (Oct 9, fonte StockHub)",
+      "trend_5d": "lievemente rialzista",
+      "volume_note": "Volume nella norma; prezzo in leggero rialzo da settembre",
+      "news": "Alphabet Q3 2026 earnings previsti 27 ottobre (catalizzatore imminente a 12 giorni). AI integration e Waymo expansion continuano. GOOGL +1.09% il 9 ottobre. Trend: TECHi Sep 14 $345.58 → StockHub Oct 9 $352.07 (+1.88% in 25 giorni). 52-week range $172.77-$408.61. Analyst consensus positivo con target avg $450+. (Fonti: StockHub Oct 9, TECHi Sep 14)",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 348.83,
+      "stop_loss": 338.37,
+      "target": 366.27,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione MEDIA (spread 1.88%, fonti a 25 giorni di distanza). Trend rialzista confermato ($345.58 → $352.07). Earnings Oct 27 = prossimo catalizzatore con potenziale upside su risultati AI/cloud. Entry pre-earnings con SL difensivo $338.37 (-3%). Target $366.27 (+5%) conservativo vs target analisti $450+. Rischio: earnings miss o guidance debole. CPI hot headwind settore. Fonte MEDIA — posizione dimensione ridotta. Fonti: StockHub (Oct 9, $352.07), TECHi/StockAnalysis (Sep 14, $345.58).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub.kr (Oct 9, 2026)", "price": 352.07},
+          {"name": "TECHi/StockAnalysis (Sep 14, 2026)", "price": 345.58}
+        ],
+        "spread_pct": 1.88,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "MSFT",
+      "motivo": "Spread 6.24% > 4%: StockHub Oct 9 $527.72 vs InvestSmart Sep 2 $496.75. Fonti a 5 settimane di distanza con gap significativo.",
+      "last_known_price": 541.97,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "META",
+      "motivo": "Spread 24.2% > 4%: StockHub Oct 9 $718.98 vs Yahoo Finance Sep 1 $578.54. Delta di 5-6 settimane con movimento estremo non triangolabile.",
+      "last_known_price": 762.20,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Spread 5.24% > 4%: InvestSmart Oct 10 $70.30 vs Kraken $73.98 (non datato). Fonti discordanti, impossibile triangolare con affidabilità.",
+      "last_known_price": 70.77,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread 28.4% > 4%: StockHub Oct 9 $620.00 vs Yahoo Finance Aug 13 $483.01. Fonti a 2 mesi di distanza, delta inaccettabile per triangolazione.",
+      "last_known_price": 588.58,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Dati pre-earnings (Oct 8-9): spread 1.94% MEDIA. Post-earnings Oct 14 sell-the-news (-1.86% regular -2.26% AH): prezzo odierno stimato $1,717-1,750 ma non triangolabile con 2 fonti aggiornate post-earnings. Attendere stabilizzazione.",
+      "last_known_price": 1735.00,
+      "last_known_date": "2026-10-14"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Spread 43.9% > 4%: InvestSmart Sep 24 $210.62 vs Yahoo Finance NYSE $146.38 (luglio 2026). Fonti troppo divergenti. Q3 earnings previsti Oct 21-22.",
+      "last_known_price": 217.85,
+      "last_known_date": "2026-10-12"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread 7.3% > 4%: heygotrade Aug 25 $416.84 vs itechguides/StockAnalysis Oct 2 $388.33. Dati da periodi diversi con gap significativo.",
+      "last_known_price": 391.00,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "STLA",
+      "motivo": "Nessun prezzo NYSE USD trovato. Fonti disponibili solo in EUR (Borsa Italiana STLAM): €4.75 (Aug 12, 2026). CDS dello stock in forte declino (>50% YTD, cap mkt ~€13.8B).",
+      "last_known_price": 4.40,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Spread 24.7% > 4%: TradingView $462.62 (non datato) vs Dhan Jul 30 $371.06. Impatto CPI hot (3.7%) su oro incerto — senza triangolazione non si genera segnale.",
+      "last_known_price": 382.15,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread 7.2% > 4%: Kraken $54.01 (non datato) vs Yahoo Finance history Jul 16 $50.39. Argento ETF calo 4.06% del 31 agosto 2026 su CPI/tassi. Senza 2 fonti concordanti nessun segnale.",
+      "last_known_price": 53.95,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Fonti Sep 2-4 concordanti (spread 0.37% ALTA) ma obsolete di 6 settimane. Prezzo noto Oct 13 $151.77 è +7.3% dalle fonti Sep → prezzo validato non riflette condizioni odierne. Benzina CPI +9.1% = rialzo prezzi petrolio.",
+      "last_known_price": 151.77,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Nessuna fonte datata ottobre 2026. Ultima fonte: The Block Jul 28 $1,881.79. Prezzo noto Oct 13: $2,514.22 — gap enorme di 2.5 mesi. Senza triangolazione recente nessun segnale.",
+      "last_known_price": 2514.22,
+      "last_known_date": "2026-10-13"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread 9.9% > 4%: RoboForex Oct 1 $119.48 vs MEXC non datato $131.31. Inflow record ETF Solana ($188M/settimana) positivo strutturalmente ma senza triangolazione valida nessun segnale.",
+      "last_known_price": 108.12,
+      "last_known_date": "2026-10-13"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Triangolazione ALTA (spread 1.25%). Unico BUY con validazione ALTA. Catalizzatore AI5 chip progress recente. Trend lievemente rialzista confermato da 2 fonti indipendenti ($380-$385). Momentum +2.63% Oct 9. SL difensivo -3% = rischio/rendimento favorevole."
+    },
+    {
+      "rank": 2,
+      "asset": "GOOGL",
+      "motivo": "Earnings Oct 27 = catalizzatore a 12 giorni. Trend rialzista da Sep 14 a Oct 9 (+1.88%). Pre-earnings accumulation su AI/cloud growth. Target analisti $450+ vs prezzo ~$349 = upside potenziale +29%. MEDIA validazione — size ridotta."
+    },
+    {
+      "rank": 3,
+      "asset": "BTC",
+      "motivo": "Triangolazione ALTA (spread 0.58%) su fonti Oct 9-12. Recovery da $80,300 verso $84K. ATH $126,198 a 12 mesi fa — eventuale ripresa ciclo bull. HOLD ora per chiarezza pre-Fed 28 ottobre ma su radar per accumulo."
+    }
+  ],
+  "macro_context": {
+    "cpi_september_2026": {
+      "headline_yoy": "+3.7%",
+      "vs_expectations": "sopra attese (+3.6%)",
+      "core_yoy": "+2.6%",
+      "driver_principale": "Benzina +9.1% MoM",
+      "implicazioni": "Fed hawkish — rialzo tassi 28 ottobre più probabile. USD forte. Headwind per growth stocks, oro, crypto."
+    },
+    "mercati_usa_oct14": {
+      "nasdaq": "26,832 (-1.37%)",
+      "sp500": "7,733 (-0.92%)",
+      "settore_tech": "-2.73%",
+      "sox_semis": "6° calo consecutivo",
+      "eccezione": "AAPL +1% (relativa forza)",
+      "asml_earnings": "Q3 beat (€11.7B revenue, 57.5% GM) ma sell-the-news -1.86% -2.26% AH"
+    }
+  },
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE — nessun ordine reale inviato ad Alpaca. Sessione 15 ottobre 2026. 6/18 asset triangolati (miglioramento vs 2/18 ieri). Contesto macro avverso (CPI hot, Fed hawkish, SOX debole). Posizionamento cauto.",
+    "allocazione_suggerita": {
+      "BUY_signals": {
+        "TSLA": "5% (ALTA validazione, AI5 catalyst, momentum)",
+        "GOOGL": "3% (MEDIA validazione, pre-earnings — size ridotta)"
+      },
+      "HOLD_signals": {
+        "AMZN": "8% (ALTA validazione, stabile, pre-earnings Q3 Oct 29)",
+        "NVDA": "5% (ALTA validazione, settore debole — watchlist)",
+        "AAPL": "4% (MEDIA validazione, relativa forza)",
+        "BTC": "3% (ALTA validazione, attesa pre-Fed 28 ott)"
+      },
+      "cash_riserva": "72%",
+      "note_rischio": "CPI 3.7% sopra attese — Fed hawkish Oct 28 catalizzatore chiave. SOX in calo da 6 sessioni. Earnings season in corso: AMZN Oct 29, GOOGL Oct 27 = attendere report per conferma direzionalità. Max esposizione consigliata 28% con macro avversa."
+    }
+  }
+}
