@@ -1,0 +1,460 @@
+{
+  "timestamp": "2026-10-16T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione tech ribassista: CPI settembre +3.7% YoY (sopra attese) spinge i rendimenti biennali ai massimi da settembre 29. I semiconduttori segnano il 6° calo consecutivo (worst streak da maggio 2025). Tech +35% YTD ma unico settore negativo in ottobre. Settimana densa di earnings: NFLX il 20/10, META il 21/10, SAP il 22/10, MSFT il 27/10, AMZN il 29/10. Crypto in leggero recupero: BTC +1.7% a $82.5k, ETH +4.66%. Oro in trend rialzista come hedge inflazione.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 341.87,
+      "change_24h": "+0.30%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple stock vicino al 52-week high ($348.15); headline Benzinga: 'Apple Stock Hits Record High as iPhone Duo Pre-Orders Sell Out in Minutes'. Market cap supera $5T per la prima volta.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 341.87,
+      "stop_loss": 331.61,
+      "target": 358.96,
+      "commissione": 0.00,
+      "reasoning": "Pre-ordini iPhone Duo sold out (fonte Benzinga Oct 16) + features AI + avvicinamento ATH $348.15 indicano forte domanda consumer. Prossimi earnings il 2/11/2026 - finestra operativa favorevole.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 341.85},
+          {"name": "Kraken", "price": 341.88}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 359.22,
+      "change_24h": "-1.29%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "TSLA in calo da $498 ATH. Nessun catalyst specifico in ottobre 2026. Hot CPI e sell-off tech pesano sul titolo growth ad alto beta.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 359.22,
+      "stop_loss": 348.44,
+      "target": 377.18,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista da ATH $498.83, -28% dal picco. Macro sfavorevole (rate hike risk) e assenza catalyst near-term. Dati MEDIA confidence - seconda fonte non pienamente confermata per ottobre.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 362.44},
+          {"name": "Yahoo Finance (approx Oct 16)", "price": 356.00}
+        ],
+        "spread_pct": 1.78,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 216.96,
+      "change_24h": "-1.05%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (+15% rispetto media, pressione di vendita settore semi)",
+      "news": "Semiconduttori in 6° calo consecutivo (peggior streak da maggio 2025). Motley Fool Oct 16: 'Better AI Stock: SpaceX vs. Nvidia?' - segnala competizione. NVDA earnings attesi il 17/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 216.96,
+      "stop_loss": 210.45,
+      "target": 227.81,
+      "commissione": 0.00,
+      "reasoning": "Settore semi sotto pressione (fonte news Oct 14: 6-day decline worst since May 2025) + CPI hot aumenta probabilità rate hike. Supporto a $164 (52wk low); resistenza a $243 (52wk high). Attendere stabilizzazione settore.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool", "price": 215.68},
+          {"name": "Seeking Alpha", "price": 218.24}
+        ],
+        "spread_pct": 1.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 541.45,
+      "change_24h": "+1.08%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "MSFT vicino al 52-week high ($549.20), earnings il 27/10/2026. Analisti bullish: target medio $530-600+. Crescita Azure AI continua.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 541.45,
+      "stop_loss": 525.21,
+      "target": 568.52,
+      "commissione": 0.00,
+      "reasoning": "Posizionamento pre-earnings (27/10) richiede cautela: il titolo è al 98% del 52wk high. Hold per conferma post-risultati Q1 FY2027. Fonte: StockAnalysis close Oct 15.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade (Oct 13 close)", "price": 543.45},
+          {"name": "StockAnalysis (Oct 15 close)", "price": 539.44}
+        ],
+        "spread_pct": 0.74,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 254.42,
+      "change_24h": "+1.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Amazon +1.9% il 6/10 su ottimismo AI/cloud. Earnings il 29/10. Morningstar mostra upside vs 52wk high $287.20. AWS mantiene leadership nel cloud AI.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 254.42,
+      "stop_loss": 246.79,
+      "target": 267.14,
+      "commissione": 0.00,
+      "reasoning": "Momentum pre-earnings con cloud AI in espansione. Distanza dal 52wk high $287.20 (+12.9%) offre upside. Supporto forte a $196 (52wk low). Fonte: Morningstar Oct 15 + HeyGoTrade Oct 14.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade (Oct 14 close)", "price": 254.08},
+          {"name": "Morningstar (Oct 15)", "price": 254.76}
+        ],
+        "spread_pct": 0.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 343.27,
+      "change_24h": "-2.00%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "GOOGL in calo del 2% il 16/10. 52wk high $408.60, attuale $343. Nessun catalyst immediato; pressure da hot CPI e rate hike risk.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 343.27,
+      "stop_loss": 332.97,
+      "target": 360.43,
+      "commissione": 0.00,
+      "reasoning": "Trend laterale con bias ribassista intraday (-2%). Senza catalyst near-term e con pressione macro da rate hike, preferibile attendere. Fonti: Finviz Oct 16 + Yahoo Finance ~Oct 10.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Finviz (Oct 16, 13:46 ET)", "price": 342.10},
+          {"name": "Yahoo Finance (~Oct 10)", "price": 344.44}
+        ],
+        "spread_pct": 0.68,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 739.76,
+      "change_24h": "-0.11%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "META Q3 earnings attesi il 21/10. Citi alza target a $895 (da $800), rating Buy. Intraday range Oct 15: $715.58-$743.97. 52wk range $520-$779.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 739.76,
+      "stop_loss": 717.57,
+      "target": 776.75,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings hold (21/10): evento ad alta volatilità. Upside catalyst se AI monetization supera attese; rischio downside in caso di guidance debole. Citi target $895 suggerisce potenziale rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 15 close)", "price": 736.72},
+          {"name": "Robinhood (Oct 15 intraday high area)", "price": 742.80}
+        ],
+        "spread_pct": 0.82,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 70.89,
+      "change_24h": "-2.33%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (pre-earnings pressure)",
+      "news": "NFLX Q3 earnings il 20/10 (domani). YTD -24.85%. 52wk range $65.08-$124.86. Target medio analisti: $91.95. Importante catalyst per inversione trend.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 70.89,
+      "stop_loss": 68.76,
+      "target": 74.43,
+      "commissione": 0.00,
+      "reasoning": "Con earnings il 20/10 (domani), troppo rischioso entrare pre-risultati. YTD -24.85% riflette pressione competitiva. Attendere reazione post-earnings. Fonti: Google Finance + Yahoo Finance Oct 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (Oct 16, 11:41 AM GMT-4)", "price": 70.86},
+          {"name": "Yahoo Finance (Oct 16, 10:37 AM EDT)", "price": 70.92}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 225.22,
+      "change_24h": "+2.24%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SAP Q3 2026 earnings il 21/10 o 22/10. Titolo +2.24% il 15/10. Range 52wk: $144.97-$281.37. Target analisti: $261.17. Recovery da disruption fears AI su ERP in corso.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 225.22,
+      "stop_loss": 218.46,
+      "target": 236.48,
+      "commissione": 0.00,
+      "reasoning": "Momentum rialzista pre-earnings (+2.24% Oct 15). SAP integra AI in S/4HANA Cloud con crescita ricavi solida. Distanza da ATH ($281.37) offre upside. Fonti: Seeking Alpha + StockAnalysis Oct 15.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha (Oct 15 close)", "price": 225.00},
+          {"name": "StockAnalysis (Oct 15, 14:59 EDT)", "price": 225.43}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 397.34,
+      "change_24h": "+2.81%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Ferrari in forte rialzo: +2.81% il 15/10, close $398.24. 52wk range $312.51-$437.15. Buyback €3.5B in corso. Earnings stimati 3/11/2026. UBS target $497.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 397.34,
+      "stop_loss": 385.42,
+      "target": 417.21,
+      "commissione": 0.00,
+      "reasoning": "Forte momentum (+2.81% Oct 15). Programma buyback €3.5B supporta il titolo. Q2 2026 EPS €2.62 vs stima €2.51 (beat). Brand premium resiliente. Fonte: Yahoo Finance Oct 15 + Robinhood Oct 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 15 close)", "price": 398.24},
+          {"name": "Robinhood (Oct 16 intraday)", "price": 396.43}
+        ],
+        "spread_pct": 0.46,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 382.33,
+      "change_24h": "+1.79%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (domanda ETF oro in aumento)",
+      "news": "CPI settembre 3.7% YoY (sopra attese): forte catalyst per oro come hedge inflazione. GLD vicino a $382, +1.79% il 15/10. 52wk range $291.78-$509.70. Oro equivalente ~$4,110/oz.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 382.33,
+      "stop_loss": 374.68,
+      "target": 397.62,
+      "commissione": 0.00,
+      "reasoning": "CPI 3.7% YoY (fonte: investrade.com Oct 14) rinforza domanda oro come hedge. Trend rialzista confermato da luglio ($371) a ottobre ($382). Fonti: StockAnalysis + Dividend Vision, entrambi Oct 15.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Oct 15 close)", "price": 382.71},
+          {"name": "Pre-market Oct 16 (various)", "price": 381.94}
+        ],
+        "spread_pct": 0.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 51.07,
+      "change_24h": "+3.38%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Argento in recupero da pressione agosto (-4% il 31/08 su rate hike scare). SLV ~$51/share. 52wk range ~$26-$110. Incertezza macro da hot CPI.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 51.07,
+      "stop_loss": 50.05,
+      "target": 53.11,
+      "commissione": 0.00,
+      "reasoning": "Dati MEDIA confidence (spread 3.3% tra fonti Oct 14/15). Silver volatile con CPI caldo: hot CPI può essere bullish (inflation hedge) ma anche bearish (rate hike → stronger dollar). Attendere consolidamento.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Dividend Vision (Oct 15)", "price": 51.92},
+          {"name": "CNBC premarket Oct 14 (prior close)", "price": 50.22}
+        ],
+        "spread_pct": 3.30,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 156.34,
+      "change_24h": "+1.02%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "USO vicino al 52-week high ($163.35). GuruFocus Oct 16: $157.62 su oil inventory data favorevoli. CPI caldo e forti inventari greggio supportano prezzi petrolio.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 156.34,
+      "stop_loss": 153.21,
+      "target": 162.59,
+      "commissione": 0.00,
+      "reasoning": "USO al 95.7% del 52wk high ($163.35) - momentum rialzista ma vicino a resistenza chiave. Dati MEDIA confidence (spread 1.64%). Hot CPI → possibile domanda sostenuta ma rate hike rischia demand destruction.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Oct 15)", "price": 155.06},
+          {"name": "GuruFocus (Oct 16)", "price": 157.62}
+        ],
+        "spread_pct": 1.64,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 82497.00,
+      "change_24h": "+1.70%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Fortune Oct 16 7:45 AM ET: BTC $82,644. In calo da ATH $126,200 (7 oct 2025). Up 1.7% oggi ma pressione macro da CPI 3.7%. Bitcoin ~$25,613 sotto il prezzo di un anno fa.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 82497.00,
+      "stop_loss": 78372.00,
+      "target": 89097.00,
+      "commissione": 0.00,
+      "reasoning": "BTC in lateral range, -34.7% dall'ATH. CPI hot aumenta probabilità rate hike → pressione su asset rischiosi. Recovery modesta (+1.7%) insufficiente per segnale BUY. Fonti: Fortune + OKX entrambi Oct 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Oct 16, 07:45 AM ET)", "price": 82644.65},
+          {"name": "OKX (Oct 16)", "price": 82350.00}
+        ],
+        "spread_pct": 0.36,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2442.71,
+      "change_24h": "+4.66%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (ETF inflows $24.8M il 13/10 tornati positivi)",
+      "news": "ETH +4.66% il 16/10 (MetaMask). US spot ETH ETF tornati positivi con $24.8M net inflows il 13/10. CoinDesk: $2,431.58 alle 12:58 PM EDT Oct 16. Momentum positivo post-inflows.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 2442.71,
+      "stop_loss": 2320.57,
+      "target": 2637.33,
+      "commissione": 0.00,
+      "reasoning": "ETF inflows tornati positivi ($24.8M Oct 13 - fonte openpr.com) dopo settimane di outflows: segnale di accumulo istituzionale. ETH +4.66% oggi con volume anomalo. Target conservativo entro resistenza $2,637.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (Oct 16, 12:58 PM EDT)", "price": 2431.58},
+          {"name": "MetaMask (Oct 16)", "price": 2453.83}
+        ],
+        "spread_pct": 0.91,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 106.56,
+      "change_24h": "-10.95%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (ETF outflows recenti)",
+      "news": "SOL pullback da $119.48 (1 ottobre) a $106.11 oggi (-10.95%). Alpenglow update programmato il 21/10 (potenziale catalyst). Spot SOL ETF outflows recenti pesano sul prezzo.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 106.56,
+      "stop_loss": 101.23,
+      "target": 115.08,
+      "commissione": 0.00,
+      "reasoning": "Pullback significativo (-10.95% da $119 il 1/10) con ETF outflows. Alpenglow activation il 21/10 potrebbe essere catalyst rialzista ma incerto. Attesa evento prima di entrare. Fonti: MetaMask + LiteFinance Oct 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask (Oct 16)", "price": 106.11},
+          {"name": "LiteFinance (Oct 16)", "price": 107.00}
+        ],
+        "spread_pct": 0.84,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AMD",
+      "motivo": "spread fonti >4%: Google Finance Oct 16 14:00 $534.18 vs Robinhood Oct 15 close $562.45 = spread 5.15% (volatilità intraday -4.99% non permette triangolazione affidabile)"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "spread fonti 8.3%: Motley Fool Oct 15 post-earnings $1,657.44 vs Pluang stale $1,799.96. Q3 earnings drop -4% il 15/10 rende non confrontabili le fonti pre/post evento"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "dati non aggiornati a ottobre 2026: ultimo dato confermato agosto 2026 (~$5.38-5.42). Nessuna fonte ottobre verificata disponibile"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AAPL",
+      "motivo": "iPhone Duo sold out (Benzinga Oct 16) + market cap $5T milestone + ALTA confidence. Setup tecnico vicino ATH con domanda consumer confermata"
+    },
+    {
+      "rank": 2,
+      "asset": "ETH",
+      "motivo": "ETF inflows tornati positivi $24.8M (13/10) + +4.66% oggi + ALTA confidence. Segnale di accumulo istituzionale dopo settimane di pressione"
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "motivo": "CPI 3.7% YoY (hot) = forte catalyst inflation hedge + ALTA confidence + trend rialzista da luglio. Contesto macro supporta oro"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "AAPL_BUY": "15%",
+      "AMZN_BUY": "12%",
+      "SAP_BUY": "10%",
+      "RACE_BUY": "10%",
+      "GLD_BUY": "20%",
+      "ETH_BUY": "15%",
+      "HOLD_cash_buffer": "18%"
+    },
+    "segnali_attivi": 6,
+    "segnali_hold": 10,
+    "asset_esclusi": 3
+  }
+}
