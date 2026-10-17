@@ -1,0 +1,311 @@
+{
+  "timestamp": "2026-10-17T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati sotto pressione da CPI di settembre caldo (3.7% headline, 2.6% core), pubblicato il 14 ottobre. Probabilità rialzo Fed al 64% per il 28 ottobre. I semiconductor (SOX/SMH) sono al 6° ribasso consecutivo — la peggior serie da maggio 2025. Il Nasdaq 2026 YTD rimane positivo (+17% circa). Settimana densa di earnings: SAP e AMZN attesi il 21-22 ottobre, MSFT e GOOGL il 27-28 ottobre. BTC stabilizzato in area $84-86K con forti inflows ETF spot. Oro sotto pressione da aspettative hawkish.",
+  "signals": [
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.38,
+      "change_24h": "n/a",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "AMZN +1.9% il 6 ottobre in giornata di record del mercato USA; Q3 2026 earnings attesi il 22 ottobre (MarketScreener). Prezzo stabile nel range $258-$260 nelle ultime settimane.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 259.38,
+      "stop_loss": 251.60,
+      "target": 272.35,
+      "commissione": 0.00,
+      "reasoning": "AMZN mostra stabilità ($258-$260) con momentum positivo il 6 ottobre (+1.9%, Trading Economics). Earnings Q3 il 22 ottobre come catalizzatore a breve termine su un titolo con trend strutturale solido (cloud + AI).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 5, 2026)", "price": 258.48},
+          {"name": "StockAnalysis (Aug 26, 2026)", "price": 260.28}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 492.25,
+      "change_24h": "n/a",
+      "trend_5d": "lievemente ribassista",
+      "volume_note": "normale",
+      "news": "MSFT +0.8% il 6 ottobre; Yahoo Finance riporta Wall Street bullish prima degli earnings FQ1 2026 (attesi 27 ottobre). InvestSmart registra $501.26 il 2 settembre; Investing.com mostra $483.24 con earnings Oct 27 indicato.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 492.25,
+      "stop_loss": 477.48,
+      "target": 516.86,
+      "commissione": 0.00,
+      "reasoning": "Correzione da $501 (2 sett) a $483 (ottobre) su Investing.com crea entry interessante pre-earnings del 27 ottobre. Analisti bullish (Yahoo Finance) e posizionamento strategico AI cloud supportano outlook positivo nonostante macro hawkish.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 2, 2026)", "price": 501.26},
+          {"name": "Investing.com (~Oct 2026)", "price": 483.24}
+        ],
+        "spread_pct": 3.66,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 231.47,
+      "change_24h": "n/a",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (sell-off semis)",
+      "news": "I semiconductor (SOX/SMH) sono al 6° ribasso consecutivo dopo CPI caldo del 14 ottobre — la peggior serie da maggio 2025 (Tapeboard). NVDA aveva toccato un nuovo record intraday a $237 in ottobre (Finbold). Coinglass registra 30 settembre: range $227-$232.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 231.47,
+      "stop_loss": 224.53,
+      "target": 243.04,
+      "commissione": 0.00,
+      "reasoning": "NVDA vicino ai massimi storici ($237) ma sell-off settore semiconductor al 6° giorno consecutivo. CPI 3.7% e probabilità rialzo tassi al 64% comprimono i multipli del settore growth. Attendere stabilizzazione macro prima di nuovo ingresso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass (Sep 30, 2026, midpoint range)", "price": 229.93},
+          {"name": "Finbold (~Oct 2026, press-time)", "price": 233.00}
+        ],
+        "spread_pct": 1.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 347.55,
+      "change_24h": "n/a",
+      "trend_5d": "lievemente rialzista",
+      "volume_note": "normale",
+      "news": "GOOGL +0.3% il 6 ottobre; accordo per acquisizione di energia nucleare da Constellation Energy (BNN Bloomberg). Earnings attesi Oct 27-28. 52-week high $408.60; Techi.com riporta $351 il 18 settembre.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 347.55,
+      "stop_loss": 337.12,
+      "target": 364.93,
+      "commissione": 0.00,
+      "reasoning": "GOOGL mostra lieve rialzo (da $344 ad agosto a $351 in settembre). Deal energia nucleare positivo per AI data center. Tuttavia, incertezza pre-earnings (27-28 ott) e macro hawkish suggeriscono cautela. HOLD in attesa di chiarezza su guidance AI.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Aug 18, 2026)", "price": 344.09},
+          {"name": "Techi.com (Sep 18, 2026)", "price": 351.00}
+        ],
+        "spread_pct": 1.99,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 375.03,
+      "change_24h": "n/a",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Nessuna news rilevante di ottobre 2026 trovata per Tesla. Precedenti report indicano consegne deboli (-16% YoY) in trimestri precedenti. InvestSmart (23 sett): $380.12; CoinGecko: $369.93.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 375.03,
+      "stop_loss": 363.78,
+      "target": 393.78,
+      "commissione": 0.00,
+      "reasoning": "Dati di prezzo MEDIA affidabilità (spread 2.72%, fonti di date diverse). Nessun catalizzatore di ottobre identificato; contesto macro hawkish sfavorevole per titoli growth ad alto multiplo. Attendere notizie su consegne Q3 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 23, 2026)", "price": 380.12},
+          {"name": "CoinGecko (undated, ~recente)", "price": 369.93}
+        ],
+        "spread_pct": 2.72,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 213.11,
+      "change_24h": "n/a",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SAP in forte uptrend nel 2026 (da ~$150 a $215+, circa +43% da inizio anno). Q3 2026 earnings attesi il 21-22 ottobre (MarketScreener). Equibles: $215.60 il 19 agosto; InvestSmart: $210.62 il 24 settembre.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 213.11,
+      "stop_loss": 206.72,
+      "target": 223.77,
+      "commissione": 0.00,
+      "reasoning": "SAP ha outperformato notevolmente nel 2026 grazie alla transizione cloud e AI ERP. Earnings Q3 imminenti (21-22 ott) come catalizzatore. Il trend rialzista multi-mese e la posizione di leader europeo del software supportano BUY pre-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Equibles (Aug 19, 2026)", "price": 215.60},
+          {"name": "InvestSmart (Sep 24, 2026)", "price": 210.62}
+        ],
+        "spread_pct": 2.34,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 388.18,
+      "change_24h": "n/a",
+      "trend_5d": "lievemente ribassista",
+      "volume_note": "normale",
+      "news": "Nessuna news specifica di ottobre 2026 trovata per Ferrari. StockAnalysis e MarketBeat concordano su $388.03-$388.33 il 2 ottobre. Earnings stimati per il 27 ottobre. 52-week range: $312.51-$504.49.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 388.18,
+      "stop_loss": 376.53,
+      "target": 407.59,
+      "commissione": 0.00,
+      "reasoning": "RACE mostra lieve correzione da $400.77 (29 sett) a $388.18 (2 ott). Prezzo a metà range annuale ($312-$504). Earnings del 27 ottobre come prossimo catalizzatore. HOLD in attesa di notizie su guidance 2026 e volumi luxury.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Oct 2, 2026)", "price": 388.33},
+          {"name": "MarketBeat (Oct 2, 2026)", "price": 388.03}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 378.66,
+      "change_24h": "n/a",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Gold e silver ETF crollati il 31 agosto (GLD -3.59%) su rialzo tassi Fed e CPI elevato (BusinessToday). CPI ottobre caldo (3.7%) il 14 ottobre rafforza pressione bearish sull'oro. 52-week high GLD: $509.70; attuale $378.66 = -25.7% dal massimo.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 378.66,
+      "stop_loss": 371.09,
+      "target": 393.81,
+      "commissione": 0.00,
+      "reasoning": "CPI ottobre 3.7% (14 ott) e probabilità rialzo Fed al 64% per il 28 ottobre pesano sull'oro (BusinessToday, 31 ago). GLD già -25% dai massimi annuali ma offre supporto da domanda di safe haven e incertezza geopolitica. Neutralità tattica.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / NYSE Arca (Oct 9, 2026)", "price": 384.58},
+          {"name": "Kraken (undated, ~recente)", "price": 372.74}
+        ],
+        "spread_pct": 3.13,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 84769.00,
+      "change_24h": "n/a",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (ETF inflows $2.4B settimana Sep 28)",
+      "news": "Spot Bitcoin ETF hanno raccolto $2.4 miliardi nell'ultima settimana di settembre — il miglior risultato da ottobre 2025 (247wallst, 1 ott). CoinGecko registra close del 5 ottobre a $85,771. Probabilità rialzo Fed al 64% per Oct 28 bearish per risk assets. BTC ~33% sotto ATH di ottobre 2025 ($126,198).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 84769.00,
+      "stop_loss": 80530.55,
+      "target": 91550.52,
+      "commissione": 0.00,
+      "reasoning": "Forti inflows ETF spot ($2.4B, 247wallst) supportano domanda strutturale. Tuttavia rialzo tassi Fed al 64% (oct 28) e CPI caldo creano headwind a breve termine. BTC consolida a $83-85K dopo il sell-off dal record. HOLD: risk/reward neutro in attesa del FOMC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko history (Oct 5, 2026)", "price": 85771.00},
+          {"name": "Changelly table (~Oct 17, 2026)", "price": 83767.00}
+        ],
+        "spread_pct": 2.36,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Spread tra fonti 9.24% > soglia 4% (InvestSmart Sep 23: $339.71 vs Equibles undated: $309.72). Fonti di date molto distanti."
+    },
+    {
+      "asset": "META",
+      "motivo": "Spread tra fonti 10.47% > soglia 4% (InvestSmart undated: $653.69 vs Admiral Markets Oct 1: $725.93). Delta di $72 in periodo di alta volatilità."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Spread tra fonti 15.75% > soglia 4% (InvestSmart Oct 10: $70.30 vs Google Finance undated: $82.32). Incoerenza data anche da stock split di novembre 2025."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Fonti in massimo conflitto: prezzi tra $212.45 (agosto) e $468.28 (undated CoinGecko). Impossibile validare. Esclusione obbligatoria."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Una sola fonte USD per il periodo di ottobre (InvestSmart Oct 9: $1,770.29). La fonte Yahoo Amsterdam è in EUR (€1,509.60 Oct 13) e non confrontabile senza tasso di cambio verificato. Fonti insufficienti per prezzi USD."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Fonti in massimo conflitto: Simply Wall St mostra valori tra €6.06 e €9.32 (tutti undated). Capital.com (Jul 6): €5.03. Ticker STLAM (Milano) vs STLA (NYSE) aggiunge confusione. Dati insufficienti."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread tra fonti 7.33% > soglia 4% (Yahoo Sep 11: $58.12 vs Kraken undated: $54.01). Fonti di date molto distanti e dati incoerenti."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Dati troppo divergenti tra fonti e periodi: Robinhood Sep 4 $141.67, Kraken undated $108.29, eToro snapshots $81-$157. Nessuna coppia di fonti ravvicinate concordanti per ottobre."
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Spread tra fonti 27.1% > soglia 4% (247wallst Oct 1: $2,706 vs CoinGecko undated: $2,059.93). Massima incoerenza tra fonti."
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread tra fonti 14.36% > soglia 4% (247wallst Oct 1: $118 vs CoinGecko undated: $136.26). Altre fonti ancora più divergenti ($75-$244 in vari snapshot)."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMZN",
+      "motivo": "Affidabilità ALTA (spread 0.69%), segnale BUY pre-earnings Q3 (22 ottobre). Prezzo stabile nel range $258-$260 con momentum positivo (+1.9% il 6 ott)."
+    },
+    {
+      "rank": 2,
+      "asset": "SAP",
+      "motivo": "Strong uptrend 2026 (+43% YTD circa), earnings Q3 imminenti il 21-22 ottobre. Leader europeo del software ERP/cloud con forte posizionamento AI."
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Analisti bullish pre-earnings Q1 (27 ott), correzione da $501 a $483 offre entry più favorevole. Titolo quality growth con AI copilot integrato."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale su Alpaca",
+    "contesto_macro": "CPI ottobre 3.7% (14 ott), probabilità rialzo Fed 64% per il 28 ottobre. Settimana earning-heavy: SAP Oct 21-22, AMZN Oct 22, MSFT Oct 27, GOOGL Oct 27-28, RACE Oct 27.",
+    "allocazione_suggerita": {
+      "AMZN": "25% - BUY ALTA affidabilità, catalyst earnings",
+      "SAP": "20% - BUY MEDIA affidabilità, pre-earnings momentum",
+      "MSFT": "20% - BUY MEDIA affidabilità, pre-earnings quality",
+      "NVDA": "15% - HOLD, attendere stabilizzazione semiconductor",
+      "GLD": "10% - HOLD, copertura macro",
+      "BTC": "10% - HOLD, ETF inflow support vs rate risk"
+    },
+    "asset_esclusi_da_portafoglio": ["AAPL", "META", "NFLX", "AMD", "ASML", "STLAM", "SLV", "USO", "ETH", "SOL"]
+  }
+}
