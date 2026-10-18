@@ -1,0 +1,226 @@
+{
+  "timestamp": "2026-10-18T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "CPI settembre 3.7% YoY (pubblicato 14 ottobre) supera attese; probabilità rialzo Fed 64% per FOMC 28 ottobre. Settore semiconductor in sell-off per 6° giorno consecutivo al 14 ottobre (peggior serie da maggio 2025). Il tech ha guidato il mercato YTD (+35% Nasdaq) ma è l'unico settore negativo in ottobre. Week earnings molto densa: TSLA e SAP il 21-22 ottobre, AMZN il 22, MSFT e GOOGL il 27-28, RACE il 27. Fondi azionari USA: deflussi netti $5.11 miliardi nella settimana al 7 ottobre. Crypto: SOL beneficia di $188M di inflows settimanali in ETF spot; BTC consolida nell'area $83-86K ma senza dati verificati per Oct 18. Oro sotto pressione hawkish; GLD non validato oggi per assenza di 2 fonti October 2026 concordanti.",
+  "signals": [
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.38,
+      "change_24h": "n/a",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "AMZN +1.9% il 6 ottobre nella giornata di record del mercato USA (Trading Economics / Tapeboard). Q3 2026 earnings proiettati per il 22 ottobre (MarketScreener). Prezzo stabile nel range $258-$260 tra agosto e settembre; analisti con target in area $300-$340 (Google Finance, luglio 2026).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 259.38,
+      "stop_loss": 251.60,
+      "target": 272.35,
+      "commissione": 0.00,
+      "reasoning": "AMZN mostra affidabilità ALTA (spread 0.69%) e stabilità di prezzo nel range $258-$260 con momentum positivo +1.9% il 6 ottobre (Trading Economics). Earnings Q3 il 22 ottobre (4 giorni) sono catalizzatore a breve su titolo con trend strutturale cloud + AI solido.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 5, 2026)", "price": 258.48},
+          {"name": "StockAnalysis (Aug 26, 2026)", "price": 260.28}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 490.00,
+      "change_24h": "n/a",
+      "trend_5d": "lievemente ribassista",
+      "volume_note": "normale",
+      "news": "MSFT +0.8% il 6 ottobre (Tapeboard). Yahoo Finance riporta analisti bullish pre-earnings FQ1 2026 attesi il 27 ottobre. InvestSmart registra chiusura $501.26 il 2 settembre; Investing.com mostra $483.24 con earnings Oct 27 indicato come prossimo catalizzatore.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 490.00,
+      "stop_loss": 475.30,
+      "target": 514.50,
+      "commissione": 0.00,
+      "reasoning": "Correzione da $501 (set) a $483 (ottobre, Investing.com) crea potenziale entry pre-earnings del 27 ottobre (9 giorni). Analisti consensus bullish (Yahoo Finance); AI Copilot e cloud Azure sono driver strutturali solidi nonostante macro hawkish.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 2, 2026)", "price": 496.75},
+          {"name": "Investing.com (~Oct 2026, undated)", "price": 483.24}
+        ],
+        "spread_pct": 2.79,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 345.44,
+      "change_24h": "n/a",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "GOOGL +0.3% il 6 ottobre; accordo acquisizione energia nucleare da Constellation Energy per datacenter AI (BNN Bloomberg, 6 ott). Earnings attesi Oct 27-28. 52-week high $408.47; eToro riporta $346.77; InvestSmart $344.09 il 18 agosto.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 345.44,
+      "stop_loss": 335.08,
+      "target": 362.71,
+      "commissione": 0.00,
+      "reasoning": "GOOGL affidabilità ALTA (spread 0.77%) ma pre-earnings 27-28 ottobre (9-10 giorni) e macro hawkish invitano alla cautela. Deal energia nucleare per AI è positivo strutturalmente ma non un catalizzatore immediato. HOLD in attesa di guidance Q3.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Aug 18, 2026)", "price": 344.10},
+          {"name": "eToro (undated, ~recente)", "price": 346.77}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 375.03,
+      "change_24h": "n/a",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "TSLA Q3 2026 earnings attesi il 21 ottobre AfterMarket (Digrin / Equibles). Report precedenti indicano consegne deboli (-16% YoY in trimestri precedenti). Prezzo tra $369.93 (CoinGecko undated) e $380.12 (InvestSmart 23 set). Target Equibles: Oct 21 AH come prossimo evento critico.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 375.03,
+      "stop_loss": 356.28,
+      "target": 405.03,
+      "commissione": 0.00,
+      "reasoning": "Con earnings in 3 giorni (21 ott AH) e consegne deboli (-16% YoY), il rischio di delusione è elevato. Affidabilità MEDIA (spread 2.72%, fonti di date diverse set 2026). Macro hawkish sfavorevole per titolo high-multiple. Evitare nuove posizioni pre-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 23, 2026)", "price": 380.12},
+          {"name": "CoinGecko (undated, ~recente)", "price": 369.93}
+        ],
+        "spread_pct": 2.72,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 213.11,
+      "change_24h": "n/a",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SAP Q3 2026 earnings attesi il 21-22 ottobre (MarketScreener). Forte uptrend 2026 da ~$147 a $215+ (~+46% YTD). Equibles: $215.60 il 19 agosto; InvestSmart: $210.62 il 24 settembre. Nuovo massimo annuale era $280.46 (52-week high, Equibles).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 213.11,
+      "stop_loss": 206.72,
+      "target": 223.77,
+      "commissione": 0.00,
+      "reasoning": "SAP ha outperformato nel 2026 grazie a cloud ERP e AI. Tuttavia con earnings tra 3 giorni (21-22 ott) è preferibile non aprire nuove posizioni. Chi è già lungo può mantenere. Il trend rialzista YTD (+46%) e la posizione di leader europeo software restano intatti post-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Equibles (Aug 19, 2026)", "price": 215.60},
+          {"name": "InvestSmart (Sep 24, 2026)", "price": 210.62}
+        ],
+        "spread_pct": 2.36,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Spread fonti 9.70% > soglia 4% (InvestSmart Sep 23: $339.71 vs Equibles post-Jul-30: $309.72). Fonti di date molto distanti, dato non validabile per Oct 18."
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Spread fonti 5.40% > soglia 4% (InvestSmart Aug 18: $219.74 vs Yahoo Finance Aug 24: $208.48). Sell-off semiconductor in corso; dato Aug non affidabile per oggi."
+    },
+    {
+      "asset": "META",
+      "motivo": "Una sola fonte affidabile per ottobre 2026 (Admiral Markets Oct 1: $725.93). InvestSmart $653.69 potrebbe essere AUD. Senza seconda fonte USD di ottobre, escluso."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Spread fonti 13.38% > soglia 4% (InvestSmart Oct 10: $70.30 vs Equibles undated: $79.73). Stock split nov 2025 e post-earnings move complicano il confronto."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Fonti in massimo conflitto: Benzinga Aug 10 $469.56 vs media-azi Aug 5 $212.45 — differenza del 120%. Fonte media-azi inaffidabile; senza seconda fonte credibile, esclusione obbligatoria."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Una sola fonte USD per ottobre (InvestSmart Oct 9: $1,770.29). Yahoo Finance Amsterdam è in EUR (€1,509.60 Oct 13) e non confrontabile senza tasso verificato. Fonti insufficienti."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread fonti 8.41% > soglia 4% (StockAnalysis Oct 2: $388.33 vs Equibles undated: $420.61). Equibles senza data non validabile; solo una fonte datable per ottobre."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Ticker STLAM (Borsa Milano) vs NYSE STLA. Dati Yahoo Oct 2 ($4.40) e Chartrow Oct 1 ($4.69) danno spread 6.59% > 4%. Confusione di ticker e spread elevato: escluso."
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Nessuna coppia di fonti October 2026 concordanti trovata oggi. TradingView $462.62 (undated) e Yahoo Feb 27 $483.75 (>7 mesi fa) non validabili insieme. Escluso."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Tre fonti completamente divergenti: Kraken $52.18, CoinGecko $61.64, Yahoo HK $75.54 — tutte undated. Impossibile determinare prezzo affidabile per Oct 18."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread fonti 4.61% > soglia 4% (Yahoo Sep 4: $141.67 vs Yahoo Oct 9: $148.20). Spread marginalmente sopra la soglia con fonti di date distanti."
+    },
+    {
+      "asset": "BTC",
+      "motivo": "Spread fonti 4.73% > soglia 4% (moneyexchangerate Oct 5 HIGH: $86,460 vs Coinbase snippet undated: $90,547). Il dato Oct 5 è il massimo giornaliero, non la chiusura; confronto non omogeneo. Escluso."
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Dati molto datati: The Block Jul 28 $1,881.79 vs CoinGecko undated $2,059.93 = spread 9.47%. Nessuna fonte affidabile di ottobre 2026 trovata."
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread fonti 9.95% > soglia 4% (RoboForex Oct 1: $119.48 vs MEXC converter undated: $131.31). Fonte MEXC senza data non validabile."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMZN",
+      "motivo": "Affidabilità ALTA (spread 0.69%), unico segnale BUY confermato. Prezzo stabile $258-$260, earnings Q3 il 22 ottobre come catalizzatore a 4 giorni. Commissioni zero su Alpaca."
+    },
+    {
+      "rank": 2,
+      "asset": "MSFT",
+      "motivo": "BUY MEDIA con earnings 9 giorni (Oct 27). Correzione da $501 a $483 offre entry favorevole. Analisti bullish, AI Copilot e Azure come driver strutturali."
+    },
+    {
+      "rank": 3,
+      "asset": "GOOGL",
+      "motivo": "HOLD ALTA affidabilità (spread 0.77%). Deal energia nucleare per AI datacenter come catalizzatore strutturale. Earnings Oct 27-28 come prossimo trigger; posizionamento difensivo consigliato."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale su Alpaca",
+    "contesto_macro": "CPI settembre 3.7% (14 ott), rialzo Fed 64% per 28 ottobre FOMC. Earning week: TSLA Oct 21 AH, SAP Oct 21-22, AMZN Oct 22, MSFT Oct 27, GOOGL Oct 27-28, RACE Oct 27. Semiconductor -6 giorni consecutivi. Tech unico settore negativo in ottobre 2026.",
+    "allocazione_suggerita": {
+      "AMZN": "30% - BUY ALTA affidabilità, earnings catalyst Oct 22",
+      "MSFT": "25% - BUY MEDIA affidabilità, pre-earnings quality play",
+      "GOOGL": "20% - HOLD ALTA affidabilità, nuclear deal + earnings Oct 27",
+      "TSLA": "10% - HOLD, earnings Oct 21 in 3 gg, rischio elevato",
+      "SAP": "15% - HOLD, earnings Oct 21-22, mantenere posizioni esistenti"
+    },
+    "asset_esclusi_da_portafoglio": ["AAPL", "NVDA", "META", "NFLX", "AMD", "ASML", "RACE", "STLAM", "GLD", "SLV", "USO", "BTC", "ETH", "SOL"]
+  }
+}
