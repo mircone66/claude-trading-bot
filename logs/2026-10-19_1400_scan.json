@@ -1,0 +1,519 @@
+{
+  "timestamp": "2026-10-19T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati in rimbalzo lunedì 19 ottobre 2026 dopo il peggior calo settimanale del Nasdaq 100 dal 2025. Cause: AI bubble fears + CPI/PPI hot (PPI +6.3% YoY vs attese +5.4%) + oil surge a $110. Lunedì: tech +1.3%, S&P500 +0.6%, chip sector in testa (AMD +3.4%, NVDA +2.5%). AMZN +4.9% su upgrade Morgan Stanley. Oil profit-taking a WTI $100.50 (-0.88%) dopo Russia sanctions waiver da Trump. BTC stabile sopra $82K nonostante crypto ETF outflows $434M settimana (CoinShares). Earnings settimana: NFLX (20/10), TSLA (21/10), META (21/10), SAP (21/10), MSFT (28/10), GOOGL (28/10), AMZN (29/10).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 342.65,
+      "change_24h": "-0.47%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma ~59.9M shares",
+      "news": "Tech sector rimbalza lunedì +1.3%; nessuna news specifica Apple; consolida sotto 52W high $348.15",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 342.65,
+      "stop_loss": 332.37,
+      "target": 359.78,
+      "commissione": 0.00,
+      "reasoning": "AAPL in area di consolidamento sotto il massimo 52 settimane $348.15; assenza di catalyst specifici nel breve; rimbalzo settoriale non abbastanza forte da giustificare entry (fonte: Motley Fool, MarketBeat Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool", "price": 341.84},
+          {"name": "Stockanalysis/Morningstar", "price": 343.46}
+        ],
+        "spread_pct": 0.47,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 361.70,
+      "change_24h": "+1.97%",
+      "trend_5d": "laterale",
+      "volume_note": "volume elevato pre-earnings",
+      "news": "Earnings 21/10 dopo chiusura; analisti divisi su AI/Robotics premium; opzioni implicano alta volatilità post-report",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 361.70,
+      "stop_loss": 350.85,
+      "target": 379.79,
+      "commissione": 0.00,
+      "reasoning": "Range ampio $355-$368 intraday con spread fonti 3.54% segnala incertezza pricing; earnings domani = rischio direzionale elevato; attesa report prima di prendere posizione (fonte: Robinhood $355.30, Yahoo Finance $368.10 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 355.30},
+          {"name": "Yahoo Finance", "price": 368.10}
+        ],
+        "spread_pct": 3.54,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 218.30,
+      "change_24h": "+1.95%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo alto, chip sector rally +2.5%",
+      "news": "Chipmaker sell-off settimana scorsa da ATH $243.37 (Oct 6) a $214; rimbalzo lunedì +2.5%; AMD +3.4%, Micron +3%; CoreWeave +2.8% su Goldman buy rec",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 218.30,
+      "stop_loss": 211.75,
+      "target": 229.22,
+      "commissione": 0.00,
+      "reasoning": "Oversold recovery dopo selloff AI/chip; Philadelphia Semi Index snapping 8-day losing streak; supporto a $213 confermato; risk/reward favorevole da supporto tecnico (fonte: Bloomberg, TheStreet Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat", "price": 219.48},
+          {"name": "Robinhood", "price": 217.11}
+        ],
+        "spread_pct": 1.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 534.19,
+      "change_24h": "+0.97%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale pre-earnings",
+      "news": "Earnings 28/10; Maia 300 chip AI potenziale catalyst; Azure growth driver; analisti consensus target $599",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 534.19,
+      "stop_loss": 518.16,
+      "target": 560.90,
+      "commissione": 0.00,
+      "reasoning": "MSFT laterale sotto ATH $553.72; earnings 28/10 = prossimo catalyst direzionale; Maia 300 chip potrebbe cambiare economics AI per MSFT; wait-and-see pre-report (fonte: Google Finance $534.60, Gotrade $533.78 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 534.60},
+          {"name": "Gotrade", "price": 533.78}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 260.39,
+      "change_24h": "+4.16%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo alto su upgrade Morgan Stanley",
+      "news": "Morgan Stanley upgrade; AMZN +4.93% intraday $262.33; earnings Q3 29/10; Cantor Fitzgerald taglia target $320→$310 ma mantiene Overweight",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 260.39,
+      "stop_loss": 252.58,
+      "target": 273.41,
+      "commissione": 0.00,
+      "reasoning": "Upgrade Morgan Stanley genera momentum forte +4.9% con volume anomalo; earnings 29/10 catalyst upcoming; 52W range $196-$287 con ampio upside disponibile; entry su pullback da $262 picco (fonte: Yahoo Finance $262.33, Investing.com $258.45 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 262.33},
+          {"name": "Investing.com", "price": 258.45}
+        ],
+        "spread_pct": 1.49,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 342.87,
+      "change_24h": "+1.34%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Earnings 28/10; rimbalzo con tech sector lunedì; nessuna news specifica Alphabet oggi; analisti 255 target medio $428",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 342.87,
+      "stop_loss": 332.58,
+      "target": 360.01,
+      "commissione": 0.00,
+      "reasoning": "GOOGL rimbalza +1.34% con tech sector; earnings 28/10 = prossimo catalyst; analisti average target $428 = 25% upside; ma incertezza pre-report consiglia attesa (fonte: Robinhood $345.15 Oct 19, CNBC close $340.59)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 345.15},
+          {"name": "CNBC/Stockanalysis", "price": 340.59}
+        ],
+        "spread_pct": 1.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 707.33,
+      "change_24h": "-0.57%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato, alta attenzione pre-earnings",
+      "news": "Morgan Stanley alza target $775→$820 Overweight; earnings 21/10 after close; opzioni implicano ±4.9% post-report; 52W range $520-$779",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 707.33,
+      "stop_loss": 686.11,
+      "target": 742.70,
+      "commissione": 0.00,
+      "reasoning": "Earnings domani 21/10 con consensus $6.59 EPS; MS alza target a $820 (+16% vs current); dip da $779 52W high = opportunità pre-earnings; rischio contenuto con SL -3% (fonte: Investing.com $709.33, Robinhood $705.32 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 705.32},
+          {"name": "Investing.com", "price": 709.33}
+        ],
+        "spread_pct": 0.57,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 70.46,
+      "change_24h": "-0.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale, cauto pre-earnings",
+      "news": "Earnings oggi 20/10 after close; Huber Research downgrade Sell target $70; revenue atteso $12.87B EPS $0.82; 52W range $65.08-$124.86",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 70.46,
+      "stop_loss": 68.35,
+      "target": 73.98,
+      "commissione": 0.00,
+      "reasoning": "Earnings questa sera 20/10 = rischio direzionale binario; Huber Research Sell target $70 = pressione; stock vicino a 52W low $65.08; direzione incerta pre-report (fonte: Yahoo Finance $70.53, Robinhood $70.39 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 70.53},
+          {"name": "Robinhood", "price": 70.39}
+        ],
+        "spread_pct": 0.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 543.14,
+      "change_24h": "+2.72%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo alto, rimbalzo da -6% venerdì",
+      "news": "AMD +3.41% lunedì su strong Q3 revenue outlook; Arete alza target $540→$612; chip sector rally; Q3 earnings 3/11",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 543.14,
+      "stop_loss": 526.85,
+      "target": 570.30,
+      "commissione": 0.00,
+      "reasoning": "Forte rimbalzo da -6% venerdì con volume anomalo; Arete target raise +13% a $612; Philadelphia Semi recovery; Q3 revenue outlook positivo (fonte: Google Finance $539.20, Tradersunion $547.08 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 539.20},
+          {"name": "Tradersunion", "price": 547.08}
+        ],
+        "spread_pct": 1.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1659.08,
+      "change_24h": "+2.14%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo, alta volatilità post-earnings",
+      "news": "Q3 revenue +55% YoY; 2026 guidance alzato €44-45B; ma revenue lieve miss vs attese; selloff -5.5% su CPI hot; rimbalzo lunedì +2%; analisti Strong Buy target $2,152",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1659.08,
+      "stop_loss": 1609.31,
+      "target": 1742.03,
+      "commissione": 0.00,
+      "reasoning": "Spread fonti 2.12% = MEDIA affidabilità; fondamentali eccellenti (rev +55% YoY, guidance raised) ma alta volatilità post-earnings; attesa stabilizzazione prima di entry (fonte: Stockanalysis $1676.64, CNBC/Morningstar $1641.52 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis", "price": 1676.64},
+          {"name": "CNBC/Morningstar", "price": 1641.52}
+        ],
+        "spread_pct": 2.12,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 224.13,
+      "change_24h": "-0.14%",
+      "trend_5d": "laterale",
+      "volume_note": "volume basso, quiete pre-earnings",
+      "news": "Earnings 21/10; TD Cowen alza target $205→$250; Barclays alza $242→$243; SAP stabile pre-report; analisti consensus target ~$261",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 224.13,
+      "stop_loss": 217.41,
+      "target": 235.34,
+      "commissione": 0.00,
+      "reasoning": "Earnings domani 21/10 = direzione dipende dal report; revisioni target positive (Cowen +$45 raise); consensus $261 implica 16% upside ma rischio pre-report (fonte: StockAnalysis $223.97, Yahoo Finance $224.29 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 223.97},
+          {"name": "Yahoo Finance", "price": 224.29}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 397.67,
+      "change_24h": "+0.07%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "Earnings 3/11; UBS taglia target $490→$450 (ancora Well Above Current); consensus Strong Buy da 13 analisti, target $457 = +15% upside",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 397.67,
+      "stop_loss": 385.74,
+      "target": 417.55,
+      "commissione": 0.00,
+      "reasoning": "Ferrari laterale nel range $394-$402; consensus Strong Buy con target $457 = 15% upside; nessun catalyst immediato prima di earnings 3/11; UBS cut target ma ancora bullish (fonte: Morningstar $397.53, Robinhood $397.80 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar", "price": 397.53},
+          {"name": "Robinhood", "price": 397.80}
+        ],
+        "spread_pct": 0.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.30,
+      "change_24h": "-3.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo, forte vendita istituzionale",
+      "news": "Stellantis STLAM -5.66% in Europa lunedì 19/10; JPMorgan Neutral target €6; RBC taglia target €5→€4; Q3 results 28/10 atteso debole; 52W high $12.22",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 4.30,
+      "stop_loss": 4.43,
+      "target": 4.09,
+      "commissione": 0.00,
+      "reasoning": "Forte downtrend da 52W high $12.22 (-65%); -5.66% in Europa Oct 19; analisti tagliano target; Q3 earnings 28/10 atteso debole; spread fonti 3.26% = MEDIA affidabilità (fonte: Robinhood $4.23, Yahoo Finance $4.37 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 4.23},
+          {"name": "Yahoo Finance", "price": 4.37}
+        ],
+        "spread_pct": 3.26,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 380.53,
+      "change_24h": "-0.54%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Gold futures +0.20% a $4,189.60/oz in mattinata; oro sotto pressione da CPI/PPI hot; gold ETF holdings ai massimi 2026 nonostante prezzi sotto pressione; Fed meeting 28/10",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 380.53,
+      "stop_loss": 373.12,
+      "target": 395.75,
+      "commissione": 0.00,
+      "reasoning": "Oro sotto pressione tassi/inflazione ma ETF holdings istituzionali al massimo 2026 = domanda strutturale forte; attesa Fed 28/10 come catalyst; supporto a $375 area (fonte: StockAnalysis $379.96, Kraken $381.09 Oct 19, Kitco)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 379.96},
+          {"name": "Kraken", "price": 381.09}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 51.67,
+      "change_24h": "+0.29%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume basso",
+      "news": "Silver spot ~$57.76 futures; argento più debole dell'oro; Mirae Asset bearish su silver; ETF flows non incoraggianti per SLV; 52W range $41.70-$109.83",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 51.67,
+      "stop_loss": 50.64,
+      "target": 53.74,
+      "commissione": 0.00,
+      "reasoning": "Silver sottoperforma l'oro con ETF flows negativi; analista Mirae Asset (Praveen Singh) bearish; nessun catalyst immediato positivo; attesa before entry (fonte: StockAnalysis $51.66, Heygotrade $51.68 Oct 19, Kitco)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 51.66},
+          {"name": "Heygotrade", "price": 51.68}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 161.43,
+      "change_24h": "-0.41%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale 2.48M shares",
+      "news": "WTI $100.50 (-0.88%) profit-taking dopo Trump Russia sanctions waiver; Brent $108.20; oil da 5-month high in correzione; oil aveva contribuito al tech selloff settimana scorsa",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 161.43,
+      "stop_loss": 158.20,
+      "target": 167.89,
+      "commissione": 0.00,
+      "reasoning": "USO vicino a 52W high $163.35 (set Sep 15); profit-taking legittimo; premium geopolitico Russia/Hormuz sostiene $100+ WTI; rischio/rendimento bilanciato (fonte: MarketBeat $161.10, Investing.com $161.76 Oct 19, Kitco)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat", "price": 161.10},
+          {"name": "Investing.com", "price": 161.76}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 82522.00,
+      "change_24h": "+0.50%",
+      "trend_5d": "laterale",
+      "volume_note": "volume $27.88B 24h, nella norma",
+      "news": "BTC tiene sopra $82K; crypto ETF outflows $434M settimana (CoinShares); hot PPI pesa; Strategy continua acquisti BTC; Fed meeting 28/10 catalyst; 52W range $55K-$109K atteso",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 82522.00,
+      "stop_loss": 78395.90,
+      "target": 89123.76,
+      "commissione": 0.00,
+      "reasoning": "BTC consolida $79K-$84K con supporto tecnico solido; resistenza macro da CPI hot e ETF outflows; Strategy continua acquisti = institutional floor; Fed 28/10 key catalyst (fonte: Fortune $82440.73, MetaMask $82604.00 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune", "price": 82440.73},
+          {"name": "MetaMask", "price": 82604.00}
+        ],
+        "spread_pct": 0.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2408.92,
+      "change_24h": "+0.44%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo su ETF outflows ($60.3M in 2 giorni)",
+      "news": "Ethereum ETF outflow $44.4M in un giorno; deflussi 2gg $60.3M; ETH -6% da settimana scorsa; gas limit increase +233% in programma; alts bleeding vs BTC",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2408.92,
+      "stop_loss": 2288.47,
+      "target": 2601.63,
+      "commissione": 0.00,
+      "reasoning": "ETH sotto pressione da ETF outflows massicci e underperformance vs BTC (dominanza BTC 57.7% vs ETH 10.4%); gas limit upgrade positivo long-term ma non catalyst immediato (fonte: CoinMarketCap $2396.09, Fortune $2421.74 Oct 19)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune", "price": 2421.74},
+          {"name": "CoinMarketCap", "price": 2396.09}
+        ],
+        "spread_pct": 1.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 105.00,
+      "change_24h": "+1.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato su anticipazione upgrade",
+      "news": "Alpenglow upgrade 21/10 target 150ms finality = major tecnica upgrade; tokenized assets Solana $700M→$4.3B in un anno; SOL leads crypto gains lunedì; DeFi Dev Corp acquista 3,983 SOL",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 105.00,
+      "stop_loss": 99.75,
+      "target": 113.40,
+      "commissione": 0.00,
+      "reasoning": "Alpenglow upgrade 21/10 = catalyst tecnico immediato (150ms finality vs secondi attuali); tokenized assets +$3.6B YoY = adozione istituzionale record; SOL outperforms crypto peers (fonte: MetaMask $105.34, CoinGecko $104.66 Oct 19, crypto.news)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask", "price": 105.34},
+          {"name": "CoinGecko", "price": 104.66}
+        ],
+        "spread_pct": 0.65,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMZN",
+      "motivo": "Morgan Stanley upgrade genera momentum +4.9% con volume anomalo; earnings Q3 29/10 come catalyst; 52W range suggerisce upside significativo; SL chiaro a $252.58"
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "motivo": "Rimbalzo +3.4% da oversold dopo -6% venerdì; Arete target raise $540→$612; chip sector recovery; Q3 earnings 3/11 come prossimo catalyst"
+    },
+    {
+      "rank": 3,
+      "asset": "SOL",
+      "motivo": "Alpenglow upgrade 21/10 = catalyst tecnico immediato su 150ms finality; tokenized assets Solana +$3.6B YoY; SOL outperforma crypto peers; SL chiaro a $99.75"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - Alpaca paper trading only",
+    "allocazione_suggerita": {
+      "AMZN_BUY": "20%",
+      "AMD_BUY": "15%",
+      "NVDA_BUY": "15%",
+      "META_BUY": "15%",
+      "SOL_BUY": "10%",
+      "HOLD_cash_o_GLD": "25%",
+      "STLA_SELL_corto": "evitare o short con max 5% portafoglio"
+    }
+  }
+}
