@@ -1,0 +1,533 @@
+{
+  "timestamp": "2026-10-21T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Nasdaq in rialzo ~1.1% trainato da semiconduttori AI (NVDA +1.85%, AMD +0.72%) e rally SpaceX. Tesla +3.17% pre-earnings; earnings Tesla e Meta attesi dopo chiusura. Alphabet -2.03% su dichiarazioni Pichai (Google Cloud cede revenue per AI capacity). Netflix -4.76% post-earnings deludenti (weak Q4 guidance, lower 2026 ad revenue). ASML +2.87% su Q3 record e guidance alzata. Oil in forte rally: USO +7.25% nelle ultime 5 sessioni su rischio Iran/Medio Oriente. Gold sotto pressione da inflazione e attese Fed hawkish (meeting Oct 27-28). Crypto laterale: BTC ~$83.5K, ETH +3.6% nelle 24h, SOL stabile con Alpenglow upgrade imminente.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 340.81,
+      "change_24h": "+0.39%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Nessun driver specifico oggi. Earnings attesi il 2 novembre 2026. Il titolo si mantiene vicino al massimo 52w ($348.15). Mercato tech in rialzo traina lievemente.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 340.81,
+      "stop_loss": 330.59,
+      "target": 357.85,
+      "commissione": 0.00,
+      "reasoning": "Laterale vicino al 52w high senza catalizzatori specifici; attesa earnings del 2 novembre. Nessuna ragione per entry in questo momento. Fonte: StockAnalysis $340.47, Robinhood $341.15 (21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 340.47},
+          {"name": "Robinhood", "price": 341.15}
+        ],
+        "spread_pct": 0.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 385.57,
+      "change_24h": "+3.17%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (earnings day, volume atteso 3x+)",
+      "news": "Earnings Q3 attesi dopo la chiusura odierna (21 ott 2026). CEO Musk ha accennato a potenziale merger SpaceX-Tesla. Il titolo era salito del +8.7% negli ultimi 5 giorni. Alta volatilità post-earnings attesa.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 385.57,
+      "stop_loss": 374.00,
+      "target": 404.85,
+      "commissione": 0.00,
+      "reasoning": "Rialzista pre-earnings con +3.17% intraday ma rischio binario elevato post-report. Evitare entry su earnings day per incertezza direzionale. Fonte: Yahoo Finance $385.39 (+3.12%), Robinhood $385.75 (21 ott 10:33 AM EDT).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 385.39},
+          {"name": "Robinhood", "price": 385.75}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 220.47,
+      "change_24h": "+1.85%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AI semiconductor in rally insieme ad AMD. Motley Fool riporta NVDA tra i 2 maggiori driver di crescita EPS S&P 500. Earnings previsti il 17 novembre 2026. Range 52w: $164.27-$243.37. Anthropic prospectus cita $750B spend su cloud (NVDA beneficiario indiretto).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 220.47,
+      "stop_loss": 213.86,
+      "target": 231.49,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista confermato (+1.85% oggi, +2.96% in 5 gg). AI demand structurally strong. Earnings Nov 17 = finestra operativa aperta. SL -3% su supporto psicologico $213. Fonte: Robinhood $220.77, Yahoo Finance $220.16 (21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 220.77},
+          {"name": "Yahoo Finance", "price": 220.16}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 529.73,
+      "change_24h": "-0.40%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Earnings Q1 FY2027 attesi il 28 ottobre 2026. Anthropic prospectus indica $750B spend su AI infrastruttura incluso Azure. Microsoft mantiene posizione stabile nonostante il mercato in leggero rialzo. BMO Capital target $600 (Outperform).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 529.73,
+      "stop_loss": 513.84,
+      "target": 556.22,
+      "commissione": 0.00,
+      "reasoning": "Laterale pre-earnings con lieve calo -0.40%. Earnings il 28 ott = rischio binario imminente. Attesa per chiarezza post-report. Fonte: Yahoo Finance $529.22, 24/7 Wall St. $530.24 (21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 529.22},
+          {"name": "24/7 Wall St.", "price": 530.24}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 261.24,
+      "change_24h": "-0.53%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Evercore mantiene Outperform con target $355. Earnings attesi il 29 ottobre 2026. La scorsa settimana il titolo era balzato +4.98% in un giorno (Oct 19). Anthropic prospectus cita AWS tra i principali cloud beneficiari del $750B spend AI.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 261.24,
+      "stop_loss": 253.40,
+      "target": 274.30,
+      "commissione": 0.00,
+      "reasoning": "Lieve calo intraday -0.53% dopo il forte rally della settimana scorsa. Earnings il 29 ott = risk/reward incerto a breve. Fonte: Google Finance $262.63 (close 20 ott), StockAnalysis $259.84 (21 ott 9:53 AM EDT).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 262.63},
+          {"name": "StockAnalysis", "price": 259.84}
+        ],
+        "spread_pct": 1.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 333.38,
+      "change_24h": "-2.03%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (heavy selling su news)",
+      "news": "CEO Sundar Pichai ha dichiarato che Google Cloud sta cedendo parte dei ricavi per prioritizzare la capacità AI. Il titolo cede -2% mentre il Nasdaq sale +1.1%. Earnings il 28 ottobre. Fonte: 24/7 Wall St (21 ott). Il titolo era a $340 ieri.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 333.38,
+      "stop_loss": 343.38,
+      "target": 316.71,
+      "commissione": 0.00,
+      "reasoning": "Bearish catalyst specifico: Pichai cede revenue Cloud per AI capacity → margin concern. -2% su mercato in rialzo è segnale di debolezza relativa. Earnings Oct 28 = mantenere posizione corta fino a chiarezza. Fonte: 24/7 Wall St. $331.83, Yahoo Finance $334.92 (21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "24/7 Wall St.", "price": 331.83},
+          {"name": "Yahoo Finance", "price": 334.92}
+        ],
+        "spread_pct": 0.93,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 710.05,
+      "change_24h": "+2.28%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (earnings day, alta partecipazione)",
+      "news": "Earnings Q3 2026 attesi dopo la chiusura (4:30 PM ET). 24/7 Wall St: '29% upside sul nostro modello'. Consensus 55 analyst Buy/Strong Buy con target $813.65. Pre-earnings rally dopo 5 sedute in calo. Benzinga mette META tra i 5 titoli da tenere d'occhio oggi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 710.05,
+      "stop_loss": 688.75,
+      "target": 745.55,
+      "commissione": 0.00,
+      "reasoning": "Forte momentum pre-earnings (+2.28%) con consensus bullish (55 analyst Buy, target $813). 29% upside su modello 24/7 Wall St. NOTA: rischio earnings = taglia posizione rispetto a normale. Fonte: StockAnalysis $712.21 (11:40 AM EDT), MarketChameleon $707.89 (21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 712.21},
+          {"name": "MarketChameleon", "price": 707.89}
+        ],
+        "spread_pct": 0.61,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 65.38,
+      "change_24h": "-4.76%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (post-earnings crash, vendite massive)",
+      "news": "Netflix ha battuto sull'EPS ($0.87 vs $0.82 atteso) e sui ricavi ($13.44B vs $12.87B) ma le guidance Q4 deludono. Management ha annunciato cost cuts, leadership changes e rivisto al ribasso outlook 2026 ad revenue. Fonte: Investing.com (21 ott). Il titolo è vicino al minimo 52w ($65.08).",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 65.38,
+      "stop_loss": 67.34,
+      "target": 62.11,
+      "commissione": 0.00,
+      "reasoning": "Post-earnings crash con -4.76% su guidance Q4 debole e tagli strutturali. Vicino al minimo annuale $65.08. Pressione di vendita anomala. Target -5% a $62.11 con SL +3% a $67.34 per rimbalzo tecnico. Fonte: Yahoo Finance $65.49, MarketBeat $65.27 (21 ott 11:18 AM EDT).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 65.49},
+          {"name": "MarketBeat", "price": 65.27}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 538.59,
+      "change_24h": "+0.72%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "AI semiconductor in rally con NVDA. Motley Fool cita AMD tra i 2 principali driver EPS S&P 500. Earnings previsti il 3 novembre 2026. Range 52w: $188.22-$658.52 (current ~$538 = 20% sotto massimo). Intraday range oggi: $524.60-$551.00.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 538.59,
+      "stop_loss": 522.43,
+      "target": 565.52,
+      "commissione": 0.00,
+      "reasoning": "Rialzista in trend con AI demand structurally strong (+1.86% in 5gg). Earnings il 3 nov = finestra aperta. 20% sotto il massimo = spazio di recupero. Correlazione positiva con NVDA, entrambi in rialzo. Fonte: Robinhood $541.47, Stocktwits $535.71 (21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 541.47},
+          {"name": "Stocktwits", "price": 535.71}
+        ],
+        "spread_pct": 1.07,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1677.67,
+      "change_24h": "+2.87%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (buying post-Q3 record, +3% su volume elevato)",
+      "news": "ASML Q3 2026 record: guidance 2026 alzata. BofA alza target da EUR 2.452 a EUR 2.557. JPMorgan mantiene Overweight (target rivisto da 2.400 a 2.350 EUR). Dividendo annunciato $2.108/share ex-date 27 ott. Fonte: MarketBeat, ad-hoc-news.de (21 ott). Prossimi earnings: 27 gennaio 2027.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1677.67,
+      "stop_loss": 1627.34,
+      "target": 1761.55,
+      "commissione": 0.00,
+      "reasoning": "Catalyst fortissimo: Q3 record + guidance alzata + multipli upgrade analisti. +2.87% su mercato generale flat. Dominanza assoluta in EUV lithography senza competitor. BofA target EUR 2.557 = +52% upside. Fonte: StockAnalysis $1.678.51 (13:02 EDT), Yahoo Finance $1.676.82 (12:36 EDT 21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 1678.51},
+          {"name": "Yahoo Finance", "price": 1676.82}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 228.38,
+      "change_24h": "+0.27%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (mercato attende risultati)",
+      "news": "SAP Q3 2026 earnings attesi dopo la chiusura di oggi (21 ott, disclosure 22:05 CEST). Il titolo era 'little changed' pre-market. SAP ha recentemente acquisito TechWolf (AI talent management). Fonte: ad-hoc-news.de. Consensus analisti target $261.17.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 228.38,
+      "stop_loss": 221.53,
+      "target": 239.80,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings hold: earnings tonight portano rischio binario elevato. Il titolo è +1.82% in 5gg su attese positive. Attendere risultati prima di prendere posizione. Fonte: Google Finance $227.77 (20 ott), INDmoney $228.98 (21 ott mattina).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 227.77},
+          {"name": "INDmoney", "price": 228.98}
+        ],
+        "spread_pct": 0.53,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 400.35,
+      "change_24h": "+0.03%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Ferrari (NYSE: RACE) stabile. Nessun news driver specifico oggi. Earnings previsti il 3 novembre 2026. Il titolo è in trend rialzista (+3.3% in 7 giorni). Range 52w: $312.51-$437.15. Consensus analisti: Buy, target medio $453.30.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 400.35,
+      "stop_loss": 388.34,
+      "target": 420.37,
+      "commissione": 0.00,
+      "reasoning": "Nessun catalyst specifico oggi; earnings il 3 nov. Il titolo rimane in trend rialzista graduale (+3.3% da $387 in 7 giorni) ma senza momentum sufficiente per BUY. Fonte: Yahoo Finance/Macrotrends $400.24 (close 20 ott), Robinhood $400.46 (intraday 21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 400.24},
+          {"name": "Robinhood", "price": 400.46}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.34,
+      "change_24h": "+0.23%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (ma a livelli storicamente bassi)",
+      "news": "Stellantis NYSE:STLA colpisce nuovi minimi annuali. YTD -61%. Earnings Q3 previsti il 28 ottobre 2026. Stock a EUR 3.82 (Milan) il 21 ott. J.P. Morgan target EUR 6.00 (potenziale recovery ma trend attuale bearish). Fonte: ad-hoc-news.de, Google Finance. NOTA: STLAM è il ticker Milan; NYSE usa STLA (USD).",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 4.34,
+      "stop_loss": 4.47,
+      "target": 4.21,
+      "commissione": 0.00,
+      "reasoning": "Ribassista strutturale: YTD -61%, 52w low area ($4.19), earnings il 28 ott senza catalizzatori positivi evidenti. Trend di fondo di deterioramento business. SL +3% a $4.47. Fonte: Google Finance $4.33, Seeking Alpha $4.34 (20 ott close NYSE).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 4.33},
+          {"name": "Seeking Alpha", "price": 4.34}
+        ],
+        "spread_pct": 0.23,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 377.85,
+      "change_24h": "-0.48%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (ma ETF holdings ai massimi 2026 = divergenza bullish LT)",
+      "news": "Gold sotto pressione da inflazione più alta del previsto. FXStreet: 'Gold scende sotto $4.150 su timori Fed hawkish'. Kitco: gold ETF holdings ai massimi 2026 malgrado la pressione sui prezzi. Fed meeting Oct 27-28: 16.1% probabilità di ulteriore rialzo tassi. Fonte: Kitco 19 ott, FXStreet 20 ott.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 377.85,
+      "stop_loss": 370.29,
+      "target": 392.96,
+      "commissione": 0.00,
+      "reasoning": "Segnali contrastanti: pressione a breve (inflazione/Fed hawkish) vs. inflows record ETF (bullish LT). Trend 5d ribassista. Attendere chiarezza dal meeting Fed il 27-28 ottobre. Fonte: StockAnalysis $378.04 (20 ott 15:05 EDT), MarketAlleys $377.65 (Oct 20 reference).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 378.04},
+          {"name": "MarketAlleys", "price": 377.65}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 51.99,
+      "change_24h": "-0.25%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Silver misto: Kitco riporta 'silver gains' in una sessione (Oct 19) ma pressione da inflazione stessa che colpisce gold. SLV -20% YTD. ETF flows silver 'not inspiring'. Range 52w: $41.70-$109.83. Fonte: StockAnalysis, MarketBeat (ottobre 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 51.99,
+      "stop_loss": 50.95,
+      "target": 54.07,
+      "commissione": 0.00,
+      "reasoning": "Segnali deboli e misti. Silver laterale da settimane. ETF outflows e nessun catalyst specifico. Risk/reward non favorevole. Fonte: StockAnalysis $51.86 (21 ott 11:09 AM EDT), Investing.com prev close $52.12.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 51.86},
+          {"name": "Investing.com prev close", "price": 52.12}
+        ],
+        "spread_pct": 0.50,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 160.14,
+      "change_24h": "+2.39%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (Iran risk geopolitico, volume elevato)",
+      "news": "WTI crude in forte rally: 5-session gain +7.25% (al 20 ott). Benzinga: CVX e XOM a massimi annuali. Top oil analyst avverte: 'rischio escalation Iran può aumentare dopo midterm'. Premarket 21 ott: USO surge +2.39% a $164.72 (Benzinga). Crude oil inventories draw sharply (GuruFocus). Fonte: MarketAlleys, Benzinga (21 ott).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 160.14,
+      "stop_loss": 156.94,
+      "target": 166.55,
+      "commissione": 0.00,
+      "reasoning": "Forte momentum rialzista (+7.25% in 5 sessioni) con driver geopolitico (Iran escalation) e fondamentale (inventori in calo). CVX/XOM a 52w high confermano la forza del settore. SL -2% a $156.94. Fonte: MarketAlleys $160.61 (close 20 ott, Finnhub), Investing.com $159.66 (20 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys", "price": 160.61},
+          {"name": "Investing.com", "price": 159.66}
+        ],
+        "spread_pct": 0.59,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83542.00,
+      "change_24h": "+2.64%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Bitcoin mantiene area $83K. Spot Bitcoin ETF inflows: $23.16M il 20 ott (terzo valore più basso di ottobre). SpaceX/Tesla esplorano merger che unificherebbe >30.000 BTC. Catalyst atteso: Fed meeting 27-28 ott. All-time high $126.210 (6 ott 2025), current -33% dall'ATH. Fonte: Analytics Insight, CoinDesk (21 ott).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 83542.00,
+      "stop_loss": 79365.00,
+      "target": 90225.00,
+      "commissione": 0.00,
+      "reasoning": "Laterale vicino a $83K. ETF inflows modesti. Catalyst principale Fed meeting (27-28 ott). SpaceX/Tesla merger news potenzialmente bullish. Nessun segnale forte direzionale. Fonte: CoinDesk $83.679 (21 ott 10:13 AM EDT), Fortune $83.405 (21 ott 8:00 AM EDT).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk", "price": 83679.00},
+          {"name": "Fortune", "price": 83405.00}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2466.00,
+      "change_24h": "+3.62%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Ethereum +3.62% nelle ultime 24h ma in calo del 49% dall'ATH ($4.953, ago 2025). ETH ETF outflows per 5 giorni consecutivi (bearish istituzionale). Nessun upgrade tecnico imminente. Fonte: Coinbase, Fortune (21 ott).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2466.00,
+      "stop_loss": 2343.00,
+      "target": 2663.00,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo intraday +3.62% ma contesto 5d ribassista (-3.4%) con ETF outflows 5 gg consecutivi. Segnali istituzionali negativi. Attendere conferma del trend. Fonte: Coinbase $2.467 (21 ott), Fortune $2.465 (21 ott 8:00 AM EDT).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 2467.00},
+          {"name": "Fortune", "price": 2465.00}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 106.89,
+      "change_24h": "+1.87%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Solana Alpenglow upgrade in deploy questa settimana: riduce settlement da ~6 sec a 150ms. SkyAI ha venduto tutti i SOL holdings e lanciato buyback $201M. SOL ETF: 12° giorno consecutivo di perdite in ottobre. Down -41% da ATH ($293, gen 2025). Fonte: Analytics Insight, Cointelegraph (21 ott).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 106.89,
+      "stop_loss": 101.55,
+      "target": 115.44,
+      "commissione": 0.00,
+      "reasoning": "Alpenglow upgrade bullish tecnico ma ETF outflows e SkyAI selling pesano. +1.87% 24h ma laterale 5d. Attendere che l'upgrade venga completato prima di valutare posizione. Fonte: Coinbase $106.72, Yahoo Finance $107.05 (+1.87%, 21 ott).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 106.72},
+          {"name": "Yahoo Finance", "price": 107.05}
+        ],
+        "spread_pct": 0.31,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "Catalyst fondamentale fortissimo: Q3 record + guidance alzata + BofA target EUR 2.557 (+52% upside). +2.87% oggi su volume anomalo. Dominanza assoluta in EUV lithography. BUY confidence Alto."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "AI semiconductor in trend rialzista confermato. Anthropic $750B AI spend indirettamente favorisce NVDA. Earnings Nov 17 = finestra operativa aperta. BUY confidence Alto."
+    },
+    {
+      "rank": 3,
+      "asset": "USO",
+      "motivo": "Oil in rally geopolitico (Iran) + fondamentale (inventori in calo). 5-session gain +7.25%. Premarket +2.39%. Momentum forte con driver concreti. BUY confidence Alto."
+    },
+    {
+      "rank": 4,
+      "asset": "NFLX",
+      "motivo": "Miglior opportunità SELL: post-earnings crash -4.76%, guidance Q4 debole, vicino a 52w low $65.08. Momentum bearish confermato. SELL confidence Alto."
+    },
+    {
+      "rank": 5,
+      "asset": "AMD",
+      "motivo": "AI semiconductor secondario in rialzo con NVDA. Earnings Nov 3 = finestra aperta. 20% sotto 52w high con recovery in corso. BUY confidence Alto."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Alpaca broker. Allocazione su $10.000 ipotetico.",
+    "allocazione_suggerita": {
+      "ASML_BUY": "25% ($2.500) - top conviction, Q3 record",
+      "NVDA_BUY": "20% ($2.000) - AI demand structurally strong",
+      "USO_BUY": "20% ($2.000) - oil geopolitical rally",
+      "AMD_BUY": "15% ($1.500) - AI semiconductor trend",
+      "META_BUY": "10% ($1.000) - pre-earnings, ridotta per earnings risk",
+      "CASH": "10% ($1.000) - riserva post-earnings TSLA/META"
+    },
+    "segnali_short_da_monitorare": {
+      "NFLX_SELL": "post-earnings bearish, entry $65.38, target $62.11",
+      "STLA_SELL": "ribassista strutturale YTD -61%",
+      "GOOGL_SELL": "margin concern Cloud revenue"
+    }
+  }
+}
