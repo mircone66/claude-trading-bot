@@ -1,0 +1,583 @@
+{
+  "timestamp": "2026-10-23T18:19:20Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati in attesa della stagione earnings di ottobre: MSFT riporta il 27, GOOGL il 28. AMZN ha già riportato il 22 ottobre. META ha riportato il 21 ottobre (dati post-earnings non confermati). Nasdaq ~27,346 e S&P500 ~7,793 al 9 ottobre. Treasury 10Y al 5.26%, livelli elevati. Oro ai massimi pluriennali (~$4,123/oz al 20 ottobre). 8 asset esclusi per spread prezzi > 4% o dati insufficienti (NFLX, AMD, ASML, STLAM, USO, BTC, SOL + SAP già incluso come MEDIA). 12 asset con affidabilita ALTA o MEDIA generano segnali in questo report.",
+  "signals": [
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 385.67,
+      "change_24h": "+3.41%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale",
+      "news": "TSLA ha guadagnato +3.41% il 21 ottobre 2026, chiudendo a $386.47 per FinancialContent. Il titolo mostra forte momentum nelle sessioni recenti, recuperando dai minimi estivi.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 385.67,
+      "stop_loss": 374.10,
+      "target": 404.95,
+      "commissione": 0.00,
+      "reasoning": "Forte slancio rialzista con +3.41% il 21/10. Due fonti concordanti (FinancialContent $386.47 del 21/10, StockHub $384.87 del 9/10) con spread 0.41% - affidabilita ALTA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (Oct 21)", "price": 386.47},
+          {"name": "StockHub / Yahoo Finance (Oct 9)", "price": 384.87}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 528.49,
+      "change_24h": "-1.89%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Microsoft riporta earnings il 27 ottobre 2026. Bloomberg Línea riporta $529.25 il 16 ottobre (-1.89%). Analisti bullish pre-earnings per FQ1 FY2027 (Yahoo Finance).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 528.49,
+      "stop_loss": 512.64,
+      "target": 554.91,
+      "commissione": 0.00,
+      "reasoning": "Attesa pre-earnings del 27/10. Titolo vicino al massimo 52 settimane ($553.31). Due fonti concordanti (Bloomberg Línea $529.25 del 16/10, StockHub $527.72 del 9/10) con spread 0.29% - affidabilita ALTA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bloomberg Línea (Oct 16)", "price": 529.25},
+          {"name": "StockHub / Yahoo Finance (Oct 9)", "price": 527.72}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 336.43,
+      "change_24h": "-2.14%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Apple earnings attesi il 29 ottobre. Titolo a -2.14% il 9/10 per StockHub. In calo dal massimo 2026 di $345. Mercato attende dati ciclo iPhone 18 e guidance AI.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 336.43,
+      "stop_loss": 326.34,
+      "target": 353.25,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings 29/10, neutralita prudente. InvestSmart $339.71 (23/9) vs StockHub $333.14 (9/10): spread 1.95% → MEDIA. Incertezza su crescita AI e ciclo aggiornamento smartphone.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sept 23)", "price": 339.71},
+          {"name": "StockHub / Yahoo Finance (Oct 9)", "price": 333.14}
+        ],
+        "spread_pct": 1.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 229.50,
+      "change_24h": "+0.57%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale",
+      "news": "NVDA ha recuperato ~25% dai minimi di luglio per Finbold (inizio ottobre). Domanda GPU per AI sostenuta. StockHub riporta $231.79 il 9/10 (+0.57% quel giorno).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 229.50,
+      "stop_loss": 222.62,
+      "target": 240.98,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista confermato: recupero dal minimo 52w ($164.27) verso il massimo ($236.54). Due fonti concordanti (Coinglass $227.21 del 30/9, StockHub $231.79 del 9/10): spread 1.99% → MEDIA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass (Sept 30)", "price": 227.21},
+          {"name": "StockHub / Yahoo Finance (Oct 9)", "price": 231.79}
+        ],
+        "spread_pct": 1.99,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 254.15,
+      "change_24h": "-1.87%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale",
+      "news": "Amazon ha riportato Q3 2026 il 22 ottobre. Pre-earnings il 16/10 era a $250.00 (-1.87%). Earnings guidance sconosciuta oggi. Titolo in calo dal massimo annuale $287.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 254.15,
+      "stop_loss": 246.53,
+      "target": 266.86,
+      "commissione": 0.00,
+      "reasoning": "Post-earnings Q3 (22/10) ma reazione mercato non confermata. StockHub $258.30 (9/10) vs Yahoo Finance $250.00 (16/10): spread 3.27% → MEDIA. Attendere conferma post-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub / Yahoo Finance (Oct 9)", "price": 258.30},
+          {"name": "Yahoo Finance (Oct 16)", "price": 250.00}
+        ],
+        "spread_pct": 3.27,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 346.33,
+      "change_24h": "-2.47%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (+11.8% vs media, 28.5M vs 25.5M media 30gg)",
+      "news": "Alphabet riporta Q3 2026 il 28 ottobre. HeyGoTrade: GOOGL -2.47% il 16/10 a $340.59, volume 28.5M. Titolo 16.65% sotto massimo 52w di $408.61 per HeyGoTrade.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 346.33,
+      "stop_loss": 335.94,
+      "target": 363.65,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings 28/10, sell-off tech generalizzato. StockHub $352.07 (9/10) vs HeyGoTrade/Yahoo $340.59 (16/10): spread 3.31% → MEDIA. Volume anomalo suggerisce distribuzione istituzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub / Yahoo Finance (Oct 9)", "price": 352.07},
+          {"name": "HeyGoTrade / Yahoo Finance (Oct 16)", "price": 340.59}
+        ],
+        "spread_pct": 3.31,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 715.69,
+      "change_24h": "-0.55%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Meta ha riportato Q3 2026 il 21 ottobre. Prezzo pre-earnings: $705.44 (19/10) per HeyGoTrade. Admiral Markets cita $725.93 il 1/10. Prezzo post-earnings non confermato. Target analisti ~$794.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 715.69,
+      "stop_loss": 694.22,
+      "target": 751.47,
+      "commissione": 0.00,
+      "reasoning": "Post-earnings Q3 (21/10) ma reazione non confermata. Admiral Markets $725.93 (1/10) vs HeyGoTrade $705.44 (19/10): spread 2.86% → MEDIA. Attendere prezzo verificato post-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Admiral Markets / Investing.com (Oct 1)", "price": 725.93},
+          {"name": "HeyGoTrade / Yahoo Finance (Oct 19)", "price": 705.44}
+        ],
+        "spread_pct": 2.86,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": null,
+      "change_24h": null,
+      "trend_5d": null,
+      "volume_note": null,
+      "news": null,
+      "signal": null,
+      "confidence": null,
+      "entry": null,
+      "stop_loss": null,
+      "target": null,
+      "commissione": null,
+      "reasoning": null,
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Oct 10)", "price": 70.30},
+          {"name": "Kraken (undated)", "price": 73.98}
+        ],
+        "spread_pct": 5.10,
+        "affidabilita": "BASSA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": null,
+      "change_24h": null,
+      "trend_5d": null,
+      "volume_note": null,
+      "news": null,
+      "signal": null,
+      "confidence": null,
+      "entry": null,
+      "stop_loss": null,
+      "target": null,
+      "commissione": null,
+      "reasoning": null,
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sept 23)", "price": 624.00},
+          {"name": "HeyGoTrade / Yahoo Finance (Oct 20)", "price": 538.05}
+        ],
+        "spread_pct": 14.80,
+        "affidabilita": "BASSA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": null,
+      "change_24h": null,
+      "trend_5d": null,
+      "volume_note": null,
+      "news": null,
+      "signal": null,
+      "confidence": null,
+      "entry": null,
+      "stop_loss": null,
+      "target": null,
+      "commissione": null,
+      "reasoning": null,
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Oct 9, pre-earnings)", "price": 1780.34},
+          {"name": "Coinglass (Oct 18, post-earnings)", "price": 1641.52}
+        ],
+        "spread_pct": 8.10,
+        "affidabilita": "BASSA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 218.05,
+      "change_24h": "+0.34%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "SAP ha rilasciato risultati Q3 2026 il 21-22 ottobre. Dati disponibili solo pre-earnings. SAP $220.49 il 14/10. Post-earnings Zacks aveva downgraded SAP a 'Hold' nel marzo 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 218.05,
+      "stop_loss": 211.51,
+      "target": 228.95,
+      "commissione": 0.00,
+      "reasoning": "ATTENZIONE: prezzo pre-earnings (Q3 riportato 21/22 ottobre). Dashboard $220.49 (14/10) vs Equibles $215.60 (19/8): spread 2.24% → MEDIA ma dati pre-earnings. Attendere conferma post-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "ryanoconnellfinance.com (Oct 14)", "price": 220.49},
+          {"name": "Equibles (Aug 19)", "price": 215.60}
+        ],
+        "spread_pct": 2.24,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 388.18,
+      "change_24h": "+0.70%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Ferrari NYSE: dati da 2 ottobre ($388.33 StockAnalysis, $388.03 MarketBeat). Earnings stimati 27 ottobre (non confermato). Gamma 52w: $314.63-$504.09.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 388.18,
+      "stop_loss": 376.53,
+      "target": 407.59,
+      "commissione": 0.00,
+      "reasoning": "Due fonti concordantissime per il 2/10 (StockAnalysis $388.33, MarketBeat $388.03, spread 0.08% ALTA) ma dati di 3 settimane fa. Pre-earnings stimati 27/10. Incertezza temporale → confidenza Basso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Oct 2)", "price": 388.33},
+          {"name": "MarketBeat (Oct 2)", "price": 388.03}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": null,
+      "change_24h": null,
+      "trend_5d": null,
+      "volume_note": null,
+      "news": null,
+      "signal": null,
+      "confidence": null,
+      "entry": null,
+      "stop_loss": null,
+      "target": null,
+      "commissione": null,
+      "reasoning": null,
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood STLA (June 26)", "price": 5.71},
+          {"name": "Yahoo Finance STLA (Sept 11)", "price": 5.40}
+        ],
+        "spread_pct": 5.70,
+        "affidabilita": "BASSA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 373.73,
+      "change_24h": "-0.39%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale",
+      "news": "Oro spot a $4,123.60/oz il 20 ottobre (Kitco/Reuters), in calo -0.39% ma vicino ai massimi pluriennali. Treasury 10Y al 5.26%. Domanda safe-haven sostenuta da incertezze geopolitiche.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 373.73,
+      "stop_loss": 366.25,
+      "target": 388.68,
+      "commissione": 0.00,
+      "reasoning": "Oro a $4,100+/oz sui massimi pluriennali. GLD tracking diretto del metallo giallo. Due fonti concordanti (Kraken $372.74, Plus500 $374.72): spread 0.53% → ALTA. Rendimenti Treasury elevati parzialmente controbilanciati da safe-haven demand.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (undated, consistent)", "price": 372.74},
+          {"name": "Plus500 (undated, consistent)", "price": 374.72}
+        ],
+        "spread_pct": 0.53,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.73,
+      "change_24h": "+1.13%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale",
+      "news": "Argento in rialzo insieme all'oro. Dati India 16/10: argento +1.13% con indebolimento dollaro. SLV su NYSE Arca traccia prezzo spot argento con 0.50% expense ratio.",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 52.73,
+      "stop_loss": 51.68,
+      "target": 54.84,
+      "commissione": 0.00,
+      "reasoning": "SLV sfrutta il trend rialzista dell'oro. Kraken $52.18 vs Vested $53.28: spread 2.09% → MEDIA. Fonti non datate ma consistenti. Confidenza Basso per mancanza di timestamp preciso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (undated)", "price": 52.18},
+          {"name": "Vested Finance (undated)", "price": 53.28}
+        ],
+        "spread_pct": 2.09,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": null,
+      "change_24h": null,
+      "trend_5d": null,
+      "volume_note": null,
+      "news": null,
+      "signal": null,
+      "confidence": null,
+      "entry": null,
+      "stop_loss": null,
+      "target": null,
+      "commissione": null,
+      "reasoning": null,
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Sept 4)", "price": 141.67},
+          {"name": "Yahoo Finance UK (Oct 8)", "price": 147.58}
+        ],
+        "spread_pct": 4.20,
+        "affidabilita": "BASSA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": null,
+      "change_24h": null,
+      "trend_5d": null,
+      "volume_note": null,
+      "news": null,
+      "signal": null,
+      "confidence": null,
+      "entry": null,
+      "stop_loss": null,
+      "target": null,
+      "commissione": null,
+      "reasoning": null,
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Manifold / CoinGecko (Sept 28)", "price": 83100.00},
+          {"name": "Coinbase (undated)", "price": 90547.00}
+        ],
+        "spread_pct": 8.90,
+        "affidabilita": "BASSA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2432.97,
+      "change_24h": "-0.11%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale",
+      "news": "Ethereum in range. Investing.com $2,410.96, TabTrader/CoinGecko $2,454.97. Nessun catalizzatore maggiore identificato per ottobre 2026. Mercato crypto laterale.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2432.97,
+      "stop_loss": 2311.32,
+      "target": 2627.61,
+      "commissione": 0.00,
+      "reasoning": "ETH range-bound $2,400-$2,455. Investing.com $2,410.96 vs TabTrader/CoinGecko $2,454.97: spread 1.81% → MEDIA. Fonti non datate ma consistenti. Stop-loss crypto standard -5%, target +8%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (undated)", "price": 2410.96},
+          {"name": "TabTrader / CoinGecko (undated)", "price": 2454.97}
+        ],
+        "spread_pct": 1.81,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": null,
+      "change_24h": null,
+      "trend_5d": null,
+      "volume_note": null,
+      "news": null,
+      "signal": null,
+      "confidence": null,
+      "entry": null,
+      "stop_loss": null,
+      "target": null,
+      "commissione": null,
+      "reasoning": null,
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "The Block (Aug 12 or Dec 8, ambiguous)", "price": 75.94},
+          {"name": "CoinGecko (undated)", "price": 136.26}
+        ],
+        "spread_pct": 44.10,
+        "affidabilita": "BASSA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NFLX",
+      "motivo": "spread fonti 5.1% > soglia 4% (InvestSmart $70.30 Oct 10 vs Kraken $73.98 non datato)"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "spread fonti 14.8% > soglia 4% (InvestSmart $624.00 del 23/9 vs HeyGoTrade $538.05 del 20/10 - forte correzione nel periodo)"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "spread fonti 8.1% > soglia 4% (pre-earnings $1,780.34 del 9/10 vs post-earnings $1,641.52 del 18/10)"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "spread fonti 5.7% > soglia 4% + nessun dato ottobre 2026 (Robinhood STLA $5.71 del 26/6 vs Yahoo STLA $5.40 dell'11/9)"
+    },
+    {
+      "asset": "USO",
+      "motivo": "spread fonti 4.2% >= soglia 4% (Robinhood $141.67 del 4/9 vs Yahoo Finance UK $147.58 dell'8/10)"
+    },
+    {
+      "asset": "BTC",
+      "motivo": "spread fonti 8.9% > soglia 4% (Manifold/CoinGecko $83,100 del 28/9 vs Coinbase $90,547 non datato)"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "spread fonti 44.1% > soglia 4% - dati fortemente inconsistenti (The Block $75.94 data ambigua vs CoinGecko $136.26 non datato)"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "motivo": "Oro a $4,123/oz sui massimi pluriennali. Affidabilita ALTA (spread 0.53%). BUY con alta confidenza. Safe-haven demand sostenuta da incertezze macro e 10Y Treasury al 5.26%."
+    },
+    {
+      "rank": 2,
+      "asset": "TSLA",
+      "motivo": "Forte momentum rialzista (+3.41% il 21/10). Affidabilita ALTA (spread 0.41%). Dati molto recenti (21/10). BUY con confidenza media."
+    },
+    {
+      "rank": 3,
+      "asset": "NVDA",
+      "motivo": "Recupero di ~25% dai minimi di luglio. AI GPU demand sostenuta. Affidabilita MEDIA. Trend rialzista confermato verso il massimo 52w. BUY con confidenza media."
+    },
+    {
+      "rank": 4,
+      "asset": "SLV",
+      "motivo": "Argento in tracking con oro rialzista. Affidabilita MEDIA. Silver +1.13% il 16/10. BUY con confidenza bassa (fonti non datate)."
+    }
+  ],
+  "earnings_calendar": {
+    "note": "Settimana critica earnings",
+    "schedule": [
+      {"data": "2026-10-22", "asset": "AMZN", "stato": "RIPORTATO - dati post-earnings non in questo scan"},
+      {"data": "2026-10-21", "asset": "META", "stato": "RIPORTATO - prezzo pre-earnings $705.44 nel scan"},
+      {"data": "2026-10-21_22", "asset": "SAP", "stato": "RIPORTATO - prezzo pre-earnings nel scan"},
+      {"data": "2026-10-27", "asset": "MSFT", "stato": "IN ATTESA"},
+      {"data": "2026-10-27_est", "asset": "RACE", "stato": "IN ATTESA (stimato, non confermato)"},
+      {"data": "2026-10-28", "asset": "GOOGL", "stato": "IN ATTESA"},
+      {"data": "2026-10-29_est", "asset": "AAPL", "stato": "IN ATTESA (stimato)"},
+      {"data": "2026-11-03_est", "asset": "AMD", "stato": "IN ATTESA (escluso da scan per spread prezzi)"}
+    ]
+  },
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Solo asset con affidabilita ALTA o MEDIA inclusi.",
+    "allocazione_suggerita": {
+      "GLD": "20% - BUY Alto confidence, ETF commodity",
+      "TSLA": "15% - BUY Medio confidence, azione USA",
+      "NVDA": "15% - BUY Medio confidence, azione USA",
+      "MSFT": "10% - HOLD pre-earnings 27/10",
+      "SLV": "10% - BUY Basso confidence, ETF commodity",
+      "AAPL": "5% - HOLD pre-earnings 29/10",
+      "GOOGL": "5% - HOLD pre-earnings 28/10",
+      "META": "5% - HOLD post-earnings non confermato",
+      "AMZN": "5% - HOLD post-earnings non confermato",
+      "SAP": "5% - HOLD post-earnings non confermato",
+      "RACE": "3% - HOLD pre-earnings 27/10 stimato",
+      "ETH": "2% - HOLD Basso confidence crypto",
+      "cash": "0% - liquidita rimanente"
+    }
+  },
+  "scan_meta": {
+    "asset_totali": 18,
+    "asset_con_segnali": 12,
+    "asset_esclusi": 7,
+    "asset_alta_affidabilita": 4,
+    "asset_media_affidabilita": 8,
+    "buy_signals": 4,
+    "hold_signals": 8,
+    "sell_signals": 0,
+    "note": "Nessun segnale SELL identificato in questo scan. 8 HOLD riflettono cautela pre-earnings settimana 27-29/10."
+  }
+}
