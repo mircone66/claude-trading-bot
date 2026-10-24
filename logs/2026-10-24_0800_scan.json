@@ -1,0 +1,434 @@
+{
+  "timestamp": "2026-10-24T08:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Earnings season in pieno svolgimento: META batte le stime con revenue +26% YoY ($64.6B) ma scende post-earnings causa litigation charge da $9.89B. TSLA delude con margini operativi al 2.6% e revenue stagnanti a $28.05B, stock -3.1% post-Q3. AMD in forte recupero +2% oggi su AI accelerator commitments. AAPL e MSFT riportano questa settimana (AAPL 29/10, MSFT 27/10). Fed si riunisce 27-28/10. Oro sopra $4,100/oz con Brent >$110 crea tensioni inflattive. ASML -5.85% nell'ultima settimana. BTC a ~$81K con spot ETF outflows da $635M.",
+  "signals": [
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 517.35,
+      "change_24h": "+2.07%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma, pressione compratori intraday",
+      "news": "AMD secures major AI accelerator commitments; revenue surge riportato; recupero da 52w high $658.52 del 06/10/2026, ora -21% da quel picco ma in rimbalzo",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 517.35,
+      "stop_loss": 501.83,
+      "target": 543.22,
+      "commissione": 0.00,
+      "reasoning": "AMD in forte recupero +2.07% oggi con AI accelerator commitments confermati; stock ~21% sotto il 52w high di $658.52, correzione tecnica offre entry interessante. Fonte: Robinhood $516.80, CNBC $517.90 (Oct 24, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 516.80},
+          {"name": "CNBC", "price": 517.90}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 642.44,
+      "change_24h": "-0.63%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato post-earnings, vendite iniziali assorbite",
+      "news": "Q3 2026: revenue $64.6B (+26% YoY), Q4 guidance $73-76B (forte). Litigation charge $9.89B pesa su net income. Azioni scese ~7% inizialmente poi recupero parziale. 52w range $520.26-$779.82.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 642.44,
+      "stop_loss": 623.17,
+      "target": 674.56,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi: revenue +26% YoY e guidance Q4 $73-76B indicano traiettoria di crescita robusta. Post-earnings dip da $718 (Oct 10) a $642 crea opportunità di entry con ratio R/R favorevole. Fonte: Robinhood $640.10, Yahoo Finance $644.77 (Oct 24, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 640.10},
+          {"name": "Yahoo Finance", "price": 644.77}
+        ],
+        "spread_pct": 0.73,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 347.90,
+      "change_24h": "-0.18%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume nella norma, accumulo pre-earnings",
+      "news": "Earnings schedulati per 29/10/2026. Stock vicino al 52w high di $351.73. In recupero da $336 (Oct 10) a $348 (Oct 22-23), +3.6% in due settimane. Barchart conferma prossimo earnings Oct 29.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 347.90,
+      "stop_loss": 337.46,
+      "target": 365.30,
+      "commissione": 0.00,
+      "reasoning": "Tendenza rialzista in avvicinamento agli earnings (29/10) con accumulo vicino al 52w high; rischio: sorpresa negativa post-earnings potrebbe vanificare la posizione. Fonte: Robinhood $347.58, Investing.com $348.22 (Oct 22-23, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 347.58},
+          {"name": "Investing.com", "price": 348.22}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 373.40,
+      "change_24h": "-0.63%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato post-Q3, pressione venditori",
+      "news": "Q3 2026: revenue $28.05B (flat YoY), margine operativo 2.6% (deludente). Stock -3.1% il 22/10 post-Q3. Analyst target medio $424.24. 52w range $297.38-$498.83.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 373.40,
+      "stop_loss": 362.20,
+      "target": 392.07,
+      "commissione": 0.00,
+      "reasoning": "Q3 deludente con revenue flat e margini compressi al 2.6%; attendere stabilizzazione post-earnings prima di prendere posizione. Fonte: HeyGoTrade $374.58 (Oct 22), intraday $372.22 (Oct 23, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade (Oct 22 close)", "price": 374.58},
+          {"name": "Aggregator intraday (Oct 23)", "price": 372.22}
+        ],
+        "spread_pct": 0.63,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 228.25,
+      "change_24h": "n/d (dati al 09-30/10/2026)",
+      "trend_5d": "laterale",
+      "volume_note": "dati recenti non disponibili",
+      "news": "NVIDIA rimane la più grande azienda USA per market cap (~$4.85T a luglio 2026). AI boom sostiene domanda. Ultimo prezzo verificato Oct 10 ($229.28) e Sep 30 ($227.21). 52w range: $164.27-$236.54.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 228.25,
+      "stop_loss": 221.40,
+      "target": 239.66,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali AI leadership intatti ma dati prezzi risalgono a Oct 10-Sep 30; attendere conferma prezzi più recenti prima di BUY. Fonte: StockHub aggregator $229.28 (Oct 10), Coinglass $227.21 (Sep 30, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub aggregator (Oct 10)", "price": 229.28},
+          {"name": "Coinglass (Sep 30)", "price": 227.21}
+        ],
+        "spread_pct": 0.91,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 66.91,
+      "change_24h": "-0.43%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato post-Q3 (Oct 20)",
+      "news": "Q3 2026 (rilasciato Oct 20): stock sceso da $68.69 a $64.92 after-hours. Recupero parziale a ~$67. HSBC downgrade. Deutsche Bank upgrade a Buy con target $95. Stock -28% YTD (post stock split 2026). 52w range $64.10-$116.73.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 66.91,
+      "stop_loss": 64.90,
+      "target": 70.26,
+      "commissione": 0.00,
+      "reasoning": "Sentiment misto post-Q3: HSBC downgrade vs Deutsche Bank upgrade; stock vicino al 52w low di $64.10. Attendere chiarezza direzionale prima di entrare. Fonte: Macrotrends $67.05 (Oct 22), intraday $66.76 (Oct 23, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Macrotrends (Oct 22 close)", "price": 67.05},
+          {"name": "Intraday aggregator (Oct 23)", "price": 66.76}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 260.46,
+      "change_24h": "n/d (dati al 05-10/10/2026)",
+      "trend_5d": "rialzista",
+      "volume_note": "volume elevato il 10/10 (+3.29% quel giorno)",
+      "news": "FTC lawsuit (Amazon Sponsored Ads - undisclosed auction surcharges) in corso. Stock +3.29% il 10/10. 52w range: $196.13-$287.16. Dati recenti limitati.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 260.46,
+      "stop_loss": 252.65,
+      "target": 273.48,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione MEDIA (spread 1.52% tra fonti di date diverse); pendenza legale FTC aggiunge incertezza; attendere dati più recenti. Fonte: StockHub $262.43 (Oct 10), InvestSmart $258.48 (Sep 5, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockHub aggregator (Oct 10)", "price": 262.43},
+          {"name": "InvestSmart (Sep 5)", "price": 258.48}
+        ],
+        "spread_pct": 1.52,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 340.28,
+      "change_24h": "n/d (dati al 20/10/2026)",
+      "trend_5d": "ribassista",
+      "volume_note": "volume sotto media il 20/10 (Schwab)",
+      "news": "Trend ribassista: da $351.66 (Oct 10) a $340.28 (Oct 20), -3.2% in 10 giorni. Analyst view misto. 52w range: $172.77-$408.61. Nessun earnings notizia rilevante trovata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 340.28,
+      "stop_loss": 330.07,
+      "target": 357.29,
+      "commissione": 0.00,
+      "reasoning": "Triangolazione MEDIA (spread 3.29% tra date diverse); trend ribassista a breve termine; attendere segnale di stabilizzazione. Fonte: Schwab $340.28 (Oct 20), StockHub $351.66 (Oct 10, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Schwab (Oct 20 close)", "price": 340.28},
+          {"name": "StockHub aggregator (Oct 10)", "price": 351.66}
+        ],
+        "spread_pct": 3.29,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1566.17,
+      "change_24h": "+0.72%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma, correzione tecnica in corso",
+      "news": "Stock -5.85% nell'ultima settimana. 52w high $1,999.96 (Jun 2026), ora -22% da ATH. Articolo 'Stock-Split Watch: Is ASML Next?' pubblicato Oct 23. Analyst target medio ~$2,100. Tradersunion cita $1,704 il 13/10.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1566.17,
+      "stop_loss": 1519.18,
+      "target": 1644.48,
+      "commissione": 0.00,
+      "reasoning": "Correzione significativa dal picco (-22%), potenziale interesse speculativo per stock split; attendere stabilizzazione prima di entry. Fonte: Investing.com $1,571.80, Motley Fool $1,560.54 (Oct 22-23, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Oct 23 close)", "price": 1571.80},
+          {"name": "Motley Fool (Oct 22 close)", "price": 1560.54}
+        ],
+        "spread_pct": 0.72,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 388.18,
+      "change_24h": "n/d (dati al 02/10/2026)",
+      "trend_5d": "laterale",
+      "volume_note": "dati recenti non disponibili",
+      "news": "Ferrari Q2 2026: revenue €1.94B, guidance annuale alzata. Stock range recente $376-$519 (52w). Nessuna notizia rilevante trovata post Oct 2. P/E ~36.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 388.18,
+      "stop_loss": 376.53,
+      "target": 407.59,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi con guidance alzata in Q2; tuttavia dati prezzi risalgono al 2 ottobre (22 giorni), attendere aggiornamento prezzi recente. Fonte: StockAnalysis $388.33, MarketBeat $388.03 (Oct 2, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Oct 2)", "price": 388.33},
+          {"name": "MarketBeat (Oct 2)", "price": 388.03}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 374.71,
+      "change_24h": "~-0.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "volatilità elevata per riunione Fed 27-28/10",
+      "news": "Oro spot: $4,180 (Oct 19) → $4,120 (Oct 21), in calo su forza Brent (>$110) e rivalutazione Fed hawkish. Fed meeting 27-28/10 è il principale catalyst. Silver news: USAGOLD.com report Oct 21-2026 conferma contesto volatile.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 374.71,
+      "stop_loss": 367.22,
+      "target": 389.70,
+      "commissione": 0.00,
+      "reasoning": "Oro in correzione da $4,180 a $4,120 con Fed meeting imminente (27-28/10) e Brent >$110 che aumenta scommesse hawkish; attendere esito Fed prima di posizionarsi. Fonte: Kraken $372.74, Crypto.com tokenized $376.67 (recente).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken", "price": 372.74},
+          {"name": "Crypto.com tokenized ETF", "price": 376.67}
+        ],
+        "spread_pct": 1.05,
+        "affidabilita": "MEDIA",
+        "nota": "prezzi da prodotti tokenizzati, non da NYSE Arca direttamente"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.73,
+      "change_24h": "~-0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "Argento spot: $58.22 (Oct 19) → $57.30 (Oct 21). SLV più basso del valore atteso (~$54 implicito da spot). Volatilità correlata a oro e oil. USAGOLD.com report Oct 21-2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 52.73,
+      "stop_loss": 51.68,
+      "target": 54.84,
+      "commissione": 0.00,
+      "reasoning": "SLV scambia leggermente sotto il valore implicito dall'argento spot ($54 implicato vs $52.73 rilevato); triangolazione MEDIA; attendere Fed 27-28/10. Fonte: Kraken $52.18, Vested $53.28 (recente).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken", "price": 52.18},
+          {"name": "Vested Finance", "price": 53.28}
+        ],
+        "spread_pct": 2.09,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 81461.00,
+      "change_24h": "-0.97%",
+      "trend_5d": "ribassista",
+      "volume_note": "outflows ETF spot: -$635M il 23/10",
+      "news": "BTC a ~$81K il 23/10/2026. Spot ETF outflows da $635M (Crypto.news). ATH ~$126K raggiunto in ottobre 2025. Kraken 24h range $80,576-$81,901. Volume spot ETF negativo è segnale baissista.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 81461.00,
+      "stop_loss": 77388.00,
+      "target": 87978.00,
+      "commissione": 0.00,
+      "reasoning": "ETF outflows da $635M suggeriscono pressione di vendita istituzionale; BTC è -35% da ATH; attendere stabilizzazione flussi ETF prima di entry. Fonte: Fortune $81,546.37, Coinbase $81,376 (Oct 23, 2026).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Oct 23)", "price": 81546.37},
+          {"name": "Coinbase (Oct 23)", "price": 81376.00}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2390.59,
+      "change_24h": "~-0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nella norma",
+      "news": "ETH in correzione: da ~$4,956 (52w high) a ~$2,390. Coinbase segnala -6% nel recente Thursday. CoinMarketCap $2,405.81, CoinGecko $2,381.05 (ultimi 2-4 giorni). Sentiment negativo correlato a BTC.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 2390.59,
+      "stop_loss": 2271.06,
+      "target": 2581.84,
+      "commissione": 0.00,
+      "reasoning": "ETH -52% da 52w high; sentiment negativo correlato a outflows BTC ETF; attendere stabilizzazione del mercato crypto prima di entry. Fonte: Coinbase $2,400.13, CoinGecko $2,381.05 (recenti 1-2 giorni).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (1 giorno fa)", "price": 2400.13},
+          {"name": "CoinGecko (2 giorni fa)", "price": 2381.05}
+        ],
+        "spread_pct": 0.80,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 103.99,
+      "change_24h": "~+0.30%",
+      "trend_5d": "laterale",
+      "volume_note": "volume nella norma",
+      "news": "SOL a ~$100-104 (cluster multipli fonti). ATH $294.85 (Jan 2025). CoinGecko $100.25, CoinMarketCap $100.43 da 3-4 giorni; Coinbase $103.68, Ledger $104.29 più recenti. Solana mantiene liquidità robusta ($2.57B volume 24h).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 103.99,
+      "stop_loss": 98.79,
+      "target": 112.31,
+      "commissione": 0.00,
+      "reasoning": "SOL laterale a ~$104, -65% da ATH; volume 24h $2.57B indica liquidità presente; attendere breakout sopra $110 per conferma rialzista. Fonte: Coinbase $103.68, Ledger $104.29 (recenti).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 103.68},
+          {"name": "Ledger", "price": 104.29}
+        ],
+        "spread_pct": 0.59,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "MSFT",
+      "motivo": "spread fonti eccessivo: StockHub Oct 10 $535.07 vs Investing.com (non datato) $483.24, scarto 10.2% > soglia 4%. Earnings schedulati per 27/10/2026 aumentano ulteriore incertezza pricing."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Q3 earnings rilasciati il 21-22/10/2026 (post-ultimo dato verificato $220.49 del 14/10). Nessun prezzo post-earnings disponibile tramite web search. Dati pre-earnings non utilizzabili."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Solo prezzi EUR per listing Borsa Milano (STLAM) trovati; nessun dato USD per listing NYSE (ticker STLA). Asset escluso per assenza di prezzi USD verificabili. Ultimo dato EUR: ~€5.23 (22/07/2026), -49% YTD."
+    },
+    {
+      "asset": "USO",
+      "motivo": "spread fonti eccessivo: dati in range $108.29 (Kraken) - $141.67 (Robinhood Sep 4), scarto >20% > soglia 4%. Dati troppo divergenti per segnale affidabile."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "BUY - AI accelerator commitments confermati, +2.07% oggi, -21% da 52w high ($658.52), triangolazione ALTA. Entry tecnica favorevole in fase di recupero."
+    },
+    {
+      "rank": 2,
+      "asset": "META",
+      "motivo": "BUY - Q3 revenue +26% YoY, Q4 guidance $73-76B, post-earnings dip da $718 a $642 offre entry con fondamentali solidi. Triangolazione ALTA."
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "BUY (Medio) - Trend rialzista pre-earnings (29/10), vicino a 52w high $351.73. Rischio earnings ma momentum positivo. Triangolazione ALTA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "AMD": "30% (BUY, confidenza Alto)",
+      "META": "40% (BUY, confidenza Alto)",
+      "AAPL": "30% (BUY, confidenza Medio)"
+    },
+    "avvertenze": "Allocazione per soli segnali BUY attivi. HOLD = nessuna allocazione simulata. Riunione Fed 27-28/10 rappresenta rischio macro rilevante per tutto il portfolio."
+  }
+}
