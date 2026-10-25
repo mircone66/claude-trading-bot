@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-10-25T18:17:21Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione del 25 ottobre 2026 caratterizzata da alta incertezza: CPI USA di ottobre al 3.7% (pubblicato settimana 12-16 ott) ha infranto le speranze di taglio tassi, causando il peggior sell-off del Nasdaq da luglio (-1.88%) e un crollo del -11.4% del PHLX Semiconductor Index. Qualità dati limitata: solo 5 asset su 18 superano la soglia di affidabilità minima (2 fonti concordanti). Dati crypto, ETF commodity e la maggior parte dei titoli europei esclusi per spread eccessivo o obsolescenza delle fonti. Microsoft con earnings il 27 ottobre (2 giorni), Tesla/Meta con earnings la settimana 19-23 ottobre (risultati non ancora disponibili nelle fonti). Contesto macro sfavorevole per growth stocks.",
+  "signals": [
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 342.19,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "dati di volume non disponibili per data corrente",
+      "news": "Schwab (Oct 20, 2026) mostra GOOGL a $340.28. Settimana del 12-16 ott segnata da CPI caldo (3.7%) e sell-off tech. Nasdaq -1.88% nella peggior seduta da luglio. Alphabet meno esposta al settore semiconduttori rispetto ai peer. Q2 2026: EPS miss ma revenue leggermente sopra le attese. Analisti maggioranza Buy, target consensus ~$438.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 342.19,
+      "stop_loss": 331.92,
+      "target": 359.30,
+      "commissione": 0.00,
+      "reasoning": "Fonte più recente (Schwab, 20 ott) conferma prezzo $340.28 con spread ALTA (<1.5%) vs InvestSmart $344.10. Contesto macro avverso (CPI 3.7%, tassi alti) pesa sui multipli growth. Attesa stabilizzazione pre-earnings Q3 prima di entrata direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Schwab (delayed, Oct 20 2026)", "price": 340.28},
+          {"name": "InvestSmart (Aug 18 2026)", "price": 344.10}
+        ],
+        "spread_pct": 1.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 375.03,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "dati di volume non disponibili; earnings Q3 settimana 19-23 ott, risultati non confermati",
+      "news": "Dati da settembre 2026. Tesla attesa agli earnings nella settimana 19-23 ottobre (per conferma mercato). InvestSmart registra $380.12 al 23 set, CoinGecko ~$369.93. Mercato auto elettrica sotto pressione per dazi USA. Nessuna fonte post-earnings disponibile nelle ricerche.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 375.03,
+      "stop_loss": 363.78,
+      "target": 393.78,
+      "commissione": 0.00,
+      "reasoning": "Dati con 32 giorni di obsolescenza (ultima fonte certa: 23 set). Earnings Q3 probabilmente già pubblicati (settimana 19-23 ott) ma risultati non catturati dalle ricerche. Spread 2.72% MEDIA ma dato non attuale; segnale HOLD in assenza di conferma post-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 23 2026)", "price": 380.12},
+          {"name": "CoinGecko (undated, ~Sep 2026)", "price": 369.93}
+        ],
+        "spread_pct": 2.72,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 223.48,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "PHLX Semiconductor Index -11.4% settimana 12-16 ott; volume anomalo atteso nel settore",
+      "news": "Coinglass conferma $227.21 al 30 set 2026 (52W range 164.27-236.54, market cap $5.48T). PHLX Semiconductor Index ha perso il 11.4% nella settimana del 12-16 ottobre per effetto del CPI caldo e riduzione aspettative di taglio tassi. NVDA potenzialmente al di sotto del prezzo validato alla data odierna.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 223.48,
+      "stop_loss": 216.78,
+      "target": 234.65,
+      "commissione": 0.00,
+      "reasoning": "Dato più recente da Coinglass al 30 set (25 giorni fa); PHLX Semi -11.4% nella settimana successiva suggerisce prezzo attuale verosimilmente inferiore. Spread 3.34% MEDIA ma dati pre-correzione settoriale. HOLD in attesa di conferma prezzi post-sell-off.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass (Sep 30 2026)", "price": 227.21},
+          {"name": "InvestSmart (undated ~Aug-Sep 2026)", "price": 219.74}
+        ],
+        "spread_pct": 3.34,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 490.00,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "Pre-earnings; earnings programmati 27 ottobre 2026 (tra 2 giorni). Volume tipicamente anomalo nelle ultime sedute pre-earnings.",
+      "news": "Microsoft con earnings Q3 2026 programmati per il 27 ottobre. Investing.com mostra $483.24 (senza data). InvestSmart header $496.75. Il contesto macro (CPI 3.7%, tassi alti) penalizza i multipli growth. La settimana 12-16 ott il Nasdaq ha perso 1.88% nel peggior giorno da luglio. Su Oct 6, MSFT era salito del +0.8% con il mercato.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 490.00,
+      "stop_loss": 475.30,
+      "target": 514.50,
+      "commissione": 0.00,
+      "reasoning": "Earnings il 27 ott rendono qualsiasi posizione direzionale un'operazione ad alto rischio. Spread 2.76% MEDIA con dati da settembre-ottobre non aggiornati al giorno corrente. Attendere risultati earnings prima di valutare entrata.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (undated, ~Oct 2026)", "price": 483.24},
+          {"name": "InvestSmart header (current, last dated Sep 2 2026)", "price": 496.75}
+        ],
+        "spread_pct": 2.76,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 394.55,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "dati di volume non disponibili per data corrente; ultimo dato affidabile 2 ottobre 2026",
+      "news": "StockAnalysis conferma close $388.33 il 2 ottobre 2026. Trade Ideas mostra $400.77 (data ~fine set 2026). Ferrari è marchio luxury con domanda anelastica; meno esposta a ciclo tech e tassi rispetto ai peer USA. 52W high $519.10 (lug 2025). Analisti: Strong Buy, target medio $446.68.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 394.55,
+      "stop_loss": 382.71,
+      "target": 414.28,
+      "commissione": 0.00,
+      "reasoning": "Dati con 23 giorni di obsolescenza (ultimo dato: 2 ott). Spread 3.15% MEDIA tra StockAnalysis e Trade Ideas. Ferrari mantiene fondamentali solidi (luxury pricing power) ma il dato è troppo datato per un segnale direzionale affidabile. HOLD fino a conferma prezzi recenti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Oct 2 2026)", "price": 388.33},
+          {"name": "Trade Ideas (delayed, ~Sep-Oct 2026)", "price": 400.77}
+        ],
+        "spread_pct": 3.15,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "spread fonti 5.46% > soglia 4%; InvestSmart $339.71 (23 set) vs Coinglass $321.66 (24 lug) - dati con date diverse e gap eccessivo"
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "spread fonti 5.94% > soglia 4%; InvestSmart $258.48 (5 set) vs Upstox $274.31 (8 ago) - dati stantii da mesi diversi"
+    },
+    {
+      "asset": "META",
+      "motivo": "spread fonti >12%; InvestSmart header $653.69 (non datato) vs Yahoo Finance $578.54 (1 set) - fonte header non verificabile con timestamp"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "spread fonti 9.62% > soglia 4%; InvestSmart $70.30 (10 ott) vs Yahoo Finance $77.40 (11 set); possibile stock split 1:10 distorce comparabilità storica"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "spread fonti 25.5% > soglia 4%; InvestSmart $624.00 (23 set) vs Yahoo Finance $483.01 (13 ago) - discrepanza non spiegata, dati inaffidabili"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "spread fonti 7.55% > soglia 4%; Coinglass $1641.52 (18 ott) vs InvestSmart $1780.34 (9 ott) - settore semi -11.4% settimana 12-16 ott spiega gap temporale ma rende spread non triangolabile"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "spread fonti 4.58% > soglia 4%; Dashboard $220.49 (14 ott) vs InvestSmart $210.62 (24 set); earnings Q3 2026 pubblicati 21 ott (dati precedenti invalidati)"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "nessun prezzo NYSE verificato; unica fonte disponibile CFD Capital.com senza timestamp. Ticker NYSE è STLA (non STLAM che è listino Milano)"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "spread fonti >4%; TradingView $462.62 (senza data) vs Yahoo Finance $483.75 (27 feb 2026) - fonte più recente da 8 mesi; dati insufficienti per triangolazione affidabile"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "spread fonti 16.6% > soglia 4%; Kraken $52.18 vs CoinGecko $61.64 - entrambi senza timestamp; dati non confrontabili"
+    },
+    {
+      "asset": "USO",
+      "motivo": "spread fonti 6.73% > soglia 4%; Robinhood $141.67 (4 set) vs Benzinga $132.44 (24 ago) - oil ETF volatile, dati stantii da >50 giorni"
+    },
+    {
+      "asset": "BTC",
+      "motivo": "spread fonti >50%; fonti 2026 mostrano range $61,800-$123,000 in date diverse; nessuna fonte CoinMarketCap/Coinbase disponibile nella ricerca"
+    },
+    {
+      "asset": "ETH",
+      "motivo": "spread fonti >50%; TabTrader mostra $2,455-$4,648 (snapshot diversi); Investing.com $2,411 senza timestamp; impossibile triangolazione affidabile"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "spread fonti 10.5% > soglia 4%; The Block $75.94 (12 ago) vs MEXC $84.37 (10 apr) - entrambi stantii da 2-6 mesi"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GOOGL",
+      "motivo": "Unico asset con affidabilità ALTA (spread 1.12%); fonte Schwab del 20 ottobre (5 giorni fa) è la più recente del panel. Alphabet meno esposta al sell-off semiconduttori. Analisti con target medio $438 (+28% vs prezzo validato $342). HOLD per ora; candidato a BUY su conferma stabilizzazione."
+    },
+    {
+      "rank": 2,
+      "asset": "MSFT",
+      "motivo": "Earnings il 27 ottobre creano potenziale trigger direzionale. Se Q3 batte le stime, probabile rebound. Prezzo validato $490 con spread MEDIA. Da monitorare post-earnings con nuova triangolazione prezzi."
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "Ferrari luxury brand con domanda anelastica, meno sensibile a ciclo tech e tassi. Target analisti $446.68 (+13% vs $394.55). Candidato a BUY su conferma prezzi e stabilizzazione macro."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "avvertenza": "Solo 5/18 asset hanno superato la soglia di affidabilità dati. Tutti i segnali sono HOLD per insufficienza di dati recenti verificabili. Si raccomanda nuova triangolazione con fonti real-time prima di qualsiasi operazione.",
+    "allocazione_suggerita": {
+      "GOOGL": "30% (affidabilità ALTA, dato più recente Oct 20)",
+      "MSFT": "25% (earnings catalyst imminente Oct 27)",
+      "RACE": "20% (difensivo luxury, spread MEDIA)",
+      "TSLA": "15% (post-earnings, alta volatilità)",
+      "NVDA": "10% (settore semi in correzione, dato stale)"
+    }
+  }
+}
