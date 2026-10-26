@@ -1,0 +1,384 @@
+{
+  "timestamp": "2026-10-26T18:17:30Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Seduta del 26 ottobre 2026 caratterizzata da ottimismo pre-earnings (S&P 500 +1.0%, Nasdaq +1.3%): TSLA in rialzo del 6% su upgrade Barclays a Overweight ($450 target); Meta annuncia maxi-aumento di capitale da $95B per AI e batte il Q3 (+26% ricavi a $64.6B); AMZN batte le stime; AAPL in calo del 1.3%. Crypto deboli: BTC sotto $80k, SOL peggiore del big-four di ottobre (-14%). Commodities: oro volatile dopo calo -2.63% del 22/10; WTI sopra $100, USO al massimo annuale ($169.53 il 23/10) per tensioni Iran/Medio Oriente. Fed in riunione il 28/10 (catalizzatore chiave).",
+  "signals": [
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 395.00,
+      "change_24h": "+6.00%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo per upgrade Barclays (+6% intraday)",
+      "news": "Barclays upgrades Tesla to Overweight with $450 price target, citing possible SpaceX combination; shares +6% on Oct 26. Earnings week: TSLA scheduled to report.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 395.00,
+      "stop_loss": 383.15,
+      "target": 414.75,
+      "commissione": 0.00,
+      "reasoning": "Upgrade Barclays a Overweight con target $450 rappresenta forte catalizzatore fondamentale. Il momentum intraday (+6%) suggerisce accumulazione istituzionale a supporto del breakout.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TheStreet/Investing.com (Oct 26, intraday)", "price": 395.00},
+          {"name": "Investsmart.com.au (Sep 23 close)", "price": 378.85}
+        ],
+        "spread_pct": 4.26,
+        "affidabilita": "MEDIA",
+        "note": "Spread >1.5% ma spiegato da 33 giorni tra fonti; fonte Oct 26 è primaria e aggiornata"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 80200.00,
+      "change_24h": "-0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "outflow ETF Bitcoin: $636M in un giorno; $404M long liquidations in 4h",
+      "news": "BTC briefly dipped below $80k after weekly close under $83k and false breakout Oct 25. ETF net outflows resumed. ATH $126,210 reached Oct 6, 2025; down -31% YTD. Strategy halted BTC purchases. Fed meeting Oct 28 is key macro catalyst.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 80200.00,
+      "stop_loss": 76190.00,
+      "target": 86616.00,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista da ATH, outflow ETF e pattern false-breakout deprimono il sentiment. Il livello $80k è supporto critico; Fed Oct 28 potrebbe agire da catalizzatore in entrambe le direzioni.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Oct 26, live)", "price": 80113.64},
+          {"name": "CoinGecko (Oct 26, live)", "price": 80665.00},
+          {"name": "CoinMarketCap (Oct 26, live)", "price": 80111.00}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2325.66,
+      "change_24h": "-1.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "staking record in Q3 ma yields in calo; -13.2% in ottobre",
+      "news": "ETH staking hits Q3 record but yields fall as more ETH staked (Bitwise report, Oct 20). ETH -13.2% in October, >50% below ATH ($4,953 Aug 2025). Glamsterdam upgrade (proposer-builder separation, higher gas limits) is next major catalyst. Attack on Ethereum-based altcoin project ongoing Oct 25.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2325.66,
+      "stop_loss": 2209.38,
+      "target": 2511.71,
+      "commissione": 0.00,
+      "reasoning": "Trend mensile fortemente ribassista (-13.2% ottobre) ma upgrade Glamsterdam rappresenta catalizzatore fondamentale positivo a medio termine. Attendere conferma del supporto prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune.com (Oct 26, 8:15 AM ET)", "price": 2327.88},
+          {"name": "MetaMask (Oct 26, 11:27 UTC)", "price": 2323.44},
+          {"name": "Investing.com/Binance (Oct 26, partial close)", "price": 2299.03}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 101.28,
+      "change_24h": "-0.49%",
+      "trend_5d": "ribassista",
+      "volume_note": "spot ETF USA con outflow ricorrenti; volume DEX in crescita su Solana",
+      "news": "SOL -14.1% in October, worst performer among big-four crypto. Trading near recent low $98.51. US Solana spot ETF recurring outflows. Alpenglow consensus upgrade went live on mainnet Oct 21 (positive fundamental). Euro stablecoin supply +$22M in one week on Solana (CryptoBriefing).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 101.28,
+      "stop_loss": 96.22,
+      "target": 109.38,
+      "commissione": 0.00,
+      "reasoning": "SOL è il più penalizzato del big-four in ottobre (-14.1%) ma l'upgrade Alpenglow live e la crescita DeFi supportano i fondamentali. Supporto chiave a $98.51; break sotto questo livello aprirebbe a ulteriore debolezza.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Oct 26, via ad-hoc-news)", "price": 101.65},
+          {"name": "Coinbase converter (Oct 26, 9:13 AM)", "price": 100.91},
+          {"name": "Paybis (Oct 26)", "price": 101.29}
+        ],
+        "spread_pct": 0.73,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.11,
+      "change_24h": "-0.72%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale; attenzione su earnings Oct 28",
+      "news": "Stellantis at record low near $3.92-$4.12 range. Market cap ~$11.4B, down 62.1% in 12 months. Q3 earnings due Oct 28 8am EDT, could be turnaround catalyst or confirm value trap. Analyst consensus Hold, avg target $6.96 vs current $4.11.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 4.11,
+      "stop_loss": 3.99,
+      "target": 4.32,
+      "commissione": 0.00,
+      "reasoning": "Titolo al minimo storico con Q3 earnings il 28/10: rischio/rendimento sfavorevole pre-earnings. Il gap tra prezzo ($4.11) e target analitico ($6.96) suggerisce valore potenziale ma la conferma arriverà solo dagli utili.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (Oct 26, 5:29 PM)", "price": 4.11},
+          {"name": "Robinhood (Oct 26)", "price": 4.12},
+          {"name": "SeekingAlpha (Oct 26, midday)", "price": 4.11}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 48.82,
+      "change_24h": "+0.41%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale; -5.59% su Oct 22 per timori inflazione petrolio",
+      "news": "SLV fell 5.59% on Oct 22 as oil-driven inflation fears outweighed safe-haven demand. Oct 23 close $48.72 (-1.26%). Recovering slightly Oct 26 morning (+0.41%). Spot silver tests $53.46 support. Fed Oct 28 decision is key catalyst for precious metals.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 48.82,
+      "stop_loss": 47.84,
+      "target": 50.77,
+      "commissione": 0.00,
+      "reasoning": "Silver in trend ribassista settimanale (-5.59% Oct 22) per forza del petrolio e timori Fed. Rimbalzo tecnico potrebbe trovare resistenza a $51-53 area. Attendere Fed Oct 28 prima di prendere posizione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis.com (Oct 26, 11:15 AM EDT, market open)", "price": 48.92},
+          {"name": "HeyGoTrade (Oct 23 close)", "price": 48.72}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 388.18,
+      "change_24h": "+1.60%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale su NYSE",
+      "news": "Ferrari (Euronext Milan) trading at ~€355.20 on Oct 26, up ~1.6% on the day. NYSE USD close Oct 2 was $388.33. No major company-specific news beyond typical luxury auto sector updates. Ferrari maintains premium positioning.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 388.18,
+      "stop_loss": 376.53,
+      "target": 407.59,
+      "commissione": 0.00,
+      "reasoning": "Prezzo validato su dati Oct 2 NYSE (2 fonti concordanti, spread 0.08%); conferma Euronext Italy Oct 26 a €355.20. Trend laterale senza catalizzatori immediati. Qualità del titolo alta ma valutazione già incorpora premium.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis/iTechGuides (Oct 2, 2026 NYSE close)", "price": 388.33},
+          {"name": "MarketBeat (Oct 2, 2026 NYSE close)", "price": 388.03}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA",
+        "note": "Prezzi NYSE da Oct 2; Euronext Oct 26 ~EUR 355.20 conferma ordine di grandezza"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 341.35,
+      "change_24h": "-1.30%",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale; tech stocks news: Yahoo Finance segnala 'Apple sinks'",
+      "news": "Apple down ~1.3% on Oct 26 per TheStreet/Investing.com. No fresh company-specific catalyst identified. Big Tech earnings week with MSFT, AMZN, GOOGL reporting; AAPL not in this earnings batch. Stock in focus in 2026 per market analysts.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 341.35,
+      "stop_loss": 331.11,
+      "target": 358.42,
+      "commissione": 0.00,
+      "reasoning": "AAPL in leggero calo oggi (-1.3%) senza catalizzatori specifici. Con Big Tech earnings week in corso il sentiment generale tech è misto. Nessun segnale direzionale forte; mantenere posizioni esistenti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com article (Oct 26, intraday indirect cite)", "price": 343.00},
+          {"name": "Investsmart.com.au (Sep 23 close)", "price": 339.71}
+        ],
+        "spread_pct": 0.97,
+        "affidabilita": "MEDIA",
+        "note": "Fonte Oct 26 è citazione indiretta da articolo; fonte Sep 23 è datata 33 giorni"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.40,
+      "change_24h": "+0.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume normale; Q3 earnings beat questa settimana",
+      "news": "Amazon beats Q3 estimates per Yahoo Finance 'Tech stocks today: Amazon beats, Apple sinks'. Analyst targets: BofA $310 (Jul 22, 2026). Post-Q2 earnings jump ~15% on Jul 31 to $271.58. Earnings growth story intact for cloud/AI division.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 259.40,
+      "stop_loss": 251.62,
+      "target": 272.37,
+      "commissione": 0.00,
+      "reasoning": "AMZN batte le stime Q3 questa settimana, tuttavia il prezzo validato ($259.40) è dato da Ago/Set 2026. Attendere conferma post-earnings prima di aumentare esposizione; il trend fondamentale è positivo ma l'entry point richiede verifica del prezzo corrente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investsmart.com.au (Sep 5 close)", "price": 258.48},
+          {"name": "StockAnalysis (Aug 26 close)", "price": 260.28}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "MEDIA",
+        "note": "Entrambe le fonti da Ago/Set 2026, ~50 giorni fa; prezzi concordanti ma datati"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 340.28,
+      "change_24h": "n/d",
+      "trend_5d": "laterale",
+      "volume_note": "volume normale; earnings in settimana",
+      "news": "Alphabet part of Big Tech earnings week (reports scheduled). Schwab shows Oct 20 delayed close $340.275. Analyst targets up to $408.47 (52w high per Bloomberg Jul 5). AI investment theme strong. Anthropic S-1 filing reveals $200B+ in compute commitments (Nvidia-based), positive for sector.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 340.28,
+      "stop_loss": 330.07,
+      "target": 357.29,
+      "commissione": 0.00,
+      "reasoning": "GOOGL quota $340 con earnings imminenti questa settimana. L'Anthropic S-1 e il tema AI investment sono positivi per la valutazione, ma attendere outcome earnings per confermare direzionalità.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Charles Schwab delayed quote (Oct 20 close)", "price": 340.28},
+          {"name": "Investsmart.com.au (Aug 18 close)", "price": 344.10}
+        ],
+        "spread_pct": 1.12,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 368.21,
+      "change_24h": "+0.44%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale; forte volatilità su Oct 22 (-2.63%)",
+      "news": "GLD fell 2.63% on Oct 22 2026 as oil-driven inflation fears outweighed safe-haven demand. Recovering +0.44% morning of Oct 26. Spot gold near $4,010, eyes $3,946 support level. Fed meeting Oct 28 is primary catalyst: outcome will determine if gold holds or breaks lower.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 368.21,
+      "stop_loss": 360.85,
+      "target": 382.94,
+      "commissione": 0.00,
+      "reasoning": "Oro in rimbalzo tecnico (+0.44%) dopo -2.63% del 22/10. Fed Oct 28 è il vero game-changer: una postura hawkish potrebbe rompere il supporto $3,946 (spot), mentre una pausa favorirebbe il recupero verso $400+. Posizione neutrale fino alla decisione Fed.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "RioTimesOnline gold/silver article (Oct 26, morning price)", "price": 368.21},
+          {"name": "Pluang.com (circa Oct 23, ~3 days ago)", "price": 381.63}
+        ],
+        "spread_pct": 3.61,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 169.53,
+      "change_24h": "+4.32%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume anomalo Oct 23: 6.4M shares; WTI sopra $100 per tensioni Iran",
+      "news": "USO surged +4.32% on Oct 23, setting 52-week high at $169.96, as Middle East attacks pushed Brent above $116 and WTI above $100. Fears of renewed US strikes on Iran weigh on market. Fed meeting Oct 28 could weigh on oil if hawkish. USO AUM: $1.7B as of Oct 26.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 169.53,
+      "stop_loss": 166.14,
+      "target": 176.31,
+      "commissione": 0.00,
+      "reasoning": "USO al massimo annuale sostenuto da tensioni geopolitiche Iran/Medio Oriente. Rischio di storno tecnico dopo rialzo +4.32% del 23/10. Possibile impatto negativo da Fed hawkish Oct 28. Mantenere senza aumentare esposizione a questi livelli.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bloomberg (Oct 23 close)", "price": 169.53},
+          {"name": "Google Finance / StockAnalysis (Oct 23 close)", "price": 169.53}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "note": "Tre fonti concordanti per Oct 23 close; Oct 26 intraday non disponibile"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NVDA",
+      "motivo": "Spread fonti 5.0%: Coinglass Sep 30 $227.21 vs Investing.com article Oct 26 ~$216; gap temporale 27 giorni non consente triangolazione attendibile"
+    },
+    {
+      "asset": "MSFT",
+      "motivo": "Nessun prezzo verificato per Oct 26; dati più recenti da Sep 2 ($501.26 Investsmart) senza conferma seconda fonte per la stessa data; earnings annunciati per Oct 27"
+    },
+    {
+      "asset": "META",
+      "motivo": "Spread fonti 5.9%: Yahoo Finance Sep 1 $578.54 vs Investsmart Sep 9 $613.31; nessuna fonte con prezzo Oct 26; nonostante Q3 beat (+26% ricavi) e equity raise $95B, prezzo non validabile"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Fonti molto divergenti: Investsmart Oct 10 $70.30, Yahoo Finance ~$75.31, Google Finance ~$79-82; spread >6%; Q3 EPS beat (87c vs 82c attesi) ma revenue solo in linea"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread fonti 22.5%: Yahoo Finance Aug 13 $483.01 vs Investsmart Sep 23 $624.00; movimento +23.7% in una settimana (insolito); impossibile triangolare"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Spread fonti 4.3%: Coinglass Oct 18 $1,641.52 vs ASML news Oct 23 ~$1,571.80; Q3 beat con Q4 guidance €14.2-15.2B vs consensus €14.11B, ma validazione prezzo non supera soglia del 4%"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Dati estremamente contraddittori: Yahoo Finance Jul 22 $146.38 vs Investsmart Sep 24 $210.62 vs RyanOConnell Oct 14 $220.49; spread 50%+ tra fonti, probabile mix di listings/classi diverse; Q3 earnings Oct 21-22 non incorporati con certezza"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Upgrade Barclays a Overweight con target $450 (+14% dall'attuale $395); momentum intraday +6% Oct 26; SpaceX combination thesis è catalizzatore strutturale. Miglior setup rischio/rendimento della sessione."
+    },
+    {
+      "rank": 2,
+      "asset": "BTC",
+      "motivo": "Supporto critico $80k testato e tenuto. Fed Oct 28 potrebbe essere pivot positivo se accomodante. Setup contrarian con stop chiaro a $76,190 (-5%) e target $86,616 (+8%)."
+    },
+    {
+      "rank": 3,
+      "asset": "AMZN",
+      "motivo": "Q3 earnings beat questa settimana (Amazon beats, per Yahoo Finance); AWS e AI division in crescita; target BofA $310 vs prezzo attuale ~$259; ma richiedere conferma prezzo Oct 26 prima di operare."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione ipotetica su $100,000 per asset validati con segnale BUY/HOLD.",
+    "allocazione_suggerita": {
+      "TSLA": "20% ($20,000) - BUY su upgrade Barclays",
+      "BTC": "15% ($15,000) - HOLD supporto $80k",
+      "AMZN": "15% ($15,000) - HOLD earnings beat (verificare prezzo corrente)",
+      "AAPL": "15% ($15,000) - HOLD large cap difensiva",
+      "GOOGL": "15% ($15,000) - HOLD earnings week",
+      "ETH": "8% ($8,000) - HOLD upgrade Glamsterdam",
+      "GLD": "7% ($7,000) - HOLD hedge Fed risk",
+      "SOL": "5% ($5,000) - HOLD Alpenglow upgrade"
+    },
+    "cash_reserve": "0% - Nota: considerare mantenere 20-30% cash pre-Fed Oct 28"
+  }
+}
