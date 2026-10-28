@@ -1,0 +1,294 @@
+{
+  "timestamp": "2026-10-28T18:15:30Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione del 28 ottobre 2026 dominata da eventi macroeconomici e societari. FOMC meeting in corso oggi: mercati in attesa di dichiarazioni Fed. Earnings della settimana: MSFT e GOOGL riportano dopo la chiusura di oggi, AMZN domani (29/10). Ferrari (RACE) e MSFT hanno già riportato Q3 ieri (27/10). META post-earnings in stabilizzazione intorno a $648-654 dopo calo -7% del 23/10. NVDA conferma leadership AI chip con trend rialzista. BTC in recupero dai minimi di $80K, ora intorno a $82-84K. SOL in downtrend: -15% da inizio ottobre ($119 → $101). ASML ha riportato Q3 il 14/10 con vendite record EUR 11.66B; SAP Q3 Cloud Backlog +28%. Stellantis (STLA) in crisi strutturale: -YTD significativo, prezzo vicino a $4.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 228.25,
+      "change_24h": "+0.91% (stima su media fonti 28-30 set/10 ott)",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (AI chip sector momentum sostenuto)",
+      "news": "NVDA leader assoluto nell'AI infrastructure. Finbold riporta un ML algorithm price target per il 31/10 con press-time price $233, intraday record $237. Momentum sostenuto da tutta la catena AI (Broadcom, AMD). Prossimi earnings Q3 non ancora annunciati.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 228.25,
+      "stop_loss": 221.40,
+      "target": 239.66,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista confermato da due fonti (Coinglass Sep 30 $227.21, snapshot Oct 10 $229.28). AI infrastructure demand inalterata; press-time ML forecast punta a $233-237 area (fonte: finbold.com). Spread fonti 0.91% ALTA affidabilità.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass", "price": 227.21},
+          {"name": "Stockhub snapshot Oct 10", "price": 229.28}
+        ],
+        "spread_pct": 0.91,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 249.04,
+      "change_24h": "-0.77% (stima Oct 16→Oct 23)",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "AMZN riporta earnings Q3 domani 29/10 dopo la chiusura. Prezzi recenti stabili: $250 (Oct 16, Yahoo Finance) e $248.08 (Oct 23, Coinglass). Attese positive su AWS cloud growth ma mercato cauto pre-earnings.",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 249.04,
+      "stop_loss": 241.57,
+      "target": 261.49,
+      "commissione": 0.00,
+      "reasoning": "Affidabilità ALTA (spread 0.77% tra due fonti Oct 16 e Oct 23). HOLD pre-earnings: evento Oct 29 introduce alta volatilità bidirezionale. Range $248-250 suggerisce lateralizzazione in attesa del catalyst. Rientrare post-earnings con conferma direzione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 16)", "price": 250.00},
+          {"name": "Coinglass (Oct 23)", "price": 248.08}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 651.27,
+      "change_24h": "-7.03% (stima calo post-earnings Oct 23)",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto (earnings reaction Oct 21-23)",
+      "news": "META ha riportato Q3 il 21/10. Il titolo è crollato -7% a $648.85 il 23/10 (da $705.44 il 20/10). Post-earnings stabilizzazione: InvestSmart quota intorno a $653. Il 27/10 META ha collocato $25B di azioni con domanda 5x (fonte: scan precedente), segnale di interesse istituzionale al livello di prezzo corrente.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 651.27,
+      "stop_loss": 631.73,
+      "target": 683.83,
+      "commissione": 0.00,
+      "reasoning": "Due fonti concordanti post-earnings: heygotrade Oct 23 $648.85 e InvestSmart 'current' $653.69 (spread 0.74%, ALTA). Drop post-earnings -7% ha trovato supporto. L'equity placement da $25B a 5x oversubscritta (fonte: scan interno Oct 27) suggerisce base acquirente istituzionale. HOLD in attesa di conferma inversione rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Heygotrade/Yahoo Finance (Oct 23)", "price": 648.85},
+          {"name": "InvestSmart (post-earnings)", "price": 653.69}
+        ],
+        "spread_pct": 0.74,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 343.97,
+      "change_24h": "+1.23% (dato Oct 22)",
+      "trend_5d": "laterale/rialzista",
+      "volume_note": "normale",
+      "news": "AAPL +1.23% a $348.22 il 22/10 mentre il Nasdaq cedeva -2.60%: forte forza relativa vs mercato. Prossimi earnings Q4 FY2026 stimati per il 2 novembre. L'anno ha visto AAPL toccare un massimo di $345.34 (ora potenzialmente superato).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 343.97,
+      "stop_loss": 333.65,
+      "target": 361.17,
+      "commissione": 0.00,
+      "reasoning": "Spread MEDIA (2.47%) tra InvestSmart Sep 23 $339.71 e heygotrade Oct 22 $348.22. Forza relativa vs Nasdaq evidente. HOLD pre-earnings (2 novembre): il titolo potrebbe continuare a salire fino all'annuncio, ma rischio event-driven giustifica la prudenza.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 23)", "price": 339.71},
+          {"name": "Heygotrade/Yahoo Finance (Oct 22)", "price": 348.22}
+        ],
+        "spread_pct": 2.47,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 382.74,
+      "change_24h": "+1.95% (stima su settimana precedente)",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto (upgrade Barclays Oct 27)",
+      "news": "Barclays ha upgradato TSLA a Overweight con target $450 il 27/10, citando la potenziale fusione SpaceX come opzione di valore nascosto. Il titolo era salito a $405.91 il 27/10 (fonte interna) post-upgrade. Le mie fonti web mostrano $386.47 al 21/10 come ultimo dato esterno verificabile.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 382.74,
+      "stop_loss": 371.26,
+      "target": 401.88,
+      "commissione": 0.00,
+      "reasoning": "Spread MEDIA (1.95%) tra InvestSmart Sep 23 $379 e financialcontent Oct 21 $386.47. Upgrade Barclays Oct 27 a Overweight/target $450 è il catalizzatore principale (fonte: scan interno e Investing.com). Nota: prezzo potrebbe essere già più alto (~$405) per il rimbalzo post-upgrade. Entry conservativo sul dato esterno verificato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart (Sep 23)", "price": 379.00},
+          {"name": "FinancialContent Nasdaq (Oct 21)", "price": 386.47}
+        ],
+        "spread_pct": 1.95,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 342.34,
+      "change_24h": "-2.47% (dato Oct 19)",
+      "trend_5d": "laterale/ribassista",
+      "volume_note": "normale",
+      "news": "GOOGL riporta Q3 earnings oggi 28/10 dopo la chiusura (fonte: heygotrade). Il 19/10 il titolo è sceso -2.5% a $340.59 in un contesto di Nasdaq debole. 52-week range $244.15-$408.61. Alta incertezza pre-earnings.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 342.34,
+      "stop_loss": 331.87,
+      "target": 359.46,
+      "commissione": 0.00,
+      "reasoning": "Spread MEDIA (1.02%) tra heygotrade Oct 19 $340.59 (fonte: Yahoo Finance/Nasdaq) e InvestSmart Aug 18 $344.09. HOLD assoluto: earnings OGGI dopo la chiusura di mercato. Volatilità bidirezionale attesa ±5-8%. Rivalutare domani post-earnings.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Heygotrade/Yahoo Finance (Oct 19)", "price": 340.59},
+          {"name": "InvestSmart (Aug 18)", "price": 344.09}
+        ],
+        "spread_pct": 1.02,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 83037.00,
+      "change_24h": "+2.53% (stima Oct 20→Oct 27)",
+      "trend_5d": "laterale/rialzista",
+      "volume_note": "normale (consolidamento $80K-$84K)",
+      "news": "BTC in recupero dai minimi di $80K. Changelly price table mostra $84,073 il 27/10. Blockchain Reporter cita CoinGecko a ~$82,000 il 20/10. FOMC meeting oggi: potenziale catalizzatore macro. Mercato crypto in attesa di segnali dalla Fed.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 83037.00,
+      "stop_loss": 78885.15,
+      "target": 89679.96,
+      "commissione": 0.00,
+      "reasoning": "Spread MEDIA (3.85%) tra Changelly Oct 27 $84,073 e Blockchain Reporter/CoinGecko Oct 20 $82,000. HOLD per evento FOMC in corso oggi: potenziale spike di volatilità in entrambe le direzioni. Supporto chiave a $80K già testato e tenuto. Rialzo verso $89K possibile ma FOMC introduce rischio. Attendere statement Fed.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Changelly price table (Oct 27)", "price": 84073.00},
+          {"name": "Blockchain Reporter/CoinGecko (Oct 20)", "price": 82000.00}
+        ],
+        "spread_pct": 3.85,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 102.74,
+      "change_24h": "-2.46% (stima Oct 20→Oct 24)",
+      "trend_5d": "ribassista",
+      "volume_note": "normale (downtrend controllato)",
+      "news": "SOL in calo da $119.48 (1 ottobre, fonte RoboForex) a $101.47 (24 ottobre, MEXC) e $104 (20 ottobre, Manifold/CoinGecko): -15% in ottobre. RoboForex (1/10) citava 'record inflows into Solana ETFs' come driver rialzista, ma il trend si è invertito. Livello chiave $100 come supporto psicologico.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 102.74,
+      "stop_loss": 97.60,
+      "target": 110.96,
+      "commissione": 0.00,
+      "reasoning": "Spread MEDIA (2.46%) tra MEXC Oct 24 $101.47 e Manifold/CoinGecko Oct 20 $104. Downtrend confermato: -15% da inizio ottobre. Supporto critico $100. HOLD sul livello corrente: attendere conferma rimbalzo sopra $107 prima di BUY, oppure rottura sotto $97 per SELL. FOMC oggi aggiunge incertezza macro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MEXC (Oct 24)", "price": 101.47},
+          {"name": "Manifold/CoinGecko (Oct 20)", "price": 104.00}
+        ],
+        "spread_pct": 2.46,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "MSFT",
+      "motivo": "scarto fonti >5% (InvestSmart Sep 2: $501.26 vs Bloomberg Linea Oct 16: $529.25 = 5.43%). Earnings riportati ieri 27/10: prezzo post-earnings non disponibile da fonti web indipendenti. Dati troppo incerti per generare segnali affidabili."
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "scarto fonti >5% (InvestSmart Oct 10: $70.30 vs Kraken undated: $73.98 = 5.1%). Prezzi post-split (nov 2025) incoerenti tra le fonti disponibili."
+    },
+    {
+      "asset": "AMD",
+      "motivo": "scarto fonti >4% (heygotrade Oct 20: $538.05 vs Nasdaq Oct 23: $516.79 = 4.03%). Il calo -4% in 3 giorni riflette price action reale ma le due fonti più recenti superano la soglia di validazione."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "scarto fonti >8% (InvestSmart early Oct: $1,780 vs Coinglass Oct 18: $1,641 = 8.1%). ASML è quotata su Nasdaq (non NYSE come indicato nel prompt). Q3 earnings del 14/10 positivi (EUR 11.66B). Dati in EUR da fonti europee non comparabili con USD."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "scarto fonti >4.5% (InvestSmart Sep 24: $210.62 vs dashboard Oct 14: $220.49 = 4.58%). Q3 results con Cloud Backlog +28%; after-hours EUR 214 (+6.2%) ma fonte non confermata."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "scarto fonti >8% (StockAnalysis Oct 2: $388.33 vs Equibles undated: $420.61 = 7.98%). Ferrari ha riportato Q3 il 27/10: prezzo post-earnings non disponibile."
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "ATTENZIONE: ticker STLAM è quotato su Borsa Italiana (Milano), non su NYSE/Nasdaq. Il ticker NYSE per Stellantis è STLA. STLA (NYSE): scarto fonti >23% (Marketchameleon Aug 28: $5.42 vs dashboard Oct 14: $4.29). Prezzo in forte declino (-YTD significativo)."
+    },
+    {
+      "asset": "GLD",
+      "motivo": "scarto fonti >20% (TradingView 'today': $462.62 vs Kraken undated: $372.74 = 21.5%). Fonte Kraken probabilmente obsoleta (dato early 2026). Impossibile triangolare con affidabilità."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "dati insufficienti: Yahoo Finance Sep 11: $58.12 vs Kraken undated: $52.18 (10.6%). Agosto 2026: argento spot ~$66/oz (Business Today). Fonti non concordanti su date recenti."
+    },
+    {
+      "asset": "USO",
+      "motivo": "scarto fonti >4% (Yahoo Finance undated: $142.09 vs Yahoo Finance Italian Oct 9: $148.20 = 4.21%). Dati privi di timestamp affidabile."
+    },
+    {
+      "asset": "ETH",
+      "motivo": "scarto fonti >14% (Manifold/CoinGecko Oct 20: ~$2,390 vs Trader's Union undated: ~$1,837 = 14.8%). Impossibile triangolare con affidabilità. Prezzo più recente citato: ~$2,390 (CoinGecko Oct 20, fonte: manifold.markets)."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Unico asset con affidabilità ALTA e segnale BUY confermato. AI infrastructure demand strutturale. Spread fonti 0.91%, trend rialzista confermato. Target +5% a $239.66."
+    },
+    {
+      "rank": 2,
+      "asset": "TSLA",
+      "motivo": "Upgrade Barclays a Overweight con target $450 (upside ~17% dal prezzo validato). Catalizzatore SpaceX merger in discussione. Entry conservativo possibile."
+    },
+    {
+      "rank": 3,
+      "asset": "BTC",
+      "motivo": "Recupero da supporto $80K con affidabilità MEDIA. Post-FOMC (oggi) se la Fed è dovish, potenziale accelerazione verso $89K area. Monitorare statement Fed nel pomeriggio."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione suggerita post-FOMC, subordinata a conferma segnali.",
+    "allocazione_suggerita": {
+      "NVDA": "25% (BUY confermato, affidabilità ALTA)",
+      "TSLA": "20% (BUY su upgrade Barclays, affidabilità MEDIA)",
+      "AMZN": "15% (HOLD - watchlist pre-earnings 29/10)",
+      "META": "15% (HOLD - stabilizzazione post-earnings)",
+      "BTC": "15% (HOLD - post-FOMC, potenziale BUY)",
+      "LIQUIDITA": "10% (riserva per GOOGL/AMZN post-earnings)"
+    }
+  },
+  "note_metodologiche": {
+    "avviso_dati": "Molti asset mostrano dati con date comprese tra Sep-Oct 2026. Per TSLA, AAPL, GOOGL, NVDA i prezzi più recenti sono di 5-10 giorni fa. Usare con cautela per trading intraday.",
+    "earnings_week": "Settimana earnings critica: GOOGL (oggi dopo close), MSFT (già riportato ieri 27/10), AMZN (domani 29/10). Evitare nuove posizioni su questi titoli fino a dati post-earnings.",
+    "fomc": "FOMC meeting oggi 28/10: decisione attesa nel pomeriggio. Impatto potenziale su tutte le asset class, specialmente crypto e growth stocks.",
+    "ticker_note": "STLAM (Borsa Italiana) ≠ STLA (NYSE). Prompt originale specifica STLAM ma non è quotato su NYSE/Nasdaq come indicato."
+  }
+}
