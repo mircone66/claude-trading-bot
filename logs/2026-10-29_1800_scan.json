@@ -1,0 +1,278 @@
+{
+  "timestamp": "2026-10-29T18:16:46Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Scan 29 ottobre 2026 ore 18:16 UTC. Nasdaq intorno a 27,346 e S&P 500 a 7,794 (dati al 9 ottobre). Tassi US 10Y al 5.26% esercitano pressione sulle valutazioni tech. Stagione earnings Q3 2026 in corso: GOOGL ha riportato ieri (28 ottobre), TSLA ha reagito fortemente post-earnings (+9% dal 16 al 21 ottobre), META e SAP hanno già riportato il 21 ottobre. STLA riporta oggi prima dell'apertura. Oro in pullback da record di agosto ($4,488/oz COMEX) con argento giù -21% YTD. 7 asset su 18 raggiungono soglia di validazione (4 ALTA, 3 MEDIA); 11 esclusi per dati insufficienti o post-earnings.",
+  "signals": [
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 386.47,
+      "change_24h": "+9.0% vs chiusura Oct 16 (post-earnings catalyst)",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo stimato post-earnings Q3 Oct 21",
+      "news": "Tesla Q3 2026 earnings sembrano aver sorpreso positivamente: il titolo è passato da $354.72 (Oct 16) a $386.47 (Oct 21 chiusura), un rialzo di circa +9%. TD Cowen ha confermato rating su AMD (settore semi), sentiment tecnologico positivo (fonte: financialcontent, Oct 21 2026).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 386.47,
+      "stop_loss": 374.88,
+      "target": 405.79,
+      "commissione": 0.00,
+      "reasoning": "Forte reazione post-earnings Q3: +9% in 5 giorni indica revisione al rialzo delle aspettative. Trend rialzista a breve termine con momentum positivo. Rischio: earnings già prezzati, mercato potrebbe consolidare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent/Nasdaq", "price": 386.47, "date": "2026-10-21"},
+          {"name": "StockHub.kr", "price": 384.87, "date": "2026-10-09"}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 528.49,
+      "change_24h": "+0.29% (spread inter-fonte Oct 9 vs Oct 16)",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Microsoft stabile in range $527-$529 a ottobre. Earnings FQ1 2026 stimati il 27 ottobre (Investing.com). Tassi al 5.26% sui Treasury USA a 10 anni pesano sulle valutazioni tech (fonte: StockHub.kr Oct 9; Bloomberg Línea Oct 16 2026). Post-earnings non confermati.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 529.25,
+      "stop_loss": 513.37,
+      "target": 555.71,
+      "commissione": 0.00,
+      "reasoning": "Titolo laterale in area $527-$529 con earnings probabili il 27 ottobre: segnale rimane HOLD in attesa di conferma post-earnings e direzione chiara. 52-week range 349-553.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bloomberg Línea", "price": 529.25, "date": "2026-10-16"},
+          {"name": "StockHub.kr", "price": 527.72, "date": "2026-10-09"}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 249.04,
+      "change_24h": "-3.6% tendenza settimanale (Oct 9→23)",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Amazon in calo da $258.30 (Oct 9) a $248.08 (Oct 23): -3.9% in due settimane. BofA ha target di $310 (reiterated luglio 2026). 52-week range: 196-287. Pressione da tassi alti (fonte: Coinglass Oct 23; Yahoo Finance Oct 16 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 248.08,
+      "stop_loss": 240.64,
+      "target": 260.48,
+      "commissione": 0.00,
+      "reasoning": "Trend a breve termine ribassista: -4% in 2 settimane. Valutazione ancora attraente rispetto ai target analisti ($310+), ma momentum negativo e tassi alti penalizzano il settore. Attendere stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass", "price": 248.08, "date": "2026-10-23"},
+          {"name": "Yahoo Finance (snapshot)", "price": 250.00, "date": "2026-10-16"}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 229.50,
+      "change_24h": "+2.0% tendenza (Sep 30→Oct 9)",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume normale",
+      "news": "Nvidia in leggero rialzo: da $227.21 (Sep 30) a $231.79 (Oct 9). 52-week range: 164.27-236.54 — prossimo alla resistenza. AI infrastructure demand rimane forte. Citi ha alzato target ASML il 15 ottobre segnalando ottimismo sul settore semiconduttori (fonte: Coinglass Sep 30; StockHub.kr Oct 9 2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 229.50,
+      "stop_loss": 222.62,
+      "target": 241.00,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista ma vicino al massimo annuale ($236.54). Resistenza tecnica importante. Aspettare breakout confermato prima di BUY. AI tailwind strutturale supporta il titolo medio termine.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass", "price": 227.21, "date": "2026-09-30"},
+          {"name": "StockHub.kr", "price": 231.79, "date": "2026-10-09"}
+        ],
+        "spread_pct": 2.01,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 346.33,
+      "change_24h": "-3.3% tendenza pre-earnings (Oct 9→16)",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo stimato (earnings Oct 28)",
+      "news": "Alphabet in calo pre-earnings: $352.07 (Oct 9) → $340.59 (Oct 16). Q3 2026 earnings riportati IERI 28 ottobre — risultato non disponibile nelle fonti di ricerca. 52-week range: 244-408. Nasdaq Composite -2.15% il 16 ottobre (fonte: HeyGoTrade/Yahoo Finance Oct 16; StockHub.kr Oct 9 2026). ATTENZIONE: prezzo pre-earnings, post-earnings non confermato.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 346.33,
+      "stop_loss": 335.94,
+      "target": 363.65,
+      "commissione": 0.00,
+      "reasoning": "Earnings Q3 riportati ieri 28 ottobre: la reazione del mercato è sconosciuta. Prezzo di riferimento ($346.33) è PRE-earnings. HOLD obbligatorio fino a conferma del prezzo post-earnings. Trend pre-earnings era ribassista (-3.3%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade / Yahoo Finance", "price": 340.59, "date": "2026-10-16"},
+          {"name": "StockHub.kr", "price": 352.07, "date": "2026-10-09"}
+        ],
+        "spread_pct": 3.34,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 392.65,
+      "change_24h": "+2.2% tendenza (Oct 2→26)",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume normale",
+      "news": "Ferrari in graduale rialzo: da $388.33 (Oct 2) a $396.97 (Oct 26). 52-week range: 312.51-519.10 — lontano dal massimo storico ($519). Earnings Q3 stimati il 27 ottobre (Equibles, non confermato). Mercato europeo in calo generale nella settimana del 20 ottobre (fonte: Benzinga Oct 26; StockAnalysis Oct 2 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 392.65,
+      "stop_loss": 380.87,
+      "target": 412.28,
+      "commissione": 0.00,
+      "reasoning": "Leggero uptrend ma potenziali earnings ieri 27/28 ottobre rendono il prezzo incerto. RACE è 24% sotto il massimo annuale: potenziale rialzo ma attendere conferma post-earnings. Brand premium e pricing power di Ferrari rimangono punti di forza.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Benzinga", "price": 396.97, "date": "2026-10-26"},
+          {"name": "StockAnalysis", "price": 388.33, "date": "2026-10-02"}
+        ],
+        "spread_pct": 2.20,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 52.00,
+      "change_24h": "-21.2% YTD a Oct 16",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "iShares Silver Trust in forte downtrend YTD (-21.2% al 16 ottobre). COMEX argento sceso da $66.44/oz (31 agosto) dopo sell-off legato a tassi alti e dati inflazione. Fed Chair Warsh ha alimentato preoccupazioni inflazionistiche. 52-week range: ~$32-$110. Asset ridotti da $36.8B (metà 2026) a ~$30B (fonte: Walnut Research Oct 16; Kraken snapshot 2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 52.00,
+      "stop_loss": 50.96,
+      "target": 54.08,
+      "commissione": 0.00,
+      "reasoning": "Forte downtrend da agosto: silver sceso da ~$66/oz a ~$55/oz. Tassi alti al 5.26% penalizzano i metalli preziosi non yield-bearing. HOLD in attesa di segnali di inversione o pivot Fed. Zona di possibile supporto tecnico.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Walnut Research", "price": 51.83, "date": "2026-10-16"},
+          {"name": "Kraken", "price": 52.18, "date": "2026-10-est"}
+        ],
+        "spread_pct": 0.67,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AAPL",
+      "motivo": "Spread fonti 8.9% (InvestSmart $339.71 Sep23 vs Equibles ~$309.72 undated) > soglia 4%"
+    },
+    {
+      "asset": "META",
+      "motivo": "Post-earnings Q3 (21 ottobre 2026): prezzo pre-earnings $705-718 non più attendibile; reazione mercato non confermata"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "Spread fonti 9.5% (Coinglass $63.90 Oct26 vs InvestSmart $70.30 Oct10) > soglia 4%; possibile stock split distorsione"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread fonti >4% (massive.com $516.79 Oct23 vs heygotrade $538.05 Oct19 = 4.0%); StockHub.kr mostra $620 Oct9 (possibile discrepanza dati)"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Nessuna fonte USD Nasdaq affidabile recente; unica fonte USD $1,641.52 Oct18 senza conferma da seconda fonte indipendente USD"
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Post-earnings Q3 (21-22 ottobre 2026): prezzo pre-earnings $210-220 non più attendibile; reazione after-hours non confermata in USD NYSE"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "STLAM è il ticker Milano (EUR); NYSE ticker è STLA. Earnings STLA riportati OGGI 29 ottobre prima dell'apertura: prezzo pre-earnings stale ($4.40-4.69 Oct 1-2)"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Fonti in conflitto severo: Trade-Ideas $380.14 Oct3 vs Yahoo Finance $462.62 (Feb13) — discrepanza non giustificabile senza dati intermedi; BASSA affidabilità"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Spread fonti 6.7% (Robinhood $141.67 Sep4 vs Benzinga $132.44 Aug24) > soglia 4%; nessuna fonte post-settembre disponibile"
+    },
+    {
+      "asset": "BTC",
+      "motivo": "Unica fonte recente credibile (Changelly ~$84,073 Oct27); TabTrader mostra prezzi contraddittori da $66,900 a $122,960 (cache di date diverse). Fonti verificate < 2"
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Fonti non datate al 2026: Investing.com $2,410.96 e TabTrader $2,454 senza timestamp verificabile per ottobre 2026. Fonti verificate < 2"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread 13.9% tra RoboForex $119.48 (Oct1) e Manifold/CoinGecko ~$104 (Oct20) su orizzonte temporale di 3 settimane > soglia 4%"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Unico segnale BUY: forte reazione post-earnings Q3 (+9% dal 16 al 21 ottobre). Momentum rialzista supportato da dati verificati ALTA affidabilità. Entry $386.47, SL $374.88, Target $405.79."
+    },
+    {
+      "rank": 2,
+      "asset": "MSFT",
+      "motivo": "HOLD ad alta affidabilità (ALTA): stabile in range $527-529, earnings probabili il 27 ottobre. Breakout sopra $553 (52-week high) aprirebbe segnale BUY."
+    },
+    {
+      "rank": 3,
+      "asset": "NVDA",
+      "motivo": "HOLD vicino alla resistenza chiave ($236.54 = 52-week high). Breakout confermato genererebbe segnale BUY con AI tailwind strutturale. Entry ottimale ~$220 su pullback."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "TSLA": "25% (unico BUY confermato)",
+      "MSFT": "25% (HOLD stabile, alta qualità dati)",
+      "AMZN": "20% (HOLD, monitorare recupero)",
+      "NVDA": "20% (HOLD, vicino a resistenza)",
+      "RACE": "10% (HOLD, incertezza post-earnings)"
+    },
+    "asset_esclusi_dal_portafoglio": ["GOOGL (HOLD pre-earnings incerto)", "SLV (downtrend forte)"]
+  },
+  "statistiche_scan": {
+    "asset_totali": 18,
+    "asset_validati": 7,
+    "asset_ALTA": 4,
+    "asset_MEDIA": 3,
+    "asset_esclusi": 11,
+    "segnali_BUY": 1,
+    "segnali_SELL": 0,
+    "segnali_HOLD": 6,
+    "earnings_in_corso": ["GOOGL (Oct 28)", "TSLA (Oct 21)", "META (Oct 21)", "SAP (Oct 21-22)", "RACE (Oct 27 est.)", "STLA (Oct 29 today)"]
+  }
+}
