@@ -1,0 +1,497 @@
+{
+  "timestamp": "2026-10-30T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Giornata fortemente ribassista: Nasdaq -3%+ su AI reckoning. Intel crolla -25% post-earnings con guidance deludente, trascinando AMD -11.8% e NVDA -5%. AMZN EPS miss -5.14% dopo GOOGL -12.6% ieri. Crypto affossata da hack Binance $6.3B con $1.57B in long liquidati (BTC 5-week low $76,443). Gold e Silver in calo nonostante risk-off. Outperformer: NFLX flat a 52w low ($62), SAP +1.89% su AI tools, STLA tiene dopo turnaround +13% Oct 28.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 345.60,
+      "change_24h": "-0.95%",
+      "trend_5d": "rialzista con correzione",
+      "volume_note": "normale",
+      "news": "Apple ha presentato il primo MacBook Pro touchscreen e un Foldable iPhone Duo; earnings Q4 FY26 attesi Nov 2, 2026. All-time high $351.73 toccato Oct 29.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 345.60,
+      "stop_loss": 335.23,
+      "target": 362.88,
+      "commissione": 0.00,
+      "reasoning": "AAPL in correzione -0.95% dal record di $351.73 toccato il 29-Oct; resiliente vs Nasdaq -3%. Earnings pianificati per Nov 2: incertezza pre-earnings e valutazione a 52w high suggeriscono cautela (CNBC: $349.06 chiusura Oct 29, Robinhood: $346.13 intraday Oct 30).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 346.13},
+          {"name": "Motley Fool", "price": 345.07}
+        ],
+        "spread_pct": 0.31,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 398.46,
+      "change_24h": "-1.20%",
+      "trend_5d": "laterale",
+      "volume_note": "normale (24.58M vs media 42.51M)",
+      "news": "Tesla Q3 earnings hanno mostrato calo profitti da investimenti in infrastruttura AI/autonomy. Speculazione attiva su possibile merger SpaceX-Tesla (Motley Fool: 'The Case Against a SpaceX and Tesla Merger').",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 398.46,
+      "stop_loss": 386.51,
+      "target": 418.38,
+      "commissione": 0.00,
+      "reasoning": "TSLA cede -1.20% nel generale sell-off Nasdaq ma mantiene livelli tecnici sopra supporto $387 (intraday low). Nessun catalizzatore specifico immediato; speculazione merger con SpaceX aggiunge volatilità (CNBC: $398.52, Robinhood: $398.40).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 398.52},
+          {"name": "Robinhood", "price": 398.40}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 203.15,
+      "change_24h": "-4.92%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (chip sector selloff su Intel guidance)",
+      "news": "Chip sector selloff post-Intel guidance miss: Intel -25%, AMD -11.8%, NVDA -5%. Benzinga: 'Nvidia Shares Drop Amid Chip Selloff'. OpenAI valuta acquisto chip Google. Earnings NVDA Nov 17.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 203.15,
+      "stop_loss": 197.06,
+      "target": 213.31,
+      "commissione": 0.00,
+      "reasoning": "NVDA -4.92% su shock Intel guidance (-25%); livello intraday $203 vicino a supporto psicologico. Benzinga conferma sell-off settore chip. Alta volatilità pre-earnings Nov 17 sconsiglia posizionamento direzionale (CNBC: $203.03, Robinhood: $203.26).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 203.03},
+          {"name": "Robinhood", "price": 203.26}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 520.31,
+      "change_24h": "-1.85%",
+      "trend_5d": "laterale-ribassista",
+      "volume_note": "normale",
+      "news": "Microsoft Q3 2026 beat su EPS e revenue: 'comparatively stronger results offered a more constructive picture of monetization' (TheStreet). StockAnalysis: target medio $628.37, Strong Buy consensus.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 520.31,
+      "stop_loss": 504.70,
+      "target": 546.33,
+      "commissione": 0.00,
+      "reasoning": "MSFT cede -1.85% ma outperforma rispetto a GOOGL e AMZN: risultati Q3 sopra consensus nonostante pressione settoriale AI. 52w range $349-$551, posizione a metà range. Analyst target $628 implica +20% (Yahoo Finance: $520.69, CNBC: $519.92).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 520.69},
+          {"name": "CNBC", "price": 519.92}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 238.91,
+      "change_24h": "-2.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (post-earnings)",
+      "news": "Amazon Q3 2026: EPS miss -5.14%, revenue miss -0.16%. FCF negativo $42.4B (12 mesi rolling). CEO: capex 2026 confermato $220B. Motley Fool: 'Amazon Just Burned $42 Billion in Cash Chasing AI Growth'.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 238.91,
+      "stop_loss": 246.08,
+      "target": 226.96,
+      "commissione": 0.00,
+      "reasoning": "AMZN -2.00% post Q3 con EPS e revenue miss, FCF negativizzato da mega-capex AI ($220B 2026). Rischio downside verso supporto 52w $196 se capex guidance delude nelle call. Stop loss su rimbalzo verso $246 (Yahoo Finance: $239.24, Google Finance: $238.58).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 239.24},
+          {"name": "Google Finance", "price": 238.58}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 278.65,
+      "change_24h": "-1.82%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "anomalo (secondo giorno post-earnings -12.64%)",
+      "news": "Alphabet Q3 2026: adjusted EPS $2.12 manca consensus Zacks; peggior sessione dal IPO 2004 con -12.64% Oct 29. Yahoo Finance: 'Nasdaq dives as Alphabet stock sinks 12% and AI jitters return'.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 278.65,
+      "stop_loss": 270.29,
+      "target": 292.58,
+      "commissione": 0.00,
+      "reasoning": "GOOGL -1.82% nel secondo giorno dopo earnings miss storico; potenziale supporto a $278 (52w low $270.70). La correzione -32% dal 52w high $408.61 potrebbe aver esagerato; tuttavia incertezza su AI monetization sconsiglia BUY aggressivo (Yahoo Finance: $278.69, Finviz: $278.61).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 278.69},
+          {"name": "Finviz", "price": 278.61}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 618.23,
+      "change_24h": "-1.01%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Meta Muse (AR glasses) breakout commerciale ma preoccupazioni su monetizzazione (Motley Fool). META -20.8% dal 52w high $779.82. Annuncio investimento $95B (Yahoo Finance). Analyst target medio $833-$848.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 618.23,
+      "stop_loss": 599.68,
+      "target": 649.14,
+      "commissione": 0.00,
+      "reasoning": "META -1.01% e -20.8% dal 52w high $779.82; in bear market territory. Muse AR è breakout commerciale ma monetizzazione problematica. Con analyst target $848 (+37% upside) e annuncio investimenti $95B, scenario mixed a breve (CNBC: $618.33, StockAnalysis: $618.12).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 618.33},
+          {"name": "StockAnalysis", "price": 618.12}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 62.06,
+      "change_24h": "+0.02%",
+      "trend_5d": "ribassista (possibile supporto)",
+      "volume_note": "normale",
+      "news": "NFLX tocca 52w low $61.39 il 29-Oct. Q3 2026: revenue +12% ma segnali engagement più deboli e guidance advertising ridotta 2026. Analyst consensus target $85.00 (+37% upside). CNBC: 52 Week Low Date 10/29/26.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 62.06,
+      "stop_loss": 60.20,
+      "target": 65.16,
+      "commissione": 0.00,
+      "reasoning": "NFLX essenzialmente flat (+0.02%) mentre Nasdaq cede -3%: forte resilienza al 52w low $61.39 (ieri). Analyst consensus target $85 (+37% upside) con P/E TTM 17.9x economico per il settore. Supporto tecnico critico a $61.39 da monitorare (Motley Fool: $62.07, CNBC: $62.05).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool", "price": 62.07},
+          {"name": "CNBC", "price": 62.05}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 499.55,
+      "change_24h": "-11.81%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (shock sell-off; Intel contagion)",
+      "news": "24/7 Wall St.: 'Intel Plunges 25%...AMD Sinks 10%+, NVIDIA Falls 3%'. AMD da ATH $658.52 (Oct 6) a $499 = -24% in 3 settimane. Earnings AMD Nov 3. AMD espande AI footprint con Meta (Yahoo Finance).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 499.55,
+      "stop_loss": 484.56,
+      "target": 524.53,
+      "commissione": 0.00,
+      "reasoning": "AMD -11.81% su contagio Intel; sell-off da $658 ATH a $499 in 3 settimane (-24%). Alta volatilità pre-earnings Nov 3 rende pericoloso prendere posizione direzionale. Partnership Meta AI potenzialmente positiva ma non ancora prezzata (StockAnalysis: $499.77, Motley Fool: $499.33).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 499.77},
+          {"name": "Motley Fool", "price": 499.33}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1584.15,
+      "change_24h": "-5.46%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (chip sector selloff)",
+      "news": "Investing.com: 'ASML NV ADR stock sliding today' con sessione low $1,577.30 (-4.7%). Nasdaq listing (ADR). ASML vs Nvidia AI chip comparison (Motley Fool). 52w range $946-$2,000. Rep. Kevin Hern ha venduto quota ASML (MarketBeat).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1584.15,
+      "stop_loss": 1536.63,
+      "target": 1663.36,
+      "commissione": 0.00,
+      "reasoning": "ASML -5.46% nel chip sector selloff; sessione low $1,577 segnalata da Investing.com. Fundamentals solidi (unico produttore EUV globale) ma trading in scia al sentiment semiconduttori. Long-term AI demand invariata; breve termine instabile (CNBC after-hours: $1,591, Investing.com intraday low: $1,577).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC after-hours", "price": 1591.00},
+          {"name": "Investing.com intraday low", "price": 1577.30}
+        ],
+        "spread_pct": 0.86,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 238.49,
+      "change_24h": "+1.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "SAP annuncia nuovi AI tools: ad-hoc-news cita 'SAP unveils new AI tools' con stock a EUR 210.10 (Xetra Oct 29). NYSE listing outperforma vs tech USA. Earnings SAP: Oct 21 (già passati). Analyst target $280.83 (+18%).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 238.49,
+      "stop_loss": 231.34,
+      "target": 250.41,
+      "commissione": 0.00,
+      "reasoning": "SAP +1.89% in giornata di crollo tech USA: outperformance notevole su annuncio AI tools enterprise. Stock europea con esposizione AI B2B difensiva vs pure-play chip. Analyst target $280.83 (+18% upside) con base solida post-earnings Oct 21 (StockAnalysis: $238.49 Oct 30 open; CNBC/Bloomberg: $234.07 Oct 29 close).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Oct 30 open)", "price": 238.49},
+          {"name": "Bloomberg/CNBC (Oct 29 close)", "price": 234.07}
+        ],
+        "spread_pct": 1.87,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 397.85,
+      "change_24h": "+1.12%",
+      "trend_5d": "laterale-rialzista",
+      "volume_note": "normale",
+      "news": "Ferrari brand value report $17.7B (ad-hoc-news Oct 29). Earnings Q3 attesi Nov 3, 2026. Motley Fool compara Ferrari vs Lucid come 'luxury car stock'. 52w range $312-$437.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 397.85,
+      "stop_loss": 385.91,
+      "target": 417.74,
+      "commissione": 0.00,
+      "reasoning": "RACE +1.12% da close Oct 28; premium brand resiliente nel sell-off generale. Ferrari brand value $17.7B supporta valutazione ma earnings Nov 3 portano incertezza direzionale. Mantenere posizione in attesa di guidance Q3 (Yahoo Finance: $399.30 ore 15:12 EDT, Robinhood: $396.39).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 399.30},
+          {"name": "Robinhood", "price": 396.39}
+        ],
+        "spread_pct": 0.73,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 4.62,
+      "change_24h": "-1.70%",
+      "trend_5d": "rialzista da minimo",
+      "volume_note": "normale",
+      "news": "CNBC Oct 28: 'Stellantis stock rises 13% as automaker turnaround plan, cost cuts gain traction'. Q3 2026: EPS beat +94.41%, revenue beat +4.73%. Jefferies mantiene Buy. STLA (NYSE listing) in recupero da $3.92 52w low. Nuovo progetto autonomy con Wayve.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 4.62,
+      "stop_loss": 4.48,
+      "target": 4.85,
+      "commissione": 0.00,
+      "reasoning": "STLA (NYSE: STLAM Milano) Q3 EPS beat +94.41% e revenue beat +4.73%; CNBC conferma +13% Oct 28 su piano turnaround. Pullback -1.70% oggi è profit-taking in contesto sell-off. Jefferies Buy e partnership Wayve autonomy supportano trend recovery (Google Finance: $4.62 intraday, Yahoo Finance: $4.70 close Oct 29).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (Oct 30 intraday)", "price": 4.62},
+          {"name": "Yahoo Finance (Oct 29 close)", "price": 4.70}
+        ],
+        "spread_pct": 1.72,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 362.86,
+      "change_24h": "-1.55%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "BullionVault Oct 27: gold fixed sotto $4,000 prima volta da luglio; maggior deflusso settimanale ETF oro da giugno. Silver breakdown a $49 anticipa debolezza. GLD da $381 (ATH recente) a $363 (-5.2% in 3 gg).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 362.86,
+      "stop_loss": 355.60,
+      "target": 377.37,
+      "commissione": 0.00,
+      "reasoning": "GLD -1.55% in giornata risk-off: insolita correlazione negativa in sell-off equity. BullionVault segnala deflussi ETF oro record; silver breakdown a $49 precede spesso debolezza oro. Trend ribassista a breve ma supporto a $355 da testare (MarketAlleys/Finnhub: $361.47, StockAnalysis pre-market: $364.25).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys/Finnhub (Oct 30 9:30 EDT)", "price": 361.47},
+          {"name": "StockAnalysis pre-market (Oct 30 7:39 EDT)", "price": 364.25}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 47.28,
+      "change_24h": "-3.63%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (silver -14% ottobre)",
+      "news": "FinanceFeeds: 'Silver Falls, Gold Rallies as China Retail Investing Jumps, ETFs Sell'. Silver moneysafe.substack: -5.8% spot a $49.34 rompendo $50 psicologico. SLV -55% da Jan 2026 high di $105.60. Business Standard: 'Silver ETFs fall up to 5%'.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 47.28,
+      "stop_loss": 46.33,
+      "target": 49.17,
+      "commissione": 0.00,
+      "reasoning": "SLV -3.63% e -14% in ottobre; breakdown sotto $50 psicologico su spot silver. FinanceFeeds conferma $47.28. Trend fortemente ribassista: da $105.60 (Jan 2026) a $47.28 (-55%). Nessun segnale direzionale data affidabilità MEDIA (FinanceFeeds: $47.28, Investing.com: $47.28 - fonti concordanti).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinanceFeeds", "price": 47.28},
+          {"name": "Investing.com", "price": 47.28}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "MEDIA",
+        "nota": "Entrambe le fonti riportano prezzo identico $47.28 - possibile feed comune; usare con cautela"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 77120.0,
+      "change_24h": "-3.35%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (Binance hack: $1.57B long liquidati)",
+      "news": "CryptoTimes Oct 30: 'BTC Drops to $76,443 as $6.3B Binance Hack Sparks $1.57B Liquidations'. 5-week low. Bitcoin monthly close con -6.5% ottobre. 24/7 Wall St.: 'Bitcoin Fell to a 5-Week Low After $1.3 Billion in Longs Were Liquidated'. Binance hot wallet drenato.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 77120.0,
+      "stop_loss": 73264.0,
+      "target": 83290.0,
+      "commissione": 0.00,
+      "reasoning": "BTC -3.35% e 5-week low $76,443 su hack Binance $6.3B con $1.57B in liquidazioni long forzate. Black swan event: impatto sistemico dipende da recovery fondi Binance. Fondamentali Bitcoin intatti; supporto critico $76,400. Attendere stabilizzazione prima di prendere posizione (Binance.US: $77,387, Coinbase: $76,853).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Binance.US", "price": 77387.0},
+          {"name": "Coinbase", "price": 76853.0}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2235.60,
+      "change_24h": "-4.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo ($2.8B drenati da Binance su chain Ethereum)",
+      "news": "CoinCentral: 'ETH Falls Below Key Trendline as Binance Hack Hits Crypto Markets'. $2.8B drenati su Ethereum chain. US Spot ETH ETF: -$105.5M (4° giorno deflussi consecutivi). RSI near 30 = oversold. CryptoBasic: 'ETH RSI Nears 30'.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2235.60,
+      "stop_loss": 2123.82,
+      "target": 2414.45,
+      "commissione": 0.00,
+      "reasoning": "ETH -4.26% con impatto diretto della violazione Binance su Ethereum chain ($2.8B). RSI near 30 segnala oversold ma ETF outflows $105.5M per 4 gg consecutivi indicano sentiment negativo istituzionale. Attendere conferma bottom prima di entrare long (CoinDesk: $2,239.34 ore 13:05 EDT, Coinbase: $2,231.85 ore 13:21 EDT).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk", "price": 2239.34},
+          {"name": "Coinbase", "price": 2231.85}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 96.56,
+      "change_24h": "-3.84%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (correlazione hack Binance + Kamino pause)",
+      "news": "CoingGabbar Oct 30: 'Solana News Oct 30: Kamino Pause and Ondo Launch'. Kamino lending protocol ha sospeso borrowing SOL/BTC precauzionalmente. SOL torna sotto $100 psicologico. Ondo Finance lancia su Solana (positivo).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 96.56,
+      "stop_loss": 91.73,
+      "target": 104.29,
+      "commissione": 0.00,
+      "reasoning": "SOL -3.84% e ritorno sotto $100 psicologico; Kamino lending pause aggiunge rischio DeFi specific. Ondo Finance launch su Solana è catalizzatore positivo ma non sufficiente a contrastare bear market crypto. Attendere chiarezza post-hack Binance (Coinbase: $96.52, Crypto.com US: $96.60).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 96.52},
+          {"name": "Crypto.com US", "price": 96.60}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "USO",
+      "motivo": "Nessun prezzo Oct 30 2026 confermato; ultimi dati verificabili: Oct 28 close $166.57 (Bloomberg/StockAnalysis), Oct 27 close $163.88 (MarketBeat). Fonti intraday Oct 30 assenti o contraddittorie."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NFLX",
+      "motivo": "Unico large-cap flat (+0.02%) mentre Nasdaq crolla -3%. Al 52w low $61.39 (ieri) con analyst consensus target $85 (+37% upside). P/E TTM 17.9x economico per il settore. Forte supporto tecnico."
+    },
+    {
+      "rank": 2,
+      "asset": "SAP",
+      "motivo": "SAP +1.89% in giornata di sell-off tech USA: outperformance su annuncio AI tools enterprise. Esposizione AI difensiva B2B. Analyst target $280.83 (+18%). Post-earnings Oct 21 solidi."
+    },
+    {
+      "rank": 3,
+      "asset": "STLA",
+      "motivo": "Turnaround in corso: Q3 EPS beat +94.41%, recovery +13% Oct 28. Jefferies Buy. Partnership autonomy Wayve. Pullback -1.70% oggi offre re-entry su recupero."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione solo su segnali BUY con affidabilita ALTA/MEDIA.",
+    "allocazione_suggerita": {
+      "NFLX": "40% - migliore rischio/rendimento, 52w support tecnico confermato",
+      "SAP": "35% - AI catalyst, European resilience, MEDIA reliability",
+      "STLA": "25% - recovery story, earnings beat Q3, MEDIA reliability"
+    },
+    "nota_rischio": "SELL su AMZN non allocato in portafoglio simulato (richiede conto margin per short). BTC/ETH/SOL esclusi da allocazione per black swan Binance ancora in sviluppo."
+  }
+}
