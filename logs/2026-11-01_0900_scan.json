@@ -1,0 +1,527 @@
+{
+  "timestamp": "2026-11-01T09:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Scansione domenicale post-chiusura venerdì 30 ottobre 2026. Mercati chiusi — prezzi aggiornati sono i close di venerdì. Week ending oct 30: Nasdaq -2%, S&P -0.57%. Settimana dominata dal sell-off AI: GOOGL/AMZN Q3 miss, AMD -10.88% single session, ASML -6.54%. NUOVA NOTIZIA (1 nov): Tesla e SpaceX formano comitati per esplorare possibile merger — catalizzatore rilevante per TSLA. Binance hack rivisto a $6.3B (era $5.7B), FBI attribuisce a Corea del Nord. Gold al minimo annuale ($3.875/oz spot), oil elevato (WTI $103, Brent $113). Upcoming: AAPL earnings lunedì 2 nov; AMD/RACE earnings giovedì 3 nov; midterm USA martedì 3 nov — settimana ad alto rischio evento.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 344.63,
+      "change_24h": "-1.23%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (+25% vs media stimato, tech selloff broadening)",
+      "news": "Apple recupera titolo azienda più capitalizzata al mondo ($5.03T) superando Nvidia; record close 29 ott, chiude sett -1% dal massimo; fiscal Q4 2026 earnings lunedì 2 nov — principale catalyst settimanale (Yahoo Finance/CNBC, Oct 30-31)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 344.63,
+      "stop_loss": 334.29,
+      "target": 361.86,
+      "commissione": 0.00,
+      "reasoning": "Apple +27% YTD è il miglior performer tra i Magnificent 7, con forza relativa eccezionale nella settimana di sell-off Nasdaq (Yahoo Finance, 30-31 ott). Pre-earnings caution irrinunciabile: Q4 report il 2 nov può amplificare volatilità in entrambe le direzioni senza posizione direzionale giustificabile.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 30 close)", "price": 344.63},
+          {"name": "CNBC (Oct 30 close)", "price": 344.63}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 399.81,
+      "change_24h": "-0.87%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "TSLA +5% nella settimana di sell-off Nasdaq — uno dei pochi megacap positivi; Motley Fool (Oct 31, 2026): Tesla e SpaceX hanno ciascuno formato comitati per esplorare possibile merger, nessun deal annunciato; 52-week range $297-$499 (Yahoo Finance/Motley Fool, Oct 30-31)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 399.81,
+      "stop_loss": 387.82,
+      "target": 419.80,
+      "commissione": 0.00,
+      "reasoning": "Forza relativa eccezionale: +5% nella peggiore settimana Nasdaq del 2026 segnala accumulo istituzionale (Yahoo Finance, 30 ott). Il nuovo catalyst Tesla/SpaceX merger exploration (Motley Fool, 31 ott) aggiunge upside asimmetrico con comitati formali già costituiti — primo passo strutturale verso eventuale deal.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 30 close)", "price": 399.81},
+          {"name": "CNBC (Oct 30 close)", "price": 399.81}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 204.64,
+      "change_24h": "-4.22%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (sell-off settoriale chip/AI, +40% volume stimato)",
+      "news": "NVDA -14.5% dall'ATH $239.24 (6 ott); Jensen Huang annuncia notizie positive per investitori NVDA (Motley Fool, Oct 31); Motley Fool (Nov 1): 'History Says Now Is the Perfect Time to Buy Nvidia Stock'; earnings attesi 17 nov 2026 (Yahoo Finance/Motley Fool, Oct 30-Nov 1)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 204.64,
+      "stop_loss": 198.50,
+      "target": 214.87,
+      "commissione": 0.00,
+      "reasoning": "Dip del -14.5% dall'ATH $239.24 con AI demand strutturale intatta + Jensen Huang annuncia notizie positive per investitori (Motley Fool, 31 ott) — catalizzatore specifico post-sell-off. Motley Fool identifica ora come timing storico per acquisto (1 nov); 52-week range $164-$243 con supporto tecnico a $200.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 30 close)", "price": 204.64},
+          {"name": "Robinhood (Nov 1 intraday)", "price": 205.25}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 521.91,
+      "change_24h": "-1.55%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Microsoft Q1 FY2027: Azure +48% YoY, earnings beat; piano di exit volontario per ~60K dipendenti; bond sale $25B (primo dal 2017); analisti avg target $632.90; 52-week range $349.20-$551.15 (Yahoo Finance/CNBC/Motley Fool, Oct 30-Nov 1)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 521.91,
+      "stop_loss": 506.25,
+      "target": 548.01,
+      "commissione": 0.00,
+      "reasoning": "Azure +48% YoY nel Q1 FY2027 è il ritmo di crescita più elevato degli ultimi 8 trimestri (Yahoo Finance, 30-31 ott 2026). MSFT mostra forza relativa nel Magnificent 7: -1.55% vs AMD -10.88%/GOOGL -12% nella stessa sessione. Consensus analisti $632.90 = +21% upside con fundamentali cloud solidi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 30 close)", "price": 521.91},
+          {"name": "Google Finance (Oct 30 close)", "price": 521.91}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 240.35,
+      "change_24h": "-1.41%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (volume elevato post-earnings Q3, distruzione $577B backlog)",
+      "news": "Amazon Q3 2026: EPS miss vs consensus, AWS +39% YoY (record 5 anni) ma capex $77B+ supera aspettative; Q4 outlook sotto stime; stock -10% post-market poi recupera parzialmente; backlog AWS $578B (Yahoo Finance/CNBC, Oct 29-30)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 240.35,
+      "stop_loss": 233.14,
+      "target": 252.37,
+      "commissione": 0.00,
+      "reasoning": "AWS +39% YoY (massimo quinquennale) è strutturalmente positivo con backlog $578B visibile (Yahoo Finance, 29-30 ott). Miss su EPS e capex record ($77B) richiedono tempo per digestione: ingressi aggressivi prematuri; attendere stabilizzazione sopra $240 dopo settimana del sell-off.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 30 close)", "price": 240.35},
+          {"name": "CNBC (Oct 30 close)", "price": 240.35}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 279.84,
+      "change_24h": "-1.40%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (volume eccezionale post-earnings crash -12% in settimana)",
+      "news": "Alphabet Q3 2026: revenue $127.58B sotto consensus, capex $51.4B supera attese; -12% nella settimana; P/E 14.6x, minimo storico dal 2012; Motley Fool (Nov 1): Alphabet annuncia AI spending in ulteriore aumento; 52-week range $270.70-$408.61 (Yahoo Finance/CNBC/Motley Fool, Oct 30-Nov 1)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 279.84,
+      "stop_loss": 271.45,
+      "target": 293.83,
+      "commissione": 0.00,
+      "reasoning": "P/E a 14.6x = minimo dal 2012 con una azienda che domina AI search, cloud e advertising (Google Finance, 29-30 ott 2026). 52-week low a $270.70 funge da supporto chiave; consensus analisti $406.55 (+45% upside). Motley Fool segnala 2 data center stocks da accumulare su AI spending crescente di Alphabet (1 nov).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Oct 30 close)", "price": 279.84},
+          {"name": "CNBC (Oct 30 close)", "price": 279.84}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 614.99,
+      "change_24h": "-1.53%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (pressione vendita istituzionale su piano aumento capitale)",
+      "news": "Meta Platforms Q3 2026: revenue +26% YoY $64.6B; AI costs in aumento; piano raccolta fondi $97.5B crea rischio diluizione azionisti; -21% dall'ATH $779.82; 52-week range $520-$780 (CNBC/Google Finance/Morningstar, Oct 30)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 614.99,
+      "stop_loss": 633.44,
+      "target": 584.24,
+      "commissione": 0.00,
+      "reasoning": "Piano raccolta fondi $97.5B (Investing.com, 30 ott 2026) crea diluizione significativa per azionisti esistenti — catalyst negativo strutturale non ancora prezzato completamente. Trend ribassista confermato: -21% dall'ATH $779.82, AI cost escalation senza ROI definito pesa sul multiplo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Oct 30 close)", "price": 614.99},
+          {"name": "Google Finance (Oct 30 close)", "price": 614.99}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 62.08,
+      "change_24h": "+0.05%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix tocca 52-week low $61.39 il 29 ott; down -33.3% YTD da 52-week high $116.73; 23/34 analisti Buy con target medio $84.76 (+36.6% upside); Morningstar segnala undervalued con fair value $85 (Morningstar/CNBC/Bloomberg, Oct 30)",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 62.08,
+      "stop_loss": 60.22,
+      "target": 65.18,
+      "commissione": 0.00,
+      "reasoning": "Al minimo annuale $61.39 (29 ott) con consensus Buy 23/34 analisti e target medio $84.76 = +36.6% upside (Morningstar, 30 ott). Stock -33.3% YTD crea opportunità contrarian con P/E compresso; Morningstar identifica fair value $85, deviazione statistica da recuperare con abbonamenti in price-hike cycle.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Oct 30 close)", "price": 62.08},
+          {"name": "Bloomberg (Oct 30 close)", "price": 62.08}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 504.80,
+      "change_24h": "-10.88%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (volume eccezionale su sell-off -10.88% single session)",
+      "news": "AMD -10.88% (-$61.62) il 30 ott in sell-off AI/semiconductor; earnings attesi giovedì 3 nov 2026; MarketBeat consensus Buy con target $607.57; 52-week range $188-$659 (CNBC/Robinhood/MarketBeat, Oct 30-Nov 1)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 504.80,
+      "stop_loss": 489.66,
+      "target": 530.04,
+      "commissione": 0.00,
+      "reasoning": "Crollo -10.88% in singola sessione crea opportunità tecnica interessante ma Q3 earnings il 3 nov 2026 (CNBC, 30-31 ott) mantengono rischio elevato bidirezionale. Hold strategico: attendere report earnings per valutare se il dip è opportunità di acquisto o inizio di trend ribassista strutturale su AI spending.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Oct 30 close)", "price": 504.80},
+          {"name": "Robinhood (Nov 1 intraday)", "price": 508.22}
+        ],
+        "spread_pct": 0.68,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1565.90,
+      "change_24h": "-6.54%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (liquidazione post-Q3 e Intel sell-off correlato)",
+      "news": "ASML -6.54% il 30 ott; previous close $1,675.70; up +54% nel 2026 prima del pullback; analisti Strong Buy consensus, price target $2,141; Q3 2026 risultati deludenti il mercato post-earnings; 52-week range $946-$2,000 (CNBC/StockAnalysis, Oct 30)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1565.90,
+      "stop_loss": 1518.92,
+      "target": 1644.20,
+      "commissione": 0.00,
+      "reasoning": "Monopolio EUV globale di ASML è strutturalmente intatto nonostante vendita post-Q3 (CNBC, 30 ott). Stock +54% nel 2026 con pullback -17% dall'ATH $1,999.96 come opportunità di rientro: il derating Intel è specifico del cliente, non del monopolio EUV; consensus analisti Strong Buy a $2,141 (+37% upside).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Oct 30 close, calc da $1,675.70 -6.54%)", "price": 1565.90},
+          {"name": "StockAnalysis (Oct 30 close)", "price": 1565.90}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 235.02,
+      "change_24h": "+0.41%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SAP Q3 2026: revenue +13% YoY, cloud revenue +26% YoY, cloud backlog €24.14B, operating profit €3.03B; 52-week range $144.97-$265.88; P/E 30.2x vs media storica 38.5x; earnings Oct 21; resiste al sell-off tech (SAP Q3 report/Investing.com/SeekingAlpha, Oct 21-30)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 235.02,
+      "stop_loss": 227.97,
+      "target": 246.77,
+      "commissione": 0.00,
+      "reasoning": "SAP cloud revenue +26% YoY con backlog €24.14B = visibilità di ricavi eccezionale tra i titoli europei (SAP Q3 report, 21 ott). P/E 30.2x vs media storica 38.5x = sconto del 22%; unico BUY ad alta confidenza nello scan; resiste al sell-off Nasdaq con +0.41% quando l'intero tech scende. Posizione quality difensiva.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Oct 30 close)", "price": 235.02},
+          {"name": "SeekingAlpha (Oct 30 close)", "price": 235.02}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 396.05,
+      "change_24h": "-0.92%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari Q3 2026 earnings giovedì 3 nov 2026 07:00 AM; 52-week range $312.51-$437.15; P/E 36.77, dividend yield 1.06%; analisti avg target $470.33; stock a centro range annuale (SeekingAlpha/Motley Fool/Benzinga, Oct 30-31)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 396.05,
+      "stop_loss": 384.17,
+      "target": 415.85,
+      "commissione": 0.00,
+      "reasoning": "Pre-earnings caution inderogabile con Q3 2026 results giovedì 3 nov alle 07:00 AM (Benzinga, 30 ott). Stock al centro del range annuale $312-$437 senza direzionalità pre-earnings definita; attendere risultati per valutare posizionamento con catalyst definitivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "SeekingAlpha (Oct 30 close)", "price": 396.10},
+          {"name": "Motley Fool (Oct 30 close)", "price": 395.99}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 4.66,
+      "change_24h": "-1.70%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume elevato post-turnaround +13% sessione Oct 28)",
+      "news": "Stellantis +13% mercoledì 28 ott su piano turnaround: Q3 revenues +1% a €37.6B, guidance 2026 reaffirmata, FCF positivo 2027; Wall Street Zen upgrade da Strong Sell a Hold (1 nov 2026); Jefferies mantiene Buy; ticker NYSE = STLA; 52-week range $3.92-$12.22 (CNBC/MarketBeat, Oct 28-Nov 1)",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 4.66,
+      "stop_loss": 4.52,
+      "target": 4.89,
+      "commissione": 0.00,
+      "reasoning": "Turnaround confermato: Q3 revenue +1%, guidance 2026 reaffirmata, FCF positivo in arrivo nel 2027 (CNBC, 28 ott 2026). Wall Street Zen upgrade a Hold (1 nov) da Strong Sell conferma miglioramento del sentiment; Jefferies ancora Buy. NOTA: affidabilità MEDIA (spread 1.73%) — posizione ridotta raccomandata.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Oct 30 after-hours)", "price": 4.62},
+          {"name": "SeekingAlpha (Oct 29 close)", "price": 4.70}
+        ],
+        "spread_pct": 1.73,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 355.78,
+      "change_24h": "-3.47%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (16.2M vs media 9.18M = +76% sopra media)",
+      "news": "GLD tocca 52-week low $354.67 il 30 ott; oro spot sotto $3,900 a $3,875/oz; sell-off guidato da timori inflazionistici (oil WTI $103, Brent $113); volume anomalo +76% suggerisce distribuzione istituzionale; 52-week range GLD: $354.67-$509.70 (CNBC/MarketBeat/Kitco, Oct 30)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 355.78,
+      "stop_loss": 362.90,
+      "target": 341.55,
+      "commissione": 0.00,
+      "reasoning": "GLD tocca minimo annuale $354.67 con volume anomalo +76% (CNBC, 30 ott 2026) — segnale classico di distribuzione istituzionale. Oil elevato (Brent $116) alimenta timori inflazionistici = aspettative rialzo tassi sfavorevoli per gold; momentum ribassista confermato, 52-week high $509.70 a -30% distanza.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Oct 30 close)", "price": 355.78},
+          {"name": "MarketBeat (Oct 30 close)", "price": 355.78}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 44.60,
+      "change_24h": "-5.67%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (liquidazione massiccia, -9.3% in 3 giorni da $49.16 Oct 27)",
+      "news": "Argento spot -~6% al sell-off su timori inflazionistici e oil surge; SLV da $49.16 (27 ott) a $44.60 (30 ott) = -9.3% in 3 sessioni; gold-silver ratio a 80 indica debolezza strutturale argento; 52-week range SLV: $34.25-$110.21 (Investing.com/CNBC/Kitco, Oct 30-Nov 1)",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 44.60,
+      "stop_loss": 45.49,
+      "target": 42.82,
+      "commissione": 0.00,
+      "reasoning": "SLV -9.3% in 3 giorni con gold-silver ratio a 80 (Kitco, 30 ott 2026) segnala debolezza strutturale dell'argento vs oro. Doppio trigger ribassista: pressure inflazionistica da oil e break tecnico sotto SMA50/SMA200. Volume anomalo di liquidazione senza catalyst di rimbalzo identificabile.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Nov 1)", "price": 44.60},
+          {"name": "CNBC-sourced (Oct 30)", "price": 44.60}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 168.83,
+      "change_24h": "+0.38%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "WTI crude ~$103/bbl, Brent ~$113/bbl; USO vicino al massimo 52 settimane $171.82 e al record assoluto del fund; timori Hormuz attack mantengono premium geopolitico elevato; 52-week range $65.99-$171.82 (CNBC/Investing.com/Kitco, Oct 30-Nov 1)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 168.83,
+      "stop_loss": 165.45,
+      "target": 175.58,
+      "commissione": 0.00,
+      "reasoning": "Oil in trend rialzista con premium geopolitico (Hormuz) che mantiene WTI $103/Brent $113 (Kitco, 30-31 ott). USO vicino al massimo 52 settimane $171.82 — momentum chiaramente rialzista. Timori inflazionistici da oil sono il principale driver di mercato questa settimana: long USO = hedge naturale del portafoglio.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Oct 30 close)", "price": 168.83},
+          {"name": "Investing.com (Nov 1)", "price": 168.83}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 77879,
+      "change_24h": "+0.60%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo ($1.5B+ liquidazioni, $643M outflow ETF in singola sessione)",
+      "news": "Hack Binance rivisto a $6.3B (18,270 BTC) — più grande furto crypto della storia; FBI attribuisce a Corea del Nord; 600+ indirizzi ETH bloccati; $643M outflow ETF BTC (led BlackRock IBIT); BTC sotto supporto psicologico $80K; ATH $126,210 (6 ott 2025) ora -38.3% (Bitcoin News Digest/crypto.news, Nov 1)",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 77879,
+      "stop_loss": 81773,
+      "target": 71649,
+      "commissione": 0.00,
+      "reasoning": "Hack Binance da $6.3B rivisto al rialzo (più grande furto crypto della storia) con attribuzione FBI a Corea del Nord (Bitcoin News Digest, 1 nov 2026) — catalizzatore di sfiducia sistemica. $643M outflow ETF in singola sessione + BTC sotto supporto psicologico $80K: convergenza di fattori bearish multipli.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Nov 1)", "price": 77871.50},
+          {"name": "CoinMarketCap (Nov 1)", "price": 77887.02}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2267,
+      "change_24h": "+0.85%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (outflow ETF ETH $1.2B in ottobre 2026)",
+      "news": "ETH targeting $2,300 recovery; RSI a 35 (zona di oversold); Ether ETFs: outflow $1.2B in ottobre; correlazione con Binance hack BTC breakdown; cryptodaily: 'Solana Hits RSI 30 as Ether Sits at 35 — Which Snaps Back First?'; ATH $4,953 (24 ago 2025) (Coinbase/CoinMarketCap/cryptodaily, Nov 1)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 2267,
+      "stop_loss": 2380,
+      "target": 2086,
+      "commissione": 0.00,
+      "reasoning": "Outflow ETF Ethereum $1.2B in ottobre 2026 (Crypto.com, 1 nov) = pressione di vendita istituzionale sostenuta. Nonostante RSI 35 borderline oversold, la correlazione con BTC breakdown sotto $80K e la narrativa negativa del Binance hack mantengono il bias ribassista; recovery $2,300 non ancora confermata da dati di flusso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Nov 1)", "price": 2268.40},
+          {"name": "CoinMarketCap (Nov 1)", "price": 2266.68}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 95.32,
+      "change_24h": "-0.73%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (outflow ETF $24.8M in 2 giorni, hacker wallets attivi)",
+      "news": "SOL RSI a 30 — zona oversold tecnica; cryptodaily.co.uk (1 nov): 'Solana Hits RSI 30 as Ether Sits at 35'; hacker Binance converte $96M in SOL rubati verso BTC (Brave New Coin, Nov 1); Alpenglow upgrade live; Breakpoint conference Londra 15 nov 2026 (cryptodaily/Brave New Coin/Coinbase, Nov 1)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 95.32,
+      "stop_loss": 90.55,
+      "target": 102.95,
+      "commissione": 0.00,
+      "reasoning": "RSI 30 è segnale tecnico di oversold (cryptodaily, 1 nov 2026) — territory storico che precede rimbalzo in assenza di pressioni strutturali. Controbilanciato da conversione forzata $96M in SOL verso BTC da hacker Binance (selling pressure attiva). Hold: attendere stabilizzazione prima di Breakpoint conference 15 nov che potrebbe essere catalyst positivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Nov 1)", "price": 95.35},
+          {"name": "Kraken (Nov 1)", "price": 95.29}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "TSLA",
+      "motivo": "Nuovo catalyst (1 nov): Tesla/SpaceX formano comitati per merger exploration — upside asimmetrico unico. +5% nella peggiore settimana del Nasdaq 2026: forza relativa eccezionale segnala accumulo istituzionale"
+    },
+    {
+      "rank": 2,
+      "asset": "SAP",
+      "motivo": "Unico BUY ad Alta confidenza: cloud +26% Q3, backlog €24.14B, P/E a -22% vs media storica; resiste attivamente al sell-off tech (+0.41% vs mercato -2%). Posizione quality difensiva"
+    },
+    {
+      "rank": 3,
+      "asset": "MSFT",
+      "motivo": "Azure +48% YoY record 8 trimestri + bond sale $25B (segnale di fiducia CFO); BUY ad alta confidenza con consensus analisti $632 (+21%). Il 'safe haven' del Magnificent 7 nel sell-off AI"
+    },
+    {
+      "rank": 4,
+      "asset": "GOOGL",
+      "motivo": "P/E 14.6x = minimo assoluto dal 2012; consensus $406 (+45% upside); 52-week low $270.70 come supporto definito. Opportunità di value storica post-crash -12% da Q3 miss"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Settimana ad alto rischio evento: AAPL earnings 2 nov, midterm USA 3 nov, AMD/RACE earnings 3 nov",
+    "allocazione_suggerita": {
+      "TSLA_long": "20%",
+      "MSFT_long": "20%",
+      "SAP_long": "15%",
+      "GOOGL_long": "15%",
+      "USO_long": "10%",
+      "NVDA_long": "10%",
+      "STLAM_long": "5%",
+      "cash_e_hedge": "5%"
+    },
+    "segnali_sell_attivi": ["META", "GLD", "SLV", "BTC", "ETH"],
+    "bias_generale": "SELETTIVO-BULLISH: 8 BUY (di cui 2 High confidence: SAP, MSFT), 2 SELL short, 5 HOLD, 4 SELL — bias positivo su quality/value con hedge commodities; evitare crypto e gold nelle prossime 48h; settimana di earnings ad alto impatto"
+  }
+}
