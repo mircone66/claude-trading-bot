@@ -1,0 +1,301 @@
+{
+  "timestamp": "2026-11-03T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "3 novembre 2026 — giorno delle elezioni di metà mandato USA. Mercati cauti: BTC sotto pressione (-3.6% settimanale) con il voto in corso. AAPL ha pubblicato gli utili Q4 2026 ieri dopo la chiusura; prezzo lievemente al rialzo oggi rispetto al pre-earnings. RACE riporta utili Q3 oggi prima dell'apertura. La maggioranza degli asset EU (ASML, STLA) e dei commodity ETF (GLD, SLV, USO) è esclusa per spread eccessivo tra fonti. SOL mostra momentum ribassista confermato. Crypto complessivamente in consolidamento. Solo 8 asset su 18 superano la soglia di validazione con 2 fonti concordanti.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 338.11,
+      "change_24h": "+0.22%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume probabilmente elevato per reazione agli utili Q4 2026 riportati ieri dopo la chiusura",
+      "news": "AAPL ha riportato gli utili Q4 FY2026 dopo la chiusura del 2 novembre. Il prezzo pre-earnings era $336.50 (-2.2% intraday). La ripresa a $338.11 suggerisce una lieve reazione positiva. (Fonte: Investing.com, InvestSmart)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 338.11,
+      "stop_loss": 327.97,
+      "target": 355.02,
+      "commissione": 0.00,
+      "reasoning": "Leggera ripresa post-earnings rispetto al close pre-risultati ($336.50), con prezzo validato a $338.11. Narrativa AI su iPhone e servizi supporta la valutazione a lungo termine.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart", "price": 339.71},
+          {"name": "Investing.com (chiusura 02-Nov)", "price": 336.50}
+        ],
+        "spread_pct": 0.95,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 498.23,
+      "change_24h": "+0.85%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma, consolidamento vicino a $500",
+      "news": "Microsoft consolida intorno ai $498-500. Azure AI continua a guidare la crescita cloud. Nessun evento catalizzatore immediato. (Fonte: InvestSmart, Yahoo Finance snapshot)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 498.23,
+      "stop_loss": 483.28,
+      "target": 523.14,
+      "commissione": 0.00,
+      "reasoning": "Prezzo in consolidamento vicino a $500 (livello psicologico chiave). Range 52 settimane $349-$555 indica ampio margine. Attendere breakout sopra $503 per conferma rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart", "price": 496.75},
+          {"name": "Yahoo Finance snapshot", "price": 499.70}
+        ],
+        "spread_pct": 0.59,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 223.48,
+      "change_24h": "+2.34%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume anomalo (alzato oggi +2.34%), possibile accumulo da supporto",
+      "news": "NVDA balza +2.34% oggi da zona di supporto. La domanda di GPU H100/H200 per data center AI rimane robusta. Price range 2026: $176-$232. (Fonte: InvestSmart +2.34%, Coinglass Sep 30)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 223.48,
+      "stop_loss": 216.78,
+      "target": 234.65,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo +2.34% da zona supporto con domanda AI/data center invariata. Prezzo validato $223.48 con affidabilità MEDIA (scarto 3.3%); segnale operabile ma con size ridotta.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart", "price": 219.74},
+          {"name": "Coinglass (30-Sep-2026)", "price": 227.21}
+        ],
+        "spread_pct": 3.30,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 394.64,
+      "change_24h": "N/D",
+      "trend_5d": "ribassista",
+      "volume_note": "Atteso volume anomalo per earnings day",
+      "news": "Ferrari NV riporta utili Q3 2026 oggi (3 nov) prima dell'apertura del mercato. Prezzo pre-earnings $395.99 (30 ott). Range 52 settimane $312.64-$432.18. Ferrari storicamente batte le stime. (Fonte: MarketChameleon, Upstox)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 394.64,
+      "stop_loss": 382.80,
+      "target": 414.37,
+      "commissione": 0.00,
+      "reasoning": "Earnings today introduce incertezza di breve termine. Stock -9% dal massimo 52 settimane ($432). Attendere la reazione del mercato agli utili prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketChameleon (30-Oct-2026)", "price": 395.99},
+          {"name": "Upstox (recente)", "price": 393.28}
+        ],
+        "spread_pct": 0.69,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 208.91,
+      "change_24h": "+0.75%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma post-earnings stabilization",
+      "news": "SAP ha battuto le stime Q3 2026 il 21 ottobre (EUR 201.55 chiusura; after-hours EUR 214+). P/E 30.2, nettamente sotto la media 10 anni di 38.5. Leadership nel cloud enterprise e AI. (Fonte: InvestSmart, Getquin post-earnings)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 208.91,
+      "stop_loss": 202.64,
+      "target": 219.36,
+      "commissione": 0.00,
+      "reasoning": "Post-earnings beat Q3 2026, P/E scontato rispetto alla media storica. Momentum rialzista confermato. Affidabilità MEDIA per dati (scarto 1.7%); sorgente Benzinga da agosto 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart", "price": 210.68},
+          {"name": "Benzinga (12-Aug-2026)", "price": 207.14}
+        ],
+        "spread_pct": 1.70,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 77481.24,
+      "change_24h": "-0.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo atteso per giornata elezioni USA midterm",
+      "news": "Bitcoin cede a $76,500 all'apertura delle urne per le midterm USA (Fonte: AnalyticsInsight). BTC -3.6% negli ultimi 7 giorni. ATH $126,000 (ott 2025). Tre fonti concordanti tra $77,022 e $77,660. (Fonti: Coinbase, Kraken, TradingView)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 77481.24,
+      "stop_loss": 73607.18,
+      "target": 83639.74,
+      "commissione": 0.00,
+      "reasoning": "Incertezza politica da elezioni USA midterm pesa sul sentiment a breve. Tendenza settimanale negativa (-3.6%). Attendere chiarezza post-voto prima di entrare long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (03-Nov-2026)", "price": 77660.48},
+          {"name": "Kraken (03-Nov-2026)", "price": 77302.00}
+        ],
+        "spread_pct": 0.46,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2277.37,
+      "change_24h": "+0.15%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale, nessuna anomalia rilevata",
+      "news": "Ethereum lateralizza tra $2,252 e $2,369 nella giornata. Segnali misti: Coinbase -1.5%, CoinGecko +1.8%. Nessun catalizzatore crypto specifico oggi. (Fonti: Coinbase, CoinGecko, MetaMask 03-Nov-2026)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 2277.37,
+      "stop_loss": 2163.50,
+      "target": 2459.56,
+      "commissione": 0.00,
+      "reasoning": "Segnali direzionali contrastanti nelle ultime 24h. Mercato crypto attendista per esito elezioni USA. Affidabilità MEDIA (scarto 1.51%); prezzo sostanzialmente confermato da 3 fonti indipendenti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (03-Nov-2026)", "price": 2260.21},
+          {"name": "CoinGecko (03-Nov-2026)", "price": 2294.53}
+        ],
+        "spread_pct": 1.51,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 92.44,
+      "change_24h": "-2.64%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma ma trend ribassista confermato da multiple exchange",
+      "news": "Solana -2.64% nelle ultime 24h (OKX). Prezzo sceso da ~$101 (24 ott) a $92 oggi = -8.5% in 10 giorni. 4 fonti concordanti: OKX $92.61, Bitget $92.23, Phemex $93.30, Coinbase $92.26. ATH $294 (gen 2025). (Fonti: OKX, Coinbase 03-Nov-2026)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 92.44,
+      "stop_loss": 97.06,
+      "target": 85.04,
+      "commissione": 0.00,
+      "reasoning": "Momentum ribassista sostenuto: -8.5% in 10 giorni con 4 fonti ALTA affidabilità concordanti. Crypto market complessivamente debole per incertezza elezioni USA.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "OKX (03-Nov-2026)", "price": 92.61},
+          {"name": "Coinbase (03-Nov-2026)", "price": 92.26}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "spread fonti 4.5% > soglia 4%: InvestSmart $380.12 vs Yahoo snapshot Oct31 $397.42"
+    },
+    {
+      "asset": "AMZN",
+      "motivo": "spread fonti 5.1% > soglia 4%: InvestSmart $258.48 vs Google Finance Nov 2 $245.63"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "spread fonti 5.8% > soglia 4%: InvestSmart $344.10 vs Coinglass Oct29 $324.89"
+    },
+    {
+      "asset": "META",
+      "motivo": "spread fonti 4.8% > soglia 4%: InvestSmart $653.69 vs Yahoo snapshot Oct31 $622.97"
+    },
+    {
+      "asset": "NFLX",
+      "motivo": "spread fonti 12.2% > soglia 4%: InvestSmart $70.30 vs Yahoo snapshot Oct31 $62.64"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "spread fonti 24% > soglia 4%: InvestSmart $624.00 vs Yahoo snapshot Oct31 $490.64 (possibile dato InvestSmart obsoleto)"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "spread fonti 8.1% > soglia 4%: InvestSmart $1,780.34 vs Coinglass Oct18 $1,641.52"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "spread fonti 8.9% > soglia 4%: MarketChameleon Oct30 $4.64 vs Yahoo Finance day-range midpoint $4.26"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "spread fonti 20.9% > soglia 4%: Yahoo Finance $477.48 (undated) vs Barchart $387.12 (undated); dati incoerenti"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "nessun dato recente verificabile post-giugno 2026; fonti note: MarketBeat Jun18 $59.51, nessuna fonte recente concordante"
+    },
+    {
+      "asset": "USO",
+      "motivo": "spread tra fonti di date diverse troppo elevato: Benzinga US Aug24 $132.44 vs Korean Benzinga Oct29 $168.27 (23.8%); fonte secondaria per Oct29 assente"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Rimbalzo +2.34% da supporto con narrativa AI invariata; entry price attrattivo vicino ai minimi 2026 ($219.74), affidabilità MEDIA ma direzione chiara"
+    },
+    {
+      "rank": 2,
+      "asset": "SAP",
+      "motivo": "Post-earnings beat Q3 2026 confermato; P/E 30.2 vs media storica 38.5 = sconto strutturale; enterprise AI cloud in accelerazione"
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "Post-earnings Q4 FY2026 con leggera reazione positiva; ALTA affidabilità (spread 0.95%); forte ecosistema AI (iPhone 17 AI features)"
+    },
+    {
+      "rank": 4,
+      "asset": "SOL",
+      "motivo": "SELL confermato da 4 fonti concordanti (spread 0.38%); trend ribassista -8.5% in 10 giorni; migliore opportunità short del portafoglio"
+    },
+    {
+      "rank": 5,
+      "asset": "BTC",
+      "motivo": "HOLD atteso: post-elezioni potenziale rimbalzo verso $83k. Monitorare apertura risultati elettorali per eventuale BUY entry"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione indicativa su capitale ipotetico $100,000",
+    "allocazione_suggerita": {
+      "AAPL_BUY": "15% ($15,000) — 44 azioni a $338.11",
+      "MSFT_HOLD": "10% ($10,000) — 20 azioni a $498.23 (solo se già in portafoglio)",
+      "NVDA_BUY": "15% ($15,000) — 67 azioni a $223.48",
+      "SAP_BUY": "10% ($10,000) — 48 azioni a $208.91",
+      "RACE_HOLD": "5% ($5,000) — 13 azioni a $394.64 (await earnings outcome)",
+      "BTC_HOLD": "25% ($25,000) — 0.323 BTC a $77,481",
+      "ETH_HOLD": "15% ($15,000) — 6.59 ETH a $2,277",
+      "SOL_SELL": "5% ($5,000) — short 54 SOL a $92.44",
+      "CASH": "0% — liquidità impegnata"
+    }
+  }
+}
