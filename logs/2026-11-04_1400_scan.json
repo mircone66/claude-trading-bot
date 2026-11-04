@@ -1,0 +1,447 @@
+{
+  "timestamp": "2026-11-04T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "4 novembre 2026 — post-elezioni di metà mandato USA. I Democratici hanno spazzato il Congresso, scatenando un forte risk-on: S&P500 +1.65%, Dow +2.22%, Nasdaq +2.1%. Il petrolio crolla -7% (WTI a $89.17, Brent a $94.84) sulle speranze di pace con l'Iran. L'oro rimbalza +3.3% a $4,070/oz. MSFT +6-7% per Azure +48% sopra le attese. AAPL +6% su reaffirmation Evercore. GOOGL +4-5% su Google Cloud beat e commitment Anthropic da $121B. Bitcoin rimbalza verso $80,500 sul risk-on. TSLA -2-6% per rischi elettorali. AMD ha riportato Data Center +97% ma il titolo scende (sell-the-news). RACE ha battuto le stime Q3 (EPS $2.78 vs $2.32). 15 asset su 18 validati, 4 esclusi per spread elevato (AMZN, SAP, SLV, USO).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 352.75,
+      "change_24h": "+6.10%",
+      "trend_5d": "ribassista_poi_rimbalzo",
+      "volume_note": "Volume anomalo — forte rimbalzo post-earnings con acquisti istituzionali",
+      "news": "Apple +6% intraday: Evercore ISI reafferma Outperform con target $380 dopo il report annuale FY2026. L'azione tocca quasi ATH a $354.47. (Fonte: Robinhood $353.28, Investing.com $352.22)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 352.75,
+      "stop_loss": 342.17,
+      "target": 370.39,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico del +6% con conferma istituzionale di Evercore. Prezzo vicino ad ATH ($354.47) in contesto di mercato risk-on post-midterms. Due fonti concordanti con spread 0.30%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (intraday 04-Nov)", "price": 353.28},
+          {"name": "Investing.com (04-Nov)", "price": 352.22}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 389.06,
+      "change_24h": "-2.40%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma, pressione di vendita selettiva",
+      "news": "Tesla cede -2-6% su rischi legati alle elezioni e pressioni su SpaceX. Morgan Stanley diventa bullish ma il sentiment breve termine è negativo. YTD -11.39%. (Fonte: Robinhood $389.49, Investing.com $388.63)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 389.06,
+      "stop_loss": 377.39,
+      "target": 408.51,
+      "commissione": 0.00,
+      "reasoning": "Pressione ribassista legata ai rischi elettorali contrasta con il bullismo di Morgan Stanley. Trend short-term negativo; attendere stabilizzazione prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (intraday 04-Nov)", "price": 389.49},
+          {"name": "Investing.com (04-Nov)", "price": 388.63}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 205.18,
+      "change_24h": "-1.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma, titolo fanalino di coda tra i megacap",
+      "news": "NVDA è il ritardatario del giorno tra i megacap tech, -1-2%. Rimbalzo lieve grazie al calo del petrolio ma resta sotto i massimi. 52wk range $164-$243. (Fonte: Robinhood $203.34, Benzinga $207.02)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 205.18,
+      "stop_loss": 199.02,
+      "target": 215.44,
+      "commissione": 0.00,
+      "reasoning": "Nonostante il mercato risk-on, NVDA sottoperforma. Spread tra fonti 1.79% (MEDIA). Attendere catalizzatore specifico come prossimi earnings o aggiornamento guidance AI.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (intraday 04-Nov)", "price": 203.34},
+          {"name": "Benzinga (intraday 04-Nov)", "price": 207.02}
+        ],
+        "spread_pct": 1.79,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 553.63,
+      "change_24h": "+6.26%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo — forte accelerazione post-earnings, capital rotation in MSFT",
+      "news": "Microsoft balza +6-7% su risultati Q1 FY2027 sopra le attese: Azure +48% vs consensus +45%. Dan Ives (Wedbush) reafferma Outperform con target $615. Consensus Strong Buy, target medio $633. (Fonte: StockAnalysis $554.03, Yahoo Finance $553.22)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 553.63,
+      "stop_loss": 537.02,
+      "target": 581.31,
+      "commissione": 0.00,
+      "reasoning": "Azure +48% batte ampliamente il consensus +45% — catalizzatore fondamentale forte. Validazione ALTA con spread 0.15%. Contesto di mercato favorevole post-midterms. Target $615 degli analisti supporta ulteriore upside.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (11:34 AM EST 04-Nov)", "price": 554.03},
+          {"name": "Yahoo Finance (04-Nov)", "price": 553.22}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 292.10,
+      "change_24h": "+4.31%",
+      "trend_5d": "ribassista_poi_rimbalzo",
+      "volume_note": "Volume elevato — reazione positiva al Cloud beat e notizia Anthropic",
+      "news": "Alphabet +4-5% intraday: Anthropic alza il commitment su Google a $121 miliardi. Cloud in espansione. Consensus $400 target medio, Wells Fargo rialza a $365. YTD -10.36%. (Fonte: Yahoo Finance $291.84, Motley Fool $292.36)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 292.10,
+      "stop_loss": 283.34,
+      "target": 306.71,
+      "commissione": 0.00,
+      "reasoning": "Catalyst doppio: Cloud beat + commitment Anthropic $121B. Rimbalzo tecnico da YTD -10% su contesto risk-on. Validazione ALTA con spread 0.18%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (12:45 PM EST 04-Nov)", "price": 291.84},
+          {"name": "Motley Fool (midday 04-Nov)", "price": 292.36}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 635.80,
+      "change_24h": "+2.37%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; bond sale da $15B non sposta sentiment",
+      "news": "Meta consolida vicino al range alto: CNBC $630.95, Robinhood $640.65. Emesso bond da $15 miliardi a 5 tranche. 52wk range $520-$779; YTD -5.68%. (Fonte: CNBC $630.95, Robinhood $640.65)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 635.80,
+      "stop_loss": 616.73,
+      "target": 667.59,
+      "commissione": 0.00,
+      "reasoning": "Validazione MEDIA (spread 1.52%). Il bond da $15B crea lieve pressione diluitiva. Nessun catalizzatore earnings in arrivo immediato; attendere chiarimento sulla direzione dopo emissione debito.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (11:40 AM EST 04-Nov)", "price": 630.95},
+          {"name": "Robinhood (intraday 04-Nov)", "price": 640.65}
+        ],
+        "spread_pct": 1.52,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 66.18,
+      "change_24h": "+4.42%",
+      "trend_5d": "ribassista_poi_rimbalzo",
+      "volume_note": "Volume anomalo — rimbalzo da ipervenduto con coverage di Investing.com 'why is Netflix rallying today'",
+      "news": "Netflix rimbalza +4.4% intraday. Investing.com pubblica 'why is Netflix stock rallying today'. YTD -32.36%, 52wk $61.39-$116.73 — siamo near-low. Target medio analisti $85. (Fonte: Motley Fool $66.21, intraday multipli $66.14)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 66.18,
+      "stop_loss": 64.19,
+      "target": 69.49,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico da zona di ipervenduto (YTD -32%). Momentum +4.4% in contesto risk-on post-midterms. Validazione ALTA con spread 0.11%. Target analisti a $85 offre significativo upside sul medio periodo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (11:39 AM EST 04-Nov)", "price": 66.21},
+          {"name": "Intraday snapshot multipli", "price": 66.14}
+        ],
+        "spread_pct": 0.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 489.26,
+      "change_24h": "-5.84%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo post-earnings — reazione 'sell-the-news' nonostante beat",
+      "news": "AMD Q3: Data Center revenue +97% a $8.5B, beat estimates. Ma titolo scende da $520.55 (chiusura 03-Nov) a ~$489 — 'AMD Stock Goes Nowhere' (24/7 Wall St). StoneX reitera BUY su data center. (Fonte: Investing.com $495.17, 24/7 Wall St $483.34)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 489.26,
+      "stop_loss": 474.58,
+      "target": 513.72,
+      "commissione": 0.00,
+      "reasoning": "Validazione MEDIA (spread 2.42%). Reazione 'sell-the-news' nonostante fondamentali eccellenti (Data Center +97%). Attendere stabilizzazione e conferma del supporto prima di entrare. Down 22% nell'ultimo mese.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (10:23 AM EST 04-Nov)", "price": 495.17},
+          {"name": "24/7 Wall St (morning 04-Nov)", "price": 483.34}
+        ],
+        "spread_pct": 2.42,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1507.00,
+      "change_24h": "-2.90%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume elevato post-Q3 earnings con notizia licenze export Cina",
+      "news": "ASML -2.9% intraday: Reuters riporta che le licenze export per la Cina sono state ritirate. Q3 2026 results pubblicati il 14 ottobre. 52wk range non disponibile da questa fonte. (Fonte: Motley Fool $1,507, Yahoo Finance $1,507)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1507.00,
+      "stop_loss": 1461.79,
+      "target": 1582.35,
+      "commissione": 0.00,
+      "reasoning": "Rischio geopolitico materiale: ritiro licenze export Cina è un catalyst negativo strutturale. Nonostante la validazione ALTA, non si entra in BUY su notizia di deterioramento del business in Cina. Attendere chiarezza regolatoria.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (12:03 PM EST 04-Nov)", "price": 1507.00},
+          {"name": "Yahoo Finance (04-Nov)", "price": 1507.00}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 428.70,
+      "change_24h": "+2.52%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume elevato post-earnings Q3 — reazione positiva al beat",
+      "news": "Ferrari Q3 2026: EPS $2.78 vs stima $2.32 — battuto del 19.8%. Guidance full-year aggiornata al rialzo. Lieve delusione su guidance forward. 52wk $312.51-$437.15. (Fonte: Google Finance context ~$425, Robinhood $432.40)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 428.70,
+      "stop_loss": 415.84,
+      "target": 450.14,
+      "commissione": 0.00,
+      "reasoning": "Beat earnings Q3 del +19.8% su EPS con guidance rialzata. Validazione MEDIA (spread 1.73%). Il titolo si avvicina al 52wk high $437.15; momentum positivo supportato dai fondamentali.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance context (04-Nov)", "price": 425.00},
+          {"name": "Robinhood (04-Nov)", "price": 432.40}
+        ],
+        "spread_pct": 1.73,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.68,
+      "change_24h": "+4.69%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume elevato — rimbalzo da forte pressione venditrice del giorno precedente",
+      "news": "Stellantis +5% oggi dopo il -5.19% del 03-Nov (chip shortage Fiat). Down 57-58% YTD. RBC: Hold con target €4.00. Produzione Italia 2026 tagliata del 10%. (Fonte: Motley Fool $4.70, Google Finance $4.66)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 4.68,
+      "stop_loss": 4.54,
+      "target": 4.91,
+      "commissione": 0.00,
+      "reasoning": "Il rimbalzo tecnico +5% maschera problemi strutturali gravi: -58% YTD, chip shortage produttiva, RBC Hold a €4. Il consensus è bearish (3B/2H/1S/4SS). Non ci sono catalizzatori positivi a breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (12:05 PM EST 04-Nov)", "price": 4.70},
+          {"name": "Google Finance (10:25 AM EST 04-Nov)", "price": 4.66}
+        ],
+        "spread_pct": 0.86,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 366.00,
+      "change_24h": "+2.37%",
+      "trend_5d": "ribassista_poi_rimbalzo",
+      "volume_note": "Volume anomalo — flussi gold post-midterms; speranze di pace Iran abbassano petrolio e rivalutano oro",
+      "news": "Gold +3.3% a $4,070/oz oggi post-midterms (speranze pace Iran). GLD rispecchia il movimento: Benzinga $370.34 (+3.08%). L'oro era sceso -6.8% in ottobre sotto $4,000. ETF flows ancora negativi (Fonte: Benzinga $370.34, Investing.com nov3 $361.65)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 366.00,
+      "stop_loss": 358.68,
+      "target": 380.64,
+      "commissione": 0.00,
+      "reasoning": "Gold rimbalza +3.3% su catalizzatore macro (midterms + speranze pace Iran). Validazione MEDIA (spread 2.37% — spread temporale intraday vs close precedente). Attenzione: ETF gold flows ancora negativi nonostante la ripresa spot.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Benzinga (intraday 04-Nov)", "price": 370.34},
+          {"name": "Investing.com (chiusura 03-Nov)", "price": 361.65}
+        ],
+        "spread_pct": 2.37,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 80304.37,
+      "change_24h": "+4.90%",
+      "trend_5d": "ribassista_poi_rimbalzo",
+      "volume_note": "Volume anomalo — inizialmente scivolato a $76,500 durante il voto, poi rally su risultati midterm favorevoli al risk-on",
+      "news": "Bitcoin sale verso $80,500 con il risk-on post-midterms (Democratici sweepano il Congresso). Hack Binance $6.3B ha pesato ieri. BTC YTD -22-24%. Coinbase $80,376, Kraken $80,232. (Fonte: Coinbase $80,376.73, Kraken $80,232.00)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 80304.37,
+      "stop_loss": 76289.15,
+      "target": 86728.72,
+      "commissione": 0.00,
+      "reasoning": "Rally post-midterms con risk-on generalizzato (oil -7%, gold +3.3%, equity +2%). Validazione ALTA con spread 0.18% tra Coinbase e Kraken. Rischio: hack Binance $6.3B potrebbe creare risk-off residuo nel crypto.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (04-Nov)", "price": 80376.73},
+          {"name": "Kraken (04-Nov)", "price": 80232.00}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2326.63,
+      "change_24h": "+3.05%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma; ETH consolida in range $2,200-$2,330",
+      "news": "Ethereum in consolidamento nel range $2,200-$2,330. ETH -22% dal picco di ottobre, -36% YTD. Schroders lancia tokenized bond fund su Solana (non ETH). Fortune riporta $2,330. (Fonte: Fortune $2,330.30, Kraken $2,322.95)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2326.63,
+      "stop_loss": 2210.30,
+      "target": 2512.76,
+      "commissione": 0.00,
+      "reasoning": "Consolidamento laterale $2,200-$2,330 senza catalizzatori positivi specifici per ETH. Schroders sceglie Solana per tokenizzazione — segnale negativo relativo. Validazione ALTA (spread 0.32%) ma direzione incerta.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (07:00 AM EST 04-Nov)", "price": 2330.30},
+          {"name": "Kraken (04-Nov)", "price": 2322.95}
+        ],
+        "spread_pct": 0.32,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 92.79,
+      "change_24h": "+0.60%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; Schroders bond fund su Solana è un catalizzatore istituzionale",
+      "news": "Solana stabile a $92-93. Schroders (asset manager globale) lancia primo tokenized bond fund su blockchain Solana — adozione istituzionale positiva. SOL ha perso -3.8% per hack Binance $6.3B ieri. (Fonte: Bybit $92.74, Coinbase $92.83)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 92.79,
+      "stop_loss": 88.15,
+      "target": 100.21,
+      "commissione": 0.00,
+      "reasoning": "Validazione ALTA (spread 0.10%). Adozione istituzionale Schroders è positiva sul lungo termine, ma nel breve il residuo del hack Binance e la correlazione con BTC creano incertezza. Attendere conferma breakout sopra $95.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bybit (04-Nov)", "price": 92.74},
+          {"name": "Coinbase (04-Nov)", "price": 92.83}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AMZN",
+      "motivo": "Spread eccessivo tra fonti: Investing.com $250.69 (probabile chiusura 03-Nov) vs MarketBeat $266-$269 (04-Nov intraday) → spread ~6.0% > soglia 4%. Nota: news confermano AMZN +7-8% oggi (top gainer), ma mancano 2 fonti concordanti per la stessa sessione."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Spread 4.3% tra StockAnalysis $240.42 (04-Nov intraday) e Investing.com $230.31 (chiusura 03-Nov) > soglia 4%. Mancano 2 fonti concordanti per lo stesso momento intraday."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Spread 4.75% tra StockAnalysis $47.02 (04-Nov intraday) e Investing.com $44.84 (chiusura 03-Nov) > soglia 4%. L'argento è +4.9% oggi ma mancano 2 fonti concordanti sulla stessa sessione."
+    },
+    {
+      "asset": "USO",
+      "motivo": "Petrolio crolla -7% oggi (WTI a $89.17). Nessuna fonte attendibile per USO il 04-Nov trovata: Marketalleys $158.17 (03-Nov), Investing.com $168.83 (02-03-Nov) — spread 6.3% > soglia 4% e dati non contemporanei."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "MSFT",
+      "motivo": "Azure +48% batte consensus +45% — catalizzatore fondamentale eccezionale. Validazione ALTA (spread 0.15%). Confidence ALTO. Dan Ives Outperform $615, consensus target $633."
+    },
+    {
+      "rank": 2,
+      "asset": "BTC",
+      "motivo": "Rally post-midterms con risk-on pieno. Coinbase/Kraken concordano a $80,304 (spread 0.18%). Upside target $86,728 (+8%). Oil -7% abbassa le preoccupazioni Fed."
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "Near ATH, +6% intraday, Evercore Outperform $380 riaffermato. Validazione ALTA spread 0.30%. Contesto di mercato risk-on post-midterms."
+    },
+    {
+      "rank": 4,
+      "asset": "GOOGL",
+      "motivo": "Doppio catalizzatore: Cloud beat + Anthropic commitment $121B su Google. Validazione ALTA spread 0.18%. Ancora -10% YTD: potenziale di recupero."
+    },
+    {
+      "rank": 5,
+      "asset": "RACE",
+      "motivo": "Ferrari Q3 EPS +19.8% sopra le stime ($2.78 vs $2.32). Guidance alzata. Momentum positivo verso 52wk high $437."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato",
+    "allocazione_suggerita": {
+      "MSFT": "20% — massima confidence, catalizzatore fondamentale chiaro",
+      "BTC": "15% — risk-on post-midterms, alta liquidità",
+      "AAPL": "15% — near ATH con momentum confermato",
+      "GOOGL": "15% — doppio catalizzatore, recovery play",
+      "NFLX": "10% — oversold bounce, rischio mais limitato",
+      "RACE": "10% — earnings beat, 52wk high in vista",
+      "GLD": "10% — hedge macro, oil down eases Fed",
+      "HOLD_CASH": "5% — buffer per opportunità AMZN/SAP/SLV quando fonti tornano concordanti"
+    }
+  }
+}
