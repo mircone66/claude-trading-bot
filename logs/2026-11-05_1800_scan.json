@@ -1,0 +1,498 @@
+{
+  "timestamp": "2026-11-05T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Giornata di forte vendita generalizzata il 5 novembre 2026 in seguito ai risultati delle elezioni di midterm USA, con i Democratici che hanno conquistato la Camera. I mercati reagiscono con timori di nuova regolamentazione sull'IA e sulle grandi tech: Nasdaq in calo del 3-6%, chip stocks AI duramente colpite (NVDA -9%, ASML -7%, AMD -15%). Tesla affonda oltre il 9% per le implicazioni politiche su Elon Musk. L'oro sale come bene rifugio. Il petrolio cerca rimbalzo dopo il crollo del -8% di ieri. Bitcoin volatile tra $75-80k con timori di indagini democratiche sul settore crypto.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 351.95,
+      "change_24h": "-0.50%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; 52-week range $243.42-$354.47, prezzo vicino ai massimi",
+      "news": "Apple pianifica emissione obbligazionaria investment-grade da $7 miliardi. DZ Bank declassa a Sell con target $300. Relativamente resiliente rispetto al selloff tech.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 351.95,
+      "stop_loss": 341.39,
+      "target": 369.55,
+      "commissione": 0.00,
+      "reasoning": "AAPL tiene bene in una giornata di forte selloff AI/tech (+0.7% vs settore -3-9%), con emissione bond che segnala solidità di bilancio (Robinhood, Investing.com). Il downgrade DZ Bank a $300 e la prossimità ai massimi 52W ($354.47) limitano upside; meglio attendere conferma direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 5 intraday)", "price": 351.97},
+          {"name": "Investing.com (Nov 5 intraday)", "price": 351.91}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 343.60,
+      "change_24h": "-9.43%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo elevato; crollo violento da $385.19 a ~$338-349 in intraday",
+      "news": "Tesla cede oltre il 9% assieme ad altri asset legati a Elon Musk per i risultati delle midterm (Bloomberg). I Democratici alla Camera potrebbero complicare le sovvenzioni per EV e SpaceX.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 343.60,
+      "stop_loss": 333.29,
+      "target": 360.78,
+      "commissione": 0.00,
+      "reasoning": "TSLA in caduta libera -9.4% su timori politici post-midterm; affidabilità prezzo MEDIA (spread 3.07% tra fonti) rende il segnale SELL da trattare con cautela (Yahoo Finance $348.87 vs Heygotrade $338.33). Trend ribassista confermato ma alta volatilità intraday.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Nov 5, h.11 ET)", "price": 348.87},
+          {"name": "Heygotrade (Nov 5, 13:08 ET)", "price": 338.33}
+        ],
+        "spread_pct": 3.07,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 181.98,
+      "change_24h": "-9.16%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo altissimo (171.9M vs media 30d ~80M); pesante selling istituzionale",
+      "news": "NVDA crolla -9.16% per timori regolatori IA post-midterm (Bloomberg); chip index -11% worst day since Mar 2020. Prossimi earnings previsti il 17 novembre 2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 181.98,
+      "stop_loss": 176.52,
+      "target": 191.08,
+      "commissione": 0.00,
+      "reasoning": "NVDA in zona di supporto critico ($181.55 low intraday, 52-week low $164.27); earnings il 17/11 potrebbero essere catalizzatore positivo se guidance forte (Google Finance $181.80, Robinhood $182.16). Non entrare oggi in un trend di vendita forzata; meglio aspettare stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (Nov 5, 13:01 ET)", "price": 181.80},
+          {"name": "Robinhood (Nov 5 intraday)", "price": 182.16}
+        ],
+        "spread_pct": 0.20,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 542.66,
+      "change_24h": "-2.35%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; in calo ordinato vs il +6.7% di ieri",
+      "news": "Microsoft balzato +6.7% il 4 nov su AWS/AI optimism post-earnings, ora corregge ordinatamente -2.3% con il resto della tech. Dividend ex-date 19 novembre, next earnings gennaio 2027.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 542.66,
+      "stop_loss": 526.38,
+      "target": 569.79,
+      "commissione": 0.00,
+      "reasoning": "MSFT mostra la correzione più contenuta del gruppo big-tech (-2.3% vs -9% NVDA, -9% TSLA); analisti target medio $633 su 57 coperture con Strong Buy consensus (MarketChameleon $544.80, GotoTrade $540.51). Aspettare conferma supporto ~$520 prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketChameleon (Nov 5, 10:09 ET)", "price": 544.80},
+          {"name": "GotoTrade (Nov 5, 12:56 ET)", "price": 540.51}
+        ],
+        "spread_pct": 0.79,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 261.40,
+      "change_24h": "-1.72%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume elevato ma ordinato; ieri 93M shares traded",
+      "news": "Amazon +6.12% il 4 novembre su rivalutazione di AWS e strategia AI dopo i risultati di midterm (Motley Fool). Oggi cede solo -1.72% pur con Nasdaq -3-6%: relativa forza.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 261.40,
+      "stop_loss": 253.56,
+      "target": 274.47,
+      "commissione": 0.00,
+      "reasoning": "AMZN mostra la miglior tenuta relativa tra le big-tech (-1.72% vs settore -5-9%); analyst target consensus $329.79 (Benzinga). La rivalutazione della strategia AWS cloud-AI è un driver fondamentale concreto (Motley Fool $261.36, MarketBeat $261.44). Candidato a rimbalzo nel breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (Nov 5, 12:01 ET)", "price": 261.36},
+          {"name": "MarketBeat (Nov 5, 12:14 ET)", "price": 261.44}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 288.56,
+      "change_24h": "-0.13%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; Anthropic alza impegno con Google a $121 miliardi",
+      "news": "GOOGL praticamente invariato -0.13% nonostante il selloff tech: straordinaria resilienza. Anthropic ha aumentato il suo impegno con Google a $121 miliardi (Motley Fool 3 nov). Ex-price rispetto ai massimi 52W di $408.61.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 288.56,
+      "stop_loss": 279.90,
+      "target": 302.99,
+      "commissione": 0.00,
+      "reasoning": "GOOGL regge quasi piatto (-0.13%) nel selloff AI tech: segnale di relativa forza. Il commitment Anthropic da $121B conferma posizionamento AI cloud (Google Finance $288.47, Yahoo Finance $288.65). 52-week range $270.70-$408.61; spazio di upside ampio ma contesto macro sfavorevole.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (Nov 5, 09:44 ET)", "price": 288.47},
+          {"name": "Yahoo Finance (Nov 5, 09:44 ET)", "price": 288.65}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 609.00,
+      "change_24h": "-3.33%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; earnings appena pubblicati il 4 nov",
+      "news": "META ha riportato Q3 earnings il 4 novembre con il titolo +1.44%. Il 5 novembre cede -3.33% con il resto del settore per timori regolatori IA post-midterm (StockAnalysis, GotoTrade).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 609.00,
+      "stop_loss": 590.73,
+      "target": 639.45,
+      "commissione": 0.00,
+      "reasoning": "META ha appena superato gli earnings (+1.44%) ma il contesto post-midterm pesa (-3.33%). Analyst consensus: 62 analisti Strong Buy, target $848.38 (StockAnalysis). P/E ~21 con dividend yield 0.33% offre valutazione attraente a lungo termine (Google Finance $612.20, GotoTrade $605.80).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (Nov 5, 09:52 ET)", "price": 612.20},
+          {"name": "GotoTrade (Nov 5, 12:54 ET)", "price": 605.80}
+        ],
+        "spread_pct": 1.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 66.01,
+      "change_24h": "-0.57%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma; -29.2% YTD, vicino ai minimi 52W ($61.39)",
+      "news": "NFLX ha rimbalzato +4.68% il 4 novembre e cede moderatamente il 5 (-0.57%). Nessuna notizia specifica rilevante nella giornata. 52-week range $61.39-$116.73.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 66.01,
+      "stop_loss": 64.03,
+      "target": 69.31,
+      "commissione": 0.00,
+      "reasoning": "NFLX tiene meglio del settore (-0.57%) ma è a -29.2% YTD vicino ai minimi annuali. Mancano catalyst concreti nel breve; il rimbalzo del 4 nov appare tecnico senza conferma fondamentale (CNBC $66.39 Nov4, Investing.com $65.62 Nov5).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (chiusura 4 Nov)", "price": 66.39},
+          {"name": "Investing.com (Nov 5 intraday)", "price": 65.62}
+        ],
+        "spread_pct": 1.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1392.23,
+      "change_24h": "-7.17%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo elevato; $65.7M in net ETF buying martedì non ha arginato il calo",
+      "news": "ASML in calo del 7-9% per timori regolatori su AI e infrastrutture data center dopo i risultati delle midterm (Investing.com). Chip index -11% worst day since Mar 2020.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1392.23,
+      "stop_loss": 1350.46,
+      "target": 1461.84,
+      "commissione": 0.00,
+      "reasoning": "ASML in caduta a causa del sell-off generalizzato chip AI (-7.17%); 52-week range $946-$1,999, attualmente a metà range. Il VLSI moat è intatto e la spesa AI globale non si interrompe per un risultato elettorale; tuttavia le prossime settimane potrebbero portare ulteriore volatilità (Motley Fool $1,388.97, Seeking Alpha $1,395.48).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (Nov 5, 12:16 ET)", "price": 1388.97},
+          {"name": "Seeking Alpha (Nov 5, 10:20 ET)", "price": 1395.48}
+        ],
+        "spread_pct": 0.47,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 240.05,
+      "change_24h": "+4.23%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; SAP e Dassault Systemes su +1% mentre chip stocks crollano",
+      "news": "SAP +4.23% il 4 novembre su mercati favorevoli a enterprise software vs hardware AI (Motley Fool). Report Nov 5 indica relativa forza: SAP e Dassault Systemes in positivo mentre chip stocks crollano.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 240.05,
+      "stop_loss": 232.85,
+      "target": 252.05,
+      "commissione": 0.00,
+      "reasoning": "SAP mostra notevole resilienza nel selloff AI/chip come software enterprise non esposto alla regolamentazione hardware. P/E 31.93, analyst target $280.83 su StockAnalysis indica +17% upside dalla chiusura di ieri (Google Finance $240.04, Motley Fool $240.05).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (chiusura 4 Nov)", "price": 240.04},
+          {"name": "Motley Fool (chiusura 4 Nov)", "price": 240.05}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 430.95,
+      "change_24h": "-0.35%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; Q3 earnings con guidance alzata il 3 novembre",
+      "news": "Ferrari +4.3% il 4 novembre su Q3 earnings forti con upgrade della guidance annuale completa. GF Score 99 (GuruFocus). Praticamente invariato il 5 novembre nonostante il selloff tech.",
+      "signal": "HOLD",
+      "confidence": "Alto",
+      "entry": 430.95,
+      "stop_loss": 418.02,
+      "target": 452.50,
+      "commissione": 0.00,
+      "reasoning": "Ferrari dimostra forte resilienza settoriale (-0.35% vs Nasdaq -3-6%); Q3 earnings superiori alle attese con guidance annuale alzata confermano lo status premium del marchio. Vicino al massimo 52W di $437.15; GF Score 99 segnala qualità eccellente (CNBC $432.45 Nov4, Robinhood $429.44 Nov5).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC + GuruFocus (chiusura 4 Nov)", "price": 432.45},
+          {"name": "Robinhood (Nov 5 intraday)", "price": 429.44}
+        ],
+        "spread_pct": 0.70,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.45,
+      "change_24h": "-4.41%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume anomalo; spike +15.8% intraday il 4 nov su earnings, poi rientro",
+      "news": "Stellantis Q3 earnings il 4 novembre: ricavi EUR 37.61B (beat), EPS EUR 0.01 (praticamente zero). Stock rimbalzato +15.8% intraday poi sceso. 52-week range $3.92-$12.22; trading vicino ai minimi annuali.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 4.45,
+      "stop_loss": 4.32,
+      "target": 4.67,
+      "commissione": 0.00,
+      "reasoning": "STLA ha battuto i ricavi ma mostra margini quasi nulli (EPS EUR 0.01); il rimbalzo intraday del +15.8% si è già in parte ridimensionato. Guidance 2026 reaffermata, ma a $4.45 (-63% dal massimo 52W di $12.22) il recupero strutturale richiede evidenza più solida (Robinhood $4.45, Yahoo Finance $4.45).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 5, 2026)", "price": 4.45},
+          {"name": "Yahoo Finance (Nov 5, 11:49 ET)", "price": 4.45}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 372.49,
+      "change_24h": "+3.68%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume nella norma; global gold ETF holdings saliti di 19 tonnellate in ottobre a 4.275 tonnellate (WGC)",
+      "news": "GLD avanza +3.68% il 4 novembre su domanda di safe-haven per incertezza elettorale USA. World Gold Council riporta flussi ETF gold +19 tonnellate in ottobre. Gold spot recupera sopra i livelli chiave.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 372.49,
+      "stop_loss": 365.04,
+      "target": 387.39,
+      "commissione": 0.00,
+      "reasoning": "GLD è l'unico segnale BUY chiaro della sessione: l'incertezza post-midterm, i timori di spesa AI e il contesto risk-off alimentano la domanda di oro. Flussi ETF in aumento (+19t ottobre), gold spot in recupero su livelli chiave. Rapporto rischio/rendimento favorevole -2%/+4% (StockAnalysis $372.49, Investing.com $372.48).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (4 Nov, 13:31 ET)", "price": 372.49},
+          {"name": "Investing.com (4 Nov, 13:32)", "price": 372.48}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 46.87,
+      "change_24h": "-1.26%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; silver perde terreno rispetto all'oro nella rotazione risk-off",
+      "news": "SLV cede -1.26% il 5 novembre mentre l'oro avanza: l'argento ha maggior componente industriale che pesa in un contesto di rallentamento economico temuto. Substack nota 'Gold and Silver Reclaim Key Levels'.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 46.87,
+      "stop_loss": 45.93,
+      "target": 48.74,
+      "commissione": 0.00,
+      "reasoning": "SLV sottoperforma GLD nel contesto risk-off per la sua componente industriale; il recupero dal minimo ($43.24) è in corso ma meno deciso di GLD. 52-week range $43.24-$109.83: spazio enorme ma manca trigger specifico. Preferibile GLD nel breve (Seeking Alpha $47.16 Nov4, StockAnalysis $46.57 Nov5).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha (chiusura 4 Nov)", "price": 47.16},
+          {"name": "StockAnalysis (Nov 5, 10:59 ET)", "price": 46.57}
+        ],
+        "spread_pct": 1.26,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 147.61,
+      "change_24h": "+1.52%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo elevato; crollo -8.07% il 4 nov su timori domanda AI/energia",
+      "news": "USO rimbalza +1.52% il 5 novembre dopo il crollo del -8.07% di ieri. Il petrolio WTI preso fra timori di riduzione domanda AI-data center e fattori di offerta. 52-week range $65.99-$171.82.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 147.61,
+      "stop_loss": 144.66,
+      "target": 153.51,
+      "commissione": 0.00,
+      "reasoning": "USO in rimbalzo tecnico (+1.52%) dopo il forte calo di ieri (-8.07%); il trend settimanale è fortemente ribassista (da $169 a $147 in 3 giorni). La direzione futura dipende dall'evoluzione dei timori su AI regulation e domanda energetica. Rischio asimmetrico sfavorevole (MarketAlleys/Finnhub $147.39, CNBC $147.83).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys/Finnhub (Nov 5, 17:02 UTC)", "price": 147.39},
+          {"name": "CNBC (Nov 5 intraday)", "price": 147.83}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75863.58,
+      "change_24h": "-5.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo; oltre $1 miliardo di liquidazioni crypto nel sell-off; BTC ETF tornano a inflows +$74.57M",
+      "news": "Bitcoin volatile tra $75-80k: salito a $80,400 post-midterm (short squeeze), poi sceso sotto $76,000 con liquidazioni >$1B. I Democratici preparano indagine su Trump Media e crypto. Rientro flussi netti positivi su BTC ETF.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 75863.58,
+      "stop_loss": 72070.40,
+      "target": 81932.67,
+      "commissione": 0.00,
+      "reasoning": "BTC mostra alta volatilità bidirezionale in una sola giornata ($75-$81k): gli inflows su ETF sostengono ma i timori normativi democratici pesano. Il segnale è neutro fino a stabilizzazione della narrativa politica (CoinMarketCap $75,691.64, CoinGecko $76,035.52).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Nov 5, 2026)", "price": 75691.64},
+          {"name": "CoinGecko (Nov 5, 2026)", "price": 76035.52}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2401.25,
+      "change_24h": "+0.50%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma ($14.9B/24h); ETH ETF con inflows +$53.02M",
+      "news": "Ethereum +7.9% a $2,422 nella mattinata, poi sell-off a $2,258 con liquidazioni crypto. MACD crossover rialzista segnalato. ETH ETF tornano a flussi positivi +$53.02M. Net price praticamente invariato.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 2401.25,
+      "stop_loss": 2281.19,
+      "target": 2593.35,
+      "commissione": 0.00,
+      "reasoning": "ETH mostra resilienza con il MACD crossover rialzista e i flussi ETF tornati positivi (+$53M); la volatilità intraday estrema (+7.9% poi -6.86%) riflette un mercato indeciso. All-time high $4,954 (ago 2025), attuale prezzo a metà range; possibile trade se consolida sopra $2,400 (CoinMarketCap $2,410.93, CoinGecko $2,391.56).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (Nov 5, 2026)", "price": 2410.93},
+          {"name": "CoinGecko (Nov 5, 2026)", "price": 2391.56}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 96.44,
+      "change_24h": "+3.00%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma; SOL ETF con zero flussi netti per due giorni consecutivi",
+      "news": "Solana sale ~+3% a $96.44 nella sessione di oggi. Tuttavia gli ETF SOL registrano zero flussi per il secondo giorno. Report sulla rete: tokenized assets raggiungono $5.12 miliardi, upgrade di rete in discussione.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 96.44,
+      "stop_loss": 91.62,
+      "target": 104.16,
+      "commissione": 0.00,
+      "reasoning": "SOL in positivo +3% con tokenized assets su Solana a $5.12B; tuttavia i zero flussi su ETF SOL per due giorni indicano mancanza di interesse istituzionale. Rispetto a BTC ed ETH, SOL ha la menor copertura di flussi istituzionali. Preferire BTC/ETH per esposizione crypto (Coinbase $96.46, Bybit $96.42).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase converter (Nov 5, 11:12)", "price": 96.46},
+          {"name": "Bybit (Nov 5, 2026)", "price": 96.42}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AMD",
+      "motivo": "Spread fonti Nov 5 intraday: MarketBeat $435.71 (09:46 ET) vs StockAnalysis $417.00 (10:24 ET) = spread 4.39% > soglia 4%. Stock in crollo da -14.69% su timori regolatori AI post-midterm, alta volatilità rende impossibile prezzo affidabile per il periodo."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "motivo": "Unico segnale BUY confermato: safe-haven con flussi istituzionali positivi (+19t ottobre WGC), incertezza post-midterm, gold che recupera livelli chiave. SL -2%, target +4%, rischio/rendimento ottimale."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "Miglior tenuta relativa nel sell-off (-1.72% vs Nasdaq -3-6%); rivalutazione strategia AWS-AI post-midterm è catalyst fondamentale concreto. Consensus analyst target $329.79 (+26% upside)."
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "Ferrari totalmente immune al sell-off tech AI (-0.35%); Q3 earnings forti con guidance annuale alzata; GF Score 99; luxury auto non esposta alla regolamentazione IA democratica."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale eseguito",
+    "allocazione_suggerita": {
+      "GLD": "15% — BUY confermato, risk-off play",
+      "AMZN": "10% — HOLD con bias positivo, forza relativa",
+      "RACE": "8% — HOLD con bias positivo, earnings forti",
+      "NVDA": "5% — HOLD per earnings 17/11, entry speculativa a supporto",
+      "BTC": "5% — HOLD, alta volatilità",
+      "cash": "57% — Attendere stabilizzazione post-midterm"
+    }
+  }
+}
