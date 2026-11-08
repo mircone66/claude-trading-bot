@@ -1,0 +1,497 @@
+{
+  "timestamp": "2026-11-08T18:17:09Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Settimana volatile per i mercati tech: il Nasdaq è sceso del 5.52% giovedì 5 novembre per il selloff sui chip AI legato all'incertezza post-elettorale USA, prima di un parziale recupero venerdì 6 novembre (+Philly Semiconductor Index +5.4%). AMD guida il rimbalzo con +11.04% post-earnings Q3 (ricavi +45% a/a, guidance Q4 $17B). NVDA -9.26% giovedì poi +2.78% venerdì con earnings previsti il 17 novembre. Bitcoin staziona sotto $76K, circa 7% sotto la media mobile a 50 giorni. Oro in recupero settimanale +4.71% come asset rifugio. Oggi domenica 8 novembre 2026 i mercati USA sono chiusi; prezzi basati sull'ultima sessione disponibile (venerdì 6 novembre 2026).",
+  "signals": [
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 449.04,
+      "change_24h": "+11.04%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo: 41.9M vs media giornaliera — massimo da settimane post-earnings",
+      "news": "AMD Q3 2026: ricavi $13.4B (+45% a/a), EPS adj $2.09 vs $1.95 atteso; guidance Q4 $17.0B (+27% t/t). La crescita è guidata dai chip data center MI300X e GPU AI. Stock surges 11% on record quarterly revenue (Motley Fool, 06/11/2026).",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 449.04,
+      "stop_loss": 435.57,
+      "target": 471.49,
+      "commissione": 0.00,
+      "reasoning": "Trimestrale record con crescita +45% a/a e guidance Q4 superiore alle attese; momentum post-earnings storicamente sostenuto. Opportunità d'acquisto dopo la violenta correzione del -15% di giovedì, con rimbalzo che conferma la solidità dei fondamentali.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 449.04},
+          {"name": "CNBC", "price": 449.04}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 187.67,
+      "change_24h": "+2.78%",
+      "trend_5d": "volatile/ribassista",
+      "volume_note": "Volume elevato post-selloff; Philly Semiconductor Index +5.4% venerdì",
+      "news": "NVDA -9.26% giovedì 5 novembre nel selloff AI chip legato all'incertezza post-elettorale; rimbalzo parziale +2.78% venerdì. Earnings previsti il 17 novembre 2026 — catalizzatore chiave. Analisti: 'Nvidia Stock Looks Like a Bargain Right Now' (Motley Fool, 08/11/2026).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 187.67,
+      "stop_loss": 182.04,
+      "target": 197.05,
+      "commissione": 0.00,
+      "reasoning": "Titolo sceso dal massimo $243 a $187 (-23%) creando un'opportunità pre-earnings. Catalizzatore atteso il 17 novembre 2026 con risultati Q3; supporto tecnico a $164 (52-week low).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 188.70},
+          {"name": "CNBC/Morningstar", "price": 186.64}
+        ],
+        "spread_pct": 1.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 372.52,
+      "change_24h": "-0.79%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale; GLD +4.71% settimanale — ripresa dai minimi recenti",
+      "news": "GLD +4.71% nella settimana terminata il 6 novembre, in recupero dalle recenti vendite. L'oro beneficia dell'incertezza post-elettorale USA e delle tensioni geopolitiche. Report Bullion Breakdown: 'Gold Surges, Silver Lags. Payrolls Will Break the Tie' (SilverGoldAlpha, recente).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 372.52,
+      "stop_loss": 365.07,
+      "target": 387.42,
+      "commissione": 0.00,
+      "reasoning": "Recupero settimanale +4.71% dopo il pullback dal massimo storico $509 (gennaio 2026); l'incertezza post-elettorale USA e il contesto macro sostengono l'oro come asset rifugio. Momentum positivo a breve termine.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Barchart/Stocktwits", "price": 372.52},
+          {"name": "Yahoo Finance", "price": 372.52}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 63.41,
+      "change_24h": "-3.28%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 35.5M vs media 45.6M — leggermente sotto media",
+      "news": "Netflix -3.28% venerdì, vicino al minimo 52 settimane ($61.39). YTD -29.19%. RSI(14) ~33.6 — territorio ipervenduto ma trend ribassista persistente. Nessun catalizzatore positivo identificato nelle fonti consultate (Google Finance/Yahoo Finance, 06/11/2026).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 63.41,
+      "stop_loss": 65.31,
+      "target": 60.24,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista sostenuto con YTD -29%. Il titolo è a soli ~3% dal minimo 52 settimane e continua a cedere terreno senza catalizzatori positivi. RSI in area ipervenduto non è ancora segnale di inversione confermata.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 63.41},
+          {"name": "Yahoo Finance", "price": 63.41}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2232.90,
+      "change_24h": "-1.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Deflussi ETF ETH settimanali $365.2M — pressione di vendita istituzionale",
+      "news": "Deflussi netti fondi Ethereum $365.2M nella settimana, con deflussi combinati BTC+ETH ETF di $1.65B. ETH -13.10% mensile, -34.34% annuale. Primo piccolo reafflusso il 7 novembre ($53.02M) ma insufficiente a invertire il trend (Crypto.news/Coingabbar, 07-08/11/2026).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 2232.90,
+      "stop_loss": 2344.55,
+      "target": 2121.26,
+      "commissione": 0.00,
+      "reasoning": "Deflussi istituzionali ETF pesanti ($365.2M settimanali) confermano pressione di vendita strutturale. Performance annuale -34.34% con trend ribassista intatto; massimo storico $4,953 (agosto 2025) ormai lontano.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 2234.38},
+          {"name": "CoinMarketCap", "price": 2231.41}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 342.51,
+      "change_24h": "-0.52%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Il Partito Democratico USA sta preparando un'indagine su Apple, Meta e aziende di Elon Musk — rischio regolatorio. Dividendo trimestrale $0.27 con ex-date 12 novembre 2026 (Yahoo Finance, 06/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 342.51,
+      "stop_loss": 332.23,
+      "target": 359.64,
+      "commissione": 0.00,
+      "reasoning": "Titolo laterale ma con rischio regolatorio emergente da indagini democratiche. Dividendo imminente (ex-date 12 nov) offre lieve supporto. Preferibile attendere chiarezza su notizie politiche.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 342.65},
+          {"name": "CNBC", "price": 342.37}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 358.81,
+      "change_24h": "+4.23%",
+      "trend_5d": "volatile",
+      "volume_note": "Volume anomalo sul rimbalzo venerdì post-correzione -10.8% di giovedì",
+      "news": "Tesla in rimbalzo +4.23% venerdì dopo -10.8% giovedì (AI chip selloff). Strategia: Tesla punta su robotica e guida autonoma dopo la discontinuazione del Cybertruck. 52-week range: $297-$499 (Robinhood/Investing.com, 06/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 358.81,
+      "stop_loss": 348.05,
+      "target": 376.75,
+      "commissione": 0.00,
+      "reasoning": "Volatilità eccessiva (swing -10.8%/+4.2% in due giorni) e incertezza strategica post-Cybertruck. Preferibile attendere stabilizzazione prima di assumere posizioni.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 359.40},
+          {"name": "Investing.com", "price": 358.22}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 531.01,
+      "change_24h": "-0.99%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Microsoft -0.99% venerdì dopo il picco a $556 di martedì (+6.68%). Rating consensus 'Strong Buy' con target medio $634 (StockAnalysis, 06/11/2026). Nessuna notizia catalizzatrice specifica nella sessione.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 531.01,
+      "stop_loss": 515.08,
+      "target": 557.56,
+      "commissione": 0.00,
+      "reasoning": "Titolo in consolidamento dopo il picco settimanale $556; livelli correnti offrono supporto tecnico. Mancanza di catalizzatori immediati suggerisce attesa.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 531.40},
+          {"name": "Yahoo Finance", "price": 530.61}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 259.30,
+      "change_24h": "-0.35%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "Amazon Q3 2026 EPS $1.89 vs $1.99 atteso — miss sugli utili. Target medio analisti $324.88 con 44 ratings. 52-week: $196-$287 (Google Finance, 06/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 259.30,
+      "stop_loss": 251.52,
+      "target": 272.27,
+      "commissione": 0.00,
+      "reasoning": "Delusione sugli utili Q3 (miss EPS) pesa sul titolo; tuttavia il target medio analisti a $325 offre upside significativo. Preferibile attendere segnali di stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 259.30},
+          {"name": "StockAnalysis", "price": 259.30}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 284.78,
+      "change_24h": "+0.78%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Alphabet inserita tra i '3 Internet Giants to Hold for the Next 10 Years' (Motley Fool, 07/11/2026). P/E 14.8 — valutazione attraente. 52-week: $271-$409; target medio analisti $400.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 284.78,
+      "stop_loss": 276.24,
+      "target": 299.02,
+      "commissione": 0.00,
+      "reasoning": "Valutazione attraente (P/E 14.8) con target analisti $400 (+40% upside) ma trend settimanale debole. Laterale con potenziale rimbalzo; preferire ingresso su conferma di trend rialzista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 284.78},
+          {"name": "Investing.com", "price": 284.78}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 610.15,
+      "change_24h": "+0.84%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Il Partito Democratico USA sta preparando un'indagine su Meta — rischio regolatorio. 52-week: $520-$780; target medio analisti $850 (StockAnalysis, 06/11/2026). -21.8% dal massimo storico.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 610.15,
+      "stop_loss": 591.85,
+      "target": 640.66,
+      "commissione": 0.00,
+      "reasoning": "Rischio regolatorio emergente da indagine democratica compensa il potenziale rialzista. Trend laterale su base settimanale; attendere chiarezza politica prima di posizionarsi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 610.15},
+          {"name": "Yahoo Finance", "price": 610.15}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1424.75,
+      "change_24h": "+5.02%",
+      "trend_5d": "volatile/ribassista",
+      "volume_note": "Anomalo in entrambe le direzioni — selloff poi rimbalzo",
+      "news": "ASML -9% giovedì post-elezioni USA (timori su regolamentazione AI data center che potrebbe ridurre domanda chip litografia); rimbalzo +5% venerdì. Dividendo intermedio €1.88/azione pagato il 4 novembre 2026. Target analisti $2,138 consensus 'Strong Buy' (MarketBeat/Morningstar, 06/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1424.75,
+      "stop_loss": 1382.01,
+      "target": 1495.99,
+      "commissione": 0.00,
+      "reasoning": "Volatilità estrema da incertezza regolatoria post-elettorale; rimbalzo +5% non è ancora conferma di inversione. Target analisti $2,138 offre upside strutturale ma rischio politico elevato nel breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance/Nasdaq", "price": 1424.75},
+          {"name": "Morningstar", "price": 1424.75}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 233.42,
+      "change_24h": "-4.21%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "SAP -4.21% venerdì, in calo da $256 nelle ultime settimane. May Hill Capital LLC ha acquisito azioni SAP (Daily Political, 07/11/2026). Target medio analisti $280.83 con consensus 'Moderate Buy' (Yahoo Finance/CNBC, 06/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 233.42,
+      "stop_loss": 226.42,
+      "target": 245.09,
+      "commissione": 0.00,
+      "reasoning": "Calo significativo -4.21% su base giornaliera potrebbe creare opportunità di acquisto ma il trend ribassista settimanale suggerisce cautela. Monitorare per eventuale BUY su conferma di supporto.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 233.38},
+          {"name": "CNBC/Morningstar", "price": 233.45}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 416.84,
+      "change_24h": "-1.17%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Ferrari Q3 2026: margine operativo in miglioramento, guidance 2026 alzata. 'Ferrari stock gains as Q3 margin strength lifts 2026 outlook' (ad-hoc-news.de, 06/11/2026). 52-week: $312-$437; target analisti $455.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 416.84,
+      "stop_loss": 404.33,
+      "target": 437.68,
+      "commissione": 0.00,
+      "reasoning": "Consolidamento post-earnings Q3 positivi; il titolo è vicino al massimo 52 settimane ($437). Fondamentali solidi ma upside limitato nel breve a meno di nuovi catalizzatori.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 416.13},
+          {"name": "Morningstar", "price": 417.55}
+        ],
+        "spread_pct": 0.34,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 46.87,
+      "change_24h": "-0.13%",
+      "trend_5d": "laterale/rialzista",
+      "volume_note": "Normale; AUM $25.2B (Yahoo Finance, 07/11/2026)",
+      "news": "SLV +5.09% settimanale ma l'argento continua a sottoperformare l'oro. 'Silver Lags. Payrolls Will Break the Tie' — il report occupazione USA atteso come catalizzatore. 52-week: $44-$110 (SilverGoldAlpha, recente).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 46.87,
+      "stop_loss": 45.93,
+      "target": 48.74,
+      "commissione": 0.00,
+      "reasoning": "Recupero settimanale +5% ma argento sottoperforma l'oro — mancanza di leadership. Attendere dati payroll USA per conferma direzionale prima di posizionarsi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 46.87},
+          {"name": "CNBC", "price": 46.87}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 148.31,
+      "change_24h": "+0.14%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "USO laterale intorno a $148. Il Brent a $104/barile a settembre (Business Standard). 52-week: $66-$172. Nessuna notizia oil specifica per la settimana corrente identificata (CNBC/Massive, 06/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 148.31,
+      "stop_loss": 145.34,
+      "target": 154.24,
+      "commissione": 0.00,
+      "reasoning": "Movimento laterale senza catalizzatori direzionali chiari. Mancanza di notizie specifiche sull'olio nella settimana corrente suggerisce attesa.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView", "price": 148.21},
+          {"name": "CNBC/Massive", "price": 148.41}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75744.00,
+      "change_24h": "-0.17%",
+      "trend_5d": "ribassista",
+      "volume_note": "Deflussi ETF BTC settimanali importanti; piccoli reafflussi il 7 novembre ($74.57M)",
+      "news": "Bitcoin sotto $76K, circa 7% sotto la media mobile a 50 giorni. Deflussi ETF BTC+ETH combinati $1.65B nella settimana; primo reafflusso BTC $74.57M venerdì 7 novembre. ATH $124,720 (ott 2025), attuale -39.2% (CoinDesk/crypto.news, 07-08/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 75744.00,
+      "stop_loss": 71957.00,
+      "target": 81804.00,
+      "commissione": 0.00,
+      "reasoning": "Sotto la media mobile a 50 giorni con deflussi ETF significativi; il piccolo reafflusso di venerdì è incoraggiante ma non sufficiente per confermare inversione. Attendere breakout sopra $80K.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase/CoinDesk", "price": 75809.00},
+          {"name": "CoinMarketCap", "price": 75679.00}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 89.44,
+      "change_24h": "-0.71%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume 24h $840M (Bybit); normale per SOL",
+      "news": "Solana supera brevemente il NYSE in numero di scambi settimanali (Fidelity Research) — adozione in crescita. Tuttavia il prezzo è in trend ribassista; ATH $294.85, attuale -69.7%. ETF SOL zero flussi il 7 novembre (Coingabbar, 07/11/2026).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 89.44,
+      "stop_loss": 84.97,
+      "target": 96.60,
+      "commissione": 0.00,
+      "reasoning": "Dati on-chain positivi (superamento NYSE in trading volume) ma prezzo in trend ribassista e nessun flusso ETF. Segnali contrastanti — attendere conferma direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 89.64},
+          {"name": "OKX", "price": 89.24}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLA",
+      "motivo": "Spread temporale > 4%: Robinhood $4.43 (06/11) vs Google Finance $4.66 (04/11) — date differenti non consentono confronto affidabile. Ticker STLAM (Milano/EUR) non quotato NYSE. Usando NYSE STLA: spread tra fonti non coincidenti nel tempo supera soglia 4%. Nessun segnale generato."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Trimestrale record Q3 con ricavi +45% a/a ($13.4B) e guidance Q4 superiore alle attese ($17B); segnale BUY con confidenza Alta dopo violenta correzione pre-earnings seguita da rimbalzo confermato +11.04%."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "motivo": "Titolo sceso -23% dal massimo 52 settimane con earnings catalyst il 17 novembre 2026; analisti: 'Nvidia Stock Looks Like a Bargain Right Now'. Risk/reward favorevole pre-annuncio con SL a $182."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "motivo": "Recupero settimanale +4.71% come asset rifugio nell'incertezza post-elettorale USA; hedge macro in portafoglio con SL -2% ($365) e target +4% ($387)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale su Alpaca. Scenario ipotetico su $10,000.",
+    "allocazione_suggerita": {
+      "AMD_BUY": {"peso": "30%", "importo": 3000, "motivazione": "Massima confidenza post-earnings"},
+      "NVDA_BUY": {"peso": "25%", "importo": 2500, "motivazione": "Pre-earnings catalyst 17/11"},
+      "GLD_BUY": {"peso": "20%", "importo": 2000, "motivazione": "Hedge macro volatilità"},
+      "BTC_HOLD": {"peso": "10%", "importo": 1000, "motivazione": "Esposizione crypto ridotta"},
+      "LIQUIDITA": {"peso": "15%", "importo": 1500, "motivazione": "Buffer per opportunità su SAP/ASML se confermano supporto"}
+    }
+  }
+}
