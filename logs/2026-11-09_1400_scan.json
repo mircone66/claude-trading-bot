@@ -1,0 +1,422 @@
+{
+  "timestamp": "2026-11-09T14:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA in ripresa post-midterm: il 'Big Blue Wave' del 4 nov ha innescato una forte rally su AMZN, MSFT, GOOGL; META +4.9% oggi dopo che JPMorgan ha aggiunto il titolo alla AI Focus List insieme ad AMZN. NVDA in correzione -25% dal 7 ott, ma attesa earnings 17 nov come potenziale catalizzatore. Oro a $4,123/oz (+10% dal minimo di ottobre), GLD recupera sostenuto. Bitcoin scende da $80,500 (post-midterm 4 nov) a $74,500, mentre SOL ed ETH correggono. Ferrari (RACE) supportata da Q3 superiore alle attese e guidance alzata. Tech sector mostra segnali divergenti: AI play come AMZN/META brillano, NFLX -32% YTD senza catalyst chiari.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 346.14,
+      "change_24h": "+2.20%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple +2.2% intraday 9 nov 2026 in scia al rally post-midterm del settore tech; mercato cap ~$5T. Nessun catalyst specifico ma recupero generalizzato settore. Fonte: FinancialContent 09/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 346.14,
+      "stop_loss": 335.76,
+      "target": 363.45,
+      "commissione": 0.00,
+      "reasoning": "AAPL recupera con il settore tech post-midterm ma manca un catalyst specifico; il titolo si trova sotto il 52-week high ($355.38) e la mancanza di novità di prodotto imminenti limita upside. Mantieni posizioni esistenti senza aumentare esposizione. Fonte: StockAnalysis/FinancialContent Nov 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (09/11/2026 intraday)", "price": 349.91},
+          {"name": "StockAnalysis - close 06/11/2026", "price": 342.37}
+        ],
+        "spread_pct": 2.17,
+        "affidabilita": "MEDIA",
+        "note": "Differenza temporale (intraday vs close precedente), non conflitto tra fonti"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 379.06,
+      "change_24h": "+5.82%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume elevato su rally post-midterm)",
+      "news": "Tesla +5.8% lunedì 9 nov da chiusura venerdì $358.22. Rally tecnico post-midterm. Fonte: Motley Fool Nov 2026 / InvestSmart.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 379.06,
+      "stop_loss": 367.69,
+      "target": 397.86,
+      "commissione": 0.00,
+      "reasoning": "TSLA recupera fortemente dal rimbalzo post-elezioni (+5.8% lunedì), ma il titolo ha già rimbalzato da $305 (luglio) a $380; senza catalyst fondamentali nuovi (prossime delivery numbers o earnings) il rialzo potrebbe incontrare resistenza $395-400. Fonte: Coinglass Nov 6 / Motley Fool Nov 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool market recap (09/11/2026)", "price": 378.00},
+          {"name": "InvestSmart quote (recente, non datato)", "price": 380.12}
+        ],
+        "spread_pct": 0.56,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 177.00,
+      "change_24h": "-5.14%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (volume elevato su correzione -25% da inizio ottobre)",
+      "news": "NVDA -25% dal 7 ott 2026 ($237.47 → $177). Earnings Q3 previsti 17 nov; Motley Fool titola 'Prediction: Nvidia Stock Is Going to Soar After Nov. 17'. Revisione US delle vendite chip AI in Cina come rischio. Fonte: Motley Fool / Morningstar / Robinhood Nov 2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 177.00,
+      "stop_loss": 171.69,
+      "target": 185.85,
+      "commissione": 0.00,
+      "reasoning": "NVDA in zona di ipervenduto dopo correzione del 25% in 1 mese; il catalizzatore dei risultati Q3 il 17 nov è atteso positivo (consensus bullish) e la narrazione AI rimane intatta. Risk/reward favorevole prima del catalyst. Fonte: Morningstar/Robinhood Nov 2026 + Motley Fool analysis.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar XNAS (09/11/2026)", "price": 177.00},
+          {"name": "Robinhood NVDA (09/11/2026)", "price": 177.00}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 535.52,
+      "change_24h": "+1.85%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "MSFT +1.85% intraday 9 nov ($540.43); chiusura venerdì 6 nov $530.61. Rally post-midterm con il resto del settore tech. Market cap ~$3.9T. 52-week range $349.20-$559.15. Fonte: FinancialContent / Motley Fool Nov 2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 535.52,
+      "stop_loss": 519.45,
+      "target": 562.30,
+      "commissione": 0.00,
+      "reasoning": "MSFT mostra momentum positivo post-midterm ma si avvicina al 52-week high ($559.15); in assenza di catalyst a breve termine (prossimi earnings lontani) il potenziale upside marginale non giustifica nuovo ingresso. Mantieni se già in portafoglio. Fonte: FinancialContent 09/11/2026 + Motley Fool.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (09/11/2026 intraday)", "price": 540.43},
+          {"name": "Motley Fool market recap close (06/11/2026)", "price": 530.61}
+        ],
+        "spread_pct": 1.85,
+        "affidabilita": "ALTA",
+        "note": "Spread riflette il movimento di lunedì, entrambe le fonti indipendenti confermano il prezzo nel range $530-540"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 266.74,
+      "change_24h": "+3.38%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume elevato su catalizzatore JPMorgan)",
+      "news": "JPMorgan aggiunge AMZN alla AI Focus List il 9 nov 2026; titolo +3.38% intraday ($268.07). 52-week range $196-$287.20, record close $287.20 (3 ago 2026). Analisti: 61 'Strong Buy', target $326.99. Fonte: FinancialContent / Motley Fool Nov 2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 266.74,
+      "stop_loss": 258.74,
+      "target": 280.08,
+      "commissione": 0.00,
+      "reasoning": "Catalyst forte: JPMorgan aggiunge AMZN alla AI Focus List oggi con conferma del posizionamento nel cloud AI (AWS). +3.38% intraday con volume anomalo conferma momentum istituzionale. Target $280 vicino al record ($287). Fonte: FinancialContent/Motley Fool 09/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (09/11/2026 intraday)", "price": 268.07},
+          {"name": "Upstox (05/11/2026)", "price": 265.41}
+        ],
+        "spread_pct": 1.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 284.39,
+      "change_24h": "+0.80%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "GOOGL recupera post-midterm; Motley Fool riporta 'Alphabet surged today' (4 nov 2026). 52-week range 172.77-408.61; titolo ancora -30% dal massimo. Rischio: revisione US sulle vendite chip AI. Fonte: Investing.com / Motley Fool Nov 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 284.39,
+      "stop_loss": 275.86,
+      "target": 298.61,
+      "commissione": 0.00,
+      "reasoning": "GOOGL recupera da minimi ma rimane -30% dal 52-week high ($408); catalyst post-midterm già prezzato. Rischio regolatorio AI e potenziale pressione antitrust limitano upside. Aspettare conferma breakout sopra $300 prima di aumentare esposizione. Fonte: Investing.com + Motley Fool Nov 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (circa 06/11/2026)", "price": 284.78},
+          {"name": "Motley Fool GOOG (circa 06/11/2026)", "price": 284.00}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 640.04,
+      "change_24h": "+4.90%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume elevato su catalizzatore JPMorgan)",
+      "news": "JPMorgan aggiunge META alla AI Focus List il 9 nov 2026; +4.90% intraday ($640.04). Massimo 52 settimane $779.82, minimo $520.26. Titolo recupera dopo drop da $705 (20 ott) a $610 (6 nov). Fonte: FinancialContent / Motley Fool Nov 2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 640.04,
+      "stop_loss": 620.84,
+      "target": 672.04,
+      "commissione": 0.00,
+      "reasoning": "Catalyst forte: JPMorgan AI Focus List il 9 nov 2026 con endorsement esplicito del posizionamento AI di Meta (Llama, AI assistants). +4.9% intraday con volume anomalo. Upside verso $700+ se recupera i massimi di ottobre ($705). Fonte: Motley Fool + FinancialContent 09/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (09/11/2026 intraday)", "price": 640.04},
+          {"name": "Motley Fool market summary (09/11/2026)", "price": 640.04}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "note": "Due fonti editoriali indipendenti su Nov 9 riportano lo stesso prezzo intraday"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 63.66,
+      "change_24h": "-3.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "NFLX -3.3% circa 6 nov; -32% YTD (da $94 a inizio anno a $63). Trend ribassista persistente, nessun catalyst positivo identificato. 52-week range $65.21-$108.94. Fonte: Motley Fool / Coinglass Oct-Nov 2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 63.66,
+      "stop_loss": 65.57,
+      "target": 60.47,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista chiaro: -32% YTD da $94 a $63, sotto tutti i principali livelli di supporto. Nessun catalyst imminente (prossimi earnings lontani), concorrenza streaming intensa. Segnale SELL/SHORT per chi ha posizioni. Fonte: Motley Fool Nov 2026 + Coinglass Oct 27.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass (27/10/2026)", "price": 63.90},
+          {"name": "Motley Fool market summary (circa 06/11/2026)", "price": 63.41}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 208.91,
+      "change_24h": "N/A",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SAP SE (NYSE: SAP) ha pubblicato i risultati Q3 2026 il 21 ott. Prezzi post-earnings non confermati per nov. Dati più recenti: InvestSmart ~$210.68 (non datato) / Benzinga Aug 12: $207.14. Fonte: InvestSmart / Benzinga 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 208.91,
+      "stop_loss": 202.64,
+      "target": 219.36,
+      "commissione": 0.00,
+      "reasoning": "SAP solida come principale software ERP europeo, ma direzione post-Q3 (21 ott) non chiara. Dati di prezzo recenti limitati (gap informativo). Attendere conferma del trend post-earnings prima di entrare. Fonte: InvestSmart + Benzinga Aug 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "InvestSmart NYSE:SAP (data non specificata, recente)", "price": 210.68},
+          {"name": "Benzinga NYSE:SAP (12/08/2026)", "price": 207.14}
+        ],
+        "spread_pct": 1.72,
+        "affidabilita": "MEDIA",
+        "note": "Le due fonti sono distanziate di alcuni mesi; lo spread riflette parzialmente movimento di prezzo"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 416.13,
+      "change_24h": "N/A",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Ferrari (NYSE: RACE) ha battuto le stime Q3 2026 e alzato la guidance 2026; titolo a $416.13 (7 nov), in rialzo da $388 (2 ott). Robinhood riporta range $409.23-$419.59 il 7 nov. Fonte: Robinhood 07/11/2026 / Benzinga 26/10/2026.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 416.13,
+      "stop_loss": 403.65,
+      "target": 436.94,
+      "commissione": 0.00,
+      "reasoning": "Ferrari batte le stime Q3 e alza la guidance 2026: catalyst fondamentale forte. Momentum confermato: $388 (2 ott) → $396 (26 ott) → $416 (7 nov). La resilienza del brand luxury e i margini elevati supportano la valutazione. Fonte: Robinhood 07/11/2026 + Benzinga 26/10/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood NYSE:RACE (07/11/2026)", "price": 416.13},
+          {"name": "Benzinga NYSE:RACE (26/10/2026)", "price": 396.97}
+        ],
+        "spread_pct": 4.83,
+        "affidabilita": "MEDIA",
+        "note": "Spread temporale (11 giorni), il titolo è salito su catalyst fondamentale Q3; prezzo più recente: $416.13"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 374.01,
+      "change_24h": "N/A",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume elevato su rally oro)",
+      "news": "Oro spot $4,123/oz il 9 nov 2026 (Fortune.com); GLD close Nov 5: $375.49, Nov 6: $372.52. Gold Monthly Monitor SSGA: oro -6.8% in ott, poi forte recupero. Silver a $53/oz. Fonte: Fortune.com + HeyGoTrade + 5paisa Nov 2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 374.01,
+      "stop_loss": 366.73,
+      "target": 388.97,
+      "commissione": 0.00,
+      "reasoning": "Oro spot a $4,123/oz (+10% dal minimo di ottobre), confermato da Fortune.com il 9 nov 2026. GLD validated a $374 (Nov 5-6), ma il prezzo Nov 9 è probabilmente più alto (~$390-400 stimato dal rally dell'oro). Momentum forte: incertezza geopolitica e dati inflazionistici supportano i metalli preziosi. Fonte: Fortune.com + HeyGoTrade + 5paisa Nov 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "HeyGoTrade NYSE Arca (05/11/2026 close)", "price": 375.49},
+          {"name": "5paisa GLD (06/11/2026 close)", "price": 372.52}
+        ],
+        "spread_pct": 0.79,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 75264.35,
+      "change_24h": "~-2.0% (est.)",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (outflows ETF $1.16B post-rally)",
+      "news": "BTC scende da $80,500 (rally post-midterm 4 nov) a $74,500-76,000 il 9 nov. Crypto.com: 'istituzioni in attesa per incertezza legislativa'. Fortune: $74,549 ore 7:30 ET. CoinMarketCap: $74,563. Coinbase: $75,965. ATH: $126,210 (6 ott 2025). Fonte: Fortune/CoinMarketCap/Coinbase 09/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 75264.35,
+      "stop_loss": 71501.13,
+      "target": 81285.50,
+      "commissione": 0.00,
+      "reasoning": "BTC pullback da $80,500 (4 nov) a $74,500 (-7.4%) su outflows ETF $1.16B e incertezza su legislazione crypto; supporto chiave intorno $70-72K. Il momentum post-midterm rimane ma richiede consolidamento prima del prossimo leg rialzista. Fonte: Fortune.com + CoinMarketCap + Coinbase 09/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinMarketCap (09/11/2026 mattina)", "price": 74563.49},
+          {"name": "Coinbase (09/11/2026 mattina)", "price": 75965.20}
+        ],
+        "spread_pct": 1.88,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2434.00,
+      "change_24h": "N/A",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "ETH a ~$2,434 il 4 nov 2026 (da $2,705 il 1° ott, Yahoo Finance). Correzione mensile -10%. Stima GBP poundf.co.uk 15 ott: £1,827 ≈ $2,375 (EUR/GBP 1.30 est.). ETF istituzionali in focus con 'BitMine acquista 126,971 ETH' (fonte FXStreet giu 2026). Fonte: Yahoo Finance + poundf.co.uk Nov 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2434.00,
+      "stop_loss": 2312.30,
+      "target": 2628.72,
+      "commissione": 0.00,
+      "reasoning": "ETH segue il pullback di BTC dopo il rally post-midterm; senza un catalyst indipendente specifico (EIP upgrade, staking yield event), il movimento è determinato da BTC. Attendere stabilizzazione di BTC sopra $76K prima di aumentare esposizione a ETH. Fonte: Yahoo Finance 04/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance basket article (04/11/2026)", "price": 2434.00},
+          {"name": "poundf.co.uk GBP/USD conversion estimate (15/10/2026)", "price": 2375.10}
+        ],
+        "spread_pct": 2.47,
+        "affidabilita": "MEDIA",
+        "note": "Seconda fonte è stima da conversione GBP con data precedente; incertezza elevata"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 96.40,
+      "change_24h": "~-1.0% (est.)",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SOL a $96.32-$96.48 il 4-5 nov 2026 (MetaMask + Yahoo Finance); in calo da $120+ di fine ottobre (-19%). Range recente: $91.84 (minimo 2 nov) - $120.76 (massimo fine ott). Fonte: MetaMask 05/11 + Yahoo Finance basket 04/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 96.40,
+      "stop_loss": 91.58,
+      "target": 104.11,
+      "commissione": 0.00,
+      "reasoning": "SOL ha corretto da $120+ (-19%) in due settimane; il supporto chiave è a $91.84 (testato il 2 nov). La correlazione con BTC guida il movimento a breve termine. Se BTC consolida sopra $74K, SOL potrebbe rimbalzare verso $105. Fonte: MetaMask + Yahoo Finance Nov 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MetaMask SOL/USD (05/11/2026)", "price": 96.32},
+          {"name": "Yahoo Finance basket article (04/11/2026)", "price": 96.48}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "AMD",
+      "motivo": "dati conflittuali: InvestSmart outlier $624.00 vs Investing.com ~$449 (spread >38%); InvestSmart probabilmente errato (ticker conflitto o errore dati). Nessuna seconda fonte recente confermata per nov 2026."
+    },
+    {
+      "asset": "ASML",
+      "motivo": "spread fonti 8.5%: Coinglass 18/10/2026 $1,641.52 vs InvestSmart (non datato) $1,780.34; nessun prezzo confermato per novembre 2026. Dati troppo vecchi per segnale affidabile."
+    },
+    {
+      "asset": "STLAM",
+      "ticker_note": "NYSE ticker corretto: STLA",
+      "motivo": "spread fonti 15.9%: MarketChameleon 30/10/2026 $4.64 vs ChartRow 13/08/2026 $5.38; dati troppo datati per fonte secondaria. Nessun prezzo nov 2026 confermato."
+    },
+    {
+      "asset": "SLV",
+      "motivo": "fonte singola recente: 5paisa riporta $47.16 il 04/11/2026 (+5.17%); MarketBeat giugno 2026 $59.51 troppo datato per validazione. Silver spot $53/oz il 9 nov suggerisce SLV ~$50, ma manca seconda fonte recente affidabile."
+    },
+    {
+      "asset": "USO",
+      "motivo": "dati conflittuali e datati: Benzinga Korea $168.27 (29/10/2026) vs Robinhood $141.67 (04/09/2026), spread 18.5% su 2 mesi di distanza; crude oil nota -3% intorno al 2 nov (pre-elezioni) ma nessuna validazione doppia per novembre 2026."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "Correzione -25% da inizio ottobre crea zona di ipervenduto; catalyst forte atteso il 17 nov (earnings Q3). Analisti bullish con titolo 'Prediction: NVDA Stock Is Going to Soar After Nov. 17' (Motley Fool 09/11/2026). Risk/reward ottimale pre-earnings."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "Catalyst istituzionale oggi: JPMorgan AI Focus List (09/11/2026). +3.38% intraday con volume anomalo. 61 analisti 'Strong Buy', target consensus $326.99 vs prezzo attuale $267. Cloud AI (AWS) in crescita strutturale."
+    },
+    {
+      "rank": 3,
+      "asset": "META",
+      "motivo": "JPMorgan AI Focus List il 9 nov 2026 coincide con recupero tecnico da minimi ($610 il 6 nov). +4.9% oggi su catalizzatore forte. Upside verso $700-780 (52-week high) se il posizionamento AI viene riconosciuto dal mercato."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale su Alpaca",
+    "allocazione_suggerita": {
+      "NVDA_BUY": "15% del portafoglio (posizione pre-earnings con SL -3%)",
+      "AMZN_BUY": "15% del portafoglio (catalyst istituzionale forte oggi)",
+      "META_BUY": "10% del portafoglio (catalyst + recovery tecnica)",
+      "RACE_BUY": "10% del portafoglio (catalyst fondamentale Q3 + guidance alzata)",
+      "GLD_BUY": "15% del portafoglio (hedge inflazione, momentum oro $4,123/oz)",
+      "HOLD_OTHERS": "35% liquidità / posizioni esistenti AAPL, TSLA, MSFT, GOOGL, SAP, BTC, ETH, SOL"
+    },
+    "disclaimer": "Questa è una simulazione. I prezzi potrebbero essere parzialmente datati (fonti Nov 4-9, 2026). I mercati potrebbero avere già reagito ai catalyst descritti. Non investire senza verifica dei prezzi live su Alpaca."
+  }
+}
