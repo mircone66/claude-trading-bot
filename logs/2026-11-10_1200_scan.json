@@ -1,0 +1,525 @@
+{
+  "timestamp": "2026-11-10T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione del 10 novembre 2026 con significativa divergenza settoriale. Big tech mista: META +5.12% su ingresso in JPMorgan Focus List, AMD +13.4% su upgrade Oppenheimer + Google Cloud; NVDA -6.1% su notizie di indagine su CEO Jensen Huang. Mercati post-midterm ancora in ripresa con Apple resiliente. Oro e argento in correzione tecnica da massimi storici, in attesa dati CPI USA. Petrolio in forte discesa (-3.9%). Crypto sotto pressione da deflussi ETF spot ($1B in un giorno); BTC tiene $74K. Nessun ordine reale — simulazione.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 347.89,
+      "change_24h": "-0.80%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple tiene mentre big tech vende: Motley Fool 10/11 — 'Apple Is Holding Strong While Big Tech Sells Off'; vicino a 52-week high $355.38",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 347.89,
+      "stop_loss": 337.45,
+      "target": 365.28,
+      "commissione": 0.00,
+      "reasoning": "Prezzo leggermente in calo intraday da chiusura Nov9 $350.69; azione resiliente rispetto a peers ma già vicino ai massimi. Nessun catalizzatore specifico per nuovo ingresso, meglio attendere rottura dei $352.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (intraday 11/10)", "price": 347.90},
+          {"name": "Motley Fool (11:54 AM ET 11/10)", "price": 347.88}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 380.20,
+      "change_24h": "+6.10%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (+alto)",
+      "news": "TSLA in forte recupero dopo le elezioni di midterm USA (4 nov: big tech surge); chiusura Nov9 $381.14 Robinhood vs chiusura Nov6 $358.22; 52-week range $297-$499",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 380.20,
+      "stop_loss": 368.79,
+      "target": 399.21,
+      "commissione": 0.00,
+      "reasoning": "Trend rialzista solido post-midterm, momentum positivo. Rimbalzo dal minimo 52-settimane con recupero significativo. Rischio: ancora -24% da massimo 52-week ($498.83).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketBeat (close Nov9)", "price": 379.26},
+          {"name": "Robinhood (Nov9)", "price": 381.14}
+        ],
+        "spread_pct": 0.49,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 167.76,
+      "change_24h": "-6.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (alto sell-off)",
+      "news": "NVDA scende al minimo dal 7 aprile su notizie di indagine su CEO Jensen Huang come presunto target di spionaggio cinese; BoA, Mizuho e Raymond James mantengono rating BUY long-term (Investing.com, 10/11/2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 167.76,
+      "stop_loss": 162.73,
+      "target": 176.15,
+      "commissione": 0.00,
+      "reasoning": "In attesa di chiarimento su notizie CEO; analisti istituzionali confermano i fondamentali AI intatti ma rischio news-flow nel breve. Attendere stabilizzazione prima di ingresso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Finviz (12:32 PM ET 11/10)", "price": 167.64},
+          {"name": "Yahoo Finance (1:07 PM EST 11/10)", "price": 167.87}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 544.78,
+      "change_24h": "+2.75%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "IBM e Microsoft lanciano piattaforma AI agentiva 'Imagine Enterprise' per grandi aziende (Investing.com); Microsoft avverte che ban cinese su transceivers minaccia primato AI USA (Reuters)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 544.78,
+      "stop_loss": 528.44,
+      "target": 572.02,
+      "commissione": 0.00,
+      "reasoning": "Chiusura forte Nov9 (+2.75%) ma intraday Nov10 in calo a ~$530.87 (-2.62%). Sentiment misto tra catalyst AI positivo e rischi geopolitici. Trend 5gg rialzista ma attenzione alla correzione in corso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (close Nov9)", "price": 545.18},
+          {"name": "Yahoo Finance (intraday Nov9)", "price": 544.37}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 266.93,
+      "change_24h": "+2.94%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (+alto, post-midterm)",
+      "news": "Andy Jassy annuncia notizie fantastiche per investitori (Motley Fool 11/09); Amazon genera $202B in vendite trimestrali con la maggior parte del profitto operativo da AWS; forte post-midterm",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 266.93,
+      "stop_loss": 258.92,
+      "target": 280.28,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali solidi AWS + recovery post-midterm. Due fonti indipendenti concordano sul prezzo. 52-week range $196-$287 suggerisce ulteriore spazio verso il massimo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close Nov9)", "price": 266.93},
+          {"name": "Motley Fool (4:00 PM ET Nov9)", "price": 266.93}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 286.33,
+      "change_24h": "-0.64%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Alphabet +6% post-midterm (4 nov); intraday Nov10 in leggera flessione; analisti target medio $398.30 (+36% upside); P/E 15.18 molto basso per big tech (Google Finance)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 286.33,
+      "stop_loss": 277.74,
+      "target": 300.65,
+      "commissione": 0.00,
+      "reasoning": "Consolidamento dopo forte rimbalzo post-midterm. Valutazione attraente (P/E 15) ma trend intraday Nov10 negativo. Attendere conferma della tenuta dei $285 prima di ingresso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Finviz (1:01 PM ET Nov10)", "price": 286.30},
+          {"name": "Investing.com (Nov10)", "price": 286.35}
+        ],
+        "spread_pct": 0.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 641.92,
+      "change_24h": "+5.12%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (+alto, catalizzatore istituzionale)",
+      "news": "JPMorgan aggiunge META alla propria Analyst Focus List (9 nov 2026): azioni +5.1% a $641.37; analisti: target medio $833.12 (57 analisti, MarketBeat)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 641.92,
+      "stop_loss": 622.66,
+      "target": 674.02,
+      "commissione": 0.00,
+      "reasoning": "Forte catalizzatore istituzionale (JPMorgan Focus List) con +5% in una seduta. Target consenso $833 suggerisce 30% di upside; rischio AI spending eccessivo già scontato nel recente -15% mensile.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (Nov9 close)", "price": 641.37},
+          {"name": "Robinhood (Nov9)", "price": 642.47}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 63.44,
+      "change_24h": "-1.61%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (alto selling, vicino 52-week low)",
+      "news": "Netflix crollata dell'11% in ottobre post-earnings Q3; guidance Q4 ricavi sotto attese; taglio target advertising; -26% YTD; vicino al 52-week low $61.39 (CNBC, Motley Fool Nov10)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 63.44,
+      "stop_loss": 65.34,
+      "target": 60.27,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista sostenuto: -26% YTD, minimo 2 anni post-earnings, guidance debole Q4. Prossima resistenza a $65; supporto critico $61.39. Pressione venditrice ancora presente.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (close Nov9)", "price": 63.95},
+          {"name": "StockAnalysis (intraday Nov10)", "price": 62.93}
+        ],
+        "spread_pct": 1.61,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 519.69,
+      "change_24h": "+3.99%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (+alto, upgrade + news)",
+      "news": "AMD +5% mattina Nov10 dopo accordo per investire fino a $5B in Anthropic (Investing.com); Nov9 +13.4% su upgrade Oppenheimer + selezione chip Google Cloud; market cap ~$877B",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 519.69,
+      "stop_loss": 504.10,
+      "target": 545.67,
+      "commissione": 0.00,
+      "reasoning": "Multipli catalizzatori (Anthropic, Google Cloud, upgrade broker); forte momentum rialzista. Affidabilità MEDIA per spread 3.59% tra le due fonti Nov10 — usare ordine limite.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (10:36 AM Nov10)", "price": 528.85},
+          {"name": "Robinhood (Nov10)", "price": 510.53}
+        ],
+        "spread_pct": 3.59,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1521.56,
+      "change_24h": "+6.21%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (+alto, rimbalzo settore chip)",
+      "news": "ASML +6.2% il 9 nov su rally semiconduttori; domanda AI forte; buyback da EUR 12B attivo; azioni erano scese -20% in un mese nonostante fondamentali AI solidi (MarketBeat/Motley Fool Nov9)",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 1521.56,
+      "stop_loss": 1475.91,
+      "target": 1597.64,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico da zona di forte ipervenduto; AI demand intatta, buyback attivo, consensus 'Strong Buy' (41 analisti) con target $2,204. Oversold recovery in corso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (10:26 AM EST Nov10)", "price": 1529.87},
+          {"name": "Morningstar (close Nov9)", "price": 1513.25}
+        ],
+        "spread_pct": 1.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 235.44,
+      "change_24h": "+1.70%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "JPMorgan alza target SAP a EUR 275 e upgrade a Overweight (10 nov 2026, ad-hoc-news.de); SAP tratta in calo sul mercato tedesco dopo l'upgrade; 52-week range $144.97-$255.90",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 235.44,
+      "stop_loss": 228.38,
+      "target": 247.21,
+      "commissione": 0.00,
+      "reasoning": "Seconda fonte (CNBC Nov6) stale di 4 giorni; affidabilità ridotta. Catalyst positivo JPMorgan ma azione scende sulla notizia. Attendere conferma con prezzi più freschi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (delayed Nov9)", "price": 237.42},
+          {"name": "CNBC (close Nov6)", "price": 233.45}
+        ],
+        "spread_pct": 1.70,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 416.69,
+      "change_24h": "+0.67%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari in trading stabile senza news specifiche; 52-week high $437.15; consensus 25 analisti: target $446.98 (+7.3% upside); earnings Q3 riportati il 3 nov (Motley Fool / ChartMill)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 416.69,
+      "stop_loss": 404.19,
+      "target": 437.52,
+      "commissione": 0.00,
+      "reasoning": "Nessun catalizzatore specifico oggi; trend laterale post-earnings Q3. Valutazione premium (P/E 37.8) giustificata dal brand. Aspettare breakout sopra $420 per ingresso long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov10)", "price": 414.48},
+          {"name": "Morningstar (Nov9 close)", "price": 418.90}
+        ],
+        "spread_pct": 1.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.35,
+      "change_24h": "-3.51%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (alta pressione sell)",
+      "news": "Stellantis (NYSE: STLA, nota: ticker STLAM è listato a Milano) vicino a minimi storici 52-settimane ($3.92); 52-week high $12.22; analisti: consensus 'Hold' (7 analisti, StockAnalysis); confronto sfavorevole vs EV makers",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 4.35,
+      "stop_loss": 4.48,
+      "target": 4.13,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista marcato: -64% dal 52-week high. Vicino al minimo annuale $3.92. Affidabilità MEDIA (spread 3.47% tra fonti). Settore auto in difficoltà strutturale. Segnale speculativo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (close Nov9)", "price": 4.42},
+          {"name": "Motley Fool (intraday Nov10)", "price": 4.27}
+        ],
+        "spread_pct": 3.47,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 377.95,
+      "change_24h": "+1.52%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Gold slips -0.4% a ~$4,123/oz in attesa dati CPI USA per segnali Fed (Investing.com Nov10); GLD ETF +1.52% il 9 nov; correzione -26% da ATH $509.70 (Jan 2026)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 377.95,
+      "stop_loss": 370.39,
+      "target": 393.07,
+      "commissione": 0.00,
+      "reasoning": "Oro in correzione da massimi storici, supportato da incertezza Fed. CPI in arrivo potrebbe essere il prossimo catalizzatore. Trend laterale confermato da due fonti concordanti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Nov9, 11:14 AM EST)", "price": 378.18},
+          {"name": "CNBC (Nov9)", "price": 377.72}
+        ],
+        "spread_pct": 0.12,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 48.14,
+      "change_24h": "+2.71%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Silver futures -41% dal 52-week high; SLV +2.71% il 9 nov su rimbalzo tecnico; correzIone da massimi in corso, metalli preziosi volatili in attesa CPI (MarketAlleys Nov9/CNBC Nov9)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 48.14,
+      "stop_loss": 47.18,
+      "target": 50.07,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico da zona di forte correzione (-41% da ATH), ma volatilità elevata pre-CPI. Due fonti concordano perfettamente sul prezzo $48.14. Preferire attesa chiarimento macro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys/Finnhub (Nov9, 21:00 UTC)", "price": 48.14},
+          {"name": "CNBC (close Nov9)", "price": 48.14}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 142.66,
+      "change_24h": "-3.87%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (alto sell-off petrolio)",
+      "news": "Petrolio in forte discesa; Asian stocks climbing as oil retreats (MarketAlleys Nov10); WTI in calo; USO -3.87% il 9 nov; massimo 52-settimane era $171.82",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 142.66,
+      "stop_loss": 145.51,
+      "target": 136.95,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista chiaro: da $171 a $142 (-17%) con accelerazione. Domanda petrolio debole, Asia in calo consumi. Due fonti concordano esattamente su $142.66 chiusura Nov9.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys (close Nov9, 21:00 UTC)", "price": 142.66},
+          {"name": "Bloomberg (close Nov9)", "price": 142.66}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 74090.98,
+      "change_24h": "-1.60%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo (deflussi ETF spot $1B/giorno)",
+      "news": "BTC tiene $74K dopo 3 giorni consecutivi di deflussi ETF spot; deflussi netti $1B in una seduta; domanda: 'Is the bottom in?' (Yahoo Finance Nov10); ATH $126,210 ott 2025",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 74090.98,
+      "stop_loss": 70386.43,
+      "target": 79978.26,
+      "commissione": 0.00,
+      "reasoning": "Laterale su zona di supporto $74K. Deflussi ETF persistenti ma BTC non rompe al ribasso. Attendere conferma con ripresa flussi prima di nuovi ingressi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (live)", "price": 74305.96},
+          {"name": "Kraken (live)", "price": 73876.00}
+        ],
+        "spread_pct": 0.58,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2104.26,
+      "change_24h": "-5.60%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (liquidazioni leveraged $450M + deflussi ETF $365M)",
+      "news": "ETH -5-6% su $450M liquidazioni leveraged e $365M deflussi ETF (crypto.news Nov9); ETH tratta a $2,090 ore 7:15 ET Nov10 (Fortune); pressione sell persistente",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 2104.26,
+      "stop_loss": 1998.05,
+      "target": 2272.60,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista accelerato da liquidazioni massive. Nessun catalyst di inversione immediato. Attendere stabilizzazione con volume in calo e cessazione deflussi ETF.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (7:15 AM ET Nov10)", "price": 2090.24},
+          {"name": "Coinbase (Nov9 10:07 PM)", "price": 2118.27}
+        ],
+        "spread_pct": 1.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 86.57,
+      "change_24h": "-2.14%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (crypto-wide deleveraging)",
+      "news": "Charles Schwab aggiunge SOL alla piattaforma di trading crypto (u.today, Nov10) — catalyst istituzionale positivo; ma SOL -6.4% nelle ultime 24h su deleveraging crypto; ATH $295.9 (gen 2025)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 86.57,
+      "stop_loss": 82.24,
+      "target": 93.50,
+      "commissione": 0.00,
+      "reasoning": "Catalyst positivo (Schwab integration) bilanciato da macro headwinds crypto. Due fonti concordano su ~$86.57. Attendere stabilizzazione mercato crypto prima di ingresso.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (live)", "price": 86.61},
+          {"name": "CoinMarketCap (live)", "price": 86.53}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM (Milano)",
+      "motivo": "STLAM è listato su Borsa Italiana (Milano), non su NYSE/Nasdaq. Il ticker NYSE corretto è STLA. Analisi condotta su STLA (NYSE) con affidabilità MEDIA — segnale incluso nella sezione signals."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "META",
+      "motivo": "Catalyst istituzionale forte (JPMorgan Focus List); +5.12% in una seduta; prezzo validato ALTA; consensus 57 analisti target $833 (+30% da entry); affidabilità massima con spread 0.17%"
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "Rimbalzo da forte ipervenduto (-20% in un mese); AI demand intatta; buyback EUR 12B; rally settore chip (+6.21% Nov9); consensus Strong Buy con target $2,204"
+    },
+    {
+      "rank": 3,
+      "asset": "AMZN",
+      "motivo": "Due fonti concordano perfettamente (spread 0.00%); +2.94% Nov9; AWS domina i profitti operativi; notizie CEO positive; 52-week high $287 ancora raggiungibile"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "META": "15% — segnale BUY Alto confidence",
+      "ASML": "15% — segnale BUY Alto confidence",
+      "AMZN": "10% — segnale BUY Medio confidence",
+      "TSLA": "10% — segnale BUY Medio confidence",
+      "AMD": "10% — segnale BUY Medio confidence (MEDIA reliability)",
+      "SELL_USO": "10% — segnale SELL Medio confidence",
+      "SELL_NFLX": "10% — segnale SELL Medio confidence",
+      "cash_attesa": "20% — in attesa CPI e stabilizzazione NVDA/crypto"
+    }
+  }
+}
