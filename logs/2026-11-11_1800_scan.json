@@ -1,0 +1,520 @@
+{
+  "timestamp": "2026-11-11T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Giornata di rimbalzo per il tech USA guidato da AMD (+5.45%) e NVDA (+4.34%) dopo risultati CoreWeave Q3 superiori alle attese (+168% ricavi a $3.66B). S&P 500 +1.4%, Nasdaq +2%. CPI ottobre più caldo del previsto spinge aspettative rialzo Fed a dicembre, penalizzando MSFT (-2.26% su lancio AI Office di Anthropic), oro/argento, e crypto. TSLA rimbalza +3.56%, AMD guida il rally chip. NFLX in downtrend con insider selling (Co-CEO vende 27K azioni). Ferrari alza guidance 2026 su margini Q3 record. Stellantis ferma produzione Fiat 500 a Mirafiori per chip shortage. Crypto in sell-off: BTC a ~$73.8K, ETH testa $2.000 con deflussi ETF spot $184.6M (BlackRock), SOL ai minimi di 3 mesi.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 354.36,
+      "change_24h": "+1.67%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Apple tiene forte mentre il Big Tech vende; analisti la vedono come 'defensive AI play' post-midterm (MarketBeat 11/11/26). Ex-dividend date 12 novembre ($0.27/azione).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 354.36,
+      "stop_loss": 343.73,
+      "target": 372.08,
+      "commissione": 0.00,
+      "reasoning": "Forza relativa superiore al settore (+1.67% vs selloff big tech); ex-dividend domani aggiunge appeal. Momentum difensivo confermato da multiple fonti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool", "price": 354.05},
+          {"name": "MarketBeat", "price": 354.66}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 393.50,
+      "change_24h": "+3.56%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo alto - forte gap up intraday +3.56%",
+      "news": "Tesla in forte rialzo nel contesto del rimbalzo tech; SpaceX/Tesla news positive (Motley Fool 11/11/26). Day range $386-$395. 52-week range $297-$499.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 393.50,
+      "stop_loss": 381.70,
+      "target": 413.18,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico forte su volumi anomali in contesto di rally chip/tech; SpaceX news positive e momentum intraday confermato da due fonti concordanti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 393.69},
+          {"name": "StockAnalysis", "price": 393.30}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 176.23,
+      "change_24h": "+4.34%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto - rimbalzo tecnico post sell-off scandalo",
+      "news": "Nvidia rimbalza +4.34% dopo CoreWeave beat (ricavi Q3 +168% a $3.66B, guidance alzata). Ancora -14% a novembre su indagine board per CEO Jensen Huang e presunta spia cinese. Prossimi earnings 17 novembre (Motley Fool 11/11/26).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 176.23,
+      "stop_loss": 170.94,
+      "target": 185.04,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico positivo trainato da CoreWeave, ma rischio fondamentale elevato (indagine CEO, posizione corta istituzionale). Attendere chiarezza earnings 17/11 prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 176.24},
+          {"name": "StockAnalysis", "price": 176.22}
+        ],
+        "spread_pct": 0.01,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 520.95,
+      "change_24h": "-2.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto - sell-off su notizia competitiva",
+      "news": "Microsoft perde -2.26% dopo che Anthropic lancia AI Office tools in anticipo su IPO, minacciando direttamente Microsoft 365. CPI caldo aumenta pressione su titoli growth (GURUFocus 11/11/26).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 520.95,
+      "stop_loss": 536.58,
+      "target": 494.90,
+      "commissione": 0.00,
+      "reasoning": "Nuovo concorrente diretto da Anthropic nell'office suite AI mette pressione su ricavi Microsoft 365 (principale driver). CPI avverso + competitor emergente = pressione doppia.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 521.10},
+          {"name": "Bloomberg", "price": 520.80}
+        ],
+        "spread_pct": 0.06,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 269.66,
+      "change_24h": "+0.57%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Amazon Cloud Computing porta più ricavi di 476 aziende S&P 500; analista 24/7 Wall St. identifica 'Major Catalyst' per nuovi massimi (11/11/26). AWS forza strutturale confermata.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 269.66,
+      "stop_loss": 261.57,
+      "target": 283.14,
+      "commissione": 0.00,
+      "reasoning": "Forza strutturale AWS confermata; catalyst potenziale per nuovi massimi segnalato (24/7 Wall St. 11/11/26); valutazione ragionevole rispetto ai massimi. Resilienza in macro avversa.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 270.87},
+          {"name": "Massive", "price": 268.44}
+        ],
+        "spread_pct": 0.91,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 289.12,
+      "change_24h": "+0.63%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Alphabet, Meta e Oracle si alleano per sfidare vantaggio competitivo Nvidia sui chip AI (Motley Fool 11/10/26). Ma GOOGL 'Almost Sets a Record No One Wants' (Fool 11/09/26). Lontano dal 52-week high di $408.61.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 289.12,
+      "stop_loss": 280.45,
+      "target": 303.58,
+      "commissione": 0.00,
+      "reasoning": "Segnali contrastanti: news positiva su alternativa chip AI ma forte downtrend da $408; macro sfidante con tassi. Attendere conferma inversione di trend prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 289.05},
+          {"name": "CNBC", "price": 289.18}
+        ],
+        "spread_pct": 0.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 644.33,
+      "change_24h": "+0.60%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Alphabet, Meta e Oracle in alleanza per sfidare Nvidia sull'infrastruttura AI chip (Motley Fool 11/10/26). Riduzione dipendenza chip AI riduce costi a lungo termine. Dividendo trimestrale $0.53.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 644.33,
+      "stop_loss": 624.80,
+      "target": 676.55,
+      "commissione": 0.00,
+      "reasoning": "Strategia diversificazione chip AI con Alphabet/Oracle riduce dipendenza Nvidia; forza AI ads business confermata; dividend yield supporta valutazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 645.25},
+          {"name": "Robinhood", "price": 643.41}
+        ],
+        "spread_pct": 0.29,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 63.22,
+      "change_24h": "-1.08%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix Co-CEO Gregory Peters vende 27.312 azioni (insider selling negativo, GURUFocus 11/11/26). Analisti cercano catalyst per rimbalzo ('What Could Lift Netflix Stock From Here?'). -46% dal 52-week high di $116.73.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 63.22,
+      "stop_loss": 65.12,
+      "target": 60.06,
+      "commissione": 0.00,
+      "reasoning": "Insider selling (Co-CEO vende 27K azioni) + forte downtrend (-46% da highs) + mancanza di catalyst confermato. Tre segnali ribassisti convergenti = alta confidenza SELL.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 63.26},
+          {"name": "Robinhood", "price": 63.18}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 540.36,
+      "change_24h": "+5.45%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo molto alto - breakout con +5.45% (Motley Fool +7.9% a metà sessione)",
+      "news": "AMD in forte rialzo su piano $2.5B di investimento in Anthropic (11/10/26, Motley Fool) + CoreWeave earnings beat catalizza rally chip. UBS nota AMD server CPU share gain. Day range $522-$546.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 540.36,
+      "stop_loss": 524.15,
+      "target": 567.38,
+      "commissione": 0.00,
+      "reasoning": "Duplice catalyst: investimento strategico $2.5B in Anthropic + CoreWeave beat. Volume anomalo molto alto conferma breakout reale su forte momentum intraday.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 543.31},
+          {"name": "StockAnalysis", "price": 537.40}
+        ],
+        "spread_pct": 1.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1507.85,
+      "change_24h": "+3.00%",
+      "trend_5d": "laterale",
+      "volume_note": "anomalo alto - rimbalzo chip makers +3% con il mercato",
+      "news": "ASML rimbalza ~3% con i chip maker nel rimbalzo del mercato tech. 'Union Standoff Adds Noise, but Q4 Is the Real Test' (Ad-Hoc-News 11/11/26). Dividendo intermedio €1.88/azione pagato 4/11/26. 52-week range $946-$1.999.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1507.85,
+      "stop_loss": 1462.61,
+      "target": 1583.24,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico post sell-off post-midterm; dominanza semiconduttori EUV insostituibile a lungo termine; Q4 2026 earnings test imminente come trigger per la prossima fase.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 1507.85},
+          {"name": "Investing.com", "price": 1507.85}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 233.55,
+      "change_24h": "-1.55%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP stock ai minimi di 15 mesi (TradingEconomics). JPMorgan ha upgradato a Buy il 9/11 ma il titolo continua a scendere. CPI caldo sfavorevole per growth europeo. 52-week range $145-$256.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 233.55,
+      "stop_loss": 240.56,
+      "target": 221.87,
+      "commissione": 0.00,
+      "reasoning": "Minimo 15 mesi nonostante upgrade JPMorgan suggerisce debolezza fondamentale persistente; macro avversa (tassi alti). L'incapacità di rimbalzare su upgrade istituzionale è segnale ribassista.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 233.74},
+          {"name": "Yahoo Finance", "price": 233.35}
+        ],
+        "spread_pct": 0.17,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 416.51,
+      "change_24h": "+0.46%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari alza guidance 2026 dopo margini Q3 più forti del previsto. Motley Fool 11/11/26: 'Fewer Cars Sold, More Profit - Here's the 1 Number That Explains It'. Pricing power eccezionale confermato. P/E 37.54.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 416.51,
+      "stop_loss": 404.01,
+      "target": 437.34,
+      "commissione": 0.00,
+      "reasoning": "Upgrade guidance 2026 + margini Q3 record = quality compounder con pricing power. Vicino al 52-week high ($437.15) con momentum positivo e fondamentali in miglioramento.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 416.88},
+          {"name": "Morningstar", "price": 416.14}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.33,
+      "change_24h": "-3.76%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Produzione Fiat 500 ferma a Mirafiori (Torino) fino al 13/11 per chip shortage (Ad-Hoc-News 11/11/26). Canada PM Carney definisce la vendita di fabbrica 'inaccettabile'. Stellantis -58% da inizio 2026 (24/7 Wall St. 11/03/26). Nota: ticker NYSE = STLA.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 4.33,
+      "stop_loss": 4.46,
+      "target": 4.11,
+      "commissione": 0.00,
+      "reasoning": "Downtrend strutturale -58% YTD + chip shortage produttivo + controversie politiche vendita fabbriche. Confidenza Bassa per spread dati MEDIA (3.76%). Fonte: Seeking Alpha 11/10/26, Robinhood 11/10/26.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha", "price": 4.25},
+          {"name": "Robinhood", "price": 4.41}
+        ],
+        "spread_pct": 3.76,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 369.81,
+      "change_24h": "-2.68%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto - CPI-driven selloff",
+      "news": "GLD ETF -2.68% ieri su CPI ottobre più caldo del previsto (MarketAlleys 11/11/26). Oggi oro spot rimbalza moderatamente (+0.27% a $4,042/oz, Kitco 11/11/26). Tensioni Stretto di Hormuz supportano. ATH GLD: $509.70.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 369.81,
+      "stop_loss": 362.41,
+      "target": 384.60,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo tecnico moderato dopo CPI selloff; supporto strutturale su tensioni geopolitiche. Ma pressione rialzo tassi Fed a dicembre pesa su metalli preziosi. Attendere stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 369.41},
+          {"name": "CNBC", "price": 370.21}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 47.29,
+      "change_24h": "-3.56%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - CPI selloff con rimbalzo spot argento +2.47%",
+      "news": "Argento spot in rimbalzo del +2.47% su Kitco Nov 11 dopo forte sell-off CPI. SLV tracking argento spot. Dati ETF con spread MEDIA tra le due fonti (giornate diverse Nov 9/10). ATH SLV: $109.83.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 47.29,
+      "stop_loss": 46.34,
+      "target": 49.18,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo argento spot incoraggiante ma dati ETF con spread elevato (MEDIA). Rischio tassi Fed sfavorevole per metalli. Dati su date diverse (Nov 9 vs 10) riducono affidabilità segnale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 46.43},
+          {"name": "MarketAlleys", "price": 48.14}
+        ],
+        "spread_pct": 3.68,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 142.08,
+      "change_24h": "-0.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - rimbalzo da minimi 2 mesi su tensioni geopolitiche",
+      "news": "USO Oil ETF rimbalza dai minimi di 2 mesi su tensioni Stretto di Hormuz (Kitco 11/11/26). Petrolio ancora lontano dai massimi. NAV TradingView: $148.78. 52-week range $66-$172.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 142.08,
+      "stop_loss": 139.24,
+      "target": 147.76,
+      "commissione": 0.00,
+      "reasoning": "Rimbalzo geopolitico a breve termine giustifica HOLD; ma downtrend strutturale da $172 su attese rallentamento domanda globale. Attendere conferma breakout sopra $148 prima di entrare long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 141.50},
+          {"name": "TradingView", "price": 142.66}
+        ],
+        "spread_pct": 0.82,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 73803.25,
+      "change_24h": "-1.43%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - liquidazioni crypto $178-745M, deflussi spot ETF",
+      "news": "BTC sotto pressione per CPI ottobre più caldo del previsto → aspettative rialzo Fed dicembre. Spot BTC ETF outflows record. 'BTC Drops Under Pressure from US Inflation and ETF Outflows' (Aktualita 11/11/26). -7.41% 7 giorni. ATH: $126.210.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 73803.25,
+      "stop_loss": 70113.09,
+      "target": 79707.51,
+      "commissione": 0.00,
+      "reasoning": "Contesto macro avverso (CPI hot + rate hike expectations + ETF outflows) ma supporto tecnico a $72-73K regge. Mancano catalyst distruttivi fondamentali. HOLD in attesa chiarezza Fed dicembre.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bitcoin.com", "price": 73518.00},
+          {"name": "OKX", "price": 74088.50}
+        ],
+        "spread_pct": 0.78,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2064.26,
+      "change_24h": "-5.31%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - $184.6M deflussi ETF spot BlackRock (9/11/26)",
+      "news": "Ethereum testa supporto critico $2.000. Spot ETH ETF outflows $184.6M il 9/11 guidati da BlackRock. -14.39% in 7 giorni. 'Bitcoin drops toward $72k, Ethereum tests $2,000 as investors reprice risk' (FXStreet 11/11/26). Rischio breakdown strutturale.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 2064.26,
+      "stop_loss": 2167.47,
+      "target": 1899.12,
+      "commissione": 0.00,
+      "reasoning": "Deflussi ETF istituzionali massicci + test supporto $2.000 con rischio breakdown. CPI avverso + rate hike expectations = doppia pressione. Rotazione verso BTC dominance 61%.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune", "price": 2054.82},
+          {"name": "Coinglass", "price": 2073.70}
+        ],
+        "spread_pct": 0.92,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 84.44,
+      "change_24h": "-3.85%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo - minimo 3 mesi, fuga capitali altcoin verso BTC",
+      "news": "Solana ai minimi di 3 mesi. 'Bitcoin falls below $73K, Solana hits 3-month low amid crypto sell-off' (CryptoBriefing 11/11/26). Capital abandoning altcoins per Bitcoin dominance verso 61%. ATH SOL: $294 (gennaio 2025).",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 84.44,
+      "stop_loss": 88.66,
+      "target": 77.69,
+      "commissione": 0.00,
+      "reasoning": "Minimo 3 mesi con rotazione capitali verso BTC confermata; CPI hot peggiora sentiment altcoin. Downtrend strutturale, nessun catalyst di rimbalzo visibile. Alta confidenza SELL.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass", "price": 84.14},
+          {"name": "OKX", "price": 84.73}
+        ],
+        "spread_pct": 0.70,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "motivo": "Duplice catalyst: $2.5B investimento in Anthropic + CoreWeave beat +168% ricavi. Volume anomalo molto alto conferma breakout reale. Alta confidenza BUY."
+    },
+    {
+      "rank": 2,
+      "asset": "TSLA",
+      "motivo": "Rimbalzo +3.56% con forte momentum intraday; beneficia del rally chip tech; SpaceX news positive. Trend rialzista intraday confermato."
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "Ferrari alza guidance 2026 dopo margini Q3 record: 'Fewer Cars Sold, More Profit'. Pricing power eccezionale vicino al 52-week high $437."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "allocazione_suggerita": {
+      "AMD": "20%",
+      "TSLA": "15%",
+      "RACE": "15%",
+      "META": "10%",
+      "AMZN": "10%",
+      "ASML": "10%",
+      "AAPL": "10%",
+      "CASH": "10%"
+    }
+  }
+}
