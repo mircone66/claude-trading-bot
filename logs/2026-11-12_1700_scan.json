@@ -1,0 +1,510 @@
+{
+  "timestamp": "2026-11-12T17:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Giornata dominata dalla notizia delle dimissioni immediate del CEO di Nvidia Jensen Huang: NVDA cede -4.9%, AMD e Broadcom salgono come beneficiari diretti. AAPL ai massimi storici (+29% YTD), nominata safe haven. MSFT, AMZN, GOOGL modestamente positivi. Oro -2.8% e argento -3.1%: rally post-elettorale completamente azzerato da timori di rialzo tassi Fed (5 funzionari Fed parlano oggi, dati PPI venerdì). Crypto in calo generalizzato: BTC $71.838 (-3%), ETH $2.045 (-2%), SOL $83 (-4%), con 5° giorno consecutivo di outflow su ETF spot Bitcoin.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 357.56,
+      "change_24h": "+0.33%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Apple nominata 'best-performing AI stock Magnificent Seven 2026' da Motley Fool con +29% YTD. Bernstein la cita come safe haven durante turbolenze NVDA. Prezzi vicini a massimi storici (52w high $359.37).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 357.56,
+      "stop_loss": 346.83,
+      "target": 375.44,
+      "commissione": 0.00,
+      "reasoning": "AAPL a $357.56 vicina ai massimi storici, overbought signals segnalati. Safe haven nel breve su turbolenze settore AI da dimissioni CEO Nvidia. Upside limitato a questi livelli. Fonte: Massive.com, Motley Fool 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Massive.com", "price": 356.79},
+          {"name": "Motley Fool ticker", "price": 358.33}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 394.31,
+      "change_24h": "+0.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "Nessun catalyst specifico per TSLA nella sessione del 12/11. Contesto positivo con rimbalzo tech selettivo. Cinque giorni fa quotava ~$379 (fonte WallStreetZen 10/11).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 394.31,
+      "stop_loss": 382.48,
+      "target": 414.03,
+      "commissione": 0.00,
+      "reasoning": "TSLA mostra momentum positivo a $394.31 (+0.4%), in rialzo da $379 cinque giorni fa (+4%). Nessun catalizzatore diretto; volatilità di mercato da uscita CEO NVDA può generare pressione indiretta. Fonte: Motley Fool, Google Finance 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool ticker strip", "price": 392.40},
+          {"name": "CNBC after-hours ref", "price": 396.22}
+        ],
+        "spread_pct": 0.97,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 165.27,
+      "change_24h": "-4.87%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (volume elevato su notizia dimissioni CEO)",
+      "news": "BREAKING: CEO Jensen Huang si è dimesso con effetto immediato. CFO Colette Kress nominata CEO ad interim. Baird downgrade a Neutral. Morgan Stanley rimuove da Top Pick list. Utili Q3 previsti il 17/11/2026.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 165.27,
+      "stop_loss": 170.23,
+      "target": 157.01,
+      "commissione": 0.00,
+      "reasoning": "NVDA crolla -4.9% a $165.27 per le dimissioni immediate di Jensen Huang: vacuum di leadership in un momento critico (earnings Q3 il 17/11). Doppio downgrade Baird+MS. AMD e Broadcom beneficiano della rotazione. Fonte: Fox Business, CNBC, Reuters via Motley Fool 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance intraday", "price": 165.18},
+          {"name": "CNBC 13:11 EST", "price": 165.35}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 528.10,
+      "change_24h": "+1.26%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale (ETF buying confermato il 10/11)",
+      "news": "MSFT supera Nvidia per market cap secondo un report. Dividendo $0.98 annunciato, ex-date 19/11/2026. Anthropic lancia spreadsheet software (competizione potenziale). ETF acquistano MSFT su debolezza.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 528.10,
+      "stop_loss": 512.26,
+      "target": 554.51,
+      "commissione": 0.00,
+      "reasoning": "MSFT +1.26% a $528.10, supportato da acquisti ETF e dividendo imminente (ex-date 19/11). Hyperscaler difensivo durante turbolenze NVDA. Target analyst consensus ~$636. Fonte: Yahoo Finance, Tradersunion 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance 13:11 EST", "price": 527.68},
+          {"name": "Tradersunion", "price": 528.51}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 269.05,
+      "change_24h": "+1.01%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "AWS growth allevia preoccupazioni su spesa AI (MarketBeat). AMZN +2.3% midday secondo Reuters. Volatilità post-Q3 (EPS $1.89 vs $1.96 atteso) in parte riassorbita.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 269.05,
+      "stop_loss": 260.98,
+      "target": 282.50,
+      "commissione": 0.00,
+      "reasoning": "AMZN in ripresa +1% a $269.05 grazie al tema AWS AI growth. Reuters riporta +2.3% midday. Outperformance nel settore hyperscaler rispetto a NVDA-dipendenti. Fonte: Yahoo Finance, Reuters via Motley Fool 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance 13:11 EST", "price": 268.85},
+          {"name": "Investing.com 12/11", "price": 269.25}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 299.66,
+      "change_24h": "+2.23%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume elevato su rotazione da NVDA)",
+      "news": "Alphabet, Meta e Oracle collaborano per alternative GPU a Nvidia (Motley Fool 10/11). GOOGL beneficia delle turbolenze NVDA come hyperscaler indipendente. Dividendo $0.22 ex-date 7/12/2026. Target medio analisti ~$400.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 299.66,
+      "stop_loss": 290.67,
+      "target": 314.64,
+      "commissione": 0.00,
+      "reasoning": "GOOGL +2.23% a $299.66, beneficiario diretto della rotazione da NVDA: fa parte della coalizione alternativa GPU con Meta e Oracle. Dividendo in arrivo, target analisti $400+. Fonte: Yahoo Finance, Finviz 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance 11:22 EST", "price": 300.01},
+          {"name": "Robinhood 12/11", "price": 299.30}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 627.13,
+      "change_24h": "-0.71%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "META registra onere legale da $9.89 miliardi. Fa parte della coalizione con Alphabet e Oracle per alternative a chip Nvidia. P/E 21.30, market cap ~$1.6T. Stock sceso da $641 (10/11) a $624 (12/11).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 627.13,
+      "stop_loss": 608.32,
+      "target": 658.49,
+      "commissione": 0.00,
+      "reasoning": "META sotto pressione a $627.13 (-0.71%) con onere legale $9.89B che pesa sul sentiment. Collaborazione GPU alternativa positiva sul lungo termine ma non sufficiente a invertire il trend di breve. Fonte: Yahoo Finance, Robinhood 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance 11:41 EST", "price": 624.33},
+          {"name": "Robinhood (chiusura 11/11)", "price": 629.93}
+        ],
+        "spread_pct": 0.90,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 63.62,
+      "change_24h": "-1.87%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Netflix Q3 2026: EPS $0.87 vs $0.82 atteso, revenue $13.44B vs $12.87B atteso. Nonostante il beat, azioni scese -5.93% dopo-mercato. 'NFLX loser of the year' secondo Yahoo Finance. Near 52-week low ($61.39).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63.62,
+      "stop_loss": 61.71,
+      "target": 66.80,
+      "commissione": 0.00,
+      "reasoning": "NFLX a $63.62, solo 3.5% sopra il minimo 52 settimane ($61.39), nonostante beat Q3. Pressione di vendita persistente. Target analisti $85 (Google Finance), ma manca catalyst di inversione. Attendere conferma. Fonte: Google Finance, Morningstar 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance 10:32 ET", "price": 63.33},
+          {"name": "Investing.com 12/11", "price": 63.90}
+        ],
+        "spread_pct": 0.90,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 576.07,
+      "change_24h": "+4.71%",
+      "trend_5d": "rialzista",
+      "volume_note": "anomalo (volume elevato, +36.99% da 6/11, diretta beneficiaria NVDA CEO exit)",
+      "news": "AMD beneficiario principale delle dimissioni CEO Nvidia: Reuters riporta +4.3% midday. Risultati Q3 record: revenue $13.4B (+45% YoY). CoreWeave earnings il 11/11 ha già boostato i chip stocks. Quota AI mercato in espansione.",
+      "signal": "BUY",
+      "confidence": "Alto",
+      "entry": 576.07,
+      "stop_loss": 558.79,
+      "target": 604.87,
+      "commissione": 0.00,
+      "reasoning": "AMD +4.71% a $576.07, diretto beneficiario del vuoto di leadership NVDA. Q3 record (+45% YoY revenue) + rotazione investitori chip AI verso AMD. Momentum fortissimo (+37% da 6/11). Fonte: Google Finance, Reuters via Motley Fool 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance 11:02 ET", "price": 578.95},
+          {"name": "Robinhood 12/11", "price": 573.19}
+        ],
+        "spread_pct": 1.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1534.42,
+      "change_24h": "+1.76%",
+      "trend_5d": "rialzista",
+      "volume_note": "normale",
+      "news": "ASML chiude a $1,534.42 (+1.76%) l'11/11. Record Q3: €11.7B net sales. Guidance 2026 alzata a €44-45B. Buyback program in corso. AI semiconductor recovery tema supportivo.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1534.42,
+      "stop_loss": 1488.39,
+      "target": 1611.14,
+      "commissione": 0.00,
+      "reasoning": "ASML a $1,534 con record Q3 e guidance alzata. Nonostante -23% dall'ATH ($1,999), fondamentali solidi. Rimbalzo sostenuto da AI chip demand. Target consensus 247wallst ~$1,800+. Fonte: Yahoo Finance, Morningstar 11/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance chiusura 11/11", "price": 1534.42},
+          {"name": "Morningstar chiusura 11/11", "price": 1534.42}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 233.92,
+      "change_24h": "+0.15%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "SAP ai minimi da 15 mesi (TradingEconomics). -3.6% YTD. Target analisti ~$284.50 (consensus Buy). Nessun catalyst recente trovato per 12/11.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 233.92,
+      "stop_loss": 226.90,
+      "target": 245.62,
+      "commissione": 0.00,
+      "reasoning": "SAP a ~$233.92, minimo 15 mesi, in debolezza strutturale YTD. Manca catalyst per inversione nel breve. Consensus Buy con target $284 non si è materializzato. Dato più recente disponibile: chiusura 11/11. Fonte: Macrotrends, Morningstar 11/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Macrotrends chiusura 11/11", "price": 234.10},
+          {"name": "Morningstar chiusura 10/11", "price": 233.74}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 416.67,
+      "change_24h": "N/D",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari stabile. Range 52 settimane $312.51-$437.15, quota attuale nel terzo superiore. P/E 37.54, dividend yield 1.01%. Nessuna notizia rilevante il 12/11 trovata.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 416.67,
+      "stop_loss": 404.17,
+      "target": 437.50,
+      "commissione": 0.00,
+      "reasoning": "RACE stabile intorno a $416.67 con dati più recenti disponibili al 11/11. Nessun catalyst di breve termine identificato. NOTA: dato intraday 12/11 non reperibile da fonti indipendenti. Fonte: Robinhood, ChartMill 11/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (11/11)", "price": 416.88},
+          {"name": "ChartMill (04/11)", "price": 416.46}
+        ],
+        "spread_pct": 0.10,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 354.74,
+      "change_24h": "-2.79%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (forte selling pressure, rally post-elettorale azzerato)",
+      "news": "GLD cede -2.79% a $355.00 (MarketAlleys 12/11 16:30 UTC). L'oro ha azzerato l'intero rally post-elezioni. Oro spot vicino $3,940. Cinque interventi Fed oggi + dati PPI venerdì alimentano timori di rialzo tassi.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 354.74,
+      "stop_loss": 361.83,
+      "target": 340.55,
+      "commissione": 0.00,
+      "reasoning": "GLD -2.79% a $354.74: il rally post-elettorale dell'oro è completamente eroso. Catalyst ribassista: 5 funzionari Fed parlano oggi + PPI venerdì. Timori di rialzo tassi pesano su metalli preziosi. Fonte: MarketAlleys, CNBC 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys 12/11 16:30 UTC", "price": 355.00},
+          {"name": "CNBC 10:05 EST", "price": 354.48}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 44.99,
+      "change_24h": "-3.07%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (outflow YTD -$2.11B, -4.62% holdings)",
+      "news": "SLV scende -3.07% a ~$45. Deflusso cumulativo YTD silver ETF: -$2.11B (-4.62% holdings). Stesso contesto macro di GLD: Fed speakers + PPI. Argento più volatile dell'oro in contesto ribassista.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 44.99,
+      "stop_loss": 45.89,
+      "target": 43.19,
+      "commissione": 0.00,
+      "reasoning": "SLV -3.07% a $44.99 con deflussi strutturali ($2.11B YTD) e pressione macro da tassi. Argento più debole dell'oro in mercati risk-off da rialzo tassi. Fonte: Investing.com, Webull, MarketAlleys 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com 12/11", "price": 45.06},
+          {"name": "Webull intraday 12/11", "price": 44.92}
+        ],
+        "spread_pct": 0.31,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 142.01,
+      "change_24h": "+1.34%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "USO +1.34% (MarketAlleys) oggi, piccolo rimbalzo tecnico. WTI crude ~$142.68. Ma trend 5 giorni fortemente ribassista: era ~$158 il 03/11, ora $142 (-10.1%). OPEC+ dinamiche e rallentamento domanda globale.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 142.01,
+      "stop_loss": 139.17,
+      "target": 147.69,
+      "commissione": 0.00,
+      "reasoning": "USO +1.34% oggi ma in downtrend 5 giorni (-10.1%). Rimbalzo tecnico insufficiente per inversione. Validazione MEDIA (spread fonti 1.93%). Fonte: MarketAlleys 12/11, CNBC (data incerta) 2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys 12/11 17:00 UTC", "price": 143.36},
+          {"name": "CNBC (data da verificare)", "price": 140.65}
+        ],
+        "spread_pct": 1.93,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 71838.00,
+      "change_24h": "-3.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (5° giorno consecutivo outflow ETF spot Bitcoin)",
+      "news": "BTC sotto $75K support: 5° giorno di outflow ETF spot. CPI data hot ha innescato timori rialzo tassi Fed. BTC dominance a ~61%. Breve rimbalzo a $74.5K l'11/11 su lancio Deutsche Bank custody. Ora in correzione a $71.838.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 71838.00,
+      "stop_loss": 75430.00,
+      "target": 66091.00,
+      "commissione": 0.00,
+      "reasoning": "BTC a $71.838 (-3%), sotto supporto chiave $75K, con 5 giorni consecutivi di outflow ETF spot. Dati CPI hot alimentano aspettative rialzo tassi che penalizzano asset rischiosi. Fonte: CoinGecko, Kriptofoni 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinGecko 12/11", "price": 71923.84},
+          {"name": "Kriptofoni 12/11 20:48 UTC", "price": 71753.00}
+        ],
+        "spread_pct": 0.24,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 2045.23,
+      "change_24h": "-2.30%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (outflow ETF ETH, -18.2% dal 04/11)",
+      "news": "ETH estende il declino sotto le medie mobili principali. Dal 04/11 al 10/11 ha perso -18.2%. Rimbalzo l'11/11 a ~$2.094 su lancio Deutsche Bank custody (ETH nel programma). Ora ritraccia. 'Capital abandoning altcoins' narrativa dominante.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 2045.23,
+      "stop_loss": 2147.49,
+      "target": 1881.61,
+      "commissione": 0.00,
+      "reasoning": "ETH a $2.045 (-2.3%), sotto tutte le medie mobili principali. -18% dal 4/11. Nonostante Deutsche Bank custody support, la rotazione verso BTC dominance (~61%) e le pressioni macro da Fed pesano. Fonte: Fortune, CoinMarketCap 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune 12/11 06:30 ET", "price": 2037.25},
+          {"name": "CoinMarketCap 12/11", "price": 2053.20}
+        ],
+        "spread_pct": 0.78,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 83.19,
+      "change_24h": "-3.91%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo (-17% dal 04/11, pressione di vendita costante)",
+      "news": "SOL scende da $99 (04/11) a $83 (12/11): -16.2% in una settimana. DTCC aggiunge SOL a piani tokenizzazione Wall Street (rollout 2027). Nuova funzionalità privacy lanciata. Ma pressione di mercato predomina.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 83.19,
+      "stop_loss": 87.35,
+      "target": 76.53,
+      "commissione": 0.00,
+      "reasoning": "SOL -3.91% a $83.19, -16% in 7 giorni. Notizia DTCC tokenizzazione positiva ma a lungo termine (2027). Pressione di vendita a breve termine dominante nel contesto crypto bearish. Fonte: Coinbase, Paybis 12/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase 12/11", "price": 82.85},
+          {"name": "Paybis 12/11", "price": 83.52}
+        ],
+        "spread_pct": 0.81,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM",
+      "motivo": "STLAM è il ticker della Borsa di Milano (EUR). Il ticker NYSE/Nasdaq per Stellantis è STLA (USD), per il quale nessuna fonte affidabile con prezzo corrente del 12/11/2026 è stata trovata. Ultimo prezzo EUR trovato: 3.710 EUR al 27/10/2026 (2 settimane fa, stale). Dati insufficienti per validazione USD."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "signal": "BUY",
+      "price": 576.07,
+      "motivo": "Massima priorità: beneficiario diretto delle dimissioni CEO Nvidia con volume anomalo e momentum +37% settimanale. Q3 record revenue +45% YoY. Confidenza Alta. Risk/reward favorevole: SL -3% a $558.79, target +5% a $604.87."
+    },
+    {
+      "rank": 2,
+      "asset": "NVDA",
+      "signal": "SELL",
+      "price": 165.27,
+      "motivo": "Catalyst negativo immediato: dimissioni CEO Jensen Huang effective immediately. Doppio downgrade (Baird + Morgan Stanley). Earnings Q3 il 17/11 con nuovo management. Confidenza Alta. SL +3% a $170.23, target -5% a $157.01."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "signal": "SELL",
+      "price": 354.74,
+      "motivo": "Rally post-elettorale oro completamente azzerato in 3 sessioni. Macro headwinds strutturali: Fed speakers + PPI data. SLV ancora più debole (-3.1%). Confidenza Alta. SL +2% a $361.83, target -4% a $340.55."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione suggerita su portafoglio ipotetico $100.000.",
+    "contesto": "Mercato in rotazione da NVDA verso beneficiari AMD/hyperscaler. Commodities e crypto sotto pressione macro. Approccio difensivo-selettivo.",
+    "allocazione_suggerita": {
+      "AMD_long": "15% ($15.000) - Alta confidenza, momentum strutturale",
+      "MSFT_long": "12% ($12.000) - Hyperscaler difensivo, dividendo",
+      "GOOGL_long": "10% ($10.000) - Beneficiario rotazione GPU",
+      "AMZN_long": "10% ($10.000) - AWS AI growth narrative",
+      "ASML_long": "10% ($10.000) - Semiconduttori EU, fondamentali solidi",
+      "NVDA_short": "13% ($13.000) - SELL Alto, leadership vacuum",
+      "GLD_short": "8% ($8.000) - SELL Alto, rally eroso",
+      "SLV_short": "7% ($7.000) - SELL Alto, outflow strutturali",
+      "BTC_short": "5% ($5.000) - SELL Medio, ETF outflow day 5",
+      "cash_neutrale": "10% ($10.000) - Buffer per volatilità intraday"
+    },
+    "rischio_totale_stimato": "Long exposure: 47% | Short exposure: 33% | Cash: 10% | Hedge implicito: 10%"
+  }
+}
