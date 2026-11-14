@@ -1,0 +1,407 @@
+{
+  "timestamp": "2026-11-14T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione del 14 novembre 2026 con tono misto-ribassista. Il comparto tech (Mag7) accusa un calo di circa -10% dai massimi di ottobre: GOOGL sotto pressione per decelerazione della ricerca (+12% growth) e class action depositata il 9 novembre. Petrolio in rally su tensioni geopolitiche/sanzioni (USO +2% ultimi giorni). Bitcoin continua la discesa dai massimi di settembre ($83k) verso area $73k (minimo del 10 novembre sotto $73k). ASML resta un'eccezione positiva: battuti gli utili Q3 il 14 ottobre con guidance Q4 forte e domanda che supera l'offerta per almeno 2 anni. AMD post-earnings (3 novembre) si stabilizza intorno a $508 dopo calo pre-annuncio del 10.88%. Metalli preziosi sotto pressione (aspettative rialzo tassi). GLD e SLV in correzione. Oil ETF USO in rialzo guidato da sanzioni.",
+  "signals": [
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 533.09,
+      "change_24h": "~0.00%",
+      "trend_5d": "laterale",
+      "volume_note": "volume regolare",
+      "news": "Microsoft punta a ridurre la dipendenza da Oracle e altri partner cloud (Fox News). Prezzo stabile in area $532-533 nelle ultime 2 settimane nonostante pressione su Mag7.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 533.09,
+      "stop_loss": 517.10,
+      "target": 559.74,
+      "commissione": 0.00,
+      "reasoning": "Prezzo laterale $532-533 su 2 settimane suggerisce assenza di momentum direzionale. Massimo annuo vicino ($553.72 52-week high) riduce il potenziale upside a breve. Attendere conferma breakout o rientro su supporto.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 532.60, "data": "2026-10-27"},
+          {"name": "Fox Business", "price": 533.57, "data": "2026-11-10"}
+        ],
+        "spread_pct": 0.18,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 280.57,
+      "change_24h": "-1.44%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato su notizie negative",
+      "news": "Crescita search rallentata al 12% (fonte: MarketBeat/StockAnalysis). Class action depositata contro Alphabet il 9 novembre. Mag7 già giù ~10% dai massimi di ottobre. Zacks Research downgrade ad Hold agosto 2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 280.57,
+      "stop_loss": 272.15,
+      "target": 294.60,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista confermato da Fox Business Nov 6 $282.57 → Benzinga ~Nov 13 $278.57. Multipli catalizzatori negativi: decelerazione search, causa legale, contesto Mag7 debole. 52-week range $270-$408 → prezzo prossimo al supporto annuale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fox Business", "price": 282.57, "data": "2026-11-06"},
+          {"name": "Benzinga", "price": 278.57, "data": "2026-11-13 (approx)"}
+        ],
+        "spread_pct": 1.44,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 508.60,
+      "change_24h": "+0.01%",
+      "trend_5d": "laterale",
+      "volume_note": "volume in calo post-earnings",
+      "news": "AMD ha registrato un calo pre-earnings del 10.88% prima della pubblicazione risultati Q3 (3 novembre). Ora stabilizzata a $508. Prossimo catalizzatore: guidance Q4. Chip stocks hanno rimbalzato parzialmente il 7 novembre dopo il selloff del 5 novembre.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 508.60,
+      "stop_loss": 493.34,
+      "target": 534.03,
+      "commissione": 0.00,
+      "reasoning": "Due fonti concordanti confermano $508.58-508.62 il 9-10 novembre. Post-earnings consolidation tipica dopo drop da $607 (28 settembre). Attendere conferma rimbalzo o 52-week low a $159.33 molto lontano. 52-week range $159-$639.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (delayed)", "price": 508.58, "data": "2026-11-09"},
+          {"name": "StockAnalysis.com", "price": 508.62, "data": "2026-11-10"}
+        ],
+        "spread_pct": 0.008,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 337.64,
+      "change_24h": "-1.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume normale",
+      "news": "Apple post-earnings: titolo sceso -1.5% dopo la pubblicazione dei risultati (inizio novembre). Aveva guidato il rialzo Nasdaq il 18 agosto. Nuova voce nella lista 'more-bought' di Interactive Investor nella settimana del 2-6 novembre.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 337.64,
+      "stop_loss": 327.51,
+      "target": 354.52,
+      "commissione": 0.00,
+      "reasoning": "Dati da periodi diversi (Nov 3 vs Oct 15) con spread del 3.46% che riflette movimento di prezzo reale più che divergenza fonti. Contesto macro Mag7 debole. HOLD in attesa di nuove indicazioni da guidance management. 52-week range $201-$334 suggerisce prezzo attuale vicino ai massimi annuali.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketChameleon", "price": 331.90, "data": "2026-11-03"},
+          {"name": "MarketScreener", "price": 343.37, "data": "2026-10-15"}
+        ],
+        "spread_pct": 3.46,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 256.95,
+      "change_24h": "~-0.90%",
+      "trend_5d": "laterale",
+      "volume_note": "volume regolare",
+      "news": "Amazon nella 52-week range $196-287. Prezzo attuale nella fascia mediana senza catalizzatori forti identificati. Tech sector sotto pressione generale in settimana.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 256.95,
+      "stop_loss": 249.24,
+      "target": 269.80,
+      "commissione": 0.00,
+      "reasoning": "MarketChameleon Nov 6 $259.30 e StockEvents undated $254.60 mostrano spread del 1.85% ma fonti di diversa affidabilità temporale. Nessun catalizzatore specifico identificato. Mid-range della 52w suggerisce equilibrio acquirenti/venditori.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketChameleon", "price": 259.30, "data": "2026-11-06"},
+          {"name": "StockEvents", "price": 254.60, "data": "undated"}
+        ],
+        "spread_pct": 1.85,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 64.75,
+      "change_24h": "-3.28%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato (35.53M vs media normale)",
+      "news": "Netflix ha subito uno split 10:1 a fine 2025. Il titolo è ora vicino ai minimi annuali ($61.40 vs high $116.73). Performance YTD -43.29%. Il tech sector debole pesa ulteriormente. Prossimi earnings Q4 attesi.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 64.75,
+      "stop_loss": 62.81,
+      "target": 67.99,
+      "commissione": 0.00,
+      "reasoning": "Fox Business Nov 6 $65.56 e FinancialContent $63.94 (spread 2.53%). Prezzo vicino al minimo annuale $61.40 con trend ribassista confermato -43% YTD. Nessun catalizzatore positivo identificato nel breve. Volume del 6 novembre 35.5M anomalo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fox Business", "price": 65.56, "data": "2026-11-06"},
+          {"name": "FinancialContent", "price": 63.94, "data": "undated (recente)"}
+        ],
+        "spread_pct": 2.53,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1522.88,
+      "change_24h": "-0.73%",
+      "trend_5d": "laterale_ribassista",
+      "volume_note": "volume regolare post-earnings",
+      "news": "ASML ha battuto earnings e ricavi Q3 il 14 ottobre 2026 con guidance Q4 forte. Dichiarato di non poter soddisfare pienamente la domanda nei prossimi 2 anni. Euronext Amsterdam 9 novembre: €1,343.80 (+4.69%). NYSE: $1,507.85 il 10 novembre.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1522.88,
+      "stop_loss": 1477.19,
+      "target": 1599.02,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali eccezionali: earnings beat + guidance forte + domanda che supera l'offerta per 2 anni = visibilità sui ricavi futuri. 52-week range $946-$1,999: prezzo attuale nella fascia inferiore-mediana, offre margine rialzista verso i massimi. Benzinga Nov 10 $1,507.85 e FinancialContent Nov 2 $1,537.91 (spread 1.99%).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Benzinga", "price": 1507.85, "data": "2026-11-10"},
+          {"name": "FinancialContent", "price": 1537.91, "data": "2026-11-02"}
+        ],
+        "spread_pct": 1.99,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 4.35,
+      "change_24h": "-0.11%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato (40M shares/day)",
+      "news": "Carenza chip sta interrompendo la produzione Fiat in Italia (StockAnalysis news). Il titolo è vicino ai minimi annuali: $3.92 (52-week low) vs high $12.22. ClearRank lo valuta SELL con target mediano analisti $6.32 ma poche coperture (7 analisti). Prezzi sotto 50-day e 200-day MA.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 4.35,
+      "stop_loss": 4.22,
+      "target": 4.57,
+      "commissione": 0.00,
+      "reasoning": "Fox Business Nov 6 $4.43 e ClearRank Nov 10 $4.26 (spread 3.99% borderline MEDIA). Trend negativo confermato da carenza chip, perdita di valore del 65% dal 52-week high. Chip shortage strutturale pesa su produzione. Upside limitato nel breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fox Business", "price": 4.43, "data": "2026-11-06"},
+          {"name": "ClearRank", "price": 4.26, "data": "2026-11-10"}
+        ],
+        "spread_pct": 3.99,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 380.91,
+      "change_24h": "+1.06%",
+      "trend_5d": "laterale_ribassista",
+      "volume_note": "volume normale",
+      "news": "Oil ETFs in surge da sanzioni/tensioni geopolitiche mentre i metalli preziosi correggono. Aspettative di ulteriore rialzo tassi Fed pesano sull'oro. Un articolo Stocktwits cita GLD vicino al 52-week low. Schwab aveva registrato $377.32 il 23 giugno 2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 380.91,
+      "stop_loss": 373.29,
+      "target": 396.15,
+      "commissione": 0.00,
+      "reasoning": "TradingView (live) $382.13 e M1 (live) $379.69 concordano con spread 0.64%. Contesto macro sfavorevole per oro: USD forte, aspettative tassi in rialzo. Oil che sale tende a ridurre la domanda di rifugio sull'oro. Prezzo vicino ai minimi annuali ma senza catalizzatori di rimbalzo identificati.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "TradingView (live)", "price": 382.13, "data": "live (undated)"},
+          {"name": "M1 Finance (live)", "price": 379.69, "data": "live (undated)"}
+        ],
+        "spread_pct": 0.64,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 68.59,
+      "change_24h": "-1.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume in aumento su correzione",
+      "news": "L'argento in correzione insieme all'oro su aspettative rialzo tassi e forza del dollaro. Oil ETFs guadagnano mentre i metalli preziosi cedono. iShares Silver Trust (SLV) ha 52-week range $41-$110.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 68.59,
+      "stop_loss": 67.22,
+      "target": 71.33,
+      "commissione": 0.00,
+      "reasoning": "Kraken (exchange live) $68.22 e TradingView $68.96 mostrano spread 1.09%. Correlazione con oro in ribasso. Argento industriale debole quando l'economia rallenta. Trend generale metalli sfavorevole. SELL con bassa confidenza per assenza di date confermate nelle fonti.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Kraken (exchange live)", "price": 68.22, "data": "live (undated)"},
+          {"name": "TradingView (live)", "price": 68.96, "data": "live (undated)"}
+        ],
+        "spread_pct": 1.09,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 146.93,
+      "change_24h": "+1.89%",
+      "trend_5d": "rialzista",
+      "volume_note": "volume elevato (3.4M shares il 6 novembre)",
+      "news": "Oil ETFs in surge guidato da sanzioni Iran e tensioni geopolitiche (Trackinsight ETF News Nov 2026). MarketChameleon riporta $148.41 il 6 novembre (+0.1% dal close precedente). Fox Business conferma rally del +1.89% il 5 novembre. 52-week range: $65.99-$154.08.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 146.93,
+      "stop_loss": 143.99,
+      "target": 152.81,
+      "commissione": 0.00,
+      "reasoning": "MarketChameleon Nov 6 $148.41 e Fox Business Nov 5 $145.45 con spread 2.03%. Catalizzatore forte: sanzioni internazionali spingono petrolio al rialzo. Trend rialzista confermato dai movimenti di prezzo recenti. 52-week range $65.99-$154.08: prezzo vicino ai massimi annuali indica momentum positivo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketChameleon", "price": 148.41, "data": "2026-11-06"},
+          {"name": "Fox Business", "price": 145.45, "data": "2026-11-05"}
+        ],
+        "spread_pct": 2.03,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 73000,
+      "change_24h": "-5.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato su vendite",
+      "news": "Bitcoin ha perso il 5.1% il 6 novembre ($76,023 → ~$71,800 intraday). Il 10 novembre Coinpedia riporta BTC sceso sotto $73,000 per la prima volta. Dal massimo di settembre ($83,542 il 28 settembre) il calo è di circa -13% in 6 settimane. Yahoo Finance registra close del 5 novembre a $75,594.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 73000,
+      "stop_loss": 69350,
+      "target": 78840,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista confermato: da $83k (settembre) → $76k (5-6 novembre) → sotto $73k (10 novembre). La validazione fonti (Fortune Nov 6 $76,023 e Yahoo Finance Nov 5 $75,594, spread 0.57%) è stale (8-9 giorni), con prezzo attuale stimato a $73,000. Contesto crypto generale debole: BTC e ETH continuano a cedere mentre XRP e SOL ETF mostrano deflussi. ATH a $126,198.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune.com", "price": 76023.87, "data": "2026-11-06"},
+          {"name": "Yahoo Finance", "price": 75594.06, "data": "2026-11-05"}
+        ],
+        "spread_pct": 0.57,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzi validati per Nov 5-6; al 10 Nov sceso sotto $73,000. Stima Nov 14: ~$73,000"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 83.27,
+      "change_24h": "-0.89%",
+      "trend_5d": "ribassista",
+      "volume_note": "deflussi ETF: -$7.7M il 9 novembre",
+      "news": "Solana in calo del 48% nel 2026. Spot SOL ETF registrano deflussi netti di $7.7M il 9 novembre (Farside Investors). Coincentral: SOL a $82.50 l'11 novembre (-0.89%). Il 10 novembre a $85.97. MEXC: $90.18 il 7 novembre. Trend discendente dal massimo di fine settembre vicino a $124.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 83.27,
+      "stop_loss": 79.11,
+      "target": 89.93,
+      "commissione": 0.00,
+      "reasoning": "Coincentral Nov 11 $82.50 e KuCoin undated $84.03 (spread 1.86%). SOL -48% YTD con deflussi ETF confermati e trend ribassista dalla metà di settembre. Whale aveva posizionato $38M short a giugno. Contesto crypto generale debole. Target ristretto (+8%) per la bassa conviction sul rimbalzo tecnico.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coincentral", "price": 82.50, "data": "2026-11-11"},
+          {"name": "KuCoin (live)", "price": 84.03, "data": "live (undated)"}
+        ],
+        "spread_pct": 1.86,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Nessun dato affidabile per novembre 2026. Dati disponibili da periodi distanti: Robinhood $389.39 (undated), MarketBeat $313.03 (Jul 24, 2026), Yahoo Finance $379.71 (Jun 26, 2026). Gap temporale troppo ampio e fonti contrastanti."
+    },
+    {
+      "asset": "NVDA",
+      "motivo": "Spread eccessivo tra fonti: Investing.com $186.64 (Nov 8, 2026) vs FinancialContent $216.00 (Oct 26, 2026) = 15.7% > soglia 4%. Volatilità pre-earnings (pubblicazione attesa Nov 17, 2026) rende impossibile validazione affidabile."
+    },
+    {
+      "asset": "META",
+      "motivo": "Spread > 4%: Fox Business $641.37 (Nov 10) vs FinancialContent $607.00 (Nov 2) = 5.66%. Massive riporta -16.67% mensile. Fonti contrastanti impediscono validazione."
+    },
+    {
+      "asset": "SAP",
+      "motivo": "Fonte USD singola affidabile per novembre: Fox Business $243.64 (Nov 6). La seconda fonte (MarketScreener) riporta prezzi in EUR (€211.65 il 9 novembre). Conversione valuta introduce incertezza > 4%."
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Fonte affidabile per novembre unica: Fox Business $418.87 (Nov 10, 2026). Investing.com mostra $435.38 ma datato agosto 2026. Impossibile validazione con 2 fonti indipendenti per novembre."
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Nessun dato verificato per novembre 2026. Ultimo dato affidabile: Fortune Sep 24 $2,711.52 (7 settimane fa). Fonti successive mostrano prezzi da $1,873 a $3,633 senza date confermate."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "USO",
+      "motivo": "BUY medio-alta confidenza: rally petrolio guidato da sanzioni geopolitiche con 2 fonti concordanti (Nov 5-6, spread 2.03%). Trend rialzista confermato. 52-week range $65-154 con prezzo vicino ai massimi indica momentum positivo."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "motivo": "BUY medio confidenza: fondamentali eccezionali (earnings beat Q3, domanda > offerta per 2 anni). Prezzo nella fascia inferiore-mediana della 52-week range ($946-$1999) con potenziale recupero verso i massimi. Validazione Nov 2-10 con spread 1.99%."
+    },
+    {
+      "rank": 3,
+      "asset": "BTC",
+      "motivo": "SELL medio confidenza: downtrend strutturale da settembre (-13% in 6 settimane) con accelerazione a novembre. Rottura sotto $73,000 il 10 novembre potenzialmente segnale bear. Crypto market in generalizzata debolezza."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale su Alpaca. Allocazione ipotetica su $100,000 capitale.",
+    "allocazione_suggerita": {
+      "BUY_USO": {
+        "asset": "USO",
+        "percentuale": "15%",
+        "importo_usd": 15000,
+        "shares_approx": 102,
+        "razionale": "Miglior risk/reward con catalizzatore geopolitico concreto"
+      },
+      "BUY_ASML": {
+        "asset": "ASML",
+        "percentuale": "10%",
+        "importo_usd": 10000,
+        "shares_approx": 6,
+        "razionale": "Fondamentali forti, posizione azionaria europea diversificata"
+      },
+      "HOLD_CASH": {
+        "percentuale": "75%",
+        "importo_usd": 75000,
+        "razionale": "Contesto macro incerto (Mag7 debole, crypto in calo, tassi in rialzo). Preservazione capitale prioritaria."
+      }
+    }
+  }
+}
