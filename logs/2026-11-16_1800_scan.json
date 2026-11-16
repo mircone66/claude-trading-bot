@@ -1,0 +1,490 @@
+{
+  "timestamp": "2026-11-16T18:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Giornata di forte risk-off il 16 nov 2026. Nasdaq -2.2%, S&P500 -1.6% (CNBC live). Il settore tech è penalizzato dalla resignazione improvvisa del CEO di NVIDIA Jensen Huang (scandalo personale, NYT) e dalle preoccupazioni per la spesa AI post-elezioni midterm USA. Anthropic IPO attesa questa settimana. Mercato crypto in forte downtrend: BTC -13.9% settimanale, Fear & Greed Index a 10 (Extreme Fear). Commodities sotto pressione: oro in calo dal massimo annuo $5,595 (GLD da $509 a $354), petrolio -18% a novembre. Settore chip (AMD, NVDA) fortemente negativi. 16 asset analizzati su 18; 2 esclusi (SLV spread >4%, STLAM ticker Milan/EUR).",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 156.38,
+      "change_24h": "-4.00%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - alto (panico vendite post-CEO resignation)",
+      "news": "CEO Jensen Huang ha rassegnato le dimissioni improvvisamente a seguito di un articolo del New York Times su vicende personali. CFO nominato CEO ad interim. Earnings NVDA previsti martedi 17 nov dopo chiusura mercati. HSBC downgrade a Hold (target $170), Mizuho taglia target a $220, TD Cowen riduce target. Semiconduttori Philadelphia index -3.4% venerdi.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 156.38,
+      "stop_loss": 161.07,
+      "target": 148.56,
+      "commissione": 0.00,
+      "reasoning": "Resignazione CEO Jensen Huang e' un catalizzatore negativo di primaria importanza; incertezza leadership prima degli earnings (17 nov) amplifica volatilita'. Mercato non ha ancora prezzato completamente l'impatto sistemico del vuoto leadership. Fonte: Motley Fool 16/11/2026, CNBC live 16/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Nov 16, 10:51 AM EST)", "price": 156.76},
+          {"name": "Yahoo Finance (Nov 16, 1:11 PM EST)", "price": 156.00}
+        ],
+        "spread_pct": 0.49,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 142.09,
+      "change_24h": "-2.10%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume normale",
+      "news": "Petrolio in forte calo: Brent -18% a novembre. Demo win alle elezioni midterm ha aumentato i timori di rallentamento spesa infrastrutture energetiche. Dollar forte e rendimenti Treasury in rialzo riducono attrattivita' commodity. USO da massimo 52-settimane $169.96 a $142.09.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 142.09,
+      "stop_loss": 144.93,
+      "target": 136.41,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista molto forte su petrolio; USO -16.4% dal massimo annuo. Vento contrario macro persistente (dollaro forte, tassi in rialzo, Democrat win = meno drilling). Nessun catalyst positivo visibile a breve. Fonte: Finnhub/MarketAlleys Nov 16 14:45 UTC, CNBC post-Oct 30.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Finnhub via MarketAlleys (Nov 16, 14:45 UTC)", "price": 142.52},
+          {"name": "CNBC (post-Oct 30, 12:14 PM EST)", "price": 141.65}
+        ],
+        "spread_pct": 0.61,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64628.56,
+      "change_24h": "-2.20%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - $1 miliardo di liquidazioni il 14 nov",
+      "news": "BTC sceso sotto $62,000 per la prima volta da luglio 2026, poi recupero parziale a $65,000. Fear & Greed Index a 10 (Extreme Fear). BTC -13.92% negli ultimi 7 giorni; -26% rispetto a un mese fa ($82,242). Strategy (Saylor) ha comprato 485 BTC per $33M. ETF outflows persistenti. Fed markets prezzano hike not cut.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 64628.56,
+      "stop_loss": 67859.99,
+      "target": 59458.28,
+      "commissione": 0.00,
+      "reasoning": "Mercato crypto in trend fortemente ribassista; $1B liquidazioni 14 nov, Fear & Greed a 10 (Extreme Fear). Fed pricing hike aumenta costo opportunita' BTC. Nonostante acquisti Strategy, momentum rimane negativo. Fonte: Fortune 16/11/2026, CoinDesk 16/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Nov 16, 7:30 AM ET)", "price": 64012.79},
+          {"name": "CoinDesk (Nov 16, 9:46 AM EST)", "price": 65244.32}
+        ],
+        "spread_pct": 1.90,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1801.42,
+      "change_24h": "-1.90%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - alto su cali settimanali",
+      "news": "ETH -15.7% negli ultimi 7 giorni. Tom Lee (Fundstrat) dice 'waterfall decline defies fundamentals'. Bitmine ha acquistato 7.653 ETH. Down 26.36% rispetto a un mese fa. Coinglass YTD -26%.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1801.42,
+      "stop_loss": 1891.49,
+      "target": 1657.31,
+      "commissione": 0.00,
+      "reasoning": "Trend fortemente ribassista; -15.7% weekly. Contesto macro sfavorevole (Fed hike atteso). Nonostante Tom Lee difenda i fondamentali ETH, momentum ribassista domina. Bitmine accumula ma non basta a invertire sentiment. Fonte: Fortune 16/11/2026, Coinbase converter 16/11/2026.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Nov 16, 7:30 AM ET)", "price": 1795.56},
+          {"name": "Coinbase converter (Nov 16, ~8:20 AM)", "price": 1807.27}
+        ],
+        "spread_pct": 0.65,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 71.43,
+      "change_24h": "+0.06%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - RSI daily oversold a 21.2 (Cryptonomist)",
+      "news": "SOL -18.5% negli ultimi 7 giorni (peggior performance tra i 3 crypto). RSI daily a 21.2 (oversold), MACD histogram negativo in espansione. DTCC pianifica tokenizzazione titoli su Solana nel 2027. Solana ha ritirato il label 'mainnet beta' e rilasciato Solana 1.0 il 16 nov (catalyst positivo a lungo termine).",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 71.43,
+      "stop_loss": 75.00,
+      "target": 65.72,
+      "commissione": 0.00,
+      "reasoning": "Peggior performance settimanale tra BTC/ETH/SOL (-18.5%). RSI oversold ma MACD histogram negativo in espansione suggerisce continuazione ribasso. Solana 1.0 e catalyst DTCC positivi a lungo termine ma override macro negativo. Fonte: OKX Nov 16 live, Bybit Nov 16 live.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "OKX (Nov 16, live)", "price": 71.47},
+          {"name": "Bybit (Nov 16, live)", "price": 71.38}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 521.20,
+      "change_24h": "-2.40%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - 49.4M shares su Nov 13 (crollo -8.75%)",
+      "news": "AMD ha subito un crollo di -8.75% su Nov 13 (sessione). Settore chip penalizzato da dimissioni CEO NVDA. Philadelphia Semiconductor Index -3.4% venerdi. Dati terzi suggeriscono AMD intorno a $508 il 16 nov. All-time high close $649.42 (6 ott 2026), ora -20% da ATH.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 521.20,
+      "stop_loss": 536.84,
+      "target": 495.14,
+      "commissione": 0.00,
+      "reasoning": "Settore chip sotto pressione massima dopo exit CEO NVDA; AMD ha gia' subito -8.75% su Nov 13. Affidabilita' MEDIA per discrepanza date fonti (prezzo potenzialmente $508 su Nov 16 per fonti terze). Confidenza BASSA per incertezza prezzo attuale. Fonte: Google Finance Nov 13 close, Robinhood Nov 15.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 15)", "price": 521.20},
+          {"name": "Google Finance (Nov 13 close)", "price": 534.06}
+        ],
+        "spread_pct": 2.44,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 354.95,
+      "change_24h": "-0.37%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Apple near record close a $356.27 (Nov 13). Stock resiliente durante il tech selloff. Massimo 52-settimane $360.83 raggiunto il 13 nov. Analyst consensus Buy con target medio $345.63 (leggermente sotto prezzo attuale). Supporto chiave $353.98.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 354.95,
+      "stop_loss": 344.30,
+      "target": 372.70,
+      "commissione": 0.00,
+      "reasoning": "AAPL dimostra forza relativa vs settore tech in selloff. Near 52-week high $360.83; supporto $353.98 testato. Rischio: target analyst medio ($345.63) sotto prezzo attuale. Contesto di mercato sfavorevole limita upside immediato. Fonte: CNBC Nov 16, Google Finance Nov 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Nov 16, 10:51 AM EST)", "price": 355.09},
+          {"name": "Google Finance (Nov 16, 9:53 AM ET)", "price": 354.81}
+        ],
+        "spread_pct": 0.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 384.43,
+      "change_24h": "-1.50%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Tesla in calo dal massimo intraday $404.40 (Nov 15, 32.4M shares). Elon Musk ha ammesso che il fee mensile $300 per Cybercab e' troppo alto; deliveries ancora solo su invito. 52-week range $297.38-$498.83. TSLA nel range $381-404 nelle ultime sedute.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 384.43,
+      "stop_loss": 372.90,
+      "target": 403.65,
+      "commissione": 0.00,
+      "reasoning": "TSLA in range; notizie Cybercab mixed (fee riconosciuto troppo alto) ma nessun catalizzatore forte direzionale. Contesto tech negativo ma TSLA puo' sovraperformare grazie a Musk/AI narrative. Fonte: Robinhood Nov 16, StockAnalysis Nov 16 11:34 AM.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 16)", "price": 387.11},
+          {"name": "StockAnalysis (Nov 16, 11:34 AM EST)", "price": 381.74}
+        ],
+        "spread_pct": 1.40,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 522.97,
+      "change_24h": "-0.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale (bullish options al minimo da dic 2022)",
+      "news": "Microsoft beneficiario diretto dell'IPO Anthropic (investitore con Amazon e Alphabet). Bullish options positioning ai minimi da dicembre 2022. MSFT da $555.80 (4 nov) a $522 (-6.1%). Analyst target medio intorno a $500 (vari upgrades post-AI deal).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 522.97,
+      "stop_loss": 507.28,
+      "target": 549.12,
+      "commissione": 0.00,
+      "reasoning": "Catalyst positivo (Anthropic IPO questa settimana); MSFT e' co-investitore con Amazon. Options sentiment basso suggerisce possibile rimbalzo contrarian. Ma macro avversa con tassi in rialzo limita upside. Fonte: Robinhood Nov 15, Google Finance Nov 13 close.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 15)", "price": 522.06},
+          {"name": "Google Finance (Nov 13 close)", "price": 523.88}
+        ],
+        "spread_pct": 0.35,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 258.51,
+      "change_24h": "-3.06%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo - alto su calo intraday significativo",
+      "news": "Amazon in calo -3.06% intraday (da $266.66 chiusura Nov 13). Co-investore in Anthropic con Microsoft e Alphabet; IPO Anthropic questa settimana puo' essere catalyst positivo. Analyst target medio $326, consensus Buy. 52-week range $196.00-$287.20.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 258.51,
+      "stop_loss": 250.75,
+      "target": 271.44,
+      "commissione": 0.00,
+      "reasoning": "AMZN vende -3% con il mercato ma ha catalyst Anthropic IPO (co-investitore diretto). Target analyst $326 implica upside del 26%. Affidabilita' MEDIA per discrepanza date fonti (Nov 16 vs Nov 13). Fonte: Google Finance Nov 16 ~1:02 PM, Seeking Alpha Nov 13 close.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (Nov 16, ~1:02 PM ET)", "price": 258.51},
+          {"name": "Seeking Alpha (Nov 13 close)", "price": 266.66}
+        ],
+        "spread_pct": 3.11,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 286.88,
+      "change_24h": "-2.90%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Alphabet -2.9% intraday. Co-investitore in Anthropic (IPO questa settimana). Call buying reboundato per GOOGL. Stock near short-term support ($285-286 area). Analyst consensus 'Strong Buy', target medio $400 (+39% upside). 52-week range $270.70-$408.61.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 286.88,
+      "stop_loss": 278.27,
+      "target": 301.22,
+      "commissione": 0.00,
+      "reasoning": "GOOGL a supporto breve termine con forte upside analyst ($400 target, +39%). Catalyst: Anthropic IPO co-investitore. Call buying in rimbalzo e' segnale costruttivo. Ma macro avversa e Nasdaq -2.2% limitano upside immediato. Fonte: StockAnalysis Nov 16 12:50 PM, CNBC Nov 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Nov 16, 12:50 PM EST)", "price": 287.10},
+          {"name": "CNBC (Nov 16 intraday)", "price": 286.65}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 629.13,
+      "change_24h": "-1.96%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Meta a 5-week low. Ha raccolto ~$25 miliardi in debito questo mese. P/E ~21.8x, in linea con S&P 500. Dividendo $2.10/anno (yield ~0.34%). Next earnings: 27 gen 2027. 52-week range $520.26-$779.82.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 629.13,
+      "stop_loss": 610.26,
+      "target": 660.59,
+      "commissione": 0.00,
+      "reasoning": "META a 5-week low ma valutazione ragionevole (21.8x PE, pari all'S&P 500). Raccolta $25B debito alza il leverage ma finanzia crescita. 52-week high $779.82 lontano; nessun catalizzatore specifico per inversione immediata. Fonte: Massive Nov 16, CNBC Nov 16 1:09 PM.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Massive (Nov 16, 15-min delayed)", "price": 632.52},
+          {"name": "CNBC (Nov 16, 1:09 PM EST)", "price": 625.74}
+        ],
+        "spread_pct": 1.08,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 61.40,
+      "change_24h": "-1.56%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - near 52-week low, vendite in corso",
+      "news": "Netflix -29% da inizio anno, vicino al minimo 52-settimane di $61.39. Motley Fool 16/11: stock a sconto del 70% vs valutazione di picco. 52-week range $61.39-$116.73. Down 32% da inizio anno. 'One number is to blame' suggerisce issue fondamentale strutturale.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 61.40,
+      "stop_loss": 59.56,
+      "target": 64.47,
+      "commissione": 0.00,
+      "reasoning": "NFLX al minimo annuo: potenziale rimbalzo tecnico ma rischi fondamentali citati. Rischio/rendimento sfavorevole per posizione lunga; possibile superamento del 52-week low a $61.39 nelle prossime sedute. HOLD precauzionale. Fonte: Motley Fool Nov 16 12:45 PM, Google Finance Nov 16 10:56 AM.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (Nov 16, 12:45 PM ET)", "price": 61.18},
+          {"name": "Google Finance (Nov 16, 10:56 AM ET)", "price": 61.62}
+        ],
+        "spread_pct": 0.72,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1449.25,
+      "change_24h": "-3.08%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "ASML in calo -17% negli ultimi 3 mesi nonostante record revenue. Preoccupazioni per spesa AI post-midterm USA. 24/7 Wall St (Nov 16): BofA Buy rating con target $2,818 (+94% upside dal prezzo attuale). La settimana scorsa +7% dopo rialzo guidance 2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1449.25,
+      "stop_loss": 1405.77,
+      "target": 1521.71,
+      "commissione": 0.00,
+      "reasoning": "ASML a forte sconto vs target BofA ($2,818, +94% upside). Guidance 2026 alzata e +7% la settimana scorsa dopo il report. AI-spending fears prevalgono nell'immediato ma fondamentali robusti. Affidabilita' MEDIA per spread 2.02% tra fonti. Fonte: Motley Fool Nov 16 11:40 AM, Blockchain.News Nov 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (Nov 16, 11:40 AM ET)", "price": 1434.63},
+          {"name": "Blockchain.News (Nov 16)", "price": 1463.87}
+        ],
+        "spread_pct": 2.02,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 234.90,
+      "change_24h": "+0.36%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "SAP chiude a $234.90 il 13 nov (+0.36%). 52-week range $144.97-$255.90. Analyst consensus Buy con target medio $284.5 (+21% upside). Nessuna notizia specifica il 16 nov trovata nelle ricerche.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 234.90,
+      "stop_loss": 227.85,
+      "target": 246.65,
+      "commissione": 0.00,
+      "reasoning": "Prezzo confermato da 2 fonti con accordo perfetto ma da chiusura Nov 13 (venerdi'); prezzo Nov 16 intraday non disponibile. Analyst target $284.5 implica upside del 21%. HOLD fino a conferma prezzi aggiornati lunedi 16 nov. Fonte: CNBC Nov 13 close, Google Finance Nov 13 close.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Nov 13 close)", "price": 234.90},
+          {"name": "Google Finance (Nov 13 close)", "price": 234.90}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA",
+        "nota": "Prezzo da chiusura Nov 13; prezzo Nov 16 intraday non disponibile nelle ricerche"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 406.60,
+      "change_24h": "-1.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Ferrari in calo dal massimo 52-settimane $437.15. Nessuna notizia specifica il 16 nov. 52-week range $312.51-$437.15. Target analyst medio $459.79 (12 analyst, consensus Buy). Moneyball Superscore 84/100 su Motley Fool.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 406.60,
+      "stop_loss": 394.40,
+      "target": 426.93,
+      "commissione": 0.00,
+      "reasoning": "RACE ha forza relativa nel settore auto europeo; brand premium con pricing power. Target analyst $459.79 suggerisce upside del 13%. Nessun catalizzatore negativo specifico; correzzione dal massimo $437 appare tecnica. Fonte: Robinhood Nov 16, Yahoo Finance Nov 16 ~11:23 AM.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 16)", "price": 406.89},
+          {"name": "Yahoo Finance (Nov 16, ~11:23 AM EST)", "price": 406.30}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 353.61,
+      "change_24h": "-0.52%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "GLD vicino al minimo 52-settimane ($352.91 il 12 nov). Oro in calo dal massimo annuo: GLD da $509.70 (gen 2026) a $353.61 (-30.6%). Settimana peggiore per oro/argento in oltre un anno. Dollar forte e rendimenti Treasury in rialzo riducono attrattivita' oro. Oro spot intorno a $3,864.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 353.61,
+      "stop_loss": 346.54,
+      "target": 367.75,
+      "commissione": 0.00,
+      "reasoning": "GLD vicino al minimo annuo ma macro headwinds forti (tassi in rialzo, dollaro forte). Possibile rimbalzo tecnico dal supporto $352.91 ma trend di medio termine ribassista. Rischio: rottura del minimo annuo apre ulteriore downside. Fonte: StockAnalysis Nov 16 11:13 AM, MarketAlleys Nov 13 close.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (Nov 16, 11:13 AM EST)", "price": 353.61},
+          {"name": "MarketAlleys (Nov 13 close)", "price": 355.45}
+        ],
+        "spread_pct": 0.52,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "SLV",
+      "motivo": "Spread fonti 4.76% > soglia 4%. StockAnalysis Nov 16 $42.08 vs Investing.com Nov 14 $44.13. Differenza probabilmente dovuta a forte calo intraday (-4.65%) ma non confermata da 2 fonti contemporanee del 16 nov. Nessun segnale generato.",
+      "prezzi_trovati": [
+        {"fonte": "StockAnalysis (Nov 16, 10:40 AM EST)", "prezzo": 42.08},
+        {"fonte": "Investing.com (Nov 14)", "prezzo": 44.13}
+      ],
+      "scarto_pct": 4.76
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "STLAM e' il ticker della Borsa Italiana (Milano) in EUR, non quotato su NYSE/Nasdaq come indicato nel prompt. Il ticker NYSE USD e' STLA. Due fonti confermano EU3.47 il 16 nov (Morningstar, Bloomberg BIT) con spread 0% ma prezzo in EUR non comparable agli altri asset USD del portfolio. Usare STLA per analisi in USD.",
+      "prezzi_trovati": [
+        {"fonte": "Morningstar Borsa Italiana (Nov 16, 2:23 PM)", "prezzo": "EUR 3.47"},
+        {"fonte": "Bloomberg BIT (Nov 16, 9:25 AM EST)", "prezzo": "EUR 3.47"}
+      ],
+      "scarto_pct": 0.00,
+      "note": "Usare ticker STLA (NYSE) per analisi in USD nella prossima scan"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "motivo": "CEO Jensen Huang dimissioni improvvise (scandalo NYT) = catalizzatore negativo di massima importanza mai visto per NVDA. Earnings domani (17 nov) con CFO ad interim. Alta incertezza leadership. SELL confidenza ALTA. Entry $156.38, target $148.56 (-5%), SL $161.07 (+3%)."
+    },
+    {
+      "rank": 2,
+      "asset": "USO",
+      "motivo": "Petrolio in bear market conclamato: Brent -18% a novembre, dollaro forte, Democrat win midterm = meno drilling, tassi in rialzo. SELL confidenza ALTA. Entry $142.09, target $136.41 (-4%), SL $144.93 (+2%)."
+    },
+    {
+      "rank": 3,
+      "asset": "BTC",
+      "motivo": "Crypto Extreme Fear (Fear & Greed Index 10), -13.9% settimanale, $1B liquidazioni il 14 nov, Fed pricing hike not cut. Contesto macro sfavorevole persistente. SELL confidenza MEDIO. Entry $64,628, target $59,458 (-8%), SL $67,860 (+5%)."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato tramite Alpaca. Allocazione ipotetica su posizioni SHORT in contesto di mercato ribassista.",
+    "allocazione_suggerita": {
+      "NVDA_SHORT": "15% — massima priorita', catalizzatore CEO resignation",
+      "USO_SHORT": "15% — trend oil ribassista molto chiaro",
+      "BTC_SHORT": "10% — crypto bear market, Extreme Fear",
+      "ETH_SHORT": "7% — correlato BTC, downtrend forte",
+      "SOL_SHORT": "5% — peggior performer settimanale, RSI oversold ma MACD negativo",
+      "AMD_SHORT": "5% — chip sector contagio NVDA, confidenza bassa",
+      "CASH_RISERVA": "43% — tenere liquidita' in contesto di alta volatilita' e incertezza"
+    }
+  }
+}
