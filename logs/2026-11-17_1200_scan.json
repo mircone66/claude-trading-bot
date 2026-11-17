@@ -1,0 +1,462 @@
+{
+  "timestamp": "2026-11-17T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Selloff tech in continuazione il 17 nov 2026. Nasdaq -2.5%, S&P500 -1.9% (sessione 16/11). Il settore chip resta sotto pressione per le dimissioni del CEO NVIDIA Jensen Huang e l'inasprimento delle regole export chip da parte del Commerce Dept. NVDA earnings attesi stasera 17/11 dopo chiusura mercati: evento binario ad alto rischio. IPO Anthropic prevista questa settimana (target valutazione $1.4T): catalyst positivo per AMZN/MSFT/GOOGL, co-investitori. BTC scende da $69K (13/11) verso $63-65K per aspettative rialzo tassi Fed. Oro e argento in correzione: GLD vicino al minimo annuale ($352.91). Oil ETFs in rialzo per sanzioni (rally USO). 15 asset analizzati con segnali; 4 esclusi (ETH, SOL, STLA, SLV) per dati insufficienti o stale.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 154.51,
+      "change_24h": "-1.04%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - alto (panico vendite, 3a sessione consecutiva in calo)",
+      "news": "NVDA -1.04% oggi, 3a sessione consecutiva al ribasso dopo dimissioni CEO Jensen Huang. Commerce Dept ha inasprimento regole export chip AI verso Cina. Earnings Q3 2027 attesi STASERA 17/11 dopo chiusura (CFO ad interim presenta i risultati). Robinhood: giornata intraday $150.33-$158.43. NVDA era a $156.14 alla chiusura 16/11, terza societa USA per market cap per la prima volta in 18 mesi.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 154.51,
+      "stop_loss": 159.15,
+      "target": 146.78,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista confermato (3 sessioni consecutive negative post-CEO resignation). Export chip rules = nuovo headwind strutturale. ATTENZIONE: earnings stasera 17/11 rappresentano rischio binario elevato (gap up/down possibile). Confidenza BASSA per evento earnings. Fonte: Robinhood Nov 17, Massive.com Nov 17 10:04 AM EST.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 17, intraday range $150.33-$158.43)", "price": 154.01},
+          {"name": "Massive.com (Nov 17, 10:04 AM EST)", "price": 155.01}
+        ],
+        "spread_pct": 0.65,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 504.28,
+      "change_24h": "-5.58%",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - alto (panico vendite settore chip)",
+      "news": "AMD crolla -5.58% il 16/11 (chiusura $504.28 da $534.06 il 13/11). Penalizzato dall'inasprimento regole export chip AI da parte del Commerce Dept USA, in concomitanza con il contagio post-CEO NVDA. 52-week range $188.22-$658.52: ora -24% dal massimo annuale. Morningstar conferma chiusura $504.28 con pre-open $502.08.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 504.28,
+      "stop_loss": 519.41,
+      "target": 479.07,
+      "commissione": 0.00,
+      "reasoning": "Crollo -5.58% il 16/11 con due fonti concordanti (spread 0%) su nuovo headwind strutturale (export chip rules). Settore semiconduttori ancora sotto pressione prima degli earnings NVDA stasera. Trend di medio termine ribassista da ATH $658. Fonte: JournalArta/Investing.com Nov 16 close, Morningstar Nov 16 close.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "JournalArta/Investing.com (Nov 16 close)", "price": 504.28},
+          {"name": "Morningstar (Nov 16 close)", "price": 504.28}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 626.19,
+      "change_24h": "-0.47%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Un governatore Fed ha espresso preoccupazioni sul debito aziendale dei hyperscaler come Meta (che ha raccolto ~$25 miliardi di debito a novembre). Il commento hawkish alimenta timori per il costo finanziario dell'AI build-out. META a 5-week low, da $697.52 (22/10) a $626 (-10.2%). Fox Business Nov 11 $628.77. 52-week range $520.26-$779.82.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 626.19,
+      "stop_loss": 644.98,
+      "target": 594.88,
+      "commissione": 0.00,
+      "reasoning": "Downtrend da 4 settimane ($697 → $626, -10%). Fed hawkish su debito aziendale = headwind specifico per Meta che ha emesso $25B debito a novembre. Nessun catalyst positivo visibile a breve. 52-week high $779.82 lontano. Fonte: Fox Business Nov 11, Chronicle Journal Nov 11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fox Business (Nov 11, 4:00 PM EDT)", "price": 628.77},
+          {"name": "Chronicle Journal (Nov 11)", "price": 623.61}
+        ],
+        "spread_pct": 0.82,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 64256.20,
+      "change_24h": "-0.57%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo - alto (pressione macro, USD forte)",
+      "news": "BTC sceso da $69K (13/11) verso $63-65K il 17/11. Fortune riporta $65,016 alle 8:15 AM ET; CoinDesk riporta $63,496 alle 11:56 AM. Pressione da dollaro forte e attese rialzo tassi Fed. BTC giornata volatile: Fortune Nov 15 $64,787, Nov 16 $64,012. Crypto Fear & Greed Index in zona 'Fear'. Un'analisi: BTC -40% dal record storico ~$126K (ott 2025).",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 64256.20,
+      "stop_loss": 67468.01,
+      "target": 59115.70,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista di medio termine (-40% da ATH). Macro headwinds persistenti: USD forte, attese rialzo Fed. Spread inter-giornaliero 2.37% tra fonti (mattina vs pomeriggio 17/11) indica alta volatilita' intraday. Confidenza BASSA per affidabilita' MEDIA. Fonte: Fortune Nov 17 (8:15 AM ET), CoinDesk Nov 17 (11:56 AM EST).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Nov 17, 8:15 AM ET)", "price": 65016.66},
+          {"name": "CoinDesk (Nov 17, 11:56 AM EST)", "price": 63495.73}
+        ],
+        "spread_pct": 2.37,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1502.49,
+      "change_24h": "-2.43%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "ASML ha battuto le stime Q3 2026 il 14 ottobre: revenue in linea con aspettative record, outlook Q4 forte. L'azienda ha dichiarato di non poter soddisfare pienamente la domanda nei prossimi 2 anni (backlog elevato). FinancialContent: chiusura 12/11 $1,497.12. Benzinga: chiusura 10/11 $1,507.85, prossimi earnings Q4 stim. 27 gen 2027. 52-week range $946.11-$1,999.96.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1502.49,
+      "stop_loss": 1457.42,
+      "target": 1577.61,
+      "commissione": 0.00,
+      "reasoning": "ASML monopolio mondiale EUV lithography: capacita' produttiva saturata per 2+ anni. Earnings Q3 gia' battuti (14/10). Correzione dal massimo annuale ($1,999 → $1,502, -25%) appare eccessiva data la solidita' dei fondamentali. Analyst BofA target $2,818 (+88% upside). Fonte: FinancialContent Nov 12, Benzinga Nov 10.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (Nov 12, delayed)", "price": 1497.12},
+          {"name": "Benzinga (Nov 10 close)", "price": 1507.85}
+        ],
+        "spread_pct": 0.71,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 413.45,
+      "change_24h": "N/A",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Ferrari ha battuto le stime Q3 2026 (3 novembre): EPS $2.81 vs stima $2.66 (+5.6%). Il brand premium mantiene forte pricing power. Benzinga: chiusura 13/11 $411.13. Fox Business: chiusura 10/11 $415.77. 52-week high $437.15. Market cap ~$71B. Consensus analyst: Moderate Buy, target medio $459.79 (+11% upside).",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 413.45,
+      "stop_loss": 401.05,
+      "target": 434.12,
+      "commissione": 0.00,
+      "reasoning": "Ferrari ha battuto EPS Q3 di +5.6% (3/11). Brand luxury con forte pricing power resistente alle recessioni. Correzione dal massimo $437.15 a $413 (-5.5%) appare tecnica e rappresenta punto di ingresso. Target analyst $459.79 (+11% upside). Affidabilita MEDIA (fonti da Nov 10-13). Fonte: Benzinga Nov 13, Fox Business Nov 10.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Benzinga (Nov 13 close, 4:00 PM EST)", "price": 411.13},
+          {"name": "Fox Business (Nov 10 close)", "price": 415.77}
+        ],
+        "spread_pct": 1.12,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 352.95,
+      "change_24h": "-0.26%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Apple e' diventata la prima azienda al mondo per market cap (Motley Fool, 17/11). Stock resiliente durante il selloff tech. Motley Fool: $351.88 alle 12:18 PM ET (range giornaliero $350.21-$355.36). Google Finance: $354.01 alle 10:29 AM ET. Seeking Alpha: chiusura 16/11 $352.78. 52-week range $243.42-$360.83.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 352.95,
+      "stop_loss": 342.36,
+      "target": 370.60,
+      "commissione": 0.00,
+      "reasoning": "AAPL dimostra forza relativa vs settore tech in selloff. Ora prima azienda al mondo per market cap. Near 52-week high ($360.83). Rischio: contesto macro avverso (Fed rate hike atteso) limita upside nel breve. HOLD con bias positivo. Fonte: Motley Fool Nov 17, Google Finance Nov 17.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (Nov 17, 12:18 PM ET)", "price": 351.88},
+          {"name": "Google Finance (Nov 17, 10:29 AM ET)", "price": 354.01}
+        ],
+        "spread_pct": 0.60,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 284.09,
+      "change_24h": "+0.13%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Alphabet -4.07% il 16/11 (chiusura $283.72). UBS ha assunto coverage con rating Neutral. Alphabet ha investito $10B in Anthropic; IPO Anthropic attesa questa settimana = catalyst positivo per GOOGL. Traders Union Nov 17: $284.46. Seeking Alpha Nov 16 close: $283.72. 52-week range $272.11-$408.61.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 284.09,
+      "stop_loss": 275.57,
+      "target": 298.29,
+      "commissione": 0.00,
+      "reasoning": "GOOGL a supporto breve termine con IPO Anthropic come catalyst prossimo (co-investitore diretto). UBS Neutral limita upside immediato. 52-week low $272.11 vicino = supporto chiave. Target analyst medio ~$400 (+41% upside). Fonte: Seeking Alpha Nov 16 close, Traders Union Nov 17.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha (Nov 16, 4:00 PM close)", "price": 283.72},
+          {"name": "Traders Union (Nov 17)", "price": 284.46}
+        ],
+        "spread_pct": 0.26,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 383.45,
+      "change_24h": "N/A",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "TSLA nel range $380-390 nelle ultime sessioni. Benzinga: $387.11 il 13/11. Fox Business: $379.78 il 11/11. Generale selloff tech pesa. Nessun catalizzatore specifico trovato. 52-week range $297.38-$498.83 (ATH ott 2026). Musk comments su Cybercab fee ($300/mese troppo alto) continuano a pesare.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 383.45,
+      "stop_loss": 372.00,
+      "target": 402.62,
+      "commissione": 0.00,
+      "reasoning": "TSLA in range senza direzionalita' chiara. Affidabilita' MEDIA (spread 1.91% tra fonti da date diverse 11-13 nov). Generale selloff tech limita upside. Nessun catalizzatore specifico identificato. Fonte: Benzinga Nov 13, Fox Business Nov 11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Benzinga (Nov 13, 7:59 PM EST)", "price": 387.11},
+          {"name": "Fox Business (Nov 11 close)", "price": 379.78}
+        ],
+        "spread_pct": 1.91,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 532.74,
+      "change_24h": "stima -3% (notizie Nov 17, non confermato da 2 fonti)",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Microsoft in calo stimato -3% il 17/11 (fonte notizie aggregate, non confermato da 2 fonti). Fox Business: $535.93 il 06/11, Massive: $529.56 il 06/11. ATTENZIONE: prezzo validato e' del 06/11 (11 giorni fa); prezzo attuale stimato ~$510-517. MSFT e' co-investitore in Anthropic (IPO questa settimana). Notizie: bullish options positioning ai minimi da dicembre 2022.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 532.74,
+      "stop_loss": 516.76,
+      "target": 559.38,
+      "commissione": 0.00,
+      "reasoning": "ATTENZIONE - prezzo validato dal 06/11 (11 giorni fa, dati stale). Le notizie del 17/11 indicano -3% circa → prezzo reale stimato ~$517. IPO Anthropic = catalyst positivo (co-investitore). HOLD cautelare; verificare aggiornamento prezzi prima di qualsiasi operazione. Fonte: Fox Business Nov 6, Massive.com Nov 6.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fox Business (Nov 6 close)", "price": 535.93},
+          {"name": "Massive.com (Nov 6, 9:59 AM EST)", "price": 529.56}
+        ],
+        "spread_pct": 1.20,
+        "affidabilita": "MEDIA",
+        "nota": "Dati del 06/11, potenzialmente stale. Prezzo Nov 17 stimato ~$510-517 da notizie aggregate."
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 263.37,
+      "change_24h": "N/A",
+      "trend_5d": "laterale",
+      "volume_note": "Volume anomalo - alto (sessioni recenti)",
+      "news": "Amazon co-investitore in Anthropic: IPO Anthropic attesa questa settimana e' catalyst positivo. Fox Business: $267.44 il 13/11 (52-week range $196-$287.16, market cap $2.88T). MarketChameleon: $259.30 il 06/11. Analyst consensus Buy, target medio $326 (+24% upside).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 263.37,
+      "stop_loss": 255.47,
+      "target": 276.54,
+      "commissione": 0.00,
+      "reasoning": "Catalyst positivo (IPO Anthropic questa settimana, AMZN co-investitore). Target analyst $326 implica +24% upside. Affidabilita' MEDIA (spread 3.09%, fonti da date diverse). HOLD con bias positivo per catalyst Anthropic. Fonte: Fox Business Nov 13, MarketChameleon Nov 6.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fox Business (Nov 13, 4:00 PM EDT)", "price": 267.44},
+          {"name": "MarketChameleon (Nov 6)", "price": 259.30}
+        ],
+        "spread_pct": 3.09,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 63.05,
+      "change_24h": "N/A",
+      "trend_5d": "fortemente ribassista",
+      "volume_note": "Volume anomalo - alto (near 52-week low, vendite in corso)",
+      "news": "NFLX near minimo annuale $61.40. Fox Business: $62.69 chiusura 13/11. FinancialContent: giornata range $63.31-$64.35 (data simile). Down ~46% dal massimo 52-settimane di $116.73. Motley Fool descrive il titolo 'a sconto del 70% vs valutazione di picco'. Prossimi earnings: stima Q4 2027.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 63.05,
+      "stop_loss": 61.16,
+      "target": 66.20,
+      "commissione": 0.00,
+      "reasoning": "NFLX vicino al minimo annuale $61.40: potenziale rimbalzo tecnico ma rischi fondamentali citati da Motley Fool ('issue strutturale'). Stop loss stretto ($61.16, vicino al 52-week low). Rischio rottura supporto = ulteriore downside. HOLD precauzionale. Fonte: Fox Business Nov 13, FinancialContent ~Nov 6-7.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fox Business (Nov 13, 4:00 PM EDT)", "price": 62.69},
+          {"name": "FinancialContent (Prev.Close 65.56, intraday range 63.31-64.35)", "price": 63.41}
+        ],
+        "spread_pct": 1.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 239.27,
+      "change_24h": "N/A",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "SAP NYSE: FinancialContent Nov 13 close $234.90 (ultima quotazione recente disponibile). Fox Business Nov 6 close $243.64 (-4.19% quella sessione). 52-week range $144.97-$255.90. Consensus 10 Buy, 3 Overweight, 2 Hold. Target medio analisti $284.5 (+19% upside). Market cap ~$271B.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 239.27,
+      "stop_loss": 232.09,
+      "target": 251.23,
+      "commissione": 0.00,
+      "reasoning": "Affidabilita' MEDIA (spread 3.65%, fonti da date diverse Nov 6 vs Nov 13). Target analyst $284.5 implica upside del 19%. Nessun catalizzatore specifico trovato. HOLD fino a conferma prezzi aggiornati. Fonte: FinancialContent Nov 13, Fox Business Nov 6.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (Nov 13 close)", "price": 234.90},
+          {"name": "Fox Business (Nov 6 close)", "price": 243.64}
+        ],
+        "spread_pct": 3.65,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 353.27,
+      "change_24h": "-0.71%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "GLD vicino al minimo annuale ($352.91). StockInvest: chiusura 16/11 $352.93 (-0.71%). StockAnalysis: $353.61 intraday 16/11. Oro sceso sotto $4,000/oz (Motley Fool titolo: 'Gold Falls Below $4,000'). GLD -11% YTD, -30% dal massimo annuale $509.70 (gen 2026). Macro headwinds: USD forte, rendimenti Treasury in rialzo. Oil ETFs in rialzo mentre oro/argento correggono.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 353.27,
+      "stop_loss": 346.20,
+      "target": 367.40,
+      "commissione": 0.00,
+      "reasoning": "GLD al minimo annuale ($352.91 il 12/11): doppio rischio. Se supporto regge → rimbalzo tecnico possibile. Se rompe → ulteriore downside aperto. Macro headwinds persistono ma non si amplifano significativamente oggi. HOLD (non SELL) per vicinanza al supporto chiave. Fonte: StockInvest.us Nov 16, StockAnalysis.com Nov 16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockInvest.us (Nov 16 close)", "price": 352.93},
+          {"name": "StockAnalysis.com (Nov 16, 11:13 AM EST)", "price": 353.61}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 145.52,
+      "change_24h": "N/A",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume normale",
+      "news": "Oil ETFs in rialzo per rally sanzioni (TrackInsight: 'Oil ETFs surge, sanctions drive price rally'). MarketChameleon: $145.58 chiusura 13/11. Fox Business: $145.45 chiusura 05/11. ATTENZIONE: prezzo validato da Nov 5-13 (dati potenzialmente stale). La sessione 16/11 non ha dati confermati per USO nelle ricerche odierne.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 145.52,
+      "stop_loss": 142.61,
+      "target": 151.34,
+      "commissione": 0.00,
+      "reasoning": "Notizie indicano rally oil ETF su sanzioni ma dati price da Nov 5-13 (potenzialmente stale vs scan precedente che mostrava $142 il 16/11). Segnali contrastanti: news bullish vs trend precedente ribassista. HOLD cautelare con confidenza BASSA fino a verifica prezzi aggiornati. Fonte: MarketChameleon Nov 13, Fox Business Nov 5.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketChameleon (Nov 13 close)", "price": 145.58},
+          {"name": "Fox Business (Nov 5 close)", "price": 145.45}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "MEDIA",
+        "nota": "Dati da Nov 5-13; scan precedente (16/11) mostrava $142.09. Prezzi Nov 17 non confermati."
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "SLV",
+      "motivo": "Dati stale: fonti disponibili da Nov 6 (Fox Business $46.94) e MarketBeat undated ($46.65), ma scan precedente del 16/11 mostrava SLV a $42.08-$44.13. I dati trovati oggi sono inconsistenti con il prezzo di mercato recente. Nessun segnale generato.",
+      "prezzi_trovati": [
+        {"fonte": "Fox Business (Nov 6 close)", "prezzo": 46.94},
+        {"fonte": "MarketBeat (undated)", "prezzo": 46.65}
+      ],
+      "scarto_pct": 0.62,
+      "note": "Prezzi da Nov 6 non rappresentativi del valore Nov 17. Scan 16/11 mostrava SLV ~$42."
+    },
+    {
+      "asset": "STLA",
+      "motivo": "Spread > 4% tra le due fonti piu recenti: AAII Nov 13 close $3.82 vs Benzinga Nov 11 close $4.11. Scarto 7.3%. Fonte singola per la data piu recente (Nov 13). Nessun segnale generato.",
+      "prezzi_trovati": [
+        {"fonte": "AAII (Nov 13 close)", "prezzo": 3.82},
+        {"fonte": "Benzinga (Nov 11 close)", "prezzo": 4.11}
+      ],
+      "scarto_pct": 7.30,
+      "note": "STLA e' il ticker NYSE/USD di Stellantis (STLAM e' Milano/EUR). Spread molto elevato probabilmente dovuto a forte calo intra-settimana (-17.67% a novembre per AAII)."
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Fonte spot singola verificata con data: Fortune Nov 13 $1,953.96. Fonte Nov 17 (contratto derivato Deribit eth-17nov26 ~$1,966) non e' prezzi spot. Affidabilita BASSA per fonte < 2 spot. Scan precedente (16/11) mostrava ETH $1,801.42 con 2 fonti verificate.",
+      "prezzi_trovati": [
+        {"fonte": "Fortune (Nov 13, 8:30 AM ET)", "prezzo": 1953.96},
+        {"fonte": "Deribit eth-17nov26 contract (Nov 17, derivato)", "prezzo": 1966.00}
+      ],
+      "scarto_pct": 0.62,
+      "note": "Solo 1 fonte spot attendibile con data verificata. Contratto derivato Deribit non equivalente a prezzo spot. Esclusione per regola 'Fonti < 2 → BASSA'."
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Dati stale e fonte singola verificata. MEXC Nov 7 $90.18 (10 giorni fa). Scan precedente (16/11) mostrava SOL $71.43 (OKX + Bybit, ALTA) - scarto del 26% vs dati odierni trovati. Affidabilita BASSA.",
+      "prezzi_trovati": [
+        {"fonte": "MEXC (Nov 7, 15:50 UTC+8)", "prezzo": 90.18},
+        {"fonte": "EdgeX (undated, articolo 'SOL trades near $89')", "prezzo": 89.00}
+      ],
+      "scarto_pct": 1.32,
+      "note": "MEXC data Nov 7 inconsistente con scan 16/11 ($71.43). Dati odierni trovati probabilmente stale o da fonte poco affidabile."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "ASML",
+      "motivo": "BUY: monopolio mondiale EUV lithography, domanda > offerta per 2+ anni, earnings Q3 gia' battuti (14/10), correzione -25% dal massimo annuale. BofA target $2,818 (+88% upside). Entry $1,502.49, SL $1,457.42 (-3%), Target $1,577.61 (+5%). Confidenza Medio, affidabilita ALTA."
+    },
+    {
+      "rank": 2,
+      "asset": "AMD",
+      "motivo": "SELL: -5.58% il 16/11 confermato da 2 fonti (spread 0%). Export chip rules = headwind strutturale. Settore chip sotto pressione massima. Entry $504.28, SL $519.41 (+3%), Target $479.07 (-5%). Confidenza Medio, affidabilita ALTA."
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "BUY: Ferrari ha battuto EPS Q3 +5.6% il 3/11. Brand luxury con pricing power resiliente. Correzione dal massimo $437 a $413 (-5.5%) appare tecnica. Target analyst medio $459.79 (+11%). Entry $413.45, SL $401.05 (-3%), Target $434.12 (+5%). Confidenza Medio, affidabilita MEDIA."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale inviato tramite Alpaca. Allocazione ipotetica basata sui segnali generati.",
+    "allocazione_suggerita": {
+      "ASML_LONG": "12% — massima priorita', monopolio EUV, fondamentali eccellenti",
+      "AMD_SHORT": "10% — SELL ad alta confidenza, dati freschi, chip export rules",
+      "META_SHORT": "8% — SELL confermato, Fed hawkish su debito hyperscaler",
+      "NVDA_SHORT": "5% — SELL mantenuto ma ridotto per rischio binario earnings stasera",
+      "RACE_LONG": "5% — BUY su earnings beat Ferrari, brand resiliente",
+      "BTC_SHORT": "5% — SELL mantenuto, macro headwinds, confidenza bassa per spread MEDIA",
+      "CASH_RISERVA": "55% — alta liquidita' per incertezza earnings NVDA + IPO Anthropic questa settimana"
+    }
+  }
+}
