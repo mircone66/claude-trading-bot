@@ -1,0 +1,546 @@
+{
+  "timestamp": "2026-11-18T18:18:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione del 18 novembre 2026 dominata da notizie NVIDIA: risultati Q3 FY2027 hanno battuto le stime con guidance revenue +75% YoY, ma il titolo ha ceduto per export restriction USA su chip AI avanzati verso Asia. Anthropic IPO in avvicinamento ha spinto AMZN e GOOGL. Tech volatilità elevata con Nasdaq ancora sotto pressione rispetto agli ultimi massimi. Gold e silver in forte calo con il Fed Governor Waller che ha ipotizzato un rialzo dei tassi di 50bp, spingendo i metalli preziosi ai minimi di 12-14 mesi. WTI petrolio crollato oltre il 4% a $82.19/bbl. Crypto debole: BTC sotto $63K per timore di politica monetaria più restrittiva. Stellantis tocca nuovi minimi storici dopo downgrade Oddo BHF. SAP in calo di ~3% con acquisti massicci di opzioni put.",
+  "signals": [
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 152.79,
+      "change_24h": "-1.72%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — settimana segnata da export restriction news e poi rimbalzo da earnings beat",
+      "news": "NVIDIA batte stime Q3 FY2027: EPS +8.47% vs attese, revenue +6.56%. Guidance fatturato FY2028 +75% YoY. Tuttavia export restriction USA su chip avanzati verso data center di alcuni paesi impattano sentiment. (Fonte: Google Finance / Reuters Investing.com Nov 18 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 152.79,
+      "stop_loss": 148.21,
+      "target": 160.43,
+      "commissione": 0.00,
+      "reasoning": "Earnings beat solido con forte guidance; il sell-off post-annuncio (-1.7%) appare come 'sell the news' tecnico su titolo già ribassista da ottobre. Upside guidato da AI demand; risk principale rimane incertezza export restriction.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 152.75},
+          {"name": "CNBC", "price": 152.82}
+        ],
+        "spread_pct": 0.05,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 520.32,
+      "change_24h": "+3.37%",
+      "trend_5d": "rialzista",
+      "volume_note": "Volume anomalo — +3% intraday sostenuto da coattail effect earnings NVDA",
+      "news": "AMD rimbalza +3% sul coattail di NVIDIA earnings beat. Precedentemente colpita da nuove restrizioni export USA su chip AI avanzati verso paesi del Sud-Est asiatico; ora recupera terreno con KLA Corp. David Tepper ha liquidato posizione AMD nel Q3 (13F Nov 16). (Fonte: FinanceFeeds / CNBC Nov 18 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 520.32,
+      "stop_loss": 504.71,
+      "target": 546.34,
+      "commissione": 0.00,
+      "reasoning": "Momentum positivo intraday sostenuto dall'eco delle trimestrali NVDA; pattern di rimbalzo dal minimo settimanale $480. Risk: posizionamento ancora sotto pressione da export restriction che penalizzano l'intero settore semiconduttori AI.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (12:27 PM EST)", "price": 519.25},
+          {"name": "Stockanalysis (12:29 PM EST)", "price": 521.39}
+        ],
+        "spread_pct": 0.41,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 257.89,
+      "change_24h": "+0.05%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Amazon rally +2% intraday su notizie Anthropic IPO imminente. AMZN è proxy diretto di Anthropic tramite investimento significativo; il pricing dell'IPO atteso a breve. (Fonte: Yahoo Finance / Motley Fool Stock Market Today Nov 18 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 257.89,
+      "stop_loss": 250.15,
+      "target": 270.78,
+      "commissione": 0.00,
+      "reasoning": "Catalyst a breve termine: Anthropic IPO pricing imminente funge da re-rating dell'investimento AMZN in AI. 52-week range $196-$287, titolo a metà range con potenziale upside verso resistenza $270+.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha (close Nov 17)", "price": 257.88},
+          {"name": "Investing.com (Nov 18)", "price": 257.89}
+        ],
+        "spread_pct": 0.004,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 282.40,
+      "change_24h": "+0.74%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume nella norma",
+      "news": "Alphabet +0.7-0.9% su Anthropic IPO: GOOGL è co-investitore diretto in Anthropic; pricing IPO è un catalyst di short-term re-rating. UBS ha avviato copertura con Neutral e target $320. (Fonte: Google Finance / Benzinga Nov 18 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 282.40,
+      "stop_loss": 273.93,
+      "target": 296.52,
+      "commissione": 0.00,
+      "reasoning": "Stesso catalyst Anthropic IPO di AMZN; in aggiunta GOOGL ha P/E 14.8 e potenziale upside significativo verso target consensus $335-$387. Titolo ha ceduto da $408 a $280 YTD con possibile rimbalzo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (10:22 AM EST Nov 18)", "price": 282.66},
+          {"name": "Benzinga (Nov 18)", "price": 282.13}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 75.04,
+      "change_24h": "+5.10%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — +5% outperformance vs BTC e ETH",
+      "news": "Solana sale +5.1% il 18 nov mentre BTC e ETH cedono, mostrando forza relativa. DTCC pianifica di tokenizzare securities su blockchain Solana — notizia con impatto istituzionale significativo. (Fonte: Analyticsinsight / Pickaxe.io Nov 18 2026)",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 75.04,
+      "stop_loss": 71.29,
+      "target": 81.04,
+      "commissione": 0.00,
+      "reasoning": "Forza relativa marcata rispetto a BTC -2.5% e ETH -1.2%; catalyst istituzionale DTCC tokenizzazione su Solana. Pattern tecnico: minimo a $67 la settimana scorsa con rebound; possibile inversione con volume.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (04:53 AM Nov 18)", "price": 74.90},
+          {"name": "Coinglass (15:25 UTC+8 Nov 18)", "price": 75.18}
+        ],
+        "spread_pct": 0.37,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 342.37,
+      "change_24h": "-2.87%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — calo significativo in sessione; GLD -7% negli ultimi 5 giorni",
+      "news": "GLD cede 2.87% il 18 nov; gold spot scende a minimi di 14 mesi a ~$3,758/oz. Catalyst: Fed Governor Waller ha aperto alla possibilità di un rialzo tassi di 50bp, penalizzando i metalli preziosi che non generano yield. (Fonte: CNBC live blog / Kotakneo Nov 18 2026)",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 342.37,
+      "stop_loss": 349.22,
+      "target": 328.68,
+      "commissione": 0.00,
+      "reasoning": "Trend fortemente ribassista (-7% in 5 gg), gold a minimi plurimensili; catalyst hawkish Fed da Waller 50bp ipotizzato. Momentum chiaramente negativo con notizie di silver -12% e gold ETFs -3%+ in settimana.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (Nov 18 intraday)", "price": 342.37},
+          {"name": "Stockanalysis (Nov 16 — 2 gg prima)", "price": 353.61}
+        ],
+        "spread_pct": 3.31,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte è di 2 giorni fa; lo spread riflette il reale calo di prezzo, non disaccordo tra fonti. Notizie confermano calo ~3% il 18 nov."
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 42.50,
+      "change_24h": "-3.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — SLV -11.9% negli ultimi 5 giorni",
+      "news": "Silver cede oltre 3% il 18 nov raggiungendo minimi di un anno. Spot silver a ~$45.67/oz, in calo dal $47.19 di lunedì. SLV -11.9% in 5 sessioni. Pressione da attese rialzo tassi Fed. (Fonte: Rio Times / CNBC Nov 18 2026)",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 42.50,
+      "stop_loss": 43.35,
+      "target": 40.80,
+      "commissione": 0.00,
+      "reasoning": "Momentum ribassista molto marcato (-12% in 5 gg); silver al minimo annuale. Driver Fed identico a GLD ma con amplificazione maggiore (-12% vs -7% in 5 gg). Nessun catalyst positivo identificabile a breve.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com AU (Nov 17)", "price": 42.60},
+          {"name": "Investing.com US (Nov 16)", "price": 42.39}
+        ],
+        "spread_pct": 0.50,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 140.14,
+      "change_24h": "n/d (prezzo Nov 17 — Nov 18 non disponibile)",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume non disponibile per Nov 18",
+      "news": "WTI crude futures crollano oltre 4% il 18 nov a $82.19/bbl; Brent scende a $90.83/bbl (-2%). Oil sotto pressione da domanda debole e attese tassi più alti. USO probabile calo significativo nella sessione odierna. (Fonte: CNBC live blog Nov 18 2026)",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 140.14,
+      "stop_loss": 142.94,
+      "target": 134.53,
+      "commissione": 0.00,
+      "reasoning": "Oil in calo netto il 18 nov; prezzo USO disponibile solo fino al 17 nov (chiusura $140.24). Stima per nov 18: -4% da $140.14 ≈ $134-135. Confidence BASSO data indisponibilità prezzo Nov 18 diretto.",
+      "data_real": false,
+      "price_validation": {
+        "sources": [
+          {"name": "Marketalleys (Nov 16)", "price": 140.03},
+          {"name": "Stockanalysis (close Nov 17)", "price": 140.24}
+        ],
+        "spread_pct": 0.15,
+        "affidabilita": "MEDIA",
+        "nota": "Prezzi da Nov 16-17; Nov 18 non disponibile. WTI -4%+ il 18 nov implica calo significativo anche per USO."
+      }
+    },
+    {
+      "asset": "STLA",
+      "type": "stock_eu",
+      "price": 3.65,
+      "change_24h": "-2.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — Stellantis a nuovi minimi storici",
+      "news": "Oddo BHF downgrades Stellantis a 'Underperform' tagliando target a €3; azioni toccano minimi storici, market cap scende sotto €10 miliardi. Serie di 7 sessioni consecutive negative. (Fonte: MarketScreener / Investing.com Nov 18 2026)",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 3.65,
+      "stop_loss": 3.76,
+      "target": 3.47,
+      "commissione": 0.00,
+      "reasoning": "Record all-time low con downgrade analist a Underperform e target €3; market cap sotto €10B con 7 sedute consecutive negative. Momentum ribassista estremo senza catalyst di inversione visibili.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (close Nov 17)", "price": 3.64},
+          {"name": "MarketBeat (Nov 17)", "price": 3.66}
+        ],
+        "spread_pct": 0.55,
+        "affidabilita": "ALTA",
+        "nota": "Ticker NYSE: STLA (non STLAM che è listing Milano). Dati da Nov 17 close; mercato USA aperto Nov 18."
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 215.24,
+      "change_24h": "-3.27%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — heavy put option buying segnalato su NYSE il 17 nov",
+      "news": "SAP cede -3.27% il 18 nov (da $222.51 a $215.24) con volume di acquisto massiccio di opzioni put registrato su NYSE. Il titolo è in calo dal massimo annuale di $255.90. (Fonte: Google Finance / MarketBeat Nov 17-18 2026)",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 215.24,
+      "stop_loss": 221.70,
+      "target": 204.48,
+      "commissione": 0.00,
+      "reasoning": "Calo intraday -3.3% con put option accumulation — segnale istituzionale ribassista. SAP a 15% dal massimo annuale; nessuna notizia specifica trovata ma flussi opzioni confermano pressione ribassista. Incertezza: spread MEDIA tra fonte Nov 18 e close Nov 17.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance (09:41 AM EST Nov 18)", "price": 215.24},
+          {"name": "NYSE close (Nov 17)", "price": 222.51}
+        ],
+        "spread_pct": 3.38,
+        "affidabilita": "MEDIA",
+        "nota": "Spread riflette reale calo intraday Nov 18 vs close Nov 17, non disaccordo tra fonti."
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 351.45,
+      "change_24h": "-0.13%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Apple stabile in settimana volatile; nessun catalyst specifico identificato. 52-week range $243-$361; titolo vicino al massimo annuale. (Fonte: Blockchain.news / Stockanalysis Nov 18 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 351.45,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Assenza di catalyst specifici; titolo laterale vicino ai massimi 52-week. Contesto macro tecnico negativo ma AAPL dimostra resilienza. Attendere conferma direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Blockchain.news (Nov 18)", "price": 349.96},
+          {"name": "Stockanalysis (11:12 AM EST Nov 18)", "price": 352.94}
+        ],
+        "spread_pct": 0.85,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 380.92,
+      "change_24h": "+0.43%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Tesla lieve +0.4% in sessione; -15.48% YTD. Consensus analyst target $419.47. After-hours Nov 17 a $384.26 (+1.08%). (Fonte: Yahoo Finance / heygotrade Nov 17-18 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 380.92,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Nessun catalyst specifico; titolo laterale tra $374 e $383. P/E 417 molto elevato; attending catalyst macro/EV per ripresa. HOLD fino a segnale direzionale chiaro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / heygotrade (close Nov 17)", "price": 380.11},
+          {"name": "heygotrade intraday (Nov 18)", "price": 381.73}
+        ],
+        "spread_pct": 0.43,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 502.84,
+      "change_24h": "-1.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma; bullish options al minimo dal dicembre 2022",
+      "news": "Microsoft in calo; bullish options positioning sceso ai minimi dal dicembre 2022 secondo Vanda Research. Titolo da $517 a ~$499-506 in settimana. (Fonte: Yahoo Finance / Google Finance Nov 17-18 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 502.84,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Posizionamento istituzionale rialzista ai minimi — segnale di cautela; nessun catalyst positivo specifico. Attendere prima di aprire posizioni long in contesto di debolezza generale tech.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (Nov 18 intraday)", "price": 499.44},
+          {"name": "Google Finance (close Nov 17)", "price": 506.24}
+        ],
+        "spread_pct": 1.36,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 616.22,
+      "change_24h": "-0.43%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Meta -12% nell'ultimo mese su preoccupazioni per l'incremento del debito. Insider Susan Li ha venduto 2.127 azioni il 17 nov. Consensus analyst Strong Buy, target $848. (Fonte: Stockanalysis / MarketBeat Nov 17-18 2026)",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 616.22,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Trend ribassista -12% mensile con insider selling; nonostante consensus forte (Strong Buy, target $848), la pressione a breve è negativa. Attendere stabilizzazione prima di entrare long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis (10:38 AM EST Nov 18)", "price": 614.65},
+          {"name": "Seeking Alpha (09:54 AM EST Nov 18)", "price": 617.79}
+        ],
+        "spread_pct": 0.51,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 59.69,
+      "change_24h": "-0.17%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "Netflix vicino al minimo 52-week ($59.43); nessuna notizia specifica identificata nella sessione. Market cap ~$248.5B. Analyst consensus target $84.76. (Fonte: Investing.com / Benzinga Nov 17-18 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 59.69,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Titolo a pochissimo dal minimo annuale ($59.43): potenziale supporto tecnico ma contesto macro non favorevole. HOLD: rischio di rottura al ribasso vs potenziale rimbalzo tecnico, attendere conferma.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com (close Nov 17)", "price": 59.68},
+          {"name": "Benzinga (Nov 18)", "price": 59.70}
+        ],
+        "spread_pct": 0.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1394.31,
+      "change_24h": "+1.60%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — titolo molto volatile per export restriction news",
+      "news": "ASML cede 2.1% il 17 nov a €1,279 per nuove regole BIS (Bureau of Industry and Security) su export chip AI avanzati; rimbalza +1.6% in pre-apertura Nov 18 a $1,405. MarketBeat close Nov 16: $1,405.28 (-6.01%). (Fonte: Investing.com Nov 17-18 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1394.31,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "ASML in zona di incertezza massima per export restriction USA — rischio sistemico elevato per l'intero settore. Rimbalzo tecnico in corso ma fragilità strutturale persiste. Affidabilità MEDIA per spread 1.62% tra giorni diversi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (close Nov 17)", "price": 1383.11},
+          {"name": "Investing.com (pre-open Nov 18)", "price": 1405.50}
+        ],
+        "spread_pct": 1.62,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 401.06,
+      "change_24h": "+0.51%",
+      "trend_5d": "laterale",
+      "volume_note": "Volume normale",
+      "news": "Ferrari stabile senza notizie specifiche nella sessione; nessun catalyst identificato. 52-week range $312-$437. (Fonte: Robinhood / Investing.com Nov 17 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 401.06,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Nessun catalyst; titolo laterale a metà del range 52-week. Defensive stock di lusso, poco correlato con AI/tech selloff; attendere segnale direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 17)", "price": 399.02},
+          {"name": "Investing.com", "price": 403.09}
+        ],
+        "spread_pct": 1.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 62663.00,
+      "change_24h": "-2.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo — BTC ETF outflow $240M; volatilità elevata",
+      "news": "BTC scende da $64,500 a ~$62,500 nel pomeriggio del 18 nov; Fed Governor Waller ipotizza rialzo 50bp portando BTC sotto $63K. Bitcoin ETF outflow $240M secondo CryptoQuant che segnala fase ribassista di mercato. ATH $126,210 (Oct 2025). (Fonte: CoinDesk / Crypto.com / CryptoTicker Nov 18 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 62663.00,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "Pressione macro da tassi (Waller 50bp) pesa su BTC; fear index estremo (Nov 17). Supporto tecnico area $60-62K. HOLD: rischio test $60K vs potenziale rimbalzo. Nessun segnale d'inversione confermato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDesk (12:14 PM EST Nov 18)", "price": 62574.00},
+          {"name": "Yahoo Finance (daily close Nov 18)", "price": 62751.61}
+        ],
+        "spread_pct": 0.28,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1783.83,
+      "change_24h": "-1.22%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume nella norma",
+      "news": "Ethereum sotto il livello psicologico $1,800; livello $1,796 ceduto nella sessione. Notizie positive a lungo termine: Ethereum avanza su quantum security e protezioni avanzate. Wallet legato al furto Binance (ottobre) sposta $63M in ether. (Fonte: OKX / Fortune / Ad-hoc News Nov 18 2026)",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 1783.83,
+      "stop_loss": null,
+      "target": null,
+      "commissione": 0.00,
+      "reasoning": "ETH sotto $1,800 — livello psicologico chiave perso; momentum negativo. Notizie quantum security positive ma a lungo termine. HOLD fino a recupero $1,800 o ulteriore deterioramento verso $1,700.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "OKX (Nov 18)", "price": 1770.23},
+          {"name": "Fortune (06:30 AM EST Nov 18)", "price": 1797.42}
+        ],
+        "spread_pct": 1.54,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM",
+      "motivo": "STLAM è il ticker della Borsa di Milano (EUR). Il ticker NYSE è STLA (USD) — analizzato come STLA nel report con prezzi verificati da 2 fonti concordanti."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "GLD",
+      "segnale": "SELL",
+      "motivo": "Gold ETF al minimo di 14 mesi; GLD -7% in 5 sessioni; Fed hawkish surprise Waller 50bp — massima conviction ribassista su metalli preziosi"
+    },
+    {
+      "rank": 2,
+      "asset": "SLV",
+      "segnale": "SELL",
+      "motivo": "Silver ETF al minimo annuale; SLV -11.9% in 5 sessioni — sottoperforma GLD con amplificazione ribassista"
+    },
+    {
+      "rank": 3,
+      "asset": "STLA",
+      "segnale": "SELL",
+      "motivo": "Stellantis a nuovi minimi storici con downgrade analist Oddo BHF a Underperform; market cap sotto €10B"
+    },
+    {
+      "rank": 4,
+      "asset": "NVDA",
+      "segnale": "BUY",
+      "motivo": "Earnings beat con revenue guidance +75% YoY; sell-off post-risultati appare tecnico; AI demand long-term intatta"
+    },
+    {
+      "rank": 5,
+      "asset": "SOL",
+      "segnale": "BUY",
+      "motivo": "+5.1% outperformance vs peers crypto; catalyst istituzionale DTCC tokenizzazione su Solana"
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Allocazione suggerita su segnali con confidence >= Medio",
+    "allocazione_suggerita": {
+      "SELL_GLD": "15% portfolio — massima conviction, ETF liquido",
+      "SELL_SLV": "10% portfolio — alto momentum ribassista",
+      "SELL_STLA": "5% portfolio — warning: titolo a bassa capitalizzazione, spread bid/ask può essere ampio",
+      "SELL_SAP": "8% portfolio — confidence Medio, spread MEDIA",
+      "BUY_NVDA": "15% portfolio — earnings catalyst solido",
+      "BUY_AMD": "10% portfolio — coattail NVDA, confidence Medio",
+      "BUY_AMZN": "10% portfolio — Anthropic IPO catalyst",
+      "BUY_GOOGL": "10% portfolio — Anthropic IPO + P/E basso per FAANG",
+      "BUY_SOL": "5% portfolio — crypto più rischiosa, allocazione ridotta",
+      "HOLD_cash": "12% — riserva per opportunità"
+    }
+  }
+}
