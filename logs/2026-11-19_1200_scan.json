@@ -1,0 +1,253 @@
+{
+  "timestamp": "2026-11-19T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Sessione del 19 novembre 2026. Settore tech USA in correzione dalla settimana dell'8-13 novembre 2026 (AI rout): TSLA colpita duramente -10%+, NVDA -3%+, AAPL -1.5%. Solo AMZN e GOOGL relativamente resilienti (-2%). BTC in ribasso del 14.2% nella settimana fino al 17 novembre, rimbalzo da minimi di 4 mesi; ETH ed SOL sotto ulteriore pressione. GLD verso minimi 52 settimane con oro e argento sotto pressione. 12 asset su 18 esclusi per spread > 4% tra fonti o dati insufficienti. 6 asset con dati validati (2 ALTA, 4 MEDIA) - tutti HOLD per contesto di mercato bearish e dati parzialmente datati.",
+  "signals": [
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 522.26,
+      "change_24h": "-1.35%",
+      "trend_5d": "ribassista",
+      "volume_note": "Dati volume non disponibili per data corrente",
+      "news": "Settore tech USA sotto pressione nella settimana di novembre (AI rout). MSFT non menzionato specificamente negli articoli del 6-13 novembre 2026, ma l'intero settore Mag-7 ha subito vendite. Dati prezzo al 30 ottobre 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 522.26,
+      "stop_loss": 506.59,
+      "target": 548.37,
+      "commissione": 0.00,
+      "reasoning": "Dati validati al 30 ottobre 2026 (spread 0.13% ALTA), ma contesto di mercato bearish con AI rout in corso e tech stocks in correzione. Attendere stabilizzazione prima di entrare.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (delayed Oct 30)", "price": 521.91},
+          {"name": "MarketScreener (Oct 2026)", "price": 522.61}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA",
+        "note_temporale": "Dati al 30 ottobre 2026 - prezzo attuale stimato diverso"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 235.35,
+      "change_24h": "n.d.",
+      "trend_5d": "laterale",
+      "volume_note": "Dati volume non disponibili per data corrente",
+      "news": "Nessuna notizia rilevante trovata per SAP nel novembre 2026. Dato prezzo confermato al 13 novembre 2026 da FinancialContent (NYSE ADS, NY:SAP). SAP tratta su NYSE come ADS. 52-week range: 144.97-274.15.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 235.35,
+      "stop_loss": 228.29,
+      "target": 247.12,
+      "commissione": 0.00,
+      "reasoning": "Dati più recenti del panel (13 novembre 2026, spread 0.38% ALTA). Nessun catalizzatore identificato. In attesa di conferma direzionale con dati aggiornati e notizie aziendali.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent NY:SAP (Nov 13 2026)", "price": 234.90},
+          {"name": "FinancialContent NY:SAP (undated, Nov 2026)", "price": 235.80}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA",
+        "note_temporale": "Fonte 1 datata 13 novembre 2026 - dati più recenti del panel"
+      }
+    },
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 338.40,
+      "change_24h": "-1.50%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale (nessuna anomalia rilevata)",
+      "news": "Apple +30% YTD nella settimana del 6 novembre 2026 (migliore tra i Mag-7). AAPL in calo 1.5% giovedì 6 novembre durante la settimana delle elezioni di midterm. Earnings Q3 2026 beat delle aspettative riportato. Dati prezzo al 4-15 ottobre 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 338.40,
+      "stop_loss": 328.25,
+      "target": 355.32,
+      "commissione": 0.00,
+      "reasoning": "Fondamentali YTD forti (+30%) ed earnings beat, ma dati prezzo datati (ottobre 2026) e contesto di mercato ribassista a novembre. Spread 2.94% MEDIA. Non sufficiente confidenza per segnale direzionale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Oct 4 2026)", "price": 333.43},
+          {"name": "MarketScreener (Oct 15 2026)", "price": 343.37}
+        ],
+        "spread_pct": 2.94,
+        "affidabilita": "MEDIA",
+        "note_temporale": "Dati al 4-15 ottobre 2026 - circa 5 settimane fa"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 219.14,
+      "change_24h": "-3.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume anomalo in vendita durante AI rout",
+      "news": "NVDA protagonista dell'AI rout di novembre: 'Most leading tech stocks weakened, NVIDIA fell over 3%' (iTiger, inizio nov 2026). Amazon sta acquistando miliardi in hardware AI Nvidia, ma alcune server rack restano nei magazzini per mancanza di elettricità nei data center. 52-week range: 164.27-243.37.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 219.14,
+      "stop_loss": 212.57,
+      "target": 230.10,
+      "commissione": 0.00,
+      "reasoning": "AI rout ha colpito NVDA con cali > 3% a inizio novembre. Dati prezzo datati (settembre-ottobre 2026, spread 2.86% MEDIA). Notizia Amazon acquisti positiva nel lungo termine ma non sufficiente per BUY nel contesto attuale.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent (Oct 26 2026)", "price": 216.00},
+          {"name": "MarketScreener (Sep 18 2026)", "price": 222.27}
+        ],
+        "spread_pct": 2.86,
+        "affidabilita": "MEDIA",
+        "note_temporale": "Dati al 18 settembre - 26 ottobre 2026 - fino a 2 mesi fa"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 256.20,
+      "change_24h": "-2.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume normale",
+      "news": "AMZN tra i meno colpiti nel sell-off tech: 'AMZN stock only dropped around 2% each, outperforming major indices' durante la settimana midterm (6 nov 2026). Amazon acquista miliardi in hardware AI Nvidia. Dati prezzo al 27 ottobre - 6 novembre 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 256.20,
+      "stop_loss": 248.51,
+      "target": 269.01,
+      "commissione": 0.00,
+      "reasoning": "Relativamente resiliente nell'AI rout (-2% vs -10%+ TSLA). Dati più recenti del panel USA (nov 6, spread 2.42% MEDIA). Notizia Nvidia hardware positiva. Ma contesto settoriale bearish non permette BUY con confidenza.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (Oct 27 2026)", "price": 253.10},
+          {"name": "FinancialContent (Nov 6 2026)", "price": 259.30}
+        ],
+        "spread_pct": 2.42,
+        "affidabilita": "MEDIA",
+        "note_temporale": "Dati al 27 ottobre - 6 novembre 2026 - circa 2 settimane fa"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 62.85,
+      "change_24h": "n.d.",
+      "trend_5d": "ribassista",
+      "volume_note": "Dati volume non disponibili",
+      "news": "Nessuna notizia specifica trovata per Netflix nel novembre 2026. Il titolo si trova vicino ai minimi di 52 settimane (range: 61.39 - 116.73 USD), con un calo di circa -43% negli ultimi 12 mesi secondo una fonte. Dati prezzo al 28 ottobre - 6 novembre 2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 62.85,
+      "stop_loss": 60.96,
+      "target": 65.99,
+      "commissione": 0.00,
+      "reasoning": "Prezzo vicino ai minimi di 52 settimane (61.39 USD) - zona di supporto potenziale, ma mancano catalizzatori. Spread 1.78% MEDIA. Nessuna notizia recente identificata. Contesto macro bearish sconsiglia entrata long.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Benzinga (Oct 28 2026)", "price": 62.29},
+          {"name": "FinancialContent (Nov 6 2026)", "price": 63.41}
+        ],
+        "spread_pct": 1.78,
+        "affidabilita": "MEDIA",
+        "note_temporale": "Dati al 28 ottobre - 6 novembre 2026 - circa 2 settimane fa"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "TSLA",
+      "motivo": "Spread fonti 4.80% > soglia 4% (Nov 12: $397.45 vs Nov 16: $379.23). Volatilità elevata da AI rout (-10%+ in settimana)"
+    },
+    {
+      "asset": "GOOGL",
+      "motivo": "Spread fonti 16.1% > soglia 4% (Oct 20: $324.89 vs Oct 30: $279.84 - discrepanza anomala, probabile errore di cache su una fonte)"
+    },
+    {
+      "asset": "META",
+      "motivo": "Spread fonti 6.1% > soglia 4% (Sep 9: $653.69 vs Oct 30: $614.99) - fonti a 51 giorni di distanza"
+    },
+    {
+      "asset": "AMD",
+      "motivo": "Spread fonti 5.63% > soglia 4% (Oct 30: $504.80 vs Nov 13: $534.06) - 14 giorni tra le rilevazioni"
+    },
+    {
+      "asset": "ASML",
+      "motivo": "Spread fonti 9.2% > soglia 4% (Oct 18: $1641.52 vs Nov 12: $1497.12) - 25 giorni tra le rilevazioni"
+    },
+    {
+      "asset": "RACE",
+      "motivo": "Spread fonti 4.41% > soglia 4% (Sep 29: $400.77 vs Nov 10: $418.87) - 42 giorni tra le rilevazioni"
+    },
+    {
+      "asset": "STLAM",
+      "motivo": "Spread fonti 11.6% > soglia 4% (Oct 22: $4.13 vs Oct 30: $4.64 per NYSE:STLA). Nota: il ticker STLAM è quotato su Borsa Italiana (EUR), non NYSE/Nasdaq"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Spread fonti 4.59% > soglia 4% (Sep 4: $410.15 vs Sep 16: $391.74) - entrambe le fonti vecchie di ~2 mesi. Gold ETF in calo verso minimi 52W"
+    },
+    {
+      "asset": "SLV",
+      "motivo": "Fonti non datate e in forte conflitto (range $35-69) - impossibile determinare prezzo corrente affidabile"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Fonti in conflitto su date diverse - Sep 2026 ~$142 vs Jun 2026 ~$106. Dati troppo datati e incoerenti"
+    },
+    {
+      "asset": "BTC",
+      "motivo": "Solo 1 fonte con dato novembre (The Block Nov 16: $64,440). Seconda fonte disponibile solo da settembre ($84,608 Binance) - distanza temporale > 7 settimane, spread 31%"
+    },
+    {
+      "asset": "ETH",
+      "motivo": "Nessuna coppia di fonti concordanti per novembre 2026. Dato news Nov 12: ~$1,983 (singola fonte). Dato più recente da archivio Sep 24: $2,711 - spread temporale troppo elevato"
+    },
+    {
+      "asset": "SOL",
+      "motivo": "Spread fonti 10.98% > soglia 4% (Nov 13 CoinGlass: $81.29 vs Nov 17 CoinGecko: $72.83). Crypto bear market: SOL -48% nel 2026"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "SAP",
+      "motivo": "Dati più freschi e accurati del panel (Nov 13, spread 0.38% ALTA). Azione europea difensiva meno esposta all'AI rout USA. Prima da monitorare quando contesto si stabilizzerà."
+    },
+    {
+      "rank": 2,
+      "asset": "AMZN",
+      "motivo": "Asset più resiliente durante l'AI rout (-2% vs -10%+ peers). Dati USA più recenti (Nov 6). Tailwind da acquisti massicci hardware Nvidia AI per AWS."
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "motivo": "Migliore performance YTD tra i Mag-7 (+30% al 6 nov 2026). Earnings beat confermato. Da monitorare per rimbalzo post-correzione midterm."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale - tutti i segnali sono HOLD",
+    "allocazione_suggerita": {
+      "SAP": "0% (HOLD - attendere conferma direzionale)",
+      "AMZN": "0% (HOLD - attendere stabilizzazione settore)",
+      "AAPL": "0% (HOLD - attendere dati aggiornati)",
+      "MSFT": "0% (HOLD - settore tech sotto pressione)",
+      "NVDA": "0% (HOLD - AI rout non esaurito)",
+      "NFLX": "0% (HOLD - vicino a supporto ma senza catalizzatori)"
+    }
+  },
+  "note_analista": "ATTENZIONE: 12 asset su 18 (67%) esclusi per dati insufficienti o spread > 4%. Il mercato è particolarmente difficile da monitorare in questa finestra: la crisi delle fonti web riflette la volatilità elevata delle ultime settimane. Si raccomanda di non operare su segnali automatici fino al prossimo ciclo con dati più freschi. Contesto macro: AI rout USA in corso, crypto bear market, commodities sotto pressione, midterm elections backdrop."
+}
