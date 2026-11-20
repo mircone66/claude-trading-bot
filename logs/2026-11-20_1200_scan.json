@@ -1,0 +1,505 @@
+{
+  "timestamp": "2026-11-20T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Forte sell-off generalizzato. Nasdaq -2.8% a 23.210, S&P 500 -1.5% a 7.065. Chip stocks guidano il ribasso: AMD -11.3% (short seller Hunterbrook Media report su legami con entità cinesi), NVDA -6.5% (CEO Jensen Huang out, SEC probe, 7° giorno consecutivo di calo -26% dal picco). Metalli preziosi in crollo: GLD -4%+ su dati CPI sopra attese che alimentano timori rialzo tassi Fed. BTC sceso sotto $60.000 per contagio sell-off AI, $1B in liquidazioni, deflussi ETF spot $582M. TSLA -4.9% su incertezze merger SpaceX. GOOGL rimbalza +0.17% dal minimo annuale ($272.11). AAPL mostra forza relativa +0.26% con notizie su sviluppo AI agent interno.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 350.13,
+      "change_24h": "+0.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Apple sviluppa il proprio AI agent secondo Benzinga (20/11/26), riducendo la dipendenza da Anthropic (ANT). Il titolo sale del +0.26% in un giorno di sell-off generale del Nasdaq (-2.8%), mostrando forza relativa significativa.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 350.13,
+      "stop_loss": 339.63,
+      "target": 367.64,
+      "commissione": 0.00,
+      "reasoning": "Forza relativa anomala: AAPL unico tra i Magnifici 7 in territorio positivo con Nasdaq -2.8%. Sviluppo AI agent interno riduce rischio vendor lock-in con Anthropic.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 351.56},
+          {"name": "CNBC", "price": 348.69}
+        ],
+        "spread_pct": 0.82,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 356.02,
+      "change_24h": "-4.91%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto",
+      "news": "Gary Black avverte: merger SpaceX-Tesla richiederebbe 50% di tutti i voti TSLA, rischio diluzione 24% (Benzinga Nov-20). HSBC ha alzato il target a $359, ma lo SpaceX noise pesa sul sentiment.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 356.02,
+      "stop_loss": 366.70,
+      "target": 338.22,
+      "commissione": 0.00,
+      "reasoning": "Secondo giorno consecutivo di calo significativo (-2.4% ieri, -4.9% oggi) su merger SpaceX incerto. 52wk range $297-498: il titolo ha ceduto il 29% dal massimo.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 357.38},
+          {"name": "Google Finance", "price": 354.65}
+        ],
+        "spread_pct": 0.77,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 136.51,
+      "change_24h": "-6.49%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "anomalo alto",
+      "news": "7° giorno consecutivo di calo: il titolo è giù del 26% dall'inizio del sell-off post-CEO Jensen Huang (Motley Fool Nov-20). SEC probe e Congressional inquiry aggravano il quadro tecnico negativo (FXLeaders Nov-20).",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 136.51,
+      "stop_loss": 140.60,
+      "target": 129.68,
+      "commissione": 0.00,
+      "reasoning": "Leadership vacuum + SEC probe + Congressional inquiry = triplice headwind fondamentale. 7 sessioni di calo consecutive, nessun catalyst positivo visibile a breve. Supporto $134.82 (intraday low) a rischio.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fidelity", "price": 135.75},
+          {"name": "Bloomberg", "price": 137.27}
+        ],
+        "spread_pct": 1.11,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 497.28,
+      "change_24h": "-0.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Analista Benzinga (20/11/26) vede nella strategia full-stack AI di Microsoft un potenziale pay-off a lungo termine. Il titolo è circa 7% sotto la SMA 20gg ($524.96) ma regge meglio del settore.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 497.28,
+      "stop_loss": 482.36,
+      "target": 522.14,
+      "commissione": 0.00,
+      "reasoning": "MSFT praticamente invariato in giornata di sell-off (-0.2%). Strategia AI full-stack supporta il lungo termine ma mancano catalyst immediati. Attesa per conferma di supporto a $490.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Google Finance", "price": 498.01},
+          {"name": "TECHi", "price": 496.54}
+        ],
+        "spread_pct": 0.30,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 251.41,
+      "change_24h": "-2.32%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "AMZN scende del -2.3% in linea con il mercato, Motley Fool confronta il vantaggio cloud vs Alphabet (Nov-20). Nessun catalyst specifico: sell-off generalizzato settore tech.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 251.41,
+      "stop_loss": 243.87,
+      "target": 263.98,
+      "commissione": 0.00,
+      "reasoning": "Nessun news specifico su AMZN oggi. Il calo è in linea con il mercato. 52wk range $196-287: il titolo è nel mezzo del range, nessuna urgenza operativa.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Massive.com", "price": 251.30},
+          {"name": "Robinhood", "price": 251.52}
+        ],
+        "spread_pct": 0.09,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 273.12,
+      "change_24h": "+0.17%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "GOOGL al minimo annuale ($272.11), rimbalza del +0.17% con potenziale segnale di inversione intraday. FXLeaders nota rischi su spese Anthropic e Gemini expansion; ma rimbalzo +2.8% citato da una fonte (Nov-20).",
+      "signal": "BUY",
+      "confidence": "Basso",
+      "entry": 273.12,
+      "stop_loss": 264.93,
+      "target": 286.78,
+      "commissione": 0.00,
+      "reasoning": "GOOGL tocca il minimo annuale ($272.11) e rimbalza nel momento peggiore per il mercato: segnale contrarian. Rischio: break below $272 aprirebbe ulteriore downside. Confidence BASSA per l'elevato rischio contesto.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 273.30},
+          {"name": "Finviz", "price": 272.94}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 576.02,
+      "change_24h": "-3.39%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "META perde il -3.4% su preoccupazioni per le spese infrastrutturali AI pesanti (MarketBeat Nov-20). Il titolo è al 26% sotto il massimo annuale ($779.82); CNBC e MarketBeat confermano la pressione ribassista.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 576.02,
+      "stop_loss": 558.74,
+      "target": 604.82,
+      "commissione": 0.00,
+      "reasoning": "Nessun catalyst specifico negativo: il calo segue il mercato. Supporto chiave a $520 (52wk low). AI spending concerns sono già noti al mercato. Attesa per segnale di stabilizzazione.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 577.86},
+          {"name": "MarketBeat", "price": 574.17}
+        ],
+        "spread_pct": 0.64,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 57.92,
+      "change_24h": "-0.92%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "anomalo alto",
+      "news": "Netflix tocca un nuovo minimo multi-anno: il titolo è sotto tutti i principali MA (20, 50, 200 gg) secondo MarketBeat (Nov-20). Target analisti a $84-89 (forte divergenza), ma momentum attuale decisamente negativo.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 57.92,
+      "stop_loss": 59.66,
+      "target": 55.02,
+      "commissione": 0.00,
+      "reasoning": "NFLX sotto tutti i MA principali, minimo multi-anno, 52wk low impostato oggi (Benzinga Nov-20). La divergenza con i target analisti ($84-89) è enorme ma irrilevante nel breve: il momentum comanda.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC", "price": 58.22},
+          {"name": "Seeking Alpha", "price": 57.62}
+        ],
+        "spread_pct": 1.04,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 433.89,
+      "change_24h": "-11.30%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "anomalo 1.8x normale",
+      "news": "Hunterbrook Media pubblica report short su legami AMD con entità cinesi; -11.3% oggi dopo -7.72% di giovedì (StockAnalysis Nov-20). 24/7 Wall St e Benzinga confermano la pressione di vendita record con volume 1.8x la norma.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 433.89,
+      "stop_loss": 446.91,
+      "target": 412.20,
+      "commissione": 0.00,
+      "reasoning": "Doppio down consecutivo: -7.72% ieri + -11.3% oggi su short seller report (Hunterbrook) su legami cinesi. Volume 1.8x, nessun rimbalzo visibile. 52wk range $188-658: in caduta libera dai massimi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Investing.com", "price": 433.05},
+          {"name": "StockAnalysis", "price": 434.72}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1271.48,
+      "change_24h": "-5.74%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto",
+      "news": "ASML perde ~6.9% (Amsterdam) su sell-off AI-linked + esposizione Cina ~20% fatturato 2026. Bernstein mantiene Buy con target €2.500 (18/11/26); Q3 record non basta a fermare le vendite nel contesto macro attuale.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1271.48,
+      "stop_loss": 1233.34,
+      "target": 1335.05,
+      "commissione": 0.00,
+      "reasoning": "Fundamental solidi (Q3 record, Bernstein Buy €2.500 target) ma sell-off tecnico AI e China export risk creano pressione nel breve. HOLD in attesa di stabilizzazione del settore chip.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (Nasdaq ADR)", "price": 1278.30},
+          {"name": "Yahoo Finance Amsterdam €1199.20 ~USD", "price": 1264.66}
+        ],
+        "spread_pct": 1.07,
+        "affidabilita": "ALTA",
+        "nota": "Fonte 2 derivata da prezzo Amsterdam €1199.20 con EUR/USD ~1.055"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 202.20,
+      "change_24h": "-0.51%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP tocca minimo 23 mesi, in calo del 17% dal picco ($255.90). Target analisti a ~€244 implica upside del 32% (Investing.com). Il titolo regge meglio dei pari tech europei nel sell-off odierno.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 202.20,
+      "stop_loss": 196.13,
+      "target": 212.31,
+      "commissione": 0.00,
+      "reasoning": "SAP scende solo -0.5% in una giornata brutale: forza relativa rispetto ai pari. Ma il trend di medio termine è ribassista (da $244 a $202 in poche settimane). Nessun catalyst operativo oggi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 201.17},
+          {"name": "Chartmill", "price": 203.23}
+        ],
+        "spread_pct": 1.02,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 408.68,
+      "change_24h": "-0.54%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari stabile (~$409) in un mercato volatile; nessuna news specifica oggi (20/11/26). StockAnalysis: 12 analisti Buy con target $459.79 (+12.5%). 52wk range $312-437. ATTENZIONE: prezzi da Nov 19.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 408.68,
+      "stop_loss": 396.42,
+      "target": 429.11,
+      "commissione": 0.00,
+      "reasoning": "RACE mostra tenuta del lusso auto in mercato difficile. Dati validati da Nov 19 (non confermato Nov 20 intraday): usare con cautela. Nessun segnale operativo chiaro oggi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha", "price": 408.95},
+          {"name": "Investing.com", "price": 408.41}
+        ],
+        "spread_pct": 0.13,
+        "affidabilita": "ALTA",
+        "nota": "Entrambe le fonti da Nov 19; prezzo Nov 20 non confermato"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 331.38,
+      "change_24h": "-2.27%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto",
+      "news": "Gold ETFs cedono fino al 5% su aspettative rialzo tassi Fed per dati CPI sopra attese (Business Standard Nov-20). Dollaro forte pesa su metalli preziosi; GLD break sotto 52wk low possibile.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 331.38,
+      "stop_loss": 338.01,
+      "target": 318.12,
+      "commissione": 0.00,
+      "reasoning": "Selloff metalli preziosi con volume elevato su dati CPI+ che riaccendono timori rialzo Fed (Business Standard Nov-20). Pre-market Nov 20: $327.57. Trend ribassista accelerato dal contesto macro.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (Nov 19 close)", "price": 335.18},
+          {"name": "StockAnalysis (Nov 20 pre-market)", "price": 327.57}
+        ],
+        "spread_pct": 2.30,
+        "affidabilita": "MEDIA",
+        "nota": "Fonti da momenti diversi (close ieri vs pre-market oggi); incertezza su prezzo esatto intraday Nov 20"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 40.00,
+      "change_24h": "-1.73%",
+      "trend_5d": "ribassista",
+      "volume_note": "anomalo alto",
+      "news": "Silver ETFs cedono oltre 6% il 20/11 (Business Standard), minimi 52 settimane. ATTENZIONE: prezzi validati ($40.00) da Nov 19; il prezzo Nov 20 stimato ~$37-38 (-6%) ma non confermato da 2 fonti indipendenti per quella data.",
+      "signal": "SELL",
+      "confidence": "Basso",
+      "entry": 40.00,
+      "stop_loss": 40.80,
+      "target": 38.40,
+      "commissione": 0.00,
+      "reasoning": "Argento in crollo per correlazione con oro (-5% Nov 20) e dollaro forte. INCERTEZZA: i prezzi validati sono da Nov 19; il prezzo effettivo di mercato oggi è probabilmente significativamente inferiore (~$37-38).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "iShares/CNBC (Nov 19 close)", "price": 39.64},
+          {"name": "StockAnalysis (Nov 19 intraday)", "price": 40.34}
+        ],
+        "spread_pct": 1.75,
+        "affidabilita": "MEDIA",
+        "nota": "DATI DA NOV 19 - prezzo Nov 20 stimato ~$37-38 ma non verificabile con 2 fonti: segnale di incertezza elevata"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 135.77,
+      "change_24h": "-1.68%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "Oil ETF USO perde -1.68% a $135.77 (MarketAlleys Nov-20 16:30 UTC). Nessuna news specifica oil oggi; il ribasso segue il trend generale delle commodities e forza del dollaro.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 135.77,
+      "stop_loss": 133.05,
+      "target": 141.20,
+      "commissione": 0.00,
+      "reasoning": "Ribasso moderato senza catalyst specifico per oil. Solo una fonte Nov 20 affidabile (MarketAlleys); seconda fonte da Nov 17. HOLD per insufficienza di segnali direzionali chiari oggi.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "MarketAlleys (Nov 20, 16:30 UTC)", "price": 135.77},
+          {"name": "MarketAlleys (Nov 19 close)", "price": 138.09}
+        ],
+        "spread_pct": 1.69,
+        "affidabilita": "MEDIA",
+        "nota": "Le due fonti sono da giorni diversi (Nov 20 vs Nov 19); una sola fonte per Nov 20"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 61639.00,
+      "change_24h": "-4.00%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "anomalo alto: $47.8B volume 24h",
+      "news": "BTC sceso sotto $60.000 per la prima volta da luglio 2026 (crypto.news Nov-20); ETF spot BTC registrano deflussi di $582.3M in un giorno, $3.47B a novembre. CPI sopra attese rilancia timori rialzo Fed, trascinando le crypto nel sell-off AI.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 61639.00,
+      "stop_loss": 64720.95,
+      "target": 56708.88,
+      "commissione": 0.00,
+      "reasoning": "Rottura del livello $60K psicologico (crypto.news), $1B in liquidazioni nelle 24h, sentiment 'Extreme Fear' (index 12). Correlazione con AI sell-off crea feedback loop negativo. Next support: $58K (Feb low).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase", "price": 61957.37},
+          {"name": "Fortune (Nov 20, 7:15 AM ET)", "price": 61321.59}
+        ],
+        "spread_pct": 1.03,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1732.70,
+      "change_24h": "-3.94%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "anomalo alto",
+      "news": "ETH scende a $1.730 (-3.9% 24h), testando il supporto a $1.700 (Cryptoticker Nov-20). Correlazione con BTC e sell-off AI tech pesa; una fonte cita -11.5% settimanale e discesa sotto $1.700 intraday.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 1732.70,
+      "stop_loss": 1819.34,
+      "target": 1594.08,
+      "commissione": 0.00,
+      "reasoning": "ETH segue BTC nel sell-off AI-contagio. Supporto critico $1.700 testato intraday (Cryptoticker). Perdita settimanale ~11.5% indica trend ribassista consolidato. $90B usciti dal mercato crypto in 24h (CryptoBriefing).",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (Nov 20, 7:15 AM ET)", "price": 1730.91},
+          {"name": "Coinbase", "price": 1734.48}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 72.50,
+      "change_24h": "-4.91%",
+      "trend_5d": "ribassista forte",
+      "volume_note": "anomalo alto",
+      "news": "SOL perde -4.9% nelle ultime 24h, -13% settimanale: la performance peggiore tra le top crypto (CryptoBriefing Nov-20). Roundhill ritira i piani per fondi su SOL/XRP, segnale negativo di sentiment istituzionale.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 72.50,
+      "stop_loss": 76.13,
+      "target": 66.70,
+      "commissione": 0.00,
+      "reasoning": "SOL è il peggiore performer settimanale tra le major crypto (-13%). Roundhill ritira fondi SOL/XRP (CryptoBriefing): sentiment istituzionale negativo. Break sotto $70 aprirebbe downside verso $65.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Bybit", "price": 72.01},
+          {"name": "OKX", "price": 72.99}
+        ],
+        "spread_pct": 1.35,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "STLAM",
+      "motivo": "Spread fonti Nov 20: WallStreetZen $3.54 vs Robinhood $3.39 = scarto 4.33% > soglia 4%. Nota: il ticker NYSE corretto è STLA (USD), STLAM è la quotazione Milano in EUR. Raccomandato utilizzo ticker STLA nelle future scansioni."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "AMD",
+      "signal": "SELL",
+      "motivo": "Doppio ribasso record (-7.72% ieri, -11.3% oggi) su short seller report Hunterbrook Media. Volume 1.8x normale, nessun segnale di rimbalzo. Confidence ALTO."
+    },
+    {
+      "rank": 2,
+      "asset": "BTC",
+      "signal": "SELL",
+      "motivo": "Rottura psicologica $60K, $1B liquidazioni, $582M deflussi ETF spot, sentiment Extreme Fear (12). Contagio diretto dal sell-off AI amplifica la pressione ribassista."
+    },
+    {
+      "rank": 3,
+      "asset": "AAPL",
+      "signal": "BUY",
+      "motivo": "Unico titolo Large Cap USA in positivo (+0.26%) in un Nasdaq -2.8%. Forza relativa anomala + news AI agent interno = catalyst positivo di breve-medio termine."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale. Giornata di forte sell-off: posizionamento difensivo con alta liquidità. I segnali SELL sono informativi (Alpaca retail non supporta short selling diretto).",
+    "allocazione_suggerita": {
+      "AAPL": "30% - BUY signal, forza relativa anomala in sell-off",
+      "GOOGL": "20% - BUY contrarian a 52wk low, confidence BASSA: position sizing ridotto",
+      "cash": "50% - preservazione capitale in contesto di sell-off generalizzato Nasdaq -2.8%"
+    },
+    "segnali_sell_monitorati": ["AMD", "NVDA", "TSLA", "NFLX", "BTC", "ETH", "SOL", "GLD", "SLV"],
+    "risk_note": "Giornata ad alto rischio sistemico. Stop loss stretti consigliati su tutti i BUY. Evitare nuove posizioni lunghe su chip stocks e crypto."
+  }
+}
