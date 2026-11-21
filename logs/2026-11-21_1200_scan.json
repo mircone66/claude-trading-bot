@@ -1,0 +1,503 @@
+{
+  "timestamp": "2026-11-21T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Settimana storica di ribasso tech: il Nasdaq ha perso 10% (-7 sessioni consecutive negative, peggiore settimana da marzo 2020). NVDA -14% venerdì dopo segnalazione SEC su problematiche contabili e dimissioni di Jensen Huang; AMD -13% per report short Hunterbrook su violazioni export control verso la Cina; META -5.9% per selloff AI + report agente Apple. S&P500 entrato in correzione tecnica (-12% dai massimi di ottobre 2026). Oro e argento ai minimi annuali. BTC rimbalzato sopra $60K sabato (+1.4%); SOL guida la ripresa crypto (+3.7%). Parziale ripresa nel weekend dopo settimana violenta.",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 342.56,
+      "change_24h": "-1.90%",
+      "trend_5d": "ribassista",
+      "volume_note": "80.7M azioni (nella media)",
+      "news": "Apple relativamente resiliente nel selloff AI: solo -1.9% venerdì vs -14% NVDA. Report su sviluppo agente AI interno ha pesato su META ma non su AAPL. Close 11/20/26 $342.56.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 342.56,
+      "stop_loss": 332.28,
+      "target": 359.69,
+      "commissione": 0.00,
+      "reasoning": "AAPL tiene meglio del settore tech nel selloff AI (-1.9% vs Nasdaq -5%). Il report su agente Apple proprietario potrebbe penalizzare concorrenti (META) ma beneficiare AAPL a medio termine. Fonti: Apple IR e StockAnalysis entrambe confermano close $342.56.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Apple Investor Relations", "price": 342.56},
+          {"name": "StockAnalysis", "price": 342.56}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 345.50,
+      "change_24h": "-7.64%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato per selloff settimanale",
+      "news": "TSLA -7.64% venerdì trascinata dal selloff AI/tech; prior close $374.41 su Nov 19. HSBC upgrada a Hold (da Reduce) e alza target a $359 da $157, unico segnale positivo nella settimana. 52wk range $297-$498.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 345.50,
+      "stop_loss": 335.14,
+      "target": 362.78,
+      "commissione": 0.00,
+      "reasoning": "TSLA è colpita dal selloff generale ma non ha catalizzatori negativi propri. L'upgrade HSBC a $359 suggerisce supporto vicino all'entry attuale. Attendere stabilizzazione mercato prima di posizionamento long. Fonti: Seeking Alpha/TradingView $345.82, StockAnalysis $345.18.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha / TradingView", "price": 345.82},
+          {"name": "StockAnalysis", "price": 345.18}
+        ],
+        "spread_pct": 0.19,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 125.53,
+      "change_24h": "-14.01%",
+      "trend_5d": "molto ribassista",
+      "volume_note": "volume anomalo — peggior settimana NVDA da ottobre 2008",
+      "news": "NVDA -14.01% venerdì: doppio colpo di SEC che esplora irregolarità contabili e dimissioni del CEO Jensen Huang. Nasdaq riporta prev close $145.98. Motley Fool: 'Nvidia $2.5 Trillion Rout Deepens as SEC Accounting Probe Adds to AI Sell-Off'. 52wk range $124.50-$243.37.",
+      "signal": "SELL",
+      "confidence": "Alto",
+      "entry": 125.53,
+      "stop_loss": 129.30,
+      "target": 119.25,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatori fondamentali molto negativi: probe SEC su contabilità crea incertezza sugli utili futuri; dimissioni Jensen Huang rimuovono il CEO visionario fondatore. Near 52wk low $124.50 ma scenario fondamentale giustifica ulteriore downside. Fonti: Nvidia IR e MarketScreener confermano close $125.53.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "NVIDIA Investor Relations", "price": 125.53},
+          {"name": "MarketScreener", "price": 125.53}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 484.52,
+      "change_24h": "-2.77%",
+      "trend_5d": "ribassista",
+      "volume_note": "47.3M azioni — volume sopra media",
+      "news": "MSFT -2.77% venerdì (prev close $498.30). Benzinga riporta strategia Full-Stack AI come potenziale upside per analisti. 52wk range $349-$559. All-time close high $555.80 il 04/11/26 — ha perso il 13% dal massimo.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 484.52,
+      "stop_loss": 469.98,
+      "target": 508.75,
+      "commissione": 0.00,
+      "reasoning": "MSFT mostra calo moderato vs peers AI. La strategia diversificata (Azure + Copilot + Office) la rende meno esposta ai rischi specifici di chip AI. Attendere stabilizzazione del mercato prima di rientrare. Fonti: Seeking Alpha e StockAnalysis/Yahoo Finance confermano $484.52.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Seeking Alpha", "price": 484.52},
+          {"name": "StockAnalysis / Yahoo Finance", "price": 484.52}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 246.82,
+      "change_24h": "-4.12%",
+      "trend_5d": "ribassista",
+      "volume_note": "74.5M azioni — volume elevato",
+      "news": "AMZN -4.12% a $246.82 (prev close $257.37 su Nov 19). Motley Fool: 'Amazon vs Alphabet — Which Cloud Computing Stock Is the Better Buy?' suggerisce valore relativo. Consensus analyst target $330. 52wk range $196-$287.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 246.82,
+      "stop_loss": 239.42,
+      "target": 259.16,
+      "commissione": 0.00,
+      "reasoning": "AWS rimane il cloud leader con forte pricing power; la caduta -4% è legata al selloff generalizzato, non a notizie specifiche negative. L'obiettivo degli analisti a $330 indica upside significativo nel medio termine. Fonti: Massive e StockAnalysis confermano close $246.82.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Massive.com", "price": 246.82},
+          {"name": "StockAnalysis", "price": 246.82}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 265.29,
+      "change_24h": "-2.70%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato, testando supporto chiave",
+      "news": "GOOGL -2.70% chiudendo a $265.29 (prev close $272.66 Nov 19). FX Leaders: 'Alphabet Stock Reverses at Resistance after Bouncing Off $272 Support'. Morningstar 52wk range $264.22-$408.61 — prezzo vicino al minimo annuale.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 265.29,
+      "stop_loss": 257.33,
+      "target": 278.55,
+      "commissione": 0.00,
+      "reasoning": "GOOGL testa area di supporto critica $264-$265 (minimo 52 settimane $264.22). Il cloud Google + DeepMind non ha subito colpi fondamentali specifici; il calo è di sentiment AI. Rimbalzo probabile sulla tenuta del supporto. Fonti: Morningstar e Investing.com/Stocktwits $265.29.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar", "price": 265.29},
+          {"name": "Investing.com / Stocktwits", "price": 265.29}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 560.84,
+      "change_24h": "-5.93%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume anomalo — selloff accelerato",
+      "news": "META -5.93% a $560.84 (prev close $596.22). Nacional.com: 'Why is Meta stock down today? About 6% lower as the AI sell-off and an Apple agent report hit.' 52wk range $518.23-$794.83; down 13.56% nel mese.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 560.84,
+      "stop_loss": 544.01,
+      "target": 588.88,
+      "commissione": 0.00,
+      "reasoning": "META colpita da doppio negativo: selloff AI e notizie su agente Apple proprietario che potrebbe erodere il vantaggio competitivo AI di Meta. P/E 20.33 rimane attraente a lungo termine ma rischio a breve. Fonti: Yahoo Finance e StockAnalysis/Massive confermano $560.84.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 560.84},
+          {"name": "StockAnalysis / Massive", "price": 560.84}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 56.73,
+      "change_24h": "-2.96%",
+      "trend_5d": "ribassista",
+      "volume_note": "52wk low area — pressione sell continua",
+      "news": "NFLX -2.96% a $56.73 (prev close $58.46), near 52wk low $56.56. Morningstar 52wk range $56.56-$111.10. Motley Fool: stock down -37.65% nel 2026. Analyst consensus target $84.76 (+49% vs current).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 56.73,
+      "stop_loss": 55.03,
+      "target": 59.57,
+      "commissione": 0.00,
+      "reasoning": "NFLX è al minimo annuale ma il target medio analisti a $84.76 implica upside del 49%; sostegno fondamentale (abbonamenti stabili) vs trend ribassista di breve. Monitorare tenuta del supporto $56.56 prima di qualsiasi posizionamento long. Fonti: Yahoo Finance e Morningstar confermano $56.73.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 56.73},
+          {"name": "Morningstar", "price": 56.73}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 431.11,
+      "change_24h": "-13.25%",
+      "trend_5d": "molto ribassista",
+      "volume_note": "volume anomalo — short report + liquidazioni forzate",
+      "news": "AMD -13.25% venerdì: Hunterbrook Capital pubblica report short citando violazioni export control USA verso produttori server cinesi. AMD ha rispedito le accuse al mittente. Investing.com: 'Why is Advanced Micro Devices stock plunging today?' TradingKey: 'AMD Loses $67 Billion on Short Report and New Export Rules'.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 431.11,
+      "stop_loss": 444.04,
+      "target": 409.55,
+      "commissione": 0.00,
+      "reasoning": "Il report Hunterbrook (short seller con track record) su violazioni export control crea rischio regolatorio significativo; i titoli sotto scrutinio su China trade raramente si riprendono rapidamente. Nota: affidabilità MEDIA per spread 3.17% tra CNBC $424.39 e Robinhood $437.83. Fonti: CNBC close $424.39, Robinhood intraday $437.83.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (close ufficiale)", "price": 424.39},
+          {"name": "Robinhood (intraday)", "price": 437.83}
+        ],
+        "spread_pct": 3.17,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1266.22,
+      "change_24h": "-6.63%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume elevato per selloff chip sector",
+      "news": "ASML -6.63% venerdì (prev close $1,356.20). Investing.com: ribasso legato al selloff AI/chip, con fondamentali intatti (record ricavi Q3, guidance alzata). Bernstein reitera Buy a €2,500 target il 18/11. Risultati Q4 programmati per 27/01/27. 52wk range $946-$1,999.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1266.22,
+      "stop_loss": 1228.23,
+      "target": 1329.53,
+      "commissione": 0.00,
+      "reasoning": "ASML ha fondamentali eccezionali (monopolio EUV lithography, guidance alzata) ma sconta il selloff AI/chip. Con Bernstein Buy a €2,500 e prossimi risultati a gennaio, il ribasso è opportunità di medio termine. Fonti: Yahoo Finance e Investing.com/Trendlyne confermano close $1,266.22.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance", "price": 1266.22},
+          {"name": "Investing.com / Trendlyne", "price": 1266.22}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 198.93,
+      "change_24h": "-2.12%",
+      "trend_5d": "ribassista",
+      "volume_note": "trading range normale per il titolo",
+      "news": "SAP -2.12% a $198.93 (NYSE ADR). NYSE ufficiale: intraday range $198.45-$203.61. StockAnalysis: close confermato, 12-month target $284.50. 52wk range $144.97-$255.90. Nessuna notizia specifica negativa — solo impatto general selloff.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 198.93,
+      "stop_loss": 192.96,
+      "target": 208.88,
+      "commissione": 0.00,
+      "reasoning": "SAP (software enterprise) subisce impatto limitato dal selloff AI/chip: -2.12% vs Nasdaq -5%. Il business SaaS ERP è difensivo e meno ciclico. Target 12m $284.50 implica upside del 43%. Fonti: NYSE ufficiale e StockAnalysis confermano $198.93.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "NYSE ufficiale", "price": 198.93},
+          {"name": "StockAnalysis", "price": 198.93}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 392.47,
+      "change_24h": "-3.20%",
+      "trend_5d": "ribassista",
+      "volume_note": "volume nei range normali",
+      "news": "RACE (Ferrari NYSE) -3.20% a $392.47 (Morningstar/GuruFocus). 12 analisti rating Buy, target medio $459.79. P/E 36.61, dividend yield 1.04%. 52wk range $312.51-$437.15. Nessun news specifico — correlazione sell-off globale.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 392.47,
+      "stop_loss": 380.70,
+      "target": 412.09,
+      "commissione": 0.00,
+      "reasoning": "Ferrari è un asset 'luxury moat' scarsamente correlato al ciclo AI tech; il -3.2% è pullback nel contesto del selloff generale. Con target analisti $459 e business strutturalmente protetto, è un HOLD di qualità. Fonti: Robinhood e Morningstar/GuruFocus confermano $392.47.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood", "price": 392.47},
+          {"name": "Morningstar / GuruFocus", "price": 392.47}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLAM",
+      "type": "stock_eu",
+      "price": 3.37,
+      "change_24h": "-5.65%",
+      "trend_5d": "molto ribassista",
+      "volume_note": "NOTA: ticker NYSE/Alpaca = STLA; STLAM è listing Milan (EUR). Dati da STLA NYSE.",
+      "news": "STLA (Stellantis NYSE) -5.65% a $3.34-$3.39 su Nov 20; ai minimi annuali. StocksToTrade: 'Stellantis Falls 6% Amid Broad Market Selloff'. Yahoo Finance: PM Mark Carney minaccia causa legale dopo chiusura impianto Brampton Canada. 52wk range $3.49-$12.22 — breaking new lows.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 3.37,
+      "stop_loss": 3.27,
+      "target": 3.54,
+      "commissione": 0.00,
+      "reasoning": "STLA/STLAM è in trend ribassista strutturale (-62.83% su 1 anno); nuovi minimi 52wk con catalizzatori negativi (controversia legale Canada, selloff generale). Affidabilità MEDIA (spread 1.50% tra fonti). Su Alpaca usare ticker STLA (NYSE). Fonti: Morningstar $3.34, Robinhood $3.39.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Morningstar (STLA NYSE close)", "price": 3.34},
+          {"name": "Robinhood (STLA NYSE)", "price": 3.39}
+        ],
+        "spread_pct": 1.50,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 322.87,
+      "change_24h": "-3.67%",
+      "trend_5d": "ribassista",
+      "volume_note": "23.6M unità — volume sopra media per liquidazioni",
+      "news": "GLD -3.67% a $322.87 (Fidelity/StockAnalysis, close 11/20). Business Standard: 'Gold ETFs down 5%; Silver ETFs plunge over 6%, trade at 52-week lows'. 52wk range $320.95-$509.70 — close vicino al minimo annuale. Oro e argento in capitolazione nelle ultime 2 settimane.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 322.87,
+      "stop_loss": 316.41,
+      "target": 335.78,
+      "commissione": 0.00,
+      "reasoning": "GLD è al limite del minimo annuale ($320.95 il low di 52wk); in scenario di correzione equity prolungata l'oro potrebbe recuperare come safe-haven. La capitolazione recente (-25% in 2 settimane su spot) potrebbe avvicinarsi a un'esasurazione. Fonti: Fidelity e StockAnalysis confermano close $322.87.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fidelity", "price": 322.87},
+          {"name": "StockAnalysis", "price": 322.87}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 37.09,
+      "change_24h": "-6.74%",
+      "trend_5d": "molto ribassista",
+      "volume_note": "52wk low — volumi di panico",
+      "news": "SLV -6.74% chiudendo a $36.97 (Yahoo Finance) — nuovo minimo annuale. StockAnalysis: intraday $37.21, range $36.89-$38.48. 52wk range: $36.81-$109.83. Business Standard: argento ETF -6%+ ai minimi di 52 settimane.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 37.09,
+      "stop_loss": 36.35,
+      "target": 38.57,
+      "commissione": 0.00,
+      "reasoning": "SLV ha perso oltre il 65% dal massimo annuale ($109.83) — capitolazione estrema. Il supporto attuale $36.81-$36.97 è il minimo di 52 settimane; una rottura al ribasso accelererebbe le vendite. Attendere segnali di stabilizzazione. Fonti: Yahoo Finance $36.97, StockAnalysis $37.21.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis", "price": 37.21},
+          {"name": "Yahoo Finance", "price": 36.97}
+        ],
+        "spread_pct": 0.65,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 139.90,
+      "change_24h": "+1.12%",
+      "trend_5d": "laterale",
+      "volume_note": "relativa forza vs mercato generale",
+      "news": "USO +1.12% venerdì mentre mercato azionario crollava — relativa forza. Market Alleys: 'Closing Tape Nov 20: Major US ETFs fell' ma USO ha tenuto. CNBC mostra ~$140.16. 52wk range $65.99-$171.82. Cboe Canada: 'Oil ETFs rally as Gold and Silver retreat'.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 139.90,
+      "stop_loss": 137.10,
+      "target": 145.50,
+      "commissione": 0.00,
+      "reasoning": "USO mostra forza relativa insolita: sale +1.12% mentre Nasdaq crolla -5%. Possibile rotazione da tech ad asset reali (oil). Cboe Canada conferma rally oil ETF. Dato di affidabilità sufficiente ma con alcune fonti discordanti per timing. Fonti: Market Alleys $139.63, CNBC $140.16.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Market Alleys / Finnhub", "price": 139.63},
+          {"name": "CNBC", "price": 140.16}
+        ],
+        "spread_pct": 0.38,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 61120.71,
+      "change_24h": "+1.42%",
+      "trend_5d": "ribassista_con_rimbalzo",
+      "volume_note": "$2.4B futures liquidati nel selloff; rimbalzo sabato",
+      "news": "BTC rimbalza sopra $60K sabato (+1.42%) dopo essere sceso a ~$57K venerdì. CryptoTicker: 'Bitcoin Price Crashes Below $60K as Ethereum, XRP and Solana Plunge'. Eurasian Business News: 'BTC Rebounds Above $60,000 as Solana Leads Crypto Gains' Nov 21. ATH ~$126K ottobre 2025.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 61120.71,
+      "stop_loss": 58064.67,
+      "target": 66010.37,
+      "commissione": 0.00,
+      "reasoning": "BTC ha rimbalzato da $57K a $61K (+7%) in 24h ma il sentiment rimane su 'extreme fear'. Il ribasso settimanale -17% dal picco è sostenuto da $90B di outflow e $2.4B liquidazioni futures. Affidabilità MEDIA (spread 2.77%): Eurasian BN $60,284 vs Coinbase $61,957. Fonti: Eurasian Business News $60,284, Coinbase $61,957.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Eurasian Business News", "price": 60284.42},
+          {"name": "Coinbase", "price": 61957.00}
+        ],
+        "spread_pct": 2.77,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 69.64,
+      "change_24h": "+3.68%",
+      "trend_5d": "ribassista_con_rimbalzo",
+      "volume_note": "$11.7M inflows spot SOL ETF USA questa settimana",
+      "news": "SOL guida la ripresa crypto sabato +3.68%. Crypto.news: 'Solana slips to $68.68 as ETF inflows give way to withdrawals'. Coinglass: $70.46 (-0.82% su 24h a metà sabato); Coinbase $68.81. Fallito rimbalzo sopra $76 venerdì; 52wk contesto: da $86.73 (Nov 10) a $68.88 (Nov 20).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 69.64,
+      "stop_loss": 66.16,
+      "target": 75.21,
+      "commissione": 0.00,
+      "reasoning": "SOL è il miglior performer crypto sabato (+3.68%), supportato da inflows ETF spot USA ($11.7M). Il rimbalzo da $64.83 (intraday low) a $70+ è promettente ma il trend settimanale rimane ribassista. Affidabilità MEDIA (spread 2.40%): Coinglass $70.46 vs Coinbase $68.81. Fonti: Coinglass $70.46, Coinbase $68.81.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinglass", "price": 70.46},
+          {"name": "Coinbase", "price": 68.81}
+        ],
+        "spread_pct": 2.40,
+        "affidabilita": "MEDIA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "ETH",
+      "motivo": "Spread fonti >4%: Coinbase $1,616 (Nov 20, 22:50 ET) vs Fortune $1,730.91 (Nov 20, 07:15 ET) = 7.1%; prezzi da timestamp diversi della stessa giornata di crash — insufficiente concordanza per validazione. Esclusione conforme a regola: scarto >4% → BASSA → no segnali."
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "NVDA",
+      "segnale": "SELL",
+      "motivazione": "Massima confluenza di catalizzatori negativi: SEC probe su contabilità + dimissioni CEO Jensen Huang. Affidabilità ALTA. Near 52wk low ma scenario fondamentale ancora deteriorante. Entry $125.53, target $119.25."
+    },
+    {
+      "rank": 2,
+      "asset": "ASML",
+      "segnale": "HOLD / accumulo graduale",
+      "motivazione": "Fondamentali intatti (monopolio EUV, guidance alzata Q3), Bernstein Buy €2,500. Il calo -6.63% è puro contagio sector. Rapporto rischio/rendimento favorevole per accumulo graduale verso Q4 results (27/01/27)."
+    },
+    {
+      "rank": 3,
+      "asset": "GLD",
+      "segnale": "HOLD / watch per BUY",
+      "motivazione": "GLD al limite del minimo annuale $320.95 (close $322.87). Se la correzione equity prosegue, l'oro recupererà come safe-haven. Monitorare per segnale BUY su conferma supporto $321."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "contesto_mercato": "Mercato in correzione tecnica. Strategia difensiva raccomandata.",
+    "allocazione_suggerita": {
+      "cash_pct": 50,
+      "USO": "10% — forza relativa vs selloff equity",
+      "GLD": "10% — safe-haven a supporto annuale",
+      "AAPL": "10% — più resiliente nel selloff AI",
+      "ASML": "10% — fondamentali intatti, accumulo graduale",
+      "BTC": "10% — rimbalzo in corso, pos. small",
+      "NVDA_SHORT": "posizione SHORT speculativa su news fondamentali negativi"
+    }
+  }
+}
