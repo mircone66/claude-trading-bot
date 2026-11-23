@@ -1,0 +1,465 @@
+{
+  "timestamp": "2026-11-23T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "GIORNATA STORICA: Nasdaq +7% dopo reintegro Jensen Huang come CEO/Presidente NVDA da parte del board. NVDA +32.7% (da $125.53 a ~$166.54). TSLA +13.5% su notizie merger talks SpaceX. AMD +7-8.5%, Intel +13%, GOOGL +6%, META +5%, AMZN +5%. Forte rimbalzo risk-on dopo settimana nera (-8%+ indici). Crypto in moderato recupero: BTC +3.3% a $61,184. ETF commodity (GLD/USO) esclusi per assenza dati Nov 23 confermati. SLV +6.55% a $39.39 su Stockanalysis (singola fonte Nov 23).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 348.75,
+      "change_24h": "+1.67%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "normale",
+      "news": "Tech rebound day guidato da NVDA; AAPL +1.67% underperforma rispetto a Nasdaq +7%. Motley Fool 11/23: 'Apple vs Microsoft: Where to put $2,000 right now'",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 348.75,
+      "stop_loss": 338.29,
+      "target": 366.19,
+      "commissione": 0.00,
+      "reasoning": "AAPL +1.67% underperforma il rally Nasdaq (+7%); near 52W high $360.83 con upside limitato. Trend di breve debole prima del rimbalzo odierno; attendere breakout sopra $360 per conferma BUY.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday Nov 23)", "price": 349.22},
+          {"name": "Motley Fool (12:50 PM ET Nov 23)", "price": 348.27}
+        ],
+        "spread_pct": 0.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 391.46,
+      "change_24h": "+13.46%",
+      "trend_5d": "ribassista-forte-recupero",
+      "volume_note": "anomalo alto",
+      "news": "SpaceX merger talks con Tesla in stadio precoce (nessun termine proposto). Stock +13.5% a $392.50 (AroundPrague.cz Nov 23). Rimbalzo da oversold dopo -7.64% venerdì Nov 20.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 391.46,
+      "stop_loss": 379.72,
+      "target": 411.03,
+      "commissione": 0.00,
+      "reasoning": "Catalyst forte (merger SpaceX) + rimbalzo tecnico da oversold ($345.82 close Nov 20). 52W range $297-$498; momentum positivo. Merger talks early stage: rischio notizie negative. Fonte: AroundPrague.cz e StockAnalysis Nov 23.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "AroundPrague.cz (10:30 AM ET Nov 23)", "price": 392.50},
+          {"name": "StockAnalysis (11:32 AM EST Nov 23)", "price": 390.41}
+        ],
+        "spread_pct": 0.54,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 166.54,
+      "change_24h": "+32.68%",
+      "trend_5d": "ribassista-recupero-violento",
+      "volume_note": "anomalo molto alto (storico)",
+      "news": "Board NVDA reintegra Jensen Huang come CEO e Presidente con effetto immediato. NVDA +30-34% intraday (Nasdaq Nov 23, Yahoo Finance, CNN). Chip stocks rebound: AMD +7%, Intel +13%.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 166.54,
+      "stop_loss": 161.54,
+      "target": 174.87,
+      "commissione": 0.00,
+      "reasoning": "Mossa straordinaria +32%+ in un solo giorno: rischio pullback elevato per nuovo ingresso. Dati MEDIA affidabilità (spread 2.34% Yahoo $164.61 vs SA $168.46). Attendere consolidamento post-spike; supporto 52W low a $124.50.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (intraday Nov 23)", "price": 164.61},
+          {"name": "Seeking Alpha (intraday Nov 23)", "price": 168.46}
+        ],
+        "spread_pct": 2.34,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 495.63,
+      "change_24h": "+2.29%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "normale",
+      "news": "Microsoft +4% in sessione AI rebound (CNBC Nov 23). Ex-dividend Nov 19 ($0.98/share). 52W range $349.20-$559.15.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 495.63,
+      "stop_loss": 480.76,
+      "target": 520.41,
+      "commissione": 0.00,
+      "reasoning": "MSFT in recupero da settimana -8%+; +2.29% oggi (fonte: Motley Fool Nov 23 12:48 PM ET). Affidabilità MEDIA (singola fonte Nov 23 confermata). Target $520 ben sotto 52W high $559; spazio recovery significativo nel contesto AI rebound.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Motley Fool (12:48 PM ET Nov 23)", "price": 495.63},
+          {"name": "Seeking Alpha (close Nov 20)", "price": 484.52}
+        ],
+        "spread_pct": 2.29,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte da Nov 20 (chiusura precedente); singola fonte confermata Nov 23"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 256.04,
+      "change_24h": "+3.73%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "normale-alto",
+      "news": "AMZN up nearly +5% (CNBC Nov 23 market summary). AWS AI demand narrative intatta. 52W range $196-$287.20.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 256.04,
+      "stop_loss": 248.36,
+      "target": 268.84,
+      "commissione": 0.00,
+      "reasoning": "AMZN recovery +3.73% (Massive.com 11:58 AM EST Nov 23) in sessione tech rebound. 52W high $287.20 offre +12% upside. AWS cloud/AI fundamentals solidi; affidabilità MEDIA per singola fonte Nov 23 confermata.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Massive.com (11:58 AM EST Nov 23, delayed 15min)", "price": 256.04},
+          {"name": "Seeking Alpha (close Nov 20)", "price": 246.82}
+        ],
+        "spread_pct": 3.73,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte da Nov 20; singola fonte Nov 23 confermata"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 273.61,
+      "change_24h": "+3.14%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "normale-alto",
+      "news": "GOOGL +6% in sessione AI rebound (CNBC Nov 23). Stock ha toccato 52W low $264.22 nelle sessioni recenti. Blockchain.News Nov 23: 'Price rebounds, but trend still needs confirmation'.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 273.61,
+      "stop_loss": 265.40,
+      "target": 287.29,
+      "commissione": 0.00,
+      "reasoning": "GOOGL in rimbalzo da zona 52W low ($264.22); +3.14% con spread MEDIA (Robinhood $270.18 vs Blockchain.News $277.03, 2.54%). Tecnico supportato da livelli estremi di oversold. AI sentiment rebound principale catalyst. (Fonti: Robinhood + Blockchain.News Nov 23)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 23)", "price": 270.18},
+          {"name": "Blockchain.News (Nov 23)", "price": 277.03}
+        ],
+        "spread_pct": 2.54,
+        "affidabilita": "MEDIA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 590.62,
+      "change_24h": "+5.31%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "anomalo alto",
+      "news": "META +5% in sessione AI/tech rebound (JKN News, Investing.com Nov 23). La scorsa settimana -12.6% su 7 giorni (WiseVoter Nov 23). 52W range $520.26-$779.82.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 590.62,
+      "stop_loss": 572.90,
+      "target": 620.15,
+      "commissione": 0.00,
+      "reasoning": "META recupera +5.3% da close Nov 20 $560.84; affidabilità ALTA (Robinhood $593.09 vs Investing.com $588.14, spread 0.84%). AI advertising fundamentals intatti; 52W high $779.82 offre ampio spazio recovery. Volume anomalo conferma rotazione risk-on.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Robinhood (Nov 23)", "price": 593.09},
+          {"name": "Investing.com (Nov 23)", "price": 588.14}
+        ],
+        "spread_pct": 0.84,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 454.34,
+      "change_24h": "+7.06%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "anomalo alto",
+      "news": "AMD +7-8.5% in chip sector rebound (Yahoo Finance Nov 23: 'NVDA jumps 28%, Intel +13%, AMD +7%'). Settimana scorsa -13.25% su report Hunterbrook Media legami Cina. 52W range $188.22-$658.52.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 454.34,
+      "stop_loss": 440.71,
+      "target": 477.06,
+      "commissione": 0.00,
+      "reasoning": "AMD +7% in chip AI rebound; lontano da 52W high $658.52 con significativo upside. Oversold dopo -13.25% Nov 20. Affidabilità MEDIA: Yahoo Finance article Nov 23 cita $454.34 (+7% da $424.39 close). (Fonte: Yahoo Finance Nov 23 market article)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance article (Nov 23, up 7% from close)", "price": 454.34},
+          {"name": "Robinhood (dated Nov 22)", "price": 439.39}
+        ],
+        "spread_pct": 3.39,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte potenzialmente da Nov 22; Yahoo confermato Nov 23"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1333.49,
+      "change_24h": "+5.32%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "normale-alto",
+      "news": "ASML +5.32% nel tech rebound AI. Blockchain.News Nov 23: 'Export controls pressure shares as analysts lift targets and ASML raises outlook'. China ~20% revenue ASML 2026; pressioni geopolitiche persistenti.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 1333.49,
+      "stop_loss": 1293.49,
+      "target": 1400.17,
+      "commissione": 0.00,
+      "reasoning": "ASML rimbalzo +5.32% da close Nov 20 $1,266.22; affidabilità ALTA (Blockchain.News $1,335.68 vs after-hours ref $1,331.29, spread 0.33%). Analisti alzano target nonostante export controls Cina. AI chip demand strutturale supporta fondamentali di lungo. (Fonte: Blockchain.News + Investing.com Nov 23)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Blockchain.News (Nov 23)", "price": 1335.68},
+          {"name": "Investing.com after-hours (Nov 23)", "price": 1331.29}
+        ],
+        "spread_pct": 0.33,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 202.51,
+      "change_24h": "+1.80%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SAP +1.8% apertura Nov 23 (da fonte open $202.51 9:45 AM EST). Down ~16.7% YTD (Motley Fool). Nessun catalyst specifico Nov 23 per SAP. Next earnings Q4 2026 su Jan 28, 2027.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 202.51,
+      "stop_loss": 196.44,
+      "target": 212.64,
+      "commissione": 0.00,
+      "reasoning": "SAP +1.8% underperforma Nasdaq +7%; nessun catalyst specifico. YTD -16.7%. Affidabilità MEDIA (singola fonte Nov 23 confermata). Attendere conferma trend recovery prima di BUY. (Fonte: coindataflow.com apertura Nov 23)",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CoinDataFlow open (9:45 AM EST Nov 23)", "price": 202.51},
+          {"name": "Seeking Alpha (close Nov 19)", "price": 203.23}
+        ],
+        "spread_pct": 0.36,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte da Nov 19; singola fonte Nov 23 open confermata"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 403.00,
+      "change_24h": "-0.44%",
+      "trend_5d": "laterale",
+      "volume_note": "normale",
+      "news": "Ferrari in lieve calo in giornata di forte rally tech. Nessuna notizia specifica Nov 23. Prossima area supporto ~$399.80 (day low da FinancialContent).",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 403.00,
+      "stop_loss": 391.00,
+      "target": 423.15,
+      "commissione": 0.00,
+      "reasoning": "RACE underperforma in sessione tech dominata da AI catalyst. Lieve calo da previous close $404.77. Nessun driver specifico. Affidabilità MEDIA (singola fonte Nov 23). 52W range $312.51-$437.15 indica posizionamento mid-range.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "FinancialContent intraday (Nov 23 open $403.19, range $399.80-$403.77)", "price": 403.00},
+          {"name": "Seeking Alpha (close Nov 19)", "price": 408.95}
+        ],
+        "spread_pct": 1.47,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte da Nov 19; FinancialContent Nov 23 usato per intraday"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 39.39,
+      "change_24h": "+6.55%",
+      "trend_5d": "ribassista-recupero",
+      "volume_note": "anomalo alto (15.37M vs avg)",
+      "news": "SLV +6.55% a $39.39 (Stockanalysis 10:44 AM EST Nov 23). Near 52W low $36.81. Silver in recovery insieme a commodities nella rotazione risk-on. Volume 15.37M anomalo.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 39.39,
+      "stop_loss": 38.60,
+      "target": 40.97,
+      "commissione": 0.00,
+      "reasoning": "SLV +6.55% da previous close $36.97; vicino a 52W low $36.81 (supporto tecnico forte). Volume anomalo 15.37M conferma rotazione. Affidabilità MEDIA (singola fonte Nov 23 confermata: Stockanalysis). Silver recovery in contesto macro risk-on.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Stockanalysis (10:44 AM EST Nov 23)", "price": 39.39},
+          {"name": "Schwab (close Nov 19)", "price": 40.16}
+        ],
+        "spread_pct": 1.95,
+        "affidabilita": "MEDIA",
+        "nota": "Seconda fonte da Nov 19; singola fonte Nov 23 confermata"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 61184.00,
+      "change_24h": "+3.30%",
+      "trend_5d": "ribassista-lieve-recupero",
+      "volume_note": "normale",
+      "news": "BTC holds above $61,000 (Fortune Nov 23 7:45 AM ET; CoinGecko Nov 23 +3.30%). Spot ETF outflows $669.2M su Nov 20 (Coinglass). YoY -$25,667 rispetto a un anno fa (Fortune).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 61184.00,
+      "stop_loss": 58124.80,
+      "target": 66078.72,
+      "commissione": 0.00,
+      "reasoning": "BTC recupera +3.3% con risk-on generalizzato (affidabilità ALTA, Fortune $61,134 vs CoinGecko $61,234, spread 0.16%). Trend macro ancora debole: spot ETF outflows $669.2M (Coinglass Nov 20), 49% sotto ATH $126,059. Recovery moderata; non ancora segnale BUY confermato.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (7:45 AM ET Nov 23)", "price": 61134.34},
+          {"name": "CoinGecko (Nov 23)", "price": 61234.45}
+        ],
+        "spread_pct": 0.16,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1718.09,
+      "change_24h": "+3.95%",
+      "trend_5d": "ribassista-lieve-recupero",
+      "volume_note": "normale",
+      "news": "ETH a $1,716.20 alle 7:45 AM ET Nov 23 (Fortune). Coinbase mostra $1,719.98. YoY -$1,085 (Fortune data). Volume 24h $17.19B (CoinGecko Nov 23).",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 1718.09,
+      "stop_loss": 1632.19,
+      "target": 1855.54,
+      "commissione": 0.00,
+      "reasoning": "ETH recupero +3.95% con risk-on (affidabilità ALTA, Fortune $1,716.20 vs Coinbase $1,719.98, spread 0.22%). Trend annuale ancora negativo (-$1,085 YoY). Volume 24h $17.19B nella norma. Attendere conferma reversal prima di BUY.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Fortune (7:45 AM ET Nov 23)", "price": 1716.20},
+          {"name": "Coinbase (Nov 23)", "price": 1719.98}
+        ],
+        "spread_pct": 0.22,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 72.23,
+      "change_24h": "+1.90%",
+      "trend_5d": "ribassista",
+      "volume_note": "normale",
+      "news": "SOL $72.30 Nov 23 (Invezz): 'Why is Solana rising despite brutal 8-week losing streak?'. 30-day -32.35% (Crypto.com). Gate.com mostra $72.71 +1.9% 24h. 30-day low $67.42.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 72.23,
+      "stop_loss": 68.62,
+      "target": 78.01,
+      "commissione": 0.00,
+      "reasoning": "SOL +1.9% (affidabilità ALTA, Coinbase $72.15 vs Invezz $72.30, spread 0.21%); ma underperforma vs BTC nel risk-on. 8 settimane consecutive di perdite (Invezz Nov 23); 30-day -32.35%. Nessun catalyst specifico per SOL. Attendere conferma fine downtrend.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (Nov 23)", "price": 72.15},
+          {"name": "Invezz article (Nov 23)", "price": 72.30}
+        ],
+        "spread_pct": 0.21,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [
+    {
+      "asset": "NFLX",
+      "motivo": "Nessun dato Nov 23 confermato. Ultima chiusura verificata: $56.73 (Nov 20, Morningstar). Dati < 2 fonti per data odierna.",
+      "last_known_price": 56.73,
+      "last_known_date": "2026-11-20"
+    },
+    {
+      "asset": "STLA",
+      "motivo": "Nessun dato NYSE USD Nov 23 confermato. Ultima chiusura verificata: $3.52 (Nov 19, Upstox NYSE). Ticker Milano STLAM in EUR non utilizzabile per segnali USD.",
+      "last_known_price": 3.52,
+      "last_known_date": "2026-11-19"
+    },
+    {
+      "asset": "GLD",
+      "motivo": "Nessun dato Nov 23 confermato. Ultima chiusura verificata: $322.87 (Nov 20, Benzinga; -3.67%). GLD prossimo a 52W low $320.95. Fonti secondarie (Schwab $377.32 da Jun 23) stale e inutilizzabili per triangolazione.",
+      "last_known_price": 322.87,
+      "last_known_date": "2026-11-20"
+    },
+    {
+      "asset": "USO",
+      "motivo": "Nessun dato Nov 23 confermato. Ultima chiusura verificata: $139.63 (Nov 20, Investing.com e TradingView concordanti). Fonti Nov 23 non disponibili.",
+      "last_known_price": 139.63,
+      "last_known_date": "2026-11-20"
+    }
+  ],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "META",
+      "motivo": "Affidabilità ALTA (spread 0.84%), +5.31% recovery da oversold. BUY con confidence Medio. 52W high $779.82 offre >32% upside dal prezzo attuale $590.62."
+    },
+    {
+      "rank": 2,
+      "asset": "TSLA",
+      "motivo": "Affidabilità ALTA (spread 0.54%), catalyst forte (SpaceX merger), +13.46% momentum. 52W range $297-$498; prezzo $391 in zona mid-range."
+    },
+    {
+      "rank": 3,
+      "asset": "ASML",
+      "motivo": "Affidabilità ALTA (spread 0.33%), +5.32% AI chip demand rebound. Analisti alzano target nonostante pressioni export control. 52W range $973-$1999."
+    },
+    {
+      "rank": 4,
+      "asset": "AMZN",
+      "motivo": "Recovery +3.73% con 52W high $287.20 (+12% upside). AWS AI fundamentals solidi. BUY signal Medio."
+    },
+    {
+      "rank": 5,
+      "asset": "GOOGL",
+      "motivo": "Rimbalzo da zona 52W low $264.22; +3.14% oggi. Significativo upside storico verso $408 max. BUY da zona estrema oversold."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "contesto": "Giornata storica (Nasdaq +7%) post-selloff settimanale -8%+. Alta volatilità: preferire sizing ridotto.",
+    "allocazione_suggerita": {
+      "META": "15% (ALTA affidabilità, forte momentum)",
+      "TSLA": "15% (ALTA affidabilità, catalyst spaceX)",
+      "ASML": "10% (ALTA affidabilità, AI demand)",
+      "AMZN": "10% (MEDIA affidabilità, AWS recovery)",
+      "GOOGL": "10% (MEDIA affidabilità, oversold bounce)",
+      "AMD": "10% (MEDIA affidabilità, chip rebound)",
+      "MSFT": "10% (MEDIA affidabilità, AI rebound)",
+      "SLV": "5% (MEDIA affidabilità, 52W low bounce)",
+      "BTC": "5% (ALTA affidabilità, risk-on HOLD)",
+      "ETH": "5% (ALTA affidabilità, risk-on HOLD)",
+      "LIQUIDITA": "5% (buffer volatilità)"
+    }
+  }
+}
