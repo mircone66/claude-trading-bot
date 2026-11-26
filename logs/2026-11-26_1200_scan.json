@@ -1,0 +1,534 @@
+{
+  "timestamp": "2026-11-26T12:00:00Z",
+  "data_source": "web_search triangolazione 2 fonti",
+  "broker": "Alpaca",
+  "note_mercato": "MERCATI USA CHIUSI - Thanksgiving Day (4° giovedì di novembre). Prezzi azioni/ETF riferiti all'ultimo close del 25/11/2026. Prezzi crypto live.",
+  "commissioni": {
+    "azioni_usa": 0.00,
+    "etf": 0.00,
+    "crypto": 0.00,
+    "note": "Alpaca zero commissioni su azioni USA ed ETF"
+  },
+  "market_summary": "Mercati USA chiusi per Thanksgiving (26/11/2026). Ultima sessione (25/11): tech in sell-off guidato da NVDA -3.91%, AMD -1.75%, AMZN -3.14%, GOOGL -2.13% su timori rialzo Fed (inflazione hot), nuovi dazi Trump e dubbi sui ritorni dell'AI. MSFT -1.26%, TSLA -1.18%. In controtendenza META +3.39% su notizie deal Amazon/Muse. ASML -2.47% su proposta legislativa MATCH Act USA (export control chip verso Cina). STLA +6.4% su annuncio UE caps importazione ibridi. Oil (USO) +3.29%. Bitcoin sopra $60K dopo il crollo a $55K del 21/11. Crypto in rimbalzo tecnico con Fear & Greed Index a 11 (paura estrema).",
+  "signals": [
+    {
+      "asset": "AAPL",
+      "type": "stock_usa",
+      "price": 355.34,
+      "change_24h": "+0.37%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "Apple tiene bene nel contesto di sell-off tech. 52-week high $360.83 vicino. Mercato premia difensività rispetto ai titoli AI-dipendenti (NVDA, AMD). Fonte: CNBC quotes 25/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 355.34,
+      "stop_loss": 344.68,
+      "target": 373.11,
+      "commissione": 0.00,
+      "reasoning": "AAPL in zona 52-week high ($360.83), resistenza forte. Macro headwinds da tariffe e Fed hawkish suggeriscono cautela, ma la difensività del titolo lo rende preferibile nel settore. Fonte: CNBC, Apple IR 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (close 25/11/2026)", "price": 355.58},
+          {"name": "Investing.com / Apple IR (25/11/2026)", "price": 355.10}
+        ],
+        "spread_pct": 0.14,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "TSLA",
+      "type": "stock_usa",
+      "price": 380.14,
+      "change_24h": "-1.18%",
+      "trend_5d": "laterale",
+      "volume_note": "Anomalo volume (+10% vs avg), range sessione $357.64-$383.73",
+      "news": "Tesla cede -1.18% nella sessione del 25/11 insieme al Nasdaq tech. Nessuna notizia catalizzante specifica. 52-week range $297-499, posizionamento neutro. Fonte: StockAnalysis, CNBC 25/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 380.14,
+      "stop_loss": 368.74,
+      "target": 399.15,
+      "commissione": 0.00,
+      "reasoning": "TSLA in zona mediana del 52-week range ($297-499). Macro headwinds da tariffe EU (news Reuters EC vote) e sentiment negativo sul settore. Mancano catalizzatori direzionali chiari. Fonte: Stockanalysis, CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis / Investing.com (close 25/11/2026)", "price": 380.14},
+          {"name": "CNBC after-hours (25/11/2026)", "price": 383.00}
+        ],
+        "spread_pct": 0.75,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NVDA",
+      "type": "stock_usa",
+      "price": 149.30,
+      "change_24h": "-3.91%",
+      "trend_5d": "ribassista",
+      "volume_note": "Anomalo: 312.7M vs media 257.7M (+21%)",
+      "news": "NVDA -3.91% (intraday -9%). S&P cambia outlook a credit watch negativo per concern governance (situazione CEO Jensen Huang controversa). MarketWatch: 'primo death cross dal marzo 2025'. -27% negli ultimi 30 giorni. Fonte: Morningstar/Marketchameleon 25/11/2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 149.30,
+      "stop_loss": 153.78,
+      "target": 141.84,
+      "commissione": 0.00,
+      "reasoning": "Death cross tecnico, volume anomalo, outlook S&P negativo, governance crisis. 52-week range $124-243, ancora lontano dal minimo ma trend fortemente ribassista. Fonte: MarketWatch/Morningstar 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Marketchameleon / Robinhood (close 25/11/2026)", "price": 149.30},
+          {"name": "Benzinga / NVDA investor page (25/11/2026)", "price": 149.30}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "MSFT",
+      "type": "stock_usa",
+      "price": 489.93,
+      "change_24h": "-1.26%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "Microsoft -1.26% nel sell-off generalizzato. 52-week high $559.15 (4/11), ora -12% da quel picco. Inflazione hot e attesa rialzo Fed pesano sui growth stocks. Fonte: CNBC, Yahoo Finance 25/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 489.93,
+      "stop_loss": 475.23,
+      "target": 514.43,
+      "commissione": 0.00,
+      "reasoning": "MSFT in ritracciamento dal massimo di $559 (4/11). Scenario macro avverso (tassi alti, tariffe). Fondamentali solidi ma momentum negativo. Nessun catalizzatore positivo a breve. Fonte: CNBC, Yahoo Finance 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (close 25/11/2026)", "price": 489.93},
+          {"name": "Yahoo Finance / Massive (close 25/11/2026)", "price": 489.93}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMZN",
+      "type": "stock_usa",
+      "price": 244.43,
+      "change_24h": "-3.14%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "Amazon -3.14% nella sessione del 25/11, tra i peggiori del settore. Target consensus analisti a $331 (Benzinga 23/11). 52-week range $196-287, in zona mediana. Fonte: CNBC, StockAnalysis 25/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 244.43,
+      "stop_loss": 237.10,
+      "target": 256.65,
+      "commissione": 0.00,
+      "reasoning": "AMZN -3.14% con trend ribassista a 5 giorni. Il calo significativo in singola seduta potrebbe generare rimbalzo tecnico, ma macro headwinds (tariffe, Fed) persistono. Target analisti $331 indica upside ma catalizzatori assenti. Fonte: CNBC.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (close 25/11/2026)", "price": 244.43},
+          {"name": "Yahoo Finance / StockAnalysis (close 25/11/2026)", "price": 244.43}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GOOGL",
+      "type": "stock_usa",
+      "price": 273.10,
+      "change_24h": "-2.13%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "Alphabet tocca 52-week low a $262.73 intraday il 25/11, chiude a $273.10. YTD -32% dal massimo di $408.61. Analisti Vantage Markets: premarket Nov 27 sarà il primo test dopo la pausa holiday. Fonte: CNBC, Morningstar 25/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 273.10,
+      "stop_loss": 264.91,
+      "target": 286.76,
+      "commissione": 0.00,
+      "reasoning": "GOOGL in zona di minimo annuale, 52-week low $262.73. Possibile rimbalzo tecnico da zona di supporto, ma trend ribassista confermato. AI valuation reset e pressione concorrenziale. Fonte: CNBC, Vantage Markets 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "CNBC (close 25/11/2026)", "price": 273.10},
+          {"name": "Morningstar (close 25/11/2026)", "price": 273.10}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "META",
+      "type": "stock_usa",
+      "price": 609.89,
+      "change_24h": "+3.39%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale",
+      "news": "META +3.39% su notizie Fortune: trattative Meta-Amazon per rimozione blocco dell'agente shopping Muse. Recupero da minimo recente di $560.84 (20/11). 52-week range $520-780. QQQ -0.65% stesso giorno. Fonte: Yahoo Finance, Gotrade 25/11/2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 609.89,
+      "stop_loss": 591.59,
+      "target": 640.38,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore positivo specifico (deal talks Amazon/Muse) in controtendenza al sell-off tech. Recupero dal minimo di $560 con volume ok. 52-week high $779 indica spazio di upside strutturale. Fonte: Fortune/Gotrade 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Morningstar (close 25/11/2026)", "price": 609.89},
+          {"name": "Massive.com (close 25/11/2026)", "price": 609.89}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "NFLX",
+      "type": "stock_usa",
+      "price": 59.33,
+      "change_24h": "-0.27%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "Netflix YTD -36.64% (da $93.76 inizio 2026). 52-week low $56.56. Target analisti: media $86.55, range $57-141. Il titolo è in zona critica, vicino ai minimi annuali. Fonte: StockInvest.us, Robinhood 25-26/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 59.33,
+      "stop_loss": 57.55,
+      "target": 62.30,
+      "commissione": 0.00,
+      "reasoning": "NFLX vicino al 52-week low ($56.56) con trend fortemente ribassista YTD (-36.64%). Zona di supporto potenziale ma nessun catalizzatore. Downside limitato ma mancano driver positivi chiari. Fonte: Motley Fool, StockInvest.us 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockInvest.us (close 25/11/2026)", "price": 59.41},
+          {"name": "Robinhood (intraday 26/11/2026)", "price": 59.25}
+        ],
+        "spread_pct": 0.27,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "AMD",
+      "type": "stock_usa",
+      "price": 406.03,
+      "change_24h": "-1.75%",
+      "trend_5d": "ribassista",
+      "volume_note": "Anomalo (forte aumento volumi nelle sessioni di calo)",
+      "news": "AMD collassa -13.25% il 20/11 e -8.86% il 24/11 dopo report short-seller Hunterbrook. Totale -30.6% dal picco di $585 (12/11). Dubbi ritorni AI spending + nuovi dazi USA. Fonte: Gotrade/StockAnalysis 25/11/2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 406.03,
+      "stop_loss": 418.21,
+      "target": 385.73,
+      "commissione": 0.00,
+      "reasoning": "AMD in capitolazione tecnica: -30.6% in 2 settimane con report short-seller confermato dal mercato. Momentum fortemente negativo. 52-week high $659 lontano. Rischio ulteriore downside verso zona $350-380. Fonte: Hunterbrook/Gotrade.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "StockAnalysis (close 25/11/2026)", "price": 406.03},
+          {"name": "Investing.com (25/11/2026)", "price": 406.03}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ASML",
+      "type": "stock_eu",
+      "price": 1303.08,
+      "change_24h": "-2.47%",
+      "trend_5d": "ribassista",
+      "volume_note": "Normale",
+      "news": "ASML -2.47% su proposta USA MATCH Act che imporrebbe controlli export su semiconductor equipment verso Cina (paesi alleati inclusi Paesi Bassi). -18.1% in 30 giorni. Barclays mantiene Buy con target 2500 EUR. Fonte: DailyPolitical/Tickeron 25/11/2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1303.08,
+      "stop_loss": 1342.17,
+      "target": 1237.93,
+      "commissione": 0.00,
+      "reasoning": "ASML penalizzata da rischio regolatorio crescente (MATCH Act USA). Trend ribassista confermato: -18.1% in 30 giorni, -35% dal 52-week high $1,999.96. Nonostante target Barclays ottimistici, catalizzatori negativi a breve prevalgono. Fonte: DailyPolitical 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance (close 25/11/2026)", "price": 1303.08},
+          {"name": "Forbes / StockInvest.us (25/11/2026)", "price": 1303.08}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SAP",
+      "type": "stock_eu",
+      "price": 209.79,
+      "change_24h": "+0.30%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "SAP resistente con +0.30% nella sessione del 25/11. YTD -16.68% ma recupero in corso. Target analisti $284.50 (+35%). 16 analisti Buy. 52-week range $145-$256. Fonte: Yahoo Finance, StockAnalysis 25/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 209.79,
+      "stop_loss": 203.50,
+      "target": 220.28,
+      "commissione": 0.00,
+      "reasoning": "SAP in laterale con lieve positività nel contesto di sell-off tech. Upside strutturale verso target $284 (analisti), ma catalizzatori assenti a breve termine. Trend globale macro non favorevole ai titoli europei con esposizione USA. Fonte: StockAnalysis.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / StockAnalysis (close 25/11/2026)", "price": 209.37},
+          {"name": "Morningstar (after-hours 25/11/2026)", "price": 210.21}
+        ],
+        "spread_pct": 0.40,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "RACE",
+      "type": "stock_eu",
+      "price": 409.59,
+      "change_24h": "+2.96%",
+      "trend_5d": "rialzista",
+      "volume_note": "Normale",
+      "news": "Ferrari +2.96% con chiusura strong a $409.59. JP Morgan mantiene Buy rating con target EUR 420. Settore auto europeo in ripresa su catalizzatori normativi UE. 52-week range $312-$437. Fonte: CNBC/Yahoo Finance 25/11/2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 409.59,
+      "stop_loss": 397.30,
+      "target": 430.07,
+      "commissione": 0.00,
+      "reasoning": "RACE chiude forte (+2.96%) con target JP Morgan confermato. Settore auto EU in ripresa su notizie normative UE. 52-week high $437 vicino come prossima resistenza. Momentum positivo con range del giorno $400-$411. Fonte: CNBC, ad-hoc-news 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / CNBC (close 25/11/2026)", "price": 409.59},
+          {"name": "CNN Markets (close 25/11/2026)", "price": 409.59}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "STLAM",
+      "ticker_note": "NYSE ticker effettivo: STLA (Stellantis N.V.)",
+      "type": "stock_eu",
+      "price": 3.635,
+      "change_24h": "+6.40%",
+      "trend_5d": "rialzista",
+      "volume_note": "Anomalo (volume elevato sul rally)",
+      "news": "STLA +6.4% (top performer CAC40 e NYSE) su annuncio UE: European Commission imporrà caps importazione veicoli ibridi da tutte le origini dal 1° dicembre 2026. Rimbalzo tecnico da minimo 5 anni ($3.34, 52-week low 20/11). Fonte: Investing.com, Ideal-Investisseur 25/11/2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 3.635,
+      "stop_loss": 3.526,
+      "target": 3.817,
+      "commissione": 0.00,
+      "reasoning": "Catalizzatore normativo UE specifico e forte: caps import ibridi favoriscono i produttori europei esistenti come Stellantis. Rimbalzo da minimo storico ($3.34). -65% dal 52-week high $12.22 indica forte upside potenziale ma alta volatilità. Fonte: EC announcement via Investing.com.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "NYSE / Yahoo Finance (close 25/11/2026)", "price": 3.66},
+          {"name": "JKN News (close 25/11/2026)", "price": 3.61}
+        ],
+        "spread_pct": 1.37,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "GLD",
+      "type": "etf_commodity",
+      "price": 327.45,
+      "change_24h": "-2.27%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "GLD -2.27% il 25/11 (spot gold ~$3,520/oz). Pressione da dollaro forte su attese rialzo Fed (inflazione hot). Nella sessione del 26/11 i gold ETF indiani rimbalzano +6% da oversold. 52-week high GLD ~$370+. Fonte: SPDR Gold Shares, MarketAlleys 25/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Medio",
+      "entry": 327.45,
+      "stop_loss": 320.90,
+      "target": 340.55,
+      "commissione": 0.00,
+      "reasoning": "GLD cede -2.27% su preoccupazioni Fed hawkish, ma l'oro rimane in trend rialzista strutturale (spot gold ~$3,520). Rimbalzo tecnico possibile su oversold. Nessun segnale direzionale forte in zona di Thanksgiving. Fonte: SPDR official, MarketAlleys 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "SPDR Gold Shares official (close 25/11/2026)", "price": 327.45},
+          {"name": "Yahoo Finance / Finviz (close 25/11/2026)", "price": 327.45}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SLV",
+      "type": "etf_commodity",
+      "price": 37.10,
+      "change_24h": "-5.00%",
+      "trend_5d": "ribassista",
+      "volume_note": "Anomalo (volume eccezionale sul calo)",
+      "news": "SLV tocca 52-week low $34.48 intraday il 25/11, chiude a $37.10. Benzinga: 'Silver heads for worst year since 1981' su unwinding AI trade. YTD SLV -48%. L'argento penalizzato da calo domanda industriale tech. Fonte: Benzinga, Yahoo Finance 25/11/2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 37.10,
+      "stop_loss": 37.84,
+      "target": 35.62,
+      "commissione": 0.00,
+      "reasoning": "SLV in trend ribassista estremo: -48% YTD, peggior anno dal 1981. Ha toccato nuovo 52-week low intraday. AI trade unwind riduce domanda industriale silver. Rimbalzo il 26/11 (India) potrebbe offrire exit. Fonte: Benzinga 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Yahoo Finance / Finviz (close 25/11/2026)", "price": 37.10},
+          {"name": "CNBC (close 25/11/2026)", "price": 37.10}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "USO",
+      "type": "etf_commodity",
+      "price": 139.89,
+      "change_24h": "+3.29%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale",
+      "news": "USO +3.29% (+$4.46) nel 25/11 su rimbalzo oil. -17.5% dal picco di $169.53 (23/10). Benzinga: Bessent afferma Iran 'non ha un barile da vendere' per Operation Economic Outcast - Teheran strikes in Strait of Hormuz. Fonte: Seeking Alpha, Wisevoter 25/11/2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 139.89,
+      "stop_loss": 137.09,
+      "target": 145.49,
+      "commissione": 0.00,
+      "reasoning": "Oil in rimbalzo dopo mese di perdite (-17.5%). Catalizzatore geopolitico: Stretto di Hormuz - Iran strikes e dichiarazioni Bessent su oil exports iraniani. 52-week range ~$66-172. Momentum +3.29% con volume ok. Fonte: Benzinga, Seeking Alpha 25/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Finviz / Seeking Alpha (close 25/11/2026)", "price": 139.89},
+          {"name": "Wisevoter / RioTimes (25/11/2026)", "price": 139.89}
+        ],
+        "spread_pct": 0.00,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "BTC",
+      "type": "crypto",
+      "price": 60805.00,
+      "change_24h": "+4.00%",
+      "trend_5d": "laterale",
+      "volume_note": "Normale (24h volume $18.25B)",
+      "news": "BTC recupera sopra $60K dopo il crollo a $55,150 del 21/11 (minimo da settembre 2024). Fear & Greed Index a 11 (paura estrema). Spot BTC ETF: 6 sessioni consecutive di outflow netti (-$4.94B in novembre). Range 24h: $57,208-$61,527. Fonte: CoinDesk/Coinbase 26/11/2026.",
+      "signal": "HOLD",
+      "confidence": "Basso",
+      "entry": 60805.00,
+      "stop_loss": 57765.00,
+      "target": 65669.00,
+      "commissione": 0.00,
+      "reasoning": "BTC in rimbalzo tecnico (+4%) ma ETF outflow record ($4.94B in novembre) e Fear&Greed a 11 indicano sentiment negativo strutturale. All-time high $126,210 (6/10/2025) lontanissimo. Rimbalzo tecnico ma headwinds macro persistono. Fonte: Coinbase, CryptoNews 26/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase / CoinDesk (26/11/2026 05:16 EST)", "price": 60875.00},
+          {"name": "FinFly.news / CompanyChronicle (26/11/2026)", "price": 60734.00}
+        ],
+        "spread_pct": 0.23,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "ETH",
+      "type": "crypto",
+      "price": 1696.00,
+      "change_24h": "+0.75%",
+      "trend_5d": "ribassista",
+      "volume_note": "Volume ETF outflow anomalo ($64.1M deflussi in un giorno)",
+      "news": "ETH stalla sotto $1,700. TradingPedia (26/11): 'ETH stalls as ETF outflows, hot inflation weigh'. -29% in un mese. Net outflows spot ETH ETF: -$64.1M (25/11). Pressione vendita istituzionale confermata. Fonte: Tradingpedia, Coinbase 26/11/2026.",
+      "signal": "SELL",
+      "confidence": "Medio",
+      "entry": 1696.00,
+      "stop_loss": 1780.80,
+      "target": 1611.20,
+      "commissione": 0.00,
+      "reasoning": "ETH penalizzato da outflow ETF continui (-$64.1M singolo giorno), sentiment macro negativo (inflazione, Fed hawkish), -29% in un mese. Resistance $1,700 confermata. Scenario bearish fino a cambio di regime macro. Fonte: TradingPedia 26/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (live 26/11/2026)", "price": 1702.46},
+          {"name": "TradingPedia (26/11/2026)", "price": 1690.00}
+        ],
+        "spread_pct": 0.73,
+        "affidabilita": "ALTA"
+      }
+    },
+    {
+      "asset": "SOL",
+      "type": "crypto",
+      "price": 70.85,
+      "change_24h": "+4.00%",
+      "trend_5d": "laterale",
+      "volume_note": "Anomalo (Circle minting $1B USDC su Solana)",
+      "news": "SOL +4% outperforma BTC e ETH. Circle ha mintato $1 miliardo di USDC sulla rete Solana (segnale di adozione). Anza (team Solana) presenta roadmap 2027 per maggiore capacità e costi ridotti. Coinglass 26/11 06:12 UTC: $71.18 +3.11% 24h. Fonte: Ad-hoc-news, Coinbase 26/11/2026.",
+      "signal": "BUY",
+      "confidence": "Medio",
+      "entry": 70.85,
+      "stop_loss": 67.31,
+      "target": 76.52,
+      "commissione": 0.00,
+      "reasoning": "SOL best performer crypto del giorno (+4%): Circle $1B USDC minting conferma ecosistema DeFi solido. Roadmap 2027 positiva. 24h range $65.77-$71.89. Outperformance vs BTC e ETH. All-time high $294.85, ampio upside strutturale. Fonte: Ad-hoc-news, Coinglass 26/11.",
+      "data_real": true,
+      "price_validation": {
+        "sources": [
+          {"name": "Coinbase (26/11/2026 05:39 EST)", "price": 71.01},
+          {"name": "Ad-hoc-news / Coinglass (26/11/2026 UTC)", "price": 70.69}
+        ],
+        "spread_pct": 0.45,
+        "affidabilita": "ALTA"
+      }
+    }
+  ],
+  "excluded_assets": [],
+  "top_opportunita": [
+    {
+      "rank": 1,
+      "asset": "STLAM (NYSE: STLA)",
+      "motivo": "Catalizzatore normativo UE immediato (caps import ibridi dal 1° dic), rimbalzo da minimo 5 anni, +6.4% con alto volume. Massimo upside potenziale vs rischio nel settore EU auto."
+    },
+    {
+      "rank": 2,
+      "asset": "SOL",
+      "motivo": "Best performer crypto +4%, Circle $1B USDC minting su rete, roadmap 2027 positiva. Outperformance strutturale vs BTC/ETH nel rimbalzo."
+    },
+    {
+      "rank": 3,
+      "asset": "RACE",
+      "motivo": "Ferrari chiude forte +2.96% con JP Morgan Buy confermato. Momentum positivo in controtendenza al sell-off, 52-week high $437 come prossima resistenza."
+    }
+  ],
+  "portfolio_simulato": {
+    "note": "SIMULAZIONE - nessun ordine reale",
+    "contesto": "Thanksgiving Day: mercati USA chiusi. Prossima sessione 27/11/2026 (Black Friday, orario ridotto).",
+    "allocazione_suggerita": {
+      "BUY_signals": {
+        "META": "15% - catalizzatore specifico deal talks Amazon",
+        "RACE": "15% - momentum positivo, JP Morgan Buy",
+        "STLAM_STLA": "10% - alto rischio/alta reward, catalizzatore UE",
+        "USO": "15% - geopolitica Hormuz, oil rebound",
+        "SOL": "10% - crypto best performer, adoption catalyst"
+      },
+      "HOLD_signals": {
+        "AAPL": "10% - difensivo in contesto sell-off",
+        "BTC": "5% - hold, rimbalzo tecnico"
+      },
+      "SELL_signals": {
+        "NVDA": "exit/short - death cross, governance crisis",
+        "AMD": "exit/short - short seller report, -30% momentum",
+        "ASML": "exit/short - MATCH Act rischio regolatorio",
+        "SLV": "exit/short - worst year since 1981",
+        "ETH": "exit/short - ETF outflows, macro headwinds"
+      },
+      "cash_reserve": "20%"
+    }
+  }
+}
